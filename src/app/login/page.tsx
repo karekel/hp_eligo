@@ -5,7 +5,9 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 function LoginForm() {
   const [pw, setPw] = useState("");
+  const [showPw, setShowPw] = useState(false);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
   const sp = useSearchParams();
   const next = sp.get("next") || "/members";
@@ -13,19 +15,24 @@ function LoginForm() {
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError("");
+    setLoading(true);
 
-    const res = await fetch("/api/auth/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ password: pw }),
-    });
+    try {
+      const res = await fetch("/api/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: pw }),
+      });
 
-    if (!res.ok) {
-      setError("パスワードが違います");
-      return;
+      if (!res.ok) {
+        setError("パスワードが違います");
+        return;
+      }
+
+      router.replace(next);
+    } finally {
+      setLoading(false);
     }
-
-    router.replace(next);
   }
 
   return (
@@ -42,21 +49,50 @@ function LoginForm() {
           Password
         </label>
 
-        <input
-          type="password"
-          value={pw}
-          onChange={(e) => setPw(e.target.value)}
-          className="mt-2 w-full rounded-xl border border-black/15 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-black/20"
-          placeholder="Enter password"
-        />
+        {/* パスワード入力 + 表示切替ボタン */}
+        <div className="relative mt-2">
+          <input
+            type={showPw ? "text" : "password"}
+            value={pw}
+            onChange={(e) => setPw(e.target.value)}
+            className="w-full rounded-xl border border-black/15 bg-white px-4 py-3 pr-12 outline-none focus:ring-2 focus:ring-black/20"
+            placeholder="Enter password"
+            autoComplete="current-password"
+          />
+          <button
+            type="button"
+            onClick={() => setShowPw((v) => !v)}
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-black/40 hover:text-black/70 transition-colors select-none"
+            aria-label={showPw ? "パスワードを隠す" : "パスワードを表示"}
+          >
+            {showPw ? (
+              /* 目アイコン（表示中） */
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            ) : (
+              /* 目に斜線（非表示中） */
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
+                <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/>
+                <line x1="1" y1="1" x2="23" y2="23"/>
+              </svg>
+            )}
+          </button>
+        </div>
 
         {error && <p className="mt-3 text-sm text-red-600">{error}</p>}
 
         <button
           type="submit"
-          className="mt-6 w-full rounded-xl bg-black py-3 text-white tracking-widest uppercase hover:opacity-90"
+          disabled={loading || pw.length === 0}
+          className="mt-6 w-full rounded-xl py-3 text-white tracking-widest uppercase transition-all duration-150
+            bg-black hover:opacity-90
+            disabled:opacity-40 disabled:cursor-not-allowed
+            active:scale-[0.98]"
         >
-          Log in
+          {loading ? "認証中..." : "Log in"}
         </button>
       </form>
     </main>
