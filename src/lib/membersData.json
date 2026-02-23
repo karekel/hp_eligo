@@ -1,0 +1,521 @@
+{
+  "materials": [
+    {
+      "id": "m-ペットアロマ_使い方・基礎.pdf",
+      "title": "ペットアロマ",
+      "description": "資料の内容を読み取れませんでした。",
+      "tags": [
+        "使い方",
+        "基礎"
+      ],
+      "url": "/materials/ペットアロマ_使い方・基礎.pdf",
+      "thumbnailUrl": "/materials/thumbnails/ペットアロマ_使い方・基礎.png",
+      "fileType": "pdf"
+    }
+  ],
+  "zoomArchives": [
+    {
+      "id": "z-49",
+      "title": "2026.2.2 Best Buy Buzz!🐝February🫧",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/GjyMxJBu1lo",
+      "thumbnailUrl": "https://img.youtube.com/vi/GjyMxJBu1lo/hqdefault.jpg",
+      "date": "2026.02.02",
+      "sortValue": 20260202
+    },
+    {
+      "id": "z-47",
+      "title": "2026.1.2 Best Buy Buzz!🐝new yaer 🐎",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/YSWDoRxaZH0",
+      "thumbnailUrl": "https://img.youtube.com/vi/YSWDoRxaZH0/hqdefault.jpg",
+      "date": "2026.01.02",
+      "sortValue": 20260102
+    },
+    {
+      "id": "z-45",
+      "title": "2025.12.1Best Buy Buzz!🐝december🎄",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/obLE5TFk-7U",
+      "thumbnailUrl": "https://img.youtube.com/vi/obLE5TFk-7U/hqdefault.jpg",
+      "date": "2025.12.01",
+      "sortValue": 20251201
+    },
+    {
+      "id": "z-43",
+      "title": "2025.11.4Best Buy Buzz!🐝November🍎",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://www.youtube.com/watch?v=f05K-T5if0c",
+      "thumbnailUrl": "https://img.youtube.com/vi/f05K-T5if0c/hqdefault.jpg",
+      "date": "2025.11.04",
+      "sortValue": 20251104
+    },
+    {
+      "id": "z-41",
+      "title": "2025.10.2 Best Buy Buzz!🐝October🎃",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/fjU7i2Zt9zY",
+      "thumbnailUrl": "https://img.youtube.com/vi/fjU7i2Zt9zY/hqdefault.jpg",
+      "date": "2025.10.02",
+      "sortValue": 20251002
+    },
+    {
+      "id": "z-39",
+      "title": "2025.9.2 Best Buy Buzz!🐝September🦞",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/KivISDlxwRk",
+      "thumbnailUrl": "https://img.youtube.com/vi/KivISDlxwRk/hqdefault.jpg",
+      "date": "2025.09.02",
+      "sortValue": 20250902
+    },
+    {
+      "id": "z-34",
+      "title": "2025.8.3 Best Buy Buzz!🐝August🍉",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/LQ0GeCg52s8",
+      "thumbnailUrl": "https://img.youtube.com/vi/LQ0GeCg52s8/hqdefault.jpg",
+      "date": "2025.08.03",
+      "sortValue": 20250803
+    },
+    {
+      "id": "z-31",
+      "title": "2025.7.3 Best Buy Buzz!🐝July🏝️",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/WrW45XnLSfc",
+      "thumbnailUrl": "https://img.youtube.com/vi/WrW45XnLSfc/hqdefault.jpg",
+      "date": "2025.07.03",
+      "sortValue": 20250703
+    },
+    {
+      "id": "z-21",
+      "title": "2025.3.3 Best Buy Buzz!🐝March🌸",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/bEDea7N7uR4",
+      "thumbnailUrl": "https://img.youtube.com/vi/bEDea7N7uR4/hqdefault.jpg",
+      "date": "2025.03.03",
+      "sortValue": 20250303
+    },
+    {
+      "id": "z-18",
+      "title": "2025.2.3 Best Buy Buzz!🐝February🫧",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/0BdvwH1sqPw",
+      "thumbnailUrl": "https://img.youtube.com/vi/0BdvwH1sqPw/hqdefault.jpg",
+      "date": "2025.02.03",
+      "sortValue": 20250203
+    },
+    {
+      "id": "z-17",
+      "title": "2025.1.6 Best Buy Buzz!🐝new yaer🍒🛍️",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/t9Jpa8MrqFU",
+      "thumbnailUrl": "https://img.youtube.com/vi/t9Jpa8MrqFU/hqdefault.jpg",
+      "date": "2025.01.06",
+      "sortValue": 20250106
+    },
+    {
+      "id": "z-16",
+      "title": "2024.12.1 Best Buy Buzz!🐝holiday🎄🎁",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/2KCKpBX274o",
+      "thumbnailUrl": "https://img.youtube.com/vi/2KCKpBX274o/hqdefault.jpg",
+      "date": "2024.12.01",
+      "sortValue": 20241201
+    },
+    {
+      "id": "z-12",
+      "title": "IKISE大解剖zoom！2024.11.13",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/wJ2TaOG6AQI",
+      "thumbnailUrl": "https://img.youtube.com/vi/wJ2TaOG6AQI/hqdefault.jpg",
+      "date": "2024.11.13",
+      "sortValue": 20241113
+    },
+    {
+      "id": "z-11",
+      "title": "2024.11.1 Best Buy Buzz!🐝",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/z6YZM-BbfsY",
+      "thumbnailUrl": "https://img.youtube.com/vi/z6YZM-BbfsY/hqdefault.jpg",
+      "date": "2024.11.01",
+      "sortValue": 20241101
+    },
+    {
+      "id": "z-7",
+      "title": "四万十ソーシングトリップ報告2024.9.12",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/4pA5h9xzqoo",
+      "thumbnailUrl": "https://img.youtube.com/vi/4pA5h9xzqoo/hqdefault.jpg",
+      "date": "2024.09.12",
+      "sortValue": 20240912
+    },
+    {
+      "id": "z-5",
+      "title": "2024.09.02ミネラルモニター説明会 vol.2",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/KiZNStm26bk",
+      "thumbnailUrl": "https://img.youtube.com/vi/KiZNStm26bk/hqdefault.jpg",
+      "date": "2024.09.02",
+      "sortValue": 20240902
+    },
+    {
+      "id": "z-4",
+      "title": "2024.08.19ミネラルモニター説明会 vol.1",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/5FhRv97-P2E",
+      "thumbnailUrl": "https://img.youtube.com/vi/5FhRv97-P2E/hqdefault.jpg",
+      "date": "2024.08.19",
+      "sortValue": 20240819
+    },
+    {
+      "id": "z-3",
+      "title": "2024.8.9スペシャルZOOMセミナー（柳原利弥さん×エリザベスさん）",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/5mEE3hzbtfs",
+      "thumbnailUrl": "https://img.youtube.com/vi/5mEE3hzbtfs/hqdefault.jpg",
+      "date": "2024.08.09",
+      "sortValue": 20240809
+    },
+    {
+      "id": "z-0",
+      "title": "オーストラリア🇦🇺トリップレポ🦘🐨🌿",
+      "description": "オーストラリアに原料の育成、オイルの製造現場を見に行った時の、レポートです。",
+      "tags": [
+        "トリップ",
+        "製品情報"
+      ],
+      "videoUrl": "https://youtu.be/PYI9xvmJnXc?si=_ATyqPdzIpgyhl-r",
+      "thumbnailUrl": "https://img.youtube.com/vi/PYI9xvmJnXc/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-1",
+      "title": "ケニアトリップZOOM報告会",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://www.youtube.com/live/muqfFHkRcr8?si=3m6vXMqNHfE1IXrV",
+      "thumbnailUrl": "",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-2",
+      "title": "ソアクラブ&ミネラルモニターキャンペーン概要",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/qwWpMbt7u0w",
+      "thumbnailUrl": "https://img.youtube.com/vi/qwWpMbt7u0w/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-6",
+      "title": "『まるっと○ドテラ！』byエリザベスチーム",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/YkZ5CmnDbGU",
+      "thumbnailUrl": "https://img.youtube.com/vi/YkZ5CmnDbGU/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-8",
+      "title": "ドテラにようこそ！ビギナーZOOM✨",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/cR5tG5lCLPI",
+      "thumbnailUrl": "https://img.youtube.com/vi/cR5tG5lCLPI/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-9",
+      "title": "グローバルコンベンションレポート2024🇺🇸✨",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/Us-akZd4P8s",
+      "thumbnailUrl": "https://img.youtube.com/vi/Us-akZd4P8s/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-10",
+      "title": "🌿dōTERRA University 🌎【ウェルネスコア】",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/yzyxah-hAqo",
+      "thumbnailUrl": "https://img.youtube.com/vi/yzyxah-hAqo/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-13",
+      "title": "🌿dōTERRA University 🌎【co-impact sourcing】",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/L4IO0w7If3U",
+      "thumbnailUrl": "https://img.youtube.com/vi/L4IO0w7If3U/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-14",
+      "title": "🌿dōTERRA University 🌎【マルチネガ取り】",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/b5uTgn5DLlg",
+      "thumbnailUrl": "https://img.youtube.com/vi/b5uTgn5DLlg/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-15",
+      "title": "🌿dōTERRA University 🌎【マーケティング】",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/9Q-9zLde7dY",
+      "thumbnailUrl": "https://img.youtube.com/vi/9Q-9zLde7dY/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-19",
+      "title": "💎そめたんダイヤモンドSTORY 💎",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/EbqMyGS7IIw?si=Y9TqLJskChlVOVgw",
+      "thumbnailUrl": "https://img.youtube.com/vi/EbqMyGS7IIw/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-20",
+      "title": "ミネラルモニターキャンペーン①",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/gGFKR94bdlw",
+      "thumbnailUrl": "https://img.youtube.com/vi/gGFKR94bdlw/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-22",
+      "title": "新ボーナスプラン解説zoom🤓",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/D-RFKjQkhHA",
+      "thumbnailUrl": "https://img.youtube.com/vi/D-RFKjQkhHA/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-23",
+      "title": "オイルモニターキャンペーン①",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/5Y5Xe6VebKQ",
+      "thumbnailUrl": "https://img.youtube.com/vi/5Y5Xe6VebKQ/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-24",
+      "title": "LCベトナムトリップ報告会🇻🇳",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/mueffnD620k?si=slVLfGiDv0zzvO_o",
+      "thumbnailUrl": "https://img.youtube.com/vi/mueffnD620k/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-25",
+      "title": "オイルモニターキャンペーン②",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/Uj4Q1Th5GIM",
+      "thumbnailUrl": "https://img.youtube.com/vi/Uj4Q1Th5GIM/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-26",
+      "title": "ミネラルモニターキャンペーン②",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/oWDIB7winOY",
+      "thumbnailUrl": "https://img.youtube.com/vi/oWDIB7winOY/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-27",
+      "title": "森の音デラックス“使い方” 徹底解説zoom❤️‍🔥",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/iNyZfX59Hdk",
+      "thumbnailUrl": "https://img.youtube.com/vi/iNyZfX59Hdk/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-28",
+      "title": "🌹BULGARIA Rose Trip Report🌹",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/DJobK1kIBAg",
+      "thumbnailUrl": "https://img.youtube.com/vi/DJobK1kIBAg/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-29",
+      "title": "🌴PD in Bali報告会🌴",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/EsXBTMbEh6M?si=a88LVZp-wRJwP1UJ",
+      "thumbnailUrl": "https://img.youtube.com/vi/EsXBTMbEh6M/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-30",
+      "title": "✨NEWマーケティングプラン解説Zoom✨",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/VYzJ-99Lktc",
+      "thumbnailUrl": "https://img.youtube.com/vi/VYzJ-99Lktc/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-32",
+      "title": "サプリ徹底解説zoom💊",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/IhUcFCh4TVQ",
+      "thumbnailUrl": "https://img.youtube.com/vi/IhUcFCh4TVQ/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-33",
+      "title": "オイコレ徹底解説　シングルオイルver",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/LIJtKwCzkPM",
+      "thumbnailUrl": "https://img.youtube.com/vi/LIJtKwCzkPM/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-35",
+      "title": "診断アプリを使ってリクルートしてみよう！",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/9oXXSuujRA4",
+      "thumbnailUrl": "https://img.youtube.com/vi/9oXXSuujRA4/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-36",
+      "title": "dōTERRAでナチュラルなライフスタイルを叶えよう！",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/rMcNvQebyus",
+      "thumbnailUrl": "https://img.youtube.com/vi/rMcNvQebyus/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-37",
+      "title": "オイコレ徹底解説　ブレンドオイルver",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/hhPA5Edf2Fg",
+      "thumbnailUrl": "https://img.youtube.com/vi/hhPA5Edf2Fg/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-38",
+      "title": "ソアクラブ応援セミナー８・２９森友はるみさん・Elizabeth",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/Siwcxj7_CKY",
+      "thumbnailUrl": "https://img.youtube.com/vi/Siwcxj7_CKY/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-40",
+      "title": "ドテラのある暮らし🏠",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/6c1lkMnb1zw?si=4Ix9Ckd2qQ68Wrrd",
+      "thumbnailUrl": "https://img.youtube.com/vi/6c1lkMnb1zw/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-42",
+      "title": "NEPAL TRIP REPORT!🇳🇵",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/yyUXnxgc98Y",
+      "thumbnailUrl": "https://img.youtube.com/vi/yyUXnxgc98Y/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-44",
+      "title": "サンタプロジェクト説明会🎅🎁",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/3p4BFbik8CQ",
+      "thumbnailUrl": "https://img.youtube.com/vi/3p4BFbik8CQ/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-46",
+      "title": "伝えたい人集合！ELIGO新キャンペーン📝（伝え隊）",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/DCgrglz_BlI",
+      "thumbnailUrl": "https://img.youtube.com/vi/DCgrglz_BlI/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    },
+    {
+      "id": "z-48",
+      "title": "⚡️PREPARE to SHARE💛（伝え隊）",
+      "description": "",
+      "tags": [],
+      "videoUrl": "https://youtu.be/vXcFrc3Pqu4",
+      "thumbnailUrl": "https://img.youtube.com/vi/vXcFrc3Pqu4/hqdefault.jpg",
+      "date": "",
+      "sortValue": 0
+    }
+  ]
+}

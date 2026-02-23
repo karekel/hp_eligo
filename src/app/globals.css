@@ -1,26 +1,107 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* ── Base palette ── */
+  --color-bg: #f0eff0;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b7280;
+  --color-white: #ffffff;
+
+  /* Accent colors */
+  --color-mint: #d5e5d5;
+  --color-gold: #f0c87c;
+  --color-lavender: #d4b8d9;
+  --color-primary: var(--color-lavender);
+  --color-accent: var(--color-mint);
+
+  /* Fonts — Cy Grotesk Wide + Noto Sans JP fallback */
+  --font-noto-jp: "Noto Sans JP", sans-serif;
+  --font-cy-grotesk: "Cy Grotesk Wide", sans-serif;
+  --font-sans: var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
+  --font-heading: var(--font-cy-grotesk), var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ── Smooth scroll ── */
+* {
+  scroll-behavior: smooth;
+}
+
+/* ── Body ── */
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+/* ── Scroll offset for sticky nav ── */
+[id] {
+  scroll-margin-top: 80px;
+}
+
+/* ── Heading font utility (Cy Grotesk Wide) ── */
+.font-heading {
+  font-family: var(--font-heading);
+  font-weight: 100;
+}
+
+/* ── Responsive typography utilities ── */
+.text-hero-title {
+  font-size: clamp(3rem, 15vw, 16rem);
+}
+
+.text-section-title {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+}
+
+.text-about-title {
+  font-size: clamp(2.5rem, 6vw, 6rem);
+}
+
+.text-header-logo {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.text-detail-title {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+}
+
+/* ── Responsive sizing utilities ── */
+.size-hero-mark {
+  width: clamp(3rem, 8vw, 9rem);
+  height: clamp(3rem, 8vw, 9rem);
+}
+
+.h-hero-spacer {
+  height: clamp(3rem, 6vw, 6.5rem);
+}
+
+.top-hero-content {
+  top: clamp(6rem, 12vw, 11.25rem);
+}
+
+/* ── Custom Utilities ── */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* ── Hero Background Animation ── */
+@keyframes hero-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.3;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-hero-fade {
+  animation: hero-fade 5s ease-out forwards;
 }

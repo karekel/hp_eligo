@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ELIGO LP
 
-## Getting Started
+Next.js (App Router) + Tailwind CSS + Framer Motion で構築したランディングページ。
 
-First, run the development server:
+## 起動
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ディレクトリ構成
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/
+│   ├── layout.tsx        # ルートレイアウト（SEO / OGP）
+│   ├── page.tsx          # トップページ（1ページ完結）
+│   └── globals.css       # Tailwind + カスタムテーマ
+├── components/
+│   ├── Header.tsx        # Sticky ヘッダー + モバイルメニュー
+│   ├── HeroSection.tsx   # ファーストビュー
+│   ├── TeamSection.tsx   # メンバー紹介カード
+│   ├── ChatbotSection.tsx# QAチャット外部リンクCTA
+│   ├── VideoSection.tsx  # 動画カード + タグフィルタ
+│   ├── Footer.tsx        # フッター
+│   ├── FadeIn.tsx        # スクロールフェードインラッパー
+│   └── PlaceholderImage.tsx # 画像 or プレースホルダ切替
+├── lib/
+│   ├── siteConfig.ts     # 外部URL / ナビ / サイト設定
+│   ├── siteCopy.ts       # テキストコピー一元管理
+│   ├── siteAssets.ts     # 画像パス一元管理
+│   ├── teamData.ts       # メンバーデータ
+│   └── videoData.ts      # 動画データ + タグ
+public/
+└── assets/               # 画像ファイル置き場
+    ├── hero_bg.jpg
+    ├── hero_visual.png
+    ├── chat_preview.png
+    ├── logo.png
+    ├── og_image.png
+    ├── members/          # メンバーアイコン
+    │   └── member_01.jpg ...
+    └── videos/           # 動画サムネ
+        └── thumb_01.jpg ...
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 差し替え手順
 
-## Learn More
+### 画像を差し替える
 
-To learn more about Next.js, take a look at the following resources:
+1. `/public/assets/` に画像ファイルを配置
+2. `src/lib/siteAssets.ts` のパスを更新（メンバー画像は `src/lib/teamData.ts`、動画サムネは `src/lib/videoData.ts`）
+3. 画像が無い場合はグラデーション+ラベルのプレースホルダが自動表示される
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### テキストを差し替える
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`src/lib/siteCopy.ts` の各セクションの文言を編集する。
 
-## Deploy on Vercel
+### 外部URLを変更する
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`src/lib/siteConfig.ts` の `externalLinks` を編集する。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### メンバーを追加・変更する
+
+`src/lib/teamData.ts` の `members` 配列を編集する。JSON/スプレッドシート連携にも差し替え可能な構造。
+
+### 動画を追加・変更する
+
+`src/lib/videoData.ts` の `videos` 配列を編集する。タグは自動集計される。
+
+## デプロイ
+
+```bash
+npm run build   # 本番ビルド
+npx next start  # 本番起動
+```
+
+Vercel へのデプロイ: リポジトリを接続するだけで自動デプロイ。
