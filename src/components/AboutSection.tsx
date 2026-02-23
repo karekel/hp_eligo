@@ -27,10 +27,10 @@ export default function AboutSection() {
             v1/2.png: "About ELIGŌ" は非常に大きく、薄いウェイトの表示用フォント
             左カラム幅の約80-90%を占める
           */}
-          <h2 className="font-heading mb-8 text-about-title leading-[1.0] text-[#1a1a1a]">
+          <h2 className="font-heading mb-8 text-about-title leading-[1.0] text-[#1a1a1a] text-center md:text-left">
             {philosophy.heading}
           </h2>
-          <p className="max-w-[1200px] text-base leading-relaxed text-[#1a1a1a] whitespace-pre-line">
+          <p className="max-w-[1200px] text-base leading-relaxed text-[#1a1a1a] whitespace-pre-line text-center md:text-left">
             {philosophy.description}
           </p>
         </FadeIn>
