@@ -59,7 +59,7 @@ export default function ContactSection() {
                 <div className="flex gap-6">
                   {/* Instagram */}
                   <a
-                    href={(contact as any).instagram || "#"}
+                    href={contact.instagram || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { siteCopy } from "@/lib/siteCopy";
-import { siteConfig } from "@/lib/siteConfig";
 import { siteAssets } from "@/lib/siteAssets";
 import FadeIn from "./FadeIn";
 
