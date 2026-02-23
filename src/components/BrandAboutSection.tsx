@@ -94,14 +94,14 @@ export default function BrandAboutSection() {
                         />
 
                         {/* 解説パネル */}
-                        <div className="fixed inset-0 z-50 flex items-center justify-center px-4 py-6 md:px-8 md:py-16 pointer-events-none">
+                        <div className="fixed inset-0 z-50 flex items-center justify-center px-4 py-6 md:px-8 md:py-8 pointer-events-none">
                             <motion.div
                                 initial={{ opacity: 0, y: 24 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: 16 }}
                                 transition={{ duration: 0.3, ease: "easeOut" }}
-                                className="relative w-full max-w-6xl pointer-events-auto flex flex-col md:grid md:grid-cols-2"
-                                style={{ maxHeight: "88vh" }}
+                                className="relative w-full max-w-6xl pointer-events-auto flex flex-col md:flex-row overflow-hidden"
+                                style={{ maxHeight: "calc(100vh - 4rem)" }}
                             >
                                 {/* 閉じるボタン */}
                                 <button
@@ -111,8 +111,8 @@ export default function BrandAboutSection() {
                                     ×
                                 </button>
 
-                                {/* 左: フル画像（モバイル: 固定高さ / デスクトップ: 列高に追従） */}
-                                <div className="relative shrink-0 h-[50vw] md:h-auto">
+                                {/* 左: フル画像（モバイル: 固定高さ / デスクトップ: flex stretch で列高に追従） */}
+                                <div className="relative shrink-0 h-[50vw] md:h-auto md:w-1/2">
                                     <Image
                                         src={modalImages[openIndex] ?? ""}
                                         alt={openCard.title}
@@ -122,9 +122,9 @@ export default function BrandAboutSection() {
                                     />
                                 </div>
 
-                                {/* 右: テキスト面（min-h-0 でスクロール確定） */}
+                                {/* 右: テキスト面（flex-1 + min-h-0 でスクロール確定） */}
                                 <div
-                                    className="min-h-0 overflow-y-auto flex flex-col px-8 py-10 md:px-14 md:py-14"
+                                    className="flex-1 min-h-0 overflow-y-auto flex flex-col px-8 py-10 md:px-14 md:py-14"
                                     style={{ backgroundColor: openCard.color }}
                                 >
                                     <h2 className="font-bold text-2xl md:text-4xl text-[#1a1a1a] text-center leading-tight mb-3">
