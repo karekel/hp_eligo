@@ -100,7 +100,7 @@ export default function BrandAboutSection() {
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: 16 }}
                                 transition={{ duration: 0.3, ease: "easeOut" }}
-                                className="relative w-full max-w-6xl pointer-events-auto grid grid-cols-1 md:grid-cols-2"
+                                className="relative w-full max-w-6xl pointer-events-auto flex flex-col md:grid md:grid-cols-2"
                                 style={{ maxHeight: "88vh" }}
                             >
                                 {/* 閉じるボタン */}
@@ -111,8 +111,8 @@ export default function BrandAboutSection() {
                                     ×
                                 </button>
 
-                                {/* 左: フル画像 */}
-                                <div className="relative h-[50vw] md:h-auto">
+                                {/* 左: フル画像（モバイル: 固定高さ / デスクトップ: 列高に追従） */}
+                                <div className="relative shrink-0 h-[50vw] md:h-auto">
                                     <Image
                                         src={modalImages[openIndex] ?? ""}
                                         alt={openCard.title}
@@ -122,9 +122,9 @@ export default function BrandAboutSection() {
                                     />
                                 </div>
 
-                                {/* 右: テキスト面（スクロール） */}
+                                {/* 右: テキスト面（min-h-0 でスクロール確定） */}
                                 <div
-                                    className="overflow-y-auto flex flex-col px-8 py-10 md:px-14 md:py-14"
+                                    className="min-h-0 overflow-y-auto flex flex-col px-8 py-10 md:px-14 md:py-14"
                                     style={{ backgroundColor: openCard.color }}
                                 >
                                     <h2 className="font-bold text-2xl md:text-4xl text-[#1a1a1a] text-center leading-tight mb-3">
