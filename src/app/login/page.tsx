@@ -26,11 +26,14 @@ function LoginForm() {
 
       if (!res.ok) {
         setError("パスワードが違います");
+        setLoading(false);
         return;
       }
 
+      // 認証成功 — loading のまま遷移（コンポーネントがアンマウントされるまで維持）
       router.replace(next);
-    } finally {
+    } catch {
+      setError("エラーが発生しました。再度お試しください。");
       setLoading(false);
     }
   }
@@ -90,9 +93,24 @@ function LoginForm() {
           className="mt-6 w-full rounded-xl py-3 text-white tracking-widest uppercase transition-all duration-150
             bg-black hover:opacity-90
             disabled:opacity-40 disabled:cursor-not-allowed
-            active:scale-[0.98]"
+            active:scale-[0.98] flex items-center justify-center gap-2"
         >
-          {loading ? "認証中..." : "Log in"}
+          {loading ? (
+            <>
+              <svg
+                className="animate-spin h-4 w-4 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
+              </svg>
+              Logging in...
+            </>
+          ) : (
+            "Log in"
+          )}
         </button>
       </form>
     </main>
