@@ -93,55 +93,51 @@ export default function BrandAboutSection() {
                             className="fixed inset-0 z-40 bg-white/80"
                         />
 
-                        {/* 解説パネル（モバイル: 全体スクロール / デスクトップ: テキスト列スクロール） */}
-                        <div className="fixed inset-0 z-50 overflow-y-auto pointer-events-none">
-                            <div className="min-h-full flex items-start md:items-center justify-center px-4 py-6 md:px-8 md:py-16">
-                                <motion.div
-                                    initial={{ opacity: 0, y: 24 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    exit={{ opacity: 0, y: 16 }}
-                                    transition={{ duration: 0.3, ease: "easeOut" }}
-                                    className="relative w-full max-w-6xl pointer-events-auto grid grid-cols-1 md:grid-cols-2 md:max-h-[88vh] md:overflow-hidden"
+                        {/* 解説パネル */}
+                        <div className="fixed inset-0 z-50 flex items-center justify-center px-4 py-6 md:px-8 md:py-16 pointer-events-none">
+                            <motion.div
+                                initial={{ opacity: 0, y: 24 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: 16 }}
+                                transition={{ duration: 0.3, ease: "easeOut" }}
+                                className="relative w-full max-w-6xl pointer-events-auto grid grid-cols-1 md:grid-cols-2"
+                                style={{ maxHeight: "88vh" }}
+                            >
+                                {/* 閉じるボタン */}
+                                <button
+                                    onClick={() => setOpenIndex(null)}
+                                    className="absolute top-3 right-3 z-10 w-8 h-8 flex items-center justify-center bg-black/15 hover:bg-black/30 text-white text-lg leading-none transition-colors"
                                 >
-                                    {/* 閉じるボタン */}
-                                    <button
-                                        onClick={() => setOpenIndex(null)}
-                                        className="absolute top-3 right-3 z-10 w-8 h-8 flex items-center justify-center bg-black/15 hover:bg-black/30 text-white text-lg leading-none transition-colors"
-                                    >
-                                        ×
-                                    </button>
+                                    ×
+                                </button>
 
-                                    {/* 左: フル画像 */}
-                                    <div className="relative h-[70vw] md:h-auto">
-                                        <Image
-                                            src={modalImages[openIndex] ?? ""}
-                                            alt={openCard.title}
-                                            fill
-                                            sizes="(max-width: 768px) 100vw, 50vw"
-                                            className="object-cover object-center"
-                                        />
-                                    </div>
+                                {/* 左: フル画像 */}
+                                <div className="relative h-[50vw] md:h-auto">
+                                    <Image
+                                        src={modalImages[openIndex] ?? ""}
+                                        alt={openCard.title}
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        className="object-cover object-center"
+                                    />
+                                </div>
 
-                                    {/* 右: テキスト面（カード色に合わせたベタ塗り） */}
-                                    <div
-                                        className="flex flex-col px-8 py-10 md:overflow-y-auto md:px-14 md:py-14"
-                                        style={{ backgroundColor: openCard.color }}
-                                    >
-                                        {/* タイトル（中央寄せ） */}
-                                        <h2 className="font-bold text-2xl md:text-4xl text-[#1a1a1a] text-center leading-tight mb-3">
-                                            {openCard.title}
-                                        </h2>
-                                        <p className="text-sm text-[#1a1a1a]/60 text-center mb-6 md:mb-8">
-                                            {openCard.subtitle}
-                                        </p>
-
-                                        {/* 本文（左寄せ） */}
-                                        <p className="text-sm md:text-base leading-loose text-[#1a1a1a] whitespace-pre-line">
-                                            {openCard.body}
-                                        </p>
-                                    </div>
-                                </motion.div>
-                            </div>
+                                {/* 右: テキスト面（スクロール） */}
+                                <div
+                                    className="overflow-y-auto flex flex-col px-8 py-10 md:px-14 md:py-14"
+                                    style={{ backgroundColor: openCard.color }}
+                                >
+                                    <h2 className="font-bold text-2xl md:text-4xl text-[#1a1a1a] text-center leading-tight mb-3">
+                                        {openCard.title}
+                                    </h2>
+                                    <p className="text-sm text-[#1a1a1a]/60 text-center mb-6 md:mb-8">
+                                        {openCard.subtitle}
+                                    </p>
+                                    <p className="text-sm md:text-base leading-loose text-[#1a1a1a] whitespace-pre-line">
+                                        {openCard.body}
+                                    </p>
+                                </div>
+                            </motion.div>
                         </div>
                     </>
                 )}
