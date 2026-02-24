@@ -3,7 +3,7 @@ import { siteAssets } from "@/lib/siteAssets";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="relative w-full min-h-screen overflow-hidden">
+    <section id="hero" className="relative w-full min-h-screen overflow-hidden bg-black">
       {/* 背景 */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -17,8 +17,8 @@ export default function HeroSection() {
 
       {/* 中央配置 */}
       <div className="relative z-10 min-h-screen flex items-center justify-center px-4">
-        {/* ELIGŌ ロゴ（大きく、完全中央） */}
-        <div className="relative w-[92vw] max-w-[1600px] h-[38vh] max-h-[420px]">
+        {/* ELIGŌ ロゴ（少し小さめで） */}
+        <div className="relative w-[80vw] max-w-[1400px] h-[32vh] max-h-[360px]">
           <Image
             src={siteAssets.eligoLogo}
             alt="ELIGŌ"

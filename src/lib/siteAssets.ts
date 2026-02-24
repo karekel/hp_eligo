@@ -24,7 +24,7 @@ export const siteAssets = {
   logoMark: "/assets/Leaders/s.png",
   logo: "/assets/ロゴ/kc.png",
   headerLogo: "/assets/ロゴ/header_logo.png",
-  eligoLogo: "/assets/ロゴ/eligo_logo.png",
+  eligoLogo: "/assets/ロゴ/eligo_logo_white.png",
   aboutMark: "/assets/ロゴ/about_mark.png",
   heroLavender: "/assets/背景/hero_lavender.jpg",
 

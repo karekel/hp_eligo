@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-        ? "bg-[#f0eff0]/90 backdrop-blur-md shadow-sm"
+        ? "bg-black/80 backdrop-blur-md shadow-sm"
         : "bg-transparent"
         }`}
     >
@@ -34,7 +34,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-[2500px] items-center justify-between px-12 py-4">
         {/* Logo: ELIGŌ only */}
         <Link href="/" className="flex items-center transition-opacity hover:opacity-80">
-          <span className="font-heading text-[clamp(1.75rem,3.5vw,3rem)] leading-none tracking-[0.1em] text-[#1a1a1a]">
+          <span className="font-heading text-[clamp(1.75rem,3.5vw,3rem)] leading-none tracking-[0.1em] text-white">
             ELIGŌ
           </span>
         </Link>
@@ -45,7 +45,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="font-heading text-[clamp(0.85rem,1vw,1.05rem)] font-medium tracking-[0.15em] text-[#1a1a1a] uppercase transition-colors hover:text-[#6b7280]"
+              className="font-heading text-[clamp(0.85rem,1vw,1.05rem)] font-medium tracking-[0.15em] text-white uppercase transition-colors hover:text-white/70"
             >
               {item.label}
             </Link>
@@ -60,15 +60,15 @@ export default function Header() {
           aria-expanded={menuOpen}
         >
           <span
-            className={`block h-0.5 w-6 bg-[#1a1a1a] transition-transform ${menuOpen ? "translate-y-2 rotate-45" : ""
+            className={`block h-0.5 w-6 bg-white transition-transform ${menuOpen ? "translate-y-2 rotate-45" : ""
               }`}
           />
           <span
-            className={`block h-0.5 w-6 bg-[#1a1a1a] transition-opacity ${menuOpen ? "opacity-0" : ""
+            className={`block h-0.5 w-6 bg-white transition-opacity ${menuOpen ? "opacity-0" : ""
               }`}
           />
           <span
-            className={`block h-0.5 w-6 bg-[#1a1a1a] transition-transform ${menuOpen ? "-translate-y-2 -rotate-45" : ""
+            className={`block h-0.5 w-6 bg-white transition-transform ${menuOpen ? "-translate-y-2 -rotate-45" : ""
               }`}
           />
         </button>
@@ -76,13 +76,13 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <nav className="border-t border-[#e0e0e0] bg-[#f0eff0]/95 backdrop-blur-md md:hidden">
+        <nav className="border-t border-white/10 bg-black/95 backdrop-blur-md md:hidden">
           <ul className="flex flex-col">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="block px-6 py-4 font-heading text-sm font-medium tracking-[0.15em] text-[#1a1a1a] uppercase transition-colors hover:text-[#6b7280]"
+                  className="block px-6 py-4 font-heading text-sm font-medium tracking-[0.15em] text-white uppercase transition-colors hover:text-white/70"
                   onClick={() => setMenuOpen(false)}
                 >
                   {item.label}

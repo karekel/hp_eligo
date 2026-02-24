@@ -25,7 +25,7 @@ export default function MembersOnlySection() {
       <div className="relative z-10 mx-auto max-w-[2500px] px-12">
         <FadeIn>
           {/* 見出し */}
-          <h2 className="font-heading mb-8 md:mb-12 text-[clamp(44px,5vw,100px)] font-bold tracking-[0.02em] text-[#1a1a1a] uppercase leading-tight">
+          <h2 className="font-heading mb-8 md:mb-12 text-[clamp(44px,5vw,100px)] font-bold tracking-[0.02em] text-[#e0e0e0] uppercase leading-tight">
             {membersOnly.heading}
           </h2>
 
@@ -45,7 +45,7 @@ export default function MembersOnlySection() {
               <FadeIn key={card.title} delay={i * 0.1}>
                 <div className="flex flex-col gap-4">
                   {/* タイトル */}
-                  <h3 className="text-xl md:text-2xl font-bold tracking-tight text-[#1a1a1a]">
+                  <h3 className="text-xl md:text-2xl font-bold tracking-tight text-[#e0e0e0]">
                     {card.title}
                   </h3>
 

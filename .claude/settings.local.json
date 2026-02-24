@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(taskkill:*)",
+      "Bash(cmd //c \"taskkill /PID 29464 /F\")",
+      "Bash(ls:*)",
+      "Bash(head:*)",
+      "Bash(cd C:/hp_eligo && npx tsc --noEmit 2>&1)",
+      "Bash(cd:*)",
+      "Bash(tail:*)",
+      "Bash(echo OK:*)",
+      "Bash(cd /c/hp_eligo && git push origin main 2>&1)",
+      "Bash(echo:*)"
+    ]
+  }
+}

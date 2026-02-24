@@ -23,10 +23,10 @@ export default function VibeFinderSection() {
 
       <div className="relative z-10 mx-auto max-w-[2500px] px-12">
         <FadeIn>
-          <p className="mb-4 text-sm font-semibold tracking-[0.25em] text-[#1a1a1a] uppercase">
+          <p className="mb-4 text-sm font-semibold tracking-[0.25em] text-[#e0e0e0] uppercase">
             {vibeFinder.label}
           </p>
-          <h2 className="font-heading mb-12 md:mb-16 text-about-title font-bold tracking-[0.02em] text-[#1a1a1a] uppercase leading-tight">
+          <h2 className="font-heading mb-12 md:mb-16 text-about-title font-bold tracking-[0.02em] text-[#e0e0e0] uppercase leading-tight">
             Vibe Finder
           </h2>
         </FadeIn>
@@ -36,11 +36,11 @@ export default function VibeFinderSection() {
             {/* Left: Copy */}
             <div className="w-full">
               {/* BOLD block title as seen in reference image */}
-              <div className="mb-8 max-w-[1200px] text-left font-bold text-[#1a1a1a] md:text-xl">
+              <div className="mb-8 max-w-[1200px] text-left font-bold text-[#e0e0e0] md:text-xl">
                 {vibeFinder.descriptionTitle}
               </div>
 
-              <div className="max-w-[1600px] whitespace-pre-line text-base leading-relaxed text-[#1a1a1a]">
+              <div className="max-w-[1600px] whitespace-pre-line text-base leading-relaxed text-[#e0e0e0]">
                 {vibeFinder.description}
               </div>
             </div>
