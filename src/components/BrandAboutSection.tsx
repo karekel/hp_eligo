@@ -31,12 +31,12 @@ export default function BrandAboutSection() {
             <div className="relative z-10 mx-auto max-w-[2500px] px-12">
                 {/* 見出し */}
                 <FadeIn className="mb-2">
-                    <h2 className="font-heading text-about-title leading-[1.0] text-[#e0e0e0] uppercase">
+                    <h2 className="font-heading text-about-title leading-[1.0] text-[#1a1a1a] uppercase">
                         {about.heading}
                     </h2>
                 </FadeIn>
                 <FadeIn delay={0.1} className="mb-12">
-                    <p className="text-base font-bold text-[#e0e0e0]">{about.subtitle}</p>
+                    <p className="text-base font-bold text-[#1a1a1a]">{about.subtitle}</p>
                 </FadeIn>
 
                 {/* カードグリッド — 3列固定、等高 */}
@@ -60,10 +60,10 @@ export default function BrandAboutSection() {
                                     className="w-full aspect-[2/1] flex flex-col items-center justify-center px-8 gap-3"
                                     style={{ backgroundColor: card.color }}
                                 >
-                                    <h3 className="font-bold text-2xl text-[#e0e0e0] text-center leading-relaxed">
+                                    <h3 className="font-bold text-2xl text-[#1a1a1a] text-center leading-relaxed">
                                         {card.title}
                                     </h3>
-                                    <p className="text-sm text-[#e0e0e0]/60 text-center leading-relaxed">
+                                    <p className="text-sm text-[#1a1a1a]/60 text-center leading-relaxed">
                                         {card.subtitle}
                                     </p>
                                     <button
@@ -127,13 +127,13 @@ export default function BrandAboutSection() {
                                     className="flex-1 min-h-0 overflow-y-auto flex flex-col px-8 py-10 md:px-14 md:py-14"
                                     style={{ backgroundColor: openCard.color }}
                                 >
-                                    <h2 className="font-bold text-2xl md:text-4xl text-[#e0e0e0] text-center leading-tight mb-3">
+                                    <h2 className="font-bold text-2xl md:text-4xl text-[#1a1a1a] text-center leading-tight mb-3">
                                         {openCard.title}
                                     </h2>
-                                    <p className="text-sm text-[#e0e0e0]/60 text-center mb-6 md:mb-8">
+                                    <p className="text-sm text-[#1a1a1a]/60 text-center mb-6 md:mb-8">
                                         {openCard.subtitle}
                                     </p>
-                                    <p className="text-sm md:text-base leading-loose text-[#e0e0e0] whitespace-pre-line">
+                                    <p className="text-sm md:text-base leading-loose text-[#1a1a1a] whitespace-pre-line">
                                         {openCard.body}
                                     </p>
                                 </div>

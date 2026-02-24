@@ -21,7 +21,7 @@ export default function IntroVideosSection() {
 
       <div className="relative z-10 mx-auto max-w-[2500px] px-12">
         <FadeIn>
-          <h2 className="font-heading mb-8 md:mb-12 text-[clamp(44px,5vw,100px)] font-bold tracking-[0.02em] text-[#e0e0e0] uppercase leading-tight">
+          <h2 className="font-heading mb-8 md:mb-12 text-[clamp(44px,5vw,100px)] font-bold tracking-[0.02em] text-[#1a1a1a] uppercase leading-tight">
             {introVideos.heading}
           </h2>
         </FadeIn>
@@ -39,7 +39,7 @@ export default function IntroVideosSection() {
               <div className="flex flex-col gap-4">
                 {/* タイトル */}
                 {item.title && (
-                  <h3 className="text-xl font-bold tracking-tight text-[#e0e0e0]">
+                  <h3 className="text-xl font-bold tracking-tight text-[#1a1a1a]">
                     {item.title}
                   </h3>
                 )}
@@ -68,7 +68,7 @@ export default function IntroVideosSection() {
                 </a>
 
                 {/* 説明文 */}
-                <p className="text-sm leading-relaxed text-[#e0e0e0] whitespace-pre-line">
+                <p className="text-sm leading-relaxed text-[#1a1a1a] whitespace-pre-line">
                   {item.description}
                 </p>
               </div>
