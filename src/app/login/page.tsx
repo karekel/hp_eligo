@@ -1,14 +1,13 @@
 "use client";
 
 import { Suspense, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 function LoginForm() {
   const [pw, setPw] = useState("");
   const [showPw, setShowPw] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const router = useRouter();
   const sp = useSearchParams();
   const next = sp.get("next") || "/members";
 
@@ -30,8 +29,9 @@ function LoginForm() {
         return;
       }
 
-      // 認証成功 — loading のまま遷移（コンポーネントがアンマウントされるまで維持）
-      router.replace(next);
+      // Edge Runtime により Set-Cookie はレスポンス受信時に確実に処理済み。
+      // window.location で Next.js ルーターキャッシュを完全バイパスして遷移。
+      window.location.replace(next);
     } catch {
       setError("エラーが発生しました。再度お試しください。");
       setLoading(false);
@@ -69,13 +69,11 @@ function LoginForm() {
             aria-label={showPw ? "パスワードを隠す" : "パスワードを表示"}
           >
             {showPw ? (
-              /* 目アイコン（表示中） */
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                 <circle cx="12" cy="12" r="3"/>
               </svg>
             ) : (
-              /* 目に斜線（非表示中） */
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
                 <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/>
