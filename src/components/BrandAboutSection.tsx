@@ -28,7 +28,7 @@ export default function BrandAboutSection() {
                 className="object-cover object-center"
             />
 
-            <div className="relative z-10 mx-auto max-w-[2500px] px-12">
+            <div className="relative z-10 mx-auto max-w-[2500px] px-6 md:px-12">
                 {/* 見出し */}
                 <FadeIn className="mb-2">
                     <h2 className="font-heading text-about-title leading-[1.0] text-[#1a1a1a] uppercase">

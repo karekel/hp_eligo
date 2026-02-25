@@ -65,7 +65,7 @@ export default function ArchiveGallery({
 
     return (
         <section id={id} className={`scroll-mt-32 py-24 md:py-32 ${bgColor}`}>
-            <div className="mx-auto max-w-[2500px] px-12">
+            <div className="mx-auto max-w-[2500px] px-6 md:px-12">
                 <FadeIn>
                     <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
                         <div>

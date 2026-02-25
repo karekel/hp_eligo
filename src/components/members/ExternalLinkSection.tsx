@@ -19,7 +19,7 @@ export default function ExternalLinkSection({
 }: ExternalLinkSectionProps) {
     return (
         <section id={id} className={`scroll-mt-32 py-24 md:py-32 ${bgColor}`}>
-            <div className="mx-auto max-w-[2500px] px-12 text-left">
+            <div className="mx-auto max-w-[2500px] px-6 md:px-12 text-left">
                 <FadeIn className="flex flex-col items-start">
                     <h2 className="font-heading mb-6 text-members-heading tracking-[0.02em] text-[#1a1a1a] uppercase leading-none">
                         {title}

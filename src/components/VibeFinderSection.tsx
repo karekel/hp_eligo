@@ -21,7 +21,7 @@ export default function VibeFinderSection() {
         />
       )}
 
-      <div className="relative z-10 mx-auto max-w-[2500px] px-12">
+      <div className="relative z-10 mx-auto max-w-[2500px] px-6 md:px-12 flex h-full flex-col">
         <FadeIn>
           <h2 className="font-heading mb-12 md:mb-16 text-about-title tracking-[0.02em] text-[#1a1a1a] uppercase leading-tight">
             Vibe Finder

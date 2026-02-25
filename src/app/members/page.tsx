@@ -29,7 +29,7 @@ export default function MembersPage() {
                     <div className="mx-auto max-w-[2500px] px-12">
                         <FadeIn className="text-center">
                             <h1 className="font-demi text-[clamp(48px,8vw,120px)] tracking-[0.05em] text-[#1a1a1a] inline-block">
-                                <span className="bg-[#d4b8d9]/60 px-4 pt-[1px] pb-[8px] rounded-sm inline-flex items-center leading-none">
+                                <span className="bg-[#d4b8d9]/60 px-4 pt-[20px] pb-[8px] rounded-sm inline-flex items-center leading-none">
                                     The ELIGŌ Team
                                 </span>
                             </h1>

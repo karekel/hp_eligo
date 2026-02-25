@@ -35,7 +35,7 @@ export default function Header() {
         items-start: ロゴ（大きい）とナビ（小さい）を上揃えにする
         → v1スクショと同様にナビが右上、ELIGŌが大きく左下に広がるレイアウト
       */}
-      <div className="mx-auto flex max-w-[2500px] items-center justify-between px-12 py-4">
+      <div className="mx-auto flex max-w-[2500px] items-center justify-between px-6 md:px-12 py-4">
         {/* Logo: ELIGŌ only */}
         <Link href="/" className="flex items-center transition-opacity hover:opacity-80">
           <span className={`font-heading text-[clamp(1.75rem,3.5vw,3rem)] leading-none tracking-[0.1em] ${isMembersPage ? "text-[#1a1a1a]" : "text-white"

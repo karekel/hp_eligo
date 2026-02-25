@@ -22,7 +22,7 @@ export default function MembersOnlySection() {
         />
       )}
 
-      <div className="relative z-10 mx-auto max-w-[2500px] px-12">
+      <div className="relative z-10 mx-auto max-w-[2500px] px-6 md:px-12">
         <FadeIn>
           {/* 見出し */}
           <h2 className="font-heading mb-8 md:mb-12 text-about-title tracking-[0.02em] text-[#1a1a1a] uppercase leading-tight">

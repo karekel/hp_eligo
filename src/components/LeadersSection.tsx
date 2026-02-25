@@ -21,7 +21,7 @@ export default function LeadersSection() {
         />
       )}
 
-      <div className="relative z-10 mx-auto max-w-[2500px] px-12">
+      <div className="relative z-10 mx-auto max-w-[2500px] px-6 md:px-12">
         <FadeIn>
           <h2 className="font-heading mb-6 md:mb-8 text-about-title tracking-[0.02em] text-[#1a1a1a]">
             {copy.heading}
