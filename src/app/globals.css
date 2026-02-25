@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "CyGroteskWide";
+  font-family: "CyGroteskWideThin";
   src: url("/fonts/CyGrotesk-WideThin.otf") format("opentype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CyGroteskWideRegular";
+  src: url("/fonts/CyGrotesk-WideRegular.otf") format("opentype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -26,8 +34,8 @@
   --font-noto-jp: "Noto Sans JP", sans-serif;
   --font-cy-grotesk: var(--font-cy-grotesk);
   /* Map to the variable from layout.tsx */
-  --font-sans: "CyGroteskWide", var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
-  --font-heading: "CyGroteskWide", var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "CyGroteskWideRegular", var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "CyGroteskWideThin", var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
 }
 
 /* ── Smooth scroll ── */
@@ -40,7 +48,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-weight: 100;
+  font-weight: 400;
 }
 
 /* ── Scroll offset for sticky nav ── */
