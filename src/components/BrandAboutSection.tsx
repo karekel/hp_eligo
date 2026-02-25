@@ -35,9 +35,6 @@ export default function BrandAboutSection() {
                         {about.heading}
                     </h2>
                 </FadeIn>
-                <FadeIn delay={0.1} className="mb-12">
-                </FadeIn>
-
                 {/* カードグリッド — 3列固定、等高 */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {cards.map((card, i) => (
