@@ -4,18 +4,21 @@ import { Noto_Sans_JP } from "next/font/google";
 import { siteConfig } from "@/lib/siteConfig";
 import "./globals.css";
 
-const cyGroteskWide = localFont({
-  src: "../../public/fonts/CyGrotesk-WideBold.otf",
+const cyGrotesk = localFont({
+  src: [
+    {
+      path: "../../public/fonts/CyGrotesk-WideThin.otf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/CyGrotesk-WideBold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-cy-grotesk",
   display: "swap",
-  weight: "400",
-});
-
-const cyGroteskThin = localFont({
-  src: "../../public/fonts/CyGrotesk-WideThin.otf",
-  variable: "--font-cy-grotesk-thin",
-  display: "swap",
-  weight: "100",
 });
 
 const notoSansJP = Noto_Sans_JP({
@@ -49,7 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${cyGroteskWide.variable} ${cyGroteskThin.variable} ${notoSansJP.variable} antialiased`}>
+      <body className={`${cyGrotesk.variable} ${notoSansJP.variable} antialiased`}>
         {children}
       </body>
     </html>
