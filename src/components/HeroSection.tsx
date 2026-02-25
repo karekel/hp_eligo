@@ -17,8 +17,8 @@ export default function HeroSection() {
 
       {/* 中央配置 */}
       <div className="relative z-10 min-h-screen flex items-center justify-center px-4">
-        {/* ELIGŌ ロゴ（少し小さめで） */}
-        <div className="relative w-[80vw] max-w-[1400px] h-[32vh] max-h-[360px]">
+        {/* ELIGŌ ロゴ（さらに小さくして中央配置） */}
+        <div className="relative w-[40vw] max-w-[700px] h-[16vh] max-h-[180px]">
           <Image
             src={siteAssets.eligoLogo}
             alt="ELIGŌ"

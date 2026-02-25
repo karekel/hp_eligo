@@ -24,8 +24,8 @@ export const siteAssets = {
   logoMark: "/assets/Leaders/s.png",
   logo: "/assets/ロゴ/kc.png",
   headerLogo: "/assets/ロゴ/header_logo.png",
-  eligoLogo: "/assets/ロゴ/eligo_logo_white.png",
-  aboutMark: "/assets/ロゴ/about_mark.png",
+  eligoLogo: "/assets/ロゴ/eligofront白.png",
+  aboutMark: "/assets/ロゴ/mark_center.png",
   heroLavender: "/assets/背景/hero_lavender.jpg",
 
 
@@ -44,9 +44,9 @@ export const siteAssets = {
   leaders: [
     "/assets/Leaders/s.png",
     "/assets/Leaders/b.jpg",
-    "/assets/Leaders/c.png",
+    "/assets/Leaders/ccc.png",
     "/assets/Leaders/d.png",
-    "/assets/Leaders/e.png",
+    "/assets/Leaders/e2.png",
     "/assets/Leaders/a.jpg",
   ],
 

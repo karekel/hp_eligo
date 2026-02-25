@@ -31,11 +31,11 @@ export default function ExternalLinkSection({
                         href={href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group relative inline-flex items-center gap-4 rounded-full border-2 border-[#b08cb9] px-16 py-5 text-sm font-bold tracking-[0.2em] text-[#1a1a1a] uppercase transition-all hover:bg-[#b08cb9] hover:text-white"
+                        className="group relative flex w-full max-w-[340px] items-center justify-center gap-4 rounded-full border-2 border-[#b08cb9] py-5 text-sm font-bold tracking-[0.2em] text-[#1a1a1a] uppercase transition-all hover:bg-[#b08cb9] hover:text-white"
                     >
                         <span>{buttonLabel}</span>
                         <svg
-                            className="h-4 w-4 transition-transform group-hover:translate-x-1"
+                            className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"

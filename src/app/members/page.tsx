@@ -44,7 +44,7 @@ export default function MembersPage() {
                 {/* 1) ELIGO SHOP */}
                 <ExternalLinkSection
                     id="eligo-shop"
-                    title="ELIGO SHOP"
+                    title="ELIGŌ SHOP"
                     description="厳選されたドテラ製品をメンバー特別価格で。最新のラインナップをチェックして、あなたの暮らしに彩りを。"
                     buttonLabel="SHOPにアクセス"
                     href={members.shopUrl}
@@ -54,7 +54,7 @@ export default function MembersPage() {
                 {/* 2) ELIGO BOT */}
                 <ExternalLinkSection
                     id="eligo-bot"
-                    title="ELIGO BOT"
+                    title="ELIGŌ BOT"
                     description="24時間いつでも知識を引き出せるAIアシスタント。精油の使い方や体験談を瞬時に検索し、あなたの疑問を解決します。"
                     buttonLabel="BOTを起動"
                     href={members.botUrl}

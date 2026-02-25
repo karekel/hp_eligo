@@ -3,7 +3,9 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/lib/siteConfig";
+import { siteAssets } from "@/lib/siteAssets";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
@@ -34,12 +36,17 @@ export default function Header() {
         → v1スクショと同様にナビが右上、ELIGŌが大きく左下に広がるレイアウト
       */}
       <div className="mx-auto flex max-w-[2500px] items-center justify-between px-12 py-4">
-        {/* Logo: ELIGŌ only */}
+        {/* Logo: Logo image instead of text */}
         <Link href="/" className="flex items-center transition-opacity hover:opacity-80">
-          <span className={`font-heading text-[clamp(1.75rem,3.5vw,3rem)] leading-none tracking-[0.1em] ${isMembersPage ? "text-[#1a1a1a]" : "text-white"
-            }`}>
-            ELIGŌ
-          </span>
+          <div className={`relative h-10 md:h-12 w-40 md:w-56 ${isMembersPage ? "invert" : ""}`}>
+            <Image
+              src={siteAssets.eligoLogo}
+              alt="ELIGŌ"
+              fill
+              className="object-contain object-left"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop nav */}

@@ -133,9 +133,9 @@ export default function BrandAboutSection() {
                                     <p className="text-sm text-[#1a1a1a]/60 text-center mb-6 md:mb-8">
                                         {openCard.subtitle}
                                     </p>
-                                    <p className="text-sm md:text-base leading-loose text-[#1a1a1a] whitespace-pre-line">
-                                        {openCard.body}
-                                    </p>
+                                    <div className="text-sm md:text-base leading-loose text-[#1a1a1a]">
+                                        <BodyRenderer body={openCard.body} />
+                                    </div>
                                 </div>
                             </motion.div>
                         </div>
@@ -143,5 +143,118 @@ export default function BrandAboutSection() {
                 )}
             </AnimatePresence>
         </section>
+    );
+}
+
+function BodyRenderer({ body }: { body: string }) {
+    const lines = body.split("\n");
+
+    return (
+        <>
+            {lines.map((line, i) => {
+                // YouTube URL のチェック
+                const ytMatch = line.trim().match(/https:\/\/www\.youtube\.com\/watch\?v=([\w-]+)(?:&t=(\d+))?/);
+                if (ytMatch) {
+                    const videoId = ytMatch[1];
+                    return (
+                        <div key={i} className="my-6 flex justify-center">
+                            <a
+                                href={line.trim()}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative aspect-video w-full max-w-[400px] overflow-hidden rounded-lg bg-gray-200 shadow-sm block"
+                            >
+                                <Image
+                                    src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                                    alt="Video Thumbnail"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
+                                <div className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors group-hover:bg-black/0">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/90 shadow-md">
+                                        <svg className="ml-0.5 h-5 w-5 text-[#1a1a1a]" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    );
+                }
+
+                // 特殊リンクのパース
+                let content: React.ReactNode = line;
+
+                // [quality_link:text]
+                if (line.includes("[quality_link:")) {
+                    const match = line.match(/\[quality_link:(.*?)\]/);
+                    if (match) {
+                        content = (
+                            <a
+                                href="https://www.sourcetoyou.com/jp/quality"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:underline"
+                            >
+                                {match[1]}
+                            </a>
+                        );
+                    }
+                }
+                // [growers_link:text]
+                else if (line.includes("[growers_link:")) {
+                    const match = line.match(/\[growers_link:(.*?)\]/);
+                    if (match) {
+                        content = (
+                            <a
+                                href="https://www.sourcetoyou.com/jp/growers"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:underline"
+                            >
+                                {match[1]}
+                            </a>
+                        );
+                    }
+                }
+                else {
+                    // dōTERRA の一律リンク化 (What is Eligo 用)
+                    // 正規表現で「dōTERRA（ドテラ）」や「dōTERRA」を置換
+                    const parts = line.split(/(dōTERRA（ドテラ）|dōTERRA)/g);
+                    content = parts.map((part, index) => {
+                        if (part === "dōTERRA" || part === "dōTERRA（ドテラ）") {
+                            return (
+                                <a
+                                    key={index}
+                                    href="https://www.doterra.com/JP/ja_JP"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-600 hover:underline"
+                                >
+                                    {part}
+                                </a>
+                            );
+                        }
+                        // 太字の処理 **text**
+                        if (part.includes("**")) {
+                            const boldParts = part.split(/(\*\*.*?\*\*)/g);
+                            return boldParts.map((bp, bIndex) => {
+                                if (bp.startsWith("**") && bp.endsWith("**")) {
+                                    return <strong key={bIndex} className="font-bold">{bp.slice(2, -2)}</strong>;
+                                }
+                                return bp;
+                            });
+                        }
+                        return part;
+                    });
+                }
+
+                return (
+                    <p key={i} className="min-h-[1.5em] mb-2 last:mb-0">
+                        {content}
+                    </p>
+                );
+            })}
+        </>
     );
 }
