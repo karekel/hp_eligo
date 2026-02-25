@@ -27,10 +27,12 @@ export type Leader = {
         signatureOils: { name: string; desc: string }[];
         reason: string;
         whyDoterra: string;
+        image?: string;
     };
     vision: {
         ourCulture: string;
         invite: string;
+        image?: string;
     };
 };
 
@@ -47,10 +49,10 @@ export const leaders: Leader[] = [
         identity: {
             profile: `34歳。７歳長女、６歳双子男子、４歳次女の母。社会問題発信インフルエンサー。ドテラ４年目`,
             place: `東京都在住。年に数回ずつ、大阪や福岡、名古屋にも行きます。`,
+            image: "/assets/Leaders/Eli_Iden.JPG",
         },
         myStory: {
-            signatureOilsLabel: "My Signature Palette：私の３本",
-            signatureOils: [
+                signatureOils: [
                 { name: "・セレニティ", desc: "母が亡くなって最初に嗅いだ香り。身体に染み入る癒しの力に驚いた。" },
                 { name: "・サンダルウッド", desc: "心がざわつく時に、どっしりグラウンディングさせてくれる香り。" },
                 { name: "・ジャスミン", desc: "「自分は自分でいいんだ」という強さをくれる、気高く美しい香り。" },
@@ -60,6 +62,7 @@ export const leaders: Leader[] = [
             whyDoterra: `ドテラが実践するコ・インパクトソーシングの仕組みと理念を知ったとき、私はこの企業が地球規模で必要であることを確信しました。
 エッセンシャルオイルの医療活用という分野においても、ドテラが次世代のスタンダードを創り、業界を牽引していく未来はすでに明確です。
 妥協のない本物のアイテムを伝え広め、人々の人生をより良く変えていけることが、私の何よりの誇りです。`,
+            image: "/assets/Leaders/IMG_1498.jpeg",
         },
         vision: {
             ourCulture: `単なる製品解説ではなく、背景にある根拠や最新の研究情報まで網羅。メンバー自身が深く納得し、自ら選び取れる知識を提供します。
@@ -69,6 +72,7 @@ export const leaders: Leader[] = [
 大前提としてあるのは、「まずは自分でやってみる」「自分で調べて、自分の責任で動く」という姿勢。 この主体性があるからこそ、『依存』ではなく、本当の『自立』が始まります。
 誰かに満たしてもらうことを期待するのではなく、「自分を満足させられるのは自分自身だけだ」と自覚していること。
 その覚悟を持ったあなたなら、私が本気で作り上げている圧倒的なリソースや学びの環境をフルに活用して、間違いなく自分自身の「最高の人生」をデザインしていけるはずです。`,
+            image: "/assets/Leaders/IMG_8543.JPG",
         }
     },
     {
