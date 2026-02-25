@@ -19,7 +19,7 @@ export default function BrandAboutSection() {
     const openCard = openIndex !== null ? cards[openIndex] : null;
 
     return (
-        <section id="about" className="relative overflow-hidden py-24 md:py-32">
+        <section id="about" className="relative overflow-hidden pt-8 md:pt-14 pb-24 md:pb-32">
             {/* セクション背景 */}
             <Image
                 src="/assets/v1/8.png"

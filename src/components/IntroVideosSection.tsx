@@ -8,7 +8,7 @@ export default function IntroVideosSection() {
   const { introVideos } = siteCopy;
 
   return (
-    <section id="intro" className="relative py-20 md:py-28 overflow-hidden">
+    <section id="intro" className="relative pt-8 md:pt-14 pb-20 md:pb-28 overflow-hidden">
       {/* 背景: 背景/5.png (統一背景モード時は非表示) */}
       {!siteAssets.useUnifiedBackground && (
         <Image

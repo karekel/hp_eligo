@@ -8,7 +8,7 @@ export default function ContactSection() {
   const { contact } = siteCopy;
 
   return (
-    <section className="relative py-10 md:py-14 overflow-hidden">
+    <section className="relative pt-8 md:pt-14 pb-10 md:pb-14 overflow-hidden">
       {/* 背景: 背景/7.png (統一背景モード時は非表示) */}
       {!siteAssets.useUnifiedBackground && (
         <Image

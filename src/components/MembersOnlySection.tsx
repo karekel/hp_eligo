@@ -10,7 +10,7 @@ export default function MembersOnlySection() {
   return (
     <section
       id="members-only"
-      className="relative py-20 md:py-28 overflow-hidden"
+      className="relative pt-8 md:pt-14 pb-20 md:pb-28 overflow-hidden"
     >
       {/* 背景: 背景/6.png (統一背景モード時は非表示) */}
       {!siteAssets.useUnifiedBackground && (

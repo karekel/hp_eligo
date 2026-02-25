@@ -9,7 +9,7 @@ export default function VibeFinderSection() {
   return (
     <section
       id="vibe-finder"
-      className="relative py-20 md:py-28 overflow-hidden"
+      className="relative pt-8 md:pt-14 pb-20 md:pb-28 overflow-hidden"
     >
       {/* 背景: 背景/4.png (統一背景モード時は非表示) */}
       {!siteAssets.useUnifiedBackground && (
@@ -35,6 +35,9 @@ export default function VibeFinderSection() {
           <div className="grid items-start gap-12 md:grid-cols-[1.5fr_1fr]">
             {/* Left: Copy */}
             <div className="w-full">
+              <div className="mb-8 max-w-[1200px] text-left font-bold text-[#1a1a1a] md:text-xl">
+                {vibeFinder.descriptionTitle}
+              </div>
               <div className="max-w-[1600px] whitespace-pre-line text-base leading-relaxed text-[#1a1a1a]">
                 {vibeFinder.description}
               </div>
