@@ -72,6 +72,7 @@ https://www.youtube.com/watch?v=ED10RosqNUY&t=67
   },
 
   vibeFinder: {
+    label: "LET'S CHECK YOUR OILS!",
     heading: "Vibe\nFinder",
     descriptionTitle: "Let's Check Your Oils!!",
     description: "人生を自ら編集するためには、まず「今の自分」の状態を知ることから始まります。Vibe Finderは、あなたの性格的傾向や日々のコンディションを多角的に診断。\n今のあなたを最も輝かせる、特別な5本のエッセンシャルオイルを導き出します。\n\nそれぞれのオイルを、いつ、どのようなシーンで手に取るべきか。その具体的なライフスタイル・レシピとともに、あなたのバイブスを整える最適な選択肢を提示します。\n\n自分の人生を自らデザインするために、まずは自分の現在地を知ることから。Vibe Finderは、あなたの毎日をより鮮やかに「設計」するためのヒントになります。",
