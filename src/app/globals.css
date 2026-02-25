@@ -1,17 +1,9 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "CyGroteskWideMedium";
-  src: url("/fonts/CyGrotesk-WideMedium.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "CyGroteskWideBold";
-  src: url("/fonts/CyGrotesk-WideBold.otf") format("opentype");
-  font-weight: 700;
+  font-family: "CyGroteskWideThin";
+  src: url("/fonts/CyGrotesk-WideThin.otf") format("opentype");
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
@@ -34,8 +26,8 @@
   --font-noto-jp: "Noto Sans JP", sans-serif;
   --font-cy-grotesk: var(--font-cy-grotesk);
   /* Map to the variable from layout.tsx */
-  --font-sans: "CyGroteskWideMedium", var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
-  --font-heading: "CyGroteskWideBold", var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "CyGroteskWideThin", var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "CyGroteskWideThin", var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
 }
 
 /* ── Smooth scroll ── */
@@ -48,7 +40,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-weight: 400;
+  font-weight: 100;
 }
 
 /* ── Scroll offset for sticky nav ── */
@@ -59,7 +51,7 @@ body {
 /* ── Heading font utility (Cy Grotesk Wide) ── */
 .font-heading {
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 100;
 }
 
 /* ── Responsive typography utilities ── */
