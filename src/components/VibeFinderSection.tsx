@@ -29,7 +29,7 @@ export default function VibeFinderSection() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <div className="grid items-start gap-12 md:grid-cols-[1.5fr_1fr]">
+          <div className="grid items-center gap-12 md:grid-cols-[1.5fr_1fr]">
             {/* Left: Copy */}
             <div className="w-full">
               <div className="mb-8 max-w-[1200px] text-left font-bold text-[#1a1a1a] md:text-xl">

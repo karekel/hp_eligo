@@ -57,6 +57,7 @@ https://www.youtube.com/watch?v=ED10RosqNUY&t=67
 
 **Lifestyle & Craft**
 毎日のセルフケアから、香水やバスボム、口紅作りのクラフトワークショップ、また料理、味噌作り講座まで。dōTERRA公認アロマタッチトレーナーである主宰のElizabethから、家族を直接ケアできる「確かな知識と技術」を習得することもできます。 
+[image_grid:/assets/ABOUT/Lifestyle & Craft１.jpg,/assets/ABOUT/Lifestyle & Craft2.jpg]
 
 **Business & Influence**
 ビジネスとして展開したいメンバーに向けたSNS戦略などのzoomも開催。あなたの「好き」や「美意識」を社会への影響力に変え、経済的な主権を確立する実践的なルートがあります。 

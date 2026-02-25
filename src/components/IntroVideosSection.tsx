@@ -37,13 +37,7 @@ export default function IntroVideosSection() {
                 }`}
             >
               <div className="flex flex-col gap-4">
-                {/* タイトル */}
-                {item.title && (
-                  <h3 className="text-xl font-bold tracking-tight text-[#1a1a1a]">
-                    {item.title}
-                  </h3>
-                )}
-
+                
                 {/* 動画サムネイル / リンク */}
                 <a
                   href={item.videoId ? `https://www.youtube.com/watch?v=${item.videoId}` : "#"}
@@ -66,6 +60,13 @@ export default function IntroVideosSection() {
                     </div>
                   </div>
                 </a>
+               {/* タイトル */}
+                {item.title && (
+                  <h3 className="text-xl font-bold tracking-tight text-[#1a1a1a]">
+                    {item.title}
+                  </h3>
+                )}
+
 
                 {/* 説明文 */}
                 <p className="text-sm leading-relaxed text-[#1a1a1a] whitespace-pre-line">

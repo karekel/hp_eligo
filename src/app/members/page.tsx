@@ -84,6 +84,17 @@ export default function MembersPage() {
 
                 {/* Footer Spacer or simple footer if needed */}
                 <div className="h-40" />
+
+                {/* Bottom Right Logo */}
+                <div className="absolute bottom-4 right-4 z-20 opacity-40">
+                    <Image
+                        src="/assets/ロゴ/kc.png"
+                        alt="KC Logo"
+                        width={38}
+                        height={38}
+                        className="object-contain"
+                    />
+                </div>
             </main>
         </>
     );

@@ -19,7 +19,7 @@ export default function AboutSection() {
         />
       )}
 
-      <div className="relative z-10 mx-auto grid max-w-[2500px] items-start gap-12 px-6 md:px-12 md:grid-cols-[3.5fr_1.5fr]">
+      <div className="relative z-10 mx-auto grid max-w-[2500px] items-center gap-12 px-6 md:px-12 md:grid-cols-[3.5fr_1.5fr]">
         {/* Left: Copy */}
         <FadeIn>
 

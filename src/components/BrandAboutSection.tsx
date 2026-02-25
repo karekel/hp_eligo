@@ -197,6 +197,27 @@ function BodyRenderer({ body }: { body: string }) {
                         );
                     }
                 }
+                // [image_grid:path1,path2]
+                else if (line.includes("[image_grid:")) {
+                    const match = line.match(/\[image_grid:(.*?)\]/);
+                    if (match) {
+                        const paths = match[1].split(",");
+                        content = (
+                            <div className="grid grid-cols-2 gap-3 my-6">
+                                {paths.map((path, idx) => (
+                                    <div key={idx} className="relative aspect-square overflow-hidden rounded-sm shadow-sm bg-gray-50 flex items-center justify-center">
+                                        <Image
+                                            src={path.trim()}
+                                            alt={`Activity Image ${idx + 1}`}
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        );
+                    }
+                }
                 // [growers_link:text]
                 else if (line.includes("[growers_link:")) {
                     const match = line.match(/\[growers_link:(.*?)\]/);
@@ -246,9 +267,9 @@ function BodyRenderer({ body }: { body: string }) {
                 }
 
                 return (
-                    <p key={i} className="min-h-[1.5em] mb-2 last:mb-0">
+                    <div key={i} className="min-h-[1.5em] mb-2 last:mb-0">
                         {content}
-                    </p>
+                    </div>
                 );
             })}
         </>
