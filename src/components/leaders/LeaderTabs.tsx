@@ -110,7 +110,7 @@ function MyStoryContent({ leader }: { leader: Leader }) {
                             leader.myStory.signatureOils.map((oil, idx) => (
                                 <li key={idx}>
                                     <div className="font-bold">{oil.name}</div>
-                                    <div className="text-[11px] md:text-xs leading-loose opacity-80 font-medium">{oil.desc}</div>
+                                    <div className="text-xs md:text-sm leading-loose opacity-80 font-medium">{oil.desc}</div>
                                 </li>
                             ))
                         ) : (

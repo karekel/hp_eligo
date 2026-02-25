@@ -1,17 +1,33 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "CyGroteskWideThin";
-  src: url("/fonts/CyGrotesk-WideThin.otf") format("opentype");
-  font-weight: 100 900;
+  font-family: "CyGroteskWideDemi";
+  src: url("/fonts/CyGrotesk-WideDemi.otf") format("opentype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "CyGroteskWideRegular";
+  font-family: "CyGroteskWide";
+  src: url("/fonts/CyGrotesk-WideThin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CyGroteskWide";
   src: url("/fonts/CyGrotesk-WideRegular.otf") format("opentype");
-  font-weight: 100 900;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CyGroteskWide";
+  src: url("/fonts/CyGrotesk-WideBold.otf") format("opentype");
+  font-weight: 700 900;
   font-style: normal;
   font-display: swap;
 }
@@ -34,8 +50,8 @@
   --font-noto-jp: "Noto Sans JP", sans-serif;
   --font-cy-grotesk: var(--font-cy-grotesk);
   /* Map to the variable from layout.tsx */
-  --font-sans: "CyGroteskWideRegular", var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
-  --font-heading: "CyGroteskWideThin", var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "CyGroteskWide", var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "CyGroteskWide", var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
 }
 
 /* ── Smooth scroll ── */
@@ -57,9 +73,20 @@ body {
 }
 
 /* ── Heading font utility (Cy Grotesk Wide) ── */
-.font-heading {
-  font-family: var(--font-heading);
-  font-weight: 100;
+@layer components {
+  .font-heading {
+    font-family: var(--font-heading);
+    font-weight: 100;
+  }
+  .font-demi {
+    font-family: "CyGroteskWideDemi", var(--font-noto-jp), sans-serif;
+    font-weight: 400;
+  }
+}
+
+/* ── Members page section titles (managed separately) ── */
+.text-members-heading {
+  font-size: clamp(2.2rem, 3.75vw, 5rem);
 }
 
 /* ── Responsive typography utilities ── */
@@ -72,7 +99,7 @@ body {
 }
 
 .text-about-title {
-  font-size: clamp(2.5rem, 6vw, 6rem);
+  font-size: clamp(2.2rem, 3.75vw, 5rem);
 }
 
 .text-header-logo {

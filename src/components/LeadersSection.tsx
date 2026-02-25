@@ -23,7 +23,7 @@ export default function LeadersSection() {
 
       <div className="relative z-10 mx-auto max-w-[2500px] px-12">
         <FadeIn>
-          <h2 className="font-heading mb-6 md:mb-8 text-[clamp(44px,5vw,100px)] tracking-[0.02em] text-[#1a1a1a]">
+          <h2 className="font-heading mb-6 md:mb-8 text-about-title tracking-[0.02em] text-[#1a1a1a]">
             {copy.heading}
           </h2>
         </FadeIn>
@@ -41,7 +41,7 @@ export default function LeadersSection() {
                 <Link
                   key={leader.slug}
                   href={`/leaders/${leader.slug}`}
-                  className="group relative flex-none w-[280px] sm:w-[calc(50%-1rem)] lg:w-[calc(100%/6-1rem)] aspect-[3/4] overflow-hidden rounded-xl bg-gray-100 snap-start"
+                  className="group relative flex-none w-[calc((100%-1rem)/1.5)] lg:w-[calc((100%-4rem)/4.5)] aspect-[3/4] overflow-hidden rounded-xl bg-gray-100 snap-start"
                 >
                   <PlaceholderImage
                     src={leader.image}

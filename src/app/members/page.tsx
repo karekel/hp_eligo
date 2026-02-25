@@ -28,9 +28,9 @@ export default function MembersPage() {
                 <section className="pt-32 pb-16 md:pt-48 md:pb-24 overflow-hidden border-b border-black/5">
                     <div className="mx-auto max-w-[2500px] px-12">
                         <FadeIn className="text-center">
-                            <h1 className="font-heading text-[clamp(48px,8vw,120px)] font-black tracking-[0.05em] text-[#1a1a1a] uppercase inline-block">
+                            <h1 className="font-demi text-[clamp(48px,8vw,120px)] tracking-[0.05em] text-[#1a1a1a] inline-block">
                                 <span className="bg-[#d4b8d9]/60 px-4 pt-[1px] pb-[8px] rounded-sm inline-flex items-center leading-none">
-                                    Members Only
+                                    The ELIGŌ Team
                                 </span>
                             </h1>
                             <p className="mt-8 max-w-[1000px] text-base md:text-lg leading-relaxed text-[#1a1a1a]/60 mx-auto text-center">

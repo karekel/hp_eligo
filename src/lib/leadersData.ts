@@ -43,7 +43,7 @@ export const leaders: Leader[] = [
         image: "/assets/Leaders/s.png",
         nameEn: "Elizabeth",
         nameJp: "エリザベス",
-        catchphrase: "人生を、自分の美意識で編集する。",
+        catchphrase: "変化と周りの目を恐れず、本質を追求する。",
         identity: {
             profile: `34歳。７歳長女、６歳双子男子、４歳次女の母。社会問題発信インフルエンサー。ドテラ４年目`,
             place: `東京都在住。年に数回ずつ、大阪や福岡、名古屋にも行きます。`,
@@ -102,7 +102,7 @@ export const leaders: Leader[] = [
         image: "/assets/Leaders/d.png",
         nameEn: "Ai Otsuki",
         nameJp: "大槻 愛",
-        catchphrase: "「自分を整えることが、誰かを思いやる力につながる。」",
+        catchphrase: "自分を整えることが、誰かを思いやる力につながる。",
         identity: {
             instagramUrl: "https://www.instagram.com/ai_otsuki/",
             vibeFinderType: "〇〇〇〇（診断結果のタイプ）",
@@ -179,6 +179,29 @@ export const leaders: Leader[] = [
         image: "/assets/Leaders/c.png",
         nameEn: "Keito Nemoto",
         nameJp: "根本 桂都",
+        catchphrase: "",
+        identity: {
+            profile: "dōTERRAプラチナ。",
+            place: "日本",
+        },
+        myStory: {
+            signatureOils: [],
+            reason: "",
+            whyDoterra: "",
+        },
+        vision: {
+            ourCulture: "",
+            invite: "",
+        }
+    },
+    {
+        slug: "leader-f",
+        name: "深澤ゆきみ",
+        role: "Platinum",
+        bio: "",
+        image: "/assets/Leaders/ゆきみ.png",
+        nameEn: "Yukimi Fukasawa",
+        nameJp: "深澤 ゆきみ",
         catchphrase: "",
         identity: {
             profile: "dōTERRAプラチナ。",

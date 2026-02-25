@@ -36,7 +36,6 @@ export default function BrandAboutSection() {
                     </h2>
                 </FadeIn>
                 <FadeIn delay={0.1} className="mb-12">
-                    <p className="text-base font-bold text-[#1a1a1a]">{about.subtitle}</p>
                 </FadeIn>
 
                 {/* カードグリッド — 3列固定、等高 */}
@@ -60,7 +59,7 @@ export default function BrandAboutSection() {
                                     className="w-full aspect-[2/1] flex flex-col items-center justify-center px-8 gap-3"
                                     style={{ backgroundColor: card.color }}
                                 >
-                                    <h3 className="font-heading text-2xl text-[#1a1a1a] text-center leading-relaxed">
+                                    <h3 className="font-heading font-bold text-2xl text-[#1a1a1a] text-center leading-relaxed">
                                         {card.title}
                                     </h3>
                                     <p className="text-sm text-[#1a1a1a]/60 text-center leading-relaxed">
