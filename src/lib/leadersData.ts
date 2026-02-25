@@ -176,7 +176,7 @@ export const leaders: Leader[] = [
         name: "根本桂都",
         role: "Platinum",
         bio: "",
-        image: "/assets/Leaders/ccc.png",
+        image: "/assets/Leaders/c.png",
         nameEn: "Keito Nemoto",
         nameJp: "根本 桂都",
         catchphrase: "",

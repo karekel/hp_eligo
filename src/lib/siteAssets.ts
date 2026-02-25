@@ -44,7 +44,7 @@ export const siteAssets = {
   leaders: [
     "/assets/Leaders/s.png",
     "/assets/Leaders/b.jpg",
-    "/assets/Leaders/ccc.png",
+    "/assets/Leaders/c.png",
     "/assets/Leaders/d.png",
     "/assets/Leaders/e2.png",
     "/assets/Leaders/a.jpg",

@@ -26,7 +26,7 @@ export default function VibeFinderSection() {
           <p className="mb-4 text-sm font-semibold tracking-[0.25em] text-[#1a1a1a] uppercase">
             {vibeFinder.label}
           </p>
-          <h2 className="font-heading mb-12 md:mb-16 text-about-title font-bold tracking-[0.02em] text-[#1a1a1a] uppercase leading-tight">
+          <h2 className="font-heading mb-12 md:mb-16 text-about-title tracking-[0.02em] text-[#1a1a1a] uppercase leading-tight">
             Vibe Finder
           </h2>
         </FadeIn>

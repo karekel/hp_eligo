@@ -21,7 +21,7 @@ export default function ExternalLinkSection({
         <section id={id} className={`scroll-mt-32 py-24 md:py-32 ${bgColor}`}>
             <div className="mx-auto max-w-[2500px] px-12 text-left">
                 <FadeIn className="flex flex-col items-start">
-                    <h2 className="font-heading mb-6 text-[clamp(44px,6vw,96px)] font-bold tracking-[0.02em] text-[#1a1a1a] uppercase leading-none">
+                    <h2 className="font-heading mb-6 text-[clamp(44px,6vw,96px)] tracking-[0.02em] text-[#1a1a1a] uppercase leading-none">
                         {title}
                     </h2>
                     <p className="mb-12 max-w-[1100px] text-base md:text-lg leading-relaxed text-[#1a1a1a] text-left">

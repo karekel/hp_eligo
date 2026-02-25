@@ -5,8 +5,15 @@ import { siteConfig } from "@/lib/siteConfig";
 import "./globals.css";
 
 const cyGroteskWide = localFont({
-  src: "../../public/fonts/cy-grotesk-wide-thin.ttf",
+  src: "../../public/fonts/CyGrotesk-WideBold.otf",
   variable: "--font-cy-grotesk",
+  display: "swap",
+  weight: "400",
+});
+
+const cyGroteskThin = localFont({
+  src: "../../public/fonts/CyGrotesk-WideThin.otf",
+  variable: "--font-cy-grotesk-thin",
   display: "swap",
   weight: "100",
 });
@@ -42,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${cyGroteskWide.variable} ${notoSansJP.variable} antialiased`}>
+      <body className={`${cyGroteskWide.variable} ${cyGroteskThin.variable} ${notoSansJP.variable} antialiased`}>
         {children}
       </body>
     </html>

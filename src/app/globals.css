@@ -17,7 +17,8 @@
   /* Fonts — Cy Grotesk Wide + Noto Sans JP fallback */
   --font-noto-jp: "Noto Sans JP", sans-serif;
   --font-cy-grotesk: "Cy Grotesk Wide", sans-serif;
-  --font-sans: var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
+  --font-cy-grotesk-thin: "Cy Grotesk Wide Thin", sans-serif;
+  --font-sans: var(--font-cy-grotesk-thin), var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
   --font-heading: var(--font-cy-grotesk), var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -41,7 +42,6 @@ body {
 /* ── Heading font utility (Cy Grotesk Wide) ── */
 .font-heading {
   font-family: var(--font-heading);
-  font-weight: 100;
 }
 
 /* ── Responsive typography utilities ── */

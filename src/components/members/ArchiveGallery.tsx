@@ -69,7 +69,7 @@ export default function ArchiveGallery({
                 <FadeIn>
                     <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
                         <div>
-                            <h2 className="font-heading mb-6 text-[clamp(44px,6vw,96px)] font-bold tracking-[0.02em] text-[#1a1a1a] uppercase leading-none">
+                            <h2 className="font-heading mb-6 text-[clamp(44px,6vw,96px)] tracking-[0.02em] text-[#1a1a1a] uppercase leading-none">
                                 {title}
                             </h2>
                             {description && (

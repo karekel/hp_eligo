@@ -60,7 +60,7 @@ export default function BrandAboutSection() {
                                     className="w-full aspect-[2/1] flex flex-col items-center justify-center px-8 gap-3"
                                     style={{ backgroundColor: card.color }}
                                 >
-                                    <h3 className="font-bold text-2xl text-[#1a1a1a] text-center leading-relaxed">
+                                    <h3 className="font-heading text-2xl text-[#1a1a1a] text-center leading-relaxed">
                                         {card.title}
                                     </h3>
                                     <p className="text-sm text-[#1a1a1a]/60 text-center leading-relaxed">
@@ -127,7 +127,7 @@ export default function BrandAboutSection() {
                                     className="flex-1 min-h-0 overflow-y-auto flex flex-col px-8 py-10 md:px-14 md:py-14"
                                     style={{ backgroundColor: openCard.color }}
                                 >
-                                    <h2 className="font-bold text-2xl md:text-4xl text-[#1a1a1a] text-center leading-tight mb-3">
+                                    <h2 className="font-heading text-2xl md:text-4xl text-[#1a1a1a] text-center leading-tight mb-3">
                                         {openCard.title}
                                     </h2>
                                     <p className="text-sm text-[#1a1a1a]/60 text-center mb-6 md:mb-8">
