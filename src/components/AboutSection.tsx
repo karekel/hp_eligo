@@ -36,8 +36,8 @@ export default function AboutSection() {
         </FadeIn>
 
         {/* Right: What is ELIGŌ image */}
-        <FadeIn delay={0.15} className="flex justify-center flex-1">
-          <div className="relative w-full max-w-[600px] aspect-[4/3]">
+        <FadeIn delay={0.15} className="flex justify-center flex-1 w-full">
+          <div className="relative w-full max-w-[900px] aspect-square md:aspect-[4/3]">
             <Image
               src="/assets/v1/what is eligo_full.png"
               alt="What is ELIGŌ"

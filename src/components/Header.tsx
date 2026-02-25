@@ -36,17 +36,12 @@ export default function Header() {
         → v1スクショと同様にナビが右上、ELIGŌが大きく左下に広がるレイアウト
       */}
       <div className="mx-auto flex max-w-[2500px] items-center justify-between px-12 py-4">
-        {/* Logo: Logo image instead of text */}
+        {/* Logo: ELIGŌ only */}
         <Link href="/" className="flex items-center transition-opacity hover:opacity-80">
-          <div className={`relative h-10 md:h-12 w-40 md:w-56 ${isMembersPage ? "invert" : ""}`}>
-            <Image
-              src={siteAssets.eligoLogo}
-              alt="ELIGŌ"
-              fill
-              className="object-contain object-left"
-              priority
-            />
-          </div>
+          <span className={`font-heading text-[clamp(1.75rem,3.5vw,3rem)] leading-none tracking-[0.1em] ${isMembersPage ? "text-[#1a1a1a]" : "text-white"
+            }`}>
+            ELIGŌ
+          </span>
         </Link>
 
         {/* Desktop nav */}

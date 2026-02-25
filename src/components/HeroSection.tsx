@@ -17,14 +17,14 @@ export default function HeroSection() {
 
       {/* 中央配置 */}
       <div className="relative z-10 min-h-screen flex items-center justify-center px-4">
-        {/* ELIGŌ ロゴ（さらに小さくして中央配置） */}
-        <div className="relative w-[40vw] max-w-[700px] h-[16vh] max-h-[180px]">
+        {/* マークロゴ（中央配置） */}
+        <div className="relative w-[25vw] max-w-[400px] aspect-square">
           <Image
-            src={siteAssets.eligoLogo}
-            alt="ELIGŌ"
+            src={siteAssets.aboutMark}
+            alt="ELIGŌ Mark"
             fill
             priority
-            className="object-contain"
+            className="object-contain brightness-0 invert"
           />
         </div>
       </div>
