@@ -14,6 +14,12 @@
   --color-primary: var(--color-lavender);
   --color-accent: var(--color-mint);
 
+  /* ── Fonts — Cy Grotesk Wide + Noto Sans JP fallback ── */
+  --font-noto-jp: "Noto Sans JP", sans-serif;
+  --font-cy-grotesk: var(--font-cy-grotesk);
+  /* Map to the variable from layout.tsx */
+  --font-sans: var(--font-cy-grotesk), var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
+  --font-heading: var(--font-cy-grotesk), var(--font-noto-jp), "Helvetica Neue", Arial, sans-serif;
 }
 
 /* ── Smooth scroll ── */
