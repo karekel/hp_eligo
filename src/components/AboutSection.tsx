@@ -35,7 +35,7 @@ export default function AboutSection() {
     <section
       id="philosophy"
       ref={sectionRef}
-      className="relative overflow-hidden pt-[60vh] md:pt-[80vh] pb-16 z-10"
+      className="relative overflow-hidden pt-[100vh] md:pt-[80vh] pb-16 z-10"
       style={{
         backgroundColor: `rgba(240, 239, 240, ${bgOpacity})`,
         maskImage: `linear-gradient(to bottom, transparent, black 1100px)`,
