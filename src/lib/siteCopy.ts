@@ -127,4 +127,41 @@ https://www.youtube.com/watch?v=ED10RosqNUY&t=67
     instagram: "https://www.instagram.com/aroma_with_elizabeth/",
     image: "/assets/ロゴ/mark_center.png", // Use mark_center.png as requested
   },
+
+  howToJoin: {
+    heading: "How to join ELIGŌ",
+    steps: [
+      {
+        number: "Step 1",
+        title: "紹介者を探して連絡",
+        body: "ELIGŌおよびdōTERRAは紹介制です。誰から登録するか決まっていない人は、「LEADERS」のページから、彼女たちの『MY STORY』をチェック。自分が住んでいる地域のメンバーが多いリーダー、Vibe Finderの診断結果であなたと同じスタンスだったリーダー、直感で「この人の雰囲気が好き！」と感じたリーダーを選んでも自由です。この人のチームでELIGŌとドテラを楽しみたい！と感じるリーダーを見つけて、その人の会員IDを控えておきます。",
+        cta: "Leaders",
+        href: "/#leaders",
+        color: "#B38BB8",
+        textColor: "#B38BB8",
+        image: "/assets/HOWTOJOIN/1.png"
+      },
+      {
+        number: "Step 2",
+        title: "登録キットを決める",
+        body: "紹介者が決まったら、次はあなたの心身を整える最初のツールである『登録キット』を選びます。日常のケアをトータルでサポートするフルセットから、まずは手軽に始められるミニマルなセットまで、お好きなものを選んでください。どれにするか迷った時は、あなたが選んだリーダーに直接メッセージでご相談ください。今のあなたのライフスタイルに一番合うキットを、一緒に選びます。",
+        cta: "Starter Kit",
+        href: "https://www.doterra.com/JP/ja_JP/pl/enrollment-kits?gad_source=1&gad_campaignid=1341074619&gbraid=0AAAAADkIucEwGuVD4pa7l6LDbL-JqXsre&gclid=CjwKCAiA-__MBhAKEiwASBmsBKm_9JFG-IhmloI6BFHZIDM2e2zdv_JXJFj4jbcKnpgkBDz0jxP9gRoCAfgQAvD_BwE",
+        color: "#FF9E9D",
+        textColor: "#FF9E9D",
+        image: "/assets/HOWTOJOIN/2.png"
+      },
+      {
+        number: "Step 3",
+        title: "登録する",
+        body: "キットが決まったら、会員登録に進みます。登録はdōTERRAの新規会員登録ページ、またはdōTERRA公式アプリから行えます。登録時には、「紹介者・/・スポンサーID」を入力する欄があるので、STEP 1で選んだリーダーの会員IDを入力してください（※ここが空欄や違う番号になると、ELIGŌに参加できません）。 初回購入が完了し、会員IDが発行されたら登録完了になりますので、紹介者に登録が完了した旨をお伝えください。ELIGŌメンバー限定のコンテンツへご招待します。",
+        cta: "Enrollment",
+        href: "https://office.doterra.com/Application/index.cfm?country=JPN&lng=ja&_gl=1*16m22a2*_up*MQ..*_ga*MTc1MzQ5OTU4OS4xNzcyMTE4MTAx*_ga_KR6KEW2NZ9*czE3NzIxMTgxMDAkbzEkZzAkdDE3NzIxMTgxMDAkajYwJGwwJGgw*_gs*MQ..*_ga_XW71K6YFHT*czE3NzIxMTgxMDAkbzEkZzAkdDE3NzIxMTgxMDAkajYwJGwwJGgw*_ga_JP5T5508JH*czE3NzIxMTgxMDAkbzEkZzAkdDE3NzIxMTgxMDAkajYwJGwwJGgw&gclid=CjwKCAiA-__MBhAKEiwASBmsBKm_9JFG-IhmloI6BFHZIDM2e2zdv_JXJFj4jbcKnpgkBDz0jxP9gRoCAfgQAvD_BwE&gbraid=0AAAAADkIucEwGuVD4pa7l6LDbL-JqXsre",
+        color: "#E6A75A",
+        textColor: "#E6A75A",
+        image: "/assets/HOWTOJOIN/3.png"
+      }
+    ],
+    footer: "Welcome to ELIGŌ!"
+  }
 } as const;

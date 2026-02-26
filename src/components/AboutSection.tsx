@@ -35,18 +35,18 @@ export default function AboutSection() {
     <section
       id="philosophy"
       ref={sectionRef}
-      className="relative overflow-hidden pt-[100vh] md:pt-[80vh] pb-16 z-10"
+      className="relative overflow-hidden pt-[100vh] md:pt-[100vh] pb-16 z-10"
       style={{
         backgroundColor: `rgba(240, 239, 240, ${bgOpacity})`,
-        maskImage: `linear-gradient(to bottom, transparent, black 1100px)`,
-        WebkitMaskImage: `linear-gradient(to bottom, transparent, black 1100px)`
+        maskImage: `linear-gradient(to bottom, transparent, black 1500px)`,
+        WebkitMaskImage: `linear-gradient(to bottom, transparent, black 1200px)`
       }}
     >
       {/* 背景: 背景/2.png (統一背景モード時は非表示) */}
       {!siteAssets.useUnifiedBackground && (
         <div
           className="absolute inset-0 -z-10"
-          style={{ opacity: bgOpacity }}
+          style={{ opacity: bgOpacity}}
         >
           <Image
             src={siteAssets.bg.about}

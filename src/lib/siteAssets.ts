@@ -38,6 +38,7 @@ export const siteAssets = {
     intro: "/assets/%E8%83%8C%E6%99%AF/5.png",
     members: "/assets/%E8%83%8C%E6%99%AF/6.png",
     contact: "/assets/%E8%83%8C%E6%99%AF/7.png",
+    howToJoin: "/assets/%E8%83%8C%E6%99%AF/7.png",
   },
 
   /** Leaders セクション写真（大きい順 → s, b, c, d, e, a） */

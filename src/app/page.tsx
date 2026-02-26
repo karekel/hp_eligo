@@ -6,8 +6,8 @@ import BrandAboutSection from "@/components/BrandAboutSection";
 import LeadersSection from "@/components/LeadersSection";
 import VibeFinderSection from "@/components/VibeFinderSection";
 import IntroVideosSection from "@/components/IntroVideosSection";
+import HowToJoinSection from "@/components/HowToJoinSection";
 import MembersOnlySection from "@/components/MembersOnlySection";
-import ContactSection from "@/components/ContactSection";
 import { siteAssets } from "@/lib/siteAssets";
 
 export default function Home() {
@@ -25,17 +25,15 @@ export default function Home() {
             className="object-cover object-center fixed inset-0 -z-10"
           />
         )}
-        <div className="relative">
-          <HeroSection />
-          <div className="h-screen pointer-events-none" />
-        </div>
+        <HeroSection />
+        <div className="h-screen pointer-events-none" />
         <AboutSection />
         <BrandAboutSection />
         <LeadersSection />
         <VibeFinderSection />
         <IntroVideosSection />
         <MembersOnlySection />
-        <ContactSection />
+        <HowToJoinSection />
       </main>
     </>
   );

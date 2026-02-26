@@ -25,6 +25,7 @@ export const siteConfig = {
     { label: "Vibe finder", href: "/#vibe-finder" },
     { label: "Intro", href: "/#intro" },
     { label: "Members only", href: "/members" },
+    { label: "How to join", href: "/#how-to-join" },
   ],
 
   /** メンバーページ用ナビゲーション */

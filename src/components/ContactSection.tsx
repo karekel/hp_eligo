@@ -8,7 +8,7 @@ export default function ContactSection() {
   const { contact } = siteCopy;
 
   return (
-    <section className="relative pt-8 md:pt-14 pb-10 md:pb-14 overflow-hidden">
+    <section className="relative pt-8 md:pt-14 pb-10 md:pb-14 overflow-hidden z-10">
       {/* 背景: 背景/7.png (統一背景モード時は非表示) */}
       {!siteAssets.useUnifiedBackground && (
         <Image
@@ -20,18 +20,8 @@ export default function ContactSection() {
       )}
 
       <div className="relative z-10 mx-auto max-w-[2500px] px-6 md:px-12">
-        <FadeIn>
-          <h2 className="font-heading mb-8 md:mb-10 text-about-title tracking-[0.02em] text-[#1a1a1a] uppercase leading-tight">
-            HOW TO JOIN
-          </h2>
-        </FadeIn>
-
         <FadeIn delay={0.1}>
           <div className="flex flex-col items-center justify-center text-center">
-            <p className="text-2xl md:text-3xl font-bold tracking-[0.1em] text-[#1a1a1a] mb-8">
-              Coming soon...
-            </p>
-
             <div className="flex flex-col items-center">
               <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-[#1a1a1a] uppercase opacity-60">
                 Follow us on Instagram

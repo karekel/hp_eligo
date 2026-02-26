@@ -3,7 +3,7 @@ import { siteAssets } from "@/lib/siteAssets";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="fixed inset-0 w-full h-screen overflow-hidden bg-black -z-10">
+    <section id="hero" className="fixed inset-0 w-full h-screen overflow-hidden bg-black -z-10 pointer-events-none">
       {/* 背景 */}
       <div className="absolute inset-0">
         <Image
