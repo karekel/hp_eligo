@@ -82,7 +82,10 @@ export default async function LeaderPage({
                     <div className="flex flex-col lg:h-full min-h-0">
                         {/* Name Section */}
                         <div className="mb-8 md:mb-12 space-y-3 shrink-0">
-                            <h1 className="text-6xl md:text-8xl font-thin text-black tracking-widest leading-none">
+                            <h1
+                                className="font-heading text-4xl md:text-7xl font-thin tracking-widest text-[#1a1a1a] uppercase"
+                                style={{ textShadow: "0.2px 0 0 currentColor, -0.2px 0 0 currentColor" }}
+                            >
                                 {leader.nameEn}
                             </h1>
                             <div className="space-y-4 pt-2">
