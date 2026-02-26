@@ -17,6 +17,7 @@ export type Leader = {
     catchphrase: string;
     identity: {
         instagramUrl?: string;
+        instagramId?: string;
         vibeFinderType?: string;
         profile: string;
         place: string;
@@ -47,12 +48,14 @@ export const leaders: Leader[] = [
         nameJp: "エリザベス",
         catchphrase: "変化と周りの目を恐れず、本質を追求する。",
         identity: {
+            instagramUrl: "https://www.instagram.com/aroma_with_elizabeth/",
+            instagramId: "13087810",
             profile: `34歳。７歳長女、６歳双子男子、４歳次女の母。社会問題発信インフルエンサー。ドテラ４年目`,
             place: `東京都在住。年に数回ずつ、大阪や福岡、名古屋にも行きます。`,
             image: "/assets/Leaders/Eli_Iden.JPG",
         },
         myStory: {
-                signatureOils: [
+            signatureOils: [
                 { name: "・セレニティ", desc: "母が亡くなって最初に嗅いだ香り。身体に染み入る癒しの力に驚いた。" },
                 { name: "・サンダルウッド", desc: "心がざわつく時に、どっしりグラウンディングさせてくれる香り。" },
                 { name: "・ジャスミン", desc: "「自分は自分でいいんだ」という強さをくれる、気高く美しい香り。" },
@@ -153,6 +156,29 @@ export const leaders: Leader[] = [
         }
     },
     {
+        slug: "leader-f",
+        name: "深澤ゆきみ",
+        role: "Diamond",
+        bio: "",
+        image: "/assets/Leaders/ゆきみ.png",
+        nameEn: "Yukimi Fukasawa",
+        nameJp: "深澤 ゆきみ",
+        catchphrase: "",
+        identity: {
+            profile: "dōTERRAダイヤモンド。",
+            place: "日本",
+        },
+        myStory: {
+            signatureOils: [],
+            reason: "",
+            whyDoterra: "",
+        },
+        vision: {
+            ourCulture: "",
+            invite: "",
+        }
+    },
+    {
         slug: "leader-e",
         name: "杉之原裕佳子",
         role: "Platinum",
@@ -183,29 +209,6 @@ export const leaders: Leader[] = [
         image: "/assets/Leaders/c.png",
         nameEn: "Keito Nemoto",
         nameJp: "根本 桂都",
-        catchphrase: "",
-        identity: {
-            profile: "dōTERRAプラチナ。",
-            place: "日本",
-        },
-        myStory: {
-            signatureOils: [],
-            reason: "",
-            whyDoterra: "",
-        },
-        vision: {
-            ourCulture: "",
-            invite: "",
-        }
-    },
-    {
-        slug: "leader-f",
-        name: "深澤ゆきみ",
-        role: "Platinum",
-        bio: "",
-        image: "/assets/Leaders/ゆきみ.png",
-        nameEn: "Yukimi Fukasawa",
-        nameJp: "深澤 ゆきみ",
         catchphrase: "",
         identity: {
             profile: "dōTERRAプラチナ。",

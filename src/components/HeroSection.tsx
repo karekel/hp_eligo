@@ -3,15 +3,15 @@ import { siteAssets } from "@/lib/siteAssets";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="relative w-full min-h-screen overflow-hidden bg-black">
+    <section id="hero" className="fixed inset-0 w-full h-screen overflow-hidden bg-black -z-10">
       {/* 背景 */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0">
         <Image
           src={siteAssets.heroLavender}
           alt="Hero background"
           fill
           priority
-          className="object-cover object-center animate-hero-fade"
+          className="object-cover object-center"
         />
       </div>
 

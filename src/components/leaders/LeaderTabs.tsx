@@ -68,14 +68,23 @@ function IdentityContent({ leader }: { leader: Leader }) {
             </div>
             <div className="flex-1 space-y-6">
                 <div>
-                    <h4 className="font-bold text-xs md:text-sm text-black tracking-widest">Instagram</h4>
-                    <p className="text-xs md:text-sm text-black mt-1 font-medium italic opacity-80">
+                    <h4 className="font-bold text-xs md:text-sm text-black tracking-widest">Instagram / ID</h4>
+                    <div className="text-xs md:text-sm text-black mt-1 font-medium opacity-80 space-y-1">
                         {leader.identity.instagramUrl ? (
-                            <a href={leader.identity.instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:underline not-italic">
-                                {leader.identity.instagramUrl.replace("https://www.instagram.com/", "@").replace("/", "")}
-                            </a>
-                        ) : "---"}
-                    </p>
+                            <p className="italic">
+                                <a href={leader.identity.instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:underline not-italic">
+                                    {leader.identity.instagramUrl.replace("https://www.instagram.com/", "@").replace("/", "")}
+                                </a>
+                            </p>
+                        ) : (
+                            <p className="italic">---</p>
+                        )}
+                        {leader.identity.instagramId && (
+                            <p className="font-mono text-[10px] md:text-xs">
+                                ID: {leader.identity.instagramId}
+                            </p>
+                        )}
+                    </div>
                 </div>
                 <div>
                     <h4 className="font-bold text-xs md:text-sm text-black tracking-widest">Vibe Finder</h4>

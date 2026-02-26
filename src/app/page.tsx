@@ -25,7 +25,10 @@ export default function Home() {
             className="object-cover object-center fixed inset-0 -z-10"
           />
         )}
-        <HeroSection />
+        <div className="relative">
+          <HeroSection />
+          <div className="h-screen pointer-events-none" />
+        </div>
         <AboutSection />
         <BrandAboutSection />
         <LeadersSection />

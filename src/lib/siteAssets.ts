@@ -26,7 +26,7 @@ export const siteAssets = {
   headerLogo: "/assets/ロゴ/header_logo.png",
   eligoLogo: "/assets/ロゴ/eligofront白.png",
   aboutMark: "/assets/ロゴ/mark_center.png",
-  heroLavender: "/assets/背景/hero_lavender.jpg",
+  heroLavender: "/assets/%E8%83%8C%E6%99%AF/top%20backg.png",
 
 
   /** セクション背景画像 */

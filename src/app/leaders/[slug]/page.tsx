@@ -82,13 +82,18 @@ export default async function LeaderPage({
                     <div className="flex flex-col lg:h-full min-h-0">
                         {/* Name Section */}
                         <div className="mb-8 md:mb-12 space-y-3 shrink-0">
-                            <h1 className="text-6xl md:text-8xl font-bold text-black tracking-tight leading-none">
+                            <h1 className="text-6xl md:text-8xl font-thin text-black tracking-widest leading-none">
                                 {leader.nameEn}
                             </h1>
                             <div className="space-y-4 pt-2">
-                                <p className="text-xl md:text-2xl font-medium text-black/90">
-                                    {leader.nameJp}
-                                </p>
+                                <div className="space-y-1">
+                                    <p className="text-xl md:text-2xl font-medium text-black/90">
+                                        {leader.nameJp}
+                                    </p>
+                                    <p className="text-base md:text-lg font-bold text-black/70 tracking-wider">
+                                        {leader.role}
+                                    </p>
+                                </div>
                                 <p className="text-base md:text-lg text-black font-medium leading-relaxed opacity-90">
                                     {leader.catchphrase ? `「${leader.catchphrase}」` : ""}
                                 </p>

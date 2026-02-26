@@ -52,10 +52,13 @@ export default function LeadersSection() {
                   />
                   {/* お名前オーバーレイ */}
                   <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/80 via-black/40 to-transparent p-6 pt-12">
-                    <p className="text-white text-xl font-bold tracking-wider">
+                    <p className="text-white/70 text-[10px] md:text-xs font-thin tracking-[0.2em] uppercase mb-1">
+                      {leader.nameEn}
+                    </p>
+                    <p className="text-white text-lg md:text-xl font-bold tracking-wider">
                       {leader.name}
                     </p>
-                    <p className="text-white/70 text-sm mt-1">
+                    <p className="text-white/60 text-[10px] md:text-sm mt-1">
                       {leader.role}
                     </p>
                   </div>
