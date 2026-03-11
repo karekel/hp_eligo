@@ -1,15 +1,15 @@
 {
   "materials": [
     {
-      "id": "m-ペットアロマ_使い方・基礎.pdf",
-      "title": "ペットアロマ",
-      "description": "資料の内容を読み取れませんでした。",
+      "id": "m-ペットアロマ_使い方・基礎.pdf",
+      "title": "ペットアロマ",
+      "description": "",
       "tags": [
         "使い方",
         "基礎"
       ],
-      "url": "/materials/ペットアロマ_使い方・基礎.pdf",
-      "thumbnailUrl": "/materials/thumbnails/ペットアロマ_使い方・基礎.png",
+      "url": "/materials/ペットアロマ_使い方・基礎.pdf",
+      "thumbnailUrl": "/materials/thumbnails/ペットアロマ_使い方・基礎.png",
       "fileType": "pdf"
     }
   ],

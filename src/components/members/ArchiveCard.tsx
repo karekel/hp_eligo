@@ -26,7 +26,7 @@ export default function ArchiveCard({
             <div className="group relative aspect-video w-full overflow-hidden rounded-xl bg-white shadow-md">
                 <a
                     href={url || "#"}
-                    target={url && url.startsWith("http") ? "_blank" : "_self"}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full h-full"
                 >
@@ -80,9 +80,6 @@ export default function ArchiveCard({
                     </p>
                 )}
 
-                <p className="line-clamp-2 text-[13px] leading-relaxed text-[#1a1a1a]/70">
-                    {description}
-                </p>
             </div>
         </div>
     );

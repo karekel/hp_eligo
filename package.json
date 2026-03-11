@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "gen:thumbnails": "node scripts/generate-pdf-thumbnails.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.34.0",
@@ -17,10 +18,12 @@
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
+    "@napi-rs/canvas": "^0.1.95",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "canvas": "^3.2.1",
     "eslint": "^9",
     "eslint-config-next": "15",
     "tailwindcss": "^4",

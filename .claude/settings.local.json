@@ -12,7 +12,27 @@
       "Bash(tail:*)",
       "Bash(echo OK:*)",
       "Bash(cd /c/hp_eligo && git push origin main 2>&1)",
-      "Bash(echo:*)"
+      "Bash(echo:*)",
+      "Bash(curl:*)",
+      "Bash(python3:*)",
+      "Bash(npx tsc:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(pdftoppm:*)",
+      "Bash(node:*)",
+      "Bash(npm install:*)",
+      "Bash(xargs grep:*)",
+      "Bash(cp:*)",
+      "Bash(pkill:*)",
+      "Bash(git push origin main 2>&1)",
+      "Bash(for f in \"C:\\\\hp_eligo\\\\public\\\\assets\\\\ロゴ\\\\rogo move\"/*.svg)",
+      "Bash(do echo \"=== $f ===\")",
+      "Read(//c/hp_eligo/**)",
+      "Bash(done)",
+      "Bash(for f in E L I G O)",
+      "Bash(do)",
+      "Read(//c/hp_eligo/public/assets/ロゴ/**)",
+      "Bash(npx vercel:*)"
     ]
   }
 }

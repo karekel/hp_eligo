@@ -13,18 +13,17 @@ async function processMaterials() {
     const pdfFiles = files.filter(f => f.endsWith('.pdf'));
     const results = [];
 
-    for (const fileName of pdfFiles) {
-        const filePath = path.join(MATERIALS_DIR, fileName);
-        const dataBuffer = fs.readFileSync(filePath);
-
-        let summary = "資料の内容を読み取れませんでした。";
-        try {
-            const data = await pdf(dataBuffer);
-            // Extract first 200 characters for summary
-            summary = data.text.replace(/\s+/g, ' ').trim().substring(0, 200) + "...";
-        } catch (e) {
-            console.error(`Error parsing PDF ${fileName}:`, e);
+    for (const rawFileName of pdfFiles) {
+        // NFC正規化: macOS由来のNFDファイル名をURLで使えるNFCに統一
+        const fileName = rawFileName.normalize('NFC');
+        if (rawFileName !== fileName) {
+            const oldPath = path.join(MATERIALS_DIR, rawFileName);
+            const newPath = path.join(MATERIALS_DIR, fileName);
+            fs.renameSync(oldPath, newPath);
+            console.log(`  Renamed to NFC: ${fileName}`);
         }
+
+        const filePath = path.join(MATERIALS_DIR, fileName);
 
         // Parse filename: Title_Tag1・Tag2.pdf
         const nameWithoutExt = fileName.replace('.pdf', '');
@@ -35,7 +34,7 @@ async function processMaterials() {
         results.push({
             id: `m-${fileName}`,
             title,
-            description: summary,
+            description: "",
             tags,
             url: `/materials/${fileName}`,
             thumbnailUrl: `/materials/thumbnails/${fileName.replace('.pdf', '.png')}`,

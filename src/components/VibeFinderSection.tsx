@@ -40,13 +40,17 @@ export default function VibeFinderSection() {
               </div>
             </div>
 
-            {/* Right: START button refinement (LINK REMOVED) */}
-            <div className="flex justify-center md:justify-center">
-              <div
-                className="inline-block rounded-full border-2 border-[#d4b8d9] px-25 py-10 text-3xl font-bold tracking-widest text-[#1a1a1a] uppercase"
+            {/* Right: START button */}
+            <div className="flex flex-col items-center gap-4 md:justify-center">
+              <span className="text-2xl font-bold text-[#1a1a1a]">#1</span>
+              <a
+                href="https://vibe-doterra.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-full border-2 border-[#d4b8d9] px-25 py-10 text-3xl font-bold tracking-widest text-[#1a1a1a] uppercase transition-all hover:bg-[#d4b8d9] hover:text-white active:bg-[#c4a8c9] active:text-white"
               >
                 {vibeFinder.cta}
-              </div>
+              </a>
             </div>
           </div>
         </FadeIn>
