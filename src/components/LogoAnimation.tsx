@@ -3,8 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-// URL-encoded path (Japanese + space must be encoded for production)
-const BASE = "/assets/%E3%83%AD%E3%82%B4/rogo%20move";
+const BASE = "/assets/logo-parts";
 
 const LETTERS = [
     { name: "E", src: `${BASE}/E.svg`,  sx: "-40%", sy: "0%" },
@@ -14,7 +13,7 @@ const LETTERS = [
     { name: "O", src: `${BASE}/O.svg`,  sx:  "40%", sy: "0%" },
 ] as const;
 
-const COMPLETED = `${BASE}/eligo%E5%AE%8C%E6%88%90%E7%B3%BB.svg`;
+const COMPLETED = `${BASE}/eligo-complete.svg`;
 
 const SPREAD_SCALE  = 0.42;
 const MOVE_DUR      = 1.4;
