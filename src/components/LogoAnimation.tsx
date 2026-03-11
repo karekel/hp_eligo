@@ -25,7 +25,7 @@ const EXTRAS = [
 
 const COMPLETED     = `${BASE}/eligo-complete.svg`;
 const SPREAD_SCALE  = 0.42;
-const MOVE_DUR      = 1.5;    // s: spread→assembled / disperse
+const MOVE_DUR      = 2.5;    // s: spread→assembled / disperse
 const FADE_OUT_DUR  = 0.35;   // s: parts fade out
 const FADE_IN_DELAY = 0.30;   // s: delay before completed fades in
 const FADE_IN_DUR   = 0.45;   // s: completed SVG fade in
@@ -138,8 +138,8 @@ export default function LogoAnimation() {
                         y:       { duration: isAssembling ? MOVE_DUR : 0, ease: EASE },
                         scale:   { duration: isAssembling ? MOVE_DUR : 0, ease: EASE },
                         opacity: {
-                            duration: isAssembling ? 0.6 : 0.2,
-                            delay:    isAssembling ? 0.1 + i * 0.12 : 0,
+                            duration: isAssembling ? 1.2 : 0.2,
+                            delay:    isAssembling ? 0.2 + i * 0.2 : 0,
                         },
                     }}
                 >
