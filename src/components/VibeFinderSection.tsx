@@ -40,9 +40,18 @@ export default function VibeFinderSection() {
               </div>
             </div>
 
-            {/* Right: START button */}
-            <div className="flex flex-col items-center gap-4 md:justify-center">
-              <span className="text-2xl font-bold text-[#1a1a1a]">#1</span>
+            {/* Right: Image + START button */}
+            <div className="flex flex-col items-center gap-8">
+              <div className="w-full rounded-2xl overflow-hidden">
+                <Image
+                  src="/assets/ABOUT/vibefinder.png"
+                  alt="Vibe Finder"
+                  width={2946}
+                  height={1536}
+                  unoptimized
+                  className="w-full h-auto"
+                />
+              </div>
               <a
                 href="https://vibe-doterra.vercel.app/"
                 target="_blank"
