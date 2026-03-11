@@ -5,6 +5,7 @@ import Image from "next/image";
 import { siteCopy } from "@/lib/siteCopy";
 import { siteAssets } from "@/lib/siteAssets";
 import FadeIn from "./FadeIn";
+import LogoAnimation from "./LogoAnimation";
 
 export default function AboutSection() {
   const { philosophy } = siteCopy;
@@ -57,14 +58,20 @@ export default function AboutSection() {
         </div>
       )}
 
-      <div className="relative z-10 mx-auto max-w-[2500px] px-6 md:px-12">
+      <div className="relative z-10 mx-auto max-w-[2500px] px-6 md:px-12 grid md:grid-cols-[1fr_auto] gap-12 items-center">
+        {/* Left: Copy */}
         <FadeIn>
           <h2 className="font-heading mb-8 text-about-title leading-[1.0] text-[#1a1a1a]">
             {philosophy.heading}
           </h2>
-          <p className="max-w-[1200px] text-base leading-relaxed text-[#1a1a1a] whitespace-pre-line">
+          <p className="max-w-[900px] text-base leading-relaxed text-[#1a1a1a] whitespace-pre-line">
             {philosophy.description}
           </p>
+        </FadeIn>
+
+        {/* Right: Logo animation */}
+        <FadeIn delay={0.2} className="w-[min(40vw,420px)] shrink-0 hidden md:block">
+          <LogoAnimation />
         </FadeIn>
       </div>
     </section>
