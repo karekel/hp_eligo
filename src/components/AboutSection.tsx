@@ -57,8 +57,7 @@ export default function AboutSection() {
         </div>
       )}
 
-      <div className="relative z-10 mx-auto grid max-w-[2500px] items-center gap-12 px-6 md:px-12 md:grid-cols-[3.5fr_1.5fr]">
-        {/* Left: Copy */}
+      <div className="relative z-10 mx-auto max-w-[2500px] px-6 md:px-12">
         <FadeIn>
           <h2 className="font-heading mb-8 text-about-title leading-[1.0] text-[#1a1a1a]">
             {philosophy.heading}
@@ -66,18 +65,6 @@ export default function AboutSection() {
           <p className="max-w-[1200px] text-base leading-relaxed text-[#1a1a1a] whitespace-pre-line">
             {philosophy.description}
           </p>
-        </FadeIn>
-
-        {/* Right: What is ELIGŌ image */}
-        <FadeIn delay={0.15} className="flex justify-center flex-1 w-full">
-          <div className="relative w-full max-w-[900px] aspect-square md:aspect-[4/3]">
-            <Image
-              src="/assets/v1/what is eligo_full.png"
-              alt="What is ELIGŌ"
-              fill
-              className="object-contain"
-            />
-          </div>
         </FadeIn>
       </div>
     </section>

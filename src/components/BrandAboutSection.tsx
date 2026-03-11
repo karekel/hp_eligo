@@ -142,133 +142,164 @@ export default function BrandAboutSection() {
     );
 }
 
+function YoutubeThumbnail({ videoId, href }: { videoId: string; href: string }) {
+    return (
+        <div className="my-6 flex justify-center">
+            <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative aspect-video w-full max-w-[400px] overflow-hidden rounded-lg bg-gray-200 shadow-sm block"
+            >
+                <Image
+                    src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                    alt="Video Thumbnail"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors group-hover:bg-black/0">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/90 shadow-md">
+                        <svg className="ml-0.5 h-5 w-5 text-[#1a1a1a]" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                </div>
+            </a>
+        </div>
+    );
+}
+
+function processAutoLinks(text: string): React.ReactNode {
+    const parts = text.split(/(dōTERRA（ドテラ）|dōTERRA)/g);
+    return parts.map((part, index) => {
+        if (part === "dōTERRA" || part === "dōTERRA（ドテラ）") {
+            return (
+                <a key={index} href="https://www.doterra.com/JP/ja_JP" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    {part}
+                </a>
+            );
+        }
+        if (part.includes("**")) {
+            const boldParts = part.split(/(\*\*.*?\*\*)/g);
+            return boldParts.map((bp, bIndex) => {
+                if (bp.startsWith("**") && bp.endsWith("**")) {
+                    return <strong key={bIndex} className="font-bold">{bp.slice(2, -2)}</strong>;
+                }
+                return bp;
+            });
+        }
+        return part;
+    });
+}
+
+function processAromatouchLink(line: string): React.ReactNode {
+    const regex = /\[aromatouch_link:(.*?)\]/g;
+    const nodes: React.ReactNode[] = [];
+    let lastIndex = 0;
+    let match;
+    while ((match = regex.exec(line)) !== null) {
+        if (match.index > lastIndex) nodes.push(line.slice(lastIndex, match.index));
+        nodes.push(
+            <a key={match.index} href="https://www.doterra.com/JP/ja_JP/aromatouch-technique" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                {match[1]}
+            </a>
+        );
+        lastIndex = match.index + match[0].length;
+    }
+    if (lastIndex < line.length) nodes.push(line.slice(lastIndex));
+    return <>{nodes}</>;
+}
+
 function BodyRenderer({ body }: { body: string }) {
     const lines = body.split("\n");
 
     return (
         <>
             {lines.map((line, i) => {
-                // YouTube URL のチェック
-                const ytMatch = line.trim().match(/https:\/\/www\.youtube\.com\/watch\?v=([\w-]+)(?:&t=(\d+))?/);
-                if (ytMatch) {
-                    const videoId = ytMatch[1];
-                    return (
-                        <div key={i} className="my-6 flex justify-center">
-                            <a
-                                href={line.trim()}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative aspect-video w-full max-w-[400px] overflow-hidden rounded-lg bg-gray-200 shadow-sm block"
-                            >
-                                <Image
-                                    src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-                                    alt="Video Thumbnail"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors group-hover:bg-black/0">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/90 shadow-md">
-                                        <svg className="ml-0.5 h-5 w-5 text-[#1a1a1a]" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M8 5v14l11-7z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    );
+                const trimmed = line.trim();
+
+                // youtube.com/watch URL
+                const ytLongMatch = trimmed.match(/^https:\/\/www\.youtube\.com\/watch\?v=([\w-]+)/);
+                if (ytLongMatch) {
+                    return <YoutubeThumbnail key={i} videoId={ytLongMatch[1]} href={trimmed} />;
                 }
 
-                // 特殊リンクのパース
-                let content: React.ReactNode = line;
+                // youtu.be short URL
+                const ytShortMatch = trimmed.match(/^https:\/\/youtu\.be\/([\w-]+)/);
+                if (ytShortMatch) {
+                    return <YoutubeThumbnail key={i} videoId={ytShortMatch[1]} href={trimmed} />;
+                }
 
                 // [quality_link:text]
                 if (line.includes("[quality_link:")) {
                     const match = line.match(/\[quality_link:(.*?)\]/);
                     if (match) {
-                        content = (
-                            <a
-                                href="https://www.sourcetoyou.com/jp/quality"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-blue-600 hover:underline"
-                            >
-                                {match[1]}
-                            </a>
+                        return (
+                            <div key={i} className="min-h-[1.5em] mb-2 last:mb-0">
+                                <a href="https://www.sourcetoyou.com/jp/quality" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                                    {match[1]}
+                                </a>
+                            </div>
                         );
                     }
                 }
+
                 // [image_grid:path1,path2]
-                else if (line.includes("[image_grid:")) {
+                if (line.includes("[image_grid:")) {
                     const match = line.match(/\[image_grid:(.*?)\]/);
                     if (match) {
                         const paths = match[1].split(",");
-                        content = (
-                            <div className="grid grid-cols-2 gap-3 my-6">
+                        return (
+                            <div key={i} className="grid grid-cols-2 gap-3 my-6">
                                 {paths.map((path, idx) => (
-                                    <div key={idx} className="relative aspect-square overflow-hidden rounded-sm shadow-sm bg-gray-50 flex items-center justify-center">
-                                        <Image
-                                            src={path.trim()}
-                                            alt={`Activity Image ${idx + 1}`}
-                                            fill
-                                            className="object-cover"
-                                        />
+                                    <div key={idx} className="relative aspect-square overflow-hidden rounded-sm shadow-sm bg-gray-50">
+                                        <Image src={path.trim()} alt={`Activity Image ${idx + 1}`} fill className="object-cover" />
                                     </div>
                                 ))}
                             </div>
                         );
                     }
                 }
-                // [growers_link:text]
-                else if (line.includes("[growers_link:")) {
-                    const match = line.match(/\[growers_link:(.*?)\]/);
+
+                // [image_single:path]
+                if (line.includes("[image_single:")) {
+                    const match = line.match(/\[image_single:(.*?)\]/);
                     if (match) {
-                        content = (
-                            <a
-                                href="https://www.sourcetoyou.com/jp/growers"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-blue-600 hover:underline"
-                            >
-                                {match[1]}
-                            </a>
+                        return (
+                            <div key={i} className="relative w-full aspect-[16/9] overflow-hidden rounded-sm shadow-sm bg-gray-50 my-6">
+                                <Image src={match[1].trim()} alt="Activity Image" fill className="object-cover" />
+                            </div>
                         );
                     }
                 }
-                else {
-                    // dōTERRA の一律リンク化 (What is Eligo 用)
-                    // 正規表現で「dōTERRA（ドテラ）」や「dōTERRA」を置換
-                    const parts = line.split(/(dōTERRA（ドテラ）|dōTERRA)/g);
-                    content = parts.map((part, index) => {
-                        if (part === "dōTERRA" || part === "dōTERRA（ドテラ）") {
-                            return (
-                                <a
-                                    key={index}
-                                    href="https://www.doterra.com/JP/ja_JP"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-blue-600 hover:underline"
-                                >
-                                    {part}
+
+                // [growers_link:text]
+                if (line.includes("[growers_link:")) {
+                    const match = line.match(/\[growers_link:(.*?)\]/);
+                    if (match) {
+                        return (
+                            <div key={i} className="min-h-[1.5em] mb-2 last:mb-0">
+                                <a href="https://www.sourcetoyou.com/jp/growers" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                                    {match[1]}
                                 </a>
-                            );
-                        }
-                        // 太字の処理 **text**
-                        if (part.includes("**")) {
-                            const boldParts = part.split(/(\*\*.*?\*\*)/g);
-                            return boldParts.map((bp, bIndex) => {
-                                if (bp.startsWith("**") && bp.endsWith("**")) {
-                                    return <strong key={bIndex} className="font-bold">{bp.slice(2, -2)}</strong>;
-                                }
-                                return bp;
-                            });
-                        }
-                        return part;
-                    });
+                            </div>
+                        );
+                    }
                 }
 
+                // [aromatouch_link:text] inline — skip dōTERRA auto-link for this line
+                if (line.includes("[aromatouch_link:")) {
+                    return (
+                        <div key={i} className="min-h-[1.5em] mb-2 last:mb-0">
+                            {processAromatouchLink(line)}
+                        </div>
+                    );
+                }
+
+                // Default: auto-link dōTERRA
                 return (
                     <div key={i} className="min-h-[1.5em] mb-2 last:mb-0">
-                        {content}
+                        {processAutoLinks(line)}
                     </div>
                 );
             })}

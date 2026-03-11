@@ -26,7 +26,7 @@ export default function Home() {
           />
         )}
         <HeroSection />
-        <div className="h-screen pointer-events-none" />
+<div className="h-screen pointer-events-none" />
         <AboutSection />
         <BrandAboutSection />
         <LeadersSection />

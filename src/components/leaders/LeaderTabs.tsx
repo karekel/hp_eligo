@@ -104,13 +104,40 @@ function IdentityContent({ leader }: { leader: Leader }) {
 }
 
 function MyStoryContent({ leader }: { leader: Leader }) {
+    const videoId = leader.myStory.videoUrl?.match(/youtu\.be\/([\w-]+)/)?.[1];
+
     return (
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 animate-in fade-in slide-in-from-bottom-2 duration-500">
-            <div className="w-full md:w-[240px] aspect-square shrink-0 bg-white rounded-sm shadow-inner flex items-center justify-center overflow-hidden relative self-start">
-                {leader.myStory.image ? (
-                    <Image src={leader.myStory.image} alt="Story" className="object-cover" fill />
+            <div className="w-full md:w-[240px] shrink-0 self-start">
+                {videoId ? (
+                    <a
+                        href={leader.myStory.videoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative aspect-video w-full overflow-hidden rounded-sm shadow-inner bg-gray-100 block"
+                    >
+                        <Image
+                            src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                            alt="Story Video"
+                            fill
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors group-hover:bg-black/0">
+                            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/90 shadow-md">
+                                <svg className="ml-0.5 h-5 w-5 text-[#1a1a1a]" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                ) : leader.myStory.image ? (
+                    <div className="aspect-square bg-white rounded-sm shadow-inner overflow-hidden relative">
+                        <Image src={leader.myStory.image} alt="Story" className="object-cover" fill />
+                    </div>
                 ) : (
-                    <div className="text-gray-200 uppercase font-bold tracking-widest text-[10px]">No Photo</div>
+                    <div className="aspect-square bg-white rounded-sm shadow-inner flex items-center justify-center">
+                        <div className="text-gray-200 uppercase font-bold tracking-widest text-[10px]">No Photo</div>
+                    </div>
                 )}
             </div>
             <div className="flex-1 space-y-6">

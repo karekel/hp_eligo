@@ -25,9 +25,12 @@ export default function MembersOnlySection() {
       <div className="relative z-10 mx-auto max-w-[2500px] px-6 md:px-12">
         <FadeIn>
           {/* 見出し */}
-          <h2 className="font-heading mb-8 md:mb-12 text-about-title tracking-[0.02em] text-[#1a1a1a] uppercase leading-tight">
+          <h2 className="font-heading mb-4 text-about-title tracking-[0.02em] text-[#1a1a1a] uppercase leading-tight">
             {membersOnly.heading}
           </h2>
+          <p className="mb-8 md:mb-12 text-sm md:text-base text-[#1a1a1a]/70">
+            チームELIGOメンバー限定コンテンツ。随時更新中。
+          </p>
 
           {/* ログインボタン -> /members へ遷移するように変更 */}
           <div className="mb-16 flex justify-start">

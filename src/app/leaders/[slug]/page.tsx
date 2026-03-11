@@ -4,6 +4,7 @@ import { leaders, getLeaderBySlug } from "@/lib/leadersData";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import LeaderTabs from "@/components/leaders/LeaderTabs";
 import Image from "next/image";
+import type { Leader } from "@/lib/leadersData";
 
 /** 静的パスを生成 */
 export function generateStaticParams() {
@@ -109,6 +110,49 @@ export default async function LeaderPage({
                         </div>
                     </div>
                 </div>
+            </div>
+
+            {/* See more leaders */}
+            <SeeMoreLeaders currentSlug={leader.slug} />
+        </div>
+    );
+}
+
+function SeeMoreLeaders({ currentSlug }: { currentSlug: string }) {
+    const others = leaders.filter((l) => l.slug !== currentSlug);
+    return (
+        <div className="mx-auto max-w-[1600px] px-8 pb-16 md:pb-24">
+            <p className="text-xs md:text-sm font-bold tracking-widest text-[#6b7280] uppercase mb-4">
+                See more leaders
+            </p>
+            <div className="flex gap-3 overflow-x-auto pb-4 snap-x snap-mandatory no-scrollbar">
+                {others.map((l: Leader) => (
+                    <Link
+                        key={l.slug}
+                        href={`/leaders/${l.slug}`}
+                        className="group relative flex-none w-[120px] md:w-[160px] aspect-[3/4] overflow-hidden rounded-xl bg-gray-100 snap-start"
+                    >
+                        <PlaceholderImage
+                            src={l.image}
+                            alt={l.name}
+                            fill
+                            className="object-cover transition-transform duration-500 group-hover:scale-110"
+                            placeholderLabel={l.name.charAt(0)}
+                        />
+                        <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/80 via-black/40 to-transparent p-3 pt-8">
+                            <p className="text-white text-[8px] md:text-[10px] font-thin tracking-[0.15em] uppercase mb-0.5"
+                                style={{ textShadow: "0.3px 0 0 currentColor, -0.1px 0 0 currentColor" }}>
+                                {l.nameEn}
+                            </p>
+                            <p className="text-white text-xs md:text-sm font-bold tracking-wide">
+                                {l.name}
+                            </p>
+                            <p className="text-white/60 text-[8px] md:text-[10px] mt-0.5">
+                                {l.role}
+                            </p>
+                        </div>
+                    </Link>
+                ))}
             </div>
         </div>
     );
