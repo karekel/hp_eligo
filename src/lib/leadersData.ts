@@ -18,6 +18,7 @@ export type Leader = {
     identity: {
         instagramUrl?: string;
         instagramId?: string;
+        blogUrl?: string;
         vibeFinderType?: string;
         profile: string;
         place: string;
@@ -90,17 +91,58 @@ export const leaders: Leader[] = [
         nameJp: "前田 沙織",
         catchphrase: "",
         identity: {
-            profile: "dōTERRAダイヤモンド。",
-            place: "日本",
+            instagramUrl: "https://www.instagram.com/saori_selfcare/",
+            instagramId: "13804059",
+            blogUrl: "https://www.oilandessencetokyo.com/",
+            profile: `1983年東京生まれ。
+タイとフィリピンで育った帰国子女。
+男の子二人のママ。
+現在は、独立系ファイナンシャルプランナーとして活動しながら、dōTERRAダイヤモンドリーダーとしてチーム運営をしています。`,
+            place: `Tokyo`,
         },
         myStory: {
-            signatureOils: [],
-            reason: "",
-            whyDoterra: "",
+            signatureOils: [
+                { name: "Frankincense", desc: "万能なお守りのような存在。整えたいときに。" },
+                { name: "Rose Touch", desc: "波動と女性性を優しく引き上げてくれる特別な香り。" },
+                { name: "Anchor", desc: "軸をしっかりと整え、自信を思い出させてくれる香り。" },
+            ],
+            reason: `エリザベスちゃんに紹介されたのがきっかけ。
+ちょうど「本当に品質の良いアロマ」を探していたタイミングでした。
+
+ネットでいくつも試していたけれど、
+どこか納得できずにいた私に舞い降りたドテラ。
+ドテラとの出会いは必然だったのかもしれません。`,
+            whyDoterra: `初めて嗅いだラベンダーの香り。
+その瞬間、「あ、これ今までのと違うわ」と。
+
+同じく一瞬で魅せられた友人は、
+今では大切なビジネスパートナーに。
+
+遊びも、学びも、ビジネスも共有できる仲間が増え、
+毎日がワクワクに変わりました。`,
         },
         vision: {
-            ourCulture: "",
-            invite: "",
+            ourCulture: `金融業界で長く働き、
+"正解"や"数字"を追いかけてきた私。
+
+左脳優位だった私が、
+ドテラと出会い、"feel"する感覚を取り戻しました。
+
+心が緩み、もっとこの世界はplaygroundとして楽しんでいいんだ！と気づきました。
+
+チームzoomでは、使い方のシェアだけでなく、
+引き寄せや在り方の話も人気です。
+
+ドテラは、
+「健康」と「経済」、そして「心の自由」を
+同時に叶えられる新しい働き方を授けてくれました。
+
+可能性は無限大。
+どんな楽しみ方もOK。
+すべて受け止めます。`,
+            invite: `きっと、今まで知らなかった世界が
+ぐんと広がります。
+ようこそ、ドテラへ！`,
         }
     },
     {

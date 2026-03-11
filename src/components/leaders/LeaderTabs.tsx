@@ -86,6 +86,16 @@ function IdentityContent({ leader }: { leader: Leader }) {
                         )}
                     </div>
                 </div>
+                {leader.identity.blogUrl && (
+                    <div>
+                        <h4 className="font-bold text-xs md:text-sm text-black tracking-widest">Blog</h4>
+                        <p className="text-xs md:text-sm text-black mt-1 font-medium opacity-80">
+                            <a href={leader.identity.blogUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                                {leader.identity.blogUrl}
+                            </a>
+                        </p>
+                    </div>
+                )}
                 <div>
                     <h4 className="font-bold text-xs md:text-sm text-black tracking-widest">Vibe Finder</h4>
                     <p className="text-xs md:text-sm text-black mt-1 font-medium italic opacity-80">{leader.identity.vibeFinderType || "---"}</p>
