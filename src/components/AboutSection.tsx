@@ -70,7 +70,7 @@ export default function AboutSection() {
         </FadeIn>
 
         {/* Right: Logo animation */}
-        <FadeIn delay={0.2} className="w-[min(40vw,420px)] shrink-0 hidden md:block">
+        <FadeIn delay={0.2} className="w-[min(60vw,420px)] mx-auto md:mx-0 shrink-0">
           <LogoAnimation />
         </FadeIn>
       </div>
