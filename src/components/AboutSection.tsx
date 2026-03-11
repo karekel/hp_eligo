@@ -58,7 +58,7 @@ export default function AboutSection() {
         </div>
       )}
 
-      <div className="relative z-10 mx-auto max-w-[2500px] px-6 md:px-12 grid md:grid-cols-[1fr_auto] gap-12 items-center">
+      <div className="relative z-10 mx-auto max-w-[2500px] px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
         {/* Left: Copy */}
         <FadeIn>
           <h2 className="font-heading mb-8 text-about-title leading-[1.0] text-[#1a1a1a]">
@@ -70,7 +70,7 @@ export default function AboutSection() {
         </FadeIn>
 
         {/* Right: Logo animation */}
-        <FadeIn delay={0.2} className="w-[min(60vw,420px)] mx-auto md:mx-0 shrink-0">
+        <FadeIn delay={0.2} className="w-full">
           <LogoAnimation />
         </FadeIn>
       </div>
