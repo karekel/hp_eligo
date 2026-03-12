@@ -67,17 +67,15 @@ export default function ArchiveGallery({
         <section id={id} className={`scroll-mt-32 py-24 md:py-32 ${bgColor}`}>
             <div className="mx-auto max-w-[2500px] px-6 md:px-12">
                 <FadeIn>
-                    <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-                        <div>
-                            <h2 className="font-heading mb-6 text-members-heading tracking-[0.02em] text-[#1a1a1a] uppercase leading-none">
-                                {title}
-                            </h2>
-                            {description && (
-                                <p className="mb-8 max-w-[1100px] text-base md:text-lg leading-relaxed text-[#1a1a1a]">
-                                    {description}
-                                </p>
-                            )}
-                        </div>
+                    <div className="mb-12 flex flex-col gap-6">
+                        <h2 className="font-heading text-members-heading tracking-[0.02em] text-[#1a1a1a] uppercase leading-none">
+                            {title}
+                        </h2>
+                        {description && (
+                            <p className="max-w-[1100px] text-base md:text-lg leading-relaxed text-[#1a1a1a]">
+                                {description}
+                            </p>
+                        )}
 
                         {/* Tag Filter */}
                         <div className="flex flex-wrap gap-2">
