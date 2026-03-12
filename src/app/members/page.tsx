@@ -30,7 +30,7 @@ export default function MembersPage() {
                         <FadeIn className="text-center">
                             <h1 className="font-demi text-[clamp(48px,8vw,120px)] tracking-[0.05em] text-[#1a1a1a] inline-block">
                                 <span className="bg-[#d4b8d9]/60 px-4 pt-[20px] pb-[8px] rounded-sm inline-flex items-center leading-none">
-                                    The ELIGŌ Team
+                                    ELIGŌ Team
                                 </span>
                             </h1>
                             <p className="mt-8 max-w-[1000px] text-base md:text-lg leading-relaxed text-[#1a1a1a]/60 mx-auto text-center">
