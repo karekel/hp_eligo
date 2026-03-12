@@ -59,20 +59,15 @@ export default function ArchiveCard({
 
             {/* コンテンツ */}
             <div className="flex flex-col gap-2">
-                <div className="flex flex-wrap gap-1.5">
-                    {tags.map((tag) => (
-                        <span
-                            key={tag}
-                            className="rounded-full border border-[#d4b8d9]/30 bg-[#d4b8d9]/5 px-2 py-0.5 text-[10px] font-medium text-[#1a1a1a]/60"
-                        >
-                            #{tag}
-                        </span>
-                    ))}
-                </div>
-
                 <h3 className="line-clamp-2 text-base font-bold tracking-tight text-[#1a1a1a] min-h-[3rem]">
                     {title}
                 </h3>
+
+                {description && (
+                    <p className="line-clamp-2 text-xs text-[#1a1a1a]/60 leading-relaxed">
+                        {description}
+                    </p>
+                )}
 
                 {date && (
                     <p className="text-[10px] text-[#1a1a1a]/40 font-medium">
@@ -80,6 +75,18 @@ export default function ArchiveCard({
                     </p>
                 )}
 
+                {tags.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5">
+                        {tags.map((tag) => (
+                            <span
+                                key={tag}
+                                className="rounded-full border border-[#d4b8d9]/30 bg-[#d4b8d9]/5 px-2 py-0.5 text-[10px] font-medium text-[#1a1a1a]/60"
+                            >
+                                #{tag}
+                            </span>
+                        ))}
+                    </div>
+                )}
             </div>
         </div>
     );
