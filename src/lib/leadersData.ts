@@ -268,7 +268,7 @@ doTERRAのオイルを使って
         bio: "",
         image: "/assets/Leaders/e2.png",
         nameEn: "Yukako Suginohara",
-        nameJp: "杉之原 祐佳子",
+        nameJp: "杉之原 裕佳子",
         catchphrase: "",
         identity: {
             profile: `40歳 / １１歳と7歳のママ） / dōTERRA歴４年目`,
