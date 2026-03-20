@@ -26,14 +26,14 @@ export default function IntroVideosSection() {
           </h2>
         </FadeIn>
 
-        <div className={`flex flex-wrap gap-8 ${introVideos.items.length === 1 ? 'justify-center' : 'justify-start'}`}>
+        <div className={`flex flex-wrap gap-8 ${(introVideos.items.length as number) === 1 ? 'justify-center' : 'justify-start'}`}>
           {introVideos.items.map((item, i) => (
             <FadeIn
               key={i}
               delay={i * 0.1}
-              className={`w-full ${introVideos.items.length === 1
+              className={`w-full ${(introVideos.items.length as number) === 1
                 ? 'max-w-[1200px]'
-                : introVideos.items.length === 4
+                : (introVideos.items.length as number) === 4
                   ? 'md:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]'
                   : 'md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)] max-w-[600px]'
                 }`}
