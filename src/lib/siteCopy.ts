@@ -121,7 +121,7 @@ https://www.youtube.com/watch?v=ED10RosqNUY&t=67
       {
         title: "Eligo Shop",
         description: "ここでしか手に入らない、オリジナルグッズを多数ご用意しています。ドテラをもっと楽しみ、もっと伝えやすくするための冊子はもちろん、日常で使いたくなるデザイン雑貨やアパレルもラインナップ。手に取るだけで気分が上がる。使うほどに、伝えたくなる。そんなアイテムを、手に取りやすい価格でお届けします。",
-        image: "/assets/members/eligo_shop_thumb.jpg"
+        image: "/assets/members/eligoshopスクショ.png"
       },
       {
         title: "Eligo Bot",
