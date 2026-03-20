@@ -33,7 +33,9 @@ export default function IntroVideosSection() {
               delay={i * 0.1}
               className={`w-full ${introVideos.items.length === 1
                 ? 'max-w-[1200px]'
-                : 'md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)] max-w-[600px]'
+                : introVideos.items.length === 4
+                  ? 'md:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]'
+                  : 'md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)] max-w-[600px]'
                 }`}
             >
               <div className="flex flex-col gap-4">

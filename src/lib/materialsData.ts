@@ -1,37 +1,62 @@
 import { MaterialItem } from "@/types/members";
 
 export const materials: MaterialItem[] = [
-    {
-        id: "m1",
-        title: "ウェルネスライフ・ガイドブック",
-        description: "製品の使い方便利なチェックリストが含まれた、初心者の方向けの総合ガイドです。",
-        tags: ["ガイド", "製品情報"],
-        url: "#",
-        fileType: "pdf",
-    },
-    {
-        id: "m2",
-        title: "ビジネス紹介スライド (2024版)",
-        description: "シェアリングやプレゼンテーションでそのまま使える、最新のビジネス説明資料。",
-        tags: ["ビジネス", "資料"],
-        url: "#",
-        fileType: "slide",
-    },
-    {
-        id: "m3",
-        title: "価格表・注文シート",
-        description: "最新の製品ラインナップと卸売・小売価格の一覧表（PDF形式）。",
-        tags: ["製品情報", "事務"],
-        url: "#",
-        fileType: "pdf",
-    },
-    { id: "m4", title: "ブランドロゴ・画像素材集", description: "SNSやチラシ作成に使用できる、公式ロゴと美しいイメージ画像のセット。", tags: ["クリエイティブ", "資料"], url: "#", fileType: "link" },
-    { id: "m5", title: "体験談テンプレート", description: "あなたのオイル体験を魅力的にまとめ、共有するためのフォーマット資料。", tags: ["ビジネス"], url: "#", fileType: "doc" },
-    { id: "m6", title: "コンプライアンス・ガイド", description: "大切なお知らせ。正しく製品を伝え、共に成長していくための必須ルール。", tags: ["事務", "ビジネス"], url: "#", fileType: "pdf" },
-    { id: "m7", title: "アロマ活用レシピカード", description: "お掃除、美容、健康管理など、すぐに真似できるアロマレシピ集。", tags: ["ライフスタイル", "ガイド"], url: "#", fileType: "slide" },
-    { id: "m8", title: "新規登録ステップ・マニュアル", description: "大切な方へお伝えする際の、登録手順を分かりやすくまとめた手順書。", tags: ["事務", "ガイド"], url: "#", fileType: "pdf" },
-    { id: "m9", title: "表彰・昇格基準ガイド", description: "リーダーを目指す方のための、ランク要件とランクアップのメリット解説。", tags: ["ビジネス"], url: "#", fileType: "pdf" },
-    { id: "m10", title: "SNS発信のコツとNG集", description: "InstagramやFacebookで発信する際に気を付けたいポイントと成功例。", tags: ["クリエイティブ", "ビジネス"], url: "#", fileType: "link" },
-    { id: "m11", title: "季節のおすすめチラシ (春)", description: "季節に合わせたおすすめ製品を、分かりやすく紹介した配布用資料。 ", tags: ["季節", "製品情報"], url: "#", fileType: "pdf" },
-    { id: "m12", title: "メンバー専用お問い合わせ窓口", description: "不明点や困ったときに頼れる、チーム・会社への連絡先一覧。", tags: ["事務"], url: "#", fileType: "link" },
+    // --- ビギナー・基礎 ---
+    { id: "m1", title: "a.エッセンシャルオイル入門", description: "エッセンシャルオイルの基本知識と安全な使い方をわかりやすくまとめた入門資料。", tags: ["基礎", "エッセンシャルオイル"], url: "https://drive.google.com/file/d/1zc54ObpIvvImjK1N97i7RSIQtdONoad9/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/a.エッセンシャルオイル入門.jpg", fileType: "pdf" },
+    { id: "m2", title: "ビギナーレッスン", description: "ドテラを始めたばかりの方向けの基礎レッスン資料。最初のステップを丁寧に解説。", tags: ["基礎", "ビギナー"], url: "https://drive.google.com/file/d/11mGc0YH_aLFTZ3aI31aGVuh1RbKdlyzu/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/ビギナーレッスン.jpg", fileType: "pdf" },
+    { id: "m3", title: "aromatouch-hand-technique-quick-guide", description: "アロマタッチテクニックのクイックガイド。正しい手順と使用オイルを図解で説明。", tags: ["基礎", "使い方解説"], url: "https://drive.google.com/file/d/1tHw3JMcIc1Z5R07fMIqV3uva3g-7wgkY/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/aromatouch-hand-technique-quick-guide.jpg", fileType: "pdf" },
+
+    // --- 使い方解説 ---
+    { id: "m4", title: "芳香", description: "ディフューザーを使った芳香浴の基本と、シーン別のおすすめブレンド。", tags: ["使い方解説", "エッセンシャルオイル"], url: "https://drive.google.com/file/d/1i2rkfUif3-TMAO-jLDM2BB-eb2lJhANs/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/芳香.jpg", fileType: "pdf" },
+    { id: "m5", title: "塗布", description: "オイルを肌に直接塗布する際のポイントと、部位別の活用方法。", tags: ["使い方解説", "エッセンシャルオイル"], url: "https://drive.google.com/file/d/1Mzbvtz0yyOjenfptFCFC00o811maRBzN/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/塗布.jpg", fileType: "pdf" },
+    { id: "m6", title: "摂取", description: "エッセンシャルオイルを内服する際の正しい方法と注意事項。", tags: ["使い方解説", "エッセンシャルオイル"], url: "https://drive.google.com/file/d/1lw6YwkVxzoKRDgi-DthD5ahxdWQkw7Bt/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/摂取.jpg", fileType: "pdf" },
+    { id: "m7", title: "子どもとエッセンシャルオイル", description: "お子様にオイルを使う際の安全な方法と希釈ガイド。", tags: ["使い方解説", "エッセンシャルオイル", "子ども"], url: "https://drive.google.com/file/d/1PIKNvYaIAe6CPQj_38mqoujb0BNkebe3/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/子どもとエッセンシャルオイル.jpg", fileType: "pdf" },
+    { id: "m8", title: "ペットアロマ 使い方・基礎", description: "ペットにオイルを使う際の注意点と安全な活用方法をまとめたガイド。", tags: ["使い方解説", "ペット"], url: "/materials/ペットアロマ_使い方・基礎.pdf", thumbnailUrl: "/materials/thumbnails/ペットアロマ_使い方・基礎.jpg", fileType: "pdf" },
+    { id: "m9", title: "オイコレ解説シングル変", description: "オイルコレクションのシングルオイルの種類と特徴を詳しく解説した資料。", tags: ["使い方解説", "エッセンシャルオイル", "オイコレ"], url: "https://drive.google.com/file/d/1oodmWobxpY_nhn8FMVezdDpRebPhDs4Q/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/オイコレ解説シングル変.jpg", fileType: "pdf" },
+    { id: "m10", title: "オイコレ解説ブレンド編", description: "オイルコレクションのブレンドオイルの種類と使い方を詳しく解説した資料。", tags: ["使い方解説", "エッセンシャルオイル", "オイコレ"], url: "https://drive.google.com/file/d/1diLBMWN8uTspZv9umbhY1mQLA96fX107/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/オイコレ解説ブレンド編.jpg", fileType: "pdf" },
+    { id: "m11", title: "森の音デラックスキット解説", description: "森の音デラックスキットに含まれる製品の特徴と活用方法を解説。", tags: ["使い方解説", "エッセンシャルオイル"], url: "https://drive.google.com/file/d/1i0pD0okZQq9OwA9H5VITgPT_ROeZ4wNP/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/森の音デラックスキット解説.jpg", fileType: "pdf" },
+    { id: "m12", title: "サプリメント", description: "ドテラのサプリメントシリーズの成分・効果・摂り方をまとめた資料。", tags: ["使い方解説", "サプリ"], url: "https://drive.google.com/file/d/1afMVMAYceJayXfwqrK0Jgh4Ux6H1zILy/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/サプリメント.jpg", fileType: "pdf" },
+    { id: "m13", title: "メタパワー", description: "代謝サポートサプリ「メタパワー」の特徴と正しい使い方の解説資料。", tags: ["使い方解説", "サプリ"], url: "https://drive.google.com/file/d/15JCZHar6UcujlXDn6u3NUJxu8nmcweJb/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/メタパワー.pdf.jpg", fileType: "pdf" },
+    { id: "m14", title: "f.お掃除", description: "エッセンシャルオイルを使ったナチュラルなお掃除方法とレシピ集。", tags: ["使い方解説", "ライフスタイル"], url: "https://drive.google.com/file/d/1ZXZCxszx_cWxuqw-SDyTIkeZ1Mh7Fke7/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/f.お掃除.jpg", fileType: "pdf" },
+
+    // --- 成分・安全性 ---
+    { id: "m15", title: "g.化学成分", description: "エッセンシャルオイルに含まれる主要化学成分の種類と働きを解説。", tags: ["基礎", "成分"], url: "https://drive.google.com/file/d/1AveQjlh0_Ufa5ZuAfi4pkzVhlatYjTkX/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/g.化学成分.jpg", fileType: "pdf" },
+    { id: "m16", title: "合成化学物質", description: "日用品に含まれる合成化学物質の問題点と、ナチュラルな代替品の重要性。", tags: ["基礎", "成分"], url: "https://drive.google.com/file/d/17M9Z6jDV8kDoHFrNoEmf6yz5gnNqhzNU/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/合成化学物質.jpg", fileType: "pdf" },
+    { id: "m17", title: "市販の口紅の危険性", description: "市販の口紅に含まれる有害成分とその影響について解説したリーフレット。", tags: ["美容", "成分"], url: "https://drive.google.com/file/d/18JLBKKFHL2TKD7N3w45tnIStEufyakJw/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/市販の口紅の危険性.jpg", fileType: "pdf" },
+    { id: "m18", title: "口紅危険", description: "口紅に含まれる有害物質をシンプルにまとめたシェア用資料。", tags: ["美容", "成分"], url: "https://drive.google.com/file/d/1sH3eY-NMIuUcuexVer6U4Pr_sFJ2lovB/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/口紅危険.jpg", fileType: "pdf" },
+
+    // --- クラフト・DIY ---
+    { id: "m19", title: "口紅", description: "安全な天然素材を使った手作り口紅のレシピと手順。", tags: ["美容", "クラフト"], url: "https://drive.google.com/file/d/1LEfpy-tbejfwl9TPkLe0nU5XkqdJUM2y/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/口紅.jpg", fileType: "pdf" },
+    { id: "m20", title: "クリーム", description: "エッセンシャルオイルを使ったハンドクリーム・ボディクリームのレシピ。", tags: ["美容", "クラフト"], url: "https://drive.google.com/file/d/16vdDySYeBD3mbe5JSD_p7oonljmPZ4Ak/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/クリーム.jpg", fileType: "pdf" },
+    { id: "m21", title: "ロールオン", description: "持ち運びに便利なロールオンアロマの作り方とブレンドレシピ。", tags: ["美容", "クラフト"], url: "https://drive.google.com/file/d/1DgKiyawqa6hJL7zoKJ9zLfFZT4R6ZV_T/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/ロールオン.jpg", fileType: "pdf" },
+    { id: "m22", title: "バスボムクラフト", description: "重曹とエッセンシャルオイルで作る手作りバスボムのレシピと手順。", tags: ["美容", "クラフト"], url: "https://drive.google.com/file/d/1tIr1tSSqhRGZyKVA5DA5NX3LjRiolfqC/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/バスボムクラフト.jpg", fileType: "pdf" },
+    { id: "m23", title: "宝石石鹸", description: "見た目も美しい宝石石鹸の作り方。ギフトやイベントにもおすすめ。", tags: ["美容", "クラフト"], url: "https://drive.google.com/file/d/1LRK1XGXExCGg8SZv1rSqmID9ttSpoIN4/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/宝石石鹸.jpg", fileType: "pdf" },
+    { id: "m24", title: "日焼け止め", description: "天然素材で作る安心・安全な日焼け止めクリームのレシピ。", tags: ["美容", "クラフト"], url: "https://drive.google.com/file/d/1iWlL7xsrny0dXa8rKrcMgD500gVy5n94/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/日焼け止め.jpg", fileType: "pdf" },
+    { id: "m25", title: "虫除け", description: "エッセンシャルオイルを使ったナチュラルな虫除けスプレーのレシピ。", tags: ["ライフスタイル", "クラフト"], url: "https://drive.google.com/file/d/1CgpP2GZVvBIrTIwu5gWyNqB-XlOBi01R/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/虫除け.jpg", fileType: "pdf" },
+    { id: "m26", title: "Natural Perfume", description: "好みのオイルをブレンドして作る、自分だけのナチュラルパフュームレシピ。", tags: ["美容", "クラフト"], url: "https://drive.google.com/file/d/1uiyEshQlVgggGGMEF0WdcLOa_IIbo4K4/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/Natural Perfume.jpg", fileType: "pdf" },
+    { id: "m27", title: "ソーセージクラフト", description: "エッセンシャルオイルを活用した食のレシピ。健康的な手作りソーセージの作り方。", tags: ["ライフスタイル", "クラフト"], url: "https://drive.google.com/file/d/1o2UJpnRh_BliRKn4WaFHsBQe-cHJCJ8a/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/ソーセージクラフト.jpg", fileType: "pdf" },
+
+    // --- ライフスタイル ---
+    { id: "m28", title: "n.ライフスタイル", description: "ドテラ製品を日常生活に取り入れ、ウェルネスライフを実現するためのヒント集。", tags: ["ライフスタイル", "基礎"], url: "https://drive.google.com/file/d/1lBKs8BfgxFIV3Ewqwm9qsuPLI6Re7A8W/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/n.ライフスタイル.jpg", fileType: "pdf" },
+    { id: "m29", title: "Simple", description: "ナチュラル製品でシンプルに豊かな生活を送るためのガイドブック。", tags: ["ライフスタイル"], url: "https://drive.google.com/file/d/1q2BOTUXHdX6kFX-kZx4gmjo8Aolb67WF/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/Simple.jpg", fileType: "pdf" },
+
+    // --- ビジネス ---
+    { id: "m30", title: "o.ドテラをシェアするために", description: "大切な人にドテラを伝えるための基本的なアプローチとポイントをまとめた資料。", tags: ["ビジネス", "シェア"], url: "https://drive.google.com/file/d/1Ltjj5bsd1w5RKFaVuKuwNvcopHG8A5ul/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/o.ドテラをシェアするために.jpg", fileType: "pdf" },
+    { id: "m31", title: "p.ビジネスガイド", description: "ドテラビジネスの仕組みとスタートするための手順をわかりやすく解説したガイド。", tags: ["ビジネス"], url: "https://drive.google.com/file/d/1XCH4DRwYt0io7x4jslFWnITnJeGkaP9z/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/p.ビジネスガイド.jpg", fileType: "pdf" },
+    { id: "m32", title: "q.プレミア&シルバー達成まで", description: "プレミア・シルバーランク到達のための具体的なステップとアクションプラン。", tags: ["ビジネス", "ランク"], url: "https://drive.google.com/file/d/1WhlE_xiyI-5EpYFo2zonK0KwgIz2Dn0K/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/q.プレミア&シルバー達成まで.jpg", fileType: "pdf" },
+    { id: "m33", title: "r.リーダーとして", description: "リーダーシップを発揮しながらチームを率いるためのマインドセットと行動指針。", tags: ["ビジネス", "リーダー"], url: "https://drive.google.com/file/d/1NtQWZZQmlY7z2SbGTDQl0kECVjuqNJh-/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/r.リーダーとして.jpg", fileType: "pdf" },
+    { id: "m34", title: "s.組織を構築する", description: "持続的に成長するチームを作るための組織構築のステップと考え方。", tags: ["ビジネス", "チーム"], url: "https://drive.google.com/file/d/1S1FWNkNWN1wgK0v_H5-e88bh5ZwXkKmg/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/s.組織を構築する.jpg", fileType: "pdf" },
+
+    // --- BBB (Best Buy Buzz) ---
+    { id: "m35", title: "BBB11月2024", description: "2024年11月のおすすめ製品情報とお得なキャンペーンをまとめたBest Buy Buzz。", tags: ["BBB", "お買い物"], url: "https://drive.google.com/file/d/13sDAexVvitdJMD_3VP_6gQxez0amYWnl/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/BBB11月2024.jpg", fileType: "pdf" },
+    { id: "m36", title: "BBB12月2024", description: "2024年12月のおすすめ製品情報とお得なキャンペーンをまとめたBest Buy Buzz。", tags: ["BBB", "お買い物"], url: "https://drive.google.com/file/d/1j2zSsTuSstDsIrs2e9Jp4O87bdRw0Dpt/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/BBB12月2024.jpg", fileType: "pdf" },
+    { id: "m37", title: "BBB2月2025", description: "2025年2月のおすすめ製品情報とお得なキャンペーンをまとめたBest Buy Buzz。", tags: ["BBB", "お買い物"], url: "https://drive.google.com/file/d/10xTKSnlTPXj4pJ459DpSVsRxiiYvohMS/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/BBB2月2025.jpg", fileType: "pdf" },
+    { id: "m38", title: "BBB8月2025", description: "2025年8月のおすすめ製品情報とお得なキャンペーンをまとめたBest Buy Buzz。", tags: ["BBB", "お買い物"], url: "https://drive.google.com/file/d/1PsUEXDqAg3bo3PaKGOZxginzkEtxKX4V/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/BBB8月2025.jpg", fileType: "pdf" },
+    { id: "m39", title: "BBB9月2025", description: "2025年9月のおすすめ製品情報とお得なキャンペーンをまとめたBest Buy Buzz。", tags: ["BBB", "お買い物"], url: "https://drive.google.com/file/d/14ci8yNwJEeEZJjx8CCZ4G2KsAkdtgqJj/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/BBB9月2025.jpg", fileType: "pdf" },
+    { id: "m40", title: "BBB10月2025", description: "2025年10月のおすすめ製品情報とお得なキャンペーンをまとめたBest Buy Buzz。", tags: ["BBB", "お買い物"], url: "https://drive.google.com/file/d/1YlPKk3sVH9cxbA-zB6W9Vz9n2Fcg3jM3/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/BBB10月2025.jpg", fileType: "pdf" },
+    { id: "m41", title: "BBB11月2025", description: "2025年11月のおすすめ製品情報とお得なキャンペーンをまとめたBest Buy Buzz。", tags: ["BBB", "お買い物"], url: "https://drive.google.com/file/d/18peyNcEA4rLc6XvKvHQnNAfTZmKkj5AR/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/BBB11月2025.jpg", fileType: "pdf" },
+    { id: "m42", title: "BBB12月2025", description: "2025年12月のおすすめ製品情報とお得なキャンペーンをまとめたBest Buy Buzz。", tags: ["BBB", "お買い物"], url: "https://drive.google.com/file/d/1x6naqhLR60n5VmvqqGN9jBKzbwoA5T1Y/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/BBB12月2025.jpg", fileType: "pdf" },
+    { id: "m43", title: "BBB1月2026", description: "2026年1月のおすすめ製品情報とお得なキャンペーンをまとめたBest Buy Buzz。", tags: ["BBB", "お買い物"], url: "https://drive.google.com/file/d/1uZXvqcsYZG-97QgXmFHCgO_Jd7HbCvfU/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/BBB1月2026.jpg", fileType: "pdf" },
+    { id: "m44", title: "BBB2月2026", description: "2026年2月のおすすめ製品情報とお得なキャンペーンをまとめたBest Buy Buzz。", tags: ["BBB", "お買い物"], url: "https://drive.google.com/file/d/1noE2zV9_NFe0D8YyE69l6Sd9rLg7Yqex/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/BBB2月2026.jpg", fileType: "pdf" },
+    { id: "m45", title: "BBB3月2026", description: "2026年3月のおすすめ製品情報とお得なキャンペーンをまとめたBest Buy Buzz。", tags: ["BBB", "お買い物"], url: "https://drive.google.com/file/d/121_BUMwBy4hXjaKreS8vMvFmf2CXLKGy/view?usp=drivesdk", thumbnailUrl: "/materials/thumbnails/BBB3月2026.jpg", fileType: "pdf" },
 ];

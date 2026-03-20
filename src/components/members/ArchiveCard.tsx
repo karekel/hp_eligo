@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import PlaceholderImage from "../PlaceholderImage";
+import { useState } from "react";
 
 interface ArchiveCardProps {
     title: string;
@@ -20,6 +23,8 @@ export default function ArchiveCard({
     url,
     fileType,
 }: ArchiveCardProps) {
+    const [imgError, setImgError] = useState(false);
+
     return (
         <div className="flex flex-col gap-4">
             {/* サムネイル */}
@@ -30,12 +35,14 @@ export default function ArchiveCard({
                     rel="noopener noreferrer"
                     className="block w-full h-full"
                 >
-                    {thumbnailUrl ? (
+                    {thumbnailUrl && !imgError ? (
                         <Image
                             src={thumbnailUrl}
                             alt={title}
                             fill
+                            unoptimized
                             className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            onError={() => setImgError(true)}
                         />
                     ) : (
                         <PlaceholderImage

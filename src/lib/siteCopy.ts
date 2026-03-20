@@ -93,6 +93,24 @@ https://www.youtube.com/watch?v=ED10RosqNUY&t=67
         videoId: "MtalN_DEx5U",
         description: "この動画では dōTERRA（ドテラ）の全体像をわかりやすく解説します✨\n① 会社について\n②製品について\n③ なぜMLMなのか？\n④ 登録・購入方法\n⑤ Team ELIGO 特典\nドテラは、ただのオイルブランドではありません。\nあなたの暮らしを豊かにする一滴が、地球の裏側の誰かの未来をも支えているのです。"
       },
+      {
+        title: "デラックスキット解説",
+        image: "",
+        videoId: "mKnEw9HJcx8",
+        description: ""
+      },
+      {
+        title: "オイコレシングルオイル",
+        image: "",
+        videoId: "vE9cdmClJCU",
+        description: ""
+      },
+      {
+        title: "サプリメント解説",
+        image: "",
+        videoId: "-Yfx0ylwyAw",
+        description: ""
+      },
     ],
   },
 
@@ -118,7 +136,7 @@ https://www.youtube.com/watch?v=ED10RosqNUY&t=67
       {
         title: "Materials",
         description: "デザイン素材や教育ツール。あなたの活動を豊かにするためのクリエイティブなリソースが集約されています。",
-        image: "" // Empty will trigger lavender placeholder
+        image: "/assets/members/MATERIALS.png"
       },
     ],
   },

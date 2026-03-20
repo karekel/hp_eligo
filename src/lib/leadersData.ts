@@ -205,6 +205,7 @@ export const leaders: Leader[] = [
 メンバーさんは、関東中心
 神奈川県、千葉県、埼玉県、が多い
 福岡、群馬、沖縄にはチラホラ`,
+            image: "/assets/Leaders/aoi/1.jpg",
         },
         myStory: {
             signatureOils: [
@@ -228,6 +229,7 @@ doTERRAのオイルを使って
 日本でdoTERRAを広めて、一人でも
 癒しを届け、助けが必要な人の役に
 立ちたい。`,
+            image: "/assets/Leaders/aoi/2.jpg",
         },
         vision: {
             ourCulture: `毎月チームメンバーのアロマクラフトや、アロマタッチなどイベントやワークショップ開催
@@ -236,6 +238,7 @@ doTERRAのオイルを使って
 看護師、整体師、鍼灸師、美容師、栄養士、セラピスト、占い師
 ダンスインストラクター、デザイナー、などなど業種も様々です、いろんな視点から有益な情報が集まり、皆様の悩みに寄り添った優しいチームです。`,
             invite: `明るくて前向きな方、健康意識が高く、よく笑う方、人の役に立つことが大好きな方、家族や周りの人を大切にする方`,
+            image: "/assets/Leaders/aoi/3.jpg",
         }
     },
     {
@@ -273,6 +276,7 @@ doTERRAのオイルを使って
         identity: {
             profile: `40歳 / １１歳と7歳のママ） / dōTERRA歴４年目`,
             place: `大阪在住 / 関西エリアが多いです。`,
+            image: "/assets/Leaders/yukako/1.jpg",
         },
         myStory: {
             signatureOilsLabel: "My Signature Palette： 私を象徴する3本のオイル",
@@ -302,6 +306,7 @@ doTERRAのオイルを使って
 
 その可能性を知っているから、
 私は伝えていきたいと思っています。`,
+            image: "/assets/Leaders/yukako/2.jpg",
         },
         vision: {
             ourCulture: `私のチームでは、
@@ -332,6 +337,7 @@ doTERRA を始めたことで、
 それを受け取り、楽める方とご縁があれば嬉しいです。
 
 そして…関西の方は、ぜひ我がチームへ！`,
+            image: "/assets/Leaders/yukako/3.jpg",
         }
     },
     {
