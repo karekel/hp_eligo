@@ -496,6 +496,32 @@
   ],
   "zoomArchives": [
     {
+      "id": "z-73",
+      "title": "ミネラル体験談ZOOM",
+      "description": "",
+      "tags": [
+        "ミネラル",
+        "体験談"
+      ],
+      "thumbnailUrl": "https://img.youtube.com/vi/vClnKsHFd6I/hqdefault.jpg",
+      "date": "",
+      "videoUrl": "https://youtu.be/vClnKsHFd6I",
+      "sortValue": 0
+    },
+    {
+      "id": "z-72",
+      "title": "エッセンシャルオイルのある暮らし体験談ZOOM",
+      "description": "",
+      "tags": [
+        "エッセンシャルオイル",
+        "体験談"
+      ],
+      "thumbnailUrl": "https://img.youtube.com/vi/JpOHJ6PIzY4/hqdefault.jpg",
+      "date": "",
+      "videoUrl": "https://youtu.be/JpOHJ6PIzY4",
+      "sortValue": 0
+    },
+    {
       "id": "z-69",
       "title": "絶対見て！ビルダーサミットレポート！",
       "description": "",
@@ -1008,8 +1034,7 @@
       "title": "🌴PD in Bali報告会🌴",
       "description": "",
       "tags": [
-        "トリップレポート",
-        "PDトリップ"
+        "トリップレポート"
       ],
       "videoUrl": "https://youtu.be/EsXBTMbEh6M?si=a88LVZp-wRJwP1UJ",
       "thumbnailUrl": "https://img.youtube.com/vi/EsXBTMbEh6M/hqdefault.jpg",
@@ -1310,7 +1335,6 @@
       "title": "2024.09.02ミネラルモニター説明会 vol.2",
       "description": "",
       "tags": [
-        "キャンペーン",
         "製品の使い方",
         "ミネラル"
       ],
@@ -1324,7 +1348,6 @@
       "title": "2024.08.19ミネラルモニター説明会 vol.1",
       "description": "",
       "tags": [
-        "キャンペーン",
         "製品の使い方",
         "ミネラル"
       ],
@@ -1339,8 +1362,7 @@
       "description": "",
       "tags": [
         "ビジネス",
-        "ドテラについて",
-        "リーダー"
+        "ドテラについて"
       ],
       "videoUrl": "https://youtu.be/5mEE3hzbtfs",
       "thumbnailUrl": "https://img.youtube.com/vi/5mEE3hzbtfs/hqdefault.jpg",
