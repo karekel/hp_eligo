@@ -86,7 +86,7 @@ https://www.youtube.com/watch?v=ED10RosqNUY&t=67
 
   introVideos: {
     heading: "Introduction videos",
-    items: [
+    items: ([
       {
         title: "dōTERRAでナチュラルなライフスタイルを叶えよう！",
         image: "/assets/members/eligo_shop_thumb.jpg",
@@ -111,7 +111,7 @@ https://www.youtube.com/watch?v=ED10RosqNUY&t=67
         videoId: "-Yfx0ylwyAw",
         description: ""
       },
-    ],
+    ] as Array<{ title: string; image: string; videoId: string; description: string }>),
   },
 
   membersOnly: {
