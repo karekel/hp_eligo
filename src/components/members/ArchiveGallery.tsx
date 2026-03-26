@@ -32,6 +32,7 @@ interface ArchiveGalleryProps {
     defaultVisibleCount?: number;
     enableInternalScroll?: boolean;
     bgColor?: string;
+    enableSort?: boolean;
 }
 
 export default function ArchiveGallery({
@@ -42,6 +43,7 @@ export default function ArchiveGallery({
     defaultVisibleCount = 6,
     enableInternalScroll = false,
     bgColor = "bg-white/30",
+    enableSort = false,
 }: ArchiveGalleryProps) {
     const [selectedTags, setSelectedTags] = useState<string[]>([]);
     const [isExpanded, setIsExpanded] = useState(false);
@@ -157,7 +159,7 @@ export default function ArchiveGallery({
                         </div>
 
                         {/* Sort & Year Controls */}
-                        <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+                        {enableSort && <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
                             {/* 並び替え */}
                             <div className="flex items-center gap-2.5">
                                 <span className="text-[10px] font-bold tracking-[0.18em] text-[#1a1a1a]/30 uppercase select-none">
@@ -213,7 +215,7 @@ export default function ArchiveGallery({
                                     </div>
                                 </div>
                             )}
-                        </div>
+                        </div>}
                     </div>
 
                     {/* Grid Container */}

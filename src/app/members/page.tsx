@@ -71,6 +71,7 @@ export default function MembersPage() {
                         url: item.videoUrl,
                     }))}
                     bgColor="bg-white/50"
+                    enableSort
                 />
 
                 {/* 4) Materials */}
