@@ -31,6 +31,10 @@ const notoSansJP = Noto_Sans_JP({
 export const metadata: Metadata = {
   title: siteConfig.siteName,
   description: siteConfig.description,
+  icons: {
+    apple: "/apple-touch-icon.png",
+    icon: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: siteConfig.siteName,
     description: siteConfig.description,
