@@ -3,9 +3,7 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/lib/siteConfig";
-import { siteAssets } from "@/lib/siteAssets";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();

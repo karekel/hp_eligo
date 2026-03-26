@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { siteCopy } from "@/lib/siteCopy";
 import { siteAssets } from "@/lib/siteAssets";
-import PlaceholderImage from "./PlaceholderImage";
 import FadeIn from "./FadeIn";
 
 export default function ContactSection() {
