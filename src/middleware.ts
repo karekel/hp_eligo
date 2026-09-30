@@ -1,11 +1,15 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { MEMBERS_COOKIE, verifyMembersToken } from "@/lib/membersAuth";
 
-export function middleware(req: NextRequest) {
+export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
   if (pathname.startsWith("/members")) {
-    const ok = req.cookies.get("members_auth")?.value === "1";
+    const ok = await verifyMembersToken(
+      req.cookies.get(MEMBERS_COOKIE)?.value,
+      process.env.MEMBERS_PASSWORD
+    );
     if (!ok) {
       const url = req.nextUrl.clone();
       url.pathname = "/login";
