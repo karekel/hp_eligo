@@ -17,6 +17,13 @@
 			"service": "hp-eligo"
 		}
 	],
+	// 公開は独自ドメインのみ（workers.dev の確認用アドレスは使わない）
+	"workers_dev": false,
+	"routes": [
+		// 独自ドメイン（www 付きは worker.ts で www なしへ転送する）
+		{ "pattern": "eligo-oil.com", "custom_domain": true },
+		{ "pattern": "www.eligo-oil.com", "custom_domain": true }
+	],
 	"images": {
 		// next/image の画像最適化に Cloudflare Images を使う
 		"binding": "IMAGES"

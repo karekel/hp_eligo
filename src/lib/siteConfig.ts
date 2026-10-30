@@ -1,7 +1,7 @@
 /** 外部URL・サイト全体設定 */
 export const siteConfig = {
   siteName: "ELIGŌ",
-  siteUrl: "https://eligo.example.com",
+  siteUrl: "https://eligo-oil.com",
   description: "ELIGŌ — Pursue What's pure",
 
   /** OGP */

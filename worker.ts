@@ -1,5 +1,6 @@
 // Cloudflare Workers のエントリーポイント。
 // OpenNext が生成するハンドラーを包み、次の処理を追加する。
+//   - http・www 付きのアドレスを https・www なしへ転送する
 //   - /cdn-cgi/_next_cache/（生成済みページの保存領域）への直接アクセスを遮断する
 // /_next/image（画像最適化）では次の2点を追加する。
 //   1. 変換結果をエッジにキャッシュし、Cloudflare Images の変換回数（無料枠）を節約する
@@ -21,6 +22,13 @@ const IMAGE_CACHE_SECONDS = 60 * 60 * 24 * 30;
 export default {
   async fetch(request: Request, env: Env, ctx: Ctx): Promise<Response> {
     const url = new URL(request.url);
+    // http や www 付きで来たアクセスは https・www なしの正式なアドレスへ転送する（手元確認の localhost は除く）
+    const isLocal = url.hostname === "localhost" || url.hostname === "127.0.0.1";
+    if (!isLocal && (url.protocol === "http:" || url.hostname.startsWith("www."))) {
+      url.protocol = "https:";
+      url.hostname = url.hostname.replace(/^www\./, "");
+      return Response.redirect(url.toString(), 301);
+    }
     // 生成済みページの保存領域（会員ページの中身を含む）は Worker 内部からのみ読む
     if (url.pathname.startsWith("/cdn-cgi/_next_cache/")) {
       return new Response("Not Found", { status: 404 });
