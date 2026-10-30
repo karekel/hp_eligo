@@ -21,7 +21,7 @@ export default function HeroSection() {
       >
         <Image
           src={siteAssets.heroLavender}
-          alt="Hero background"
+          alt=""
           fill
           priority
           className="object-cover object-center"
@@ -30,15 +30,15 @@ export default function HeroSection() {
 
       {/* 中央配置ロゴ — 常に表示 */}
       <div className="relative z-10 min-h-screen flex items-center justify-center px-4">
-        <div className="relative w-[25vw] max-w-[400px] aspect-square">
+        <h1 className="relative w-[25vw] max-w-[400px] aspect-square">
           <Image
             src={siteAssets.aboutMark}
-            alt="ELIGŌ Mark"
+            alt="ELIGŌ（エリゴ）— ドテラ・エリザベスのチーム"
             fill
             priority
             className="object-contain brightness-0 invert"
           />
-        </div>
+        </h1>
       </div>
     </section>
   );

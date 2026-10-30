@@ -29,21 +29,23 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: siteConfig.siteName,
+  metadataBase: new URL(siteConfig.siteUrl),
+  title: { default: siteConfig.title, template: "%s｜ELIGŌ（エリゴ）" },
   description: siteConfig.description,
+  alternates: { canonical: "/" },
   icons: {
     apple: "/apple-touch-icon.png",
     icon: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: siteConfig.siteName,
+    title: siteConfig.title,
     description: siteConfig.description,
     images: [{ url: siteConfig.ogImage }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.siteName,
+    title: siteConfig.title,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },

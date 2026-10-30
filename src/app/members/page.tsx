@@ -5,6 +5,12 @@ import ArchiveGallery from "@/components/members/ArchiveGallery";
 import Header from "@/components/Header";
 import FadeIn from "@/components/FadeIn";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Members",
+    robots: { index: false, follow: false },
+};
 
 export default function MembersPage() {
     const { members } = siteConfig.externalLinks;

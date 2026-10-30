@@ -22,9 +22,11 @@ const IMAGE_CACHE_SECONDS = 60 * 60 * 24 * 30;
 export default {
   async fetch(request: Request, env: Env, ctx: Ctx): Promise<Response> {
     const url = new URL(request.url);
-    // http や www 付きで来たアクセスは https・www なしの正式なアドレスへ転送する（手元確認の localhost は除く）
-    const isLocal = url.hostname === "localhost" || url.hostname === "127.0.0.1";
-    if (!isLocal && (url.protocol === "http:" || url.hostname.startsWith("www."))) {
+    // http や www 付きで来たアクセスは https・www なしの正式なアドレスへ転送する。
+    // 手元確認（wrangler dev）は URL を本番ドメインの http に読み替えるので、
+    // Cloudflare のエッジが付ける cf-visitor ヘッダーでも http を確かめる
+    const isHttp = url.protocol === "http:" && request.headers.get("cf-visitor")?.includes('"http"');
+    if (isHttp || url.hostname.startsWith("www.")) {
       url.protocol = "https:";
       url.hostname = url.hostname.replace(/^www\./, "");
       return Response.redirect(url.toString(), 301);
