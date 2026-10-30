@@ -70,11 +70,15 @@ public/
 
 `src/lib/videoData.ts` の `videos` 配列を編集する。タグは自動集計される。
 
-## デプロイ
+## デプロイ（Cloudflare Workers）
+
+[OpenNext](https://opennext.js.org/cloudflare) を使って Cloudflare Workers で公開する。設定は `wrangler.jsonc` / `open-next.config.ts` / `worker.ts`。
 
 ```bash
-npm run build   # 本番ビルド
-npx next start  # 本番起動
+npm run preview   # Cloudflare と同じ環境で手元確認（http://localhost:8787）
+npm run deploy    # Cloudflare へ公開
 ```
 
-Vercel へのデプロイ: リポジトリを接続するだけで自動デプロイ。
+- 公開には環境変数 `CLOUDFLARE_API_TOKEN` と `CLOUDFLARE_ACCOUNT_ID` が必要
+- 会員ページのパスワード `MEMBERS_PASSWORD` は Cloudflare 側のシークレットに登録する（`npx wrangler secret put MEMBERS_PASSWORD`）
+- 手元確認では `.dev.vars` に `MEMBERS_PASSWORD=...` を書く（Git には含めない）
