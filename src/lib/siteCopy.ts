@@ -19,6 +19,12 @@ export const siteCopy = {
     label: "ABOUT ELIGŌ",
     heading: "About ELIGŌ",
     subtitle: "健康と生き方の主権を取り戻すコミュニティ",
+    lead: {
+      before: "ELIGŌ（エリゴ）は、ドテラ（doTERRA）プレジデンシャルダイヤモンドの",
+      linkText: "エリザベス",
+      linkHref: "/leaders/leader-s",
+      after: "が主宰する、エッセンシャルオイルを学び、使いこなすためのチームです。",
+    },
     cards: [
       {
         key: "what-is-eligo",

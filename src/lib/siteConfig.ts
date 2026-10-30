@@ -1,8 +1,16 @@
+/**
+ * 本番URLのホスト名。Vercel 上ではビルド時に本番ドメインが自動で入る
+ * （独自ドメインを追加した場合はそちらが優先される）。
+ */
+const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL || "hp-eligo.vercel.app";
+
 /** 外部URL・サイト全体設定 */
 export const siteConfig = {
   siteName: "ELIGŌ",
-  siteUrl: "https://eligo.example.com",
-  description: "ELIGŌ — Pursue What's pure",
+  siteUrl: `https://${productionHost}`,
+  title: "ELIGŌ（エリゴ）｜ドテラ（doTERRA）エリザベスのエッセンシャルオイルチーム",
+  description:
+    "ELIGŌ（エリゴ）は、ドテラ（doTERRA）プレジデンシャルダイヤモンドのエリザベス（Elizabeth）が主宰するエッセンシャルオイルのチームです。毎月のZoom勉強会、アロマタッチ、クラフトワークショップ、限定資料で、植物の力を暮らしとビジネスに活かす方法を学べます。",
 
   /** OGP */
   ogImage: "/assets/og_image.png",
