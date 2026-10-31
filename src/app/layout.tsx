@@ -35,7 +35,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   icons: {
     apple: "/apple-touch-icon.png",
-    icon: "/apple-touch-icon.png",
   },
   openGraph: {
     title: siteConfig.title,
