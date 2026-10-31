@@ -162,7 +162,7 @@ export function BlogFooter() {
       </div>
       <div className="border-t border-blog-ink/15">
         <div className="mx-auto max-w-6xl px-6 py-6 text-[11px] leading-6 text-blog-ink/85">
-          <p>当ブログは、エッセンシャルオイルを学び、暮らしに活かす仲間のチーム「ELIGŌ」が運営しています。</p>
+          <p>当ブログは、dōTERRA（ドテラ）のウェルネスアドボケイト（会員）によるチーム「ELIGŌ」が運営しています。</p>
           <p className="mt-2">© ELIGŌ</p>
         </div>
       </div>
