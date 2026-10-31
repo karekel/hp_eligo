@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   icons: {
     apple: "/apple-touch-icon.png",
-    icon: "/apple-touch-icon.png",
   },
   openGraph: {
     title: siteConfig.siteName,
