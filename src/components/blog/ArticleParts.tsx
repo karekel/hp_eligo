@@ -166,7 +166,7 @@ export function NextStepBox() {
           <p className="font-serif-jp mt-1 text-[18px] leading-8">もっと詳しく知りたい方へ</p>
           <p className="mt-2 text-[13px] leading-7 text-blog-ink/85">ELIGŌでは、オイルの使い方を一緒に学べる毎月のZoom勉強会やクラフトワークショップを開いています。</p>
         </div>
-        <Link href="/#how-to-join" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-[13px] tracking-widest text-blog-accent transition hover:bg-blog-tint">
+        <Link href="/#how-to-join" data-track="article_next_step" data-track-group="blog" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-[13px] tracking-widest text-blog-accent transition hover:bg-blog-tint">
           参加方法を見る <ArrowIcon />
         </Link>
       </div>
@@ -336,13 +336,15 @@ export function AuthorBox() {
         <p className="font-serif-jp mt-2 text-[18px] text-[#2b2b2b]">{author.name}</p>
         <p className="mt-1 text-[12px] text-[#888]">dōTERRA（ドテラ）のウェルネスアドボケイトによるチーム</p>
         <div className="mt-4 flex flex-wrap gap-3">
-          <Link href="/" className="inline-flex items-center gap-1.5 rounded-full border border-blog-accent px-4 py-1.5 text-[12px] tracking-wider text-blog-accent transition hover:border-blog-peach hover:bg-blog-peach hover:text-blog-ink">
+          <Link href="/" data-track="author_official" data-track-group="blog" className="inline-flex items-center gap-1.5 rounded-full border border-blog-accent px-4 py-1.5 text-[12px] tracking-wider text-blog-accent transition hover:border-blog-peach hover:bg-blog-peach hover:text-blog-ink">
             公式サイトを見る <ArrowIcon className="h-3.5 w-3.5" />
           </Link>
           <a
             href={blogConfig.elizabethInstagram.url}
             target="_blank"
             rel="noopener noreferrer"
+            data-track="author_instagram"
+            data-track-group="blog"
             className="inline-flex items-center gap-1.5 rounded-full bg-blog-peach px-4 py-1.5 text-[12px] tracking-wider text-blog-ink transition hover:bg-blog-tint-dark"
           >
             <InstagramIcon className="h-3.5 w-3.5" /> Instagram

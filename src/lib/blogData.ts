@@ -3,8 +3,8 @@
  * 現在はデザイン確認用のサンプル。記事本文は src/components/blog/articles/ にある。
  */
 
-/** 公開前は true。検索エンジンに載せず、サイトマップにも含めない */
-export const BLOG_DRAFT = true;
+/** 公開前は true。検索エンジンに載せず、サイトマップにも含めない。2026-10-31 に公開（false） */
+export const BLOG_DRAFT = false;
 
 export const blogConfig = {
   name: "ELIGŌ Oil Journal",

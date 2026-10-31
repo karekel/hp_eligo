@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   description: blogConfig.description,
   // 公開前は検索エンジンに載せない
-  ...(BLOG_DRAFT && { robots: { index: false, follow: false } }),
+  ...(BLOG_DRAFT ? { robots: { index: false, follow: false } } : {}),
 };
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {

@@ -73,6 +73,8 @@ export default function HowToJoinSection() {
                                     <Link
                                         href={step.href}
                                         target={step.href.startsWith("http") ? "_blank" : "_self"}
+                                        data-track={`howtojoin_${index + 1}`}
+                                        data-track-group="top"
                                         className="inline-flex items-center justify-center px-8 py-3 min-w-[240px] rounded-full text-[#1a1a1a] font-medium text-base md:text-lg transition-all hover:brightness-90 active:scale-95 shadow-sm self-start"
                                         style={{ backgroundColor: step.color }}
                                     >

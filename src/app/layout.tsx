@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Noto_Sans_JP } from "next/font/google";
 import { siteConfig } from "@/lib/siteConfig";
+import { analyticsConfig } from "@/lib/analytics";
+import Analytics from "@/components/Analytics";
+import AnalyticsEvents from "@/components/AnalyticsEvents";
 import "./globals.css";
 
 const cyGrotesk = localFont({
@@ -33,6 +36,8 @@ export const metadata: Metadata = {
   title: { default: siteConfig.title, template: "%s｜ELIGŌ（エリゴ）" },
   description: siteConfig.description,
   alternates: { canonical: "/" },
+  // Search Console の所有権確認（HTML タグ方式）。GOOGLE_SITE_VERIFICATION が未設定なら出力しない
+  ...(analyticsConfig.googleSiteVerification && { verification: { google: analyticsConfig.googleSiteVerification } }),
   icons: {
     apple: "/apple-touch-icon.png",
   },
@@ -59,6 +64,8 @@ export default function RootLayout({
     <html lang="ja">
       <body className={`${cyGrotesk.variable} ${notoSansJP.variable} antialiased`}>
         {children}
+        <Analytics />
+        <AnalyticsEvents />
       </body>
     </html>
   );
