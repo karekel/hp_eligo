@@ -177,13 +177,13 @@ body {
   font-weight: 500;
 }
 
-/* 白く塗った板張りの背景（参考デザインの木目） */
-.blog-wood {
-  background-color: #f6f3ee;
+/* 薄紫のグラデーションに、細い線の格子と星の模様を重ねた背景 */
+.blog-bg {
+  background-color: #f2ecfa;
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='1600'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.35 0.0025' numOctaves='2' seed='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.48 0 0 0 0 0.4 0.42 0 0 0 -0.17'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E"),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 0 158px, rgba(120, 100, 80, 0.13) 158px 159px, rgba(255, 255, 255, 0.7) 159px 160px),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.35) 0 160px, rgba(236, 230, 220, 0.35) 160px 320px, rgba(255, 255, 255, 0.15) 320px 480px);
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='128'%3E%3Cdefs%3E%3Cpath id='s' d='M0-6C.8-1.6 1.6-.8 6 0 1.6.8.8 1.6 0 6-.8 1.6-1.6.8-6 0-1.6-.8-.8-1.6 0-6Z'/%3E%3C/defs%3E%3Cpath d='M48 0C48 22 96 42 96 64 96 86 48 106 48 128 48 106 0 86 0 64 0 42 48 22 48 0Z' fill='none' stroke='%238b78c4' stroke-opacity='.2'/%3E%3Cg fill='%238b78c4' fill-opacity='.24'%3E%3Cuse href='%23s' x='48' y='64'/%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' x='96'/%3E%3Cuse href='%23s' y='128'/%3E%3Cuse href='%23s' x='96' y='128'/%3E%3C/g%3E%3C/svg%3E"),
+    linear-gradient(180deg, #f8f4fd 0%, #ece5f8 50%, #f8f4fd 100%);
+  background-size: 96px 128px, 100% 1600px;
 }
 
 /* ブログのメイン色のグラデーション */

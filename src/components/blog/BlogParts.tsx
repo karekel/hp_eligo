@@ -372,7 +372,7 @@ export function BlogSidebar() {
 
 export function Breadcrumb({ items }: { items: { label: string; href?: string }[] }) {
   return (
-    <nav aria-label="パンくずリスト" className="text-[12px] text-[#888]">
+    <nav aria-label="パンくずリスト" className="text-[12px] text-[#666]">
       <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
         {items.map((item, i) => (
           <li key={item.label} className="flex items-center gap-2">

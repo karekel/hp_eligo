@@ -28,7 +28,7 @@ export default function BlogTopPage() {
             <span className="mt-4 block text-[12px] tracking-[0.3em] text-white/90 md:text-[14px]">{blogConfig.nameJp}</span>
           </h1>
         </div>
-        <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#f6f3ee] to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#f1ebfa] to-transparent" />
       </section>
 
       {/* このブログについて */}

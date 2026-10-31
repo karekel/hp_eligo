@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className={`${serifJp.variable} ${sansLatin.variable} ${serifLatin.variable} ${script.variable} blog-root blog-wood min-h-screen`}>
+    <div className={`${serifJp.variable} ${sansLatin.variable} ${serifLatin.variable} ${script.variable} blog-root blog-bg min-h-screen`}>
       <BlogHeader />
       {children}
       <BlogFooter />
