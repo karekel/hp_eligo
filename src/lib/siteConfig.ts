@@ -35,6 +35,7 @@ export const siteConfig = {
     { label: "Intro", href: "/#intro" },
     { label: "Members only", href: "/members" },
     { label: "How to join", href: "/#how-to-join" },
+    { label: "Blog", href: "/blog" },
   ],
 
   /** メンバーページ用ナビゲーション */

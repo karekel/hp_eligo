@@ -13,6 +13,9 @@ export default function Header() {
   // メンバーページかどうか判定
   const isMembersPage = pathname === "/members";
   const navItems = isMembersPage ? siteConfig.membersNav : siteConfig.nav;
+  // 公開ページは項目が多いので、全項目が1行に収まる幅でだけ横並びにする
+  const desktopNavClass = isMembersPage ? "gap-8 md:flex" : "gap-6 xl:flex";
+  const mobileNavClass = isMembersPage ? "md:hidden" : "xl:hidden";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -43,12 +46,12 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden gap-8 md:flex" aria-label="メインナビゲーション">
+        <nav className={`hidden ${desktopNavClass}`} aria-label="メインナビゲーション">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`font-heading text-[clamp(0.85rem,1vw,1.05rem)] font-medium tracking-[0.15em] uppercase transition-colors ${isMembersPage
+              className={`font-heading whitespace-nowrap text-[clamp(0.85rem,1vw,1.05rem)] font-medium tracking-[0.15em] uppercase transition-colors ${isMembersPage
                 ? "text-[#1a1a1a] hover:text-[#6b7280]"
                 : "text-white hover:text-white/70"
                 }`}
@@ -60,7 +63,7 @@ export default function Header() {
 
         {/* Mobile hamburger */}
         <button
-          className="flex flex-col gap-1.5 md:hidden"
+          className={`flex flex-col gap-1.5 ${mobileNavClass}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="メニューを開く"
           aria-expanded={menuOpen}
@@ -82,7 +85,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <nav className={`border-t backdrop-blur-md md:hidden ${isMembersPage
+        <nav className={`border-t backdrop-blur-md ${mobileNavClass} ${isMembersPage
           ? "border-[#e0e0e0] bg-[#f0eff0]/95"
           : "border-white/10 bg-black/95"
           }`}>
