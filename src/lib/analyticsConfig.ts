@@ -5,8 +5,8 @@
  * 環境変数（NEXT_PUBLIC_GA_ID など）が設定されていればそちらが優先される。
  */
 export const analyticsIds = {
-  /** Google アナリティクス 4 の測定 ID。例: "G-XXXXXXXXXX" */
-  gaId: "",
+  /** Google アナリティクス 4 の測定 ID（アカウント ELIGŌ / プロパティ ELIGŌ eligo-oil.com、2026-10-31 作成） */
+  gaId: "G-WDXT99W4BN",
   /** Search Console「HTML タグ」の content の値。DNS（TXT）で確認する場合は空のままでよい */
   googleSiteVerification: "",
   /** Cloudflare Web Analytics のトークン（32 桁の英数字）。使わなければ空 */
