@@ -318,7 +318,7 @@ export function Disclosure() {
     <div className="mt-12 rounded-xl border border-dashed border-black/15 px-5 py-4 text-[12px] leading-6 text-[#777]">
       <p className="font-medium text-[#555]">このブログについて</p>
       <p className="mt-1">
-        当ブログは、dōTERRA（ドテラ）のウェルネスアドボケイト（会員）によるチーム「ELIGŌ」が運営しています。製品の使用方法は、お手元の製品ラベルの表示に従ってください。
+        当ブログは、エッセンシャルオイルを学び、暮らしに活かす仲間のチーム「ELIGŌ」が運営しています。製品の使用方法は、お手元の製品ラベルの表示に従ってください。
       </p>
     </div>
   );
@@ -334,7 +334,7 @@ export function AuthorBox() {
       <div>
         <p className="font-script text-[18px] leading-none text-blog-accent">Writer</p>
         <p className="font-serif-jp mt-2 text-[18px] text-[#2b2b2b]">{author.name}</p>
-        <p className="mt-1 text-[12px] text-[#888]">dōTERRA（ドテラ）のウェルネスアドボケイトによるチーム</p>
+        <p className="mt-1 text-[12px] text-[#888]">エッセンシャルオイルを学び、暮らしに活かす仲間のチーム</p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link href="/" data-track="author_official" data-track-group="blog" className="inline-flex items-center gap-1.5 rounded-full border border-blog-accent px-4 py-1.5 text-[12px] tracking-wider text-blog-accent transition hover:border-blog-peach hover:bg-blog-peach hover:text-blog-ink">
             公式サイトを見る <ArrowIcon className="h-3.5 w-3.5" />

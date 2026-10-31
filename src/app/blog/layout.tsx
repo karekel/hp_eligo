@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Noto_Sans, Noto_Serif, Noto_Serif_JP } from "next/font/google";
 import { BlogFooter, BlogHeader } from "@/components/blog/BlogParts";
 import { BLOG_DRAFT, blogConfig } from "@/lib/blogData";
+import { siteConfig } from "@/lib/siteConfig";
 
 const serifJp = Noto_Serif_JP({
   variable: "--font-serif-jp",
@@ -39,6 +40,19 @@ export const metadata: Metadata = {
     template: `%s｜${blogConfig.name}`,
   },
   description: blogConfig.description,
+  // SNS 共有用の文言。親レイアウトの OGP をそのまま引き継がず、ブログ自身の説明を使う
+  openGraph: {
+    title: `${blogConfig.name}｜${blogConfig.nameJp}`,
+    description: blogConfig.description,
+    images: [{ url: siteConfig.ogImage }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${blogConfig.name}｜${blogConfig.nameJp}`,
+    description: blogConfig.description,
+    images: [siteConfig.ogImage],
+  },
   // 公開前は検索エンジンに載せない
   ...(BLOG_DRAFT ? { robots: { index: false, follow: false } } : {}),
 };

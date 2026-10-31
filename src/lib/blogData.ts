@@ -10,7 +10,7 @@ export const blogConfig = {
   name: "ELIGŌ Oil Journal",
   nameJp: "エッセンシャルオイルの使い方ガイド",
   description:
-    "ドテラ（dōTERRA）のエッセンシャルオイルを、毎日の暮らしにどう取り入れるか。使い方・道具・保管のコツをまとめています。",
+    "エッセンシャルオイルを、毎日の暮らしにどう取り入れるか。使い方・道具・保管のコツをまとめています。",
   elizabethInstagram: {
     url: "https://www.instagram.com/aroma_with_elizabeth/",
     handle: "@aroma_with_elizabeth",
