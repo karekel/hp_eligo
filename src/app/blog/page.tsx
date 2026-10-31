@@ -42,8 +42,6 @@ export default function BlogTopPage() {
             <br className="hidden md:inline" />
             毎日の暮らしにどう取り入れるか。
             <br />
-            ELIGŌチームが講座や体験会で受けてきた質問をもとに、
-            <br className="hidden md:inline" />
             使い方・道具・保管のコツをまとめています。
           </p>
           <BotanicalOrnament className="mt-10 lg:hidden" />

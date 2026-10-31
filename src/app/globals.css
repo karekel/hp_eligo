@@ -46,6 +46,16 @@
   --color-primary: var(--color-lavender);
   --color-accent: var(--color-mint);
 
+  /* Blog — 塗りはピーチ〜淡いグレー、文字と線は同じ色味の濃いローズ */
+  --color-blog-peach: #eec3b4;
+  --color-blog-pink: #efc1c3;
+  --color-blog-mist: #eceef0;
+  --color-blog-tint: #fbf1ed;
+  --color-blog-tint-dark: #f7e4dd;
+  --color-blog-accent: #a0523f;
+  --color-blog-accent-dark: #8c4539;
+  --color-blog-ink: #3f2e2a;
+
   /* ── Fonts — Cy Grotesk Wide + Noto Sans JP fallback ── */
   --font-noto-jp: "Noto Sans JP", sans-serif;
   --font-cy-grotesk: var(--font-cy-grotesk);
@@ -176,6 +186,11 @@ body {
     repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.35) 0 160px, rgba(236, 230, 220, 0.35) 160px 320px, rgba(255, 255, 255, 0.15) 320px 480px);
 }
 
+/* ブログのメイン色のグラデーション */
+.blog-gradient {
+  background: linear-gradient(90deg, var(--color-blog-peach) 0%, var(--color-blog-pink) 40%, var(--color-blog-mist) 90%);
+}
+
 /* 記事本文 */
 .blog-prose > p {
   margin-top: 1.4em;
@@ -188,7 +203,7 @@ body {
   position: relative;
   margin-top: 64px;
   padding-bottom: 14px;
-  border-bottom: 1px solid rgba(47, 107, 67, 0.18);
+  border-bottom: 1px solid rgba(160, 82, 63, 0.18);
   font-family: var(--font-serif-jp), serif;
   font-weight: 500;
   font-size: 21px;
@@ -206,7 +221,7 @@ body {
   width: 72px;
   height: 3px;
   border-radius: 2px;
-  background: linear-gradient(90deg, #2f6b43, #8b78c4);
+  background: linear-gradient(90deg, var(--color-blog-peach), var(--color-blog-pink));
 }
 
 @media (min-width: 768px) {

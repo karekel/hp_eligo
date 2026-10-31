@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AuthorBox, ComingSoon, Disclosure, SummaryBox, TableOfContents } from "@/components/blog/ArticleParts";
+import { AuthorBox, ComingSoon, Disclosure, Sources, SummaryBox, TableOfContents } from "@/components/blog/ArticleParts";
 import { articles } from "@/components/blog/articles";
 import { BlogSidebar, Breadcrumb, CategoryIcon, LinkBanners, PostCard, SectionTitle } from "@/components/blog/BlogParts";
 import { BotanicalCluster } from "@/components/blog/Botanicals";
-import { blogPosts, formatDate, getCategory, getPost, getRelatedPosts } from "@/lib/blogData";
-import { getLeaderBySlug } from "@/lib/leadersData";
+import { blogConfig, blogPosts, formatDate, getCategory, getPost, getRelatedPosts } from "@/lib/blogData";
 import { siteConfig } from "@/lib/siteConfig";
 
 export function generateStaticParams() {
@@ -30,9 +29,9 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
   const { slug } = await params;
   const post = getPost(slug);
   const category = post && getCategory(post.category);
-  const author = post && getLeaderBySlug(post.author);
-  if (!post || !category || !author) notFound();
+  if (!post || !category) notFound();
 
+  const { author } = blogConfig;
   const article = articles[post.slug];
   const jsonLd = {
     "@context": "https://schema.org",
@@ -43,7 +42,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
     dateModified: post.updatedAt ?? post.publishedAt,
     image: `${siteConfig.siteUrl}${encodeURI(post.thumbnail)}`,
     mainEntityOfPage: `${siteConfig.siteUrl}/blog/${post.slug}`,
-    author: { "@type": "Person", name: author.nameJp, url: `${siteConfig.siteUrl}/leaders/${author.slug}` },
+    author: { "@type": "Organization", name: author.name, url: siteConfig.siteUrl },
     publisher: { "@type": "Organization", name: siteConfig.siteName, url: siteConfig.siteUrl },
   };
 
@@ -67,7 +66,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
           <article className="rounded-3xl bg-white px-5 py-8 shadow-[0_4px_30px_rgba(70,55,30,0.08)] md:px-12 md:py-12">
             <Link
               href={`/blog/category/${category.slug}`}
-              className="inline-flex items-center gap-1.5 rounded-full bg-[#f2f7f0] px-3.5 py-1 text-[12px] tracking-wider text-[#2f6b43] hover:bg-[#e6f0e3]"
+              className="inline-flex items-center gap-1.5 rounded-full bg-blog-tint px-3.5 py-1 text-[12px] tracking-wider text-blog-accent hover:bg-blog-tint-dark"
             >
               <CategoryIcon icon={category.icon} className="h-3.5 w-3.5" />
               {category.name}
@@ -76,11 +75,11 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
             <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3 border-b border-black/5 pb-5 text-[12px] text-[#999]">
               <span>公開日 {formatDate(post.publishedAt)}</span>
               {post.updatedAt && <span>更新日 {formatDate(post.updatedAt)}</span>}
-              <Link href={`/leaders/${author.slug}`} className="ml-auto flex items-center gap-2 text-[#555] hover:text-[#2f6b43]">
+              <Link href="/" className="ml-auto flex items-center gap-2 text-[#555] hover:text-blog-accent">
                 <span className="relative h-8 w-8 overflow-hidden rounded-full">
-                  <Image src={author.image} alt="" fill sizes="32px" className="object-cover object-[50%_18%]" />
+                  <Image src={author.image} alt="" fill sizes="32px" className="object-cover" />
                 </span>
-                監修 {author.nameJp}
+                監修 {author.name}
               </Link>
             </div>
 
@@ -95,13 +94,14 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
                 <div className="blog-prose mt-4">
                   <article.Body />
                 </div>
+                <Sources items={article.sources} />
               </>
             ) : (
               <ComingSoon excerpt={post.excerpt} />
             )}
 
             <Disclosure />
-            <AuthorBox leader={author} />
+            <AuthorBox />
           </article>
           <BlogSidebar />
         </div>

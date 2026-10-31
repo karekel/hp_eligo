@@ -1,4 +1,4 @@
-import { CautionBox, Faq, MethodCard, NextStepBox, PointBox, Steps, TeamVoice, type ArticleContent } from "../ArticleParts";
+import { CautionBox, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 使い方ガイド型のサンプル記事 */
 export const noDiffuser: ArticleContent = {
@@ -10,14 +10,51 @@ export const noDiffuser: ArticleContent = {
   toc: [
     { id: "intro", title: "ディフューザーがなくても香りは楽しめる" },
     { id: "methods", title: "身近な道具でできる4つの方法" },
-    { id: "voice", title: "体験会でよく聞かれること" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
+  ],
+  sources: [
+    {
+      title: "アロマテラピーの楽しみ方",
+      publisher: "公益社団法人 日本アロマ環境協会",
+      url: "https://www.aromakankyo.or.jp/basics/howto/",
+      note: "ティッシュやハンカチに1〜2滴垂らして香りを楽しむ方法",
+    },
+    {
+      title: "【初心者必見】アロマの基本的な使い方と注意点とは？",
+      publisher: "公益社団法人 日本アロマ環境協会 sense of AROMA（2025年3月27日）",
+      url: "https://media.aromakankyo.or.jp/senseofaroma/article/life/1325/",
+      note: "ハンカチのシミへの注意、マグカップに半分ほどのお湯を入れて精油を垂らす方法、誤って飲まないための注意",
+    },
+    {
+      title: "アロマスプレーの作り方｜保存方法や注意点も紹介",
+      publisher: "公益社団法人 日本アロマ環境協会 sense of AROMA（2025年3月27日）",
+      url: "https://media.aromakankyo.or.jp/senseofaroma/article/life/1886/",
+      note: "ルームスプレーの材料、分量、混ぜる順番、1〜2週間の使用目安",
+    },
+    {
+      title: "安全に楽しむために",
+      publisher: "公益社団法人 日本アロマ環境協会",
+      url: "https://www.aromakankyo.or.jp/basics/safety/",
+      note: "原液の扱い、火気、子どもやペットの手の届かない場所での保管",
+    },
+    {
+      title: "消費者庁からの精油の使い方に関する注意喚起について",
+      publisher: "公益社団法人 日本アロマ環境協会（2025年4月2日）",
+      url: "https://www.aromakankyo.or.jp/aeaj-news/detail/2296",
+      note: "オイルがついたティッシュやタオルの扱い",
+    },
+    {
+      title: "消費者安全調査委員会からの一葉 第16号「エッセンシャルオイルのトリセツ」",
+      publisher: "消費者庁 消費者安全調査委員会",
+      url: "https://www.caa.go.jp/policies/council/csic/activity_report/2024/assets/csic_cms201_250327_01.pdf",
+      note: "原液を薄めずに肌につけないこと",
+    },
   ],
   Body: () => (
     <>
       <p>
-        「エッセンシャルオイルを買ったけれど、ディフューザーはまだ持っていない」。ELIGŌの体験会でも、よく聞く声です。実は、家にある身近な道具でも、香りは十分に楽しめます。
+        「エッセンシャルオイルを買ったけれど、ディフューザーはまだ持っていない」。そんなときでも、家にある身近な道具で香りを楽しめます。
       </p>
       <p>この記事では、ディフューザーがなくても今日から試せる4つの方法を、手順と注意点つきで紹介します。</p>
 
@@ -33,7 +70,7 @@ export const noDiffuser: ArticleContent = {
           steps={[
             { title: "ティッシュを1枚用意する", text: "ハンカチを使う場合は、シミが目立たない色や素材を選びます。" },
             { title: "オイルを1〜2滴垂らす", text: "まずは1滴から。香りが弱いと感じたら1滴ずつ足します。" },
-            { title: "香りを楽しみたい場所に置く", text: "デスクや車の中など、自分のまわりで香りを楽しめます。" },
+            { title: "香りを楽しみたい場所に置く", text: "デスクなど、自分のまわりで香りを楽しめます。" },
           ]}
         />
         <PointBox>ジップ付きの袋に入れて持ち歩けば、外出先でも香りを楽しめます。</PointBox>
@@ -42,7 +79,7 @@ export const noDiffuser: ArticleContent = {
       <MethodCard no={2} title="アロマストーンを使う" items={["アロマストーン"]}>
         <Steps
           steps={[
-            { title: "ストーンにオイルを2〜3滴垂らす", text: "素焼きのストーンがオイルを吸い込み、ゆっくり香りが広がります。" },
+            { title: "ストーンにオイルを少量垂らす", text: "香りの強さを確かめながら、1滴ずつ足します。" },
             { title: "小皿などにのせて置く", text: "家具に直接置くと、オイルが染みることがあります。" },
           ]}
         />
@@ -52,7 +89,7 @@ export const noDiffuser: ArticleContent = {
       <MethodCard no={3} title="マグカップのお湯に垂らす" items={["マグカップ", "お湯"]}>
         <Steps
           steps={[
-            { title: "マグカップにお湯を注ぐ", text: "八分目くらいまで注ぎます。" },
+            { title: "マグカップにお湯を注ぐ", text: "半分ほどまで注ぎます。" },
             { title: "オイルを1〜2滴垂らす", text: "湯気と一緒に香りが立ちのぼります。" },
             { title: "少し離れた場所に置く", text: "顔を近づけすぎず、デスクの脇などに置いて香りを楽しみます。" },
           ]}
@@ -63,34 +100,20 @@ export const noDiffuser: ArticleContent = {
       <MethodCard no={4} title="手作りのルームスプレー" items={["スプレーボトル", "無水エタノール", "精製水"]}>
         <Steps
           steps={[
-            { title: "無水エタノール10mLにオイルを10滴ほど混ぜる", text: "先にエタノールとオイルをよく混ぜておきます。" },
-            { title: "精製水40mLを加える", text: "ふたをして、よく振って混ぜます。" },
+            { title: "無水エタノール5mLにオイルを3〜10滴混ぜる", text: "先にエタノールとオイルをよく混ぜておきます。" },
+            { title: "精製水45mLを加える", text: "ふたをして、よく振って混ぜます。" },
             { title: "使う前によく振ってから空間にスプレーする", text: "人や顔に向けて吹きかけないようにします。" },
           ]}
         />
         <PointBox>手作りのスプレーは、1〜2週間を目安に使い切りましょう。</PointBox>
       </MethodCard>
 
-      <h2 id="voice">体験会でよく聞かれること</h2>
-      <p>ELIGŌの体験会や勉強会で、実際によく出る質問をまとめました。</p>
-      <TeamVoice
-        items={[
-          {
-            q: "何滴くらい使えばいいですか？",
-            a: "まずは1〜2滴から始めて、香りが弱ければ1滴ずつ増やすのがおすすめです。香りの感じ方は人によって違うので、自分にちょうどいい量を見つけてください。",
-          },
-          {
-            q: "柑橘系の香りがすぐに消えてしまいます。",
-            a: "レモンやオレンジなどの柑橘系は、香りが軽く、早く広がる分、消えるのも早めです。こまめに足すか、ウッド系の香りと組み合わせてみてください。",
-          },
-        ]}
-      />
-
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox
         items={[
           "原液を直接肌につけないようにしましょう。",
           "火のそばでは使わないでください。",
+          "オイルがついたティッシュは水で湿らせてから捨て、オイルがついたタオルは乾燥機にかけないでください。",
           "子どもやペットの手の届かない場所に置きましょう。",
           "家具や布にシミがつくことがあります。目立たない場所で試してから使いましょう。",
           "香りで気分が悪くなったときは使用をやめて、部屋の換気をしてください。",
@@ -102,12 +125,16 @@ export const noDiffuser: ArticleContent = {
       <Faq
         items={[
           {
+            q: "何滴くらい使えばいいですか？",
+            a: "まずは1〜2滴から始めて、香りが弱ければ1滴ずつ足してください。香りの感じ方は人によって違います。",
+          },
+          {
             q: "ドテラ以外のオイルでも、同じ方法で楽しめますか？",
             a: "基本の方法は同じです。ただし、製品ごとにラベルの表示や使用方法が異なるため、お手元の製品の表示を確認してください。",
           },
           {
             q: "香りはどのくらい続きますか？",
-            a: "方法や香りの種類によって違います。ティッシュに垂らした場合は、数時間ほどが目安です。",
+            a: "方法や香りの種類、部屋の広さなどによって変わります。",
           },
           {
             q: "いくつかの香りを混ぜてもいいですか？",

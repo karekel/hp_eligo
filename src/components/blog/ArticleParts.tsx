@@ -1,14 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import type { Leader } from "@/lib/leadersData";
+import { blogConfig } from "@/lib/blogData";
 import { ArrowIcon, InstagramIcon } from "./BlogParts";
 import { Lavender, OilBottle } from "./Botanicals";
+
+/** 記事の内容を裏付ける公開資料 */
+export type ArticleSource = {
+  title: string;
+  publisher: string;
+  url: string;
+  /** 記事のどの内容の根拠か */
+  note: string;
+};
 
 /** 記事本文の登録情報 */
 export type ArticleContent = {
   summary: string[];
   toc: { id: string; title: string }[];
+  sources: ArticleSource[];
   Body: () => ReactNode;
 };
 
@@ -16,14 +26,14 @@ export type ArticleContent = {
 
 export function SummaryBox({ items }: { items: string[] }) {
   return (
-    <div className="mt-8 rounded-2xl border border-[#2f6b43]/20 bg-[#f2f7f0] p-5 md:p-7">
-      <p className="font-serif-jp flex items-center gap-2 text-[16px] tracking-wider text-[#2f6b43]">
+    <div className="mt-8 rounded-2xl border border-blog-peach bg-blog-tint p-5 md:p-7">
+      <p className="font-serif-jp flex items-center gap-2 text-[16px] tracking-wider text-blog-accent">
         <span className="font-script text-[20px]">Point</span>この記事でわかること
       </p>
       <ul className="mt-4 space-y-2.5">
         {items.map((item) => (
           <li key={item} className="flex gap-3 text-[14px] leading-7 text-[#3a3a3a]">
-            <svg viewBox="0 0 20 20" className="mt-1.5 h-4 w-4 shrink-0 text-[#2f6b43]" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+            <svg viewBox="0 0 20 20" className="mt-1.5 h-4 w-4 shrink-0 text-blog-accent" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               <circle cx="10" cy="10" r="8.5" strokeWidth="1.3" />
               <path d="M6.2 10.2l2.5 2.5 5-5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -39,13 +49,13 @@ export function TableOfContents({ items }: { items: { id: string; title: string 
   return (
     <nav aria-label="目次" className="mt-6 rounded-2xl border border-black/5 bg-[#faf8f4] p-5 md:p-7">
       <p className="flex items-baseline gap-2">
-        <span className="font-script text-[22px] leading-none text-[#2f6b43]">Contents</span>
+        <span className="font-script text-[22px] leading-none text-blog-accent">Contents</span>
         <span className="font-serif-jp text-[13px] tracking-widest text-[#555]">目次</span>
       </p>
       <ol className="mt-4 space-y-2.5">
         {items.map((item, i) => (
           <li key={item.id}>
-            <a href={`#${item.id}`} className="group flex gap-3 text-[14px] leading-7 text-[#444] hover:text-[#2f6b43]">
+            <a href={`#${item.id}`} className="group flex gap-3 text-[14px] leading-7 text-[#444] hover:text-blog-accent">
               <span className="font-script w-6 shrink-0 text-[17px] text-[#8b78c4]">{String(i + 1).padStart(2, "0")}</span>
               <span className="group-hover:underline">{item.title}</span>
             </a>
@@ -68,7 +78,7 @@ export function MethodCard({ no, title, items, children }: { no: number; title: 
         <div className="mt-3 flex flex-wrap gap-2">
           <span className="text-[12px] text-[#888]">使うもの：</span>
           {items.map((item) => (
-            <span key={item} className="rounded-full bg-[#f2f7f0] px-3 py-0.5 text-[12px] text-[#2f6b43]">
+            <span key={item} className="rounded-full bg-blog-tint px-3 py-0.5 text-[12px] text-blog-accent">
               {item}
             </span>
           ))}
@@ -84,7 +94,7 @@ export function Steps({ steps }: { steps: { title: string; text: string }[] }) {
     <ol className="space-y-4">
       {steps.map((step, i) => (
         <li key={step.title} className="flex gap-4">
-          <span className="font-script flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#2f6b43] text-[17px] text-white">{i + 1}</span>
+          <span className="font-script flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-blog-peach text-[17px] text-blog-ink">{i + 1}</span>
           <div className="pt-1">
             <span className="block text-[15px] font-medium text-[#2b2b2b]">{step.title}</span>
             <span className="mt-1 block text-[14px] leading-7 text-[#555]">{step.text}</span>
@@ -100,28 +110,6 @@ export function PointBox({ children }: { children: ReactNode }) {
     <div className="mt-5 flex gap-3 rounded-xl bg-[#f6f3fb] px-4 py-3.5 text-[13px] leading-7 text-[#4a4a4a]">
       <span className="font-script shrink-0 text-[17px] leading-7 text-[#8b78c4]">Tip</span>
       <div>{children}</div>
-    </div>
-  );
-}
-
-/** 講座・体験会でよく出る質問（Q&A の吹き出し） */
-export function TeamVoice({ items }: { items: { q: string; a: string }[] }) {
-  return (
-    <div className="mt-6 space-y-6">
-      {items.map((item) => (
-        <div key={item.q} className="space-y-3">
-          <div className="flex items-start gap-3">
-            <span className="font-script flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#ebe6f6] text-[18px] text-[#8b78c4]">Q</span>
-            <p className="relative rounded-2xl rounded-tl-sm bg-[#f6f3fb] px-4 py-3 text-[14px] leading-7 text-[#3a3a3a]">{item.q}</p>
-          </div>
-          <div className="flex items-start justify-end gap-3">
-            <p className="relative rounded-2xl rounded-tr-sm bg-[#f2f7f0] px-4 py-3 text-[14px] leading-7 text-[#3a3a3a]">{item.a}</p>
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#2f6b43]">
-              <Image src="/assets/ロゴ/mark_center.png" alt="ELIGŌチーム" width={26} height={26} className="brightness-0 invert" />
-            </span>
-          </div>
-        </div>
-      ))}
     </div>
   );
 }
@@ -154,9 +142,9 @@ export function Faq({ items }: { items: { q: string; a: string }[] }) {
       {items.map((item) => (
         <details key={item.q} className="group">
           <summary className="flex cursor-pointer list-none items-center gap-3 px-5 py-4 text-[14px] leading-7 text-[#2b2b2b] marker:hidden hover:bg-[#faf8f4]">
-            <span className="font-script text-[20px] text-[#2f6b43]">Q.</span>
+            <span className="font-script text-[20px] text-blog-accent">Q.</span>
             <span className="flex-1">{item.q}</span>
-            <span className="text-[#2f6b43] transition group-open:rotate-45" aria-hidden="true">＋</span>
+            <span className="text-blog-accent transition group-open:rotate-45" aria-hidden="true">＋</span>
           </summary>
           <div className="flex gap-3 bg-[#faf8f4] px-5 py-4 text-[13px] leading-7 text-[#555]">
             <span className="font-script text-[20px] leading-7 text-[#8b78c4]">A.</span>
@@ -171,14 +159,14 @@ export function Faq({ items }: { items: { q: string; a: string }[] }) {
 /** 記事末の「次の一歩」案内 */
 export function NextStepBox() {
   return (
-    <div className="mt-10 overflow-hidden rounded-2xl bg-[#2f6b43] text-white">
+    <div className="blog-gradient mt-10 overflow-hidden rounded-2xl text-blog-ink">
       <div className="flex flex-col gap-4 p-6 md:flex-row md:items-center md:p-8">
         <div className="flex-1">
-          <p className="font-script text-[20px] text-white/85">Next step</p>
+          <p className="font-script text-[20px] text-blog-ink/85">Next step</p>
           <p className="font-serif-jp mt-1 text-[18px] leading-8">もっと詳しく知りたい方へ</p>
-          <p className="mt-2 text-[13px] leading-7 text-white/85">ELIGŌでは、オイルの使い方を一緒に学べる勉強会や体験会を開いています。</p>
+          <p className="mt-2 text-[13px] leading-7 text-blog-ink/85">ELIGŌでは、オイルの使い方を一緒に学べる毎月のZoom勉強会やクラフトワークショップを開いています。</p>
         </div>
-        <Link href="/#how-to-join" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-[13px] tracking-widest text-[#2f6b43] transition hover:bg-[#f2f7f0]">
+        <Link href="/#how-to-join" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-[13px] tracking-widest text-blog-accent transition hover:bg-blog-tint">
           参加方法を見る <ArrowIcon />
         </Link>
       </div>
@@ -187,9 +175,9 @@ export function NextStepBox() {
 }
 
 /** 製品ラベルの区分ごとの使い方（食品添加物・化粧品・雑貨など） */
-export function LabelTypes({ items }: { items: { type: string; use: string; note: string; tone: "green" | "lavender" | "gray" }[] }) {
+export function LabelTypes({ items }: { items: { type: string; use: string; note: string; tone: "rose" | "lavender" | "gray" }[] }) {
   const tones = {
-    green: "border-[#2f6b43]/25 bg-[#f2f7f0] text-[#2f6b43]",
+    rose: "border-blog-peach bg-blog-tint text-blog-accent",
     lavender: "border-[#8b78c4]/30 bg-[#f6f3fb] text-[#6f5ca8]",
     gray: "border-black/10 bg-[#f6f5f2] text-[#666]",
   };
@@ -213,7 +201,7 @@ export function CheckPoints({ items }: { items: { title: string; text: string }[
     <ol className="mt-6 grid gap-3 md:grid-cols-2">
       {items.map((item, i) => (
         <li key={item.title} className="flex gap-4 rounded-2xl border border-black/5 bg-white p-5 shadow-[0_2px_12px_rgba(70,55,30,0.05)]">
-          <span className="font-script flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#2f6b43] text-[17px] text-white">{i + 1}</span>
+          <span className="font-script flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-blog-peach text-[17px] text-blog-ink">{i + 1}</span>
           <div>
             <span className="block text-[15px] font-medium leading-7 text-[#2b2b2b]">{item.title}</span>
             <span className="mt-1 block text-[13px] leading-7 text-[#555]">{item.text}</span>
@@ -305,45 +293,60 @@ export function BlendRecipe({ title, drops }: { title: string; drops: { name: st
 
 /* ── 記事の末尾 ── */
 
+export function Sources({ items }: { items: ArticleSource[] }) {
+  if (items.length === 0) return null;
+  return (
+    <section className="mt-12 rounded-xl bg-[#faf8f4] px-5 py-5 md:px-7">
+      <h2 className="font-serif-jp text-[16px] tracking-wider text-[#2b2b2b]">参考資料・出典</h2>
+      <ol className="mt-3 list-decimal space-y-3 pl-5 text-[12px] leading-6 text-[#666]">
+        {items.map((source) => (
+          <li key={source.url}>
+            <a href={source.url} target="_blank" rel="noopener noreferrer" className="break-words text-blog-accent underline underline-offset-2 hover:text-blog-accent-dark">
+              {source.title}
+            </a>
+            <span className="ml-1.5 text-[#888]">{source.publisher}</span>
+            <p className="text-[#888]">{source.note}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
+
 export function Disclosure() {
   return (
     <div className="mt-12 rounded-xl border border-dashed border-black/15 px-5 py-4 text-[12px] leading-6 text-[#777]">
       <p className="font-medium text-[#555]">このブログについて</p>
       <p className="mt-1">
-        当ブログは、dōTERRA（ドテラ）のウェルネスアドボケイト（会員）によるチーム「ELIGŌ」が運営しています。記事には、チームへの参加や製品購入のご案内が含まれます。製品の使用方法は、お手元の製品ラベルの表示に従ってください。
+        当ブログは、dōTERRA（ドテラ）のウェルネスアドボケイト（会員）によるチーム「ELIGŌ」が運営しています。製品の使用方法は、お手元の製品ラベルの表示に従ってください。
       </p>
     </div>
   );
 }
 
-export function AuthorBox({ leader }: { leader: Leader }) {
+export function AuthorBox() {
+  const { author } = blogConfig;
   return (
     <div className="mt-8 flex flex-col gap-5 rounded-2xl bg-[#faf8f4] p-5 sm:flex-row md:p-7">
       <span className="relative h-24 w-24 shrink-0 overflow-hidden rounded-full border-4 border-white shadow">
-        <Image src={leader.image} alt={leader.nameJp} fill sizes="96px" className="object-cover object-[50%_18%]" />
+        <Image src={author.image} alt={author.name} fill sizes="96px" className="object-cover" />
       </span>
       <div>
-        <p className="font-script text-[18px] leading-none text-[#2f6b43]">Writer</p>
-        <p className="font-serif-jp mt-2 text-[18px] text-[#2b2b2b]">
-          {leader.nameJp}
-          <span className="ml-2 text-[12px] tracking-widest text-[#999]">{leader.nameEn}</span>
-        </p>
-        <p className="mt-1 text-[12px] text-[#888]">dōTERRA（ドテラ）{leader.role}</p>
-        {leader.catchphrase && <p className="mt-3 text-[13px] leading-7 text-[#555]">「{leader.catchphrase}」</p>}
+        <p className="font-script text-[18px] leading-none text-blog-accent">Writer</p>
+        <p className="font-serif-jp mt-2 text-[18px] text-[#2b2b2b]">{author.name}</p>
+        <p className="mt-1 text-[12px] text-[#888]">dōTERRA（ドテラ）のウェルネスアドボケイトによるチーム</p>
         <div className="mt-4 flex flex-wrap gap-3">
-          <Link href={`/leaders/${leader.slug}`} className="inline-flex items-center gap-1.5 rounded-full border border-[#2f6b43] px-4 py-1.5 text-[12px] tracking-wider text-[#2f6b43] transition hover:bg-[#2f6b43] hover:text-white">
-            プロフィールを見る <ArrowIcon className="h-3.5 w-3.5" />
+          <Link href="/" className="inline-flex items-center gap-1.5 rounded-full border border-blog-accent px-4 py-1.5 text-[12px] tracking-wider text-blog-accent transition hover:border-blog-peach hover:bg-blog-peach hover:text-blog-ink">
+            公式サイトを見る <ArrowIcon className="h-3.5 w-3.5" />
           </Link>
-          {leader.identity.instagramUrl && (
-            <a
-              href={leader.identity.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full bg-[#2f6b43] px-4 py-1.5 text-[12px] tracking-wider text-white transition hover:bg-[#24553a]"
-            >
-              <InstagramIcon className="h-3.5 w-3.5" /> Instagram
-            </a>
-          )}
+          <a
+            href={blogConfig.elizabethInstagram.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-full bg-blog-peach px-4 py-1.5 text-[12px] tracking-wider text-blog-ink transition hover:bg-blog-tint-dark"
+          >
+            <InstagramIcon className="h-3.5 w-3.5" /> Instagram
+          </a>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import {
   blogPosts,
   formatDate,
   getCategory,
-  getPopularPosts,
+  getRecommendedPosts,
   type BlogCategoryIcon,
   type BlogPost,
 } from "@/lib/blogData";
@@ -54,11 +54,11 @@ export function SectionTitle({ en, ja, align = "center", as: Tag = "h2" }: { en:
   const center = align === "center";
   return (
     <div className={center ? "text-center" : ""}>
-      <p className="font-script text-[28px] leading-none text-[#2f6b43] md:text-[34px]">{en}</p>
+      <p className="font-script text-[28px] leading-none text-blog-accent md:text-[34px]">{en}</p>
       <div className={`mt-3 flex items-center gap-2 ${center ? "justify-center" : ""}`} aria-hidden="true">
-        <span className="h-px w-8 bg-[#2f6b43]/40" />
+        <span className="h-px w-8 bg-blog-accent/40" />
         <span className="h-1.5 w-1.5 rotate-45 bg-[#8b78c4]" />
-        <span className="h-px w-8 bg-[#2f6b43]/40" />
+        <span className="h-px w-8 bg-blog-accent/40" />
       </div>
       <Tag className="font-serif-jp mt-3 text-[19px] tracking-[0.14em] text-[#2b2b2b] md:text-[22px]">{ja}</Tag>
     </div>
@@ -67,8 +67,8 @@ export function SectionTitle({ en, ja, align = "center", as: Tag = "h2" }: { en:
 
 function SidebarTitle({ en, ja }: { en: string; ja: string }) {
   return (
-    <div className="flex items-baseline gap-2 border-b border-[#2f6b43]/15 pb-3">
-      <span className="font-script text-[22px] leading-none text-[#2f6b43]">{en}</span>
+    <div className="flex items-baseline gap-2 border-b border-blog-accent/15 pb-3">
+      <span className="font-script text-[22px] leading-none text-blog-accent">{en}</span>
       <span className="font-serif-jp text-[13px] tracking-widest text-[#555]">{ja}</span>
     </div>
   );
@@ -87,18 +87,18 @@ export function BlogHeader() {
     <header className="relative z-30 border-b border-black/5 bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between pr-4 md:h-20 md:pr-6">
         <Link href="/blog" className="flex h-full items-center gap-3">
-          <span className="flex h-full w-16 items-center justify-center bg-[#2f6b43] md:w-20">
-            <Image src="/assets/ロゴ/mark_center.png" alt="" width={44} height={44} className="h-9 w-9 brightness-0 invert md:h-11 md:w-11" />
+          <span className="blog-gradient flex h-full w-16 items-center justify-center md:w-20">
+            <Image src="/assets/ロゴ/mark_center.png" alt="" width={44} height={44} className="h-9 w-9 opacity-75 brightness-0 md:h-11 md:w-11" />
           </span>
           <span className="leading-tight">
             <span className="block font-heading text-[19px] tracking-[0.14em] text-[#1a1a1a] md:text-[22px]">ELIGŌ</span>
-            <span className="block font-script text-[15px] text-[#2f6b43] md:text-[17px]">Oil Journal</span>
+            <span className="block font-script text-[15px] text-blog-accent md:text-[17px]">Oil Journal</span>
           </span>
         </Link>
         <nav className="flex items-center gap-5 md:gap-9" aria-label="ブログメニュー">
           {headerNav.map((item) => (
             <Link key={item.href} href={item.href} className="hidden text-center transition-opacity hover:opacity-70 md:block">
-              <span className="block font-script text-[17px] leading-none text-[#2f6b43]">{item.en}</span>
+              <span className="block font-script text-[17px] leading-none text-blog-accent">{item.en}</span>
               <span className="mt-1 block text-[10px] tracking-[0.2em] text-[#888]">{item.ja}</span>
             </Link>
           ))}
@@ -107,7 +107,7 @@ export function BlogHeader() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="エリザベスのInstagram"
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-[#2f6b43] text-white transition-opacity hover:opacity-80"
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-blog-peach text-blog-ink transition-opacity hover:opacity-80"
           >
             <InstagramIcon className="h-[18px] w-[18px]" />
           </a>
@@ -119,19 +119,19 @@ export function BlogHeader() {
 
 export function BlogFooter() {
   return (
-    <footer className="relative z-10 bg-[#2f6b43] text-white">
+    <footer className="blog-gradient relative z-10 text-blog-ink">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
-          <Image src="/assets/ロゴ/eligo_logo_white.png" alt="ELIGŌ" width={150} height={40} className="h-auto w-[130px]" />
+          <Image src="/assets/ロゴ/eligo_logo.png" alt="ELIGŌ" width={150} height={40} className="h-auto w-[130px]" />
           <p className="mt-2 font-script text-[20px]">Oil Journal</p>
-          <p className="mt-4 max-w-sm text-[12px] leading-7 text-white/80">{blogConfig.description}</p>
+          <p className="mt-4 max-w-sm text-[12px] leading-7 text-blog-ink/85">{blogConfig.description}</p>
         </div>
         <div>
           <p className="font-script text-[20px]">Category</p>
-          <ul className="mt-3 space-y-2 text-[13px] text-white/85">
+          <ul className="mt-3 space-y-2 text-[13px] text-blog-ink/85">
             {blogCategories.map((c) => (
               <li key={c.slug}>
-                <Link href={`/blog/category/${c.slug}`} className="hover:text-white hover:underline">
+                <Link href={`/blog/category/${c.slug}`} className="hover:text-blog-ink hover:underline">
                   {c.name}
                 </Link>
               </li>
@@ -140,24 +140,24 @@ export function BlogFooter() {
         </div>
         <div>
           <p className="font-script text-[20px]">Links</p>
-          <ul className="mt-3 space-y-2 text-[13px] text-white/85">
+          <ul className="mt-3 space-y-2 text-[13px] text-blog-ink/85">
             <li>
-              <Link href="/" className="hover:text-white hover:underline">ELIGŌ 公式サイト</Link>
+              <Link href="/" className="hover:text-blog-ink hover:underline">ELIGŌ 公式サイト</Link>
             </li>
             <li>
-              <Link href="/#how-to-join" className="hover:text-white hover:underline">ELIGŌへの参加方法</Link>
+              <Link href="/#how-to-join" className="hover:text-blog-ink hover:underline">ELIGŌへの参加方法</Link>
             </li>
             <li>
-              <a href={blogConfig.elizabethInstagram.url} target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline">
+              <a href={blogConfig.elizabethInstagram.url} target="_blank" rel="noopener noreferrer" className="hover:text-blog-ink hover:underline">
                 エリザベスのInstagram
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/15">
-        <div className="mx-auto max-w-6xl px-6 py-6 text-[11px] leading-6 text-white/65">
-          <p>当ブログは、dōTERRA（ドテラ）のウェルネスアドボケイト（会員）によるチーム「ELIGŌ」が運営しています。記事には、チームへの参加や製品購入のご案内が含まれます。</p>
+      <div className="border-t border-blog-ink/15">
+        <div className="mx-auto max-w-6xl px-6 py-6 text-[11px] leading-6 text-blog-ink/85">
+          <p>当ブログは、dōTERRA（ドテラ）のウェルネスアドボケイト（会員）によるチーム「ELIGŌ」が運営しています。</p>
           <p className="mt-2">© ELIGŌ</p>
         </div>
       </div>
@@ -171,7 +171,7 @@ function CategoryChip({ slug, className = "" }: { slug: string; className?: stri
   const category = getCategory(slug);
   if (!category) return null;
   return (
-    <span className={`inline-flex items-center gap-1 rounded-full bg-white px-3 py-1 text-[11px] tracking-wider text-[#2f6b43] shadow-sm ${className}`}>
+    <span className={`inline-flex items-center gap-1 rounded-full bg-white px-3 py-1 text-[11px] tracking-wider text-blog-accent shadow-sm ${className}`}>
       <CategoryIcon icon={category.icon} className="h-3.5 w-3.5" />
       {category.name}
     </span>
@@ -190,7 +190,7 @@ export function PostCard({ post }: { post: BlogPost }) {
       </div>
       <div className="p-4 md:p-5">
         <p className="text-[11px] tracking-[0.15em] text-[#999]">{formatDate(post.publishedAt)}</p>
-        <h3 className="font-serif-jp mt-1.5 line-clamp-2 text-[15px] leading-7 text-[#2b2b2b] group-hover:text-[#2f6b43]">{post.title}</h3>
+        <h3 className="font-serif-jp mt-1.5 line-clamp-2 text-[15px] leading-7 text-[#2b2b2b] group-hover:text-blog-accent">{post.title}</h3>
       </div>
     </Link>
   );
@@ -208,12 +208,12 @@ export function FeaturedPost({ post }: { post: BlogPost }) {
       </div>
       <div className="flex flex-col justify-center p-6 md:p-8">
         <div className="flex items-center gap-3">
-          <CategoryChip slug={post.category} className="!bg-[#f1f6ef] shadow-none" />
+          <CategoryChip slug={post.category} className="!bg-blog-tint shadow-none" />
           <span className="text-[11px] tracking-[0.15em] text-[#999]">{formatDate(post.publishedAt)}</span>
         </div>
-        <h3 className="font-serif-jp mt-4 text-[19px] leading-[1.75] text-[#2b2b2b] group-hover:text-[#2f6b43] md:text-[21px]">{post.title}</h3>
+        <h3 className="font-serif-jp mt-4 text-[19px] leading-[1.75] text-[#2b2b2b] group-hover:text-blog-accent md:text-[21px]">{post.title}</h3>
         <p className="mt-3 line-clamp-3 text-[13px] leading-7 text-[#666]">{post.excerpt}</p>
-        <span className="mt-5 inline-flex items-center gap-2 self-start border-b border-[#2f6b43] pb-1 text-[13px] tracking-widest text-[#2f6b43]">
+        <span className="mt-5 inline-flex items-center gap-2 self-start border-b border-blog-accent pb-1 text-[13px] tracking-widest text-blog-accent">
           記事を読む <ArrowIcon />
         </span>
       </div>
@@ -233,15 +233,15 @@ export function CategoryCards({ current }: { current?: string }) {
             key={c.slug}
             href={`/blog/category/${c.slug}`}
             className={`group flex flex-col items-center rounded-2xl px-3 py-6 text-center transition duration-300 hover:-translate-y-1 ${
-              active ? "bg-[#2f6b43] text-white shadow-md" : "bg-white/90 shadow-[0_2px_12px_rgba(70,55,30,0.07)] hover:shadow-[0_8px_22px_rgba(70,55,30,0.12)]"
+              active ? "blog-gradient text-blog-ink shadow-md" : "bg-white/90 shadow-[0_2px_12px_rgba(70,55,30,0.07)] hover:shadow-[0_8px_22px_rgba(70,55,30,0.12)]"
             }`}
           >
-            <span className={`flex h-14 w-14 items-center justify-center rounded-full ${active ? "bg-white/15" : "bg-[#eef4ec] text-[#2f6b43]"}`}>
+            <span className={`flex h-14 w-14 items-center justify-center rounded-full ${active ? "bg-white/50" : "bg-blog-tint text-blog-accent"}`}>
               <CategoryIcon icon={c.icon} className="h-7 w-7" />
             </span>
-            <span className={`mt-3 font-script text-[16px] leading-none ${active ? "text-white/80" : "text-[#8b78c4]"}`}>{c.en}</span>
+            <span className={`mt-3 font-script text-[16px] leading-none ${active ? "text-blog-ink/85" : "text-[#8b78c4]"}`}>{c.en}</span>
             <span className="font-serif-jp mt-1.5 text-[14px] tracking-wider">{c.name}</span>
-            <span className={`mt-2 hidden text-[11px] leading-5 md:block ${active ? "text-white/75" : "text-[#888]"}`}>{c.description}</span>
+            <span className={`mt-2 hidden text-[11px] leading-5 md:block ${active ? "text-blog-ink/85" : "text-[#888]"}`}>{c.description}</span>
           </Link>
         );
       })}
@@ -256,8 +256,8 @@ function CategoryList() {
       <ul className="mt-2 divide-y divide-black/5">
         {blogCategories.map((c) => (
           <li key={c.slug}>
-            <Link href={`/blog/category/${c.slug}`} className="flex items-center gap-3 py-3 text-[13px] text-[#444] transition-colors hover:text-[#2f6b43]">
-              <CategoryIcon icon={c.icon} className="h-4 w-4 text-[#2f6b43]" />
+            <Link href={`/blog/category/${c.slug}`} className="flex items-center gap-3 py-3 text-[13px] text-[#444] transition-colors hover:text-blog-accent">
+              <CategoryIcon icon={c.icon} className="h-4 w-4 text-blog-accent" />
               <span className="flex-1">{c.name}</span>
               <span className="text-[11px] text-[#aaa]">{blogPosts.filter((p) => p.category === c.slug).length}</span>
             </Link>
@@ -268,35 +268,24 @@ function CategoryList() {
   );
 }
 
-/* ── 人気記事ランキング ── */
+/* ── おすすめ記事 ── */
 
-const rankColors = ["bg-[#c9a24a] text-white", "bg-[#9ea6ab] text-white", "bg-[#b47c52] text-white"];
-
-export function PopularRanking() {
+export function RecommendedPosts() {
   return (
     <section className="rounded-2xl bg-white p-5 shadow-[0_2px_12px_rgba(70,55,30,0.06)]">
-      <SidebarTitle en="Ranking" ja="人気記事" />
-      <ol className="mt-4 space-y-4">
-        {getPopularPosts().map((post, i) => (
+      <SidebarTitle en="Recommended" ja="おすすめ記事" />
+      <ul className="mt-4 space-y-4">
+        {getRecommendedPosts().map((post) => (
           <li key={post.slug}>
             <Link href={`/blog/${post.slug}`} className="group flex items-start gap-3">
-              <span className="relative shrink-0">
-                <span className="relative block h-[68px] w-[68px] overflow-hidden rounded-xl">
-                  <Image src={post.thumbnail} alt="" fill sizes="68px" className="object-cover transition duration-500 group-hover:scale-110" />
-                </span>
-                <span
-                  className={`font-serif-jp absolute -left-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full text-[12px] shadow ${
-                    rankColors[i] ?? "border border-[#2f6b43]/40 bg-white text-[#2f6b43]"
-                  }`}
-                >
-                  {i + 1}
-                </span>
+              <span className="relative block h-[68px] w-[68px] shrink-0 overflow-hidden rounded-xl">
+                <Image src={post.thumbnail} alt="" fill sizes="68px" className="object-cover transition duration-500 group-hover:scale-110" />
               </span>
-              <span className="line-clamp-3 text-[13px] leading-6 text-[#444] group-hover:text-[#2f6b43]">{post.title}</span>
+              <span className="line-clamp-3 text-[13px] leading-6 text-[#444] group-hover:text-blog-accent">{post.title}</span>
             </Link>
           </li>
         ))}
-      </ol>
+      </ul>
     </section>
   );
 }
@@ -307,16 +296,16 @@ function EligoBanner({ wide = false }: { wide?: boolean }) {
   return (
     <Link href="/" className={`group relative block overflow-hidden rounded-2xl shadow-[0_2px_14px_rgba(70,55,30,0.1)] ${wide ? "h-[200px] md:h-[220px]" : "h-[170px]"}`}>
       <Image src="/assets/背景/top backg.png" alt="" fill sizes={wide ? "(min-width: 768px) 560px, 100vw" : "300px"} className="object-cover object-[65%_50%] transition duration-700 group-hover:scale-105" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#1f4a2e]/90 via-[#2f6b43]/70 to-[#2f6b43]/20" />
-      <Image src="/assets/ロゴ/mark_center.png" alt="" width={160} height={160} className="absolute -right-6 -top-6 h-40 w-40 opacity-25 brightness-0 invert" />
-      <div className="relative flex h-full flex-col justify-end p-5 text-white md:p-6">
-        <p className="font-script text-[18px] leading-none text-white/90">Official Site</p>
+      <div className="absolute inset-0 bg-gradient-to-r from-blog-peach/95 via-blog-pink/90 to-blog-mist/40" />
+      <Image src="/assets/ロゴ/mark_center.png" alt="" width={160} height={160} className="absolute -right-6 -top-6 h-40 w-40 opacity-10 brightness-0" />
+      <div className="relative flex h-full flex-col justify-end p-5 text-blog-ink md:p-6">
+        <p className="font-script text-[18px] leading-none">Official Site</p>
         <p className="mt-2 flex items-center gap-2">
-          <Image src="/assets/ロゴ/eligo_logo_white.png" alt="ELIGŌ" width={120} height={32} className="h-auto w-[92px] md:w-[104px]" />
+          <Image src="/assets/ロゴ/eligo_logo.png" alt="ELIGŌ" width={120} height={32} className="h-auto w-[92px] md:w-[104px]" />
           <span className="font-serif-jp text-[16px] tracking-[0.12em] md:text-[18px]">公式サイト</span>
         </p>
-        <p className="mt-1 text-[11px] tracking-wider text-white/85">チームのこと・リーダー紹介・参加方法</p>
-        <span className="absolute bottom-5 right-5 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-[#2f6b43] transition group-hover:translate-x-1">
+        <p className="mt-1 text-[11px] tracking-wider">チームのこと・リーダー紹介・参加方法</p>
+        <span className="absolute bottom-5 right-5 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-blog-accent transition group-hover:translate-x-1">
           <ArrowIcon />
         </span>
       </div>
@@ -344,7 +333,7 @@ function InstagramBanner({ wide = false }: { wide?: boolean }) {
         <span className="font-serif-jp mt-1 block text-[15px] leading-6 text-[#2b2b2b] md:text-[17px]">エリザベスのInstagram</span>
         <span className="block truncate text-[12px] text-[#8b78c4]">{blogConfig.elizabethInstagram.handle}</span>
         {wide && <span className="mt-2 block text-[12px] leading-6 text-[#777]">暮らしの中のオイルのことや、ELIGŌの活動を発信しています。</span>}
-        <span className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-[#2f6b43] px-4 py-1.5 text-[11px] tracking-widest text-white transition group-hover:bg-[#24553a]">
+        <span className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-blog-peach px-4 py-1.5 text-[11px] tracking-widest text-blog-ink transition group-hover:bg-blog-tint-dark">
           フォローする <ArrowIcon className="h-3.5 w-3.5" />
         </span>
       </span>
@@ -367,7 +356,7 @@ export function LinkBanners({ layout = "stack" }: { layout?: "stack" | "wide" })
 export function BlogSidebar() {
   return (
     <aside className="space-y-6 lg:sticky lg:top-6 lg:self-start">
-      <PopularRanking />
+      <RecommendedPosts />
       <LinkBanners />
       <CategoryList />
     </aside>
@@ -382,7 +371,7 @@ export function Breadcrumb({ items }: { items: { label: string; href?: string }[
           <li key={item.label} className="flex items-center gap-2">
             {i > 0 && <span aria-hidden="true">›</span>}
             {item.href ? (
-              <Link href={item.href} className="hover:text-[#2f6b43] hover:underline">
+              <Link href={item.href} className="hover:text-blog-accent hover:underline">
                 {item.label}
               </Link>
             ) : (
