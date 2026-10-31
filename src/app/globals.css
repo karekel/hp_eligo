@@ -213,6 +213,40 @@ body {
   scroll-margin-top: 24px;
 }
 
+.blog-prose > h3 {
+  margin-top: 40px;
+  font-family: var(--font-serif-jp), serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  color: #2b2b2b;
+  scroll-margin-top: 24px;
+}
+
+.blog-prose > ul,
+.blog-prose > ol {
+  margin-top: 1.2em;
+  padding-left: 1.4em;
+  font-size: 15px;
+  line-height: 2;
+  color: #3a3a3a;
+}
+
+.blog-prose > ul {
+  list-style: disc;
+}
+
+.blog-prose > ol {
+  list-style: decimal;
+}
+
+.blog-prose a {
+  color: var(--color-blog-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .blog-prose > h2::after {
   content: "";
   position: absolute;

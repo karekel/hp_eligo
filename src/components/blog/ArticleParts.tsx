@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { blogConfig } from "@/lib/blogData";
+import { SHOW_PRODUCT_IMAGES } from "@/lib/productImages";
 import { ArrowIcon, InstagramIcon } from "./BlogParts";
 import { Lavender, OilBottle } from "./Botanicals";
 
@@ -63,6 +64,27 @@ export function TableOfContents({ items }: { items: { id: string; title: string 
         ))}
       </ol>
     </nav>
+  );
+}
+
+/** 記事に関連する製品の画像。全記事の表示は lib/productImages.ts で切り替える */
+export function ProductStrip({ items }: { items: { name: string; src: string }[] }) {
+  return (
+    <figure className="mt-6 rounded-2xl border border-black/5 bg-white px-4 py-5 md:px-6">
+      <div className="flex flex-wrap items-end justify-center gap-x-8 gap-y-5">
+        {items.map((item) => (
+          <div key={item.src} className="w-[124px] text-center">
+            <div className="relative mx-auto h-[150px] w-[124px]">
+              <Image src={item.src} alt={item.name} fill sizes="124px" className="object-contain" />
+            </div>
+            <p className="mt-2 text-[12px] leading-5 text-[#555]">{item.name}</p>
+          </div>
+        ))}
+      </div>
+      <figcaption className="mt-3 text-center text-[11px] leading-5 text-[#999]">
+        関連する製品。画像はdoTERRA公式サイトより。商標に関する権利はdōTERRA Holdings, LLCに帰属します。
+      </figcaption>
+    </figure>
   );
 }
 
@@ -212,15 +234,54 @@ export function CheckPoints({ items }: { items: { title: string; text: string }[
   );
 }
 
+/** 比較や目安を示す表 */
+export function DataTable({ caption, headers, rows }: { caption: string; headers: string[]; rows: string[][] }) {
+  return (
+    <div className="mt-6 overflow-x-auto rounded-2xl border border-black/5">
+      <table className="w-full min-w-[420px] border-collapse text-left text-[13px] leading-7 text-[#444]">
+        <caption className="sr-only">{caption}</caption>
+        <thead className="bg-blog-tint text-blog-accent">
+          <tr>
+            {headers.map((h) => (
+              <th key={h} scope="col" className="px-4 py-2.5 font-medium">
+                {h}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-black/5 bg-white">
+          {rows.map((row, i) => (
+            <tr key={i}>
+              {row.map((cell, j) => (
+                <td key={j} className="px-4 py-2.5">
+                  {cell}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 /* ── オイル図鑑用のブロック ── */
 
-export function OilProfile({ name, en, color, rows }: { name: string; en: string; color: string; rows: { label: string; value: string }[] }) {
+export function OilProfile({ name, en, color, image, rows }: { name: string; en: string; color: string; image?: string; rows: { label: string; value: string }[] }) {
   return (
     <div className="mt-8 grid overflow-hidden rounded-2xl border border-black/5 bg-white md:grid-cols-[220px_1fr]">
-      <div className="relative flex items-end justify-center gap-1 bg-[#f4f1fa] px-6 pb-6 pt-8">
-        <Lavender className="h-[150px] -rotate-12" />
-        <OilBottle label={en} color={color} className="h-[130px] drop-shadow-md" />
-        <Lavender className="h-[130px] rotate-12" />
+      <div className="relative flex items-end justify-center gap-1 bg-[#f7f4ee] px-6 pb-6 pt-8">
+        {image && SHOW_PRODUCT_IMAGES ? (
+          <div className="relative h-[170px] w-[130px]">
+            <Image src={image} alt={`${name}のボトル`} fill sizes="130px" className="object-cover mix-blend-multiply" />
+          </div>
+        ) : (
+          <>
+            {en === "Lavender" && <Lavender className="h-[150px] -rotate-12" />}
+            <OilBottle label={en} color={color} className="h-[130px] drop-shadow-md" />
+            {en === "Lavender" && <Lavender className="h-[130px] rotate-12" />}
+          </>
+        )}
         <p className="font-script absolute left-5 top-4 text-[22px] text-[#8b78c4]">{en}</p>
       </div>
       <dl className="divide-y divide-black/5 px-5 py-2 md:px-7">
@@ -296,9 +357,17 @@ export function BlendRecipe({ title, drops }: { title: string; drops: { name: st
 export function Sources({ items }: { items: ArticleSource[] }) {
   if (items.length === 0) return null;
   return (
-    <section className="mt-12 rounded-xl bg-[#faf8f4] px-5 py-5 md:px-7">
-      <h2 className="font-serif-jp text-[16px] tracking-wider text-[#2b2b2b]">参考資料・出典</h2>
-      <ol className="mt-3 list-decimal space-y-3 pl-5 text-[12px] leading-6 text-[#666]">
+    <details className="group mt-12 rounded-xl bg-[#faf8f4] px-5 md:px-7">
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 py-4 marker:hidden">
+        <h2 className="font-serif-jp text-[16px] tracking-wider text-[#2b2b2b]">参考資料・出典</h2>
+        <span className="flex shrink-0 items-center gap-2 text-[12px] text-[#888]">
+          {items.length}件
+          <span className="text-[16px] text-blog-accent transition group-open:rotate-45" aria-hidden="true">
+            ＋
+          </span>
+        </span>
+      </summary>
+      <ol className="list-decimal space-y-3 pb-5 pl-5 text-[12px] leading-6 text-[#666]">
         {items.map((source) => (
           <li key={source.url}>
             <a href={source.url} target="_blank" rel="noopener noreferrer" className="break-words text-blog-accent underline underline-offset-2 hover:text-blog-accent-dark">
@@ -309,7 +378,7 @@ export function Sources({ items }: { items: ArticleSource[] }) {
           </li>
         ))}
       </ol>
-    </section>
+    </details>
   );
 }
 

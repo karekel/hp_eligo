@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AuthorBox, ComingSoon, Disclosure, Sources, SummaryBox, TableOfContents } from "@/components/blog/ArticleParts";
+import { AuthorBox, ComingSoon, Disclosure, ProductStrip, Sources, SummaryBox, TableOfContents } from "@/components/blog/ArticleParts";
 import { articles } from "@/components/blog/articles";
 import { BlogSidebar, Breadcrumb, CategoryIcon, LinkBanners, PostCard, SectionTitle } from "@/components/blog/BlogParts";
 import { BotanicalCluster } from "@/components/blog/Botanicals";
 import { blogConfig, blogPosts, formatDate, getCategory, getPost, getRelatedPosts } from "@/lib/blogData";
+import { productImages, SHOW_PRODUCT_IMAGES } from "@/lib/productImages";
 import { siteConfig } from "@/lib/siteConfig";
 
 export function generateStaticParams() {
@@ -91,6 +92,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
               <>
                 <SummaryBox items={article.summary} />
                 <TableOfContents items={article.toc} />
+                {SHOW_PRODUCT_IMAGES && productImages[post.slug] && <ProductStrip items={productImages[post.slug]} />}
                 <div className="blog-prose mt-4">
                   <article.Body />
                 </div>

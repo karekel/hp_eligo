@@ -1,15 +1,17 @@
-import { CautionBox, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import Link from "next/link";
+import { CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 使い方ガイド型のサンプル記事 */
 export const noDiffuser: ArticleContent = {
   summary: [
     "ディフューザーがなくても、身近な道具で香りを楽しむ4つの方法",
-    "それぞれの手順と、香りを長く楽しむためのコツ",
+    "それぞれの手順と、香らせたい範囲に合わせた方法の選び方",
     "使うときに気をつけたいポイントとよくある質問",
   ],
   toc: [
     { id: "intro", title: "ディフューザーがなくても香りは楽しめる" },
     { id: "methods", title: "身近な道具でできる4つの方法" },
+    { id: "choose", title: "4つの方法の選び方" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
   ],
@@ -49,6 +51,18 @@ export const noDiffuser: ArticleContent = {
       publisher: "消費者庁 消費者安全調査委員会",
       url: "https://www.caa.go.jp/policies/council/csic/activity_report/2024/assets/csic_cms201_250327_01.pdf",
       note: "原液を薄めずに肌につけないこと",
+    },
+    {
+      title: "【部屋別】おすすめのアロマ｜毎日をよい香りで過ごす方法を紹介",
+      publisher: "公益社団法人 日本アロマ環境協会 sense of AROMA（2025年3月27日）",
+      url: "https://media.aromakankyo.or.jp/senseofaroma/article/life/1875/",
+      note: "電気を使わない道具は狭い範囲で香らせるものであること、精油がシミや変色の原因になること",
+    },
+    {
+      title: "天然アロマで作る、ナチュラルフレグランス",
+      publisher: "公益社団法人 日本アロマ環境協会（2015年5月21日）",
+      url: "https://www.aromakankyo.or.jp/pdf/news/40/150521_%E5%A4%A9%E7%84%B6%E3%82%A2%E3%83%AD%E3%83%9E%E3%81%A7%E4%BD%9C%E3%82%8B%E3%83%95%E3%83%AC%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%B9_WEB%E7%94%A8.pdf",
+      note: "レモンとペパーミントがトップ、フランキンセンスがベースに分類され、ノートが揮発速度による分類であること",
     },
   ],
   Body: () => (
@@ -108,6 +122,23 @@ export const noDiffuser: ArticleContent = {
         <PointBox>手作りのスプレーは、1〜2週間を目安に使い切りましょう。</PointBox>
       </MethodCard>
 
+      <h2 id="choose">4つの方法の選び方</h2>
+      <p>香らせたい範囲と時間で選ぶと迷いません。ティッシュやストーンのように電気を使わない道具は、狭い範囲で香らせるものと考えましょう。</p>
+      <DataTable
+        caption="4つの方法の比べ方"
+        headers={["方法", "香る範囲", "向いている場面", "オイルの量"]}
+        rows={[
+          ["ティッシュ、ハンカチ", "自分のまわり", "デスク、外出先", "1〜2滴"],
+          ["アロマストーン", "置いた場所のまわり", "棚や机に置いておきたいとき", "1滴ずつ足す"],
+          ["マグカップのお湯", "自分のまわり", "短い時間だけ香らせたいとき", "1〜2滴"],
+          ["ルームスプレー", "吹きかけた空間", "部屋の香りを替えたいとき", "50mLに3〜10滴"],
+        ]}
+      />
+      <p>
+        オイルによって、香りの残り方も違います。日本アロマ環境協会の資料では、レモンやペパーミントは揮発しやすいトップ、フランキンセンスは揮発しにくいベースに分類されています。ティッシュの香りがすぐ薄れると感じたら、滴数を増やす前に、ベースのオイルも試してみましょう。
+      </p>
+      <p>始める前に、手元のオイルのラベルで、香りを楽しむ使い方が案内されているかを確かめておくと安心です。</p>
+
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox
         items={[
@@ -137,6 +168,10 @@ export const noDiffuser: ArticleContent = {
             a: "方法や香りの種類、部屋の広さなどによって変わります。",
           },
           {
+            q: "ティッシュとハンカチは、どちらがいいですか？",
+            a: "シミが気になるならティッシュが手軽です。ハンカチは色や素材によってシミになることがあるので、目立たない場所で試してから使いましょう。",
+          },
+          {
             q: "いくつかの香りを混ぜてもいいですか？",
             a: "混ぜて楽しむこともできます。最初は2種類を1滴ずつから試すと、好みの組み合わせが見つけやすくなります。",
           },
@@ -144,7 +179,7 @@ export const noDiffuser: ArticleContent = {
       />
 
       <p>
-        ディフューザーがなくても、エッセンシャルオイルは暮らしの中で気軽に楽しめます。まずは手元にある道具で、お気に入りの香りを試してみてください。
+        ディフューザーがなくても、エッセンシャルオイルは暮らしの中で気軽に楽しめます。まずは手元にある道具で、お気に入りの香りを試してみてください。部屋全体に香りを広げたくなったら、<Link href="/blog/diffuser-guide">ディフューザーの選び方</Link>も参考にしてください。
       </p>
       <NextStepBox />
     </>
