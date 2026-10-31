@@ -72,7 +72,7 @@ function IdentityContent({ leader }: { leader: Leader }) {
                     <div className="text-xs md:text-sm text-black mt-1 font-medium opacity-80 space-y-1">
                         {leader.identity.instagramUrl ? (
                             <p className="italic">
-                                <a href={leader.identity.instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:underline not-italic">
+                                <a href={leader.identity.instagramUrl} target="_blank" rel="noopener noreferrer" data-track="leader_instagram" data-track-group="leader" data-track-leader={leader.slug} className="hover:underline not-italic">
                                     {leader.identity.instagramUrl.replace("https://www.instagram.com/", "@").replace("/", "")}
                                 </a>
                             </p>

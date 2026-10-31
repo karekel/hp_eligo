@@ -107,6 +107,8 @@ export function BlogHeader() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="エリザベスのInstagram"
+            data-track="header_instagram"
+            data-track-group="blog"
             className="flex h-9 w-9 items-center justify-center rounded-full bg-blog-peach text-blog-ink transition-opacity hover:opacity-80"
           >
             <InstagramIcon className="h-[18px] w-[18px]" />
@@ -151,6 +153,9 @@ export function BlogFooter() {
               <a href={blogConfig.elizabethInstagram.url} target="_blank" rel="noopener noreferrer" className="hover:text-blog-ink hover:underline">
                 エリザベスのInstagram
               </a>
+            </li>
+            <li>
+              <Link href="/privacy" className="hover:text-blog-ink hover:underline">プライバシーポリシー</Link>
             </li>
           </ul>
         </div>
@@ -294,7 +299,7 @@ export function RecommendedPosts() {
 
 function EligoBanner({ wide = false }: { wide?: boolean }) {
   return (
-    <Link href="/" className={`group relative block overflow-hidden rounded-2xl shadow-[0_2px_14px_rgba(70,55,30,0.1)] ${wide ? "h-[200px] md:h-[220px]" : "h-[170px]"}`}>
+    <Link href="/" data-track="banner_official" data-track-group="blog" className={`group relative block overflow-hidden rounded-2xl shadow-[0_2px_14px_rgba(70,55,30,0.1)] ${wide ? "h-[200px] md:h-[220px]" : "h-[170px]"}`}>
       <Image src="/assets/背景/top backg.png" alt="" fill sizes={wide ? "(min-width: 768px) 560px, 100vw" : "300px"} className="object-cover object-[65%_50%] transition duration-700 group-hover:scale-105" />
       <div className="absolute inset-0 bg-gradient-to-r from-blog-peach/95 via-blog-pink/90 to-blog-mist/40" />
       <Image src="/assets/ロゴ/mark_center.png" alt="" width={160} height={160} className="absolute -right-6 -top-6 h-40 w-40 opacity-10 brightness-0" />
@@ -319,6 +324,8 @@ function InstagramBanner({ wide = false }: { wide?: boolean }) {
       href={blogConfig.elizabethInstagram.url}
       target="_blank"
       rel="noopener noreferrer"
+      data-track="banner_instagram"
+      data-track-group="blog"
       className={`group flex items-center gap-4 rounded-2xl bg-white p-5 shadow-[0_2px_14px_rgba(70,55,30,0.1)] transition hover:shadow-[0_8px_24px_rgba(70,55,30,0.14)] ${wide ? "h-[200px] md:h-[220px] md:gap-6 md:p-8" : ""}`}
     >
       <span className={`shrink-0 rounded-full bg-[conic-gradient(from_200deg,#f6c453,#e8547b,#8a5ad6,#f6c453)] p-[3px] ${wide ? "h-24 w-24 md:h-28 md:w-28" : "h-[72px] w-[72px]"}`}>

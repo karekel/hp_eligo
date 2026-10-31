@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { siteCopy } from "@/lib/siteCopy";
 import { siteAssets } from "@/lib/siteAssets";
 import FadeIn from "./FadeIn";
@@ -30,6 +31,8 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
+                data-track="footer_instagram"
+                data-track-group="top"
                 className="group flex items-center gap-3 px-6 py-3 bg-[#1a1a1a] text-white rounded-full transition-all hover:bg-[#333] hover:scale-105"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -37,6 +40,9 @@ export default function ContactSection() {
                 </svg>
                 <span className="font-thin tracking-[0.2em] text-sm uppercase">Follow ELIZABETH</span>
               </a>
+              <Link href="/privacy" className="mt-8 text-[11px] tracking-[0.2em] text-[#1a1a1a]/60 hover:underline">
+                プライバシーポリシー
+              </Link>
             </div>
           </div>
         </FadeIn>

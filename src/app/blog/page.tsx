@@ -38,7 +38,7 @@ export default function BlogTopPage() {
         <div className="relative z-10 mx-auto max-w-xl px-6 text-center">
           <SectionTitle en="About this journal" ja="はじめての一滴から、毎日の香りまで。" />
           <p className="mt-8 text-[14px] leading-[2.3] text-[#555] md:text-[15px]">
-            ドテラ（dōTERRA）のエッセンシャルオイルを、
+            エッセンシャルオイルを、
             <br className="hidden md:inline" />
             毎日の暮らしにどう取り入れるか。
             <br />

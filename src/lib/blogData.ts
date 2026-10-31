@@ -3,14 +3,14 @@
  * 現在はデザイン確認用のサンプル。記事本文は src/components/blog/articles/ にある。
  */
 
-/** 公開前は true。検索エンジンに載せず、サイトマップにも含めない */
-export const BLOG_DRAFT = true;
+/** 公開前は true。検索エンジンに載せず、サイトマップにも含めない。2026-10-31 に公開（false） */
+export const BLOG_DRAFT = false;
 
 export const blogConfig = {
   name: "ELIGŌ Oil Journal",
   nameJp: "エッセンシャルオイルの使い方ガイド",
   description:
-    "ドテラ（dōTERRA）のエッセンシャルオイルを、毎日の暮らしにどう取り入れるか。使い方・道具・保管のコツをまとめています。",
+    "エッセンシャルオイルを、毎日の暮らしにどう取り入れるか。使い方・道具・保管のコツをまとめています。",
   elizabethInstagram: {
     url: "https://www.instagram.com/aroma_with_elizabeth/",
     handle: "@aroma_with_elizabeth",
