@@ -401,6 +401,72 @@ export const blogPosts: BlogPost[] = [
     thumbnail: "/assets/blog/pets-safety.jpg",
   },
   // ---- 41本 ここまで ----
+  // ---- 検索KW対応 第2弾（2026-11-01） ここから ----
+  {
+    slug: "oil-disposal",
+    title: "エッセンシャルオイルの捨て方｜残った中身とビンの処分方法",
+    excerpt: "使い切れなかったエッセンシャルオイルの中身は、排水に流さず紙に吸わせて捨てます。ビンとキャップの分け方、自治体で区分が変わる例、日本アロマ環境協会の精油ビン回収もまとめました。",
+    category: "care",
+    publishedAt: "2026-11-01",
+    thumbnail: "/assets/blog/oil-disposal.jpg",
+  },
+  {
+    slug: "how-oils-are-made",
+    title: "エッセンシャルオイルはどうやって作られる？抽出方法と、自宅で作れるかの答え",
+    excerpt: "水蒸気蒸留法や圧搾法など、エッセンシャルオイルの抽出方法と、収穫から蒸留までの流れをまとめました。自宅で簡単に作れるのかという疑問にも、公的機関の試験の数字をもとに答えます。",
+    category: "beginner",
+    publishedAt: "2026-11-01",
+    thumbnail: "/assets/blog/how-oils-are-made.jpg",
+  },
+  {
+    slug: "where-to-buy",
+    title: "エッセンシャルオイルはどこで買える？購入先の種類と、選ぶときに見るところ",
+    excerpt: "「精油はどこで買える？」に答えて、専門店、雑貨店、通販、会員登録して買う直販の4つの購入先の違いを整理します。価格に幅がある理由と、買う前にラベルで見るところ、ドテラの購入の仕組みもまとめました。",
+    category: "beginner",
+    publishedAt: "2026-11-01",
+    thumbnail: "/assets/blog/where-to-buy.jpg",
+  },
+  {
+    slug: "oils-in-car",
+    title: "車の中でエッセンシャルオイルを楽しむ方法｜アロマストーンとクリップの使い方",
+    excerpt: "アロマオイルを車で楽しむ4つの方法を、アロマストーン、エアコン吹き出し口のクリップ、ティッシュ、小型ディフューザーの順に手順と滴数つきで紹介します。車内の高温や内装への付着など、車ならではの注意点もまとめました。",
+    category: "how-to",
+    publishedAt: "2026-11-01",
+    thumbnail: "/assets/blog/oils-in-car.jpg",
+  },
+  {
+    slug: "oil-organizing",
+    title: "エッセンシャルオイルの収納アイデア｜ボトルを使いやすく、長持ちさせる並べ方",
+    excerpt: "アロマオイルの収納は、光・熱・湿気を避けて立てて置く条件から考えます。香りの系統別や用途別の並べ方、木箱や仕切りつきボックスなどケースの選び方、置かない場所と使い切る工夫をまとめました。",
+    category: "care",
+    publishedAt: "2026-11-01",
+    thumbnail: "/assets/blog/oil-organizing.jpg",
+  },
+  {
+    slug: "reading-labels",
+    title: "エッセンシャルオイルのラベルの見方｜学名・抽出部位・区分の読み方",
+    excerpt: "精油のラベルに書かれた品名、学名、抽出部位、原産国、内容量、注意表示の読み方を項目ごとに整理します。日本の製品で大切な区分と成分名の見方、日本アロマ環境協会の表示基準もまとめました。",
+    category: "beginner",
+    publishedAt: "2026-11-01",
+    thumbnail: "/assets/blog/reading-labels.jpg",
+  },
+  {
+    slug: "enrollment-kits",
+    title: "ドテラの登録キットの種類と選び方｜最初の1本をどう決めるか",
+    excerpt: "ドテラの登録キットのうち、オイルが中心の3つのキットの内容を一覧で整理しました。香りを楽しみたい、家族で使いたい、アロマタッチを学びたいという目的別の選び方と、キットを選ばない始め方も紹介します。",
+    category: "beginner",
+    publishedAt: "2026-11-01",
+    thumbnail: "/assets/blog/enrollment-kits.jpg",
+  },
+  {
+    slug: "doterra-oil-lineup",
+    title: "ドテラのオイルの種類｜シングル、ブレンド、キットの全体像",
+    excerpt: "ドテラのオイルは、1種類の植物から採るシングルオイルと、複数を組み合わせたブレンドオイルに分かれます。図鑑記事のある13本を香りの系統で並べ、サイズと区分、キットの選択肢まで整理します。",
+    category: "beginner",
+    publishedAt: "2026-11-01",
+    thumbnail: "/assets/blog/doterra-oil-lineup.jpg",
+  },
+  // ---- 第2弾 ここまで ----
 ];
 
 export const getPost = (slug: string) => blogPosts.find((p) => p.slug === slug);

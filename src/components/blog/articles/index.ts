@@ -42,6 +42,14 @@ import { coImpactSourcing } from "./CoImpactSourcing";
 import { oilStorage } from "./OilStorage";
 import { kidsSafety } from "./KidsSafety";
 import { petsSafety } from "./PetsSafety";
+import { oilDisposal } from "./OilDisposal";
+import { howOilsAreMade } from "./HowOilsAreMade";
+import { whereToBuy } from "./WhereToBuy";
+import { oilsInCar } from "./OilsInCar";
+import { oilOrganizing } from "./OilOrganizing";
+import { readingLabels } from "./ReadingLabels";
+import { enrollmentKits } from "./EnrollmentKits";
+import { doterraOilLineup } from "./DoterraOilLineup";
 
 /** 本文がある記事（slug → 本文）。ここにない記事は「準備中」と表示する */
 export const articles: Record<string, ArticleContent> = {
@@ -88,4 +96,12 @@ export const articles: Record<string, ArticleContent> = {
   "oil-storage": oilStorage,
   "kids-safety": kidsSafety,
   "pets-safety": petsSafety,
+  "oil-disposal": oilDisposal,
+  "how-oils-are-made": howOilsAreMade,
+  "where-to-buy": whereToBuy,
+  "oils-in-car": oilsInCar,
+  "oil-organizing": oilOrganizing,
+  "reading-labels": readingLabels,
+  "enrollment-kits": enrollmentKits,
+  "doterra-oil-lineup": doterraOilLineup,
 };
