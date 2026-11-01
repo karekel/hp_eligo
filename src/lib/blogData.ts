@@ -8,9 +8,9 @@ export const BLOG_DRAFT = false;
 
 export const blogConfig = {
   name: "ELIGŌ Oil Journal",
-  nameJp: "エッセンシャルオイルの使い方ガイド",
+  nameJp: "エッセンシャルオイルやアロマオイルの使い方ガイド",
   description:
-    "エッセンシャルオイルを、毎日の暮らしにどう取り入れるか。使い方・道具・保管のコツをまとめています。",
+    "エッセンシャルオイルやアロマオイルを、毎日の暮らしにどう取り入れるか。使い方・道具・保管のコツをまとめています。",
   elizabethInstagram: {
     url: "https://www.instagram.com/aroma_with_elizabeth/",
     handle: "@aroma_with_elizabeth",
@@ -33,11 +33,24 @@ export type BlogCategory = {
 };
 
 export const blogCategories: BlogCategory[] = [
-  { slug: "beginner", name: "はじめての方へ", en: "First Steps", description: "エッセンシャルオイルの基本と選び方", icon: "leaf" },
+  { slug: "beginner", name: "はじめての方へ", en: "First Steps", description: "エッセンシャルオイルやアロマオイルの基本と選び方", icon: "leaf" },
   { slug: "how-to", name: "使い方・道具", en: "How to Use", description: "ディフューザーやアロマストーンの使い方", icon: "drop" },
   { slug: "oils", name: "オイル図鑑", en: "Oil Guide", description: "1本ずつ、香りの特徴と楽しみ方", icon: "bottle" },
   { slug: "lifestyle", name: "暮らし・クラフト", en: "Lifestyle", description: "お掃除や手作りアイテムに", icon: "home" },
   { slug: "care", name: "保管と注意点", en: "Safety", description: "安全に使うための確認ポイント", icon: "shield" },
+];
+
+/** ブログトップの「はじめに読みたい記事」に並べるリンク */
+export const starterGuideLinks = [
+  { title: "アロマオイルとの違い", text: "名前が似ていても、中身が違うことがあります", href: "/blog/what-is-essential-oil" },
+  { title: "基本の使い方", text: "ディフューザーがなくても試せる4つの方法", href: "/blog/no-diffuser" },
+  { title: "ディフューザーの選び方", text: "超音波式の特徴と毎日のお手入れ", href: "/blog/diffuser-guide" },
+  { title: "シーン別の選び方", text: "仕事、家事、リラックスタイムのシーン別に", href: "/blog/oils-by-scene" },
+  { title: "香りの種類", text: "1本ずつ、香りの特徴と楽しみ方を紹介", href: "/blog/category/oils" },
+  { title: "どこで買える？", text: "購入先の種類と、選ぶときに見るところ", href: "/blog/where-to-buy" },
+  { title: "車で楽しむ", text: "アロマストーンとクリップの使い方", href: "/blog/oils-in-car" },
+  { title: "保管方法", text: "保管する場所と、使用期限の目安", href: "/blog/oil-storage" },
+  { title: "捨て方", text: "残った中身とビンの処分方法", href: "/blog/oil-disposal" },
 ];
 
 export type BlogPost = {
