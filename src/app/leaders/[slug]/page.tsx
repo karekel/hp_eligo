@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { leaders, getLeaderBySlug } from "@/lib/leadersData";
+import { leaders, getLeaderBySlug, getRoleJa, getLeaderIntro } from "@/lib/leadersData";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import LeaderTabs from "@/components/leaders/LeaderTabs";
 import Image from "next/image";
@@ -18,8 +18,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const { slug } = await params;
     const leader = getLeaderBySlug(slug);
     if (!leader) return { title: "Leader" };
-    const title = `${leader.nameJp}（${leader.nameEn}）｜ドテラ（doTERRA）${leader.role}`;
-    const description = `ドテラ（doTERRA）${leader.role}・${leader.nameJp}（${leader.nameEn}）のプロフィール。エッセンシャルオイルとの出会い、愛用オイル3本、チームELIGŌ（エリゴ）のビジョンを紹介します。`;
+    const roleJa = getRoleJa(leader.role);
+    const title = `${leader.nameJp}（${leader.nameEn}）｜ドテラ（doTERRA）${roleJa}`;
+    const description = `ドテラ（doTERRA）${roleJa}（${leader.role}）・${leader.nameJp}（${leader.nameEn}）のプロフィール。エッセンシャルオイルとの出会い、愛用オイル3本、チームELIGŌ（エリゴ）のビジョンを紹介します。`;
     return {
         title,
         description,
@@ -45,7 +46,8 @@ export default async function LeaderPage({
         "@type": "Person",
         name: leader.nameJp,
         alternateName: leader.nameEn,
-        jobTitle: `doTERRA ${leader.role}`,
+        jobTitle: `ドテラ（doTERRA）${getRoleJa(leader.role)}（${leader.role}）`,
+        description: getLeaderIntro(leader),
         image: `${siteConfig.siteUrl}${leader.image}`,
         url: `${siteConfig.siteUrl}/leaders/${leader.slug}`,
         knowsAbout: ["エッセンシャルオイル", "ドテラ（doTERRA）"],
@@ -118,10 +120,14 @@ export default async function LeaderPage({
                                 </span>
                             </h1>
                             <p className="mt-1 text-base md:text-lg font-bold text-black/70 tracking-wider">
-                                dōTERRA（ドテラ） <span className="whitespace-nowrap">{leader.role}</span>
+                                dōTERRA（ドテラ） <span className="whitespace-nowrap">{leader.role}</span>{" "}
+                                <span className="whitespace-nowrap">（{getRoleJa(leader.role)}）</span>
                             </p>
                             <p className="mt-4 text-base md:text-lg text-black font-medium leading-relaxed opacity-90">
                                 {leader.catchphrase ? `「${leader.catchphrase}」` : ""}
+                            </p>
+                            <p className="mt-4 text-sm md:text-base text-black/70 leading-relaxed">
+                                {getLeaderIntro(leader)}
                             </p>
                         </div>
 
