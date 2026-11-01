@@ -236,11 +236,13 @@ export function CheckPoints({ items }: { items: { title: string; text: string }[
 
 /** 比較や目安を示す表 */
 export function DataTable({ caption, headers, rows }: { caption: string; headers: string[]; rows: string[][] }) {
+  // 3列以上の表はスマホだと列が細くなるので、行ごとに「見出しと値」の縦並びにする
+  const stacked = headers.length >= 3;
   return (
     <div className="mt-6 overflow-x-auto rounded-2xl border border-black/5">
-      <table className="w-full min-w-[420px] border-collapse text-left text-[13px] leading-7 text-[#444]">
+      <table className={`w-full border-collapse text-left text-[13px] leading-7 text-[#444] ${stacked ? "max-sm:block sm:min-w-[420px]" : ""}`}>
         <caption className="sr-only">{caption}</caption>
-        <thead className="bg-blog-tint text-blog-accent">
+        <thead className={`bg-blog-tint text-blog-accent ${stacked ? "max-sm:sr-only" : ""}`}>
           <tr>
             {headers.map((h) => (
               <th key={h} scope="col" className="px-4 py-2.5 font-medium">
@@ -249,12 +251,17 @@ export function DataTable({ caption, headers, rows }: { caption: string; headers
             ))}
           </tr>
         </thead>
-        <tbody className="divide-y divide-black/5 bg-white">
+        <tbody className={`divide-y divide-black/5 bg-white ${stacked ? "max-sm:block" : ""}`}>
           {rows.map((row, i) => (
-            <tr key={i}>
+            <tr key={i} className={stacked ? "max-sm:block max-sm:py-2" : undefined}>
               {row.map((cell, j) => (
-                <td key={j} className="px-4 py-2.5">
-                  {cell}
+                <td key={j} className={`px-4 py-2.5 ${stacked ? "max-sm:grid max-sm:grid-cols-[7em_minmax(0,1fr)] max-sm:gap-x-3 max-sm:py-0.5" : ""}`}>
+                  {stacked && (
+                    <span className="font-medium text-blog-accent sm:hidden" aria-hidden="true">
+                      {headers[j]}
+                    </span>
+                  )}
+                  <span>{cell}</span>
                 </td>
               ))}
             </tr>

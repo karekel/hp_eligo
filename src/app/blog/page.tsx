@@ -62,7 +62,7 @@ export default function BlogTopPage() {
       <section id="articles" className="relative scroll-mt-6 pb-24">
         <BotanicalCluster variant="left-b" className="-left-[110px] top-[260px]" />
         <BotanicalCluster variant="right-b" className="-right-[100px] top-[900px]" />
-        <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-4 md:px-6 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-10">
+        <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 gap-12 px-4 md:px-6 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-10">
           <div>
             <SectionTitle en="New Articles" ja="新着記事" align="left" />
             <div className="mt-8">

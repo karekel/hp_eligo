@@ -64,7 +64,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
           ]}
         />
 
-        <div className="mt-5 grid gap-12 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-10">
+        <div className="mt-5 grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-10">
           <article className="rounded-3xl bg-white px-5 py-8 shadow-[0_4px_30px_rgba(70,55,30,0.08)] md:px-12 md:py-12">
             <Link
               href={`/blog/category/${category.slug}`}

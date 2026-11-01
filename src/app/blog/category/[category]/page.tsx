@@ -37,7 +37,7 @@ export default async function BlogCategoryPage({ params }: { params: Promise<{ c
         </div>
         <CategoryCards current={category.slug} />
 
-        <div className="mt-16 grid gap-12 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-10">
+        <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-10">
           <div>
             <p className="text-[13px] text-[#666]">{posts.length}件の記事</p>
             <div className="mt-4 grid gap-6 sm:grid-cols-2">
