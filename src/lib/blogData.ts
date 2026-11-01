@@ -47,7 +47,6 @@ export const starterGuideLinks = [
   { title: "ディフューザーの選び方", text: "超音波式の特徴と毎日のお手入れ", href: "/blog/diffuser-guide" },
   { title: "シーン別の選び方", text: "仕事、家事、リラックスタイムのシーン別に", href: "/blog/oils-by-scene" },
   { title: "香りの種類", text: "1本ずつ、香りの特徴と楽しみ方を紹介", href: "/blog/category/oils" },
-  { title: "どこで買える？", text: "購入先の種類と、選ぶときに見るところ", href: "/blog/where-to-buy" },
   { title: "車で楽しむ", text: "アロマストーンとクリップの使い方", href: "/blog/oils-in-car" },
   { title: "保管方法", text: "保管する場所と、使用期限の目安", href: "/blog/oil-storage" },
   { title: "捨て方", text: "残った中身とビンの処分方法", href: "/blog/oil-disposal" },
@@ -432,14 +431,6 @@ export const blogPosts: BlogPost[] = [
     thumbnail: "/assets/blog/how-oils-are-made.jpg",
   },
   {
-    slug: "where-to-buy",
-    title: "エッセンシャルオイルはどこで買える？購入先の種類と、選ぶときに見るところ",
-    excerpt: "「精油はどこで買える？」に答えて、専門店、雑貨店、通販、会員登録して買う直販の4つの購入先の違いを整理します。価格に幅がある理由と、買う前にラベルで見るところ、ドテラの購入の仕組みもまとめました。",
-    category: "beginner",
-    publishedAt: "2026-11-01",
-    thumbnail: "/assets/blog/where-to-buy.jpg",
-  },
-  {
     slug: "oils-in-car",
     title: "車の中でエッセンシャルオイルを楽しむ方法｜アロマストーンとクリップの使い方",
     excerpt: "アロマオイルを車で楽しむ4つの方法を、アロマストーン、エアコン吹き出し口のクリップ、ティッシュ、小型ディフューザーの順に手順と滴数つきで紹介します。車内の高温や内装への付着など、車ならではの注意点もまとめました。",
@@ -462,14 +453,6 @@ export const blogPosts: BlogPost[] = [
     category: "beginner",
     publishedAt: "2026-11-01",
     thumbnail: "/assets/blog/reading-labels.jpg",
-  },
-  {
-    slug: "enrollment-kits",
-    title: "ドテラの登録キットの種類と選び方｜最初の1本をどう決めるか",
-    excerpt: "ドテラの登録キットのうち、オイルが中心の3つのキットの内容を一覧で整理しました。香りを楽しみたい、家族で使いたい、アロマタッチを学びたいという目的別の選び方と、キットを選ばない始め方も紹介します。",
-    category: "beginner",
-    publishedAt: "2026-11-01",
-    thumbnail: "/assets/blog/enrollment-kits.jpg",
   },
   {
     slug: "doterra-oil-lineup",
