@@ -10,10 +10,10 @@ export const aromatouchTechnique: ArticleContent = {
   ],
   toc: [
     { id: "what", title: "アロマタッチ テクニックとは" },
-    { id: "oils", title: "使う8種類のオイルと順番" },
-    { id: "flow", title: "全体の流れ" },
+    { id: "oils", title: "8本のオイルの順番" },
+    { id: "flow", title: "やり方の全体の流れ" },
     { id: "check", title: "始める前に確認したいこと" },
-    { id: "learn", title: "学び方" },
+    { id: "learn", title: "認定コースと学び方" },
   ],
   sources: [
     {
@@ -133,7 +133,7 @@ export const aromatouchTechnique: ArticleContent = {
         家族や友人など、個人の間で行うことが前提で、営利目的の利用は想定されていません。あん摩、マッサージ、指圧を仕事として行うには免許が必要です。この記事も、身近な人と楽しむ範囲の話として書いています。
       </p>
 
-      <h2 id="oils">使う8種類のオイルと順番</h2>
+      <h2 id="oils">8本のオイルの順番</h2>
       <p>使うオイルは8種類で、順番が決まっています。順番どおりに進めることが大切とされています。</p>
       <DataTable
         caption="アロマタッチ テクニックのオイルの順番と主な動作"
@@ -158,7 +158,7 @@ export const aromatouchTechnique: ArticleContent = {
         キットのページの表示は「塗」「香」です。単品のペパーミントとオレンジは、15mLが「香・食」、5mLが「塗・香」と、容量で表示が変わります。オンガードの15mLも「香・食」です。手持ちの15mLで代用せず、お手元のラベルを確認しましょう。
       </p>
 
-      <h2 id="flow">全体の流れ</h2>
+      <h2 id="flow">やり方の全体の流れ</h2>
       <Steps
         steps={[
           { title: "場所と道具を用意する", text: "受ける人はアクセサリーを外し、うつ伏せになります。大きなタオルをかけて寒くならないようにし、オイルは手元に順番どおり並べます。" },
@@ -187,7 +187,7 @@ export const aromatouchTechnique: ArticleContent = {
         ]}
       />
 
-      <h2 id="learn">学び方</h2>
+      <h2 id="learn">認定コースと学び方</h2>
       <p>動作のひとつひとつは、公式の動作ページの動画で確認できます。正しく身につけたい方には、ドテラの2つの学び方があります。</p>
       <ul>
         <li>オンライン認定コース: 動画で学びます。標準の受講時間は約7〜9時間で、短い動画をすき間時間に見進められます。</li>

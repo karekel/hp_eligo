@@ -11,7 +11,7 @@ export const diffuserBlends: ArticleContent = {
   ],
   toc: [
     { id: "before", title: "始める前に確認する3つのこと" },
-    { id: "blends", title: "朝・昼・夜の組み合わせ例" },
+    { id: "blends", title: "朝・昼・夜のレシピ" },
     { id: "strength", title: "香りの強さを調節する" },
     { id: "own", title: "自分の組み合わせを作るコツ" },
     { id: "caution", title: "使うときの注意点" },
@@ -93,7 +93,7 @@ export const diffuserBlends: ArticleContent = {
   Body: () => (
     <>
       <p>
-        ディフューザーに慣れてくると、香りを組み合わせてみたくなります。朝、昼、夜で香りを替えると、時間の切り替えも楽しめます。
+        ディフューザーに慣れてくると、香りを組み合わせるレシピを試してみたくなります。朝、昼、夜で香りを替えると、時間の切り替えも楽しめます。
       </p>
       <p>この記事では、合計5滴か6滴で試せる組み合わせと、自分でブレンドを考えるときの順番を紹介します。</p>
 
@@ -106,7 +106,7 @@ export const diffuserBlends: ArticleContent = {
         ]}
       />
 
-      <h2 id="blends">朝・昼・夜の組み合わせ例</h2>
+      <h2 id="blends">朝・昼・夜のレシピ</h2>
       <p>滴数は、試しやすいように組んだ一例です。香りが物足りないときは、合計が10滴を超えない範囲で、同じ割合のまま増やしてください。</p>
 
       <h3>朝：明るくすっきりした香りで支度の時間に</h3>
