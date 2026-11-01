@@ -58,12 +58,6 @@ export const oilsInCar: ArticleContent = {
       note: "電源アダプタをコンセントにつないで使う製品であること、平らで硬い場所に置き直射日光の当たる場所や高温になる場所を避けること、噴出口から直接蒸気を吸引しないこと",
     },
     {
-      title: "Part 5: Packaging and Storage",
-      publisher: "doTERRA（米国公式、英語）",
-      url: "https://www.doterra.com/US/en/essential-oil-production-packaging-and-storage-overview",
-      note: "高温を避ける場所の例として夏の車内と窓辺を挙げていること（日本の製品表示と同じとは限らない）",
-    },
-    {
       title: "アロマテラピーの楽しみ方",
       publisher: "公益社団法人 日本アロマ環境協会",
       url: "https://www.aromakankyo.or.jp/basics/howto/",
@@ -144,7 +138,6 @@ export const oilsInCar: ArticleContent = {
             { title: "弱い風から試す", text: "強いと感じたら風量を下げるか、クリップを外します。" },
           ]}
         />
-        <PointBox>パッドは香りごとに替えると、前の香りと混ざりません。</PointBox>
       </MethodCard>
 
       <MethodCard no={3} title="ティッシュやコットンに垂らす" items={["ティッシュ", "コットン", "小さな袋や容器"]}>
@@ -173,7 +166,6 @@ export const oilsInCar: ArticleContent = {
             ]}
           />
         </div>
-        <PointBox>車の電源に対応しているかは、ディフューザーと車の両方の説明書で確かめましょう。</PointBox>
       </MethodCard>
 
       <h2 id="scent">車におすすめの香りと、量の決め方</h2>
@@ -198,17 +190,14 @@ export const oilsInCar: ArticleContent = {
       <h2 id="heat">車ならではの注意点（高温と内装）</h2>
       <h3>ボトルを車内に置きっぱなしにしない</h3>
       <p>
-        協会は、紫外線や高温、極端な温度変化で酸化が進むとして、直射日光の当たる場所や暑い場所での保管を避けるよう案内しています。ドテラの米国公式サイトも、避けたい場所の例に夏の車内と窓辺を挙げています。
+        協会は、紫外線や高温、極端な温度変化で酸化が進むとして、直射日光の当たる場所や暑い場所での保管を避けるよう案内しています。
       </p>
       <p>
-        車に積むのはその日に使う1本だけにして、降りるときに持ち帰ります。置いたままだったボトルは、使う前に香りを確かめ、いつもと違えば使いません。保管の基本は<Link href="/blog/oil-storage">オイルの保管方法</Link>にまとめています。
+        車に積むのはその日に使う1本だけにして、降りるときに持ち帰ります。保管の基本は<Link href="/blog/oil-storage">オイルの保管方法</Link>にまとめています。
       </p>
       <h3>内装にオイルを直接つけない</h3>
       <p>
         協会は、精油はシミや変色の原因になるので、家具やカーテンにつけないよう注意しています。車のシートや内装も同じです。ストーンやティッシュは受け皿や袋に入れ、ボトルのふたをダッシュボードに直接置きません。ついたらすぐに拭き取ります。
-      </p>
-      <p>
-        プラスチックとオイルの関係は、<Link href="/blog/oil-containers">オイルの容器の選び方</Link>で整理しています。
       </p>
 
       <h2 id="caution">使うときの注意点</h2>

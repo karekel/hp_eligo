@@ -71,34 +71,16 @@ export const enrollmentKits: ArticleContent = {
       note: "会員制度があること、WCとWAの2つの会員種別、WCの説明、登録できる年齢が満20歳以上であること、参考小売価格で購入する方法があること",
     },
     {
-      title: "【重要】キット製品 一部内容変更のお知らせ ＜12月25日より＞",
-      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社、2024年12月24日）",
-      url: "https://www.doterra-info.jp/media/2665586/",
-      note: "輸入の遅れでオイル コレクション登録キットのタンジェリンがシダーウッドに差し替えられた実例",
-    },
-    {
       title: "アロマタッチ オンライン認定コースのご案内",
       publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
       url: "https://www.doterra-info.jp/lp/2454059/",
-      note: "オイル デラックス登録キットとオイル コレクション登録キットの購入者が受講の対象であること、アロマタッチ テクニックはアロマタッチキットのオイルで行うと案内されていること",
+      note: "2023年4月1日以降に新規登録し、オイル デラックス、オイル コレクション、ウェルネス、プレミアム、フルケアの登録キットを購入した人が受講の対象であること、アロマタッチ テクニックはアロマタッチキットのオイルで行うと案内されていること",
     },
     {
       title: "アロマタッチキット（ココナッツオイル専用ポンプ付）",
       publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
       url: "https://www.doterra-info.jp/product/aromatouch-kit-with-jp-fco-pump/",
       note: "アロマタッチキットの内容（8種類の5mLとドテラ ココナッツオイル、専用ポンプ）",
-    },
-    {
-      title: "ペパーミント（15mL）",
-      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
-      url: "https://www.doterra-info.jp/product/peppermint-15ml/",
-      note: "15mLの製品ページの表示が「香・食」であること",
-    },
-    {
-      title: "ペパーミント（5mL）",
-      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
-      url: "https://www.doterra-info.jp/product/peppermint-5ml/",
-      note: "5mLの製品ページの表示が「塗・香」であること（同じ名前でも容量で表示が違う例）",
     },
     {
       title: "ドテラでは、皆さまがエッセンシャルオイルを長く楽しくご使用いただけるようにご案内しています。",
@@ -160,9 +142,6 @@ export const enrollmentKits: ArticleContent = {
       <p>
         オイル以外が中心のニュートリション、ウェルネス、ビューティー、プレミアム、フルケアの登録キットもあります。内容は公式の一覧ページで確認してください。
       </p>
-      <p>
-        内容は変わることがあります。2024年12月には、輸入の遅れでコレクションのタンジェリンがシダーウッドに差し替えられた告知が出ました。申し込む前に、公式ページの「内容」を見直しましょう。
-      </p>
 
       <h2 id="choose">目的別のおすすめと選び方｜最初の1本をどう決めるか</h2>
       <p>「どんな場面で香りを使いたいか」を1つ思い浮かべると、キットも、届いて最初に開ける1本も決めやすくなります。</p>
@@ -178,16 +157,14 @@ export const enrollmentKits: ArticleContent = {
           },
           {
             title: "アロマタッチを学びたい → オイル デラックス以上のキット",
-            text: "公式のオンライン認定コースの案内では、デラックスとコレクションの購入者が受講の対象です。技法はアロマタッチキット（8種類の5mLとココナッツオイル）で行うと案内されているので、キットは別に用意します。",
+            text: "公式のオンライン認定コースは、2023年4月1日以降に新規登録し、対象の登録キットを購入した人が受講できます。対象にはデラックスとコレクションのほか、ウェルネス、プレミアム、フルケアも含まれます。技法はアロマタッチキット（8種類の5mLとココナッツオイル）で行うと案内されているので、キットは別に用意します。",
           },
         ]}
       />
+
       <p>
-        各オイルの香りと使い方は、<Link href="/blog/lavender">ラベンダー</Link>、<Link href="/blog/lemon">レモン</Link>、<Link href="/blog/peppermint">ペパーミント</Link>、<Link href="/blog/frankincense">フランキンセンス</Link>、<Link href="/blog/on-guard">オンガード</Link>、<Link href="/blog/balance">ドテラバランス</Link>、<Link href="/blog/serenity">ドテラセレニティー</Link>の記事で紹介しています。アロマタッチ テクニックの流れは<Link href="/blog/aromatouch-technique">アロマタッチ テクニックとは？</Link>へ。子どもやペットがいる家庭は、<Link href="/blog/kids-safety">子どもとエッセンシャルオイル</Link>と<Link href="/blog/pets-safety">ペットのいる家での注意点</Link>も先に読んでおくと安心です。
+        各オイルの香りと使い方は、<Link href="/blog/lavender">ラベンダー</Link>などの図鑑記事で紹介しています。アロマタッチ テクニックの流れは<Link href="/blog/aromatouch-technique">アロマタッチ テクニックとは？</Link>へ。
       </p>
-      <PointBox>
-        迷ったら、入っているオイルを図鑑の記事で眺めて、使う場面が思い浮かぶ本数の多いキットを選びましょう。思い浮かばなければ、小さいキットか単品からで十分です。
-      </PointBox>
 
       <h3>キットを選ばない始め方</h3>
       <p>
@@ -211,10 +188,6 @@ export const enrollmentKits: ArticleContent = {
           {
             q: "WAとWCで、キットの中身は違いますか？",
             a: "中身は同じで、違うのは登録の種類に合わせた付属の書類だけです。種別の違いは公式の「会員登録について」で確認してください。",
-          },
-          {
-            q: "5mLと15mLでは、量のほかに違いがありますか？",
-            a: "製品ページの表示が違うことがあります。ペパーミントは15mLが「香・食」、5mLが「塗・香」です。表示の見方は「ドテラのオイルはなぜ飲めると言われるの？」の記事で説明しています。",
           },
         ]}
       />

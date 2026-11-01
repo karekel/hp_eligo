@@ -12,7 +12,6 @@ export const howOilsAreMade: ArticleContent = {
     { id: "methods", title: "エッセンシャルオイルの抽出方法は5つ" },
     { id: "journey", title: "植物からオイルになるまで" },
     { id: "home", title: "自宅で簡単に作れる？" },
-    { id: "label", title: "作り方がわかると、ラベルが読める" },
     { id: "caution", title: "自分で試すときの注意点" },
   ],
   sources: [
@@ -20,7 +19,7 @@ export const howOilsAreMade: ArticleContent = {
       title: "精油はどのようにして作られる？主な抽出方法や具体的な活用法について紹介",
       publisher: "公益社団法人 日本アロマ環境協会 sense of AROMA（2026年9月17日）",
       url: "https://media.aromakankyo.or.jp/senseofaroma/article/life/4572/",
-      note: "水蒸気蒸留法、圧搾法、揮発性有機溶剤抽出法、油脂吸着法、超臨界流体抽出法の仕組みと向く植物、芳香蒸留水、熱で成分が損なわれることがあること、圧搾法の精油が劣化しやすいこと、アブソリュートを精油と区別する考え方、超臨界流体抽出法が低温で処理でき高価な装置が要ること",
+      note: "水蒸気蒸留法、圧搾法、揮発性有機溶剤抽出法、油脂吸着法、超臨界流体抽出法の仕組みと向く植物、芳香蒸留水、熱で成分が損なわれることがあること、圧搾法の精油が劣化しやすいこと、超臨界流体抽出法が低温で処理でき高価な装置が要ること",
     },
     {
       title: "精油とは",
@@ -32,7 +31,7 @@ export const howOilsAreMade: ArticleContent = {
       title: "精油とアロマオイルの違いは？選び方や楽しみ方も解説",
       publisher: "公益社団法人 日本アロマ環境協会 sense of AROMA（2025年3月27日）",
       url: "https://media.aromakankyo.or.jp/senseofaroma/article/life/1836/",
-      note: "表示基準の8項目、同じ植物や部位でも抽出方法が違えば成分が変わること、精油が油脂ではないこと",
+      note: "精油が油脂ではないこと",
     },
     {
       title: "全国に広がる和精油の生産",
@@ -63,18 +62,6 @@ export const howOilsAreMade: ArticleContent = {
       publisher: "Source To You（doTERRA International）",
       url: "https://sourcetoyou.com/jp/stories/story/peppermint",
       note: "地面近くで刈り取り、数日乾燥させ、細かく刻んでから畑の近くの蒸留装置で蒸留すること、約450gの葉から15mLができること",
-    },
-    {
-      title: "ラベンダー",
-      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
-      url: "https://www.doterra-info.jp/product/lavender-15ml/",
-      note: "学名 Lavandula angustifolia、抽出部位は花、抽出方法は水蒸気蒸留法の表示",
-    },
-    {
-      title: "レモン",
-      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
-      url: "https://www.doterra-info.jp/product/lemon-15ml/",
-      note: "学名 Citrus limon、抽出部位は果皮、抽出方法は低温圧搾法の表示",
     },
     {
       title: "レモン（インフォグラフィック）",
@@ -123,9 +110,6 @@ export const howOilsAreMade: ArticleContent = {
       <p>
         圧搾法はコールドプレスとも呼ばれます。加熱しないので成分の変化が少なく、自然な香りと色が得られます。一方で搾りかすが混ざりやすく、変化しやすい成分を含むため、ほかの方法より劣化しやすいとされています。柑橘を早めに使い切りたい理由です。
       </p>
-      <p>
-        ローズやジャスミンのような繊細な花には、有機溶剤を使う方法があります。得られたものは「アブソリュート」と呼ばれ、溶剤がわずかに残ることがあるため、精油と区別する考え方もあります。
-      </p>
 
       <h2 id="journey">植物からオイルになるまで</h2>
       <p>ドテラが公開している産地の例を2つ見てみましょう。</p>
@@ -145,7 +129,6 @@ export const howOilsAreMade: ArticleContent = {
           ["ヒノキ", "約120mL", "枝葉約30kgを約3時間蒸留（長野県）"],
         ]}
       />
-      <p>レモン15mLに、皮が3kg以上。そう思うと、1滴の見え方が少し変わります。</p>
 
       <h2 id="home">自宅で簡単に作れる？</h2>
       <p>
@@ -170,19 +153,12 @@ export const howOilsAreMade: ArticleContent = {
       </p>
       <PointBox>作る工程を見てみたいなら、まずは体験から。協会のサイトに、蒸留の見学や体験ができる全国の場所がまとめられています。</PointBox>
 
-      <h2 id="label">作り方がわかると、ラベルが読める</h2>
-      <p>
-        協会の表示基準では、ブランド名、品名、学名、抽出部位、抽出方法、生産国、内容量、発売元の8項目を挙げています。このうち学名、抽出部位、抽出方法の3つが、「どの植物の、どこから、どうやって取ったか」を教えてくれます。
-      </p>
-      <p>
-        ドテラの製品ページでは、ラベンダーは学名 Lavandula angustifolia、抽出部位は花、抽出方法は水蒸気蒸留法。レモンは学名 Citrus limon、果皮、低温圧搾法です。協会は、同じ植物や部位でも抽出方法が違えば成分が変わると説明しています。この3行の後ろに、畑と蒸留所が見えてきます。
-      </p>
-
       <h2 id="caution">自分で試すときの注意点</h2>
       <CautionBox
         items={[
           "蒸留は高温の蒸気と火を扱います。やけどに気をつけ、火のそばから離れないでください。精油は火気のそばに置かないようにしましょう。",
           "蒸留中は容器に蒸気圧がかかります。器具の説明書に従い、密閉した容器を火にかけている間は目を離さないでください。",
+          "圧力鍋を改造したり、蒸気の逃げ道をふさいだりしないでください。この記事の圧力鍋の例は、公的機関や学校の取り組みの紹介で、家庭でのおすすめではありません。",
           "自作したものの品質や成分は保証されません。肌につけたり、飲んだり、料理に使ったりしないでください。協会は精油の飲用をすすめていません。肌に使う話は、「化粧品」の表示がある製品に限ります。",
           "自作したものは、販売や譲渡をしないでください。自分で楽しむ範囲にとどめます。",
           "作ったものは名前と日付を書いて、子どもやペットの手の届かない場所に置きましょう。",
@@ -190,7 +166,7 @@ export const howOilsAreMade: ArticleContent = {
       />
 
       <p>
-        自宅で作るのは思ったより大変ですが、仕組みを知っておくと、ラベルの1行が読めるようになります。今日はまず、手元のボトルの抽出方法を確かめることから始めてみてください。
+        自宅で作るのは思ったより大変ですが、仕組みを知っておくと、手元のボトルの見え方が変わります。今日はまず、ラベルの抽出方法を確かめることから始めてみてください。<Link href="/blog/reading-labels">ラベルの見方</Link>も参考になります。
       </p>
       <NextStepBox />
     </>
