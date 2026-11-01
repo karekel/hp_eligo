@@ -33,7 +33,7 @@ const jsonLd = {
         "@type": "Person",
         name: "エリザベス",
         alternateName: "Elizabeth",
-        url: `${siteConfig.siteUrl}/leaders/leader-s`,
+        url: `${siteConfig.siteUrl}/leaders/elizabeth`,
       },
     },
   ],

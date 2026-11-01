@@ -22,7 +22,7 @@ export const siteCopy = {
     lead: {
       before: "ELIGŌ（エリゴ）は、ドテラ（doTERRA）プレジデンシャルダイヤモンドの",
       linkText: "エリザベス",
-      linkHref: "/leaders/leader-s",
+      linkHref: "/leaders/elizabeth",
       after: "が主宰する、エッセンシャルオイルを学び、使いこなすためのチームです。",
     },
     cards: [

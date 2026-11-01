@@ -15,6 +15,8 @@ export type Leader = {
     nameEn: string;
     nameJp: string;
     catchphrase: string;
+    /** 検索向けの三人称の紹介文（未設定ならロールと名前から自動生成） */
+    intro?: string;
     identity: {
         instagramUrl?: string;
         instagramId?: string;
@@ -41,7 +43,7 @@ export type Leader = {
 
 export const leaders: Leader[] = [
     {
-        slug: "leader-s",
+        slug: "elizabeth",
         name: "エリザベス",
         role: "Presidential Diamond",
         bio: "",
@@ -49,6 +51,7 @@ export const leaders: Leader[] = [
         nameEn: "Elizabeth",
         nameJp: "エリザベス",
         catchphrase: "変化と周りの目を恐れず、本質を追求する。",
+        intro: "エリザベス（Elizabeth）は、ドテラ（doTERRA）プレジデンシャルダイヤモンドで、エッセンシャルオイルのチーム「ELIGŌ（エリゴ）」の主宰者です。ドテラ公認アロマタッチテクニック認定トレーナーとして、毎月のZoom勉強会やワークショップを通じて、エッセンシャルオイルを暮らしとビジネスに活かす方法を伝えています。東京都在住、4児の母。",
         identity: {
             instagramUrl: "https://www.instagram.com/aroma_with_elizabeth/",
             instagramId: "13087810",
@@ -459,6 +462,28 @@ dōTERRAを通して出会った仲間と、おしゃべりしながら楽しく
         }
     },
 ];
+
+/** ランクの日本語表記（検索で使われるカタカナ表記） */
+const roleJa: Record<string, string> = {
+    "Presidential Diamond": "プレジデンシャルダイヤモンド",
+    "Blue Diamond": "ブルーダイヤモンド",
+    "Diamond": "ダイヤモンド",
+    "Platinum": "プラチナ",
+    "Gold": "ゴールド",
+    "Silver": "シルバー",
+};
+
+export function getRoleJa(role: string): string {
+    return roleJa[role] ?? role;
+}
+
+/** 三人称の紹介文（intro 未設定なら自動生成） */
+export function getLeaderIntro(leader: Leader): string {
+    return (
+        leader.intro ??
+        `${leader.nameJp}（${leader.nameEn}）は、ドテラ（doTERRA）${getRoleJa(leader.role)}として、エッセンシャルオイルのチーム「ELIGŌ（エリゴ）」で活動するリーダーです。`
+    );
+}
 
 /** slug からリーダーを検索 */
 export function getLeaderBySlug(slug: string): Leader | undefined {
