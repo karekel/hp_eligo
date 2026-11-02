@@ -11,7 +11,7 @@ export const reedDiffuser: ArticleContent = {
   ],
   toc: [
     { id: "recipe", title: "ルームフレグランスの作り方（基本の分量）" },
-    { id: "blend", title: "ドテラの資料の配分で、50滴の香りを組み立てる" },
+    { id: "blend", title: "ドテラのオイルで、50滴の香りを組み立てる" },
     { id: "place", title: "置き場所を決める｜火気と誤飲" },
     { id: "adjust", title: "香りの調整と片づけ" },
     { id: "caution", title: "使うときの注意点" },
@@ -142,7 +142,7 @@ export const reedDiffuser: ArticleContent = {
         50滴は2.5mL、全体は22.5mLなので、濃度は約11%です。肌に使うときの目安の10倍以上にあたります。部屋に置いて香らせるだけのものと考え、液には触れないでください。
       </p>
 
-      <h2 id="blend">ドテラの資料の配分で、50滴の香りを組み立てる</h2>
+      <h2 id="blend">ドテラのオイルで、50滴の香りを組み立てる</h2>
       <p>
         ドテラの資料が示すノートの配分を、50滴に当てはめると次のようになります。
       </p>

@@ -4,7 +4,7 @@ import { CautionBox, CheckPoints, Faq, MethodCard, NextStepBox, PointBox, Steps,
 /** 食品添加物の表示があるオイルに限って料理の香りづけを紹介する記事 */
 export const aromaticTable: ArticleContent = {
   summary: [
-    "日本アロマ環境協会の立場と、この記事で扱う製品の範囲",
+    "日本アロマ環境協会の立場と、「食品添加物」の表示の確かめ方",
     "爪楊枝でごく少量ずつ香りを足す基本の手順",
     "揚げ物、煮込み、サラダに香りを添える3つの例",
   ],

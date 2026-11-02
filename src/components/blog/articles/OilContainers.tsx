@@ -5,7 +5,7 @@ import { CautionBox, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleC
 export const oilContainers: ArticleContent = {
   summary: [
     "オイルの保存に遮光性のガラス容器が向く理由",
-    "プラスチック容器について、わかっていることとわかっていないこと",
+    "プラスチック容器を避ける理由",
     "スプレー、ロールオン、手作り洗剤など用途別の容器の選び方と、小分けの手順",
   ],
   toc: [
