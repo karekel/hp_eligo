@@ -75,6 +75,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
             </Link>
             <h1 className="font-serif-jp mt-4 text-[22px] leading-[1.65] tracking-[0.04em] text-[#2b2b2b] md:text-[30px]">{post.title}</h1>
             <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3 border-b border-black/5 pb-5 text-[12px] text-[#999]">
+              <span className="rounded bg-[#f3efe8] px-1.5 py-0.5 font-medium text-[#555]">#PR</span>
               <span>公開日 {formatDate(post.publishedAt)}</span>
               {post.updatedAt && <span>更新日 {formatDate(post.updatedAt)}</span>}
               <Link href="/" className="ml-auto flex items-center gap-2 text-[#555] hover:text-blog-accent">

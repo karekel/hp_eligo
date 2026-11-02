@@ -394,7 +394,7 @@ export function Disclosure() {
     <div className="mt-12 rounded-xl border border-dashed border-black/15 px-5 py-4 text-[12px] leading-6 text-[#777]">
       <p className="font-medium text-[#555]">このブログについて</p>
       <p className="mt-1">
-        当ブログは、dōTERRA（ドテラ）のウェルネスアドボケイト（会員）によるチーム「ELIGŌ」が運営しています。製品の使用方法は、お手元の製品ラベルの表示に従ってください。
+        当ブログは、dōTERRA（ドテラ）のウェルネスアドボケイト（会員）によるチーム「ELIGŌ」が運営しています。記事には製品の紹介が含まれます（PR）。製品の使用方法は、お手元の製品ラベルの表示に従ってください。
       </p>
     </div>
   );

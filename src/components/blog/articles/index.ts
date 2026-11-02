@@ -48,6 +48,25 @@ import { oilsInCar } from "./OilsInCar";
 import { oilOrganizing } from "./OilOrganizing";
 import { readingLabels } from "./ReadingLabels";
 import { doterraOilLineup } from "./DoterraOilLineup";
+import { howToUseAromaOils } from "./HowToUseAromaOils";
+import { oilsOnSkin } from "./OilsOnSkin";
+import { oilPrecautions } from "./OilPrecautions";
+import { waterlessDiffuser } from "./WaterlessDiffuser";
+import { massageOilRecipe } from "./MassageOilRecipe";
+import { doterraHowToUse } from "./DoterraHowToUse";
+import { laluzDiffuser } from "./LaluzDiffuser";
+import { aromatouchCertification } from "./AromatouchCertification";
+import { oilsInHumidifier } from "./OilsInHumidifier";
+import { oilsByRoom } from "./OilsByRoom";
+import { reedDiffuser } from "./ReedDiffuser";
+import { oilGifts } from "./OilGifts";
+import { bedtimeScents } from "./BedtimeScents";
+import { choosingOilBrands } from "./ChoosingOilBrands";
+import { rosemary } from "./Rosemary";
+import { lemongrass } from "./Lemongrass";
+import { grapefruit } from "./Grapefruit";
+import { cypress } from "./Cypress";
+import { marjoram } from "./Marjoram";
 
 /** 本文がある記事（slug → 本文）。ここにない記事は「準備中」と表示する */
 export const articles: Record<string, ArticleContent> = {
@@ -100,4 +119,23 @@ export const articles: Record<string, ArticleContent> = {
   "oil-organizing": oilOrganizing,
   "reading-labels": readingLabels,
   "doterra-oil-lineup": doterraOilLineup,
+  "how-to-use-aroma-oils": howToUseAromaOils,
+  "oils-on-skin": oilsOnSkin,
+  "oil-precautions": oilPrecautions,
+  "waterless-diffuser": waterlessDiffuser,
+  "massage-oil-recipe": massageOilRecipe,
+  "doterra-how-to-use": doterraHowToUse,
+  "laluz-diffuser": laluzDiffuser,
+  "aromatouch-certification": aromatouchCertification,
+  "oils-in-humidifier": oilsInHumidifier,
+  "oils-by-room": oilsByRoom,
+  "reed-diffuser": reedDiffuser,
+  "oil-gifts": oilGifts,
+  "bedtime-scents": bedtimeScents,
+  "choosing-oil-brands": choosingOilBrands,
+  "rosemary": rosemary,
+  "lemongrass": lemongrass,
+  "grapefruit": grapefruit,
+  "cypress": cypress,
+  "marjoram": marjoram,
 };
