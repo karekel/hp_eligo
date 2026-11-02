@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Noto_Serif, Noto_Serif_JP } from "next/font/google";
 import { BlogFooter, BlogHeader } from "@/components/blog/BlogParts";
+import { BlogWebFonts } from "@/components/blog/BlogWebFonts";
 import { BLOG_DRAFT, blogConfig } from "@/lib/blogData";
 import { siteConfig, siteFavicons } from "@/lib/siteConfig";
 
@@ -66,6 +67,7 @@ export const metadata: Metadata = {
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className={`${serifJp.variable} ${serifLatin.variable} ${script.variable} blog-root blog-bg min-h-screen`}>
+      <BlogWebFonts />
       <BlogHeader />
       {children}
       <BlogFooter />

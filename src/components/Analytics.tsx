@@ -6,6 +6,8 @@ import { analyticsConfig } from "@/lib/analytics";
  *   - Google アナリティクス 4（gtag.js）: ページビュー・スクロール・外部リンククリックは
  *     GA4 側の「拡張計測機能」で自動計測。CTA のクリックは AnalyticsEvents が cta_click として送る
  *   - Cloudflare Web Analytics（任意）: Cookie を使わない軽量計測
+ * gtag.js は 178KB あるので、ページの表示を待たせないよう読み込み完了後に読む。
+ * それまでのイベントは ga4-init の dataLayer にたまり、読み込み後に送られる
  */
 export default function Analytics() {
   const { gaId, cfBeaconToken } = analyticsConfig;
@@ -15,7 +17,7 @@ export default function Analytics() {
     <>
       {gaId && (
         <>
-          <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} strategy="afterInteractive" />
+          <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} strategy="lazyOnload" />
           <Script id="ga4-init" strategy="afterInteractive">
             {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}

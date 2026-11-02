@@ -1,18 +1,9 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP } from "next/font/google";
 import { siteConfig, siteFavicons } from "@/lib/siteConfig";
 import { analyticsConfig } from "@/lib/analytics";
 import Analytics from "@/components/Analytics";
 import AnalyticsEvents from "@/components/AnalyticsEvents";
 import "./globals.css";
-
-const notoSansJP = Noto_Sans_JP({
-  variable: "--font-noto-jp",
-  weight: ["400", "500", "700"],
-  subsets: ["latin"],
-  display: "swap",
-  preload: false,
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
@@ -49,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${notoSansJP.variable} antialiased`}>
+      <body className="antialiased">
         {children}
         <Analytics />
         <AnalyticsEvents />

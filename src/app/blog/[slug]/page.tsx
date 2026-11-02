@@ -68,6 +68,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
           <article className="rounded-3xl bg-white px-5 py-8 shadow-[0_4px_30px_rgba(70,55,30,0.08)] md:px-12 md:py-12">
             <Link
               href={`/blog/category/${category.slug}`}
+              prefetch={false}
               className="inline-flex items-center gap-1.5 rounded-full bg-blog-tint px-3.5 py-1 text-[12px] tracking-wider text-blog-accent hover:bg-blog-tint-dark"
             >
               <CategoryIcon icon={category.icon} className="h-3.5 w-3.5" />
@@ -78,7 +79,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
               <span className="rounded bg-[#f3efe8] px-1.5 py-0.5 font-medium text-[#555]">#PR</span>
               <span>公開日 {formatDate(post.publishedAt)}</span>
               {post.updatedAt && <span>更新日 {formatDate(post.updatedAt)}</span>}
-              <Link href="/" className="ml-auto flex items-center gap-2 text-[#555] hover:text-blog-accent">
+              <Link href="/" prefetch={false} className="ml-auto flex items-center gap-2 text-[#555] hover:text-blog-accent">
                 <span className="relative h-8 w-8 overflow-hidden rounded-full">
                   <Image src={author.image} alt="" fill sizes="32px" className="object-cover" />
                 </span>

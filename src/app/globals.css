@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "CyGroteskWideDemi";
-  src: url("/fonts/CyGrotesk-WideDemi.otf") format("opentype");
+  src: url("/fonts/CyGrotesk-WideDemi.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "CyGroteskWide";
-  src: url("/fonts/CyGrotesk-WideThin.otf") format("opentype");
+  src: url("/fonts/CyGrotesk-WideThin.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "CyGroteskWide";
-  src: url("/fonts/CyGrotesk-WideRegular.otf") format("opentype");
+  src: url("/fonts/CyGrotesk-WideRegular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: "CyGroteskWide";
-  src: url("/fonts/CyGrotesk-WideBold.otf") format("opentype");
+  src: url("/fonts/CyGrotesk-WideBold.woff2") format("woff2");
   font-weight: 700 900;
   font-style: normal;
   font-display: swap;
@@ -161,13 +161,19 @@ body {
 }
 /* ── Blog（ELIGŌ Oil Journal） ── */
 .blog-root {
+  /* 見出しは最初は端末の明朝体で表示し、読み込み完了後に Webフォントへ切り替える（BlogWebFonts） */
+  --font-blog-serif: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif;
   /* 本文は端末のフォントを使う（読み込むファイルを減らして表示を速くする） */
   font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans CJK JP", "Yu Gothic", Meiryo, sans-serif;
   color: #2b2b2b;
 }
 
+.blog-root.blog-fonts-ready {
+  --font-blog-serif: var(--font-serif-latin), var(--font-serif-jp), serif;
+}
+
 .font-serif-jp {
-  font-family: var(--font-serif-latin), var(--font-serif-jp), "Noto Serif JP", serif;
+  font-family: var(--font-blog-serif);
   font-weight: 500;
 }
 
@@ -204,7 +210,7 @@ body {
   margin-top: 64px;
   padding-bottom: 14px;
   border-bottom: 1px solid rgba(160, 82, 63, 0.18);
-  font-family: var(--font-serif-jp), serif;
+  font-family: var(--font-blog-serif);
   font-weight: 500;
   font-size: 21px;
   line-height: 1.7;
@@ -215,7 +221,7 @@ body {
 
 .blog-prose > h3 {
   margin-top: 40px;
-  font-family: var(--font-serif-jp), serif;
+  font-family: var(--font-blog-serif);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.8;

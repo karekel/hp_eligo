@@ -86,7 +86,7 @@ export function BlogHeader() {
   return (
     <header className="relative z-30 border-b border-black/5 bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between pr-4 md:h-20 md:pr-6">
-        <Link href="/blog" className="flex h-full items-center gap-3">
+        <Link href="/blog" prefetch={false} className="flex h-full items-center gap-3">
           <span className="blog-gradient flex h-full w-16 items-center justify-center md:w-20">
             <Image src="/assets/ロゴ/mark_center.png" alt="" width={44} height={44} className="h-9 w-9 opacity-75 brightness-0 md:h-11 md:w-11" />
           </span>
@@ -97,7 +97,7 @@ export function BlogHeader() {
         </Link>
         <nav className="flex items-center gap-5 md:gap-9" aria-label="ブログメニュー">
           {headerNav.map((item) => (
-            <Link key={item.href} href={item.href} className="hidden text-center transition-opacity hover:opacity-70 md:block">
+            <Link key={item.href} href={item.href} prefetch={false} className="hidden text-center transition-opacity hover:opacity-70 md:block">
               <span className="block font-script text-[17px] leading-none text-blog-accent">{item.en}</span>
               <span className="mt-1 block text-[10px] tracking-[0.2em] text-[#888]">{item.ja}</span>
             </Link>
@@ -378,7 +378,7 @@ export function Breadcrumb({ items }: { items: { label: string; href?: string }[
           <li key={item.label} className="flex items-center gap-2">
             {i > 0 && <span aria-hidden="true">›</span>}
             {item.href ? (
-              <Link href={item.href} className="hover:text-blog-accent hover:underline">
+              <Link href={item.href} prefetch={false} className="hover:text-blog-accent hover:underline">
                 {item.label}
               </Link>
             ) : (
