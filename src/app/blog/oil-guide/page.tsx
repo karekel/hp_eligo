@@ -4,7 +4,7 @@ import { BlogSidebar, Breadcrumb, SectionTitle } from "@/components/blog/BlogPar
 import { BotanicalCluster } from "@/components/blog/Botanicals";
 import { oilFamilies, oilGuide } from "@/lib/blogData";
 
-const description = `ドテラのオイル${oilGuide.length}本を、香りの系統ごとの表にまとめました。香りの表示と、製品ページの「塗・香・食」の表示を見比べて、気になるオイルの記事を探せます。`;
+const description = `ドテラのオイル${oilGuide.length}本を、香りの系統ごとの表にまとめました。香りの表示と「塗・香・食」の表示を見比べて、気になるオイルの記事を探せます。`;
 
 export const metadata: Metadata = {
   title: `ドテラのオイル図鑑の一覧｜香りの系統で探す${oilGuide.length}本`,
@@ -35,7 +35,7 @@ export default function OilGuidePage() {
                       <tr>
                         <th scope="col" className="px-4 py-2.5 font-medium">オイル</th>
                         <th scope="col" className="px-4 py-2.5 font-medium">香りの表示</th>
-                        <th scope="col" className="px-4 py-2.5 font-medium">製品ページの表示</th>
+                        <th scope="col" className="px-4 py-2.5 font-medium">塗・香・食の表示</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-black/5 bg-white max-sm:block">
@@ -58,7 +58,7 @@ export default function OilGuidePage() {
               </section>
             ))}
             <p className="text-[13px] leading-7 text-[#666]">
-              香りの言葉と「塗・香・食」は、2026年11月時点のドテラの製品ページの表示です。表示は変わることがあるので、使う前に製品ページとお手元のラベルを確かめてください。ドテラのオイル全体の種類は
+              香りの言葉と「塗・香・食」は、2026年11月時点のドテラの表示です。表示は変わることがあるので、使う前に製品ページとお手元のラベルを確かめてください。ドテラのオイル全体の種類は
               <Link href="/blog/doterra-oil-lineup" className="text-blog-accent underline underline-offset-2 hover:no-underline">ドテラのオイルの種類</Link>
               、表示の見方は
               <Link href="/blog/doterra-how-to-use" className="text-blog-accent underline underline-offset-2 hover:no-underline">ドテラのオイルの使い方</Link>

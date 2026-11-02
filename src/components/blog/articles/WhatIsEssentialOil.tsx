@@ -161,7 +161,7 @@ export const whatIsEssentialOil: ArticleContent = {
       </p>
 
       <h2 id="how">主な2つの作り方</h2>
-      <p>代表的な作り方は、水蒸気蒸留法と圧搾法です。ドテラの説明では、最も一般的なのは水蒸気蒸留で、温度は通常60〜100℃です。流れは<Link href="/blog/how-oils-are-made">精油の作り方</Link>で紹介しています。</p>
+      <p>代表的な作り方は、水蒸気蒸留法と圧搾法です。ドテラは、最も一般的なのは水蒸気蒸留で、温度は通常60〜100℃としています。流れは<Link href="/blog/how-oils-are-made">精油の作り方</Link>で紹介しています。</p>
       <div className="mt-6">
         <Steps
           steps={[
@@ -204,7 +204,7 @@ export const whatIsEssentialOil: ArticleContent = {
         ]}
       />
       <p>
-        使い方の表示は、買う前にもう一度確かめましょう。ペパーミントは15mLが「香・食」、5mLが「塗・香」で、同じ名前でも容量で製品ページの表示が違います。ユーカリプタスは2026年3月に化粧油から雑貨油へ変わりました。以前の情報で判断せず、最新のラベルを見るのが確実です。項目ごとの読み方は<Link href="/blog/reading-labels">ラベルの見方</Link>、メーカーを比べるときは<Link href="/blog/choosing-oil-brands">メーカーの選び方</Link>にまとめています。
+        使い方の表示は、買う前にもう一度確かめましょう。ペパーミントは15mLが「香・食」、5mLが「塗・香」で、同じ名前でも容量で表示が違います。ユーカリプタスは2026年3月に化粧油から雑貨油へ変わりました。以前の情報で判断せず、最新のラベルを見るのが確実です。項目ごとの読み方は<Link href="/blog/reading-labels">ラベルの見方</Link>、メーカーを比べるときは<Link href="/blog/choosing-oil-brands">メーカーの選び方</Link>にまとめています。
       </p>
       <p>
         ドテラのCPTG®は自社の社内基準で、公的な認証ではありません。協会の表示基準に適合した精油の認定も、表示についてのもので、品質を保証するものではありません。
