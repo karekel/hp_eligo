@@ -4,7 +4,7 @@ import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, Steps, type Artic
 /** ペットのいる家でのオイルの扱いを、使わない方向で整理した記事 */
 export const petsSafety: ArticleContent = {
   summary: [
-    "協会と公的機関の資料でわかること、わからないこと",
+    "ペットのいる空間で使わないという基本",
     "ペットと香りの距離をとる具体的な方法",
     "置き場所と、様子が変わったときの対応",
   ],

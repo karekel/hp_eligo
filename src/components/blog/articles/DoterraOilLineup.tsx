@@ -5,7 +5,7 @@ import { CautionBox, DataTable, NextStepBox, type ArticleContent } from "../Arti
 export const doterraOilLineup: ArticleContent = {
   summary: [
     "ドテラのオイルが「シングルオイル」と「ブレンドオイル」に分かれる理由と、見分け方",
-    "図鑑記事のあるシングルオイル15種とブレンドオイル3種を、香りの系統で並べた一覧",
+    "シングルオイル15種とブレンドオイル3種を、香りの系統で並べた一覧",
     "15mLと5mLのサイズ、化粧品・食品添加物・雑貨の区分、キットという選択肢",
   ],
   toc: [
