@@ -134,7 +134,7 @@ export const howToUseAromaOils: ArticleContent = {
         ]}
       />
       <p>
-        区分のくわしい説明は、<Link href="/blog/doterra-drinkable">ドテラのオイルはなぜ「飲める」と言われるの？</Link>にあります。まず手元のボトルのラベルを見てみましょう。
+        区分のくわしい説明は、<Link href="/blog/doterra-drinkable">ドテラのオイルは飲める？</Link>にあります。まず手元のボトルのラベルを見てみましょう。
       </p>
 
       <h2 id="scent">香りを楽しむ｜最初に試したい使い方</h2>

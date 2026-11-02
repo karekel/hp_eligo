@@ -131,7 +131,7 @@ export const doterraHowToUse: ArticleContent = {
         読み方の基本は、「書かれていない文字の使い方はしない」です。「香・食」の製品に肌に塗る案内はなく、「塗・香」の製品に飲食の案内はありません。
       </p>
       <p>
-        オイルの区分（化粧品、食品添加物、雑貨）の説明は<Link href="/blog/doterra-drinkable">ドテラのオイルはなぜ「飲める」と言われるの？</Link>に譲ります。
+        オイルの区分（化粧品、食品添加物、雑貨）の説明は<Link href="/blog/doterra-drinkable">ドテラのオイルは飲める？</Link>に譲ります。
       </p>
 
       <h2 id="examples">表示の例｜同じ名前でも容量で変わる</h2>

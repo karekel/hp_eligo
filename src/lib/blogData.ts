@@ -69,8 +69,8 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "doterra-drinkable",
-    title: "ドテラのオイルはなぜ「飲める」と言われるの？食品として使える製品の見分け方と注意点",
-    excerpt: "ドテラのオイルは、すべてが飲めるわけではありません。日本での製品の区分と、飲食物の香りづけに使うときに守りたいポイントを解説します。",
+    title: "ドテラのオイルは飲める？すべてではありません｜飲めるオイル一覧と、アロマを飲む前の確認点",
+    excerpt: "ドテラのオイルは、すべてが飲めるわけではありません。製品ページに「食」の表示があるオイルの一覧、ティーツリーやオンガードの表示、アロマを飲む前に確認したいことと協会の見解をまとめました。",
     category: "beginner",
     publishedAt: "2026-10-31",
     thumbnail: "/assets/v1/whydoterrafocus.png",

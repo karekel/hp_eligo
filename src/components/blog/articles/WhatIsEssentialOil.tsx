@@ -214,7 +214,7 @@ export const whatIsEssentialOil: ArticleContent = {
       />
 
       <p>
-        最初の1本は、好きな香りを、表示を確かめて選ぶのが近道です。飲食の区分については<Link href="/blog/doterra-drinkable">ドテラのオイルはなぜ「飲める」と言われるの？</Link>、買ったあとのしまい方は<Link href="/blog/oil-storage">オイルの保管方法</Link>で紹介しています。
+        最初の1本は、好きな香りを、表示を確かめて選ぶのが近道です。飲食の区分については<Link href="/blog/doterra-drinkable">ドテラのオイルは飲める？</Link>、買ったあとのしまい方は<Link href="/blog/oil-storage">オイルの保管方法</Link>で紹介しています。
       </p>
       <NextStepBox />
     </>
