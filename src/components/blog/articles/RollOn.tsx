@@ -60,12 +60,6 @@ export const rollOn: ArticleContent = {
       note: "製品ページの塗・香の表示、手首や首に塗布する使い方",
     },
     {
-      title: "Part 5: Packaging and Storage",
-      publisher: "doTERRA（米国公式）",
-      url: "https://www.doterra.com/US/en/essential-oil-production-packaging-and-storage-overview",
-      note: "夏の車内や窓辺など高温の場所を避けること",
-    },
-    {
       title: "天然アロマで作る、ナチュラルフレグランス",
       publisher: "公益社団法人 日本アロマ環境協会（News Letter、2015年5月21日）",
       url: "https://www.aromakankyo.or.jp/pdf/news/40/150521_%E5%A4%A9%E7%84%B6%E3%82%A2%E3%83%AD%E3%83%9E%E3%81%A7%E4%BD%9C%E3%82%8B%E3%83%95%E3%83%AC%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%B9_WEB%E7%94%A8.pdf",
@@ -137,6 +131,30 @@ export const rollOn: ArticleContent = {
       url: "https://www.hokeniryo.metro.tokyo.lg.jp/anzen/iyaku/koukokukisei/zenpanfrima/furimakisei",
       note: "許可を取らずに作った手作りコスメは販売できないこと",
     },
+    {
+      title: "ユーカリプタス",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/eucalyptus-15ml/",
+      note: "製品ページの表示と使用方法、使用上の注意、保管の注意",
+    },
+    {
+      title: "ペパーミント（5mL）",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/peppermint-5ml/",
+      note: "製品ページの表示と使用方法、使用上の注意、保管の注意",
+    },
+    {
+      title: "ティーツリー",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/tea-tree-15ml/",
+      note: "製品ページの表示と使用方法、使用上の注意、保管の注意",
+    },
+    {
+      title: "エッセンシャルオイルの安全な使用方法",
+      publisher: "doTERRA CPTG Essential Oils Japan 合同会社",
+      url: "https://www.doterra.com/JP/ja_JP/using-essential-oils",
+      note: "芳香、塗布、摂取の使い方、敏感肌や子どもの肌、初めて塗布で使うオイルはキャリアオイルで薄めること、摂取はラベルの使用方法を守ること",
+    },
   ],
   Body: () => (
     <>
@@ -145,7 +163,7 @@ export const rollOn: ArticleContent = {
 
       <h2 id="amount">まず覚えたい「10mLに1〜2滴」</h2>
       <p>
-        ロールオンは肌に直接つけるので、最初に濃度を決めます。日本アロマ環境協会の目安は、植物油10mLにオイル1〜2滴です。1滴は0.05mLとして計算します。
+        ロールオンは肌に直接つけるので、最初に濃度を決めます。ドテラは、初めて使うオイルはキャリアオイルで薄めるよう案内しています。日本アロマ環境協会の目安は、植物油10mLにオイル1〜2滴です。1滴は0.05mLとして計算します。
       </p>
       <DataTable
         caption="10mLのロールオンのオイルの濃度"
@@ -217,7 +235,7 @@ export const rollOn: ArticleContent = {
         ]}
       />
       <p>
-        1本で香りを決めたいなら、最初から香りが組まれたドテラバランスを1〜2滴でも楽しめます。レモンなど光毒性のある柑橘と、協会が皮膚刺激の例に挙げるペパーミント、ティーツリー、ユーカリは入れないでください。
+        1本で香りを決めたいなら、最初から香りが組まれたドテラバランスを1〜2滴でも楽しめます。レモンなど光毒性のある柑橘と、肌につけない製品のユーカリプタスは入れないでください。ティーツリーとペパーミント5mLは「塗・香」の表示ですが、協会は皮膚刺激の例に挙げています。別の見解もあるので、最後はご自身で判断してください。
       </p>
 
       <h2 id="caution">作るときと持ち歩くときの注意点</h2>
@@ -225,7 +243,7 @@ export const rollOn: ArticleContent = {
         title="手作りするときの注意点"
         items={[
           "個人で楽しむためのレシピです。自分で使う分だけ作り、販売や譲渡はしないでください。無償のプレゼントも許可の対象とする自治体の案内があります。",
-          "肌に塗るものに使うのは、「化粧品」の表示がある製品だけにします。原液を肌につけたり、目に入れたりしないでください。",
+          "肌に塗るものに使うのは、「化粧品」の表示がある製品だけにします。協会と消費者庁は、原液を肌につけず必ず薄めるよう案内しています。目に入れないでください。",
           "使う前に腕の内側などに少量つけて様子を見ましょう。オイルの濃度は低いものから試します。",
           "目のまわり、耳の中、傷や湿疹のある所には使いません。赤みやかゆみが出たらすぐにやめ、皮膚科などに相談してください。",
           "妊娠中、授乳中の人、治療中の人、子どもは、使う前に医師または薬剤師に相談してください。高齢の人や既往歴のある人は、半分以下の量から試します。",
@@ -244,7 +262,7 @@ export const rollOn: ArticleContent = {
           },
           {
             q: "子どもに使ってもいいですか？",
-            a: "3歳未満には使いません。3歳以上12歳以下は、大人の10分の1程度から、多くても2分の1程度が協会の目安です。このレシピの大人の量をそのまま使わず、使う前に医師または薬剤師に相談してください。",
+            a: "使う前に医師または薬剤師に相談してください。協会は、3歳未満には使わず、3歳以上12歳以下は大人の10分の1程度から、多くても2分の1程度を目安としています。このレシピの大人の量をそのまま使わないでください。",
           },
           {
             q: "もっとしっかり香らせたいときは？",

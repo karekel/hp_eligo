@@ -60,12 +60,6 @@ export const balance: ArticleContent = {
       note: "オイルがついたタオルを乾燥機にかけず干すこと、オイルがついたティッシュを水で湿らせて処分すること",
     },
     {
-      title: "Part 5: Packaging and Storage | doTERRA Essential Oils",
-      publisher: "doTERRA（米国公式、英語）",
-      url: "https://www.doterra.com/US/en/essential-oil-production-packaging-and-storage-overview",
-      note: "夏の車内や窓辺などの高温を避けて保管すること",
-    },
-    {
       title: "安全に楽しむために",
       publisher: "公益社団法人 日本アロマ環境協会",
       url: "https://www.aromakankyo.or.jp/basics/safety/",
@@ -102,10 +96,10 @@ export const balance: ArticleContent = {
       note: "製品の区分と使用方法、異常が出たときの対応、医師または薬剤師への相談",
     },
     {
-      title: "How to Use an Entire Bottle of Lavender Oil",
-      publisher: "doTERRA（カナダ向け公式、英語）",
-      url: "https://www.doterra.com/CA/en/blog/healthy-living-how-to-use-an-entire-bottle-of-lavender",
-      note: "15mLのボトルに約250滴入っているという記載",
+      title: "AEAJイメージフレグランスコンテストについてのQ&A",
+      publisher: "公益社団法人 日本アロマ環境協会",
+      url: "https://www.aromakankyo.or.jp/faq/other/fragrance/",
+      note: "1滴を0.05mLとして計算すること（15mLで300滴）",
     },
     {
       title: "Vol.679 知ってください!その香り困っている人もいます",
@@ -216,7 +210,7 @@ export const balance: ArticleContent = {
           "肌に異常が出たら使うのをやめ、皮膚科専門医などに相談します。目に入れず、耳の中や傷、湿疹のある部位にも使わないでください。",
           "食品ではありません。製品ページの表示に「食」はないので、口に入れないでください。",
           "ココナッツなどにアレルギーがある方、妊娠中、授乳中の方、持病や服用中の薬がある方は、医師または薬剤師に相談してから使いましょう。",
-          "3歳未満の子どもの肌には使いません。子どもに使いたいときは、事前に医師または薬剤師へ確認します。お年寄りは協会の目安の半分以下の量で試してください。",
+          "子どもに使いたいときは、事前に医師または薬剤師に相談します。協会は、3歳未満の子どもには芳香浴以外を行わないよう案内しています。お年寄りは協会の目安の半分以下の量で試してください。",
           "青みのある色なので、白い服やタオルに色が移ることがあります。",
           "オイルがついたタオルや靴下は、洗濯のあとも乾燥機にかけず、自然に乾かしましょう。",
           "混ぜて作ったものは自分で使う分だけにして、販売や譲渡はしません。清潔な道具を使い、1か月以内に使い切ります。",
@@ -229,7 +223,7 @@ export const balance: ArticleContent = {
         items={[
           {
             q: "1本でどのくらい楽しめますか？",
-            a: "15mLのボトルは約250滴入りと、ドテラのカナダ向け公式ブログに書かれています。朝に1滴ずつ使うと、約8か月の計算です。開封後1年以内という協会の目安にも収まります。",
+            a: "協会が計算に使う1滴0.05mLで数えると、15mLのボトルは約300滴です。朝に1滴ずつ使うと、約10か月の計算です。製品ページには開封後は早めに使うとあり、開封後1年以内という協会の目安にも収まります。",
           },
           {
             q: "ヒノキとはどう違いますか？",

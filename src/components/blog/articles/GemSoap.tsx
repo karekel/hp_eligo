@@ -16,18 +16,6 @@ export const gemSoap: ArticleContent = {
   ],
   sources: [
     {
-      title: "DIY: How to Make Soap for Kids using Essential Oils",
-      publisher: "doTERRA（ニュージーランド向け公式）",
-      url: "https://www.doterra.com/NZ/en_NZ/blog/diy-how-to-make-fun-soap-for-kids",
-      note: "溶かして固めるタイプの石けん素地を溶かし、色とオイルを混ぜて型で固める流れ",
-    },
-    {
-      title: "DIY: Rosemary Spearmint Soap",
-      publisher: "doTERRA（米国公式）",
-      url: "https://www.doterra.com/US/en/blog/recipe-rosemary-spearmint-soap",
-      note: "電子レンジで30秒ずつ溶かし、型に流して1時間おく手順",
-    },
-    {
       title: "ラベンダー",
       publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
       url: "https://www.doterra-info.jp/product/lavender-15ml/",
@@ -93,6 +81,30 @@ export const gemSoap: ArticleContent = {
       url: "https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20210810/",
       note: "食品に似た見た目の製品に注意し、手の届かない所に保管すること",
     },
+    {
+      title: "ユーカリプタス",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/eucalyptus-15ml/",
+      note: "製品ページの表示と使用方法、使用上の注意、保管の注意",
+    },
+    {
+      title: "ペパーミント（5mL）",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/peppermint-5ml/",
+      note: "製品ページの表示と使用方法、使用上の注意、保管の注意",
+    },
+    {
+      title: "ティーツリー",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/tea-tree-15ml/",
+      note: "製品ページの表示と使用方法、使用上の注意、保管の注意",
+    },
+    {
+      title: "エッセンシャルオイルの安全な使用方法",
+      publisher: "doTERRA CPTG Essential Oils Japan 合同会社",
+      url: "https://www.doterra.com/JP/ja_JP/using-essential-oils",
+      note: "芳香、塗布、摂取の使い方、敏感肌や子どもの肌、初めて塗布で使うオイルはキャリアオイルで薄めること、摂取はラベルの使用方法を守ること",
+    },
   ],
   Body: () => (
     <>
@@ -109,7 +121,7 @@ export const gemSoap: ArticleContent = {
           ["子ども", "色を選ぶ、カラージェルを1滴ずつ入れる、色を重ねる順番を決める、水で磨く"],
         ]}
       />
-      <p>オイルの量は、誰が使うかで決めます。素地100gに対する量です。1滴を0.05mL、素地1gを1mLとして計算しました。</p>
+      <p>オイルの量は、誰が使うかで決めます。子どもが使うときは、使う前に医師または薬剤師に相談します。次の表は素地100gに対する量で、子どもの量は日本アロマ環境協会の目安に合わせました。1滴を0.05mL、素地1gを1mLとして計算しました。別の見解もあるので、最後はご自身で判断してください。</p>
       <DataTable
         caption="使う人とオイルの量"
         headers={["使う人", "オイルの量", "濃度の目安"]}
@@ -121,7 +133,7 @@ export const gemSoap: ArticleContent = {
       />
       <h3>ドテラのオイルで作るとき</h3>
       <p>
-        石けんは洗い流すものでも肌に触れるので、オイルはラベルに「化粧品」の表示がある製品を使います。読み方は<Link href="/blog/doterra-how-to-use">ドテラの「塗・香・食」の表示の見方</Link>へ。ドテラの製品ページの表示が「塗・香」のラベンダーやゼラニウムが選びやすいでしょう。レモンなど光毒性のある柑橘と、協会が皮膚刺激の例に挙げるペパーミント、ティーツリー、ユーカリは入れません。
+        石けんは洗い流すものでも肌に触れるので、オイルはラベルに「化粧品」の表示がある製品を使います。読み方は<Link href="/blog/doterra-how-to-use">ドテラの「塗・香・食」の表示の見方</Link>へ。ドテラの製品ページの表示が「塗・香」のラベンダーやゼラニウムが選びやすいでしょう。レモンなど光毒性のある柑橘と、肌につけないユーカリプタスは入れません。ティーツリーやペパーミント5mLなど「塗」の表示がある製品は表示どおり肌に使えますが、協会が皮膚刺激の例に挙げているので、子どもも使うこの石けんには入れません。
       </p>
 
       <h2 id="recipe">宝石みたいな石けんの作り方</h2>
@@ -159,8 +171,8 @@ export const gemSoap: ArticleContent = {
         title="手作りするときの注意点"
         items={[
           "手や体を洗う石けんは、手作りでも化粧品に当たります。自分で使う分だけ作り、販売や譲渡はしないでください。友だちや親せきへのプレゼントもできないことを、作る前にお子さまに伝えましょう。",
-          "使うオイルは「化粧品」の表示がある製品だけにします。色材も化粧品用として売られているものを選びます。原液を肌につけたり、目に入れたりしないでください。オイルのボトルは大人が管理します。",
-          "使う前に腕の内側などに少量つけて様子を見ましょう。オイルの濃度は低いものから試します。洗うときは目に入らないよう注意します。",
+          "使うオイルは「化粧品」の表示がある製品だけにします。色材も化粧品用として売られているものを選びます。ドテラは、敏感肌、子どもの肌、初めて肌に使うオイルはキャリアオイルで薄めるよう案内しています。協会は原液を肌につけないよう案内しています。目に入れないでください。オイルのボトルは大人が管理します。",
+          "はじめて使うときは、パッチテスト等で試します。協会は2020年に、事前のパッチテストをやめ、低い濃度で試す案内に変えました。洗うときは目に入らないよう注意します。",
           "赤みやかゆみが出たらすぐにやめ、皮膚科などに相談してください。",
           "妊娠中、授乳中の人、治療中の人、子どもは、オイル入りの石けんを使う前に医師または薬剤師に相談してください。高齢の人や既往歴のある人は、半分以下の量から試します。",
           "溶けたソープと容器は熱くなります。やけどに注意し、ナイフは大人が扱います。オイルは火のそばで扱いません。",

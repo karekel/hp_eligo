@@ -58,6 +58,12 @@ export const petsSafety: ArticleContent = {
       url: "https://www.pref.saga.lg.jp/kiji00314955/index.html",
       note: "犬猫は嗅覚が鋭く化学物質に敏感であること、スプレーの成分は下にたまるので換気すること（化学物質一般についての資料で、精油の記載はない）",
     },
+    {
+      title: "エッセンシャルオイルの安全な使用方法",
+      publisher: "doTERRA CPTG Essential Oils Japan 合同会社",
+      url: "https://www.doterra.com/JP/ja_JP/using-essential-oils",
+      note: "芳香、塗布、摂取の使い方、敏感肌や子どもの肌、初めて塗布で使うオイルはキャリアオイルで薄めること、摂取はラベルの使用方法を守ること",
+    },
   ],
   Body: () => (
     <>
@@ -104,7 +110,7 @@ export const petsSafety: ArticleContent = {
           "フードや飲み水にオイルを混ぜないでください。",
           "オイルがついたティッシュは水で湿らせてから、ペットが開けられないごみ箱に捨てます。",
           "ディフューザーやポプリなど、香りのものをペットの届く場所に置かないでください。",
-          "原液を自分の肌につけないこと、目に入れないこと、火気に注意することも忘れずに。",
+          "目に入れないこと、火気に注意することも忘れずに。協会は、原液を自分の肌につけないよう案内しています。",
         ]}
       />
       <p>置き場所のくわしい考え方は<Link href="/blog/oil-storage">オイルの保管方法</Link>にまとめています。</p>

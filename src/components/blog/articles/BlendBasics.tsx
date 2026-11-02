@@ -54,6 +54,30 @@ export const blendBasics: ArticleContent = {
       url: "https://www.doterra-info.jp/lp/2401919/",
       note: "区分に合わせて使うこと、最初は少量から始めること",
     },
+    {
+      title: "ベルガモット",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan 合同会社）",
+      url: "https://www.doterra-info.jp/product/bergamot-15ml/",
+      note: "製品ページの表示と使用方法、使用上の注意、保管の注意",
+    },
+    {
+      title: "グレープフルーツ",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/grapefruit-15ml/",
+      note: "製品ページの表示と使用方法、使用上の注意、保管の注意",
+    },
+    {
+      title: "レモン",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan 合同会社）",
+      url: "https://www.doterra-info.jp/product/lemon-15ml/",
+      note: "製品ページの表示と使用方法、使用上の注意、保管の注意",
+    },
+    {
+      title: "エッセンシャルオイルの安全な使用方法",
+      publisher: "doTERRA CPTG Essential Oils Japan 合同会社",
+      url: "https://www.doterra.com/JP/ja_JP/using-essential-oils",
+      note: "芳香、塗布、摂取の使い方、敏感肌や子どもの肌、初めて塗布で使うオイルはキャリアオイルで薄めること、摂取はラベルの使用方法を守ること",
+    },
   ],
   Body: () => (
     <>
@@ -166,9 +190,9 @@ export const blendBasics: ArticleContent = {
       <CautionBox
         title="ブレンドするときの注意点"
         items={[
-          "混ぜたオイルも原液です。そのまま肌につけないでください。",
+          "混ぜたオイルも原液です。ドテラは、敏感肌、子どもの肌、初めて肌に使うオイルはキャリアオイルで薄めるよう案内しています。協会は、原液を肌につけないよう案内しています。別の見解もあるので、最後はご自身で判断してください。",
           "肌に使うときは、すべてのオイルが「化粧品」の表示がある製品であることを確認し、濃度1%以下に薄めます。",
-          "協会は、レモン、ベルガモット、グレープフルーツなどの柑橘に光毒性があると説明しています。上の例は肌に塗らず、香りだけを楽しんでください。",
+          "ドテラの製品ページの表示は、レモン、ベルガモット、グレープフルーツの15mLが「香・食」で、肌に塗る案内はありません。協会は、これらの柑橘などに光毒性があると説明しています。上の例は肌に塗らず、香りだけを楽しんでください。",
           "ブレンドは遮光瓶に入れ、オイルの名前と作った日を書いて保管しましょう。",
           "火のそばで作らないでください。子どもやペットの手の届かない場所に置きます。",
           "香りの好みは人それぞれです。気分が悪くなったら使用をやめて換気してください。",

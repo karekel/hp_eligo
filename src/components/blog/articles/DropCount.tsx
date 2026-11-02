@@ -30,12 +30,6 @@ export const dropCount: ArticleContent = {
       note: "1滴は約0.05mLという目安",
     },
     {
-      title: "How to Use an Entire Bottle of Lavender Oil",
-      publisher: "doTERRA（カナダ向け公式、英語）",
-      url: "https://www.doterra.com/CA/en/blog/healthy-living-how-to-use-an-entire-bottle-of-lavender",
-      note: "15mLのボトルに約250滴入っているという記載",
-    },
-    {
       title: "ドテラバランス",
       publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
       url: "https://www.doterra-info.jp/product/doterra-balance-15ml/",
@@ -89,6 +83,12 @@ export const dropCount: ArticleContent = {
       url: "https://www.aromakankyo.or.jp/aeaj-news/detail/2296",
       note: "オイルがついたティッシュの捨て方",
     },
+    {
+      title: "エッセンシャルオイルの安全な使用方法",
+      publisher: "doTERRA CPTG Essential Oils Japan 合同会社",
+      url: "https://www.doterra.com/JP/ja_JP/using-essential-oils",
+      note: "芳香、塗布、摂取の使い方、敏感肌や子どもの肌、初めて塗布で使うオイルはキャリアオイルで薄めること、摂取はラベルの使用方法を守ること",
+    },
   ],
   Body: () => (
     <>
@@ -113,13 +113,13 @@ export const dropCount: ArticleContent = {
         ]}
       />
       <p>
-        ただし、これは計算用の目安です。ドテラのカナダ向け公式ブログには、15mLのボトルに約250滴入っていると書かれています。この数字で割ると1滴は約0.06mLになり、協会の目安より少し多くなります。
+        ただし、これは計算用の目安です。実際の1滴の量は、オイルの粘りやボトルの傾け方で変わることがあります。
       </p>
       <p>
-        15mLのボトルなら、250〜300滴ほどと考えておくとよいでしょう。ディフューザーに1回5滴使うなら、約50〜60回分の計算です。同じ考え方で、5mLなら約80〜100滴、3mLなら約50〜60滴、2mLのミニボトルなら約30〜40滴です。
+        15mLのボトルなら、計算上は約300滴です。ディフューザーに1回5滴使うなら、約60回分の計算です。同じ考え方で、5mLなら約100滴、3mLなら約60滴、2mLのミニボトルなら約40滴です。
       </p>
       <p>
-        協会は、開封後1年以内を目安に使い切るよう案内しています。週に1回5滴使うと、1年で約260滴になり、15mLをほぼ使い切ります。詳しくは<Link href="/blog/oil-storage">オイルの保管方法</Link>を確認してください。
+        ドテラの製品ページには、開封後は早めに使うよう書かれています。協会は、開封後1年以内を目安に使い切るよう案内しています。週に1回5滴使うと、1年で約260滴になり、15mLの9割近くを使います。詳しくは<Link href="/blog/oil-storage">オイルの保管方法</Link>を確認してください。
       </p>
 
       <h2 id="uses">使い方ごとの滴数の目安</h2>
@@ -173,7 +173,7 @@ export const dropCount: ArticleContent = {
       <CautionBox
         title="滴数を数えるときの注意点"
         items={[
-          "原液を肌につけないでください。ついたときは、清潔な大量の流水で洗います。",
+          "「塗」の表示がある製品は肌に使えます。敏感肌、子どもの肌、初めて肌に使うオイルはキャリアオイルで薄めます。協会は原液を肌につけないよう案内し、ついたときは清潔な大量の流水で洗うとしています。別の見解もあるので、最後はご自身で判断してください。",
           "オイルが目に入ったときは、こすらずに大量の水で洗い、医療機関を受診してください。",
           "オイルがついた手で目や顔を触らないようにしましょう。",
           "こぼしたオイルは、家具や布に跡や変色を残すことがあります。ボトルは小皿の上で扱うと安心です。",

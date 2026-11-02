@@ -76,6 +76,12 @@ export const oilDisposal: ArticleContent = {
       url: "https://www.city.kobe.lg.jp/a78445/kurashi/sumai/sewage/shiminnominasamahe/onegai.html",
       note: "油を下水道に流すと冷えて固まり、下水道管の詰まりや悪臭の原因になること、油は凝固剤を使うか新聞紙やぼろ布に染み込ませて袋に入れ、口を止めてごみとして捨てること",
     },
+    {
+      title: "ラベンダー",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/lavender-15ml/",
+      note: "製品ページの表示と使用方法、使用上の注意、保管の注意",
+    },
   ],
   Body: () => (
     <>
@@ -85,7 +91,7 @@ export const oilDisposal: ArticleContent = {
 
       <h2 id="before">使用期限が切れたオイルは、捨てる前に使い切れるか考える</h2>
       <p>
-        協会の目安は、開封後1年以内に使い切ることです。オイルは空気に触れると酸化するので、使う前に香りを確かめます。柑橘系はほかより成分が変化しやすいとされています。くわしくは<Link href="/blog/oil-storage">保管方法と使用期限の目安</Link>にまとめています。
+        ドテラの製品ページは、開封後は早めに使うよう案内しています。協会の目安は、開封後1年以内に使い切ることです。オイルは空気に触れると酸化するので、使う前に香りを確かめます。柑橘系はほかより成分が変化しやすいとされています。くわしくは<Link href="/blog/oil-storage">保管方法と使用期限の目安</Link>にまとめています。
       </p>
       <h3>古くなったオイルは肌に使わない</h3>
       <p>
@@ -167,7 +173,7 @@ export const oilDisposal: ArticleContent = {
         items={[
           {
             q: "使用期限が切れたオイルは、もう使えませんか？",
-            a: "協会の目安は開封後1年以内です。過ぎたものは肌に使わず、香りを確かめて問題がなければ、掃除やポプリで使い切りましょう。",
+            a: "ドテラの製品ページは開封後は早めに使うよう案内し、協会の目安は開封後1年以内です。過ぎたものは肌に使わず、香りを確かめて問題がなければ、掃除やポプリで使い切りましょう。",
           },
           {
             q: "ドテラのオイルも同じ捨て方ですか？",

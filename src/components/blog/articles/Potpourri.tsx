@@ -24,12 +24,6 @@ export const potpourri: ArticleContent = {
       note: "ポプリオイルは精油や合成香料をアルコールや溶剤で薄めたものが中心で、精油とは別のものであること",
     },
     {
-      title: "DIY Holiday Potpourri with Holiday Love Essential Oil Blend",
-      publisher: "doTERRA（カナダ向け公式、英語）",
-      url: "https://www.doterra.com/CA/en/blog/diy-holiday-potpourri",
-      note: "柑橘の輪切り、シナモンスティック、クローブ、松ぼっくり、花などの材料と、93℃のオーブンで2時間以上乾かす方法、水にオイル10〜15滴を入れて吹きかける方法",
-    },
-    {
       title: "エッセンシャルオイルで作る『リネンスプレー』レシピ",
       publisher: "doTERRA CPTG Essential Oils Japan合同会社",
       url: "https://www.doterra-info.jp/tools/product-center/Display/odor%20control-recipe.pdf",
@@ -58,6 +52,12 @@ export const potpourri: ArticleContent = {
       publisher: "公益社団法人 日本アロマ環境協会",
       url: "https://www.aromakankyo.or.jp/basics/safety/",
       note: "原液を肌につけない、目に入れない、火気に注意する、手の届かない場所に保管する、原液がついたら流水で洗うこと",
+    },
+    {
+      title: "エッセンシャルオイルの安全な使用方法",
+      publisher: "doTERRA CPTG Essential Oils Japan 合同会社",
+      url: "https://www.doterra.com/JP/ja_JP/using-essential-oils",
+      note: "芳香、塗布、摂取の使い方、敏感肌や子どもの肌、初めて塗布で使うオイルはキャリアオイルで薄めること、摂取はラベルの使用方法を守ること",
     },
   ],
   Body: () => (
@@ -97,7 +97,7 @@ export const potpourri: ArticleContent = {
           ]}
         />
         <PointBox>
-          急いで乾かしたいときはオーブンも使えます。ドテラのカナダ向け公式レシピは93℃で2時間以上としています。焦げないよう、そばを離れずに様子を見てください。オイルは、オーブンから出して冷めてから足します。
+          急いで乾かしたいときはオーブンも使えます。低い温度で、焦げないよう、そばを離れずに様子を見てください。オイルは、オーブンから出して冷めてから足します。
         </PointBox>
       </MethodCard>
 
@@ -137,7 +137,7 @@ export const potpourri: ArticleContent = {
           "スパイスや果物は食べ物に見えることがあります。子どもやペットの手の届かない場所に置きましょう。",
           "オイルをかけた材料は、食べたり料理に使ったりしないでください。",
           "オイルには引火性があります。コンロ、ストーブ、キャンドルのそばに置かないでください。",
-          "原液を直接肌につけないようにしましょう。混ぜるときはスプーンを使い、手についたら流水で洗い流します。目にも入れないでください。",
+          "協会は、原液を肌につけないよう案内しています。混ぜるときはスプーンを使い、手についたら流水で洗い流します。目にも入れないでください。",
           "オイルは家具や布を変色させることがあります。必ず器に入れ、カーテンなどに触れない場所に置きましょう。",
           "湿気の多い場所は避けます。カビが出たり、においが変わったりしたら捨ててください。",
           "香りで気分が悪くなったら片づけて、部屋を換気してください。",
@@ -157,7 +157,7 @@ export const potpourri: ArticleContent = {
           },
           {
             q: "オレンジの輪切りも使えますか？",
-            a: "使えます。ドテラのカナダ向け公式レシピは、柑橘の輪切りや松ぼっくり、花も一緒に乾かしています。中まで乾いたことを確かめてから、器に入れましょう。",
+            a: "使えます。中まで乾いたことを確かめてから、器に入れましょう。",
           },
         ]}
       />

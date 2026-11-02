@@ -96,6 +96,12 @@ export const outdoorSpray: ArticleContent = {
       url: "https://www.tfd.metro.tokyo.lg.jp/inf/k_week/jikken.html",
       note: "消毒用エタノールなどの炎は青白く、明るい場所では見えにくいこと",
     },
+    {
+      title: "エッセンシャルオイルの安全な使用方法",
+      publisher: "doTERRA CPTG Essential Oils Japan 合同会社",
+      url: "https://www.doterra.com/JP/ja_JP/using-essential-oils",
+      note: "芳香、塗布、摂取の使い方、敏感肌や子どもの肌、初めて塗布で使うオイルはキャリアオイルで薄めること、摂取はラベルの使用方法を守ること",
+    },
   ],
   Body: () => (
     <>
@@ -176,7 +182,7 @@ export const outdoorSpray: ArticleContent = {
       <CautionBox
         title="使うときの注意点"
         items={[
-          "肌や顔、人に向けて吹きかけないでください。原液を肌につけたり、目に入れたりしないでください。",
+          "肌や顔、人に向けて吹きかけないでください。協会は、原液を肌につけないよう案内しています。目に入れないでください。",
           "肌についたら水で洗い流します。赤みやかゆみが出たら、皮膚科などに相談してください。",
           "3歳未満の子どもの持ち物や衣類には使わないでください。子どもと出かけるときは、スプレーを大人が管理します。",
           "日本アロマ環境協会は、動物は人間と身体の仕組みが異なるとして、注意をすすめています。犬の散歩などには使わないでください。",

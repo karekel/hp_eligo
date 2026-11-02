@@ -29,12 +29,6 @@ export const laluzDiffuser: ArticleContent = {
       url: "https://www.doterra.com/JP/ja_JP/p/doterra-laluz-diffuser",
       note: "超音波振動で水とオイルをミストにして広げる製品であること",
     },
-    {
-      title: "How to Use an Entire Bottle of Lavender Oil",
-      publisher: "doTERRA（カナダ向け公式、英語）",
-      url: "https://www.doterra.com/CA/en/blog/healthy-living-how-to-use-an-entire-bottle-of-lavender",
-      note: "15mLのボトルに約250滴入っているという記載（回数の計算に使用）",
-    },
   ],
   Body: () => (
     <>
@@ -58,7 +52,7 @@ export const laluzDiffuser: ArticleContent = {
       />
       <PointBox>はじめは5滴で試し、物足りなければ次の回に1滴ずつ増やしましょう。上限は説明書の10滴までです。</PointBox>
       <p>
-        ブレンドも、合計を5〜10滴に収めます。組み合わせは<Link href="/blog/diffuser-blends">ディフューザーのレシピ</Link>にあります。15mLのボトルは約250滴という公式の記載で計算すると、1回5滴なら約50回分です。
+        ブレンドも、合計を5〜10滴に収めます。組み合わせは<Link href="/blog/diffuser-blends">ディフューザーのレシピ</Link>にあります。
       </p>
 
       <h2 id="buttons">ボタンの使い方｜タイマー、ミスト、ライト</h2>
