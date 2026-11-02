@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Noto_Sans, Noto_Serif, Noto_Serif_JP } from "next/font/google";
 import { BlogFooter, BlogHeader } from "@/components/blog/BlogParts";
 import { BLOG_DRAFT, blogConfig } from "@/lib/blogData";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig, siteFavicons } from "@/lib/siteConfig";
 
 const serifJp = Noto_Serif_JP({
   variable: "--font-serif-jp",
@@ -40,8 +40,9 @@ export const metadata: Metadata = {
     template: `%s｜${blogConfig.name}`,
   },
   description: blogConfig.description,
-  // スマホのホーム画面に置いたときのアイコンと名前（生成は scripts/generate-blog-icons.mjs）
+  // スマホのホーム画面のアイコンと名前。icons は親の指定を丸ごと置き換えるので、ファビコンも渡す
   icons: {
+    icon: siteFavicons,
     apple: "/blog-app/apple-touch-icon.png",
   },
   manifest: "/blog-app/manifest.webmanifest",
