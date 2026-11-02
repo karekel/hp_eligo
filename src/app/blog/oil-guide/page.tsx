@@ -7,7 +7,7 @@ import { oilFamilies, oilGuide } from "@/lib/blogData";
 const description = `ドテラのオイル${oilGuide.length}本を、香りの系統ごとの表にまとめました。香りの表示と、製品ページの「塗・香・食」の表示を見比べて、気になるオイルの記事を探せます。`;
 
 export const metadata: Metadata = {
-  title: `オイル図鑑の一覧｜香りの系統で探す${oilGuide.length}本`,
+  title: `ドテラのオイル図鑑の一覧｜香りの系統で探す${oilGuide.length}本`,
   description,
   alternates: { canonical: "/blog/oil-guide" },
 };
@@ -18,9 +18,9 @@ export default function OilGuidePage() {
       <BotanicalCluster variant="left-a" className="-left-[110px] top-[60px]" />
       <BotanicalCluster variant="right-a" className="-right-[100px] top-[40px]" />
       <div className="relative z-10 mx-auto max-w-6xl px-4 pt-6 md:px-6 md:pt-8">
-        <Breadcrumb items={[{ label: "ブログトップ", href: "/blog" }, { label: "オイル図鑑", href: "/blog/category/oils" }, { label: "オイル図鑑の一覧" }]} />
+        <Breadcrumb items={[{ label: "ブログトップ", href: "/blog" }, { label: "ドテラのオイル図鑑", href: "/blog/category/oils" }, { label: "ドテラのオイル図鑑の一覧" }]} />
         <div className="py-14 md:py-20">
-          <SectionTitle en="Oil Guide" ja="オイル図鑑の一覧" as="h1" />
+          <SectionTitle en="Oil Guide" ja="ドテラのオイル図鑑の一覧" as="h1" />
           <p className="mx-auto mt-6 max-w-2xl text-[14px] leading-[2.1] text-[#555] md:text-[15px]">{description}</p>
         </div>
 

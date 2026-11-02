@@ -88,7 +88,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
             </div>
 
             <div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-2xl">
-              <Image src={post.thumbnail} alt="" fill priority fetchPriority="high" sizes="(min-width: 1024px) 720px, (min-width: 768px) calc(100vw - 144px), calc(100vw - 72px)" className="object-cover" />
+              <Image src={post.thumbnail} alt={post.title} fill priority fetchPriority="high" sizes="(min-width: 1024px) 720px, (min-width: 768px) calc(100vw - 144px), calc(100vw - 72px)" className="object-cover" />
             </div>
 
             {article ? (

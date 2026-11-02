@@ -17,6 +17,12 @@ export const oilDisposal: ArticleContent = {
   ],
   sources: [
     {
+      title: "ラベンダー",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/lavender-15ml/",
+      note: "使用上の注意と保管方法に、捨て方の記載が確認できないこと（2026年11月2日確認）",
+    },
+    {
       title: "安全に楽しむために",
       publisher: "公益社団法人 日本アロマ環境協会",
       url: "https://www.aromakankyo.or.jp/basics/safety/",
@@ -171,6 +177,10 @@ export const oilDisposal: ArticleContent = {
           {
             q: "使用期限が切れたオイルは、もう使えませんか？",
             a: "協会の目安は開封後1年以内です。過ぎたものは肌に使わず、香りを確かめて問題がなければ、掃除やポプリで使い切りましょう。",
+          },
+          {
+            q: "ドテラのオイルも同じ捨て方ですか？",
+            a: "同じ考え方で大丈夫です。ラベンダー15mLの製品ページの使用上の注意に、捨て方の記載は確認できませんでした。中身は紙に吸わせ、ビンとキャップはお住まいの自治体の区分に従ってください。",
           },
           {
             q: "中身が1本まるごと残っています。どう捨てますか？",

@@ -46,18 +46,14 @@ export default function BlogTopPage() {
         <div className="relative z-10 mx-auto max-w-xl px-6 text-center">
           <SectionTitle en="About this journal" />
           <h2 className="font-serif-jp mt-6 text-[17px] leading-[2] tracking-[0.08em] text-[#2b2b2b] md:text-[21px]">
-            <span className="inline-block">ELIGŌ Oil Journalは、</span>
-            <span className="inline-block">ドテラ（dōTERRA）のオイルを</span>
-            <span className="inline-block">解説するブログです。</span>
+            <span className="inline-block">ドテラ（dōTERRA）の</span>
+            <span className="inline-block">エッセンシャルオイルや</span>
+            <span className="inline-block">アロマオイルを、</span>
+            <span className="inline-block">毎日の暮らしにどう取り入れるか、</span>
+            <span className="inline-block">使い方・道具・保管のコツを</span>
+            <span className="inline-block">まとめています。</span>
           </h2>
           <p className="mt-6 text-[14px] leading-[2.3] text-[#555] md:text-[15px]">
-            エッセンシャルオイルやアロマオイルを、
-            <br />
-            毎日の暮らしにどう取り入れるか。
-            <br />
-            使い方・道具・保管のコツをまとめています。
-          </p>
-          <p className="mt-4 text-[14px] leading-[2.3] text-[#555] md:text-[15px]">
             <span className="inline-block">運営は、ドテラの</span>
             <span className="inline-block">ウェルネスアドボケイト（会員）である</span>
             <span className="inline-block">エリザベスが主宰するチーム「ELIGŌ」です。</span>

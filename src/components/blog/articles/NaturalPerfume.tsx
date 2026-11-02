@@ -187,7 +187,7 @@ export const naturalPerfume: ArticleContent = {
 
       <h2 id="skin">肌につける香りのレシピ</h2>
       <p>
-        トップノートには、光毒性のある柑橘や、協会が皮膚刺激の例に挙げるペパーミント、ティーツリー、ユーカリが並びます。そこで肌につける香りはトップを使わず、ミドルとベースの2段で組み立てます。肌に使う前の確認は<Link href="/blog/oils-on-skin">エッセンシャルオイルは肌につけていい？</Link>、表示の読み方は<Link href="/blog/doterra-how-to-use">「塗・香・食」の表示の見方</Link>へ。
+        トップノートには、光毒性のある柑橘や、協会が皮膚刺激の例に挙げるペパーミント、ティーツリー、ユーカリが並びます。そこで肌につける香りはトップを使わず、ミドルとベースの2段で組み立てます。肌に使う前の確認は<Link href="/blog/oils-on-skin">エッセンシャルオイルは肌につけていい？</Link>、表示の読み方は<Link href="/blog/doterra-how-to-use">ドテラの「塗・香・食」の表示の見方</Link>へ。
       </p>
       <MethodCard
         no={1}
@@ -252,7 +252,7 @@ export const naturalPerfume: ArticleContent = {
           { name: "フランキンセンス", color: oilColors.frankincense, count: 3 },
         ]}
       />
-      <p>オイルを替えるときは、同じノートの中で替えると、配分の割合が変わりません。</p>
+      <p>オイルは同じノートの中で替えると、配分の割合が変わりません。</p>
 
       <h2 id="caution">作るときと使うときの注意点</h2>
       <CautionBox

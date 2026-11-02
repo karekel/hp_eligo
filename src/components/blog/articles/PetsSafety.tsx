@@ -17,6 +17,12 @@ export const petsSafety: ArticleContent = {
   ],
   sources: [
     {
+      title: "ラベンダー",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/lavender-15ml/",
+      note: "使用上の注意と保管方法に、ペットについての記載が確認できないこと（2026年11月2日確認）",
+    },
+    {
       title: "アロマスプレーの作り方｜保存方法や注意点も紹介",
       publisher: "公益社団法人 日本アロマ環境協会 sense of AROMA（2025年3月27日）",
       url: "https://media.aromakankyo.or.jp/senseofaroma/article/life/1886/",
@@ -126,6 +132,10 @@ export const petsSafety: ArticleContent = {
       <h2 id="faq">よくある質問</h2>
       <Faq
         items={[
+          {
+            q: "ドテラのオイルも同じですか？",
+            a: "同じです。ラベンダー15mLの製品ページの使用上の注意に、ペットの記載は確認できませんでした。ペットのいる空間では使わないようにしましょう。",
+          },
           {
             q: "犬と猫で違いはありますか？",
             a: "協会の資料に、犬と猫を分けた説明は見当たりませんでした。どちらも同じように考え、ペットのいる空間では使わないようにしましょう。",

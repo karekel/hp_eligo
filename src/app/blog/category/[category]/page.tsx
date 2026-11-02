@@ -38,7 +38,7 @@ export default async function BlogCategoryPage({ params }: { params: Promise<{ c
           {category.slug === "oils" && (
             <p className="mt-5 text-center text-[14px]">
               <Link href="/blog/oil-guide" className="text-blog-accent underline underline-offset-2 hover:no-underline">
-                オイル図鑑の一覧を表で見る
+                ドテラのオイル図鑑の一覧を表で見る
               </Link>
             </p>
           )}

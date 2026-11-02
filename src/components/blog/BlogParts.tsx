@@ -192,7 +192,7 @@ export function PostCard({ post }: { post: BlogPost }) {
       className="group block overflow-hidden rounded-2xl bg-white shadow-[0_2px_14px_rgba(70,55,30,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_10px_28px_rgba(70,55,30,0.14)]"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
-        <Image src={post.thumbnail} alt="" fill sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 100vw" className="object-cover transition duration-700 group-hover:scale-105" />
+        <Image src={post.thumbnail} alt={post.title} fill sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 100vw" className="object-cover transition duration-700 group-hover:scale-105" />
         <CategoryChip slug={post.category} className="absolute left-3 top-3" />
       </div>
       <div className="p-4 md:p-5">
@@ -210,7 +210,7 @@ export function FeaturedPost({ post }: { post: BlogPost }) {
       className="group grid overflow-hidden rounded-2xl bg-white shadow-[0_2px_14px_rgba(70,55,30,0.08)] transition duration-300 hover:shadow-[0_10px_28px_rgba(70,55,30,0.14)] md:grid-cols-[1.15fr_1fr]"
     >
       <div className="relative aspect-[4/3] overflow-hidden md:aspect-auto md:min-h-[300px]">
-        <Image src={post.thumbnail} alt="" fill sizes="(min-width: 1024px) 460px, 100vw" className="object-cover transition duration-700 group-hover:scale-105" />
+        <Image src={post.thumbnail} alt={post.title} fill sizes="(min-width: 1024px) 460px, 100vw" className="object-cover transition duration-700 group-hover:scale-105" />
         <span className="absolute left-0 top-5 bg-[#8b78c4] px-4 py-1.5 font-script text-[16px] text-white">Pick up</span>
       </div>
       <div className="flex flex-col justify-center p-6 md:p-8">

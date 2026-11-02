@@ -281,7 +281,7 @@ export function OilProfile({ name, en, color, image, rows }: { name: string; en:
       <div className="relative flex items-end justify-center gap-1 bg-[#f7f4ee] px-6 pb-6 pt-8">
         {image && SHOW_PRODUCT_IMAGES ? (
           <div className="relative h-[170px] w-[130px]">
-            <Image src={image} alt={`${name}のボトル`} fill sizes="130px" className="object-cover mix-blend-multiply" />
+            <Image src={image} alt={`${name.startsWith("ドテラ") ? name : `ドテラの${name}`}のボトル`} fill sizes="130px" className="object-cover mix-blend-multiply" />
           </div>
         ) : (
           <>
@@ -306,8 +306,8 @@ export function OilProfile({ name, en, color, image, rows }: { name: string; en:
       </dl>
     </div>
     <p>
-      製品ページの「塗・香・食」の見方は<Link href="/blog/doterra-how-to-use">オイルの使い方と表示の読み方</Link>、ほかのオイルは
-      <Link href="/blog/oil-guide">オイル図鑑の一覧</Link>と<Link href="/blog/doterra-oil-lineup">オイルの種類の全体像</Link>で紹介しています。
+      製品ページの「塗・香・食」の見方は<Link href="/blog/doterra-how-to-use">ドテラのオイルの使い方と表示の読み方</Link>、ほかのオイルは
+      <Link href="/blog/oil-guide">ドテラのオイル図鑑の一覧</Link>と<Link href="/blog/doterra-oil-lineup">ドテラのオイルの種類</Link>で紹介しています。
     </p>
     </>
   );
