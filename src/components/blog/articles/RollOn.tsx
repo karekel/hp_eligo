@@ -12,7 +12,7 @@ export const rollOn: ArticleContent = {
   toc: [
     { id: "amount", title: "まず覚えたい「10mLに1〜2滴」" },
     { id: "recipe", title: "ロールオンの作り方" },
-    { id: "blend", title: "香りの組み合わせ" },
+    { id: "blend", title: "ドテラのオイルで作る香りの組み合わせ" },
     { id: "caution", title: "作るときと持ち歩くときの注意点" },
     { id: "faq", title: "よくある質問" },
   ],
@@ -188,7 +188,7 @@ export const rollOn: ArticleContent = {
         <PointBox>ボトルに直接垂らすと、中身が約9mLになる分だけ濃くなります。2滴なら約1.1%で、目安を超えます。少し手間でも、10mLを量って混ぜてから移すと濃度がぶれません。容器に残る約1mLは、腕の内側などに少量つけて、使う前の試しに回しましょう。</PointBox>
       </MethodCard>
 
-      <h2 id="blend">香りの組み合わせ</h2>
+      <h2 id="blend">ドテラのオイルで作る香りの組み合わせ</h2>
       <p>
         滴数が少ないので、組み合わせは2種類までにします。製品ページの表示が「塗・香」のオイルから選び、お手元のラベルの「化粧品」の表示も確かめてください。読み方は<Link href="/blog/doterra-how-to-use">「塗・香・食」の表示の見方</Link>へ。迷ったら、ティッシュに1滴ずつ垂らして香りを比べましょう。
       </p>

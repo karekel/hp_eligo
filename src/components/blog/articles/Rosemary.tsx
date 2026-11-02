@@ -10,8 +10,8 @@ export const rosemary: ArticleContent = {
     "相性のよい香りのブレンド例と、「香・食」の表示で気をつけたいこと",
   ],
   toc: [
-    { id: "scent", title: "ローズマリーの香りの特徴" },
-    { id: "enjoy", title: "暮らしでの楽しみ方" },
+    { id: "scent", title: "ドテラのローズマリーの香りの特徴" },
+    { id: "enjoy", title: "ドテラのローズマリーの使い方" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -123,7 +123,7 @@ export const rosemary: ArticleContent = {
         この記事では、ドテラのローズマリー15mLを例に、香りの特徴と楽しみ方を分量つきで紹介します。製品ページの表示は「香・食」なので、肌に使う方法は扱いません。
       </p>
 
-      <h2 id="scent">ローズマリーの香りの特徴</h2>
+      <h2 id="scent">ドテラのローズマリーの香りの特徴</h2>
       <OilProfile
         name="ローズマリー"
         en="Rosemary"
@@ -150,7 +150,7 @@ export const rosemary: ArticleContent = {
         協会は、聖母マリアが青いマントをかけると白い花が青く変わったという伝説から、「マリアのバラ」と呼ばれるようになったと紹介しています。
       </p>
 
-      <h2 id="enjoy">暮らしでの楽しみ方</h2>
+      <h2 id="enjoy">ドテラのローズマリーの使い方</h2>
       <UsageCards
         items={[
           {

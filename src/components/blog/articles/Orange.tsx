@@ -10,8 +10,8 @@ export const orange: ArticleContent = {
     "15mLと5mLの表示の違いと、柑橘のオイルで気をつけたいこと",
   ],
   toc: [
-    { id: "profile", title: "オレンジはどんなオイル？" },
-    { id: "usage", title: "甘く明るい香りの楽しみ方" },
+    { id: "profile", title: "ドテラのオレンジはどんなオイル？" },
+    { id: "usage", title: "ドテラのオレンジの使い方" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -99,7 +99,7 @@ export const orange: ArticleContent = {
         この記事では、オレンジの香りの特徴と、リビング、車の中、飲み物での楽しみ方を紹介します。15mLと5mLで製品ページの表示が違うので、その点も確認しましょう。
       </p>
 
-      <h2 id="profile">オレンジはどんなオイル？</h2>
+      <h2 id="profile">ドテラのオレンジはどんなオイル？</h2>
       <OilProfile
         name="オレンジ"
         en="Wild Orange"
@@ -119,7 +119,7 @@ export const orange: ArticleContent = {
         産地はブラジルとギリシャで、果皮からコールドプレスでオイルを得ます。
       </p>
 
-      <h2 id="usage">甘く明るい香りの楽しみ方</h2>
+      <h2 id="usage">ドテラのオレンジの使い方</h2>
       <UsageCards
         items={[
           {

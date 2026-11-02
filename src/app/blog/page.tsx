@@ -27,8 +27,8 @@ export default function BlogTopPage() {
               暮らしを編む。
             </span>
             <span className="mt-4 block text-[12px] tracking-[0.3em] text-white/90 md:text-[14px]">
-              {/* スマホでは語の途中で折り返さず「や」の後で改行する */}
-              {blogConfig.nameJp.split(/(?<=オイルや)/).map((part) => (
+              {/* スマホでは語の途中で折り返さず「、」と「や」の後で改行する */}
+              {blogConfig.heroLead.split(/(?<=、|オイルや)/).map((part) => (
                 <span key={part} className="inline-block">
                   {part}
                 </span>
@@ -46,11 +46,19 @@ export default function BlogTopPage() {
         <div className="relative z-10 mx-auto max-w-xl px-6 text-center">
           <SectionTitle en="About this journal" ja="はじめての一滴から、毎日の香りまで。" />
           <p className="mt-8 text-[14px] leading-[2.3] text-[#555] md:text-[15px]">
+            <span className="inline-block">ELIGŌ Oil Journalは、</span>
+            <span className="inline-block">ドテラ（dōTERRA）のオイルを解説するブログです。</span>
+          </p>
+          <p className="mt-4 text-[14px] leading-[2.3] text-[#555] md:text-[15px]">
             エッセンシャルオイルやアロマオイルを、
-            <br className="hidden md:inline" />
+            <br />
             毎日の暮らしにどう取り入れるか。
             <br />
             使い方・道具・保管のコツをまとめています。
+          </p>
+          <p className="mt-4 text-[14px] leading-[2.3] text-[#555] md:text-[15px]">
+            <span className="inline-block">運営は、ドテラのウェルネスアドボケイト（会員）である</span>
+            <span className="inline-block">エリザベスが主宰するチーム「ELIGŌ」です。</span>
           </p>
           <BotanicalOrnament className="mt-10 lg:hidden" />
         </div>

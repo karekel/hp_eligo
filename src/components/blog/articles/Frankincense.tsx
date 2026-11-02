@@ -10,8 +10,8 @@ export const frankincense: ArticleContent = {
     "香りのハンドオイルの作り方と、肌に使うときの濃度の目安",
   ],
   toc: [
-    { id: "profile", title: "フランキンセンスはどんなオイル？" },
-    { id: "usage", title: "暮らしでの楽しみ方" },
+    { id: "profile", title: "ドテラのフランキンセンスはどんなオイル？" },
+    { id: "usage", title: "ドテラのフランキンセンスの使い方" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -103,7 +103,7 @@ export const frankincense: ArticleContent = {
       </p>
       <p>この記事では、樹脂がオイルになるまでの流れと香りの特徴、暮らしでの楽しみ方を紹介します。</p>
 
-      <h2 id="profile">フランキンセンスはどんなオイル？</h2>
+      <h2 id="profile">ドテラのフランキンセンスはどんなオイル？</h2>
       <OilProfile
         name="フランキンセンス"
         en="Frankincense"
@@ -134,7 +134,7 @@ export const frankincense: ArticleContent = {
         香りの表示のウォームは温かみ、スパイシーはピリッとしたスパイス、クリーンはさっぱりした印象のことです。樹脂の香りですが、重たいだけではありません。最初は少量から試して印象を確かめましょう。
       </p>
 
-      <h2 id="usage">暮らしでの楽しみ方</h2>
+      <h2 id="usage">ドテラのフランキンセンスの使い方</h2>
       <UsageCards
         items={[
           {

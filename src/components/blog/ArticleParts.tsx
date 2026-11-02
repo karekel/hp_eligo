@@ -307,7 +307,7 @@ export function OilProfile({ name, en, color, image, rows }: { name: string; en:
     </div>
     <p>
       製品ページの「塗・香・食」の見方は<Link href="/blog/doterra-how-to-use">オイルの使い方と表示の読み方</Link>、ほかのオイルは
-      <Link href="/blog/doterra-oil-lineup">オイルの種類の全体像</Link>で紹介しています。
+      <Link href="/blog/oil-guide">オイル図鑑の一覧</Link>と<Link href="/blog/doterra-oil-lineup">オイルの種類の全体像</Link>で紹介しています。
     </p>
     </>
   );
@@ -416,7 +416,7 @@ export function AuthorBox() {
       <div>
         <p className="font-script text-[18px] leading-none text-blog-accent">Writer</p>
         <p className="font-serif-jp mt-2 text-[18px] text-[#2b2b2b]">{author.name}</p>
-        <p className="mt-1 text-[12px] text-[#888]">エッセンシャルオイルを学び、暮らしに活かす仲間のチーム</p>
+        <p className="mt-1 text-[12px] text-[#888]">ドテラのオイルを学び、暮らしに活かすチーム</p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link href="/" data-track="author_official" data-track-group="blog" className="inline-flex items-center gap-1.5 rounded-full border border-blog-accent px-4 py-1.5 text-[12px] tracking-wider text-blog-accent transition hover:border-blog-peach hover:bg-blog-peach hover:text-blog-ink">
             公式サイトを見る <ArrowIcon className="h-3.5 w-3.5" />

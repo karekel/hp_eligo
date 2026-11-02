@@ -10,8 +10,8 @@ export const eucalyptus: ArticleContent = {
     "シャワー、朝のディフューズ、拭き掃除で香りを楽しむ方法",
   ],
   toc: [
-    { id: "profile", title: "ユーカリプタスはどんなオイル？" },
-    { id: "usage", title: "森のような香りの楽しみ方" },
+    { id: "profile", title: "ドテラのユーカリプタスはどんなオイル？" },
+    { id: "usage", title: "ドテラのユーカリプタスの使い方" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -87,7 +87,7 @@ export const eucalyptus: ArticleContent = {
         ただし、2026年3月に製品の区分が変わり、製品ページの表示は「香」だけになりました。肌につけないこと、口に入れないことを確認しながら、楽しみ方を見ていきましょう。
       </p>
 
-      <h2 id="profile">ユーカリプタスはどんなオイル？</h2>
+      <h2 id="profile">ドテラのユーカリプタスはどんなオイル？</h2>
       <OilProfile
         name="ユーカリプタス"
         en="Eucalyptus"
@@ -110,7 +110,7 @@ export const eucalyptus: ArticleContent = {
         2026年3月11日の注文分から、区分が化粧油から雑貨油に変わりました。肌質によって刺激を感じる場合があるためです。製品ページには、肌や粘膜につけないこと、摂取しないことが書かれています。ネットなどの古い情報に、肌に塗る使い方が残っていることがあるので注意しましょう。
       </p>
 
-      <h2 id="usage">森のような香りの楽しみ方</h2>
+      <h2 id="usage">ドテラのユーカリプタスの使い方</h2>
       <UsageCards
         items={[
           {

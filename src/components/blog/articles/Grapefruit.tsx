@@ -10,8 +10,8 @@ export const grapefruit: ArticleContent = {
     "協会が光毒性の例に挙げていることと、「香・食」の表示で気をつけたいこと",
   ],
   toc: [
-    { id: "scent", title: "グレープフルーツの香りの特徴" },
-    { id: "enjoy", title: "暮らしでの楽しみ方" },
+    { id: "scent", title: "ドテラのグレープフルーツの香りの特徴" },
+    { id: "enjoy", title: "ドテラのグレープフルーツの使い方" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "光毒性と使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -147,7 +147,7 @@ export const grapefruit: ArticleContent = {
         一方で、日本アロマ環境協会が光毒性の例に挙げているオイルでもあります。この記事では、ドテラのグレープフルーツ15mLを例に、香りの特徴と楽しみ方、光毒性を含む注意点をまとめます。製品ページの表示は「香・食」なので、肌に使う方法は扱いません。
       </p>
 
-      <h2 id="scent">グレープフルーツの香りの特徴</h2>
+      <h2 id="scent">ドテラのグレープフルーツの香りの特徴</h2>
       <OilProfile
         name="グレープフルーツ"
         en="Grapefruit"
@@ -185,7 +185,7 @@ export const grapefruit: ArticleContent = {
         15mLのボトル1本に使う皮は約5kgです。15mLは<Link href="/blog/drop-count">約250〜300滴</Link>なので、1滴あたり約17〜20gの皮を使う計算になります。
       </p>
 
-      <h2 id="enjoy">暮らしでの楽しみ方</h2>
+      <h2 id="enjoy">ドテラのグレープフルーツの使い方</h2>
       <UsageCards
         items={[
           {

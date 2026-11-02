@@ -10,6 +10,7 @@ import {
   type BlogCategoryIcon,
   type BlogPost,
 } from "@/lib/blogData";
+import { siteConfig } from "@/lib/siteConfig";
 
 /* ── アイコン ── */
 
@@ -163,6 +164,7 @@ export function BlogFooter() {
       <div className="border-t border-blog-ink/15">
         <div className="mx-auto max-w-6xl px-6 py-6 text-[11px] leading-6 text-blog-ink/85">
           <p>当ブログは、dōTERRA（ドテラ）のウェルネスアドボケイト（会員）によるチーム「ELIGŌ」が運営しています。</p>
+          <p>当ブログはドテラ社の公式サイトではなく、内容の責任は運営者にあります。</p>
           <p className="mt-2">© ELIGŌ</p>
         </div>
       </div>
@@ -309,7 +311,7 @@ function EligoBanner({ wide = false }: { wide?: boolean }) {
           <Image src="/assets/ロゴ/eligo_logo.png" alt="ELIGŌ" width={120} height={32} className="h-auto w-[92px] md:w-[104px]" />
           <span className="font-serif-jp text-[16px] tracking-[0.12em] md:text-[18px]">公式サイト</span>
         </p>
-        <p className="mt-1 text-[11px] tracking-wider">チームのこと・リーダー紹介・参加方法</p>
+        <p className="mt-1 text-[11px] tracking-wider">ドテラのオイルを学ぶチームのこと・リーダー紹介・参加方法</p>
         <span className="absolute bottom-5 right-5 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-blog-accent transition group-hover:translate-x-1">
           <ArrowIcon />
         </span>
@@ -339,7 +341,7 @@ function InstagramBanner({ wide = false }: { wide?: boolean }) {
         </span>
         <span className="font-serif-jp mt-1 block text-[15px] leading-6 text-[#2b2b2b] md:text-[17px]">エリザベスのInstagram</span>
         <span className="block truncate text-[12px] text-[#8b78c4]">{blogConfig.elizabethInstagram.handle}</span>
-        {wide && <span className="mt-2 block text-[12px] leading-6 text-[#777]">暮らしの中のオイルのことや、ELIGŌの活動を発信しています。</span>}
+        {wide && <span className="mt-2 block text-[12px] leading-6 text-[#777]">ドテラのウェルネスアドボケイト、エリザベスが、暮らしの中のオイルのことやELIGŌの活動を発信しています。</span>}
         <span className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-blog-peach px-4 py-1.5 text-[11px] tracking-widest text-blog-ink transition group-hover:bg-blog-tint-dark">
           フォローする <ArrowIcon className="h-3.5 w-3.5" />
         </span>
@@ -371,8 +373,20 @@ export function BlogSidebar() {
 }
 
 export function Breadcrumb({ items }: { items: { label: string; href?: string }[] }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.label,
+      ...(item.href && { item: `${siteConfig.siteUrl}${item.href}` }),
+    })),
+  };
+
   return (
     <nav aria-label="パンくずリスト" className="text-[12px] text-[#666]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
         {items.map((item, i) => (
           <li key={item.label} className="flex items-center gap-2">

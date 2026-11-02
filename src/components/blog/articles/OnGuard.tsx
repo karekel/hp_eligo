@@ -10,8 +10,8 @@ export const onGuard: ArticleContent = {
     "相性のよい香りとブレンド例、使うときの注意点",
   ],
   toc: [
-    { id: "scent", title: "オンガードはどんな香り？" },
-    { id: "enjoy", title: "暮らしで楽しむ3つの方法" },
+    { id: "scent", title: "ドテラのオンガードはどんな香り？" },
+    { id: "enjoy", title: "ドテラのオンガードの使い方" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -121,7 +121,7 @@ export const onGuard: ArticleContent = {
         ]}
       />
 
-      <h2 id="scent">オンガードはどんな香り？</h2>
+      <h2 id="scent">ドテラのオンガードはどんな香り？</h2>
       <p>
         オンガードは、複数のオイルを組み合わせたドテラのブレンドオイルです。内容は6種類で、果皮、スパイス、葉の香りが重なっています。
       </p>
@@ -130,7 +130,7 @@ export const onGuard: ArticleContent = {
       </p>
       <p>香りの主張がはっきりしているオイルなので、どの使い方でも少なめから始めると、好みの強さを探しやすくなります。</p>
 
-      <h2 id="enjoy">暮らしで楽しむ3つの方法</h2>
+      <h2 id="enjoy">ドテラのオンガードの使い方</h2>
       <UsageCards
         items={[
           {

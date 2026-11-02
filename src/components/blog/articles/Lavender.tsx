@@ -10,8 +10,8 @@ export const lavender: ArticleContent = {
     "相性のよい香りのブレンド例と、使うときの注意点",
   ],
   toc: [
-    { id: "profile", title: "ラベンダーはどんなオイル？" },
-    { id: "usage", title: "暮らしでの楽しみ方" },
+    { id: "profile", title: "ドテラのラベンダーはどんなオイル？" },
+    { id: "usage", title: "ドテラのラベンダーの使い方" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -97,7 +97,7 @@ export const lavender: ArticleContent = {
       </p>
       <p>この記事では、ドテラのラベンダーを例に、香りの特徴と、寝室、リネン、バスタイムで楽しむ方法を、分量つきで紹介します。</p>
 
-      <h2 id="profile">ラベンダーはどんなオイル？</h2>
+      <h2 id="profile">ドテラのラベンダーはどんなオイル？</h2>
       <OilProfile
         name="ラベンダー"
         en="Lavender"
@@ -117,7 +117,7 @@ export const lavender: ArticleContent = {
         産地はブルガリア、フランス、アルバニア、中国です。ブルガリアでは花を7月に収穫し、1日以内に蒸留します。「塗・香」は製品ページの表示なので、使い方はお手元のラベルでも確認しましょう。
       </p>
 
-      <h2 id="usage">暮らしでの楽しみ方</h2>
+      <h2 id="usage">ドテラのラベンダーの使い方</h2>
       <UsageCards
         items={[
           {

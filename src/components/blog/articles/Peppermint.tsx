@@ -10,8 +10,8 @@ export const peppermint: ArticleContent = {
     "15mLと5mLで表示が違うことと、肌に使わない理由",
   ],
   toc: [
-    { id: "profile", title: "ペパーミントはどんなオイル？" },
-    { id: "usage", title: "清涼感を楽しむ使い方" },
+    { id: "profile", title: "ドテラのペパーミントはどんなオイル？" },
+    { id: "usage", title: "ドテラのペパーミントの使い方" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -93,7 +93,7 @@ export const peppermint: ArticleContent = {
         この記事では、ペパーミントの香りの特徴と、香りで清涼感を楽しむ方法を紹介します。同じ名前でも容量で製品ページの表示が変わるので、その点も一緒に確認しましょう。
       </p>
 
-      <h2 id="profile">ペパーミントはどんなオイル？</h2>
+      <h2 id="profile">ドテラのペパーミントはどんなオイル？</h2>
       <OilProfile
         name="ペパーミント"
         en="Peppermint"
@@ -113,7 +113,7 @@ export const peppermint: ArticleContent = {
         ペパーミントは、ウォーターミントとスペアミントの交配種です。産地は米国の太平洋岸北西部とインド北部で、約450gの葉から15mLのボトル1本ができます。
       </p>
 
-      <h2 id="usage">清涼感を楽しむ使い方</h2>
+      <h2 id="usage">ドテラのペパーミントの使い方</h2>
       <UsageCards
         items={[
           {

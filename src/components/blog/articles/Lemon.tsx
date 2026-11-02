@@ -10,8 +10,8 @@ export const lemon: ArticleContent = {
     "料理の香りづけで確認したいことと、柑橘ならではの注意点",
   ],
   toc: [
-    { id: "profile", title: "レモンはどんなオイル？" },
-    { id: "usage", title: "キッチンまわりでの楽しみ方" },
+    { id: "profile", title: "ドテラのレモンはどんなオイル？" },
+    { id: "usage", title: "ドテラのレモンの使い方｜キッチンまわり" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -117,7 +117,7 @@ export const lemon: ArticleContent = {
         この記事では、レモンの香りの特徴と、キッチンまわりでの楽しみ方を紹介します。15mLの製品ページには肌に塗る案内がないので、肌の話はしません。
       </p>
 
-      <h2 id="profile">レモンはどんなオイル？</h2>
+      <h2 id="profile">ドテラのレモンはどんなオイル？</h2>
       <OilProfile
         name="レモン"
         en="Lemon"
@@ -137,7 +137,7 @@ export const lemon: ArticleContent = {
         15mLのオイルを作るのに、約3.2kgの皮が使われます。主な産地はイタリアのシチリア島で、ブラジル南部からも少量が届きます。見た目の理由で市場に出せないレモンを、果汁とオイルに分けて生かしているのも特徴です。
       </p>
 
-      <h2 id="usage">キッチンまわりでの楽しみ方</h2>
+      <h2 id="usage">ドテラのレモンの使い方｜キッチンまわり</h2>
       <UsageCards
         items={[
           {

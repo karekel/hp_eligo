@@ -10,8 +10,8 @@ export const lemongrass: ArticleContent = {
     "少量で強く香るオイルのブレンド例と、「香・食」の表示で気をつけたいこと",
   ],
   toc: [
-    { id: "scent", title: "レモングラスの香りの特徴" },
-    { id: "enjoy", title: "暮らしでの楽しみ方" },
+    { id: "scent", title: "ドテラのレモングラスの香りの特徴" },
+    { id: "enjoy", title: "ドテラのレモングラスの使い方" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -123,7 +123,7 @@ export const lemongrass: ArticleContent = {
         この記事では、ドテラのレモングラス15mLを例に、香りの特徴と楽しみ方を分量つきで紹介します。製品ページの表示は「香・食」なので、肌に使う方法は扱いません。
       </p>
 
-      <h2 id="scent">レモングラスの香りの特徴</h2>
+      <h2 id="scent">ドテラのレモングラスの香りの特徴</h2>
       <OilProfile
         name="レモングラス"
         en="Lemongrass"
@@ -160,7 +160,7 @@ export const lemongrass: ArticleContent = {
         15mLのボトル1本に使うレモングラスは約1.4kgです。15mLは<Link href="/blog/drop-count">約250〜300滴</Link>なので、1滴あたり約4.7〜5.6gの計算になります。
       </p>
 
-      <h2 id="enjoy">暮らしでの楽しみ方</h2>
+      <h2 id="enjoy">ドテラのレモングラスの使い方</h2>
       <UsageCards
         items={[
           {

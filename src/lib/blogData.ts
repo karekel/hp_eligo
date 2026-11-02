@@ -11,8 +11,11 @@ export const blogConfig = {
   /** スマホのホーム画面でアイコンの下に出る名前。Android 用は manifest.webmanifest にも書く */
   homeScreenName: "ELIGŌブログ",
   nameJp: "エッセンシャルオイルやアロマオイルの使い方ガイド",
-  description:
-    "エッセンシャルオイルやアロマオイルを、毎日の暮らしにどう取り入れるか。使い方・道具・保管のコツをまとめています。",
+  /** 検索結果に出るブログトップのタイトル */
+  searchTitle: "エッセンシャルオイルやアロマオイルの使い方ガイド｜ドテラのオイルを解説 ELIGŌ",
+  /** トップの画像の上に出す一文 */
+  heroLead: "ドテラのオイルで学ぶ、エッセンシャルオイルやアロマオイルの使い方",
+  description: "ドテラのオイルを中心に、エッセンシャルオイルやアロマオイルの使い方・道具・保管のコツをまとめたブログです。",
   elizabethInstagram: {
     url: "https://www.instagram.com/aroma_with_elizabeth/",
     handle: "@aroma_with_elizabeth",
@@ -31,15 +34,94 @@ export type BlogCategory = {
   name: string;
   en: string;
   description: string;
+  /** 検索結果に出るタイトル */
+  searchTitle: string;
+  /** カテゴリページの導入文。検索結果の説明文にも使う */
+  intro: string;
   icon: BlogCategoryIcon;
 };
 
 export const blogCategories: BlogCategory[] = [
-  { slug: "beginner", name: "はじめての方へ", en: "First Steps", description: "エッセンシャルオイルやアロマオイルの基本と選び方", icon: "leaf" },
-  { slug: "how-to", name: "使い方・道具", en: "How to Use", description: "ディフューザーやアロマストーンの使い方", icon: "drop" },
-  { slug: "oils", name: "オイル図鑑", en: "Oil Guide", description: "1本ずつ、香りの特徴と楽しみ方", icon: "bottle" },
-  { slug: "lifestyle", name: "暮らし・クラフト", en: "Lifestyle", description: "お掃除や手作りアイテムに", icon: "home" },
-  { slug: "care", name: "保管と注意点", en: "Safety", description: "安全に使うための確認ポイント", icon: "shield" },
+  {
+    slug: "beginner",
+    name: "はじめての方へ",
+    en: "First Steps",
+    searchTitle: "エッセンシャルオイルやアロマオイルの基本と選び方",
+    description: "エッセンシャルオイルやアロマオイルの基本と選び方",
+    intro: "エッセンシャルオイルやアロマオイルの違い、精油の作られ方、ラベルの見方、メーカーの選び方など、はじめる前に知っておきたい基本をまとめました。ドテラのオイルの種類や区分の説明もこちらです。",
+    icon: "leaf",
+  },
+  {
+    slug: "how-to",
+    name: "使い方・道具",
+    en: "How to Use",
+    searchTitle: "エッセンシャルオイルやアロマオイルの使い方と道具",
+    description: "ディフューザーやアロマストーンの使い方",
+    intro: "エッセンシャルオイルやアロマオイルの使い方を、ディフューザーやアロマストーン、お風呂、車の中など、場所や道具ごとに紹介します。滴数の目安や、キャリアオイルでの薄め方もこのカテゴリーにあります。",
+    icon: "drop",
+  },
+  {
+    slug: "oils",
+    name: "オイル図鑑",
+    en: "Oil Guide",
+    searchTitle: "オイル図鑑｜ドテラのオイルの香りの特徴と使い方",
+    description: "1本ずつ、香りの特徴と楽しみ方",
+    intro: "ドテラのオイルを1本ずつ、香りの特徴と使い方、相性のよい香り、使うときの注意点とあわせて紹介します。香りの系統ごとに並べているので、気になる香りから読んでください。",
+    icon: "bottle",
+  },
+  {
+    slug: "lifestyle",
+    name: "暮らし・クラフト",
+    en: "Lifestyle",
+    searchTitle: "エッセンシャルオイルやアロマオイルの手作りレシピ",
+    description: "お掃除や手作りアイテムに",
+    intro: "掃除や洗濯のスプレー、バスボム、石けん、料理の香りづけなど、エッセンシャルオイルやアロマオイルを使って暮らしの中で作るレシピを集めました。分量と手順に加えて、ドテラのオイルで作るときの確認点も載せています。",
+    icon: "home",
+  },
+  {
+    slug: "care",
+    name: "保管と注意点",
+    en: "Safety",
+    searchTitle: "エッセンシャルオイルやアロマオイルの保管と注意点",
+    description: "安全に使うための確認ポイント",
+    intro: "エッセンシャルオイルやアロマオイルの保管方法と使用期限、肌につける前の確認、子どもやペットのいる家での注意点、捨て方をまとめました。使い始める前に確認してください。",
+    icon: "shield",
+  },
+];
+
+/** オイル図鑑の香りの系統 */
+export const oilFamilies = ["フローラル（花）", "シトラス（柑橘）", "ハーブ（葉と草）", "樹木・樹脂（木）", "ブレンド"] as const;
+
+export type OilGuideEntry = {
+  slug: string;
+  name: string;
+  family: (typeof oilFamilies)[number];
+  /** 製品ページの香りの表示 */
+  scent: string;
+  /** 製品ページの「塗・香・食」の表示 */
+  label: string;
+};
+
+/** オイル図鑑の一覧（/blog/oil-guide）とカテゴリページの小分類。値は各記事の OilProfile に合わせる */
+export const oilGuide: OilGuideEntry[] = [
+  { slug: "lavender", name: "ラベンダー", family: "フローラル（花）", scent: "パウダリー、フローラル、ライト", label: "15mLは塗・香" },
+  { slug: "geranium", name: "ゼラニウム", family: "フローラル（花）", scent: "ハーベイシャス、グリーン、フローラル、スイート、ドライ", label: "15mLは塗・香" },
+  { slug: "lemon", name: "レモン", family: "シトラス（柑橘）", scent: "クリーン、フレッシュ、シトラス、ブライト", label: "15mLは香・食" },
+  { slug: "orange", name: "オレンジ", family: "シトラス（柑橘）", scent: "スイート、フレッシュ、シトラス", label: "15mLは香・食、5mLは塗・香" },
+  { slug: "bergamot", name: "ベルガモット", family: "シトラス（柑橘）", scent: "シトラス、スパイシー、わずかにフローラル", label: "15mLは香・食" },
+  { slug: "grapefruit", name: "グレープフルーツ", family: "シトラス（柑橘）", scent: "シトラス、フローラル、フルーティー", label: "15mLは香・食" },
+  { slug: "peppermint", name: "ペパーミント", family: "ハーブ（葉と草）", scent: "ミンティー、フレッシュ、ハーベイシャス", label: "15mLは香・食、5mLは塗・香" },
+  { slug: "tea-tree", name: "ティーツリー", family: "ハーブ（葉と草）", scent: "ハーベイシャス、グリーン、レザリー", label: "15mLは塗・香" },
+  { slug: "eucalyptus", name: "ユーカリプタス", family: "ハーブ（葉と草）", scent: "香りの表示欄なし", label: "15mLは香のみ" },
+  { slug: "rosemary", name: "ローズマリー", family: "ハーブ（葉と草）", scent: "カンファー、ハーベイシャス", label: "15mLは香・食" },
+  { slug: "lemongrass", name: "レモングラス", family: "ハーブ（葉と草）", scent: "シトラス、ハーベイシャス、スモーキー", label: "15mLは香・食" },
+  { slug: "marjoram", name: "マジョラム", family: "ハーブ（葉と草）", scent: "ウォーム、ハーベイシャス、ウッディー", label: "15mLは香・食" },
+  { slug: "frankincense", name: "フランキンセンス", family: "樹木・樹脂（木）", scent: "ウォーム、スパイシー、クリーン", label: "15mLは塗・香" },
+  { slug: "hinoki", name: "ヒノキ", family: "樹木・樹脂（木）", scent: "ウッディー、エアリー、フレッシュ", label: "5mLは塗・香" },
+  { slug: "cypress", name: "サイプレス", family: "樹木・樹脂（木）", scent: "クリーン、フレッシュ、ウッディー、ハーベイシャス", label: "15mLは塗・香" },
+  { slug: "on-guard", name: "オンガード", family: "ブレンド", scent: "ウォーム、スパイシー、カンファー、ウッディー", label: "15mLは香・食" },
+  { slug: "serenity", name: "ドテラセレニティー", family: "ブレンド", scent: "ウォーム、フローラル、ハーバル", label: "15mLは塗・香" },
+  { slug: "balance", name: "ドテラバランス", family: "ブレンド", scent: "エアリー、フレッシュ、スイート、ウッディー", label: "15mLは塗・香" },
 ];
 
 /** ブログトップの「はじめに読みたい記事」に並べるリンク */
@@ -48,7 +130,7 @@ export const starterGuideLinks = [
   { title: "基本の使い方", text: "ディフューザーがなくても試せる4つの方法", href: "/blog/no-diffuser" },
   { title: "ディフューザーの選び方", text: "超音波式の特徴と毎日のお手入れ", href: "/blog/diffuser-guide" },
   { title: "シーン別の選び方", text: "仕事、家事、リラックスタイムのシーン別に", href: "/blog/oils-by-scene" },
-  { title: "香りの種類", text: "1本ずつ、香りの特徴と楽しみ方を紹介", href: "/blog/category/oils" },
+  { title: "香りの種類", text: "オイル図鑑の一覧から、香りの系統で探す", href: "/blog/oil-guide" },
   { title: "メーカーの選び方", text: "比べるときに見る基準を整理", href: "/blog/choosing-oil-brands" },
   { title: "オイルの種類の全体像", text: "シングル、ブレンド、サイズの違い", href: "/blog/doterra-oil-lineup" },
   { title: "保管方法", text: "保管する場所と、使用期限の目安", href: "/blog/oil-storage" },
@@ -176,106 +258,119 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "lavender",
-    title: "ドテラのラベンダー｜香りの特徴と寝室、リネン、お風呂での使い方",
-    excerpt: "ラベンダーは、おしろいのような甘さをもつやわらかな花の香りのオイルです。寝室、リネン、バスタイムで楽しむ方法を、分量とブレンド例、使うときの注意点つきで紹介します。",
+    title: "ドテラ ラベンダーの使い方｜寝室、リネン、バスタイムでの楽しみ方",
+    excerpt: "ドテラのラベンダーは、おしろいのような甘さをもつやわらかな花の香りのオイルです。寝室、リネン、バスタイムで楽しむ方法を、分量とブレンド例、使うときの注意点つきで紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/lavender.jpg",
   },
   {
     slug: "lemon",
-    title: "レモンの香りとキッチンでの使い方｜拭き掃除、香りびん、料理",
-    excerpt: "レモンは、皮をむいた瞬間のような明るい香りのオイルです。拭き掃除や重曹の香りびん、料理の香りづけなど、キッチンまわりで試せる楽しみ方と、使うときの注意点を紹介します。",
+    title: "ドテラ レモンの使い方｜キッチンまわりの楽しみ方と香りの特徴",
+    excerpt: "ドテラのレモンは、皮をむいた瞬間のような明るい香りのオイルです。拭き掃除や重曹の香りびん、料理の香りづけなど、キッチンまわりで試せる楽しみ方と、使うときの注意点を紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/lemon.jpg",
   },
   {
     slug: "peppermint",
-    title: "ドテラのペパーミント｜香りの特徴と15mL・5mLの表示の違い",
-    excerpt: "ペパーミントは、ハーブのようなスーッとする香りと清涼感が特徴のオイルです。デスクや外出先で香りを楽しむ量の目安と、15mLと5mLで異なる表示、使うときの注意点を紹介します。",
+    title: "ドテラ ペパーミントの使い方｜15mLと5mLで違う表示と香りの特徴",
+    excerpt: "ドテラのペパーミントは、ハーブのようなスーッとする香りと清涼感が特徴のオイルです。デスクや外出先で香りを楽しむ量の目安と、15mLと5mLで異なる表示、使うときの注意点を紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/peppermint.jpg",
   },
   {
     slug: "frankincense",
-    title: "フランキンセンスとは？樹脂から生まれる香りの特徴と楽しみ方",
-    excerpt: "フランキンセンスは、木の樹脂から生まれる温かくスパイシーな香りのオイルです。樹脂がオイルになるまでの流れと、静かな時間に楽しむ方法、ハンドオイルの作り方を紹介します。",
+    title: "ドテラ フランキンセンスとは？樹脂から生まれる香りと使い方",
+    excerpt: "ドテラのフランキンセンスは、木の樹脂から生まれる温かくスパイシーな香りのオイルです。樹脂がオイルになるまでの流れと、静かな時間に楽しむ方法、ハンドオイルの作り方を紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/frankincense.jpg",
   },
   {
     slug: "tea-tree",
-    title: "ティーツリーの香りとお掃除での使い方｜スプレーの分量",
-    excerpt: "ティーツリーは、青い葉にかすかな渋みが重なる香りのオイルです。掃除の仕上げに香りを添える3つの方法と、スプレーの分量、塩素系洗浄剤と一緒に使わないなどの注意点を紹介します。",
+    title: "ドテラ ティーツリーの使い方｜お掃除に香りを添える3つの方法",
+    excerpt: "ドテラのティーツリーは、青い葉にかすかな渋みが重なる香りのオイルです。掃除の仕上げに香りを添える3つの方法と、スプレーの分量、塩素系洗浄剤と一緒に使わないなどの注意点を紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/tea-tree.jpg",
   },
   {
     slug: "orange",
-    title: "オレンジの香りと使い方｜リビング、車、飲み物での楽しみ方",
-    excerpt: "オレンジは、みかんを思わせる甘く明るい香りのオイルです。リビング、車の中、飲み物で楽しむ方法と、15mLと5mLで異なる表示、柑橘のオイルで気をつけたいことを紹介します。",
+    title: "ドテラ オレンジの使い方｜リビングや車で楽しむ甘く明るい香り",
+    excerpt: "ドテラのオレンジは、みかんを思わせる甘く明るい香りのオイルです。リビング、車の中、飲み物で楽しむ方法と、15mLと5mLで異なる表示、柑橘のオイルで気をつけたいことを紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/orange.jpg",
   },
   {
     slug: "eucalyptus",
-    title: "ユーカリプタスの使い方｜区分の変更と肌につけない楽しみ方",
-    excerpt: "ユーカリプタスは、森の空気を思わせる清涼感のある香りのオイルです。2026年3月の区分の変更と、肌につけずにシャワーやディフューザー、拭き掃除で楽しむ方法を紹介します。",
+    title: "ドテラ ユーカリプタスの使い方｜肌につけずに楽しむ森の香り",
+    excerpt: "ドテラのユーカリプタスは、森の空気を思わせる清涼感のある香りのオイルです。2026年3月の区分の変更と、肌につけずにシャワーやディフューザー、拭き掃除で楽しむ方法を紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/eucalyptus.jpg",
   },
   {
     slug: "hinoki",
-    title: "ヒノキの香りと使い方｜木材と葉の違い、和室や玄関で",
+    title: "ドテラ ヒノキの使い方｜和室や玄関で楽しむ香りの特徴",
     excerpt: "ドテラのヒノキのオイルの香りの特徴を、木材と葉の違いとあわせて紹介します。和室や玄関、床の仕上げ、浴室での楽しみ方と、相性のよい香り、使うときの注意点もまとめました。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/hinoki.jpg",
   },
   {
     slug: "geranium",
-    title: "ゼラニウムの香りをスキンケアに｜乳液に混ぜる量の目安",
-    excerpt: "ゼラニウムの甘くさわやかな香りの特徴と、スキンケアの時間に香りを添える方法を紹介します。乳液やオイルに混ぜるときの量の目安と、肌に使う前に確認したいこともまとめました。",
+    title: "ドテラ ゼラニウムの使い方｜スキンケアの時間に香りを添える",
+    excerpt: "ドテラのゼラニウムの甘くさわやかな香りの特徴と、スキンケアの時間に香りを添える方法を紹介します。乳液やオイルに混ぜるときの量の目安と、肌に使う前に確認したいこともまとめました。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/geranium.jpg",
   },
   {
     slug: "bergamot",
-    title: "ベルガモットの香りと光毒性｜柑橘オイルで気をつけたいこと",
-    excerpt: "紅茶を思わせるベルガモットの香りの特徴と、部屋や紅茶の時間での楽しみ方を紹介します。光毒性や製品ごとの表示の違いなど、柑橘オイルで気をつけたいこともまとめました。",
+    title: "ドテラ ベルガモットの使い方｜紅茶を思わせる香りと光毒性の注意",
+    excerpt: "紅茶を思わせるドテラのベルガモットの香りの特徴と、部屋や紅茶の時間での楽しみ方を紹介します。光毒性や製品ごとの表示の違いなど、柑橘オイルで気をつけたいこともまとめました。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/bergamot.jpg",
   },
   {
     slug: "on-guard",
-    title: "オンガードとは？スパイス香るブレンドの特徴と暮らしでの使い方",
+    title: "ドテラ オンガードとは？スパイス香るブレンドの使い方",
     excerpt: "オンガードは、オレンジとスパイスが重なるドテラのブレンドオイルです。内容と香りの特徴、部屋の香りや掃除の仕上げ、飲食の香りづけでの使い方と、注意点をまとめました。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/on-guard.jpg",
   },
   {
     slug: "serenity",
-    title: "ドテラセレニティーの使い方｜おやすみ前の寝室、ティッシュ、足裏",
+    title: "ドテラセレニティーの使い方｜おやすみ前に楽しむ花とバニラの香り",
     excerpt: "ドテラセレニティーは、花とバニラの甘さが重なるブレンドオイルです。内容と香りの特徴、寝室やティッシュ、足裏で楽しむおやすみ前の使い方と、相性のよい香り、注意点をまとめました。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/serenity.jpg",
   },
   {
     slug: "balance",
-    title: "ドテラバランスの使い方｜朝の足裏、手首、車内で楽しむ香り",
+    title: "ドテラバランスの使い方｜朝に楽しむ木の香りのブレンド",
     excerpt: "ドテラバランスは、ココナッツオイルを含む木の香りのブレンドオイルです。内容と香りの特徴、足裏や手首、車内で楽しむ朝の使い方と、相性のよい香り、注意点をまとめました。",
     category: "oils",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/balance.jpg",
   },
   {
@@ -284,6 +379,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "重曹とクエン酸で作るバスボムの分量と手順を、1回分のレシピで紹介します。オイルは合計5滴までという目安と香りの選び方、肌に触れるものとして守りたい点もまとめました。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/bath-bomb.jpg",
   },
   {
@@ -292,6 +388,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "蜜蝋とシアバターで作る口紅クラフトの分量と手順を紹介します。マイカでの色の決め方に加えて、唇に使うオイルの濃度と、口に入る可能性への注意も計算つきで説明します。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/aroma-lip.jpg",
   },
   {
@@ -300,6 +397,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ローションに1滴混ぜる方法と、ミツロウで固める方法の2つのレシピを紹介します。どちらも濃度は約0.5%で、香りの替え方と手作りコスメで守りたい点もまとめました。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/handmade-cream.jpg",
   },
   {
@@ -308,6 +406,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "10mLのボトルで作るロールオンの手順を、オイルは合計1〜2滴という目安とともに紹介します。2種類で作る香りの組み合わせと、持ち歩くときに気をつけたい点もまとめました。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/roll-on.jpg",
   },
   {
@@ -316,6 +415,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "溶かして固める素地で作る、3色の宝石のような石けんの手順を紹介します。親子で作るときの役割の分け方と、使う人に合わせたオイルの量、守りたい注意点もまとめました。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/gem-soap.jpg",
   },
   {
@@ -324,6 +424,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "精油で香水を手作りする方法を紹介します。トップ、ミドル、ベースの組み立て方と、市販の香水との濃度の違い、肌につける香りと紙や小物で楽しむ香りの2つのレシピを説明します。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/natural-perfume.jpg",
   },
   {
@@ -332,6 +433,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "リュックや帽子の外側に香りを添える、50mLのスプレーの作り方を紹介します。肌につけない使い方と香りの組み合わせ、外に持ち出すときの火気と高温の注意もまとめました。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/outdoor-spray.jpg",
   },
   {
@@ -340,6 +442,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "酢と水にレモンを加える掃除スプレーの基本の分量と手順を紹介します。酢のにおいが苦手なときのクエン酸のレシピと、塩素系の製品と一緒に使わないための注意点も説明します。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/cleaning-spray.jpg",
   },
   {
@@ -348,6 +451,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "柔軟剤スプレーとすすぎに入れる柔軟剤の作り方、アイロンがけの香りづけを紹介します。オイルを使った布は乾燥機にかけないなど、洗濯の前に知りたい約束もまとめました。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/laundry-oils.jpg",
   },
   {
@@ -356,6 +460,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "オレンジの皮とスパイスにオイルを数滴足して作る、ポプリの手順を紹介します。季節で変える香りの組み合わせと、子どもやペット、火のまわりで気をつけたいこともまとめました。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/potpourri.jpg",
   },
   {
@@ -364,6 +469,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "日本アロマ環境協会は精油の飲用や食品との摂取をすすめていません。その立場を確認したうえで、ドテラの食品添加物の表示がある製品に限った香りづけの手順を紹介します。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/aromatic-table.jpg",
   },
   {
@@ -372,6 +478,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "豚ひき肉400gで作る約16個分のソーセージの手順を紹介します。日本アロマ環境協会の立場と使えるオイルの範囲、中心部75℃で1分以上を確かめる加熱の方法もまとめました。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-02",
     thumbnail: "/assets/blog/aroma-sausage.jpg",
   },
   {
@@ -502,7 +609,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "massage-oil-recipe",
-    title: "マッサージ用オイルの作り方｜キャリアオイルとの混ぜ方と分量",
+    title: "マッサージ用オイルの作り方｜エッセンシャルオイルやアロマオイルの混ぜ方",
     excerpt: "マッサージ用のアロマオイルの作り方を、キャリアオイルの量ごとの滴数表で紹介します。「化粧品」の表示がある製品を使い、全身と腕や脚になじませる手順と使い切りの目安もまとめました。",
     category: "how-to",
     publishedAt: "2026-11-02",
@@ -584,7 +691,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "rosemary",
-    title: "ローズマリーの香りと使い方｜朝の支度と料理の香りづけ",
+    title: "ドテラ ローズマリーの使い方｜朝の支度と料理の香りづけ",
     excerpt: "ローズマリーの香りの特徴と産地を、ドテラの製品ページの表示をもとに紹介します。朝の支度や料理の香りづけで楽しむ分量と、エッセンシャルオイルの「香・食」の表示で気をつけたいこともまとめました。",
     category: "oils",
     publishedAt: "2026-11-02",
@@ -592,32 +699,32 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "lemongrass",
-    title: "レモングラスの香りと使い方｜レモンとの違いとサシェ",
-    excerpt: "レモングラスの香りの特徴を、レモンとの違いや産地とあわせて紹介します。サシェ、ディフューザー、料理の香りづけで使う分量と、少量で強く香るオイルのブレンド例もまとめました。",
+    title: "ドテラ レモングラスの使い方｜レモンとの香りの違いとサシェ",
+    excerpt: "ドテラのレモングラスの香りの特徴を、レモンとの違いや産地とあわせて紹介します。サシェ、ディフューザー、料理の香りづけで使う分量と、少量で強く香るオイルのブレンド例もまとめました。",
     category: "oils",
     publishedAt: "2026-11-02",
     thumbnail: "/assets/blog/lemongrass.jpg",
   },
   {
     slug: "grapefruit",
-    title: "グレープフルーツの香りと使い方｜光毒性と使い切る目安",
-    excerpt: "グレープフルーツの香りの特徴と、朝の支度や玄関で楽しむ方法を紹介します。協会が光毒性の例に挙げていること、柑橘オイルを開封後1年以内に使い切る目安もまとめました。",
+    title: "ドテラ グレープフルーツの使い方｜朝の香りと光毒性の注意",
+    excerpt: "ドテラのグレープフルーツの香りの特徴と、朝の支度や玄関で楽しむ方法を紹介します。協会が光毒性の例に挙げていること、柑橘オイルを開封後1年以内に使い切る目安もまとめました。",
     category: "oils",
     publishedAt: "2026-11-02",
     thumbnail: "/assets/blog/grapefruit.jpg",
   },
   {
     slug: "cypress",
-    title: "サイプレスの香りと使い方｜ヒノキとの違いとハンドオイル",
-    excerpt: "サイプレスの香りの特徴を、ヒノキとの違いや産地とあわせて紹介します。玄関やディフューザーで楽しむ方法、植物油で薄めるハンドオイルの分量、相性のよいブレンド例もまとめました。",
+    title: "ドテラ サイプレスの使い方｜ヒノキとの香りの違いと玄関での楽しみ方",
+    excerpt: "ドテラのサイプレスの香りの特徴を、ヒノキとの違いや産地とあわせて紹介します。玄関やディフューザーで楽しむ方法、植物油で薄めるハンドオイルの分量、相性のよいブレンド例もまとめました。",
     category: "oils",
     publishedAt: "2026-11-02",
     thumbnail: "/assets/blog/cypress.jpg",
   },
   {
     slug: "marjoram",
-    title: "マジョラムの香りと使い方｜オレガノとの呼び名の違い",
-    excerpt: "マジョラムの香りの特徴と、オレガノとの呼び名の違いを紹介します。おやすみ前や料理の香りづけで楽しむ方法、エッセンシャルオイルの「香・食」の表示で気をつけたいこともまとめました。",
+    title: "ドテラ マジョラムの使い方｜オレガノとの違いとおやすみ前の香り",
+    excerpt: "ドテラのマジョラムの香りの特徴と、オレガノとの呼び名の違いを紹介します。おやすみ前や料理の香りづけで楽しむ方法、エッセンシャルオイルの「香・食」の表示で気をつけたいこともまとめました。",
     category: "oils",
     publishedAt: "2026-11-02",
     thumbnail: "/assets/blog/marjoram.jpg",

@@ -11,7 +11,7 @@ export const bathBomb: ArticleContent = {
   ],
   toc: [
     { id: "recipe", title: "基本のバスボムの作り方" },
-    { id: "scent", title: "香りの選び方のコツ" },
+    { id: "scent", title: "ドテラのオイルで作るときの香りの選び方" },
     { id: "caution", title: "作るときと使うときの注意点" },
     { id: "faq", title: "よくある質問" },
   ],
@@ -185,7 +185,7 @@ export const bathBomb: ArticleContent = {
         <PointBox>水加減が仕上がりの分かれ目です。目安は、少し湿った砂のような手触りです。ぼろぼろ崩れるときはもうひと吹きし、泡が出はじめたら水を足すのをやめます。湿らせすぎたときは、重曹を少し足して混ぜ直します。</PointBox>
       </MethodCard>
 
-      <h2 id="scent">香りの選び方のコツ</h2>
+      <h2 id="scent">ドテラのオイルで作るときの香りの選び方</h2>
       <p>好きな香りを選ぶ前に、次の3つを確かめます。</p>
       <CheckPoints
         items={[
@@ -204,7 +204,7 @@ export const bathBomb: ArticleContent = {
           ["樹脂の香り", "フランキンセンス", "ウォーム、クリーン。バスタイムに香らせる使い方"],
         ]}
       />
-      <p>いずれも製品ページの表示は「塗・香」です。表示は変わることがあるので、お手元のラベルも確認してください。読み方は<Link href="/blog/doterra-how-to-use">「塗・香・食」の表示の見方</Link>へ。2種類を混ぜるなら、次の配合から試してみましょう。</p>
+      <p>いずれもドテラの製品ページの表示は「塗・香」です。表示は変わることがあるので、お手元のラベルも確認してください。読み方は<Link href="/blog/doterra-how-to-use">「塗・香・食」の表示の見方</Link>へ。2種類を混ぜるなら、次の配合から試してみましょう。</p>
       <BlendRecipe
         title="花の香り"
         drops={[
