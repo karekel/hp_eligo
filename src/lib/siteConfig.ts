@@ -22,7 +22,7 @@ export const siteConfig = {
   /** スマホのホーム画面でアイコンの下に出る名前。Android 用は public/manifest.webmanifest にも書く */
   homeScreenName: "ELIGŌサイト",
   siteUrl: `https://${productionHost}`,
-  title: "ELIGŌ（エリゴ）｜ドテラ（doTERRA）エリザベスのエッセンシャルオイルチーム",
+  title: "ELIGŌ（エリゴ）｜エリザベスのドテラ（doTERRA）エッセンシャルオイルチーム",
   description:
     "ELIGŌ（エリゴ）は、ドテラ（doTERRA）プレジデンシャルダイヤモンドのエリザベス（Elizabeth）が主宰するエッセンシャルオイルのチームです。毎月のZoom勉強会、アロマタッチ、クラフトワークショップ、限定資料で、植物の力を暮らしとビジネスに活かす方法を学べます。",
 
