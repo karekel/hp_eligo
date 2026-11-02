@@ -214,7 +214,7 @@ export const doterraHowToUse: ArticleContent = {
       />
 
       <p>
-        まず手元の1本のラベルを見て、「香」の表示があれば、ティッシュに1滴から試してみてください。
+        まず手元の1本のラベルを見て、「香」の表示があれば、ティッシュに1滴から試してみてください。製品の全体像は<Link href="/blog/doterra-oil-lineup">ドテラのオイルの種類</Link>、ディフューザーは<Link href="/blog/laluz-diffuser">ラルツディフューザーの使い方</Link>で紹介しています。
       </p>
       <NextStepBox />
     </>

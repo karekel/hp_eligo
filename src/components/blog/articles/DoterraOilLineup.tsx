@@ -5,7 +5,7 @@ import { CautionBox, DataTable, NextStepBox, type ArticleContent } from "../Arti
 export const doterraOilLineup: ArticleContent = {
   summary: [
     "ドテラのオイルが「シングルオイル」と「ブレンドオイル」に分かれる理由と、見分け方",
-    "図鑑記事のあるシングルオイル10種とブレンドオイル3種を、香りの系統で並べた一覧",
+    "図鑑記事のあるシングルオイル15種とブレンドオイル3種を、香りの系統で並べた一覧",
     "15mLと5mLのサイズ、化粧品・食品添加物・雑貨の区分、キットという選択肢",
   ],
   toc: [
@@ -113,6 +113,36 @@ export const doterraOilLineup: ArticleContent = {
       note: "抽出部位が木部であること、日本特産のヒノキから抽出すること、香りの表示（ウッディー、エアリー、フレッシュ）、5mLで「塗・香」の表示",
     },
     {
+      title: "グレープフルーツ",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/grapefruit-15ml/",
+      note: "果皮を低温圧搾法で抽出すること、香りの表示（シトラス、フローラル、フルーティー）",
+    },
+    {
+      title: "ローズマリー",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/rosemary-15ml/",
+      note: "抽出部位が花と葉であること、香りの表示（カンファー、ハーベイシャス）",
+    },
+    {
+      title: "レモングラス",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/lemongrass-15ml/",
+      note: "抽出部位が葉であること、香りの表示（シトラス、ハーベイシャス、スモーキー）",
+    },
+    {
+      title: "マジョラム",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/marjoram-15ml/",
+      note: "抽出部位が葉であること、香りの表示（ウォーム、ハーベイシャス、ウッディー）",
+    },
+    {
+      title: "サイプレス",
+      publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
+      url: "https://www.doterra-info.jp/product/cypress-15ml/",
+      note: "抽出部位が枝と葉であること、香りの表示（クリーン、フレッシュ、ウッディー、ハーベイシャス）",
+    },
+    {
       title: "オンガード",
       publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
       url: "https://www.doterra-info.jp/product/on-guard-15ml/",
@@ -158,13 +188,13 @@ export const doterraOilLineup: ArticleContent = {
   Body: () => (
     <>
       <p>
-        ドテラのアロマに興味をもって公式サイトの製品情報を開くと、シングルオイルだけで60件、ブレンドオイルも38件が一覧に並びます（2026年11月時点）。ドテラのオイルの種類を調べ始めた人が、まず立ち止まるところです。
+        ドテラのアロマに興味をもって公式サイトの製品情報を開くと、シングルオイルだけで60件、ブレンドオイルも38件が一覧に並びます（2026年11月時点）。
       </p>
       <p>この記事では、シングル、ブレンド、サイズと区分、キットの4つの軸で全体像を整理します。1本ずつの詳しい話は、図鑑記事に渡します。</p>
 
       <h2 id="types">シングルオイルとブレンドオイルの違い</h2>
       <p>
-        ドテラのエッセンシャルオイルは、大きく2つに分かれます。1種類の植物から採った「シングルオイル」と、複数のオイルを組み合わせた「ブレンドオイル」です。公式の製品一覧も、この2つに分かれています。
+        ドテラのエッセンシャルオイルは、大きく2つに分かれます。1種類の植物から採った「シングルオイル」と、複数のオイルを組み合わせた「ブレンドオイル」です。
       </p>
       <DataTable
         caption="シングルオイルとブレンドオイルの見分け方"
@@ -176,55 +206,70 @@ export const doterraOilLineup: ArticleContent = {
         ]}
       />
       <p>
-        シングルオイルの製品ページには、学名と抽出部位が載っています。ラベンダーは花、レモンは果皮、フランキンセンスは樹脂、ヒノキは木部と、採る部位はオイルごとに違います。
+        シングルオイルの製品ページには、学名と抽出部位が載っています。
       </p>
 
       <h2 id="singles">シングルオイルの例を香りの系統で見る</h2>
-      <p>ここでは、図鑑記事のある10種類を、香りの系統で4つに分けて並べます。香りの言葉は製品ページの表示です。</p>
+      <p>図鑑記事のある15種類を、香りの系統で4つに分けて並べます。香りの言葉は製品ページの表示です。</p>
 
       <h3>フローラル（花）</h3>
       <ul>
         <li>
-          <Link href="/blog/lavender">ラベンダー</Link>: 花から採るオイル。表示はパウダリー、フローラル、ライトで、おしろいのような甘さをもつ花の香りです。
+          <Link href="/blog/lavender">ラベンダー</Link>: 花から採るオイル。表示はパウダリー、フローラル、ライト。
         </li>
         <li>
-          <Link href="/blog/geranium">ゼラニウム</Link>: 全草から採るオイル。表示はハーベイシャス、グリーン、フローラル、スイート、ドライで、草の青さに花の甘さが重なります。
+          <Link href="/blog/geranium">ゼラニウム</Link>: 全草から採るオイル。表示はハーベイシャス、グリーン、フローラル、スイート、ドライ。
         </li>
       </ul>
 
       <h3>シトラス（柑橘）</h3>
       <ul>
         <li>
-          <Link href="/blog/lemon">レモン</Link>: 果皮を圧搾したオイル。表示はクリーン、フレッシュ、シトラス、ブライトで、明るい皮の香りです。
+          <Link href="/blog/lemon">レモン</Link>: 果皮を圧搾したオイル。表示はクリーン、フレッシュ、シトラス、ブライト。
         </li>
         <li>
-          <Link href="/blog/orange">オレンジ</Link>: 同じく果皮から。表示はスイート、フレッシュ、シトラスで、甘さが前に出ます。
+          <Link href="/blog/orange">オレンジ</Link>: 果皮から採るオイル。表示はスイート、フレッシュ、シトラス。
         </li>
         <li>
-          <Link href="/blog/bergamot">ベルガモット</Link>: 表示はシトラス、スパイシー、わずかにフローラル。柑橘にスパイスの気配が加わります。
+          <Link href="/blog/bergamot">ベルガモット</Link>: 果皮から採るオイル。表示はシトラス、スパイシー、わずかにフローラル。
+        </li>
+        <li>
+          <Link href="/blog/grapefruit">グレープフルーツ</Link>: 果皮を低温圧搾したオイル。表示はシトラス、フローラル、フルーティー。
         </li>
       </ul>
 
       <h3>ハーブ（葉と草）</h3>
       <ul>
         <li>
-          <Link href="/blog/peppermint">ペパーミント</Link>: 全草から採るオイル。表示はミンティー、フレッシュ、ハーベイシャスで、清涼感のある香りです。
+          <Link href="/blog/peppermint">ペパーミント</Link>: 全草から採るオイル。表示はミンティー、フレッシュ、ハーベイシャス。
         </li>
         <li>
-          <Link href="/blog/tea-tree">ティーツリー</Link>: 葉から採るオイル。表示はハーベイシャス、グリーン、レザリーで、草に革のような渋みが混ざります。
+          <Link href="/blog/tea-tree">ティーツリー</Link>: 葉から採るオイル。表示はハーベイシャス、グリーン、レザリー。
         </li>
         <li>
           <Link href="/blog/eucalyptus">ユーカリプタス</Link>: 葉と茎から採るオイル。製品ページに香りの表示欄はなく、アイコンは「香」だけです。
+        </li>
+        <li>
+          <Link href="/blog/rosemary">ローズマリー</Link>: 花と葉から採るオイル。表示はカンファー、ハーベイシャス。
+        </li>
+        <li>
+          <Link href="/blog/lemongrass">レモングラス</Link>: 葉から採るオイル。表示はシトラス、ハーベイシャス、スモーキー。
+        </li>
+        <li>
+          <Link href="/blog/marjoram">マジョラム</Link>: 葉から採るオイル。表示はウォーム、ハーベイシャス、ウッディー。
         </li>
       </ul>
 
       <h3>樹木・樹脂（木）</h3>
       <ul>
         <li>
-          <Link href="/blog/frankincense">フランキンセンス</Link>: 樹脂から採るオイル。表示はウォーム、スパイシー、クリーンで、温かみのある香りです。
+          <Link href="/blog/frankincense">フランキンセンス</Link>: 樹脂から採るオイル。表示はウォーム、スパイシー、クリーン。
         </li>
         <li>
-          <Link href="/blog/hinoki">ヒノキ</Link>: 日本のヒノキの木部から採るオイル。表示はウッディー、エアリー、フレッシュで、軽やかな木の香りです。
+          <Link href="/blog/hinoki">ヒノキ</Link>: 日本のヒノキの木部から採るオイル。表示はウッディー、エアリー、フレッシュ。
+        </li>
+        <li>
+          <Link href="/blog/cypress">サイプレス</Link>: 枝と葉から採るオイル。表示はクリーン、フレッシュ、ウッディー、ハーベイシャス。
         </li>
       </ul>
 
@@ -232,7 +277,7 @@ export const doterraOilLineup: ArticleContent = {
       <p>ブレンドオイルは公式の一覧に38件あります。図鑑記事のある3つを紹介します。</p>
       <ul>
         <li>
-          <Link href="/blog/on-guard">オンガード</Link>: オレンジ、クローブ、シナモンなどを合わせたブレンド。表示はウォーム、スパイシー、カンファー、ウッディーで、スパイスの香りが立ちます。
+          <Link href="/blog/on-guard">オンガード</Link>: オレンジ、クローブ、シナモンなどを合わせたブレンド。表示はウォーム、スパイシー、カンファー、ウッディー。
         </li>
         <li>
           <Link href="/blog/serenity">ドテラセレニティー</Link>: ラベンダー、シダーウッド、イランイランなどを合わせたブレンド。表示はウォーム、フローラル、ハーバルです。
@@ -251,7 +296,7 @@ export const doterraOilLineup: ArticleContent = {
         ドテラのオイルは化粧品、食品添加物、雑貨の3つの区分に分かれ、区分によってできる使い方が変わります。製品ページでは「塗」「香」「食」のアイコンで示され、一覧ページでも絞り込めます。区分の中身は<Link href="/blog/doterra-drinkable">ドテラのオイルはなぜ「飲める」と言われるの？</Link>にまとめています。
       </p>
       <p>
-        同じ名前でも、容量で表示が違うことがあります。ペパーミントは15mLが「香・食」、5mLが「塗・香」です。区分が変わることもあり、ユーカリプタスは2026年3月11日の注文分から化粧油から雑貨油になりました。買う前に、その容量の製品ページとラベルを確認しましょう。
+        同じ名前でも、容量で表示が違うことがあります。ペパーミントは15mLが「香・食」、5mLが「塗・香」です。区分が変わることもあり、ユーカリプタスは2026年3月11日の注文分から化粧油から雑貨油になりました。買う前に、その容量の製品ページとラベルを確認しましょう。読み方は<Link href="/blog/doterra-how-to-use">ドテラのオイルの使い方</Link>へ。
       </p>
 
       <h3>キットでまとめて揃える</h3>
@@ -270,11 +315,11 @@ export const doterraOilLineup: ArticleContent = {
         ]}
       />
       <p>
-        子どもとペットについては、<Link href="/blog/kids-safety">子どもとエッセンシャルオイル</Link>と<Link href="/blog/pets-safety">ペットのいる家でオイルを使うときの注意点</Link>で、年齢や香りとの距離の取り方までまとめています。
+        子どもとペットについては、<Link href="/blog/kids-safety">子どもとエッセンシャルオイル</Link>と<Link href="/blog/pets-safety">ペットのいる家でオイルを使うときの注意点</Link>で確認できます。
       </p>
 
       <p>
-        種類の全体像がつかめたら、次は「最初の1本」です。シングルかブレンドか、15mLか5mLか、どの区分かを見ながら、使いたい場面で選ぶと迷いません。場面ごとの選び方は<Link href="/blog/oils-by-scene">シーン別オイルの選び方</Link>で紹介しています。
+        種類の全体像がつかめたら、次は「最初の1本」です。使いたい場面で選ぶと迷いません。場面ごとの選び方は<Link href="/blog/oils-by-scene">シーン別オイルの選び方</Link>で紹介しています。ほかのメーカーも含めて比べるときは<Link href="/blog/choosing-oil-brands">メーカーの選び方</Link>へ。
       </p>
       <NextStepBox />
     </>

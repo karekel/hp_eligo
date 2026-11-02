@@ -27,7 +27,7 @@ export const siteConfig = {
     "ELIGŌ（エリゴ）は、ドテラ（doTERRA）プレジデンシャルダイヤモンドのエリザベス（Elizabeth）が主宰するエッセンシャルオイルのチームです。毎月のZoom勉強会、アロマタッチ、クラフトワークショップ、限定資料で、植物の力を暮らしとビジネスに活かす方法を学べます。",
 
   /** OGP */
-  ogImage: "/assets/og_image.png",
+  ogImage: "/assets/og_image.jpg",
 
   /** 外部リンク */
   externalLinks: {

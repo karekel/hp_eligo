@@ -204,7 +204,7 @@ export const bathBomb: ArticleContent = {
           ["樹脂の香り", "フランキンセンス", "ウォーム、クリーン。バスタイムに香らせる使い方"],
         ]}
       />
-      <p>いずれも製品ページの表示は「塗・香」です。表示は変わることがあるので、お手元のラベルも確認してください。2種類を混ぜるなら、次の配合から試してみましょう。</p>
+      <p>いずれも製品ページの表示は「塗・香」です。表示は変わることがあるので、お手元のラベルも確認してください。読み方は<Link href="/blog/doterra-how-to-use">「塗・香・食」の表示の見方</Link>へ。2種類を混ぜるなら、次の配合から試してみましょう。</p>
       <BlendRecipe
         title="花の香り"
         drops={[
@@ -265,7 +265,7 @@ export const bathBomb: ArticleContent = {
       <p>
         バスボムは水加減さえつかめば、色と香りを自由に変えられます。まずはオイル2滴から、好きな香りで作ってみてください。お湯にオイルを入れる前に知っておきたいことは
         <Link href="/blog/bath-oils">お風呂でのオイルの使い方</Link>に、年齢ごとの注意は
-        <Link href="/blog/kids-safety">子どもとエッセンシャルオイル</Link>にまとめています。
+        <Link href="/blog/kids-safety">子どもとエッセンシャルオイル</Link>にまとめています。香りの特徴は<Link href="/blog/lavender">ラベンダー</Link>、<Link href="/blog/geranium">ゼラニウム</Link>、<Link href="/blog/frankincense">フランキンセンス</Link>の記事で紹介しています。
       </p>
       <NextStepBox />
     </>

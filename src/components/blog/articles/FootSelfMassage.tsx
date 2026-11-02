@@ -124,7 +124,7 @@ export const footSelfMassage: ArticleContent = {
             { title: "オイルを1滴加えて混ぜる", text: "清潔なスプーンで混ぜます。作り置きはせず、その日に使い切ります。" },
           ]}
         />
-        <PointBox>キャリアオイルの選び方と濃度の計算は、<Link href="/blog/carrier-oil-dilution">キャリアオイルの希釈の計算</Link>で確認できます。</PointBox>
+        <PointBox>キャリアオイルの選び方と濃度の計算は、<Link href="/blog/carrier-oil-dilution">キャリアオイルの希釈の計算</Link>で確認できます。全身に使うオイルは<Link href="/blog/massage-oil-recipe">マッサージ用オイルの作り方</Link>へ。</PointBox>
       </MethodCard>
       <p>量を変えるときは、次の表を目安にしてください。肌が弱い人や初めての人は、濃度の低い組み合わせから試しましょう。</p>
       <DataTable

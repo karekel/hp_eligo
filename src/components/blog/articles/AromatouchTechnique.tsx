@@ -194,7 +194,7 @@ export const aromatouchTechnique: ArticleContent = {
         <li>対面のトレーニングクラス: 認定トレーナーから6時間で学びます。公式の名称は「ドテラ公認 アロマタッチ®テクニックトレーニングクラス」です。</li>
       </ul>
       <p>
-        ELIGŌでは、アロマタッチ テクニックの認定トレーナーである主宰のエリザベスから学ぶこともできます。まず手だけで試したい方は、<Link href="/blog/aromatouch-hand">アロマタッチのハンドテクニック</Link>から始めてみてください。
+        ELIGŌでは、アロマタッチ テクニックの認定トレーナーである主宰のエリザベスから学ぶこともできます。まず手だけで試したい方は、<Link href="/blog/aromatouch-hand">アロマタッチのハンドテクニック</Link>から始めてみてください。受講の条件と流れは<Link href="/blog/aromatouch-certification">アロマタッチの資格の取り方</Link>で紹介しています。
       </p>
 
       <p>

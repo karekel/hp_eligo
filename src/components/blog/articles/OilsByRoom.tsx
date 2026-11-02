@@ -183,7 +183,7 @@ export const oilsByRoom: ArticleContent = {
         ペットのいる家は<Link href="/blog/pets-safety">ペットのいる家での注意点</Link>、子どものいる家は<Link href="/blog/kids-safety">子どもとエッセンシャルオイル</Link>も読んでください。
       </p>
 
-      <p>まずは玄関かトイレのどちらかに、1滴から置いてみてください。</p>
+      <p>まずは玄関かトイレのどちらかに、1滴から置いてみてください。置いたまま香らせたいときは<Link href="/blog/reed-diffuser">リードディフューザーの作り方</Link>もあります。</p>
       <NextStepBox />
     </>
   ),

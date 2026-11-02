@@ -195,7 +195,7 @@ export const choosingOilBrands: ArticleContent = {
       />
 
       <p>
-        まずは手元のボトルで、8項目がそろっているかを見てみてください。買ったあとのしまい方は<Link href="/blog/oil-storage">オイルの保管方法</Link>で紹介しています。
+        まずは手元のボトルで、8項目がそろっているかを見てみてください。買ったあとのしまい方は<Link href="/blog/oil-storage">オイルの保管方法</Link>で紹介しています。ドテラの製品の全体像は<Link href="/blog/doterra-oil-lineup">ドテラのオイルの種類</Link>で紹介しています。
       </p>
       <NextStepBox />
     </>

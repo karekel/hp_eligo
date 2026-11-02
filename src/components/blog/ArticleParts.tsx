@@ -158,7 +158,7 @@ export function CautionBox({ title = "使うときの注意点", items }: { titl
   );
 }
 
-export function Faq({ items }: { items: { q: string; a: string }[] }) {
+export function Faq({ items }: { items: { q: string; a: ReactNode }[] }) {
   return (
     <div className="mt-6 divide-y divide-black/5 overflow-hidden rounded-2xl border border-black/5 bg-white">
       {items.map((item) => (
@@ -276,6 +276,7 @@ export function DataTable({ caption, headers, rows }: { caption: string; headers
 
 export function OilProfile({ name, en, color, image, rows }: { name: string; en: string; color: string; image?: string; rows: { label: string; value: string }[] }) {
   return (
+    <>
     <div className="mt-8 grid overflow-hidden rounded-2xl border border-black/5 bg-white md:grid-cols-[220px_1fr]">
       <div className="relative flex items-end justify-center gap-1 bg-[#f7f4ee] px-6 pb-6 pt-8">
         {image && SHOW_PRODUCT_IMAGES ? (
@@ -304,6 +305,11 @@ export function OilProfile({ name, en, color, image, rows }: { name: string; en:
         ))}
       </dl>
     </div>
+    <p>
+      製品ページの「塗・香・食」の見方は<Link href="/blog/doterra-how-to-use">オイルの使い方と表示の読み方</Link>、ほかのオイルは
+      <Link href="/blog/doterra-oil-lineup">オイルの種類の全体像</Link>で紹介しています。
+    </p>
+    </>
   );
 }
 

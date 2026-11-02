@@ -176,7 +176,7 @@ export const handmadeCream: ArticleContent = {
       <p>協会が紹介するシアバターとミツロウのアロマバームは、精油1〜2滴で、顔に使うものは1滴までです。顔にも使うつもりなら、ミツロウのレシピは1滴に減らすと約0.25%になります。</p>
 
       <h2 id="scent">香りを替えるときの選び方</h2>
-      <p>ドテラの案内のレシピはフランキンセンスを使います。公式に化粧品カテゴリと明記されているオイルです。ほかの香りにするときは、ラベルに「化粧品」の表示があるかを確かめ、滴数は同じにします。</p>
+      <p>ドテラの案内のレシピはフランキンセンスを使います。公式に化粧品カテゴリと明記されているオイルです。ほかの香りにするときは、ラベルに「化粧品」の表示があるかを確かめ、滴数は同じにします。読み方は<Link href="/blog/doterra-how-to-use">「塗・香・食」の表示の見方</Link>へ。</p>
       <DataTable
         caption="香りを替えるときのオイルの例"
         headers={["オイル", "製品ページの香りの説明", "製品ページの使い方の例"]}
@@ -227,7 +227,7 @@ export const handmadeCream: ArticleContent = {
       <p>
         まずはローションに1滴のレシピで、香りと使い心地を確かめてみてください。濃度の計算は
         <Link href="/blog/carrier-oil-dilution">キャリアオイルの選び方と希釈の計算</Link>で、唇に使うクラフトは
-        <Link href="/blog/aroma-lip">アロマリップの作り方</Link>で紹介しています。
+        <Link href="/blog/aroma-lip">アロマリップの作り方</Link>で紹介しています。香りの特徴は<Link href="/blog/lavender">ラベンダー</Link>、<Link href="/blog/geranium">ゼラニウム</Link>、<Link href="/blog/frankincense">フランキンセンス</Link>の記事で紹介しています。肌に使う前の確認は<Link href="/blog/oils-on-skin">エッセンシャルオイルは肌につけていい？</Link>へ。
       </p>
       <NextStepBox />
     </>

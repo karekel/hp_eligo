@@ -221,7 +221,7 @@ export const lavender: ArticleContent = {
       />
 
       <p>
-        ラベンダーは、1日の終わりに香りの時間を作りたいときの入り口になるオイルです。まずは今夜、ティッシュに1滴から試してみてください。足元にも香りを使ってみたくなったら、<Link href="/blog/foot-self-massage">足裏セルフマッサージのやり方</Link>もあわせてどうぞ。
+        ラベンダーは、1日の終わりに香りの時間を作りたいときの入り口になるオイルです。まずは今夜、ティッシュに1滴から試してみてください。足元にも香りを使ってみたくなったら、<Link href="/blog/foot-self-massage">足裏セルフマッサージのやり方</Link>もあわせてどうぞ。寝室での置き方は<Link href="/blog/bedtime-scents">おやすみ前の香りの選び方</Link>も参考にしてください。
       </p>
       <NextStepBox />
     </>

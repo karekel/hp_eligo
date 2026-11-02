@@ -69,10 +69,11 @@ export default {
     }
 
     if (res?.ok) {
-      const toCache = new Response(res.clone().body, res);
-      toCache.headers.set("Cache-Control", `public, max-age=${IMAGE_CACHE_SECONDS}`);
-      ctx.waitUntil(cache.put(cacheKey, toCache));
-      return res;
+      // エッジだけでなくブラウザにも保存させ、再訪時の画像の取り直しをなくす
+      const cacheable = new Response(res.body, res);
+      cacheable.headers.set("Cache-Control", `public, max-age=${IMAGE_CACHE_SECONDS}`);
+      ctx.waitUntil(cache.put(cacheKey, cacheable.clone()));
+      return cacheable;
     }
 
     // 変換側のエラー（5xx・例外）のときだけ元画像にフォールバックする

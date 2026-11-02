@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { Noto_Sans_JP } from "next/font/google";
 import { siteConfig, siteFavicons } from "@/lib/siteConfig";
 import { analyticsConfig } from "@/lib/analytics";
@@ -7,28 +6,12 @@ import Analytics from "@/components/Analytics";
 import AnalyticsEvents from "@/components/AnalyticsEvents";
 import "./globals.css";
 
-const cyGrotesk = localFont({
-  src: [
-    {
-      path: "../../public/fonts/CyGrotesk-WideThin.otf",
-      weight: "100",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/CyGrotesk-WideBold.otf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-cy-grotesk",
-  display: "swap",
-});
-
 const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-jp",
-  weight: ["300", "400", "500", "700"],
+  weight: ["400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -66,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${cyGrotesk.variable} ${notoSansJP.variable} antialiased`}>
+      <body className={`${notoSansJP.variable} antialiased`}>
         {children}
         <Analytics />
         <AnalyticsEvents />

@@ -134,7 +134,7 @@ export const kidsSafety: ArticleContent = {
           },
           {
             q: "子どもと一緒にクラフトをしてもいいですか？",
-            a: "3歳未満は避けましょう。3歳以上でも、オイルのボトルは大人が持ち、滴数を数えて入れます。子どもと作る例は「宝石みたいな石けんの作り方」で紹介しています。",
+            a: <>3歳未満は避けましょう。3歳以上でも、オイルのボトルは大人が持ち、滴数を数えて入れます。子どもと作る例は<Link href="/blog/gem-soap">宝石みたいな石けんの作り方</Link>で紹介しています。</>,
           },
           {
             q: "妊娠中や授乳中は使えますか？",
@@ -144,7 +144,7 @@ export const kidsSafety: ArticleContent = {
       />
 
       <p>
-        量と置き場所を決めるのは大人の役目です。まず今日は、ボトルの置き場所を確かめてみてください。しまい方は<Link href="/blog/oil-storage">オイルの保管方法</Link>、ペットがいる場合は<Link href="/blog/pets-safety">ペットのいる家でオイルを使うときの注意点</Link>も確認しましょう。
+        量と置き場所を決めるのは大人の役目です。まず今日は、ボトルの置き場所を確かめてみてください。しまい方は<Link href="/blog/oil-storage">オイルの保管方法</Link>、ペットがいる場合は<Link href="/blog/pets-safety">ペットのいる家でオイルを使うときの注意点</Link>も確認しましょう。使う前の確認は<Link href="/blog/oil-precautions">エッセンシャルオイルの注意点まとめ</Link>でも整理しています。
       </p>
       <NextStepBox />
     </>

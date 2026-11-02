@@ -148,7 +148,7 @@ export const orange: ArticleContent = {
             { title: "送風口の近くに置く", text: "運転のじゃまにならず、動かない場所を選びます。降りるときは持ち帰ります。" },
           ]}
         />
-        <PointBox>オイルのボトルは車の中に置きっぱなしにしないでください。夏の車内のような高温は避けて保管します。</PointBox>
+        <PointBox>オイルのボトルは車の中に置きっぱなしにしないでください。夏の車内のような高温は避けて保管します。ほかの方法は<Link href="/blog/oils-in-car">車でエッセンシャルオイルを楽しむ方法</Link>へ。</PointBox>
       </MethodCard>
 
       <h3>飲み物に使うときは</h3>

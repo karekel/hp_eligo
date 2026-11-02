@@ -134,7 +134,7 @@ export const howToUseAromaOils: ArticleContent = {
         ]}
       />
       <p>
-        区分のくわしい説明は、<Link href="/blog/doterra-drinkable">ドテラのオイルはなぜ「飲める」と言われるの？</Link>にあります。まず手元のボトルのラベルを見てみましょう。
+        区分のくわしい説明は、<Link href="/blog/doterra-drinkable">ドテラのオイルはなぜ「飲める」と言われるの？</Link>にあります。表示は<Link href="/blog/doterra-how-to-use">ドテラのオイルの使い方</Link>へ。まず手元のボトルのラベルを見てみましょう。
       </p>
 
       <h2 id="scent">香りを楽しむ｜最初に試したい使い方</h2>
@@ -145,6 +145,10 @@ export const howToUseAromaOils: ArticleContent = {
         <li>道具を買わずに試したい: <Link href="/blog/no-diffuser">ディフューザーがなくても香りを楽しむ方法</Link></li>
         <li>部屋全体に香らせたい: <Link href="/blog/diffuser-guide">ディフューザーの選び方と使い方</Link></li>
         <li>仕事や家事の時間に合わせて選びたい: <Link href="/blog/oils-by-scene">シーン別の使い方</Link></li>
+          <li>部屋ごとに置きたい: <Link href="/blog/oils-by-room">部屋別の使い方</Link></li>
+          <li>車の中で楽しみたい: <Link href="/blog/oils-in-car">車で楽しむ方法</Link></li>
+          <li>おやすみ前に楽しみたい: <Link href="/blog/bedtime-scents">寝室での使い方</Link></li>
+          <li>贈り物にしたい: <Link href="/blog/oil-gifts">プレゼントの選び方</Link></li>
         <li>香りを組み合わせたい: <Link href="/blog/blend-basics">ブレンドの基本</Link></li>
         <li>滴数の感覚をつかみたい: <Link href="/blog/drop-count">1滴の量と滴数</Link></li>
       </ul>
@@ -152,7 +156,7 @@ export const howToUseAromaOils: ArticleContent = {
 
       <h2 id="skin">肌とお風呂で使う｜表示を確かめて薄める</h2>
       <p>
-        肌に使うのは、ラベルに「化粧品」の表示がある製品だけです。原液は肌につけず、植物油で薄めます。協会の目安は、ボディ用で1%以下、顔用で0.5%以下です。何滴になるかは、<Link href="/blog/carrier-oil-dilution">キャリアオイルの選び方と濃度の計算</Link>で確かめてください。
+        肌に使うのは、ラベルに「化粧品」の表示がある製品だけです。原液は肌につけず、植物油で薄めます。順番は<Link href="/blog/oils-on-skin">肌につけていい？</Link>へ。協会の目安は、ボディ用で1%以下、顔用で0.5%以下です。何滴になるかは、<Link href="/blog/carrier-oil-dilution">キャリアオイルの選び方と濃度の計算</Link>で確かめてください。
       </p>
       <p>
         薄めたオイルは、<Link href="/blog/foot-self-massage">足裏のセルフマッサージ</Link>に使えます。持ち歩くなら、<Link href="/blog/roll-on">ロールオン</Link>を作る方法もあります。
@@ -208,7 +212,7 @@ export const howToUseAromaOils: ArticleContent = {
         ]}
       />
       <p>
-        注意点は<Link href="/blog/kids-safety">子どもとエッセンシャルオイル</Link>と<Link href="/blog/pets-safety">ペットのいる家での注意点</Link>にもまとめています。
+        注意点は<Link href="/blog/kids-safety">子どもとエッセンシャルオイル</Link>と<Link href="/blog/pets-safety">ペットのいる家での注意点</Link>にもまとめています。全体は<Link href="/blog/oil-precautions">注意点まとめ</Link>へ。
       </p>
 
       <p>まずはラベルを読んで、ティッシュに1滴。そこから、使いたい場面に合う記事を読み進めてみてください。</p>

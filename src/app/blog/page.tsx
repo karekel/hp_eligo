@@ -16,7 +16,7 @@ export default function BlogTopPage() {
     <main className="overflow-x-clip">
       {/* ヒーロー */}
       <section className="relative h-[360px] overflow-hidden md:h-[480px]">
-        <Image src="/assets/背景/top backg.png" alt="" fill priority sizes="100vw" className="object-cover object-[60%_55%]" />
+        <Image src="/assets/blog/hero.jpg" alt="" fill priority fetchPriority="high" sizes="100vw" className="object-cover object-[60%_55%]" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/45" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-white">
           <h1>

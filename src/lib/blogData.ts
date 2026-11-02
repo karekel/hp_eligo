@@ -49,7 +49,8 @@ export const starterGuideLinks = [
   { title: "ディフューザーの選び方", text: "超音波式の特徴と毎日のお手入れ", href: "/blog/diffuser-guide" },
   { title: "シーン別の選び方", text: "仕事、家事、リラックスタイムのシーン別に", href: "/blog/oils-by-scene" },
   { title: "香りの種類", text: "1本ずつ、香りの特徴と楽しみ方を紹介", href: "/blog/category/oils" },
-  { title: "車で楽しむ", text: "アロマストーンとクリップの使い方", href: "/blog/oils-in-car" },
+  { title: "メーカーの選び方", text: "比べるときに見る基準を整理", href: "/blog/choosing-oil-brands" },
+  { title: "オイルの種類の全体像", text: "シングル、ブレンド、サイズの違い", href: "/blog/doterra-oil-lineup" },
   { title: "保管方法", text: "保管する場所と、使用期限の目安", href: "/blog/oil-storage" },
   { title: "捨て方", text: "残った中身とビンの処分方法", href: "/blog/oil-disposal" },
 ];
@@ -73,22 +74,21 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラのオイルは、すべてが飲めるわけではありません。日本での製品の区分と、飲食物の香りづけに使うときに守りたいポイントを解説します。",
     category: "beginner",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/v1/whydoterrafocus.png",
+    thumbnail: "/assets/blog/doterra-drinkable.jpg",
     recommendOrder: 2,
   },
   {
     slug: "no-diffuser",
-    title: "エッセンシャルオイルやアロマオイルの使い方｜ディフューザーなしで簡単に楽しむ4つの方法",
+    title: "ディフューザーなしの使い方｜エッセンシャルオイルやアロマオイル",
     excerpt: "エッセンシャルオイルやアロマオイルの使い方を、道具なしで簡単に試せる順に紹介します。ティッシュ、アロマストーン、マグカップ、手作りスプレーの4つの方法をまとめました。",
     category: "how-to",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/ABOUT/Lifestyle & Craft.JPG",
-    recommendOrder: 1,
+    thumbnail: "/assets/blog/no-diffuser.jpg",
   },
   // ---- 41本 ここから ----
   {
     slug: "diffuser-guide",
-    title: "ディフューザーの選び方と使い方｜水なしタイプとの違いと毎日のお手入れ",
+    title: "アロマディフューザーの選び方と使い方｜水なしとの違いと手入れ",
     excerpt: "アロマディフューザーの種類と、水なしタイプとの違い、選ぶときに確認したい5つのことをまとめました。超音波式の使い方と、取扱説明書をもとにしたお手入れの方法も紹介します。",
     category: "how-to",
     publishedAt: "2026-10-31",
@@ -104,7 +104,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "drop-count",
-    title: "1滴は何mL？3mL、5mL、15mLの滴数と、オイルが出にくいときの対処法",
+    title: "1滴は何mL？ボトルの滴数とオイルが出にくいときの対処法",
     excerpt: "1滴は約0.05mL、20滴で1mLが計算の目安です。3mL、5mL、15mLのボトルに入っている滴数の考え方と、1滴ずつ落とす手順、オイルが出にくいときに試すことをまとめました。",
     category: "how-to",
     publishedAt: "2026-10-31",
@@ -112,7 +112,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "carrier-oil-dilution",
-    title: "エッセンシャルオイルを肌につける前に｜キャリアオイルの選び方と濃度1%は何滴？",
+    title: "キャリアオイルの選び方と薄め方｜濃度1%は何滴？",
     excerpt: "エッセンシャルオイルを肌につける前に知っておきたい、キャリアオイルの選び方と薄め方を紹介します。濃度1%が何滴になるかを計算式と早見表で示し、注意点もまとめました。",
     category: "how-to",
     publishedAt: "2026-10-31",
@@ -120,7 +120,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "oil-containers",
-    title: "オイルの容器はガラスが基本？プラスチックを避ける理由とボトルの選び方",
+    title: "オイルの容器はガラスが基本？プラスチックを避ける理由",
     excerpt: "オイルの保存に遮光性のガラス容器が向く理由と、プラスチック容器についてわかっていること、わかっていないことを説明します。スプレーなど用途別のボトルの選び方も紹介します。",
     category: "how-to",
     publishedAt: "2026-10-31",
@@ -128,7 +128,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "bath-oils",
-    title: "エッセンシャルオイルやアロマオイルをお風呂で使う方法｜お湯に直接入れる前に知りたいこと",
+    title: "お風呂での使い方｜エッセンシャルオイルやアロマオイルの入れ方",
     excerpt: "エッセンシャルオイルやアロマオイルは水に溶けにくいので、湯船に入れる前に知っておきたいことがあります。無水エタノールや天然塩を使う入れ方と滴数の目安を紹介します。",
     category: "how-to",
     publishedAt: "2026-10-31",
@@ -136,7 +136,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "foot-self-massage",
-    title: "足裏セルフマッサージのやり方｜マッサージ用オイルの作り方とおやすみ前の使い方",
+    title: "足裏セルフマッサージのやり方｜おやすみ前の手順と力加減",
     excerpt: "マッサージ用オイルの作り方と、おやすみ前に足裏へ使うときの手順を紹介します。小さじ1杯のキャリアオイルに1滴から始める方法と、力加減のコツもまとめました。",
     category: "how-to",
     publishedAt: "2026-10-31",
@@ -144,7 +144,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "aromatouch-technique",
-    title: "アロマタッチ テクニックのやり方｜8本のオイルの順番と認定コース",
+    title: "ドテラのアロマタッチ テクニック｜8本のオイルの順番と認定コース",
     excerpt: "アロマタッチ テクニックは、8本のオイルと手のタッチを組み合わせるドテラ独自の技法です。オイルの順番と全体の流れ、始める前に確認したいこと、認定コースの学び方を紹介します。",
     category: "how-to",
     publishedAt: "2026-10-31",
@@ -168,7 +168,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "oils-by-scene",
-    title: "エッセンシャルオイルやアロマオイルの使い方をシーン別に｜部屋、玄関、仕事、リラックスタイムの選び方",
+    title: "シーン別の使い方｜エッセンシャルオイルやアロマオイルの選び方",
     excerpt: "エッセンシャルオイルやアロマオイルの使い方を、部屋や玄関、仕事、家事、リラックスタイムの場面に分けて紹介します。オイルの選び方と滴数、まわりの人への配慮もまとめました。",
     category: "how-to",
     publishedAt: "2026-10-31",
@@ -176,7 +176,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "lavender",
-    title: "ラベンダーの香りの特徴と、暮らしでの楽しみ方",
+    title: "ドテラのラベンダー｜香りの特徴と寝室、リネン、お風呂での使い方",
     excerpt: "ラベンダーは、おしろいのような甘さをもつやわらかな花の香りのオイルです。寝室、リネン、バスタイムで楽しむ方法を、分量とブレンド例、使うときの注意点つきで紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
@@ -184,7 +184,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "lemon",
-    title: "レモンの香りの特徴と、キッチンまわりでの楽しみ方",
+    title: "レモンの香りとキッチンでの使い方｜拭き掃除、香りびん、料理",
     excerpt: "レモンは、皮をむいた瞬間のような明るい香りのオイルです。拭き掃除や重曹の香りびん、料理の香りづけなど、キッチンまわりで試せる楽しみ方と、使うときの注意点を紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
@@ -192,7 +192,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "peppermint",
-    title: "ペパーミントの香りの特徴と、清涼感を楽しむ使い方",
+    title: "ドテラのペパーミント｜香りの特徴と15mL・5mLの表示の違い",
     excerpt: "ペパーミントは、ハーブのようなスーッとする香りと清涼感が特徴のオイルです。デスクや外出先で香りを楽しむ量の目安と、15mLと5mLで異なる表示、使うときの注意点を紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
@@ -208,7 +208,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "tea-tree",
-    title: "ティーツリーの香りの特徴と、お掃除での使い方",
+    title: "ティーツリーの香りとお掃除での使い方｜スプレーの分量",
     excerpt: "ティーツリーは、青い葉にかすかな渋みが重なる香りのオイルです。掃除の仕上げに香りを添える3つの方法と、スプレーの分量、塩素系洗浄剤と一緒に使わないなどの注意点を紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
@@ -216,7 +216,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "orange",
-    title: "オレンジの香りの特徴と、甘く明るい香りの楽しみ方",
+    title: "オレンジの香りと使い方｜リビング、車、飲み物での楽しみ方",
     excerpt: "オレンジは、みかんを思わせる甘く明るい香りのオイルです。リビング、車の中、飲み物で楽しむ方法と、15mLと5mLで異なる表示、柑橘のオイルで気をつけたいことを紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
@@ -224,7 +224,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "eucalyptus",
-    title: "ユーカリプタスの香りの特徴と、森のような香りの楽しみ方",
+    title: "ユーカリプタスの使い方｜区分の変更と肌につけない楽しみ方",
     excerpt: "ユーカリプタスは、森の空気を思わせる清涼感のある香りのオイルです。2026年3月の区分の変更と、肌につけずにシャワーやディフューザー、拭き掃除で楽しむ方法を紹介します。",
     category: "oils",
     publishedAt: "2026-10-31",
@@ -232,7 +232,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "hinoki",
-    title: "ヒノキの香りの特徴と、和の空間での楽しみ方",
+    title: "ヒノキの香りと使い方｜木材と葉の違い、和室や玄関で",
     excerpt: "ドテラのヒノキのオイルの香りの特徴を、木材と葉の違いとあわせて紹介します。和室や玄関、床の仕上げ、浴室での楽しみ方と、相性のよい香り、使うときの注意点もまとめました。",
     category: "oils",
     publishedAt: "2026-10-31",
@@ -240,7 +240,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "geranium",
-    title: "ゼラニウムの香りの特徴と、スキンケアタイムの楽しみ方",
+    title: "ゼラニウムの香りをスキンケアに｜乳液に混ぜる量の目安",
     excerpt: "ゼラニウムの甘くさわやかな香りの特徴と、スキンケアの時間に香りを添える方法を紹介します。乳液やオイルに混ぜるときの量の目安と、肌に使う前に確認したいこともまとめました。",
     category: "oils",
     publishedAt: "2026-10-31",
@@ -248,7 +248,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "bergamot",
-    title: "ベルガモットの香りの特徴と、柑橘オイルで気をつけたいこと",
+    title: "ベルガモットの香りと光毒性｜柑橘オイルで気をつけたいこと",
     excerpt: "紅茶を思わせるベルガモットの香りの特徴と、部屋や紅茶の時間での楽しみ方を紹介します。光毒性や製品ごとの表示の違いなど、柑橘オイルで気をつけたいこともまとめました。",
     category: "oils",
     publishedAt: "2026-10-31",
@@ -264,7 +264,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "serenity",
-    title: "ドテラセレニティーの香りの特徴と、おやすみ前の楽しみ方",
+    title: "ドテラセレニティーの使い方｜おやすみ前の寝室、ティッシュ、足裏",
     excerpt: "ドテラセレニティーは、花とバニラの甘さが重なるブレンドオイルです。内容と香りの特徴、寝室やティッシュ、足裏で楽しむおやすみ前の使い方と、相性のよい香り、注意点をまとめました。",
     category: "oils",
     publishedAt: "2026-10-31",
@@ -272,7 +272,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "balance",
-    title: "ドテラバランスの香りの特徴と、朝の使い方",
+    title: "ドテラバランスの使い方｜朝の足裏、手首、車内で楽しむ香り",
     excerpt: "ドテラバランスは、ココナッツオイルを含む木の香りのブレンドオイルです。内容と香りの特徴、足裏や手首、車内で楽しむ朝の使い方と、相性のよい香り、注意点をまとめました。",
     category: "oils",
     publishedAt: "2026-10-31",
@@ -304,7 +304,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "roll-on",
-    title: "ロールオンアロマの作り方｜持ち歩ける自分だけのブレンド",
+    title: "ロールオンアロマの作り方｜ドテラのオイルで持ち歩くブレンド",
     excerpt: "10mLのボトルで作るロールオンの手順を、オイルは合計1〜2滴という目安とともに紹介します。2種類で作る香りの組み合わせと、持ち歩くときに気をつけたい点もまとめました。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
@@ -360,7 +360,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "aromatic-table",
-    title: "オイルで香りづけする料理｜食品添加物の表示があるオイルで作るアロマティックテーブル",
+    title: "オイルで香りづけする料理｜アロマティックテーブルの手順",
     excerpt: "日本アロマ環境協会は精油の飲用や食品との摂取をすすめていません。その立場を確認したうえで、ドテラの食品添加物の表示がある製品に限った香りづけの手順を紹介します。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
@@ -376,7 +376,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "what-is-essential-oil",
-    title: "エッセンシャルオイル（精油）とは？読み方、アロマオイルとの違いと選び方",
+    title: "エッセンシャルオイル（精油）とは？読み方とアロマオイルとの違い",
     excerpt: "エッセンシャルオイルは精油（せいゆ）とも呼ばれる、植物から抽出した揮発性の芳香物質です。「アロマオイル」との違いと、買うときにラベルで確かめたい項目をまとめました。",
     category: "beginner",
     publishedAt: "2026-10-31",
@@ -392,7 +392,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "oil-storage",
-    title: "精油の保管方法と開封後の使用期限｜冷蔵庫に入れていい？",
+    title: "精油とドテラのオイルの保管方法｜開封後の使用期限と冷蔵庫",
     excerpt: "精油はふたを閉めて立て、冷暗所に置くのが基本です。開封後1年という日本アロマ環境協会の目安と、冷蔵庫の扱い、ドテラの製品の案内、手作りしたものを使い切る目安をまとめました。",
     category: "care",
     publishedAt: "2026-10-31",
@@ -418,7 +418,7 @@ export const blogPosts: BlogPost[] = [
   // ---- 検索KW対応 第2弾（2026-11-01） ここから ----
   {
     slug: "oil-disposal",
-    title: "エッセンシャルオイルやアロマオイルの捨て方｜残った中身と瓶の処分方法",
+    title: "エッセンシャルオイルやアロマオイルの捨て方｜中身と瓶の処分",
     excerpt: "使い切れなかったエッセンシャルオイルの中身は、排水に流さず紙に吸わせて捨てます。ビンとキャップの分け方、自治体で区分が変わる例、日本アロマ環境協会の精油ビン回収もまとめました。",
     category: "care",
     publishedAt: "2026-11-01",
@@ -434,7 +434,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "oils-in-car",
-    title: "車の中でエッセンシャルオイルを楽しむ方法｜アロマストーンとクリップの使い方",
+    title: "車でエッセンシャルオイルを楽しむ方法｜アロマストーンとクリップ",
     excerpt: "エッセンシャルオイルやアロマオイルを車で楽しむ4つの方法を、アロマストーン、エアコン吹き出し口のクリップ、ティッシュ、小型ディフューザーの順に手順と滴数つきで紹介します。車内の高温や内装への付着など、車ならではの注意点もまとめました。",
     category: "how-to",
     publishedAt: "2026-11-01",
@@ -442,7 +442,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "oil-organizing",
-    title: "エッセンシャルオイルの収納アイデア｜ボトルを使いやすく、長持ちさせる並べ方",
+    title: "エッセンシャルオイルの収納アイデア｜使いやすい並べ方とケース",
     excerpt: "エッセンシャルオイルやアロマオイルの収納は、光・熱・湿気を避けて立てて置く条件から考えます。香りの系統別や用途別の並べ方、木箱や仕切りつきボックスなどケースの選び方、置かない場所と使い切る工夫をまとめました。",
     category: "care",
     publishedAt: "2026-11-01",
@@ -459,20 +459,22 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "doterra-oil-lineup",
     title: "ドテラのオイルの種類｜シングル、ブレンド、キットの全体像",
-    excerpt: "ドテラのオイルは、1種類の植物から採るシングルオイルと、複数を組み合わせたブレンドオイルに分かれます。図鑑記事のある13本を香りの系統で並べ、サイズと区分、キットの選択肢まで整理します。",
+    excerpt: "ドテラのオイルは、1種類の植物から採るシングルオイルと、複数を組み合わせたブレンドオイルに分かれます。図鑑記事のある18本を香りの系統で並べ、サイズと区分、キットの選択肢まで整理します。",
     category: "beginner",
     publishedAt: "2026-11-01",
     thumbnail: "/assets/blog/doterra-oil-lineup.jpg",
+    recommendOrder: 4,
   },
   // ---- 第2弾 ここまで ----
   // ---- 第3弾（2026-11-02） ここから ----
   {
     slug: "how-to-use-aroma-oils",
-    title: "エッセンシャルオイルやアロマオイルの使い方｜初心者が今日からできる方法と使い道",
+    title: "エッセンシャルオイルやアロマオイルの使い方｜初心者の始め方",
     excerpt: "エッセンシャルオイルやアロマオイルの使い方を、香り、肌、お風呂、掃除、クラフトの使い道ごとに整理しました。エッセンシャルオイルを何に使うか迷う初心者が、今日からできる最初の一歩も紹介します。",
     category: "how-to",
     publishedAt: "2026-11-02",
     thumbnail: "/assets/blog/how-to-use-aroma-oils.jpg",
+    recommendOrder: 1,
   },
   {
     slug: "oils-on-skin",
@@ -492,7 +494,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "waterless-diffuser",
-    title: "水なしアロマディフューザーとは？ネブライザー式の仕組みと超音波式との違い",
+    title: "水なしアロマディフューザーとは？超音波式との違い",
     excerpt: "エッセンシャルオイルやアロマオイルのディフューザーで水なしのタイプとは何かを、ネブライザー式の仕組みと超音波式との違いから整理します。オイルの量や手入れなど、機種で違う点は説明書で確かめる項目にまとめました。",
     category: "how-to",
     publishedAt: "2026-11-02",
@@ -500,7 +502,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "massage-oil-recipe",
-    title: "マッサージ用オイルの作り方｜エッセンシャルオイルやアロマオイルとキャリアオイルの混ぜ方と分量",
+    title: "マッサージ用オイルの作り方｜キャリアオイルとの混ぜ方と分量",
     excerpt: "マッサージ用のアロマオイルの作り方を、キャリアオイルの量ごとの滴数表で紹介します。「化粧品」の表示がある製品を使い、全身と腕や脚になじませる手順と使い切りの目安もまとめました。",
     category: "how-to",
     publishedAt: "2026-11-02",
@@ -513,10 +515,11 @@ export const blogPosts: BlogPost[] = [
     category: "how-to",
     publishedAt: "2026-11-02",
     thumbnail: "/assets/blog/doterra-how-to-use.jpg",
+    recommendOrder: 3,
   },
   {
     slug: "laluz-diffuser",
-    title: "ドテラ ラルツディフューザーの使い方｜水の量、滴数、お手入れ、動かないとき",
+    title: "ドテラ ラルツディフューザーの使い方｜水の量、滴数、手入れ",
     excerpt: "ドテラのディフューザー「ラルツ」の使い方を説明書V2に沿って整理しました。水の量、滴数、ボタン、お手入れに加え、動かないときや故障かなと思ったときの確認先もわかります。",
     category: "how-to",
     publishedAt: "2026-11-02",
@@ -532,7 +535,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "oils-in-humidifier",
-    title: "加湿器にエッセンシャルオイルやアロマオイルは入れていい？入れる前に確認したいこと",
+    title: "加湿器にエッセンシャルオイルやアロマオイルは入れていい？",
     excerpt: "エッセンシャルオイルやアロマオイルを加湿器に入れてよいかは、製品の説明書で決まります。スチーム式、超音波式、気化式の違いと、入れる前に確認する手順、入れずに香りを楽しむ方法をまとめました。",
     category: "care",
     publishedAt: "2026-11-02",
@@ -540,7 +543,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "oils-by-room",
-    title: "部屋別の使い方｜エッセンシャルオイルやアロマオイルを玄関、リビング、寝室、トイレで",
+    title: "部屋別の使い方｜エッセンシャルオイルやアロマオイルの置き方",
     excerpt: "部屋別のアロマオイルの使い方を、玄関、リビング、寝室、トイレに分けてまとめました。部屋の広さに合う道具、置き方、滴数の目安と、家具や掃除で気をつけたいことを紹介します。",
     category: "how-to",
     publishedAt: "2026-11-02",
@@ -556,7 +559,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "oil-gifts",
-    title: "エッセンシャルオイルやアロマオイルのプレゼントの選び方｜贈る相手に合わせた香りと注意点",
+    title: "プレゼントの選び方｜エッセンシャルオイルやアロマオイルを贈る",
     excerpt: "エッセンシャルオイルやアロマオイルのプレゼントは、相手の好みと暮らしに合わせて選びます。女性へのおすすめを探す方にも使える香りの選び方と、妊娠中、持病、子ども、ペットへの配慮をまとめました。",
     category: "lifestyle",
     publishedAt: "2026-11-02",
@@ -577,10 +580,11 @@ export const blogPosts: BlogPost[] = [
     category: "beginner",
     publishedAt: "2026-11-02",
     thumbnail: "/assets/blog/choosing-oil-brands.jpg",
+    recommendOrder: 5,
   },
   {
     slug: "rosemary",
-    title: "ローズマリーの香りの特徴と、暮らしでの楽しみ方",
+    title: "ローズマリーの香りと使い方｜朝の支度と料理の香りづけ",
     excerpt: "ローズマリーの香りの特徴と産地を、ドテラの製品ページの表示をもとに紹介します。朝の支度や料理の香りづけで楽しむ分量と、エッセンシャルオイルの「香・食」の表示で気をつけたいこともまとめました。",
     category: "oils",
     publishedAt: "2026-11-02",
@@ -588,7 +592,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "lemongrass",
-    title: "レモングラスの香りの特徴と、暮らしでの楽しみ方",
+    title: "レモングラスの香りと使い方｜レモンとの違いとサシェ",
     excerpt: "レモングラスの香りの特徴を、レモンとの違いや産地とあわせて紹介します。サシェ、ディフューザー、料理の香りづけで使う分量と、少量で強く香るオイルのブレンド例もまとめました。",
     category: "oils",
     publishedAt: "2026-11-02",
@@ -596,7 +600,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "grapefruit",
-    title: "グレープフルーツの香りの特徴と、暮らしでの楽しみ方",
+    title: "グレープフルーツの香りと使い方｜光毒性と使い切る目安",
     excerpt: "グレープフルーツの香りの特徴と、朝の支度や玄関で楽しむ方法を紹介します。協会が光毒性の例に挙げていること、柑橘オイルを開封後1年以内に使い切る目安もまとめました。",
     category: "oils",
     publishedAt: "2026-11-02",
@@ -604,7 +608,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "cypress",
-    title: "サイプレスの香りの特徴と、暮らしでの楽しみ方",
+    title: "サイプレスの香りと使い方｜ヒノキとの違いとハンドオイル",
     excerpt: "サイプレスの香りの特徴を、ヒノキとの違いや産地とあわせて紹介します。玄関やディフューザーで楽しむ方法、植物油で薄めるハンドオイルの分量、相性のよいブレンド例もまとめました。",
     category: "oils",
     publishedAt: "2026-11-02",
@@ -612,7 +616,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "marjoram",
-    title: "マジョラムの香りの特徴と、暮らしでの楽しみ方",
+    title: "マジョラムの香りと使い方｜オレガノとの呼び名の違い",
     excerpt: "マジョラムの香りの特徴と、オレガノとの呼び名の違いを紹介します。おやすみ前や料理の香りづけで楽しむ方法、エッセンシャルオイルの「香・食」の表示で気をつけたいこともまとめました。",
     category: "oils",
     publishedAt: "2026-11-02",
@@ -626,11 +630,41 @@ export const getCategory = (slug: string) => blogCategories.find((c) => c.slug =
 export const getPostsByCategory = (slug: string) => blogPosts.filter((p) => p.category === slug);
 export const getRecommendedPosts = () =>
   blogPosts.filter((p) => p.recommendOrder).sort((a, b) => (a.recommendOrder ?? 0) - (b.recommendOrder ?? 0));
-export const getRelatedPosts = (post: BlogPost, count = 3) =>
-  [
-    ...blogPosts.filter((p) => p.slug !== post.slug && p.category === post.category),
-    ...blogPosts.filter((p) => p.slug !== post.slug && p.category !== post.category),
-  ].slice(0, count);
+
+/**
+ * 「あわせて読みたい」の話題のまとまり。1記事は1つのまとまりにだけ入れる。
+ * 各記事はまとまりの中で自分の次から順に並ぶ（輪になる）ので、どの記事も必ず他の記事から案内される。
+ * 記事を公開したら、ここにも追加する。
+ */
+const relatedGroups: string[][] = [
+  ["how-to-use-aroma-oils", "no-diffuser", "oils-by-scene", "oils-by-room", "bedtime-scents", "oils-in-car"],
+  ["diffuser-guide", "waterless-diffuser", "laluz-diffuser", "oils-in-humidifier", "diffuser-blends", "blend-basics"],
+  ["carrier-oil-dilution", "oils-on-skin", "massage-oil-recipe", "foot-self-massage", "bath-oils"],
+  ["aromatouch-technique", "aromatouch-hand", "aromatouch-certification"],
+  ["doterra-how-to-use", "doterra-oil-lineup", "choosing-oil-brands", "doterra-drinkable", "aromatic-table", "aroma-sausage"],
+  ["what-is-essential-oil", "how-oils-are-made", "reading-labels", "co-impact-sourcing"],
+  ["oil-storage", "oil-disposal", "oil-organizing", "oil-containers", "drop-count"],
+  ["oil-precautions", "kids-safety", "pets-safety"],
+  ["lemon", "orange", "bergamot", "grapefruit", "lemongrass"],
+  ["lavender", "geranium", "peppermint", "rosemary", "marjoram"],
+  ["frankincense", "tea-tree", "eucalyptus", "hinoki", "cypress"],
+  ["on-guard", "serenity", "balance"],
+  ["aroma-lip", "handmade-cream", "roll-on", "natural-perfume", "bath-bomb", "gem-soap"],
+  ["cleaning-spray", "laundry-oils", "outdoor-spray", "potpourri", "reed-diffuser", "oil-gifts"],
+];
+
+/** list の中で slug の次から順に、自分を除いて並べる */
+const nextAfter = <T,>(list: T[], self: T) => {
+  const i = list.indexOf(self);
+  return [...list.slice(i + 1), ...list.slice(0, Math.max(i, 0))];
+};
+
+export const getRelatedPosts = (post: BlogPost, count = 3) => {
+  const group = relatedGroups.find((g) => g.includes(post.slug)) ?? [];
+  const inCategory = blogPosts.filter((p) => p.category === post.category).map((p) => p.slug);
+  const slugs = [...new Set([...nextAfter(group, post.slug), ...nextAfter(inCategory, post.slug)])];
+  return slugs.flatMap((slug) => getPost(slug) ?? []).slice(0, count);
+};
 
 /** "2026-10-30" → "2026.10.30" */
 export const formatDate = (iso: string) => iso.replaceAll("-", ".");

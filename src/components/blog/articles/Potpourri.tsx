@@ -167,7 +167,7 @@ export const potpourri: ArticleContent = {
       />
 
       <p>
-        まずは台所のスパイスとオレンジの皮で、小さな器ひとつ分から試してみてください。香りの足し方を深めたいときは<Link href="/blog/blend-basics">香りのブレンドの基本</Link>、残ったオイルのしまい方は<Link href="/blog/oil-storage">オイルの保管方法</Link>も参考になります。
+        まずは台所のスパイスとオレンジの皮で、小さな器ひとつ分から試してみてください。香りの足し方を深めたいときは<Link href="/blog/blend-basics">香りのブレンドの基本</Link>、残ったオイルのしまい方は<Link href="/blog/oil-storage">オイルの保管方法</Link>も参考になります。親子で作るなら<Link href="/blog/gem-soap">宝石みたいな石けん</Link>、外遊びには<Link href="/blog/outdoor-spray">アウトドアスプレー</Link>もあります。
       </p>
       <NextStepBox />
     </>

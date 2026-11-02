@@ -1,0 +1,10 @@
+# Cloudflare の静的ファイルのキャッシュ指定
+# ファイル名にハッシュが入るものは長く、差し替えがあるものは短くする
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/fonts/*
+  Cache-Control: public, max-age=2592000

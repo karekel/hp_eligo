@@ -187,7 +187,7 @@ export const naturalPerfume: ArticleContent = {
 
       <h2 id="skin">肌につける香りのレシピ</h2>
       <p>
-        トップノートには、光毒性のある柑橘や、協会が皮膚刺激の例に挙げるペパーミント、ティーツリー、ユーカリが並びます。そこで肌につける香りはトップを使わず、ミドルとベースの2段で組み立てます。
+        トップノートには、光毒性のある柑橘や、協会が皮膚刺激の例に挙げるペパーミント、ティーツリー、ユーカリが並びます。そこで肌につける香りはトップを使わず、ミドルとベースの2段で組み立てます。肌に使う前の確認は<Link href="/blog/oils-on-skin">エッセンシャルオイルは肌につけていい？</Link>、表示の読み方は<Link href="/blog/doterra-how-to-use">「塗・香・食」の表示の見方</Link>へ。
       </p>
       <MethodCard
         no={1}
@@ -290,7 +290,7 @@ export const naturalPerfume: ArticleContent = {
 
       <p>
         香水作りは、紙の上で香りを比べるところから始めましょう。お気に入りの組み合わせが見つかったら、濃度を守って小さな1本にしてみてください。エタノールを使わずに持ち歩きたいなら
-        <Link href="/blog/roll-on">ロールオンアロマの作り方</Link>もどうぞ。
+        <Link href="/blog/roll-on">ロールオンアロマの作り方</Link>もどうぞ。使った香りの特徴は<Link href="/blog/lavender">ラベンダー</Link>、<Link href="/blog/geranium">ゼラニウム</Link>、<Link href="/blog/frankincense">フランキンセンス</Link>の記事で紹介しています。
       </p>
       <NextStepBox />
     </>

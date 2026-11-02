@@ -208,7 +208,7 @@ export function FeaturedPost({ post }: { post: BlogPost }) {
       className="group grid overflow-hidden rounded-2xl bg-white shadow-[0_2px_14px_rgba(70,55,30,0.08)] transition duration-300 hover:shadow-[0_10px_28px_rgba(70,55,30,0.14)] md:grid-cols-[1.15fr_1fr]"
     >
       <div className="relative aspect-[4/3] overflow-hidden md:aspect-auto md:min-h-[300px]">
-        <Image src={post.thumbnail} alt="" fill priority sizes="(min-width: 1024px) 460px, 100vw" className="object-cover transition duration-700 group-hover:scale-105" />
+        <Image src={post.thumbnail} alt="" fill sizes="(min-width: 1024px) 460px, 100vw" className="object-cover transition duration-700 group-hover:scale-105" />
         <span className="absolute left-0 top-5 bg-[#8b78c4] px-4 py-1.5 font-script text-[16px] text-white">Pick up</span>
       </div>
       <div className="flex flex-col justify-center p-6 md:p-8">
@@ -300,7 +300,7 @@ export function RecommendedPosts() {
 function EligoBanner({ wide = false }: { wide?: boolean }) {
   return (
     <Link href="/" data-track="banner_official" data-track-group="blog" className={`group relative block overflow-hidden rounded-2xl shadow-[0_2px_14px_rgba(70,55,30,0.1)] ${wide ? "h-[200px] md:h-[220px]" : "h-[170px]"}`}>
-      <Image src="/assets/背景/top backg.png" alt="" fill sizes={wide ? "(min-width: 768px) 560px, 100vw" : "300px"} className="object-cover object-[65%_50%] transition duration-700 group-hover:scale-105" />
+      <Image src="/assets/blog/hero.jpg" alt="" fill sizes={wide ? "(min-width: 768px) 560px, 100vw" : "300px"} className="object-cover object-[65%_50%] transition duration-700 group-hover:scale-105" />
       <div className="absolute inset-0 bg-gradient-to-r from-blog-peach/95 via-blog-pink/90 to-blog-mist/40" />
       <Image src="/assets/ロゴ/mark_center.png" alt="" width={160} height={160} className="absolute -right-6 -top-6 h-40 w-40 opacity-10 brightness-0" />
       <div className="relative flex h-full flex-col justify-end p-5 text-blog-ink md:p-6">
