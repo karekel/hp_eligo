@@ -3,7 +3,7 @@ import { Cormorant_Garamond, Noto_Serif, Noto_Serif_JP } from "next/font/google"
 import { BlogFooter, BlogHeader } from "@/components/blog/BlogParts";
 import { BlogWebFonts } from "@/components/blog/BlogWebFonts";
 import { BLOG_DRAFT, blogConfig } from "@/lib/blogData";
-import { siteConfig, siteFavicons } from "@/lib/siteConfig";
+import { blogFavicons, siteConfig } from "@/lib/siteConfig";
 
 // 太さは globals.css の .font-serif-jp と見出しの指定（500）に合わせる。
 // 本文は端末のフォントを使う（Webフォントだと1ページで約60ファイル、1.7MBになるため）
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     template: `%s｜${siteConfig.siteName}`,
   },
   description: blogConfig.description,
-  // スマホのホーム画面のアイコンと名前。icons は親の指定を丸ごと置き換えるので、ファビコンも渡す
+  // ブラウザタブとスマホのホーム画面のアイコンと名前。Google 検索のアイコンは HP と共通になる
   icons: {
-    icon: siteFavicons,
+    icon: blogFavicons,
     apple: "/blog-app/apple-touch-icon.png",
   },
   manifest: "/blog-app/manifest.webmanifest",

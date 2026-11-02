@@ -6,14 +6,22 @@
 const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL || "eligo-oil.com";
 
 /**
- * サイト全ページのファビコン（生成は scripts/generate-icons.mjs）。
- * Google 検索のアイコンはドメインに1つで、トップページの指定が全ページに使われるため、URL は変えない。
+ * HP のファビコン（グラデ背景。生成は scripts/generate-icons.mjs）。
+ * Google 検索のアイコンはドメインに1つで、トップページの指定がブログを含む全ページに使われるため、URL は変えない。
  */
 export const siteFavicons = [
   { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
   { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
   { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
   { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+];
+
+/** ブログのブラウザタブのファビコン（黒背景） */
+export const blogFavicons = [
+  { url: "/blog-app/favicon-16.png", sizes: "16x16", type: "image/png" },
+  { url: "/blog-app/favicon-32.png", sizes: "32x32", type: "image/png" },
+  { url: "/blog-app/favicon-48.png", sizes: "48x48", type: "image/png" },
+  { url: "/blog-app/icon-192.png", sizes: "192x192", type: "image/png" },
 ];
 
 /** 外部URL・サイト全体設定 */

@@ -1,6 +1,7 @@
-// サイトのファビコンとブログのホーム画面用アイコンの生成スクリプト
+// サイトのファビコンとブログのアイコンの生成スクリプト
 //
-// 線画ロゴ（public/assets/ロゴ/mark_center.png）を白にして黒い背景へ中央に置く。
+// 線画ロゴ（public/assets/ロゴ/mark_center.png）を白にして背景の中央に置く。
+// HP のファビコンはホーム画面アイコン（public/apple-touch-icon.png）のグラデ背景、ブログのアイコンは黒背景。
 // ホーム画面やブラウザタブの大きさでは元の線が細すぎるので、太らせて重ねる。
 // maskable は Android が丸く切り抜くので、余白を広く取る。
 // favicon-192 は Google 検索の結果用。小さく丸く表示されるので、線を太くして余白も取る。
@@ -15,22 +16,51 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const MARK = path.join(root, "public/assets/ロゴ/mark_center.png");
 const OUT_DIR = path.join(root, "public");
+const GRADIENT = path.join(root, "public/apple-touch-icon.png");
 
 /** 作業解像度 */
 const WORK = 1024;
+/** グラデ背景を作るときに一度縮める大きさ */
+const BLUR_SIZE = 16;
+/** グラデ背景に掛ける色 */
+const GRADIENT_TINT = "#e6bccf";
 /** thicken は線を太らせる量（作業解像度の px） */
 const OUTPUTS = [
   { file: "blog-app/apple-touch-icon.png", size: 180, logoScale: 0.8, thicken: 2 },
   { file: "blog-app/icon-192.png", size: 192, logoScale: 0.8, thicken: 2 },
   { file: "blog-app/icon-512.png", size: 512, logoScale: 0.8, thicken: 2 },
   { file: "blog-app/icon-maskable-512.png", size: 512, logoScale: 0.64, thicken: 2 },
-  { file: "favicon-16.png", size: 16, logoScale: 1, thicken: 17 },
-  { file: "favicon-32.png", size: 32, logoScale: 0.98, thicken: 8 },
-  { file: "favicon-48.png", size: 48, logoScale: 0.96, thicken: 6 },
-  { file: "favicon-192.png", size: 192, logoScale: 0.82, thicken: 7 },
+  { file: "blog-app/favicon-16.png", size: 16, logoScale: 1, thicken: 17 },
+  { file: "blog-app/favicon-32.png", size: 32, logoScale: 0.98, thicken: 8 },
+  { file: "blog-app/favicon-48.png", size: 48, logoScale: 0.96, thicken: 6 },
+  { file: "favicon-16.png", size: 16, logoScale: 1, thicken: 10, gradient: true },
+  { file: "favicon-32.png", size: 32, logoScale: 0.98, thicken: 6, gradient: true },
+  { file: "favicon-48.png", size: 48, logoScale: 0.96, thicken: 5, gradient: true },
+  { file: "favicon-192.png", size: 192, logoScale: 0.82, thicken: 7, gradient: true },
 ];
 
 const mark = await loadImage(MARK);
+const gradient = await loadImage(GRADIENT);
+
+/** ホーム画面アイコンを小さく縮めてから広げ、ロゴの線を消したグラデ背景 */
+function gradientBackground() {
+  const small = createCanvas(BLUR_SIZE, BLUR_SIZE);
+  const sctx = small.getContext("2d");
+  sctx.imageSmoothingQuality = "high";
+  sctx.drawImage(gradient, 0, 0, BLUR_SIZE, BLUR_SIZE);
+  let current = small;
+  let currentSize = BLUR_SIZE;
+  while (currentSize < WORK) {
+    const nextSize = Math.min(WORK, currentSize * 2);
+    const next = createCanvas(nextSize, nextSize);
+    const nctx = next.getContext("2d");
+    nctx.imageSmoothingQuality = "high";
+    nctx.drawImage(current, 0, 0, nextSize, nextSize);
+    current = next;
+    currentSize = nextSize;
+  }
+  return current;
+}
 
 /** ロゴを白に塗り替えた画像 */
 function whiteMark() {
@@ -43,12 +73,21 @@ function whiteMark() {
   return canvas;
 }
 
-function render(size, logoScale, thicken) {
+function render(size, logoScale, thicken, useGradient) {
   const work = createCanvas(WORK, WORK);
   const ctx = work.getContext("2d");
   ctx.imageSmoothingQuality = "high";
-  ctx.fillStyle = "#000000";
-  ctx.fillRect(0, 0, WORK, WORK);
+  if (useGradient) {
+    ctx.drawImage(gradientBackground(), 0, 0);
+    // 白いロゴが小さいサイズでも読めるよう、背景を少し濃くする
+    ctx.globalCompositeOperation = "multiply";
+    ctx.fillStyle = GRADIENT_TINT;
+    ctx.fillRect(0, 0, WORK, WORK);
+    ctx.globalCompositeOperation = "source-over";
+  } else {
+    ctx.fillStyle = "#000000";
+    ctx.fillRect(0, 0, WORK, WORK);
+  }
 
   const logo = whiteMark();
   const logoSize = WORK * logoScale;
@@ -94,10 +133,10 @@ function toIco(frames) {
 
 fs.mkdirSync(path.join(OUT_DIR, "blog-app"), { recursive: true });
 const icoFrames = [];
-for (const { file, size, logoScale, thicken } of OUTPUTS) {
-  const data = render(size, logoScale, thicken).toBuffer("image/png");
+for (const { file, size, logoScale, thicken, gradient: useGradient } of OUTPUTS) {
+  const data = render(size, logoScale, thicken, useGradient).toBuffer("image/png");
   fs.writeFileSync(path.join(OUT_DIR, file), data);
-  if (size <= 48) icoFrames.push({ size, data });
+  if (useGradient && size <= 48) icoFrames.push({ size, data });
   console.log(file, size);
 }
 fs.writeFileSync(path.join(OUT_DIR, "favicon.ico"), toIco(icoFrames));
