@@ -8,6 +8,8 @@ const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL || "eligo-oil.c
 /** 外部URL・サイト全体設定 */
 export const siteConfig = {
   siteName: "ELIGŌ",
+  /** スマホのホーム画面でアイコンの下に出る名前。Android 用は public/manifest.webmanifest にも書く */
+  homeScreenName: "ELIGŌサイト",
   siteUrl: `https://${productionHost}`,
   title: "ELIGŌ（エリゴ）｜ドテラ（doTERRA）エリザベスのエッセンシャルオイルチーム",
   description:

@@ -41,6 +41,9 @@ export const metadata: Metadata = {
   icons: {
     apple: "/apple-touch-icon.png",
   },
+  // スマホのホーム画面に置いたときの名前。ブログは app/blog/layout.tsx で上書きする
+  manifest: "/manifest.webmanifest",
+  appleWebApp: { title: siteConfig.homeScreenName },
   openGraph: {
     title: siteConfig.title,
     description: siteConfig.description,
