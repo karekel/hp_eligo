@@ -51,7 +51,7 @@ export function ArrowIcon({ className = "h-4 w-4" }: { className?: string }) {
 /* ── 見出し ── */
 
 /** 英字の筆記体ラベル + 日本語見出し（参考デザインの「Concept」見出し） */
-export function SectionTitle({ en, ja, align = "center", as: Tag = "h2" }: { en: string; ja: string; align?: "center" | "left"; as?: "h1" | "h2" }) {
+export function SectionTitle({ en, ja, align = "center", as: Tag = "h2" }: { en: string; ja?: string; align?: "center" | "left"; as?: "h1" | "h2" }) {
   const center = align === "center";
   return (
     <div className={center ? "text-center" : ""}>
@@ -61,7 +61,7 @@ export function SectionTitle({ en, ja, align = "center", as: Tag = "h2" }: { en:
         <span className="h-1.5 w-1.5 rotate-45 bg-[#8b78c4]" />
         <span className="h-px w-8 bg-blog-accent/40" />
       </div>
-      <Tag className="font-serif-jp mt-3 text-[19px] tracking-[0.14em] text-[#2b2b2b] md:text-[22px]">{ja}</Tag>
+      {ja && <Tag className="font-serif-jp mt-3 text-[19px] tracking-[0.14em] text-[#2b2b2b] md:text-[22px]">{ja}</Tag>}
     </div>
   );
 }

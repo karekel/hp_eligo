@@ -21,10 +21,10 @@ export default function BlogTopPage() {
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-white">
           <h1>
             <span className="font-script block text-[26px] md:text-[34px]">{blogConfig.name}</span>
-            <span className="font-serif-jp mt-4 block text-[24px] leading-[1.8] tracking-[0.22em] md:text-[38px]">
-              植物の香りと、
+            <span className="font-serif-jp mt-4 block text-[21px] leading-[1.8] tracking-[0.22em] min-[350px]:text-[24px] md:text-[38px]">
+              その一滴を、
               <br className="md:hidden" />
-              暮らしを編む。
+              自分で選び取ろう。
             </span>
             <span className="mt-4 block text-[12px] tracking-[0.3em] text-white/90 md:text-[14px]">
               {/* スマホでは語の途中で折り返さず「、」と「や」の後で改行する */}
@@ -44,12 +44,13 @@ export default function BlogTopPage() {
         <BotanicalCluster variant="left-a" className="-left-[30px] top-0" />
         <BotanicalCluster variant="right-a" className="-right-[30px] -top-6" />
         <div className="relative z-10 mx-auto max-w-xl px-6 text-center">
-          <SectionTitle en="About this journal" ja="はじめての一滴から、毎日の香りまで。" />
-          <p className="mt-8 text-[14px] leading-[2.3] text-[#555] md:text-[15px]">
+          <SectionTitle en="About this journal" />
+          <h2 className="font-serif-jp mt-6 text-[17px] leading-[2] tracking-[0.08em] text-[#2b2b2b] md:text-[21px]">
             <span className="inline-block">ELIGŌ Oil Journalは、</span>
-            <span className="inline-block">ドテラ（dōTERRA）のオイルを解説するブログです。</span>
-          </p>
-          <p className="mt-4 text-[14px] leading-[2.3] text-[#555] md:text-[15px]">
+            <span className="inline-block">ドテラ（dōTERRA）のオイルを</span>
+            <span className="inline-block">解説するブログです。</span>
+          </h2>
+          <p className="mt-6 text-[14px] leading-[2.3] text-[#555] md:text-[15px]">
             エッセンシャルオイルやアロマオイルを、
             <br />
             毎日の暮らしにどう取り入れるか。
@@ -57,7 +58,8 @@ export default function BlogTopPage() {
             使い方・道具・保管のコツをまとめています。
           </p>
           <p className="mt-4 text-[14px] leading-[2.3] text-[#555] md:text-[15px]">
-            <span className="inline-block">運営は、ドテラのウェルネスアドボケイト（会員）である</span>
+            <span className="inline-block">運営は、ドテラの</span>
+            <span className="inline-block">ウェルネスアドボケイト（会員）である</span>
             <span className="inline-block">エリザベスが主宰するチーム「ELIGŌ」です。</span>
           </p>
           <BotanicalOrnament className="mt-10 lg:hidden" />
