@@ -78,7 +78,7 @@ export const aromatouchCertification: ArticleContent = {
         「ドテラ アロマタッチ 資格」と調べると、認定コースやトレーニングクラスという言葉が出てきます。公式に用意されている学び方は、オンライン認定コースと、対面のトレーニングクラスの2つです。
       </p>
       <p>
-        この記事では、公式の案内をもとに、違いと受講の条件、流れをまとめます。技法の説明は<Link href="/blog/aromatouch-technique">アロマタッチ テクニックのやり方</Link>をご覧ください。
+        技法の説明は<Link href="/blog/aromatouch-technique">アロマタッチ テクニックのやり方</Link>をご覧ください。
       </p>
 
       <h2 id="what">アロマタッチの「資格」とは</h2>
@@ -177,7 +177,7 @@ export const aromatouchCertification: ArticleContent = {
           },
           {
             q: "オンライン認定コースを終えると、証明書はもらえますか？",
-            a: "公開の案内では確認できませんでした。受講サイトか、案内ページの問い合わせ先で確かめてください。",
+            a: "受講サイトか、案内ページの問い合わせ先で確かめてください。",
           },
         ]}
       />

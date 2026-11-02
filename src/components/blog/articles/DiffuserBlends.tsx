@@ -125,7 +125,6 @@ export const diffuserBlends: ArticleContent = {
           { name: "フランキンセンス", color: oilColors.frankincense, count: 2 },
         ]}
       />
-      <p>2つ目は、ドテラのペパーミントの製品ページにある組み合わせです。製品ページの各1滴を、ラルツの滴数の目安に合わせて各2滴にしています。</p>
 
       <h3>昼：気分を切り替えたいときに</h3>
       <BlendRecipe

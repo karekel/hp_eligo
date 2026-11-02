@@ -155,7 +155,6 @@ export const whatIsEssentialOil: ArticleContent = {
       </p>
 
       <h2 id="difference">アロマオイルとの違い</h2>
-      <p>協会の説明をもとに、2つの違いを表にしました。</p>
       <DataTable
         caption="エッセンシャルオイルとアロマオイルの違い"
         headers={["比べる点", "エッセンシャルオイル（精油）", "アロマオイル"]}
