@@ -40,6 +40,12 @@ export const metadata: Metadata = {
     template: `%s｜${blogConfig.name}`,
   },
   description: blogConfig.description,
+  // スマホのホーム画面に置いたときのアイコンと名前（生成は scripts/generate-blog-icons.mjs）
+  icons: {
+    apple: "/blog-app/apple-touch-icon.png",
+  },
+  manifest: "/blog-app/manifest.webmanifest",
+  appleWebApp: { title: blogConfig.homeScreenName },
   // SNS 共有用の文言。親レイアウトの OGP をそのまま引き継がず、ブログ自身の説明を使う
   openGraph: {
     title: `${blogConfig.name}｜${blogConfig.nameJp}`,

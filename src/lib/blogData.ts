@@ -8,6 +8,8 @@ export const BLOG_DRAFT = false;
 
 export const blogConfig = {
   name: "ELIGŌ Oil Journal",
+  /** スマホのホーム画面でアイコンの下に出る名前。Android 用は manifest.webmanifest にも書く */
+  homeScreenName: "ELIGŌブログ",
   nameJp: "エッセンシャルオイルやアロマオイルの使い方ガイド",
   description:
     "エッセンシャルオイルやアロマオイルを、毎日の暮らしにどう取り入れるか。使い方・道具・保管のコツをまとめています。",
