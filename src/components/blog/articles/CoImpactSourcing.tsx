@@ -109,7 +109,7 @@ export const coImpactSourcing: ArticleContent = {
       </p>
 
       <h2 id="examples">オイルと産地の例</h2>
-      <p>CSRサイトに載っている例の一部です。表は公式の説明を短くまとめたもので、すべての生産者に同じ取り組みがあるという意味ではありません。</p>
+      <p>CSRサイトに載っている例の一部です。</p>
       <DataTable
         caption="コ・インパクトソーシングの生産物と産地の例"
         headers={["オイル", "生産国", "公式の説明"]}

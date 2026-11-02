@@ -22,13 +22,13 @@ export const doterraDrinkable: ArticleContent = {
       title: "シングルオイル",
       publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
       url: "https://www.doterra-info.jp/product_category/single-oil/",
-      note: "一覧に載っている製品の各製品ページで「塗」「香」「食」の表示を確認（2026年11月2日）",
+      note: "各製品の「塗」「香」「食」の表示（2026年11月2日時点）",
     },
     {
       title: "ブレンドオイル",
       publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
       url: "https://www.doterra-info.jp/product_category/blend-oil/",
-      note: "一覧に載っている製品の各製品ページで「塗」「香」「食」の表示を確認（2026年11月2日）",
+      note: "各製品の「塗」「香」「食」の表示（2026年11月2日時点）",
     },
     {
       title: "ドテラでは、皆さまがエッセンシャルオイルを長く楽しくご使用いただけるようにご案内しています。",
@@ -125,7 +125,7 @@ export const doterraDrinkable: ArticleContent = {
 
       <h2 id="list">飲めるオイルの一覧</h2>
       <p>
-        ドテラの製品ページには「塗」「香」「食」の表示があります。シングルオイルとブレンドオイルの一覧に載っている製品を2026年11月2日に確認したところ、「食」の表示があるのは次の29製品でした。
+        ドテラの製品ページには「塗」「香」「食」の表示があります。2026年11月2日時点では、シングルオイルとブレンドオイルのうち、「食」の表示があるのは次の29製品です。
       </p>
       <DataTable
         caption="製品ページに「食」の表示があるオイル"
@@ -138,7 +138,7 @@ export const doterraDrinkable: ArticleContent = {
         ]}
       />
       <p>
-        販売状況を示す一覧ではありません。表示はあとから変わることがあるので、最後はボトルのラベルで確かめましょう。
+        表示はあとから変わることがあるので、最後はボトルのラベルで確かめましょう。
       </p>
 
       <h3>「食」の表示がないオイルの例</h3>

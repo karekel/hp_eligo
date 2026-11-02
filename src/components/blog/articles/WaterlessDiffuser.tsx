@@ -40,7 +40,7 @@ export const waterlessDiffuser: ArticleContent = {
       title: "オイルアクセサリー - dōTERRA Product Line",
       publisher: "doTERRA CPTG Essential Oils Japan合同会社",
       url: "https://www.doterra.com/JP/ja_JP/pl/doterra-oil-accessories",
-      note: "2026年10月時点の一覧で確認できたディフューザーがラルツであること",
+      note: "2026年10月時点の一覧にあるディフューザーがラルツであること",
     },
     {
       title: "エッセンシャルオイルの安全な使用方法",
@@ -135,7 +135,7 @@ export const waterlessDiffuser: ArticleContent = {
         水なしタイプに水の手入れはありませんが、手入れがいらないわけではありません。オイルが機器に残ったり、こびりついたりすると、詰まりや故障の原因になります。超音波式のお手入れは<Link href="/blog/diffuser-guide">ディフューザーの選び方と使い方</Link>にまとめています。
       </p>
       <p>
-        ドテラの案内は、水を用いるディフューザーが望ましいとしています。2026年10月時点で、ドテラ公式サイトの一覧で確認できたディフューザーも、超音波式のラルツでした。ドテラのオイルを水なしの機器に使うかは、この案内も踏まえて決めましょう。
+        ドテラの案内は、水を用いるディフューザーが望ましいとしています。2026年10月時点で、ドテラ公式サイトの一覧にあるディフューザーも、超音波式のラルツです。ドテラのオイルを水なしの機器に使うかは、この案内も踏まえて決めましょう。
       </p>
 
       <h2 id="check">買う前に説明書で確かめたい5つのこと</h2>

@@ -20,13 +20,13 @@ export const doterraOilLineup: ArticleContent = {
       title: "シングルオイル",
       publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
       url: "https://www.doterra-info.jp/product_category/single-oil/",
-      note: "シングルオイルの一覧が60件であること、紹介した10種類が掲載され、ラベンダー、ペパーミント、ティーツリー、オレンジが15mLと5mLの2件ずつ載っていること（2026年11月1日確認）",
+      note: "シングルオイルの一覧が60件であること、紹介した10種類が掲載され、ラベンダー、ペパーミント、ティーツリー、オレンジが15mLと5mLの2件ずつ載っていること（2026年11月1日時点）",
     },
     {
       title: "ブレンドオイル",
       publisher: "doTERRA TIMES（doTERRA CPTG Essential Oils Japan合同会社）",
       url: "https://www.doterra-info.jp/product_category/blend-oil/",
-      note: "ブレンドオイルの一覧が38件であること、オンガード、ドテラセレニティー、ドテラバランスが掲載されていること（2026年11月1日確認）",
+      note: "ブレンドオイルの一覧が38件であること、オンガード、ドテラセレニティー、ドテラバランスが掲載されていること（2026年11月1日時点）",
     },
     {
       title: "キット＆コレクション製品",

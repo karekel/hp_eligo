@@ -32,7 +32,7 @@ export const diffuserGuide: ArticleContent = {
       title: "オイルアクセサリー - dōTERRA Product Line",
       publisher: "doTERRA CPTG Essential Oils Japan合同会社",
       url: "https://www.doterra.com/JP/ja_JP/pl/doterra-oil-accessories",
-      note: "2026年10月時点の一覧で確認できたディフューザーがラルツであること",
+      note: "2026年10月時点の一覧にあるディフューザーがラルツであること",
     },
     {
       title: "エッセンシャルオイルの安全な使用方法",
