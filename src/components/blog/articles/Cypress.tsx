@@ -10,8 +10,8 @@ export const cypress: ArticleContent = {
     "相性のよい香りのブレンド例と、「塗・香」の表示で気をつけたいこと",
   ],
   toc: [
-    { id: "scent", title: "サイプレスの香りの特徴" },
-    { id: "enjoy", title: "暮らしでの楽しみ方" },
+    { id: "scent", title: "ドテラのサイプレスの香りの特徴" },
+    { id: "enjoy", title: "ドテラのサイプレスの使い方" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -121,7 +121,7 @@ export const cypress: ArticleContent = {
       </p>
       <p>この記事では、ドテラのサイプレス15mLを例に、香りの特徴と楽しみ方を分量つきで紹介します。製品ページの表示は「塗・香」なので、肌に使う場合の分量も確認します。</p>
 
-      <h2 id="scent">サイプレスの香りの特徴</h2>
+      <h2 id="scent">ドテラのサイプレスの香りの特徴</h2>
       <OilProfile
         name="サイプレス"
         en="Cypress"
@@ -160,7 +160,7 @@ export const cypress: ArticleContent = {
         15mLのボトル1本に使う葉は約4kgです。15mLは<Link href="/blog/drop-count">約250〜300滴</Link>なので、1滴あたり約13〜16gの計算です。
       </p>
 
-      <h2 id="enjoy">暮らしでの楽しみ方</h2>
+      <h2 id="enjoy">ドテラのサイプレスの使い方</h2>
       <UsageCards
         items={[
           {

@@ -10,8 +10,8 @@ export const geranium: ArticleContent = {
     "相性のよい香りと、肌に使う前に確認したいこと",
   ],
   toc: [
-    { id: "scent", title: "ゼラニウムはどんな香り？" },
-    { id: "enjoy", title: "スキンケアの時間に楽しむ3つの方法" },
+    { id: "scent", title: "ドテラのゼラニウムはどんな香り？" },
+    { id: "enjoy", title: "ドテラのゼラニウムの使い方｜スキンケアの時間に" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
   ],
@@ -153,7 +153,7 @@ export const geranium: ArticleContent = {
         ]}
       />
 
-      <h2 id="scent">ゼラニウムはどんな香り？</h2>
+      <h2 id="scent">ドテラのゼラニウムはどんな香り？</h2>
       <p>
         製品ページでは、香りの特徴を5つの言葉で示しています。花の香りと甘さに、緑の葉の青々とした香りと、ハーブのようなスーッとする香りが重なります。甘さの奥に、葉をこすったときのような青さがあります。
       </p>
@@ -164,7 +164,7 @@ export const geranium: ArticleContent = {
         産地はマダガスカルとケニアです。開花の直前に株と葉を収穫し、数時間のうちに蒸留します。マダガスカルでは、700を超える小規模農家が協同組合に組織されています。生産者を支える仕組みは<Link href="/blog/co-impact-sourcing">コ・インパクトソーシングとは？</Link>で紹介しています。
       </p>
 
-      <h2 id="enjoy">スキンケアの時間に楽しむ3つの方法</h2>
+      <h2 id="enjoy">ドテラのゼラニウムの使い方｜スキンケアの時間に</h2>
       <UsageCards
         items={[
           {

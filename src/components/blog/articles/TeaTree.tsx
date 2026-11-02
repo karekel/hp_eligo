@@ -10,8 +10,8 @@ export const teaTree: ArticleContent = {
     "塩素系洗浄剤と一緒に使わないなど、掃除で守りたい注意点",
   ],
   toc: [
-    { id: "profile", title: "ティーツリーはどんなオイル？" },
-    { id: "usage", title: "お掃除での使い方" },
+    { id: "profile", title: "ドテラのティーツリーはどんなオイル？" },
+    { id: "usage", title: "ドテラのティーツリーの使い方｜お掃除" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -87,7 +87,7 @@ export const teaTree: ArticleContent = {
         この記事では、香りの特徴と、掃除の仕上げに使う3つの方法を紹介します。オイルは洗剤の代わりではありません。汚れは洗剤と拭き取りで落とし、最後に香りをのせるイメージで使いましょう。
       </p>
 
-      <h2 id="profile">ティーツリーはどんなオイル？</h2>
+      <h2 id="profile">ドテラのティーツリーはどんなオイル？</h2>
       <OilProfile
         name="ティーツリー"
         en="Tea Tree"
@@ -108,7 +108,7 @@ export const teaTree: ArticleContent = {
       </p>
       <p>製品ページの表示は「塗・香」ですが、協会は皮膚刺激に注意が必要な精油の例に挙げています。この記事では肌の案内はせず、掃除の香りとして紹介します。</p>
 
-      <h2 id="usage">お掃除での使い方</h2>
+      <h2 id="usage">ドテラのティーツリーの使い方｜お掃除</h2>
       <UsageCards
         items={[
           {

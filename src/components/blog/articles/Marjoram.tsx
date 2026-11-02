@@ -10,8 +10,8 @@ export const marjoram: ArticleContent = {
     "相性のよい香りのブレンド例と、「香・食」の表示で気をつけたいこと",
   ],
   toc: [
-    { id: "scent", title: "マジョラムの香りの特徴" },
-    { id: "enjoy", title: "暮らしでの楽しみ方" },
+    { id: "scent", title: "ドテラのマジョラムの香りの特徴" },
+    { id: "enjoy", title: "ドテラのマジョラムの使い方" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -123,7 +123,7 @@ export const marjoram: ArticleContent = {
         この記事では、ドテラのマジョラム15mLを例に、香りの特徴と楽しみ方を分量つきで紹介します。製品ページの表示は「香・食」なので、肌に使う方法は扱いません。
       </p>
 
-      <h2 id="scent">マジョラムの香りの特徴</h2>
+      <h2 id="scent">ドテラのマジョラムの香りの特徴</h2>
       <OilProfile
         name="マジョラム"
         en="Marjoram"
@@ -164,7 +164,7 @@ export const marjoram: ArticleContent = {
         15mLのボトル1本に使う葉は約1.6kgです。15mLは<Link href="/blog/drop-count">約250〜300滴</Link>なので、1滴あたり約5.3〜6.4gの計算です。
       </p>
 
-      <h2 id="enjoy">暮らしでの楽しみ方</h2>
+      <h2 id="enjoy">ドテラのマジョラムの使い方</h2>
       <UsageCards
         items={[
           {

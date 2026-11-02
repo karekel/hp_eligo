@@ -10,8 +10,8 @@ export const bergamot: ArticleContent = {
     "光毒性や製品ごとの表示の違いなど、柑橘オイルで気をつけたいこと",
   ],
   toc: [
-    { id: "scent", title: "ベルガモットはどんな香り？" },
-    { id: "enjoy", title: "暮らしの中で楽しむ3つの方法" },
+    { id: "scent", title: "ドテラのベルガモットはどんな香り？" },
+    { id: "enjoy", title: "ドテラのベルガモットの使い方" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "柑橘オイルで気をつけたいこと" },
     { id: "faq", title: "よくある質問" },
@@ -148,7 +148,7 @@ export const bergamot: ArticleContent = {
         ]}
       />
 
-      <h2 id="scent">ベルガモットはどんな香り？</h2>
+      <h2 id="scent">ドテラのベルガモットはどんな香り？</h2>
       <p>
         製品ページの香りの特徴は、シトラス、スパイシー、わずかにフローラルの3つです。柑橘のさわやかさの中に、ほんのりと青みがあります。甘さは控えめで、皮のほろ苦さを感じる大人びた香りです。
       </p>
@@ -169,7 +169,7 @@ export const bergamot: ArticleContent = {
         ]}
       />
 
-      <h2 id="enjoy">暮らしの中で楽しむ3つの方法</h2>
+      <h2 id="enjoy">ドテラのベルガモットの使い方</h2>
       <UsageCards
         items={[
           {

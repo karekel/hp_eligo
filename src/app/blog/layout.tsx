@@ -35,7 +35,7 @@ const script = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    absolute: `${blogConfig.name}｜${blogConfig.nameJp}`,
+    absolute: blogConfig.searchTitle,
     // 検索結果で題が切れないよう、記事とカテゴリーの接尾辞は短くする
     template: `%s｜${siteConfig.siteName}`,
   },
@@ -49,14 +49,14 @@ export const metadata: Metadata = {
   appleWebApp: { title: blogConfig.homeScreenName },
   // SNS 共有用の文言。親レイアウトの OGP をそのまま引き継がず、ブログ自身の説明を使う
   openGraph: {
-    title: `${blogConfig.name}｜${blogConfig.nameJp}`,
+    title: blogConfig.searchTitle,
     description: blogConfig.description,
     images: [{ url: siteConfig.ogImage }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${blogConfig.name}｜${blogConfig.nameJp}`,
+    title: blogConfig.searchTitle,
     description: blogConfig.description,
     images: [siteConfig.ogImage],
   },

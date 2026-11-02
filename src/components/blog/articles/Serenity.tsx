@@ -11,7 +11,7 @@ export const serenity: ArticleContent = {
   ],
   toc: [
     { id: "scent", title: "ドテラセレニティーはどんな香り？" },
-    { id: "enjoy", title: "おやすみ前に楽しむ3つの方法" },
+    { id: "enjoy", title: "ドテラセレニティーの使い方｜おやすみ前の3つの方法" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -125,7 +125,7 @@ export const serenity: ArticleContent = {
         この順番は、ティッシュに1滴たらすと確かめられます。協会の分類では、イランイランはミドル、サンダルウッドはベースで、ベースは揮発しにくい香りです。たらした直後と、少し時間をおいたあとで比べてみてください。
       </p>
 
-      <h2 id="enjoy">おやすみ前に楽しむ3つの方法</h2>
+      <h2 id="enjoy">ドテラセレニティーの使い方｜おやすみ前の3つの方法</h2>
       <UsageCards
         items={[
           {

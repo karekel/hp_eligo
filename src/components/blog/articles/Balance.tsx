@@ -11,7 +11,7 @@ export const balance: ArticleContent = {
   ],
   toc: [
     { id: "scent", title: "ドテラバランスはどんな香り？" },
-    { id: "enjoy", title: "朝に楽しむ3つの使い方" },
+    { id: "enjoy", title: "ドテラバランスの使い方｜朝に楽しむ3つの方法" },
     { id: "pairing", title: "相性のよい香りとブレンド例" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -147,7 +147,7 @@ export const balance: ArticleContent = {
         ほかのオイルと違うのは、内容にココナッツオイルが含まれていることです。ボトルからはゆっくり出てくるので、急いで振らず、傾けて待ちましょう。色は青みがかっています。
       </p>
 
-      <h2 id="enjoy">朝に楽しむ3つの使い方</h2>
+      <h2 id="enjoy">ドテラバランスの使い方｜朝に楽しむ3つの方法</h2>
       <UsageCards
         items={[
           {

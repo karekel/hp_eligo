@@ -222,7 +222,8 @@ export const naturalPerfume: ArticleContent = {
           { name: "ヒノキ", color: oilColors.peppermint, count: 1 },
         ]}
       />
-      <p>いずれも製品ページの表示は「塗・香」のオイルです。お手元のラベルの「化粧品」の表示も確かめてください。</p>
+      <h3>ドテラのオイルで作る</h3>
+      <p>いずれもドテラの製品ページの表示は「塗・香」です。ラベルの「化粧品」の表示も確かめてください。</p>
 
       <h2 id="paper">紙や小物で楽しむ香りのレシピ</h2>
       <p>
@@ -289,8 +290,8 @@ export const naturalPerfume: ArticleContent = {
       />
 
       <p>
-        香水作りは、紙の上で香りを比べるところから始めましょう。お気に入りの組み合わせが見つかったら、濃度を守って小さな1本にしてみてください。エタノールを使わずに持ち歩きたいなら
-        <Link href="/blog/roll-on">ロールオンアロマの作り方</Link>もどうぞ。使った香りの特徴は<Link href="/blog/lavender">ラベンダー</Link>、<Link href="/blog/geranium">ゼラニウム</Link>、<Link href="/blog/frankincense">フランキンセンス</Link>の記事で紹介しています。
+        香水作りは、紙の上で香りを比べるところから始めましょう。好みの組み合わせが見つかったら、濃度を守って小さな1本にしてみてください。エタノールを使わずに持ち歩きたいなら
+        <Link href="/blog/roll-on">ロールオンアロマの作り方</Link>もどうぞ。香りの特徴は<Link href="/blog/lavender">ラベンダー</Link>、<Link href="/blog/geranium">ゼラニウム</Link>、<Link href="/blog/frankincense">フランキンセンス</Link>で紹介しています。
       </p>
       <NextStepBox />
     </>

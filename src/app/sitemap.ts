@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ? []
     : [
         { url: `${base}/blog`, priority: 0.9, changeFrequency: "weekly" },
+        { url: `${base}/blog/oil-guide`, priority: 0.7, changeFrequency: "monthly" },
         ...blogCategories.map((c) => ({
           url: `${base}/blog/category/${c.slug}`,
           priority: 0.5,
