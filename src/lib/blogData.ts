@@ -730,6 +730,64 @@ export const blogPosts: BlogPost[] = [
     thumbnail: "/assets/blog/marjoram.jpg",
   },
   // ---- 第3弾 ここまで ----
+  // ---- 優先A（2026-11-04） ----
+  {
+    slug: "what-is-doterra",
+    title: "ドテラとは？どんな会社で何を売っているのか｜日本法人と製品の基本",
+    excerpt: "ドテラ（dōTERRA）とは、2008年に米国で設立された、エッセンシャルオイルを中心に扱う会社です。米国本社と日本法人の基本情報、扱う製品の種類と価格の例、会員制度のしくみと、会員にならずに買う方法をまとめました。",
+    category: "beginner",
+    publishedAt: "2026-11-04",
+    thumbnail: "/assets/blog/what-is-doterra.jpg",
+  },
+  {
+    slug: "doterra-suspicious",
+    title: "ドテラは怪しい？気になる点と、始める前に確かめたいこと",
+    excerpt: "「ドテラは怪しい」と感じる方がいる会員制の販売、価格、飲める表示、勧誘について、事実とご自身で確かめる方法を整理しました。厚生労働省や邪気払いとの関係、やめたいときの手続きと相談先もあわせて紹介します。",
+    category: "beginner",
+    publishedAt: "2026-11-04",
+    thumbnail: "/assets/blog/doterra-suspicious.jpg",
+  },
+  {
+    slug: "doterra-mlm",
+    title: "ドテラはマルチ？会員の仕組みと、誘われたときに確かめたいこと",
+    excerpt: "ドテラはマルチなのか気になる方へ。ドテラは、WAとして登録し販売することをすすめる取引を、特定商取引法の連鎖販売取引としています。会員の種類と費用、マルチ商法やネットワークビジネスの意味、誘われたときに確かめたい点、クーリング・オフのしかたをまとめました。",
+    category: "beginner",
+    publishedAt: "2026-11-04",
+    thumbnail: "/assets/blog/doterra-mlm.jpg",
+  },
+  {
+    slug: "doterra-mineral",
+    title: "ドテラ ミネラルとは？PHOSSILの種類、原材料、飲み方、値段",
+    excerpt: "ドテラ ミネラルの正式名はPHOSSIL ミネラルです。オリジナル、カシス、プルーン、レモン ゼロシュガー、ハニージンジャー オイルプラス、カプセルの原材料、飲み方の目安、税込の値段、保存方法を、2026年11月時点の表示で比べます。",
+    category: "beginner",
+    publishedAt: "2026-11-04",
+    thumbnail: "/assets/blog/doterra-mineral.jpg",
+  },
+  {
+    slug: "deep-blue",
+    title: "ドテラ ディープブルーとは？オイルとラブ（クリーム）の違いと使い方",
+    excerpt: "ドテラのディープブルーは、ミントとカンファーの清涼感のある香りのブレンドオイルです。クリームのディープブルーラブとの違い、価格、ココナッツオイルでの薄め方、「効能」を表示できない理由、使うときの注意点を紹介します。",
+    category: "oils",
+    publishedAt: "2026-11-04",
+    thumbnail: "/assets/blog/deep-blue.jpg",
+  },
+  {
+    slug: "easy-air",
+    title: "ドテラ イージーエアとは？香りの特徴と使い方",
+    excerpt: "ドテラのイージーエアは、ミントやユーカリ、レモンなどを合わせた、すっきりした香りのブレンドオイルです。寝室やティッシュでの香りの楽しみ方、薄めて足裏に使う方法、相性のよい香り、使うときの注意点を紹介します。",
+    category: "oils",
+    publishedAt: "2026-11-04",
+    thumbnail: "/assets/blog/easy-air.jpg",
+  },
+  {
+    slug: "doterra-diffusers",
+    title: "ドテラのディフューザーの種類と選び方｜ラルツと販売終了のバブル、ペブル",
+    excerpt: "2026年11月時点で、日本で単品で買えるドテラのディフューザーはラルツです。バブル、ペブル、森の音など販売を終えた機種と終了の時期、選ぶときに確かめたいこと、加湿器との違い、ラルツで試せる最初のレシピを紹介します。",
+    category: "how-to",
+    publishedAt: "2026-11-04",
+    thumbnail: "/assets/blog/doterra-diffusers.jpg",
+  },
+
 ];
 
 export const getPost = (slug: string) => blogPosts.find((p) => p.slug === slug);
@@ -745,7 +803,7 @@ export const getRecommendedPosts = () =>
  */
 const relatedGroups: string[][] = [
   ["how-to-use-aroma-oils", "no-diffuser", "oils-by-scene", "oils-by-room", "bedtime-scents", "oils-in-car"],
-  ["diffuser-guide", "waterless-diffuser", "laluz-diffuser", "oils-in-humidifier", "diffuser-blends", "blend-basics"],
+  ["diffuser-guide", "waterless-diffuser", "laluz-diffuser", "doterra-diffusers", "oils-in-humidifier", "diffuser-blends", "blend-basics"],
   ["carrier-oil-dilution", "oils-on-skin", "massage-oil-recipe", "foot-self-massage", "bath-oils"],
   ["aromatouch-technique", "aromatouch-hand", "aromatouch-certification"],
   ["doterra-how-to-use", "doterra-oil-lineup", "choosing-oil-brands", "doterra-drinkable", "aromatic-table", "aroma-sausage"],
@@ -755,7 +813,8 @@ const relatedGroups: string[][] = [
   ["lemon", "orange", "bergamot", "grapefruit", "lemongrass"],
   ["lavender", "geranium", "peppermint", "rosemary", "marjoram"],
   ["frankincense", "tea-tree", "eucalyptus", "hinoki", "cypress"],
-  ["on-guard", "serenity", "balance"],
+  ["on-guard", "serenity", "balance", "deep-blue", "easy-air"],
+  ["what-is-doterra", "doterra-suspicious", "doterra-mlm", "doterra-mineral"],
   ["aroma-lip", "handmade-cream", "roll-on", "natural-perfume", "bath-bomb", "gem-soap"],
   ["cleaning-spray", "laundry-oils", "outdoor-spray", "potpourri", "reed-diffuser", "oil-gifts"],
 ];

@@ -69,6 +69,15 @@ import { cypress } from "./Cypress";
 import { marjoram } from "./Marjoram";
 
 /** 本文がある記事（slug → 本文）。ここにない記事は「準備中」と表示する */
+// ---- 優先A ----
+import { whatIsDoterra } from "./WhatIsDoterra";
+import { doterraSuspicious } from "./DoterraSuspicious";
+import { doterraMlm } from "./DoterraMlm";
+import { doterraMineral } from "./DoterraMineral";
+import { deepBlue } from "./DeepBlue";
+import { easyAir } from "./EasyAir";
+import { doterraDiffusers } from "./DoterraDiffusers";
+
 export const articles: Record<string, ArticleContent> = {
   "doterra-drinkable": doterraDrinkable,
   "no-diffuser": noDiffuser,
@@ -138,4 +147,11 @@ export const articles: Record<string, ArticleContent> = {
   "grapefruit": grapefruit,
   "cypress": cypress,
   "marjoram": marjoram,
+  "what-is-doterra": whatIsDoterra,
+  "doterra-suspicious": doterraSuspicious,
+  "doterra-mlm": doterraMlm,
+  "doterra-mineral": doterraMineral,
+  "deep-blue": deepBlue,
+  "easy-air": easyAir,
+  "doterra-diffusers": doterraDiffusers,
 };
