@@ -1,6 +1,11 @@
 export const runtime = "edge";
 
 import { NextResponse } from "next/server";
+import {
+  MEMBERS_COOKIE,
+  MEMBERS_SESSION_SECONDS,
+  createMembersToken,
+} from "@/lib/membersAuth";
 
 export async function POST(req: Request) {
   const { password } = await req.json();
@@ -17,12 +22,12 @@ export async function POST(req: Request) {
   }
 
   const res = NextResponse.json({ ok: true });
-  res.cookies.set("members_auth", "1", {
+  res.cookies.set(MEMBERS_COOKIE, await createMembersToken(process.env.MEMBERS_PASSWORD), {
     httpOnly: true,
     sameSite: "lax",
     secure: process.env.NODE_ENV === "production",
     path: "/",
-    maxAge: 60 * 60 * 24 * 30,
+    maxAge: MEMBERS_SESSION_SECONDS,
   });
   return res;
 }

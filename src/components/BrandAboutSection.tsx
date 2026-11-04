@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteCopy } from "@/lib/siteCopy";
 import { siteAssets } from "@/lib/siteAssets";
@@ -34,6 +35,13 @@ export default function BrandAboutSection() {
                     <h2 className="font-heading text-about-title leading-[1.0] text-[#1a1a1a] uppercase">
                         {about.heading}
                     </h2>
+                    <p className="mt-4 mb-8 md:mb-10 max-w-[900px] text-sm md:text-base leading-relaxed text-[#1a1a1a]/70">
+                        {about.lead.before}
+                        <Link href={about.lead.linkHref} className="underline underline-offset-4 hover:text-[#1a1a1a]">
+                            {about.lead.linkText}
+                        </Link>
+                        {about.lead.after}
+                    </p>
                 </FadeIn>
                 {/* カードグリッド — 3列固定、等高 */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -48,7 +48,6 @@ export default function VibeFinderSection() {
                   alt="Vibe Finder"
                   width={2946}
                   height={1536}
-                  unoptimized
                   className="w-full h-auto"
                 />
               </div>

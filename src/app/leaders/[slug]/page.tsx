@@ -1,22 +1,32 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { leaders, getLeaderBySlug } from "@/lib/leadersData";
+import { leaders, getLeaderBySlug, getRoleJa, getLeaderIntro } from "@/lib/leadersData";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import LeaderTabs from "@/components/leaders/LeaderTabs";
 import Image from "next/image";
 import type { Leader } from "@/lib/leadersData";
+import type { Metadata } from "next";
+import { siteConfig } from "@/lib/siteConfig";
 
 /** 静的パスを生成 */
 export function generateStaticParams() {
     return leaders.map((l) => ({ slug: l.slug }));
 }
 
-/** ページタイトルを動的生成 */
-export function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-    return params.then((p) => {
-        const leader = getLeaderBySlug(p.slug);
-        return { title: leader ? `${leader.name} | ELIGŌ` : "Leader | ELIGŌ" };
-    });
+/** ページタイトル・説明文を動的生成 */
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const { slug } = await params;
+    const leader = getLeaderBySlug(slug);
+    if (!leader) return { title: "Leader" };
+    const roleJa = getRoleJa(leader.role);
+    const title = `${leader.nameJp}（${leader.nameEn}）｜ドテラ（doTERRA）${roleJa}`;
+    const description = `ドテラ（doTERRA）${roleJa}（${leader.role}）・${leader.nameJp}（${leader.nameEn}）のプロフィール。エッセンシャルオイルとの出会い、愛用オイル3本、チームELIGŌ（エリゴ）のビジョンを紹介します。`;
+    return {
+        title,
+        description,
+        alternates: { canonical: `/leaders/${slug}` },
+        openGraph: { title, description, images: [leader.image] },
+    };
 }
 
 export default async function LeaderPage({
@@ -31,8 +41,23 @@ export default async function LeaderPage({
         notFound();
     }
 
+    const personJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: leader.nameJp,
+        alternateName: leader.nameEn,
+        jobTitle: `ドテラ（doTERRA）${getRoleJa(leader.role)}（${leader.role}）`,
+        description: getLeaderIntro(leader),
+        image: `${siteConfig.siteUrl}${leader.image}`,
+        url: `${siteConfig.siteUrl}/leaders/${leader.slug}`,
+        knowsAbout: ["エッセンシャルオイル", "ドテラ（doTERRA）"],
+        memberOf: { "@type": "Organization", name: siteConfig.siteName, url: siteConfig.siteUrl },
+        sameAs: [leader.identity.instagramUrl, leader.identity.blogUrl].filter(Boolean),
+    };
+
     return (
         <div className="relative min-h-screen w-full">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
             {/* Background Image: Truly edge-to-edge fixed background */}
             <div className="fixed inset-0 -z-10 w-full h-full">
                 <Image
@@ -82,26 +107,28 @@ export default async function LeaderPage({
                     {/* Right Column: Info & Tabs */}
                     <div className="flex flex-col lg:h-full min-h-0">
                         {/* Name Section */}
-                        <div className="mb-8 md:mb-12 space-y-3 shrink-0">
-                            <h1
-                                className="font-heading text-4xl md:text-7xl font-thin tracking-widest text-[#1a1a1a] uppercase"
-                                style={{ textShadow: "0.2px 0 0 currentColor, -0.2px 0 0 currentColor" }}
-                            >
-                                {leader.nameEn}
+                        <div className="mb-8 md:mb-12 shrink-0">
+                            <h1>
+                                <span
+                                    className="block font-heading text-4xl md:text-7xl font-thin tracking-widest text-[#1a1a1a] uppercase"
+                                    style={{ textShadow: "0.2px 0 0 currentColor, -0.2px 0 0 currentColor" }}
+                                >
+                                    {leader.nameEn}
+                                </span>
+                                <span className="block mt-5 text-xl md:text-2xl font-medium text-black/90">
+                                    {leader.nameJp}
+                                </span>
                             </h1>
-                            <div className="space-y-4 pt-2">
-                                <div className="space-y-1">
-                                    <p className="text-xl md:text-2xl font-medium text-black/90">
-                                        {leader.nameJp}
-                                    </p>
-                                    <p className="text-base md:text-lg font-bold text-black/70 tracking-wider">
-                                        {leader.role}
-                                    </p>
-                                </div>
-                                <p className="text-base md:text-lg text-black font-medium leading-relaxed opacity-90">
-                                    {leader.catchphrase ? `「${leader.catchphrase}」` : ""}
-                                </p>
-                            </div>
+                            <p className="mt-1 text-base md:text-lg font-bold text-black/70 tracking-wider">
+                                dōTERRA（ドテラ） <span className="whitespace-nowrap">{leader.role}</span>{" "}
+                                <span className="whitespace-nowrap">（{getRoleJa(leader.role)}）</span>
+                            </p>
+                            <p className="mt-4 text-base md:text-lg text-black font-medium leading-relaxed opacity-90">
+                                {leader.catchphrase ? `「${leader.catchphrase}」` : ""}
+                            </p>
+                            <p className="mt-4 text-sm md:text-base text-black/70 leading-relaxed">
+                                {getLeaderIntro(leader)}
+                            </p>
                         </div>
 
                         {/* Tabs Panel */}

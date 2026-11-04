@@ -46,9 +46,9 @@ export default function LeaderTabs({ leader }: { leader: Leader }) {
             >
                 <div className="absolute inset-0 overflow-y-auto scrollbar-thin scrollbar-thumb-black/10 scrollbar-track-transparent">
                     <div className="p-6 md:p-10">
-                        {activeTab === "identity" && <IdentityContent leader={leader} />}
-                        {activeTab === "myStory" && <MyStoryContent leader={leader} />}
-                        {activeTab === "vision" && <VisionContent leader={leader} />}
+                        <div className={activeTab === "identity" ? "" : "hidden"}><IdentityContent leader={leader} /></div>
+                        <div className={activeTab === "myStory" ? "" : "hidden"}><MyStoryContent leader={leader} /></div>
+                        <div className={activeTab === "vision" ? "" : "hidden"}><VisionContent leader={leader} /></div>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@ function IdentityContent({ leader }: { leader: Leader }) {
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 animate-in fade-in slide-in-from-bottom-2 duration-500">
             <div className="w-full md:w-[240px] aspect-square shrink-0 bg-white rounded-sm shadow-inner flex items-center justify-center overflow-hidden relative self-start">
                 {leader.identity.image ? (
-                    <Image src={leader.identity.image} alt="Profile" className="object-cover" fill />
+                    <Image src={leader.identity.image} alt={`${leader.nameJp}（ドテラ）プロフィール写真`} className="object-cover" fill />
                 ) : (
                     <div className="text-gray-200 uppercase font-bold tracking-widest text-[10px]">No Photo</div>
                 )}
@@ -128,7 +128,7 @@ function MyStoryContent({ leader }: { leader: Leader }) {
                     >
                         <Image
                             src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-                            alt="Story Video"
+                            alt={`${leader.nameJp}のストーリー動画`}
                             fill
                             className="object-cover transition-transform duration-500 group-hover:scale-105"
                         />
@@ -142,7 +142,7 @@ function MyStoryContent({ leader }: { leader: Leader }) {
                     </a>
                 ) : leader.myStory.image ? (
                     <div className="aspect-square bg-white rounded-sm shadow-inner overflow-hidden relative">
-                        <Image src={leader.myStory.image} alt="Story" className="object-cover" fill />
+                        <Image src={leader.myStory.image} alt={`${leader.nameJp}のストーリー`} className="object-cover" fill />
                     </div>
                 ) : (
                     <div className="aspect-square bg-white rounded-sm shadow-inner flex items-center justify-center">
@@ -186,7 +186,7 @@ function VisionContent({ leader }: { leader: Leader }) {
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 animate-in fade-in slide-in-from-bottom-2 duration-500">
             <div className="w-full md:w-[240px] aspect-square shrink-0 bg-white rounded-sm shadow-inner flex items-center justify-center overflow-hidden relative self-start">
                 {leader.vision.image ? (
-                    <Image src={leader.vision.image} alt="Vision" className="object-cover" fill />
+                    <Image src={leader.vision.image} alt={`${leader.nameJp}のチーム活動`} className="object-cover" fill />
                 ) : (
                     <div className="text-gray-200 uppercase font-bold tracking-widest text-[10px]">No Photo</div>
                 )}
