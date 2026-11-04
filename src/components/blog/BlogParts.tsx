@@ -12,6 +12,7 @@ import {
 } from "@/lib/blogData";
 import { siteConfig } from "@/lib/siteConfig";
 import { BlogMobileMenu } from "./BlogMobileMenu";
+import { SearchIcon } from "./BlogSearch";
 
 /* ── アイコン ── */
 
@@ -80,6 +81,7 @@ function SidebarTitle({ en, ja }: { en: string; ja: string }) {
 
 const headerNav = [
   { en: "Articles", ja: "新着記事", href: "/blog#articles" },
+  { en: "Search", ja: "記事を検索", href: "/blog/search" },
   { en: "Category", ja: "カテゴリー", href: "/blog#category" },
   { en: "ELIGŌ", ja: "公式サイト", href: "/" },
 ];
@@ -118,7 +120,10 @@ export function BlogHeader() {
           </a>
         </nav>
         <BlogMobileMenu
-          links={[{ label: "新着記事", href: "/blog#articles" }]}
+          links={[
+            { label: "記事を検索", href: "/blog/search" },
+            { label: "新着記事", href: "/blog#articles" },
+          ]}
           categories={[
             ...blogCategories.map((c) => ({ label: c.name, href: `/blog/category/${c.slug}` })),
             { label: "オイル図鑑を香りの系統で探す", href: "/blog/oil-guide" },
@@ -371,9 +376,32 @@ export function LinkBanners({ layout = "stack" }: { layout?: "stack" | "wide" })
 
 /* ── サイドバー・パンくず ── */
 
-export function BlogSidebar() {
+/** 記事の検索欄。送信すると検索ページへ移る（JavaScript なしでも動く） */
+export function SearchForm({ className = "" }: { className?: string }) {
+  return (
+    <form role="search" action="/blog/search" method="get" className={className}>
+      <label className="flex items-center gap-3 rounded-full border border-blog-accent/30 bg-white px-5 py-3 shadow-[0_2px_12px_rgba(70,55,30,0.07)] focus-within:border-blog-accent">
+        <SearchIcon className="h-5 w-5 shrink-0 text-blog-accent" />
+        <input
+          type="search"
+          name="q"
+          required
+          placeholder="記事を検索（例：ラベンダー）"
+          aria-label="記事を検索"
+          className="w-full min-w-0 bg-transparent text-[16px] text-[#2b2b2b] outline-none placeholder:text-[#aaa]"
+        />
+        <button type="submit" className="shrink-0 text-[13px] tracking-widest text-blog-accent">
+          検索
+        </button>
+      </label>
+    </form>
+  );
+}
+
+export function BlogSidebar({ search = true }: { search?: boolean }) {
   return (
     <aside className="space-y-6 lg:sticky lg:top-6 lg:self-start">
+      {search && <SearchForm />}
       <RecommendedPosts />
       <LinkBanners />
       <CategoryList />

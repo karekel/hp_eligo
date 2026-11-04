@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# ブログ検索用の本文（scripts/build-blog-search-index.mjs が build と dev の前に作る）
+/public/blog-search-index.json
+
 # cloudflare
 .open-next
 .wrangler

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { BotanicalCluster, BotanicalOrnament } from "@/components/blog/Botanicals";
-import { ArrowIcon, BlogSidebar, CategoryCards, FeaturedPost, LinkBanners, PostCard, SectionTitle } from "@/components/blog/BlogParts";
+import { ArrowIcon, BlogSidebar, CategoryCards, FeaturedPost, LinkBanners, PostCard, SearchForm, SectionTitle } from "@/components/blog/BlogParts";
 import { blogConfig, blogPosts, starterGuideLinks } from "@/lib/blogData";
 
 export const metadata: Metadata = {
@@ -60,6 +60,13 @@ export default function BlogTopPage() {
             <span className="inline-block">エリザベスが主宰するチーム「ELIGŌ」です。</span>
           </p>
           <BotanicalOrnament className="mt-10 lg:hidden" />
+        </div>
+      </section>
+
+      {/* 記事の検索 */}
+      <section className="relative pb-16 md:pb-20">
+        <div className="relative z-10 mx-auto max-w-xl px-6">
+          <SearchForm />
         </div>
       </section>
 
