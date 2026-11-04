@@ -188,8 +188,8 @@ export function NextStepBox() {
           <p className="font-serif-jp mt-1 text-[18px] leading-8">もっと詳しく知りたい方へ</p>
           <p className="mt-2 text-[13px] leading-7 text-blog-ink/85">ELIGŌでは、オイルの使い方を一緒に学べる毎月のZoom勉強会やクラフトワークショップを開いています。</p>
         </div>
-        <Link href="/#how-to-join" data-track="article_next_step" data-track-group="blog" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-[13px] tracking-widest text-blog-accent transition hover:bg-blog-tint">
-          参加方法を見る <ArrowIcon />
+        <Link href="/#members-only" data-track="article_next_step" data-track-group="blog" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-[13px] tracking-widest text-blog-accent transition hover:bg-blog-tint">
+          メンバー限定の内容を見る <ArrowIcon />
         </Link>
       </div>
     </div>
