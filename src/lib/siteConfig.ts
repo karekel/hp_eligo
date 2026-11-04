@@ -10,7 +10,7 @@ export const siteConfig = {
   siteUrl: `https://${productionHost}`,
   title: "ELIGŌ（エリゴ）｜ドテラ（doTERRA）エリザベスのエッセンシャルオイルチーム",
   description:
-    "ELIGŌ（エリゴ）は、ドテラ（doTERRA）プレジデンシャルダイヤモンドのエリザベス（Elizabeth）が主宰するエッセンシャルオイルのチームです。毎月のZoom勉強会、アロマタッチ、クラフトワークショップ、限定資料で、植物の力を暮らしとビジネスに活かす方法を学べます。",
+    "ELIGŌ（エリゴ）は、ドテラ（doTERRA）プレジデンシャルダイヤモンドのエリザベス（Elizabeth）が主宰するエッセンシャルオイルのチームです。毎月のZoom勉強会、アロマタッチ、クラフトワークショップ、限定資料で、植物の力を暮らしに活かす方法を学べます。",
 
   /** OGP */
   ogImage: "/assets/og_image.png",

@@ -51,7 +51,7 @@ export const leaders: Leader[] = [
         nameEn: "Elizabeth",
         nameJp: "エリザベス",
         catchphrase: "変化と周りの目を恐れず、本質を追求する。",
-        intro: "エリザベス（Elizabeth）は、ドテラ（doTERRA）プレジデンシャルダイヤモンドで、エッセンシャルオイルのチーム「ELIGŌ（エリゴ）」の主宰者です。ドテラ公認アロマタッチテクニック認定トレーナーとして、毎月のZoom勉強会やワークショップを通じて、エッセンシャルオイルを暮らしとビジネスに活かす方法を伝えています。東京都在住、4児の母。",
+        intro: "エリザベス（Elizabeth）は、ドテラ（doTERRA）プレジデンシャルダイヤモンドで、エッセンシャルオイルのチーム「ELIGŌ（エリゴ）」の主宰者です。ドテラ公認アロマタッチテクニック認定トレーナーとして、毎月のZoom勉強会やワークショップを通じて、エッセンシャルオイルを暮らしに活かす方法を伝えています。東京都在住、4児の母。",
         identity: {
             instagramUrl: "https://www.instagram.com/aroma_with_elizabeth/",
             instagramId: "13087810",
