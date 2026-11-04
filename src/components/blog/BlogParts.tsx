@@ -79,7 +79,7 @@ function SidebarTitle({ en, ja }: { en: string; ja: string }) {
 /* ── ヘッダー・フッター ── */
 
 const headerNav = [
-  { en: "Articles", ja: "記事一覧", href: "/blog#articles" },
+  { en: "Articles", ja: "新着記事", href: "/blog#articles" },
   { en: "Category", ja: "カテゴリー", href: "/blog#category" },
   { en: "ELIGŌ", ja: "公式サイト", href: "/" },
 ];
@@ -118,7 +118,7 @@ export function BlogHeader() {
           </a>
         </nav>
         <BlogMobileMenu
-          links={[{ label: "記事一覧", href: "/blog#articles" }]}
+          links={[{ label: "新着記事", href: "/blog#articles" }]}
           categories={[
             ...blogCategories.map((c) => ({ label: c.name, href: `/blog/category/${c.slug}` })),
             { label: "オイル図鑑を香りの系統で探す", href: "/blog/oil-guide" },
