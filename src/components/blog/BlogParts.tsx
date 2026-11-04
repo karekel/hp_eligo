@@ -11,6 +11,7 @@ import {
   type BlogPost,
 } from "@/lib/blogData";
 import { siteConfig } from "@/lib/siteConfig";
+import { BlogMobileMenu } from "./BlogMobileMenu";
 
 /* ── アイコン ── */
 
@@ -86,9 +87,10 @@ const headerNav = [
 export function BlogHeader() {
   return (
     <header className="relative z-30 border-b border-black/5 bg-white/90 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between pr-4 md:h-20 md:pr-6">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:h-20 md:pl-0 md:pr-6">
         <Link href="/blog" prefetch={false} className="flex h-full items-center gap-3">
-          <span className="blog-gradient flex h-full w-16 items-center justify-center md:w-20">
+          {/* スマホでは場所を取るので、マークの四角は PC だけに出す */}
+          <span className="blog-gradient hidden h-full w-20 items-center justify-center md:flex">
             <Image src="/assets/ロゴ/mark_center.png" alt="" width={44} height={44} className="h-9 w-9 opacity-75 brightness-0 md:h-11 md:w-11" />
           </span>
           <span className="leading-tight">
@@ -96,7 +98,7 @@ export function BlogHeader() {
             <span className="block font-script text-[15px] text-blog-accent md:text-[17px]">Oil Journal</span>
           </span>
         </Link>
-        <nav className="flex items-center gap-5 md:gap-9" aria-label="ブログメニュー">
+        <nav className="hidden items-center gap-9 md:flex" aria-label="ブログメニュー">
           {headerNav.map((item) => (
             <Link key={item.href} href={item.href} prefetch={false} className="hidden text-center transition-opacity hover:opacity-70 md:block">
               <span className="block font-script text-[17px] leading-none text-blog-accent">{item.en}</span>
@@ -110,11 +112,20 @@ export function BlogHeader() {
             aria-label="エリザベスのInstagram"
             data-track="header_instagram"
             data-track-group="blog"
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-blog-peach text-blog-ink transition-opacity hover:opacity-80"
+            className="hidden h-9 w-9 items-center justify-center rounded-full bg-blog-peach text-blog-ink transition-opacity hover:opacity-80 md:flex"
           >
             <InstagramIcon className="h-[18px] w-[18px]" />
           </a>
         </nav>
+        <BlogMobileMenu
+          links={[{ label: "記事一覧", href: "/blog#articles" }]}
+          categories={[
+            ...blogCategories.map((c) => ({ label: c.name, href: `/blog/category/${c.slug}` })),
+            { label: "オイル図鑑を香りの系統で探す", href: "/blog/oil-guide" },
+          ]}
+          siteLinks={[{ label: "ELIGŌ 公式サイト", href: "/" }]}
+          instagram={{ label: "エリザベスのInstagram", href: blogConfig.elizabethInstagram.url }}
+        />
       </div>
     </header>
   );
