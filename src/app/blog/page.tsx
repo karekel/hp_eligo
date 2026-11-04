@@ -10,7 +10,8 @@ export const metadata: Metadata = {
 };
 
 export default function BlogTopPage() {
-  const [featured, ...others] = [...blogPosts].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  // 新着は10本まで。それより前の記事はカテゴリーのページから探してもらう
+  const [featured, ...others] = [...blogPosts].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)).slice(0, 10);
 
   return (
     <main className="overflow-x-clip">
@@ -86,6 +87,15 @@ export default function BlogTopPage() {
               {others.map((post) => (
                 <PostCard key={post.slug} post={post} />
               ))}
+            </div>
+            <div className="mt-10 text-center">
+              <Link
+                href="#category"
+                className="inline-flex items-center gap-2 rounded-full border border-blog-accent/40 bg-white/80 px-6 py-3 text-[14px] tracking-[0.08em] text-blog-accent transition hover:bg-white"
+              >
+                ほかの記事はカテゴリーから探す
+                <ArrowIcon className="h-4 w-4" />
+              </Link>
             </div>
           </div>
           <BlogSidebar />
