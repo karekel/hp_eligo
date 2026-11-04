@@ -204,7 +204,6 @@ export function PostCard({ post }: { post: BlogPost }) {
     >
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image src={post.thumbnail} alt={post.title} fill sizes="(min-width: 1024px) 360px, (min-width: 768px) 45vw, 100vw" className="object-cover transition duration-700 group-hover:scale-105" />
-        <CategoryChip slug={post.category} className="absolute left-3 top-3" />
       </div>
       <div className="p-4 md:p-5">
         <p className="text-[11px] tracking-[0.15em] text-[#999]">{formatDate(post.publishedAt)}</p>
@@ -222,7 +221,6 @@ export function FeaturedPost({ post }: { post: BlogPost }) {
     >
       <div className="relative aspect-[4/3] overflow-hidden md:aspect-auto md:min-h-[300px]">
         <Image src={post.thumbnail} alt={post.title} fill sizes="(min-width: 1024px) 460px, 100vw" className="object-cover transition duration-700 group-hover:scale-105" />
-        <span className="absolute left-0 top-5 bg-[#8b78c4] px-4 py-1.5 font-script text-[16px] text-white">Pick up</span>
       </div>
       <div className="flex flex-col justify-center p-6 md:p-8">
         <div className="flex items-center gap-3">

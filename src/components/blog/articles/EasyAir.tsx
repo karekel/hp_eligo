@@ -136,6 +136,7 @@ export const easyAir: ArticleContent = {
       <OilProfile
         name="イージーエア"
         en="Easy Air"
+        image="/assets/products/easy-air-15ml.jpg"
         color={oilColors.peppermint}
         rows={[
           { label: "主な内容", value: "ローレルリーフ、ユーカリプタス、ペパーミント、ティーツリー、レモン、カルダモン、ラヴィンサラ、ラベンサラ" },

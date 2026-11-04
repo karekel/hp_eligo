@@ -130,6 +130,7 @@ export const deepBlue: ArticleContent = {
       <OilProfile
         name="ディープブルー"
         en="Deep Blue"
+        image="/assets/products/deep-blue-5ml.jpg"
         color={oilColors.lavender}
         rows={[
           { label: "主な内容", value: "ウィンターグリーン、カンファー、ペパーミント、イランイラン、ヘリクリサム、ブルータンジー、オスマンタスエキス、ジャーマンカモミール" },

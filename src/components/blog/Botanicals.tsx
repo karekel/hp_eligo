@@ -219,6 +219,16 @@ export function Chamomile({ className, style }: IllustProps) {
   );
 }
 
+/** ドテラの製品写真のボトル（白背景を乗算で消して、ボトルだけを見せる） */
+function ProductBottle({ id, className = "" }: { id: string; className?: string }) {
+  return (
+    <span className={`block overflow-hidden mix-blend-multiply ${className}`}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={`/assets/products/${id}.jpg`} alt="" className="h-full w-full object-cover" loading="lazy" />
+    </span>
+  );
+}
+
 type ClusterVariant = "left-a" | "right-a" | "left-b" | "right-b";
 
 /** ページ左右の余白に置く植物とボトルの組み合わせ */
@@ -229,7 +239,7 @@ export function BotanicalCluster({ variant, className = "" }: { variant: Cluster
         <>
           <Lavender className="absolute left-[38px] top-0 h-[300px] -rotate-[14deg] drop-shadow-sm" />
           <Lavender className="absolute left-[78px] top-[24px] h-[270px] rotate-[8deg] drop-shadow-sm" />
-          <OilBottle label="Lavender" color={oilColors.lavender} className="absolute left-[118px] top-[210px] h-[150px] rotate-[12deg] drop-shadow-md" />
+          <ProductBottle id="lavender-15ml" className="absolute left-[118px] top-[210px] h-[150px] w-[64px] rotate-[12deg]" />
           <CitrusSlice kind="lemon" className="absolute -left-[30px] top-[250px] h-[120px] drop-shadow-md" />
           <Chamomile className="absolute left-[70px] top-[360px] h-[54px]" />
           <Chamomile className="absolute left-[118px] top-[384px] h-[40px] rotate-12" />
@@ -239,7 +249,7 @@ export function BotanicalCluster({ variant, className = "" }: { variant: Cluster
         <>
           <Eucalyptus className="absolute right-[10px] top-0 h-[310px] rotate-[18deg] drop-shadow-sm" />
           <MintSprig className="absolute right-[96px] top-[120px] h-[200px] -rotate-[20deg] drop-shadow-sm" />
-          <OilBottle label="Peppermint" color={oilColors.peppermint} className="absolute right-[40px] top-[250px] h-[150px] -rotate-[10deg] drop-shadow-md" />
+          <ProductBottle id="peppermint-15ml" className="absolute right-[40px] top-[250px] h-[150px] w-[64px] -rotate-[10deg]" />
           <CitrusSlice kind="orange" className="absolute right-[136px] top-[340px] h-[96px] drop-shadow-md" />
         </>
       )}
@@ -247,14 +257,14 @@ export function BotanicalCluster({ variant, className = "" }: { variant: Cluster
         <>
           <Rosemary className="absolute left-[20px] top-[10px] h-[260px] rotate-[22deg] drop-shadow-sm" />
           <CitrusSlice kind="orange" className="absolute -left-[36px] top-[150px] h-[130px] drop-shadow-md" />
-          <OilBottle label="Wild Orange" color={oilColors.wildOrange} className="absolute left-[96px] top-[170px] h-[150px] -rotate-[8deg] drop-shadow-md" />
+          <ProductBottle id="orange-15ml" className="absolute left-[96px] top-[170px] h-[150px] w-[64px] -rotate-[8deg]" />
           <MintSprig className="absolute left-[10px] top-[290px] h-[170px] rotate-[30deg] drop-shadow-sm" />
         </>
       )}
       {variant === "right-b" && (
         <>
           <Lavender className="absolute right-[60px] top-0 h-[280px] rotate-[16deg] drop-shadow-sm" />
-          <OilBottle label="Frankincense" color={oilColors.frankincense} className="absolute right-[100px] top-[180px] h-[150px] rotate-[6deg] drop-shadow-md" />
+          <ProductBottle id="frankincense-15ml" className="absolute right-[100px] top-[180px] h-[150px] w-[64px] rotate-[6deg]" />
           <Resin className="absolute right-[20px] top-[300px] h-[70px]" />
           <CitrusSlice kind="lemon" className="absolute -right-[40px] top-[150px] h-[120px] drop-shadow-md" />
           <Chamomile className="absolute right-[150px] top-[340px] h-[48px]" />
@@ -269,7 +279,7 @@ export function BotanicalOrnament({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-end justify-center gap-1 ${className}`} aria-hidden="true">
       <Lavender className="h-[46px] -rotate-12" />
-      <OilBottle label="" color={oilColors.lavender} className="h-[30px]" />
+      <ProductBottle id="lavender-15ml" className="relative h-[32px] w-[14px]" />
       <MintSprig className="h-[34px] rotate-12" />
     </div>
   );

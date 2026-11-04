@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { blogConfig } from "@/lib/blogData";
-import { SHOW_PRODUCT_IMAGES } from "@/lib/productImages";
+import { pairingImages, SHOW_PRODUCT_IMAGES } from "@/lib/productImages";
 import { ArrowIcon, InstagramIcon } from "./BlogParts";
 import { Lavender, OilBottle } from "./Botanicals";
 
@@ -290,7 +290,6 @@ export function OilProfile({ name, en, color, image, rows }: { name: string; en:
             {en === "Lavender" && <Lavender className="h-[130px] rotate-12" />}
           </>
         )}
-        <p className="font-script absolute left-5 top-4 text-[22px] text-[#8b78c4]">{en}</p>
       </div>
       <dl className="divide-y divide-black/5 px-5 py-2 md:px-7">
         <div className="py-3">
@@ -332,7 +331,17 @@ export function PairingList({ items }: { items: { name: string; en: string; colo
     <div className="mt-6 grid gap-3 sm:grid-cols-2">
       {items.map((item) => (
         <div key={item.name} className="flex items-center gap-4 rounded-2xl border border-black/5 bg-white px-4 py-3">
-          <OilBottle label={item.en} color={item.color} className="h-[64px] shrink-0" />
+          {pairingImages[item.name] ? (
+            <div className="flex h-[72px] shrink-0 items-end gap-1">
+              {pairingImages[item.name].map((src) => (
+                <div key={src} className="relative h-[72px] w-[34px] overflow-hidden mix-blend-multiply">
+                  <Image src={src} alt={`${item.name.startsWith("ドテラ") ? item.name : `ドテラの${item.name}`}のボトル`} fill sizes="96px" className="object-cover" />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <OilBottle label={item.en} color={item.color} className="h-[64px] shrink-0" />
+          )}
           <div>
             <p className="font-serif-jp text-[15px] text-[#2b2b2b]">{item.name}</p>
             <p className="mt-0.5 text-[12px] leading-6 text-[#777]">{item.note}</p>

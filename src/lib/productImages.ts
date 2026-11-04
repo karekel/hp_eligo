@@ -21,6 +21,37 @@ const products = {
   k12: p("lemon-15ml", "レモン"),
   k15: p("orange-15ml", "オレンジ"),
   k16: p("peppermint-15ml", "ペパーミント"),
+  db: p("deep-blue-5ml", "ディープブルー"),
+  dbr: p("deep-blue-rub", "ディープブルーラブ"),
+};
+
+const src = (id: string) => `/assets/products/${id}.jpg`;
+
+/** 相性のよい香りの一覧（PairingList）で、名前ごとに出す製品画像 */
+export const pairingImages: Record<string, string[]> = {
+  "ドテラバランス": [src("doterra-balance-15ml")],
+  "ベルガモット": [src("bergamot-15ml")],
+  "カルダモン": [src("cardamom-5ml")],
+  "サイプレス": [src("cypress-15ml")],
+  "ユーカリプタス": [src("eucalyptus-15ml")],
+  "フランキンセンス": [src("frankincense-15ml")],
+  "ゼラニウム": [src("geranium-15ml")],
+  "グレープフルーツ": [src("grapefruit-15ml")],
+  "ヒノキ": [src("hinoki-5ml")],
+  "ラベンダー": [src("lavender-15ml")],
+  "レモン": [src("lemon-15ml")],
+  "レモングラス": [src("lemongrass-15ml")],
+  "ライム": [src("lime-15ml")],
+  "オレンジ": [src("orange-15ml")],
+  "ペパーミント": [src("peppermint-15ml")],
+  "ローズマリー": [src("rosemary-15ml")],
+  "ドテラセレニティー": [src("doterra-serenity-15ml")],
+  "スペアミント": [src("spearmint-15ml")],
+  "シナモンバーク、クローブ": [src("cinnamon-bark-5ml"), src("clove-15ml")],
+  "タンジェリン": [src("tangerine-15ml")],
+  "ティーツリー": [src("tea-tree-15ml")],
+  "ベチバー": [src("vetiver-15ml")],
+  "ユズ": [src("yuzu-5ml")],
 };
 
 export const productImages: Record<string, ProductImage[]> = {
@@ -52,4 +83,5 @@ export const productImages: Record<string, ProductImage[]> = {
   "what-is-essential-oil": [products.k11],
   "co-impact-sourcing": [products.k12],
   "oil-storage": [products.k12, products.k15],
+  "deep-blue": [products.db, products.dbr],
 };
