@@ -25,7 +25,7 @@ export const siteCopy = {
         title: "What is ELIGŌ?",
         subtitle: "ELIGŌ（エリゴ）とは？",
         color: "#F7F2C8",
-        body: `ELIGŌ（エリゴ）は、Elizabethが創設したdōTERRA（ドテラ）のグループです。既存のシステムや他人の正解に依存せず、自らの心身を自ら整える「健康の自立」。そして、自分の美意識で働き方をデザインし、未来を構築する「経済の自立」。ELIGŌは、この2つの主権を自らの手に取り戻すための共同体です。
+        body: `ELIGŌ（エリゴ）は、Elizabethが創設したdōTERRA（ドテラ）のグループです。誰かの正解に頼らず、エッセンシャルオイルを自分で学び、自分で選んで暮らしに取り入れる。ELIGŌは、そんな人たちが集まる共同体です。
         
         チームに蓄積された数え切れないほどの「リアルな体験談」と、それを裏付ける「確かな科学的根拠」。この両輪に基づいて、極めて知的に、そして戦略的に植物の力を使いこなします。
 
@@ -56,15 +56,15 @@ https://www.youtube.com/watch?v=ED10RosqNUY&t=67
         title: "Our Activities",
         subtitle: "チームで得られる体験",
         color: "#D6EAD9",
-        body: `植物の力を最大限に引き出し、自分のライフスタイルやビジネスをアップデートしていくための環境です。
+        body: `植物の力を最大限に引き出し、自分のライフスタイルをアップデートしていくための環境です。
 
 **Lifestyle & Craft**
 毎日のセルフケアから、香水やバスボム、口紅作りのクラフトワークショップ、また料理、味噌作り講座まで。[aromatouch_link:Doterra公認アロマタッチ]テクニック認定トレーナーである主宰のElizabethから、家族を直接ケアできる「確かな知識と技術」を習得することもできます。
 [image_single:/assets/ABOUT/Lifestyle & Craft.JPG]
 
 **Business & Influence**
-ビジネスとして展開したいメンバーに向けたSNS戦略などのzoomも開催。あなたの「好き」や「美意識」を社会への影響力に変え、経済的な主権を確立する実践的なルートがあります。
-[image_grid:/assets/ABOUT/Business & Influence.jpg,/assets/ABOUT/Business & Influence.png]
+SNSでの発信の仕方などを学ぶzoomも開催しています。あなたの「好き」や「美意識」を、社会への影響力に変えていくための学びの場です。
+[image_grid:/assets/ABOUT/アロマタッチ.JPG,/assets/ABOUT/Lifestyle & Craft2.jpg]
 
 **Community & Event**
 毎月のZoom勉強会や、懇親会、BBQ、年に２回の大型マルシェイベント「POP'N ELIGO」を開催。活発なグループLINEには、リアルな体験談や最新情報が日々飛び交います。自ら動き、実践し、確かめるプロセスそのものを楽しむ。そんな互いに高め合う大人のためのコミュニティです。`,
@@ -135,7 +135,7 @@ https://www.youtube.com/watch?v=ED10RosqNUY&t=67
       },
       {
         title: "Materials",
-        description: "ドテラ公式資料に加え、エリザベス作成のZoom資料やクラフトレシピ、さらにこれさえあればワークショップが開催できる講座用スライドまで、幅広くダウンロードいただけます。ビジネスにもライフスタイルにも活用できる、実践的なPDF資料を多数ご用意しています。",
+        description: "ドテラ公式資料に加え、エリザベス作成のZoom資料やクラフトレシピ、さらにこれさえあればワークショップが開催できる講座用スライドまで、幅広くダウンロードいただけます。毎日の暮らしに活用できる、実践的なPDF資料を多数ご用意しています。",
         image: "/assets/members/MATERIALS.png"
       },
     ],
@@ -181,7 +181,7 @@ https://www.youtube.com/watch?v=ED10RosqNUY&t=67
         href: "https://office.doterra.com/Application/index.cfm?country=JPN&lng=ja&_gl=1*16m22a2*_up*MQ..*_ga*MTc1MzQ5OTU4OS4xNzcyMTE4MTAx*_ga_KR6KEW2NZ9*czE3NzIxMTgxMDAkbzEkZzAkdDE3NzIxMTgxMDAkajYwJGwwJGgw*_gs*MQ..*_ga_XW71K6YFHT*czE3NzIxMTgxMDAkbzEkZzAkdDE3NzIxMTgxMDAkajYwJGwwJGgw*_ga_JP5T5508JH*czE3NzIxMTgxMDAkbzEkZzAkdDE3NzIxMTgxMDAkajYwJGwwJGgw&gclid=CjwKCAiA-__MBhAKEiwASBmsBKm_9JFG-IhmloI6BFHZIDM2e2zdv_JXJFj4jbcKnpgkBDz0jxP9gRoCAfgQAvD_BwE&gbraid=0AAAAADkIucEwGuVD4pa7l6LDbL-JqXsre",
         color: "#E6A75A",
         textColor: "#E6A75A",
-        image: "/assets/HOWTOJOIN/3.png"
+        image: "/assets/HOWTOJOIN/3.jpg"
       }
     ],
     footer: "Welcome to ELIGŌ!"
