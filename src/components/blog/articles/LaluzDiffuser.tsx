@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, DataTable, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, MemberVoice, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ドテラ ラルツディフューザーの使い方を取扱説明書 V2 の範囲でまとめた記事 */
 export const laluzDiffuser: ArticleContent = {
@@ -56,6 +56,11 @@ export const laluzDiffuser: ArticleContent = {
       <p>
         ブレンドも、合計を5〜10滴に収めます。組み合わせは<Link href="/blog/diffuser-blends">ディフューザーのレシピ</Link>にあります。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ラルツで、セレニティー3滴とベルガモット2滴の合計5滴を香らせていました。花の香りのオイルはラルツで香らせるのが好き、というメンバーもいます。はじめての組み合わせも、合計5滴から試してみましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="buttons">ボタンの使い方｜タイマー、ミスト、ライト</h2>
       <p>ボタンは3つで、押す回数で動きが変わります。</p>
@@ -83,6 +88,11 @@ export const laluzDiffuser: ArticleContent = {
         ]}
       />
       <p>腐食性や刺激の強い化学薬品を使うと、本体を傷めることがあります。</p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、洗うたびにカバーと内蓋の2つを外すのが少し手間で、本体も少し重く感じています。お手入れのときは両手で持って、落とさないように扱いましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="trouble">動かないとき｜故障かなと思ったら</h2>
       <p>状態ごとに、考えられる原因と試すことをまとめました。水を捨てるときは、先に電源ケーブル類を抜きます。</p>
@@ -109,6 +119,11 @@ export const laluzDiffuser: ArticleContent = {
       <p>
         保証は「ドテラ1年保証」です。説明書を守って使用、管理している方が、本人が購入した日から1年の間に、通常の使用で品質不具合や製品不良が起きた場合が対象です。申し立てが受理されると、新品の発送か、30日間返品ポリシーに基づく返金が行われます。不具合のある製品の返送が必要なので、捨てずに相談してください。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、使い始めて2か月ほどのラルツが、ある日ミストを出さなくなり、水も減らなくなりました。ドテラに連絡して、交換を受けています。交換になるかどうかは保証の条件で決まるので、不具合を感じたら自分で判断せず、まず購入元かお客様相談室に相談しましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

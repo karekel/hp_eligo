@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 蜜蝋とシアバターで作る口紅クラフトのレシピ */
 export const aromaLip: ArticleContent = {
@@ -150,6 +150,14 @@ export const aromaLip: ArticleContent = {
         <PointBox>シリコン型は、空気を入れるようにゆっくり外します。型に入り切らなかった分は、繰り出し式のリップ容器に流しましょう。</PointBox>
       </MethodCard>
       <ArticleFigure src="/assets/blog/inline/aroma-lip-tools-a9df6ddb.jpg" alt="湯せん用の浅い鍋と耐熱ビーカー、スケール、スパーテル、色材の小皿、リップスティック型、口紅の容器" caption="アロマリップ作りで使う主な道具" />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、シリコン型から外すときに口紅が型にくっついて苦労したことから、金属の型を使うようになりました。金属の型にしてからは、ほとんど失敗せずに作れています。
+        </p>
+        <p>
+          別のメンバーは、昔使っていた口紅の容器の中身をきれいに取り除き、作った口紅を流し入れて使い続けています。容器を使い回すときは、洗ってよく乾かしてから詰めましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="color">色の決め方</h2>
       <p>カラーマイカの2gは目安です。ビーカーの中の色と唇につけた色は違うので、手の甲で確かめながら足します。</p>
@@ -176,6 +184,14 @@ export const aromaLip: ArticleContent = {
           ["ピンクが肌から浮いて見えるとき", "黄色の酸化鉄か、ゴールド系のマイカを少し"],
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、マイカや酸化鉄をグラムで決めず、混ぜたものを手の甲にのせて発色を見ながら足しています。出したい色はその時々で変わるので、目で見て決めています。のせる前に、熱くないか必ず確かめましょう。
+        </p>
+        <p>
+          別のメンバーは、手作りの口紅は市販のものより落ちやすいと感じていて、こまめに塗り直しながら普段使いにしています。
+        </p>
+      </MemberVoice>
 
       <h2 id="scent">香りのつけ方と濃度</h2>
       <p>
@@ -198,6 +214,14 @@ export const aromaLip: ArticleContent = {
         表示が「塗・香」のラベンダー、ゼラニウム、フランキンセンスから1つです。ラベルの「化粧品」の表示も確かめてください。読み方は<Link href="/blog/doterra-how-to-use">ドテラの「塗・香・食」の表示の見方</Link>へ。レモンなど光毒性のある柑橘と、協会が皮膚刺激の例に挙げるペパーミント、ティーツリー、ユーカリは使いません。
       </p>
       <ProductPhotos names={["ラベンダー", "ゼラニウム", "フランキンセンス"]} />
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーが口紅作りの講座を開くと、色よりも、入れるオイルを選ぶ時間がいちばん盛り上がります。色も「この色がおすすめ」と声をかけ合いながら、みんなで決めています。
+        </p>
+        <p>
+          講座で口紅を作った別のメンバーは、自分で作った口紅に特別感があって、毎日持ち歩いています。入れるのは1滴だけなので、好きだと思える香りを1つ選んでみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">作るときと使うときの注意点</h2>
       <CautionBox
@@ -237,6 +261,10 @@ export const aromaLip: ArticleContent = {
           {
             q: "型の表面の真ん中に穴があきました。",
             a: "外側から固まるときにできるくぼみで、失敗ではありません。穴があけば、型を動かせます。",
+          },
+          {
+            q: "口紅がゆるく仕上がりました。",
+            a: "ELIGŌのメンバーの一人は、はじめてリップクリームを作ったとき、家にあるスケールで量ったらゆるく仕上がりました。0.01g単位で量れるスケールに替えて作り直すと、きちんと仕上がりました。別のメンバーは、冷蔵庫から出してすぐに容器へ詰めなかった1本が、型から外すときに手の熱で少しゆるくなりました。材料は少ない量なので細かく量り、冷やしたらすぐに容器へ移しましょう。",
           },
         ]}
       />

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, PointBox, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, Faq, MemberVoice, NextStepBox, OilProfile, PairingList, PointBox, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ペパーミント */
@@ -146,6 +146,11 @@ export const peppermint: ArticleContent = {
       <PointBox>
         オイルを含ませたハンカチで、汗を拭かないようにしましょう。香り専用のハンカチを決めておくと間違えません。
       </PointBox>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ペパーミントとラベンダーに、レモンユーカリとオンガードを足して、布に吹きかけるリネンスプレーを作っています。細かい霧が出るスプレーボトルを選ぶと、使いやすくなります。まねするときは、肌に直接かからないようにし、布は目立たない所で試してから吹きかけましょう。
+        </p>
+      </MemberVoice>
       <p>
         手軽な道具の使い方は<Link href="/blog/no-diffuser">ディフューザーがなくても大丈夫！</Link>で紹介しています。
       </p>
@@ -157,6 +162,11 @@ export const peppermint: ArticleContent = {
       <p>
         日本アロマ環境協会は、希釈した精油でも、飲むことや食品と一緒にとることをすすめていません。日本の法律では一般に雑品に分類され、飲食は認められていないという説明です。別の見解もあるので、最後はご自身で判断してください。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、レモンで香りをつけた水を毎日持ち歩いていて、暑い日には「食」の表示があるペパーミント15mLを1滴だけ足しています。香りが強いので、1滴で十分です。5mLのボトルは口に入れる使い方がないので、飲み物には使いません。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>ペパーミントは香りの立ち上がりを担うトップノートのオイルです。主張が強いので、ほかの香りより少なめに入れるとバランスがとれます。</p>
@@ -186,6 +196,14 @@ export const peppermint: ArticleContent = {
       <p>
         最初の例は、ドテラが紹介している組み合わせです。部屋が広くて香りが弱いと感じたら、同じ比率で増やしてください。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人も、フランキンセンス、オレンジ、ペパーミントの組み合わせをディフューズしています。部屋中が香りに包まれて、家で過ごす日を心地よく過ごせる、お気に入りのブレンドです。
+        </p>
+        <p>
+          別のメンバーは、最近、ディフューザーにペパーミントを入れていて、爽やかな香りがお気に入りです。滴数は、お使いのディフューザーの説明書の目安に合わせましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

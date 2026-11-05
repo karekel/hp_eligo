@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, MemberVoice, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ユーカリプタス */
@@ -169,6 +169,14 @@ export const eucalyptus: ArticleContent = {
         ]}
       />
       <p>どちらもディフューザーの例です。ラルツディフューザーの目安は5〜10滴で、浴室など湿気の多い場所では使えません。お使いの機種の説明書に合わせてください。</p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、気に入って使っていた市販のオイルの香りに近づけたくて、レモン、ユーカリプタス、ラベンダー、ゼラニウムを合わせました。レモンとユーカリプタスを多めに、ラベンダーとゼラニウムを少なめにするのが、好みの香りになる配分です。
+        </p>
+        <p>
+          まねするときは、合計の滴数をディフューザーの目安の中に収めて、配分を1滴ずつ変えて試してみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox
@@ -194,6 +202,10 @@ export const eucalyptus: ArticleContent = {
           {
             q: "料理や飲み物に使えますか？",
             a: "使えません。ドテラは、摂取しないよう案内しています。",
+          },
+          {
+            q: "しばらく使わないディフューザーは、どうしまえばいいですか？",
+            a: "ELIGŌのメンバーの一人は、洗って乾かしたつもりのディフューザーを1か月ぶりに開けたら、中に水滴が残っていて、赤いカビが出ていました。しまう前に、タンクに水滴が残っていないかを確かめましょう。手入れの方法は、お使いの機種の説明書に従ってください。",
           },
         ]}
       />

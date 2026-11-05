@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { ArticleFigure, CautionBox, Faq, MethodCard, NextStepBox, PairingList, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, Faq, MemberVoice, MethodCard, NextStepBox, PairingList, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** お風呂でのオイルの使い方と、お湯に入れる前の注意点の記事 */
 export const bathOils: ArticleContent = {
@@ -136,6 +136,14 @@ export const bathOils: ArticleContent = {
       <p>
         ドテラのユーカリプタスは肌につけない製品で、ペパーミント15mLは「香・食」の表示なので、湯船には入れません。ティーツリーには入浴の使い方がありません。協会も、ペパーミント、ティートリー、ユーカリを皮膚刺激に注意が必要な精油の例に挙げています。レモンやベルガモットなど「香・食」の表示の柑橘も、湯船に入れるのは避けましょう。協会は、これらに日光に反応して肌に炎症などを起こす光毒性があるとしています。肌についての確認は<Link href="/blog/oils-on-skin">エッセンシャルオイルは肌につけていい？</Link>もあわせて読んでください。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、その日ごとに香りを替えて、お風呂の時間を楽しんでいます。12月は、フランキンセンスを必ず使うと決めています。
+        </p>
+        <p>
+          どの香りを選ぶときも、入浴に使える表示があるかを確かめ、無水エタノールなどに混ぜてからお湯に入れましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="how">3つの楽しみ方</h2>
 
@@ -159,6 +167,14 @@ export const bathOils: ArticleContent = {
           ]}
         />
       </MethodCard>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、自宅ではじめてバスソルトを手作りして、好きな香りで作れる楽しさにはまりました。秋から冬のバスタイムの楽しみにしています。
+        </p>
+        <p>
+          まねするときは、入浴に使える表示があるオイルを選び、作ったらすぐに湯船に入れましょう。
+        </p>
+      </MemberVoice>
 
       <MethodCard no={3} title="洗面器のお湯で香りだけ楽しむ" items={["洗面器", "お湯", "オイル 1〜3滴"]}>
         <Steps
@@ -188,6 +204,14 @@ export const bathOils: ArticleContent = {
           "お使いの給湯器や浴槽の説明書も確認しましょう。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーにも、オイルが届いてすぐ、手順を確かめずにレモンを湯船に入れてしまった人がいます。いまは、はじめての人には、表示と手順を確かめて少量から試すようすすめています。
+        </p>
+        <p>
+          オイルは湯船に直接垂らさず、無水エタノールなどに混ぜてから入れます。レモンなど「香・食」の表示の柑橘は、湯船に入れないようにしましょう。
+        </p>
+      </MemberVoice>
       <p>アロマバスは、香りを楽しむ時間です。体の不調が気になるときは、医師に相談してください。</p>
 
       <h2 id="faq">よくある質問</h2>

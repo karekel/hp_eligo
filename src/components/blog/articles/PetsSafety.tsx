@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ペットのいる家でのオイルの扱いを、使わない方向で整理した記事 */
 export const petsSafety: ArticleContent = {
@@ -76,6 +76,11 @@ export const petsSafety: ArticleContent = {
       <p>
         自治体の資料も参考になります。福井県と佐賀県は、犬や猫は人よりにおいや化学物質に敏感で、スプレーの成分は部屋の下の方にたまると説明しています。どちらも精油についての資料ではありませんが、床の近くで過ごす動物を考えるうえで大切な視点です。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、犬と暮らしているので、家でディフューザーを使うのをやめていました。部屋を分けられないときは、香らせないことも選び方のひとつです。
+        </p>
+      </MemberVoice>
 
       <h2 id="distance">香りの距離のとり方</h2>
       <p>香りを楽しむなら、ペットの生活空間と分けましょう。分けられないときは、使わないことを選びます。</p>

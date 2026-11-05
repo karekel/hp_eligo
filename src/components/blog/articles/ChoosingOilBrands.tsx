@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
+import { CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
 
 /** メーカーに順位をつけず、比べる基準だけをまとめた記事 */
 export const choosingOilBrands: ArticleContent = {
@@ -125,6 +125,14 @@ export const choosingOilBrands: ArticleContent = {
       <p>
         たとえば5mLで2,000円なら1mLあたり400円、15mLで4,500円なら300円です（計算のための例です）。協会によると、精油1kgを得るのにラベンダーは花穂100〜200kg、ローズは花3〜5トンが必要です。計算は同じ植物どうしで行いましょう。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、もともとオイルが好きで、いろいろなメーカーのものを持っていました。今は、好きな香りを1本ずつ調べて吟味しながら、少しずつ増やしています。まとめてそろえるより、1本ずつ選んで増やしていく買い方が自分に合っていると感じています。
+        </p>
+        <p>
+          1本ずつ選ぶときも、同じ植物どうしで、ラベルの項目と1mLあたりの価格を書き出しておくと比べやすくなります。
+        </p>
+      </MemberVoice>
 
       <h2 id="label">ラベルで見る8つの項目</h2>
       <p>

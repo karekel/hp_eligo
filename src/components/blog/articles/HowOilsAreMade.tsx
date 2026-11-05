@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, CheckPoints, DataTable, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, MemberVoice, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** エッセンシャルオイルの抽出方法と、自宅で作れるかを説明する記事 */
 export const howOilsAreMade: ArticleContent = {
@@ -135,6 +135,17 @@ export const howOilsAreMade: ArticleContent = {
         ]}
       />
       <ProductPhotos names={["ラベンダー", "ペパーミント", "レモン"]} />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーは、ドテラのゆずやヒノキのオイルを作っている国内の農家と蒸留所を見学しました。どちらも、原料の量に比べて取れるオイルはごくわずかです。蒸留所では、職人が水蒸気蒸留の工程を手で調整しながら、オイルを取り出していました。
+        </p>
+        <p>
+          見学先では、果汁を搾ったあとのゆずの皮を蒸留していました。ヒノキは、製材所で出た端材から取り出しています。別の見学では、形がふぞろいで出荷されにくいブンタンを、オイルにしていました。
+        </p>
+        <p>
+          蒸留のあとに残るゆずの搾りかすやヒノキのチップも、堆肥や燃料に使い、できるだけ捨てない工夫をしています。手元のボトルの産地や抽出方法は、ラベルや製品ページで確かめてみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="home">自宅で簡単に作れる？</h2>
       <p>

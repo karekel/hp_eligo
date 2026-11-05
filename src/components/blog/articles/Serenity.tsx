@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, NextStepBox, OilProfile, PairingList, PointBox, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, MemberVoice, NextStepBox, OilProfile, PairingList, PointBox, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ドテラセレニティー */
@@ -136,6 +136,14 @@ export const serenity: ArticleContent = {
       <p>
         この順番は、ティッシュに1滴たらすと確かめられます。ドテラの分類では、サンダルウッドはベースです。日本アロマ環境協会の分類でも、イランイランはミドル、サンダルウッドはベースで、ベースは揮発しにくい香りです。たらした直後と、少し時間をおいたあとで比べてみてください。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、ドテラセレニティーの香りが好きで、おやすみ前だけでなく、出かけるときにも香りを楽しんでいます。
+        </p>
+        <p>
+          別のメンバーは、ドテラセレニティーとピューリファイを合わせて、ディフューザーで香らせています。甘く落ち着いた香りに、自分では選ばない組み合わせが重なって、新鮮に感じて好きになりました。合わせるときも、合計の滴数はディフューザーの説明書の目安に収めましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="enjoy">ドテラセレニティーの使い方｜おやすみ前の3つの方法</h2>
       <UsageCards
@@ -166,6 +174,14 @@ export const serenity: ArticleContent = {
       <p>
         足裏の手順は<Link href="/blog/foot-self-massage">足裏セルフマッサージのやり方</Link>で紹介しています。エプソムソルトなどに2〜3滴加えて入浴する使い方もあります。お湯に入れる前に<Link href="/blog/bath-oils">お風呂でのオイルの使い方</Link>も確認してください。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、日中はオレンジなどの明るい香りを、夕方からはドテラセレニティーをディフューザーで香らせて、時間帯で香りを変えています。数種類を混ぜるときも、合計の滴数は説明書の目安の中に収めています。
+        </p>
+        <p>
+          別のメンバーは、ドテラセレニティーとグリセリンで自分用の柔軟剤を作り、洗濯物に香りを添えています。ドテラセレニティーを入れたバスボムを手作りして、好きな香りのバスタイムを楽しんでいるメンバーもいます。バスボムの分量は<Link href="/blog/bath-bomb">バスボムの作り方</Link>で確かめてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>甘さが濃いと感じる日は、軽い香りを足すと印象が変わります。花の香りを強めたい日は、内容にも含まれるラベンダーを重ねます。</p>
@@ -192,6 +208,14 @@ export const serenity: ArticleContent = {
         ]}
       />
       <p>ブレンドはディフューザーに合計5滴入れる想定です。ベルガモット15mLの表示は「香・食」なので、足裏に使う組み合わせには入れません。</p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人の家では、森の音とオレンジ、ドテラセレニティーを合わせた香りが、家族のお気に入りです。別のメンバーは、オレンジとサイプレスにドテラセレニティーを合わせて楽しんでいます。
+        </p>
+        <p>
+          柑橘を入れた組み合わせを肌に使うときは、それぞれのオイルに「塗」の表示があるかを確かめましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

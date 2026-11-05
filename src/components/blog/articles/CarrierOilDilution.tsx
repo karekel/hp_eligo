@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, MemberVoice, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** キャリアオイルの選び方と濃度の計算の記事 */
 export const carrierOilDilution: ArticleContent = {
@@ -171,6 +171,17 @@ export const carrierOilDilution: ArticleContent = {
         <li>天然の植物油は酸化しやすいので、使い切れる量を買う</li>
         <li>ナッツアレルギーのある方は、ナッツ由来の油に注意する</li>
       </ul>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーは、キャリアオイルを使い心地で選んでいます。ドテラ ココナッツオイルは軽くてべたつきが少なく、ホホバオイルは重めのしっかりした質感です。
+        </p>
+        <p>
+          ヘアオイルを作るメンバーの一人は、くせの強い髪にはホホバオイルの重さがちょうどよいと感じて、ホホバオイルをベースにしています。別のメンバーは、ホホバオイルにその朝の気分で選んだオイルを加えて、使い心地を気に入っています。ココナッツオイルで作っているメンバーもいます。
+        </p>
+        <p>
+          ヘアオイルは地肌につけず、髪になじませましょう。加えるオイルは「塗」の表示がある製品を選び、下の早見表の目安より濃くしないようにします。
+        </p>
+      </MemberVoice>
       <p>
         ドテラ ココナッツオイルの特徴と、ドテラのホホバオイルとの違いは<Link href="/blog/doterra-coconut-oil">ドテラのココナッツオイルとは？</Link>で紹介しています。
       </p>
@@ -219,6 +230,11 @@ export const carrierOilDilution: ArticleContent = {
       <p>
         ドテラは、はじめて使う際はパッチテスト等で試すよう案内しています。協会は2020年から、事前のパッチテストの代わりに、低い濃度で試してから使う案内に変えています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーは、薄めたオイルを、上部にスポイトのついたガラス製の遮光瓶に作っておき、使う分だけ手のひらに出して使っています。作るときは、濃度の目安と滴数を守りましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">肌に使うときの注意点</h2>
       <CautionBox
@@ -234,6 +250,11 @@ export const carrierOilDilution: ArticleContent = {
           "植物油がついたタオルや衣類は、洗ったあとでも乾燥機にかけず、自然乾燥にしてください。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          キャリアオイルにも、人によって合う、合わないがあります。ELIGŌのメンバーにも、美容オイルに使うキャリアオイルを、ココナッツオイルからホホバオイルに替えた人がいます。使っていて赤みやかゆみなどを感じたら、手順のとおり使うのをやめて、皮膚科専門医に相談してください。
+        </p>
+      </MemberVoice>
 
       <h2 id="faq">よくある質問</h2>
       <Faq
@@ -249,6 +270,10 @@ export const carrierOilDilution: ArticleContent = {
           {
             q: "顔とボディで同じものを使えますか？",
             a: "顔にも使うなら、最初から0.5%以下で作ります。ボディ用に1%で作ったものは、顔に使わないでください。",
+          },
+          {
+            q: "薄めたオイルは、どのくらいで使い切りますか？",
+            a: "冷暗所に置き、1カ月以内に使い切ります。天然の植物油は酸化しやすいためです。ELIGŌのメンバーが受けた講座でも、ココナッツオイルで薄めたものは1か月ほどで使い切る目安でした。作った日を瓶に書いておくと、使い切る時期がわかりやすくなります。",
           },
         ]}
       />

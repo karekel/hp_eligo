@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, MemberVoice, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: イージーエア */
@@ -189,6 +189,11 @@ export const easyAir: ArticleContent = {
       <p>
         ドテラは、アロマタッチのハンドテクニックに使うオイルの例にイージーエアを挙げています。ハンドテクニックでは、化粧品カテゴリのオイルを使うよう求めています。家族と手のタッチを楽しみたい方は、<Link href="/blog/aromatouch-hand">アロマタッチのハンドテクニック</Link>を参考にしてください。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、車の中でタンブラーサイズの小型のディフューザーを使い、イージーエアやミント系の香りを選んでいます。車内は狭く、香りが強すぎると感じることもあるので、そんなときは乗り込んで最初の5分ほど香らせたら止めています。狭い場所では、短い時間から試してみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>すっきりした香りは、柑橘、花、木の香りと重ねると印象が変わります。ディフューザーで合わせると手軽です。</p>
@@ -217,6 +222,14 @@ export const easyAir: ArticleContent = {
       <p>
         どちらもディフューザーに合計5滴入れる例です。レモン15mLの表示は「香・食」なので、足裏などに塗るブレンドには入れません。ラベンダー15mLは「塗・香」の表示です。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、レモングラスとシトラスブリス、ピューリファイにイージーエアを重ねて、ディフューザーで香らせています。さわやかで少し甘く、コリアンダーのくせも感じる香りを楽しんでいます。
+        </p>
+        <p>
+          別のメンバーの家では、森の音、イージーエア、ラベンダー、フランキンセンスを2滴ずつ合わせて香らせた日もあります。合計の滴数は、ディフューザーの説明書の目安に収めましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox
@@ -235,6 +248,11 @@ export const easyAir: ArticleContent = {
           "イージーエアは香りを楽しむオイルです。体の調子が気になるときは、医師に相談してください。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーにも、濃いほうがいいのかと思い、キャリアオイルをほんの少しにして、1日に何度も使ってしまった人がいます。濃くしたり回数を増やしたりする必要はありません。足裏に使うときも、ココナッツオイル10mLに2滴の目安を守り、少量から試してください。
+        </p>
+      </MemberVoice>
       <p>
         ペットのいる部屋で使うときは、<Link href="/blog/pets-safety">ペットのいる家でオイルを使うときの注意点</Link>も確認しましょう。
       </p>
@@ -257,6 +275,10 @@ export const easyAir: ArticleContent = {
           {
             q: "イージーエアの名前がつく製品は、ほかにありますか？",
             a: "2026年11月時点で、日本のドテラには、限定販売のキャンディ「イージーエア ドロップ」があります。30粒入りで、会員価格3,000円、参考小売価格4,500円（いずれも税込）です。砂糖と玄米シロップをベースにしたもので、1粒4gあたりの熱量は16kcalです。5mL×10本のファミリー エッセンシャルズキットにも、イージーエアが入っています。限定品は取り扱いが変わることがあるので、購入前に確かめましょう。",
+          },
+          {
+            q: "イージーエア ドロップはどんな味ですか？",
+            a: "ELIGŌのメンバーの一人は、オンガード ドロップよりもイージーエア ドロップのほうが食べやすいと感じています。味の好みは人によって分かれます。限定品なので、取り扱いを確かめてから選びましょう。",
           },
         ]}
       />

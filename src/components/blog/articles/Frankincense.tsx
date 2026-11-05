@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, MemberVoice, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: フランキンセンス */
@@ -172,6 +172,14 @@ export const frankincense: ArticleContent = {
         <PointBox>自分で使う分だけを少量作りましょう。手作りしたものを販売したり、人に譲ったりしないでください。</PointBox>
       </MethodCard>
       <ProductPhotos names={["ココナッツオイル"]} />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、お風呂上がりにいつも使っている洗い流さないヘアトリートメントに、フランキンセンスを1滴混ぜて、香りを楽しんでいます。ドテラは普段の化粧品に1〜2滴加えるよう案内しているので、まねするときは1滴から試しましょう。
+        </p>
+        <p>
+          別のメンバーは、小さな容器にいろいろなオイルを少しずつ入れてポーチにまとめ、旅行に持っていきます。フランキンセンスはボトルごと持ち歩いています。使い終わった容器は中身をきれいに取ってから、作ったものを入れ直して繰り返し使っています。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>フランキンセンスは、香りの土台になるベースノートのオイルです。主役に重ねるように少なめに入れると、全体に奥行きが出ます。</p>
@@ -198,6 +206,14 @@ export const frankincense: ArticleContent = {
         ]}
       />
       <p>どちらもディフューザーの例で、合計5滴です。ラルツディフューザーの目安は5〜10滴なので、お使いの機種の説明書に合わせてください。</p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人のお気に入りは、フランキンセンスにオレンジとペパーミントを合わせたブレンドです。柑橘を足すと爽やかになり、部屋中が香りに包まれます。
+        </p>
+        <p>
+          別のメンバーは、毎日オイルを替えて香りを楽しみ、12月には必ずフランキンセンスを選びます。フランキンセンスとコパイバを合わせたスプレーを作り、寝る前にリネンに吹きかけているメンバーもいます。布に使うときは、目立たないところで色が変わらないか試してからにしましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox
@@ -225,6 +241,14 @@ export const frankincense: ArticleContent = {
           {
             q: "顔に使うときの滴数は？",
             a: "ドテラは、普段の化粧品に1〜2滴加えるよう案内しています。協会の目安の0.5%以下にするなら、植物油20mLに2滴までです。",
+          },
+          {
+            q: "1滴だけ出すのが難しいときは？",
+            a: (
+              <>
+                ELIGŌのメンバーにも、1滴のつもりが何滴もまとめて出てしまった人がいます。ボトルは振らずに、受けるものの上で斜めに傾け、静かに待って1滴ずつ数えましょう。コツは<Link href="/blog/drop-count">1滴の量と滴数</Link>で紹介しています。
+              </>
+            ),
           },
         ]}
       />

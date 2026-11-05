@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, MemberVoice, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** オイルの容器の素材と、用途別のボトルの選び方の記事 */
 export const oilContainers: ArticleContent = {
@@ -101,6 +101,14 @@ export const oilContainers: ArticleContent = {
       <p>
         すべてのプラスチックが溶けると言い切れるわけではありません。ただ、素材ごとに確かめるのは難しいので、迷ったらガラスを選ぶのが確実です。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ガラスの容器が手元になかったので、プラスチックの容器で手作りのクリームを作りました。柑橘のオイルを入れていたためか、使おうとしたときには容器の表面が少し溶けて、ふたがくっついて開かなくなっていました。
+        </p>
+        <p>
+          別のメンバーは、スプレーボトルに柑橘のオイルを入れるときは素材に気をつけ、オイルによって容器を使い分けたり、早めに使い切ったりしています。どのプラスチックなら使えるかを考えるより手軽なので、ふだんはガラスの容器を選ぶメンバーもいます。手元の容器を使うときは、素材の表示を確かめてからにしましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="choose">用途別のボトルの選び方</h2>
       <DataTable
@@ -120,6 +128,14 @@ export const oilContainers: ArticleContent = {
       <p>
         容量は、使う量から逆算すると決めやすくなります。協会の掃除スプレーの例は、500mLの容器に水400mLです。2週間で使い切るなら、1日に約30mL使う計算です。そこまで使わないなら、分量を減らして小さな容器で作りましょう。掃除用のスプレーの分量は、<Link href="/blog/cleaning-spray">手作り掃除スプレーの作り方</Link>で紹介しています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ココナッツオイルなどで薄めたオイルを、上部にスポイトがついたガラスの遮光瓶に作っておき、使う分を手のひらに出しています。
+        </p>
+        <p>
+          別のメンバーは、持ち歩くスプレーに60mLのボトルを使っています。10mLでは物足りず、60mLがちょうどよい大きさです。オイルの空き瓶にそのまま付けられるロールオンキャップやスポイトも、そろえておくと便利です。容器の素材は上の表のとおりに選び、水を含むスプレーは2週間以内に使い切れる量で作りましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="transfer">小分けするときの手順</h2>
       <p>オイルを持ち歩き用の小瓶に移すときの流れです。</p>
@@ -149,6 +165,11 @@ export const oilContainers: ArticleContent = {
           "飲み物の容器と間違えないよう、中身がわかるラベルを貼り、子どもやペットの手の届かない場所に置きましょう。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、使い終わったオイルの空き瓶を捨てずに、クラフト用に取っておきます。別のメンバーは、ドテラのサプリメントの空き容器が遮光でしっかりした作りなので、ミツロウやキャンデリラワックスを入れ替えて使っています。空き容器を使い回すときは、洗って乾かし、元のラベルと取り違えないよう、中身がわかるラベルを貼り直しましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="faq">よくある質問</h2>
       <Faq

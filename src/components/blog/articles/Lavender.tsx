@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, MemberVoice, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ラベンダー */
@@ -145,6 +145,11 @@ export const lavender: ArticleContent = {
       <PointBox>
         ドテラのラベンダーは、就寝時に枕や寝具、足裏に数滴使えます。協会は、枕に数滴垂らす習慣を続けて、首の赤みや顔のはれが出た例を紹介しています。別の見解もあるので、最後はご自身で判断してください。
       </PointBox>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、寝室に<Link href="/blog/waterless-diffuser">水を使わないタイプのディフューザー</Link>を置き、森の音とラベンダーを1対1で合わせて、夜の寝室の香りにしています。寝室まで毎日水を運ばなくて済むので、続けやすい置き方です。水なしタイプの使える量は、製品の説明書で確かめましょう。
+        </p>
+      </MemberVoice>
 
       <MethodCard
         no={1}
@@ -164,6 +169,14 @@ export const lavender: ArticleContent = {
       <p>
         入浴の手順は<Link href="/blog/bath-oils">お風呂でのオイルの使い方</Link>でくわしく紹介しています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、クエン酸、グリセリン、精製水で作る手作りの柔軟剤に、ゼラニウム、ラベンダー、ユーカリプタスを合わせて、仲間と一緒に作る会を開きました。別のメンバーは、ミツロウとシアバターのバームを作り、ラベンダーとゼラニウムを入れています。
+        </p>
+        <p>
+          同じラベンダーを、ペパーミント、レモングラス、ローズマリーと合わせたスプレーにして、床の拭き掃除に香りを添えているメンバーもいます。床材によっては傷んだりシミになったりすることがあるので、目立たない所で試してから使いましょう。手作りのものは、自分で使う分だけにします。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, MemberVoice, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ドテラのLRP（定期購入）の仕組みと、毎月買わなくてよいか、変更と休止の方法をまとめた記事 */
 export const doterraLrp: ArticleContent = {
@@ -119,6 +119,14 @@ export const doterraLrp: ArticleContent = {
       <p>
         ポイントのほかにも、決められた期間と量の注文で月替わりのオイルが1本届くなど、LRPにはいくつかの特典があります。どれも注文の条件があるので、申し込む前に内容を確かめましょう。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーは、ポイントの交換には1回ごとに手数料がかかるので、少しずつではなく、交換したい製品をある程度まとめてから交換しています。
+        </p>
+        <p>
+          メンバーの一人は、カートで製品の横に「残高不足」と出たときは、ポイントが足りないのか、交換できない製品なのかを確かめています。交換できない製品もあるので、交換の前にマイドテラオフィスで確かめましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="monthly">毎月買わなくてもいい？</h2>
       <p>
@@ -147,6 +155,14 @@ export const doterraLrp: ArticleContent = {
         1日4滴なら、15mLの1本は2カ月半ほどもちます。毎月同じオイルが届く設定にすると、手元の本数が増えていきます。協会は、開封後は1年以内を目安に使い切るよう案内しています。<Link href="/blog/oil-storage">オイルの保管方法</Link>もあわせてご覧ください。
       </p>
       <PointBox>注文日の数日前にカレンダーの通知を入れておくと、手元の本数を見て中身を見直す時間がとれます。</PointBox>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ある月の注文で、ほしかった限定の製品と一緒に、家で愛用している洗濯用洗剤を選びました。ふだん使っている日用品を組み合わせると、使う予定のない製品を足さずに済みます。
+        </p>
+        <p>
+          別のメンバーは、はじめてのLRPで、予定していた量を大きく超えて注文してしまいました。注文の前に、手元の量と使う量を確かめて、必要な分から選びましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="change">内容を変える、休止する</h2>
       <p>LRPの中身は毎月変えられます。届く前に、次の順で見直しましょう。</p>
@@ -176,6 +192,11 @@ export const doterraLrp: ArticleContent = {
       <p>
         注文が確定したあとは、注文方法によらず、取り消しや変更はできません。やむを得ない場合は、いったん製品を受け取り、返品の手続きをします。返品の条件は、受け取ってからの日数で変わります。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、休止を考えるときは、休む前の月にポイントを使い切ることをすすめています。休止すると、残っていたポイントは消えてしまうからです。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">LRPを使うときの注意点</h2>
       <CautionBox

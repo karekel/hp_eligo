@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, MemberVoice, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** ドテラの会社の基本情報、扱う製品、買い方をまとめた記事 */
 export const whatIsDoterra: ArticleContent = {
@@ -158,6 +158,11 @@ export const whatIsDoterra: ArticleContent = {
       <p>
         同じ15mLでも、植物によって価格に大きな差があります。価格は変わることがあるので、買う前に製品ページで最新の価格を確かめましょう。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、新しく届いたブレンドを瓶から直接かいだとき、くせのある香りに驚きました。ところが、ディフューザーで香らせてみると、印象ががらりと変わりました。同じオイルでも、香らせ方で感じ方が変わることがあります。
+        </p>
+      </MemberVoice>
 
       <h2 id="quality">品質の考え方｜CPTG®とコ・インパクトソーシング</h2>
       <p>
@@ -191,6 +196,11 @@ export const whatIsDoterra: ArticleContent = {
       <p>
         会員にならずに、参考小売価格で買うこともできます。方法は、ショッピングサイトで買う、プロダクトセンターで買う、知り合いのWA会員に尋ねる、の3つです。ドテラは、WAや顧客に製品を買う義務はないとしています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、日本法人の本社1階のプロダクトセンターで、並んでいるオイルの香りをかいで確かめています。別のメンバーは、プロダクトセンターの体験イベントで、オイルを使った調味料作りに参加しました。出かける前に、営業時間と臨時休業のお知らせを確かめておきましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使う前の注意点</h2>
       <CautionBox
@@ -203,6 +213,11 @@ export const whatIsDoterra: ArticleContent = {
           "子どもやペットの手の届かない場所に保管しましょう。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ホームケアの洗剤を自分の判断で薄めて使い、泡立ちが物足りなかったことがあります。オイル以外の製品も、使い方はラベルで確かめ、迷ったときはメンバーサービスかお客様相談室に問い合わせましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="faq">よくある質問</h2>
       <Faq

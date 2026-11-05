@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, CheckPoints, DataTable, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, MemberVoice, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ディフューザーの種類、選び方、超音波式のお手入れをまとめた記事 */
 export const diffuserGuide: ArticleContent = {
@@ -130,6 +130,14 @@ export const diffuserGuide: ArticleContent = {
       <p>
         加湿器とディフューザーは別の機器です。製品評価技術基盤機構によると、多くの加湿器はアロマオイルなどの使用を禁止しています。オイルを入れるのは、オイル用のディフューザーだけにしましょう。確認したいことは<Link href="/blog/oils-in-humidifier">加湿器の記事</Link>へ。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、6畳ほどの部屋でディフューザーを使っていて、香りは部屋全体に広がっています。床に直接置くと周りが湿りやすいので、椅子の上に置いたり、空き箱で少し高さを出したりして使っているメンバーもいます。
+        </p>
+        <p>
+          別のメンバーは、コンセントのない玄関やトイレで、充電式のディフューザーを使っています。人が通ると香りが出るタイプなので、置き場所を選びません。置ける場所や使い方は、お使いの製品の取扱説明書で確かめましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="ultrasonic">超音波式の基本の使い方</h2>
       <p>
@@ -162,6 +170,11 @@ export const diffuserGuide: ArticleContent = {
       <p>
         東京都の資料によると、水がたまったままのタンクにはぬめりができやすく、超音波式はタンクの水をそのまま水しぶきにして出します。どちらも加湿器についての資料ですが、東京都は同じ機能をもつ機器にも注意が必要としています。使い終わったら水を全部捨て、ぬめりは拭き取り、水に触れる部分を乾かしましょう。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、洗って乾かしたつもりのディフューザーを、ひと月ぶりに開けたことがあります。ふたの内側に水滴が残っていて、赤いカビが出ていました。しばらく使わないときは、水を捨てるだけでなく、ふたの内側の水滴まで拭き取り、よく乾かしてからしまいましょう。
+        </p>
+      </MemberVoice>
       <PointBox>
         ミストが出にくいときは、水が目印を超えていないか、ミストプレートにオイル汚れがないかを確かめます。それでも出ないときは使用をやめ、購入元に相談しましょう。ラルツで確かめる順番は<Link href="/blog/laluz-diffuser">ラルツディフューザーの使い方</Link>で紹介しています。
       </PointBox>

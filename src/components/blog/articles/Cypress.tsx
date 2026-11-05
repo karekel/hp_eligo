@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: サイプレス */
@@ -195,6 +195,14 @@ export const cypress: ArticleContent = {
       <p>
         濃度の考え方は<Link href="/blog/carrier-oil-dilution">キャリアオイルの選び方と濃度1%は何滴？</Link>で解説しています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、来客が帰ったあとの部屋で、サイプレスとペパーミントをディフューズして、自分の好きな香りに切り替えています。
+        </p>
+        <p>
+          別のメンバーは、柔軟剤の香りが気になるニットをしまった引き出しに、レモンユーカリやペパーミント、サイプレスを合わせた香りを入れています。衣類に直接つかないよう、ティッシュなどに垂らして容器に入れて置きましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>
@@ -225,6 +233,14 @@ export const cypress: ArticleContent = {
       <p>
         どちらもディフューザーに使う合計5滴の例で、ライムとローズマリーの15mLは「香・食」の表示なので肌には使いません。組み立て方は<Link href="/blog/blend-basics">香りのブレンドの基本</Link>で解説しています。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、サイプレスにオレンジとドテラセレニティーを合わせて、家で香らせています。別のメンバーは、フランキンセンスとピューリファイにサイプレスを合わせ、家じゅうのディフューザーで香らせています。
+        </p>
+        <p>
+          森の音とサイプレスに、オレンジかレモンを重ねるブレンドを好むメンバーもいます。はじめは少ない滴数から試し、香りの強さを確かめてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

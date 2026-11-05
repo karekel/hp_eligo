@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, MemberVoice, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** 玄関、リビング、寝室、トイレごとの置き方と滴数を説明する記事 */
 export const oilsByRoom: ArticleContent = {
@@ -162,6 +162,11 @@ export const oilsByRoom: ArticleContent = {
         ディフューザーを使うなら、ベッドから離して置きます。ラルツには1時間のタイマーがあります。協会も、タイマーつきの電気式が寝室で使いやすいとしています。おやすみ前のひとときに合わせて、短い時間から試してみましょう。
       </p>
       <PointBox>火を使うアロマキャンドルは、就寝時に使わないでください。</PointBox>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、寝室が狭く、加湿器とディフューザーを両方置く場所がありませんでした。加湿器は布団が濡れてしまいそうで心配だったので、1台で両方をまかなえる機器を選んでいます。加湿器にオイルを入れるのは、説明書にオイルを使えると書いてある機器だけにしましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="toilet">トイレ｜狭いので1滴から</h2>
       <p>
@@ -176,6 +181,14 @@ export const oilsByRoom: ArticleContent = {
       <p>
         掃除の香りづけは<Link href="/blog/cleaning-spray">手作り掃除スプレーの作り方</Link>へ。塩素系の洗剤を使うときは、クエン酸などの酸性のものや、エタノールを含むスプレーと一緒に使わないでください。混ざると塩素ガスが発生します。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、玄関とトイレに、充電式で人が近づくと香る小型のディフューザーを置いています。コンセントのない場所でも使えるのが便利です。別のメンバーは、同じタイプの本体のふたを外して中にオイルを入れ、ふたを戻して使っています。トイレに置くのは来客があるときだけです。
+        </p>
+        <p>
+          トイレには、すっきりした香りのオイルを選んでいるメンバーもいます。また、機能や大きさの違う小型のディフューザーをいくつも持ち、どの部屋に入ってもほのかに香るようにしているメンバーもいます。機器によっては使えないオイルもあるので、説明書で確かめてから使いましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">部屋に置くときの注意点</h2>
       <CautionBox

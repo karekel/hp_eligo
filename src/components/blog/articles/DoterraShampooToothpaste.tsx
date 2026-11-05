@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, MemberVoice, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ドテラのシャンプー、ヘアケア、石けん、ボディウォッシュ、ハンドソープ、歯みがき剤の種類と使い方を整理した記事 */
 export const doterraShampooToothpaste: ArticleContent = {
@@ -228,6 +228,14 @@ export const doterraShampooToothpaste: ArticleContent = {
       <p>
         ヘアオイルを植物油で用意する方法もあります。ドテラ ホホバオイルは、好きなエッセンシャルオイルを1〜2滴加えて、毛先になじませる使い方が示されています。加えるのは「化粧品」の表示があるオイルだけにしましょう。植物油の選び方は<Link href="/blog/carrier-oil-dilution">キャリアオイルの選び方と濃度の計算</Link>へ。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ドテラのシャンプーを、香りと泡切れのよさで気に入って使っています。シャンプーのあとはコンディショナーを髪になじませ、しばらくおいてから流しています。ペパーミントの爽やかな香りは、夏だけでなく1年を通して楽しめます。
+        </p>
+        <p>
+          別のメンバーは、少しの量でもよく泡立つと感じています。家族で使うと、1本を使い終わるころには液がゆるくなってくるので、2つのボトルに分けて使っています。開けたあとは、早めに使い切れる分ずつ出しておきましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="soap">石鹸、ボディウォッシュ、ハンドソープ</h2>
       <p>体と手を洗う製品は、次のとおりです。</p>
@@ -257,6 +265,14 @@ export const doterraShampooToothpaste: ArticleContent = {
       <p>
         バスバーは、濡れた手でよく泡立ててから使います。シャワールームや浴室で使い、使ったあとは乾燥した場所に置くと長持ちします。ボディウォッシュは、適量をボディタオルやスポンジにとり、泡立てて洗ってから十分に流します。ハンドウォッシュは専用のディスペンサーに詰め替え、ポンプを1〜2回押して、ぬれた手に泡をとって洗います。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ハンドウォッシュと石けんを何種類か置いて、使い回しています。ドテラスパ リフレッシング ボディウォッシュは、よく泡立ち、香りも気に入っています。ボトルの口から出しにくいので、付け替え用のポンプをつけて使っています。
+        </p>
+        <p>
+          別のメンバーは、オンガード フォーミングハンドウォッシュを水で薄めてスプレーボトルに入れ、毎日の浴槽の掃除に使っています。好きな香りの中で掃除ができます。製品の表示にある使い方ではないので、まねするときは、浴槽の素材に合うかを目立たない所で確かめてからにしましょう。
+        </p>
+      </MemberVoice>
       <p>
         オイルを使った手作り石けんは、<Link href="/blog/gem-soap">ジェムソープの作り方</Link>で紹介しています。
       </p>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, MemberVoice, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 日本で買えるドテラのスキンケア製品（化粧水、クリーム、ハンド＆ボディローション、リップなど）を一覧にした記事 */
 export const doterraSkincare: ArticleContent = {
@@ -270,6 +270,14 @@ export const doterraSkincare: ArticleContent = {
       <p>
         スリーピング マスクは、夜のスキンケアの最後に使います。パール2粒大を顔全体になじませ、拭き取らずにそのまま休みます。翌朝は洗い流しましょう。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、＜クリア ＆ ライト＞の化粧水と美容液を使っています。さっぱりした使い心地なので、朝はブースター オイルを使わず、夜はブースター オイルを使って、使い分けています。香りがよく、毎日のスキンケアが楽しみになっています。
+        </p>
+        <p>
+          別のメンバーは、＜クリア ＆ ライト＞のネロリの香りがはじめは苦手でしたが、化粧水を使ううちに大好きになりました。＜スムーズ ＆ リッチ＞を選んだメンバーは、フランキンセンスの香りがお気に入りです。
+        </p>
+      </MemberVoice>
 
       <h2 id="body">手と体のケア｜ハンド＆ボディローション、ボディバター、リップ</h2>
       <p>
@@ -305,6 +313,14 @@ export const doterraSkincare: ArticleContent = {
       <p>
         日本アロマ環境協会は、ペパーミント、ティートリー、ユーカリについて、肌への使用を控えるとしています。柑橘のオイルには、日光に当たると肌に炎症などを起こす光毒性があるものもあります。オイルを肌に使うときの考え方は<Link href="/blog/oils-on-skin">オイルを肌に使うときの注意点</Link>に、手作りのクリームは<Link href="/blog/handmade-cream">手作りクリームの作り方</Link>にまとめています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ハンド＆ボディローションに好きなオイルを混ぜて使っています。ローションだけではゆるいと感じるときは、ボディバターも少し混ぜています。
+        </p>
+        <p>
+          同じメンバーは、化粧水を切らしたときに、精製水とグリセリンに好きなオイルを加えて、自分用の化粧水を作ったこともあります。手作りの化粧水を冷蔵庫で保管しているメンバーもいます。混ぜるオイルは「化粧品」の表示があるものだけにして、少ない量から試しましょう。手作りのものは自分で使う分だけ作り、早めに使い切ります。
+        </p>
+      </MemberVoice>
 
       <h2 id="sun">日焼け止めは2026年11月時点で販売終了</h2>
       <p>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** エッセンシャルオイルの定義とアロマオイルとの違いを説明する記事 */
 export const whatIsEssentialOil: ArticleContent = {
@@ -158,6 +158,14 @@ export const whatIsEssentialOil: ArticleContent = {
       <p>
         とれる量はわずかです。ドテラは、レモン15mLに果皮が約3.2kg必要としています。協会によると、精油1kgを得るのに、ラベンダーは花穂100〜200kg、ローズは花3〜5トンが必要です（産地などで異なります）。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーのあいだでも、エッセンシャルオイルを、お米からとる米油や大豆からとる大豆油と同じ仲間として説明する話が出て、メンバーの一人が違いを説明したことがあります。植物油は脂肪酸を主な成分とする油脂で、エッセンシャルオイルは揮発性の芳香化合物です。どちらも「オイル」と呼ばれるので混同しやすいのですが、植物油は、エッセンシャルオイルを薄めるときのキャリアオイルとして使います。
+        </p>
+        <p>
+          名前が同じでも、別のものがあります。たとえばマヌカハニーは、マヌカの花の蜜からできるハチミツです。マヌカのエッセンシャルオイルは、葉から水蒸気蒸留でとります。メンバーのあいだでも、この2つを混同しないよう説明しています。買うときは、製品の表示で中身を確かめましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="how">主な2つの作り方</h2>
       <p>代表的な作り方は、水蒸気蒸留法と圧搾法です。ドテラは、最も一般的なのは水蒸気蒸留で、温度は通常60〜100℃としています。流れは<Link href="/blog/how-oils-are-made">精油の作り方</Link>で紹介しています。</p>
@@ -233,6 +241,14 @@ export const whatIsEssentialOil: ArticleContent = {
           {
             q: "水に混ぜて使えますか？",
             a: "そのままでは混ざりません。ドテラのスプレーのレシピも、無水エタノールに混ぜてから水を加えます。協会によると、精油は水に溶けにくく、油脂になじみやすい性質があります。",
+          },
+          {
+            q: "香りを組み合わせるときは、何を参考にすればいいですか？",
+            a: (
+              <>
+                ELIGŌのメンバーの一人は、いろいろなレシピやドテラの資料を見比べて、組み合わせを考えています。組み合わせ方の基本は<Link href="/blog/blend-basics">ブレンドの基本</Link>で紹介しています。使う前に、それぞれのオイルの表示も確かめましょう。
+              </>
+            ),
           },
         ]}
       />

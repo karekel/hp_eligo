@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { CautionBox, DataTable, Faq, NextStepBox, PairingList, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, MemberVoice, NextStepBox, PairingList, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** 仕事、家事、リラックスタイムのシーン別にオイルを選ぶ記事 */
 export const oilsByScene: ArticleContent = {
@@ -178,6 +178,14 @@ export const oilsByScene: ArticleContent = {
         自宅で仕事をする日は、始める前にディフューザーを使う方法もあります。組み合わせの滴数は、<Link href="/blog/diffuser-blends">朝・昼・夜のブレンド例</Link>を参考にしてください。
       </p>
       <PointBox>ペパーミント15mLは「香・食」の表示なので、肌につけずに香りを楽しみましょう。5mLは「塗・香」の表示がありますが、協会は皮膚刺激の例に挙げています。</PointBox>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、オレンジ、シダーウッド、ローズマリーを合わせてディフューズする香りが好きです。お店の中にいるような、落ち着いた香りになります。
+        </p>
+        <p>
+          別のメンバーは、レモンとユーカリプタスを多めに、ラベンダーとゼラニウムを少なめに合わせたブレンドを作っています。家族にも、仕事中に会った年配の方にも「いい香り」と言われた組み合わせです。職場で使うときも、香りは自分のまわりだけにとどめましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="housework">家事の時間に</h2>
       <p>掃除の仕上げに香りを添えると、家事の時間が少し楽しくなります。</p>
@@ -197,6 +205,14 @@ export const oilsByScene: ArticleContent = {
       <p>
         家事のあとに玄関やトイレも香らせたいときは、場所ごとの置き方と滴数を<Link href="/blog/oils-by-room">部屋別の使い方</Link>で確かめてください。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、トイレに置いた人感センサー付きのディフューザーで、スペアミントを香らせています。爽やかな香りがお気に入りです。
+        </p>
+        <p>
+          同じメンバーは、出かける日にはアロマ用のアクセサリーにオイルを垂らして、1日中香りを楽しんでいます。まねするときは、オイルが肌に直接触れないようにつけましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="relax">リラックスタイムに</h2>
       <p>読書やストレッチ、おやすみ前のひとときは、落ち着いた印象の香りを選んでみましょう。</p>

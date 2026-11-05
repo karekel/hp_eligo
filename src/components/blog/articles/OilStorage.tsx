@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
 
 /** オイルの保管方法と使用期限の目安を説明する記事 */
 export const oilStorage: ArticleContent = {
@@ -110,6 +110,11 @@ export const oilStorage: ArticleContent = {
           "別の容器に移すときは、中身の名前と日付を書いておきます。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、本数が多くて冷蔵庫に入れるのは大変だと感じています。家では真夏は出かけるときもエアコンをつけたままにしているので、オイルを置く部屋が暑くなりすぎません。夏は、置き場所の温度が上がっていないか、ときどき確かめてみましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="period">開封後は早めに｜使用期限は1年が目安</h2>
       <p>
@@ -119,6 +124,11 @@ export const oilStorage: ArticleContent = {
       <p>未開封のオイルについて、協会の目安はありません。使用期限の表示があるか、お手元のボトルやラベルを確認してください。「食品添加物」の表示がある製品も、ラベルの表示に従います。</p>
       <p>使う前には、毎回香りを確かめます。いつもと違うと感じたら、使うのをやめましょう。</p>
       <PointBox>開封した日を小さなシールに書いて、ボトルに貼っておきましょう。1年の目安がひと目でわかります。</PointBox>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、開封から時間がたったオイルも、すぐには捨てずに、ディフューザーで香らせたり掃除に使ったりしています。使う前には香りを確かめ、普段と違うにおいがしたら使うのをやめましょう。時間がたったものは、肌には使わないでください。
+        </p>
+      </MemberVoice>
 
       <h2 id="handmade">手作りしたものは別の目安で</h2>
       <p>オイルを薄めたり混ぜたりしたものは、オイル本体より早く使い切ります。どれも冷暗所で保管したときの目安です。</p>
@@ -134,6 +144,11 @@ export const oilStorage: ArticleContent = {
         ]}
       />
       <p>作った日をラベルに書いておくと、使い切りの目安を忘れません。</p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、無水エタノールの量を減らして作ったスプレーは、ふつうに作ったものより早めに使い切るのがよいと考えています。別のメンバーも、手作りしたものは早めに使い切るのがよいと考えています。必要な分だけ少なめに作ると、目安の期間内に使い切りやすくなります。
+        </p>
+      </MemberVoice>
 
       <h2 id="faq">よくある質問</h2>
       <Faq

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 酢とレモンで作る掃除スプレーのレシピと、塩素系と混ぜないための注意 */
 export const cleaningSpray: ArticleContent = {
@@ -125,6 +125,11 @@ export const cleaningSpray: ArticleContent = {
       <p>
         酢と水の割合は1対7です。2週間で使い切れる量に合わせて、ボトルを選びましょう。120mLほどなら酢15mL、水105mL、レモン7〜8滴です。たくさん使う家は、酢60mL、水420mL、レモン30滴で、500mLのボトルに入ります。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、掃除のスプレーを、浄水器を通した水道水で作っています。一度に作るのは、すぐに使い切れる量だけです。作った日をラベルに書いて、2週間以内に使い切りましょう。
+        </p>
+      </MemberVoice>
 
       <h3>ドテラのレモンで作るとき</h3>
       <p>
@@ -147,6 +152,14 @@ export const cleaningSpray: ArticleContent = {
           ]}
         />
       </MethodCard>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、台所の掃除に、精製水と無水エタノールにオレンジのオイルを混ぜたスプレーを使っています。別のメンバーは、柑橘とミントのブレンドでスプレーを作り、掃除のあとに残る爽やかな香りを楽しんでいます。
+        </p>
+        <p>
+          掃除が苦手でも、好きな香りのスプレーがあると年末の大掃除に取りかかる気持ちになれた、というメンバーもいます。どのスプレーも、使う前によく振り、目立たない場所で試してから使いましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="where">使える場所と気をつけたい素材</h2>
       <DataTable
@@ -203,6 +216,10 @@ export const cleaningSpray: ArticleContent = {
           {
             q: "プラスチックのボトルでも作れますか？",
             a: "ガラスのボトルをおすすめします。オイルやエタノールと容器の相性は素材で変わるので、詳しくは容器の記事を確認してください。",
+          },
+          {
+            q: "オイルを足すだけで、汚れは落ちますか？",
+            a: "オイルは、掃除に香りを添えるものと考えましょう。ELIGŌのメンバーの一人は、水にオイルを入れただけのスプレーや、重曹とクエン酸の水にオイルを入れたスプレーでは、汚れ落ちが物足りないと感じました。別のメンバーは、換気扇の油汚れの掃除では、柑橘のオイルだけに頼らず、セスキ炭酸ソーダのスプレーも使っています。落ちにくい汚れは、それぞれの製品の使い方に沿って掃除してください。",
           },
         ]}
       />

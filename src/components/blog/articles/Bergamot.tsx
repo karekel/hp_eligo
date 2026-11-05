@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ベルガモット */
@@ -224,6 +224,14 @@ export const bergamot: ArticleContent = {
       <p>
         ベルガモットは協会の分類でトップにあたり、揮発しやすい香りです。ベースのフランキンセンスを合わせると、柑橘が薄れたあとも樹脂の香りが残ります。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、日中、ベルガモットとグレープフルーツを合わせてディフューズしています。部屋が明るい雰囲気になる、柑橘どうしの組み合わせがお気に入りです。
+        </p>
+        <p>
+          別のメンバーは、ベルガモットにマジョラムやイランイランを合わせた、落ち着いた配合を楽しんでいます。夜のひとときに、ベルガモットとマジョラムを香らせて過ごすのが好きなメンバーもいます。どの組み合わせも、滴数はお使いのディフューザーの説明書の目安に合わせましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">柑橘オイルで気をつけたいこと</h2>
       <CheckPoints
@@ -268,6 +276,10 @@ export const bergamot: ArticleContent = {
           {
             q: "肌でベルガモットの香りを楽しみたいときは？",
             a: "単品の15mLは肌に塗りません。ティッシュやディフューザーなど、肌につけない方法で香りを楽しみましょう。柑橘系には日光に関わる注意もあるので、「柑橘オイルで気をつけたいこと」も確認してください。",
+          },
+          {
+            q: "ベルガモットが入った製品は、どれも同じ使い方ですか？",
+            a: "同じとは限りません。単品のベルガモット15mLは「香・食」、ベルガモットを含むドテラシトラスブリスは「塗・香」です。ELIGŌのメンバーの一人も、ベルガモットの光毒性が気になったときに、オイルの事典と製品のページを見比べて、製品ごとに説明が違うことに気づきました。使う前に、手元の製品のラベルと案内を確かめましょう。",
           },
         ]}
       />

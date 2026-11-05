@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { BlendRecipe, CautionBox, DataTable, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, MemberVoice, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** トップ・ミドル・ベースで香りを組み立てるブレンドの基本の記事 */
 export const blendBasics: ArticleContent = {
@@ -121,6 +121,12 @@ export const blendBasics: ArticleContent = {
       </p>
       <p>4種類使うときは、ミドルを2本に分けると配分を保てます。合計10滴なら、レモン2滴、ラベンダー3滴、ゼラニウム3滴、フランキンセンス2滴です。</p>
       <p>比率に正解はありません。まず上の表で作り、好みに合わせて変えてみてください。</p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、ドテラのワークショップで、ドライフラワーの花びらを入れたリードディフューザーを2本作りました。1本はオレンジ15滴、ラベンダー15滴、シダーウッド10滴、もう1本はスペアミント15滴、ゼラニウム15滴、シダーウッド10滴で、どちらもトップ、ミドル、ベースを1本ずつ組み合わせています。トップは目安より多めですが、とてもいい香りに仕上がりました。
+        </p>
+        <p>はじめは上の表の配分で作り、好みに合わせて1滴ずつ変えてみてください。</p>
+      </MemberVoice>
 
       <h2 id="steps">ブレンドの手順</h2>
       <div className="mt-6">
@@ -169,6 +175,14 @@ export const blendBasics: ArticleContent = {
       <p>
         この3つは、香りを楽しむための例です。作ったブレンドは<Link href="/blog/diffuser-blends">ディフューザー</Link>で試せます。肌につける香りを作りたいときは、<Link href="/blog/natural-perfume">ナチュラルパフュームの作り方</Link>を確認してください。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーにも、ディフューザーで気に入っている組み合わせがあります。一人は、ローマンカモミールとゼラニウムの組み合わせや、レモン、ドテラシトラスブリス、バジルにウッド系のオイルを足した組み合わせを楽しんでいます。
+        </p>
+        <p>
+          別のメンバーのお気に入りは、フランキンセンス、オレンジ、ペパーミントの組み合わせです。ウィンターグリーンにミント系とシナモン、バニラを合わせたブレンドを、甘すぎず冬にも合う香りだと感じているメンバーもいます。
+        </p>
+      </MemberVoice>
 
       <h2 id="adjust">思った香りにならないとき</h2>
       <p>思った香りと違うときは、ノートごとに見直すと原因を探しやすくなります。</p>
@@ -185,6 +199,14 @@ export const blendBasics: ArticleContent = {
       <p>
         オイルごとに香りの強さは違うので、同じ1滴でも目立ち方が変わります。足すと全体の割合も動きます。合計5滴のブレンドにトップを1滴足すと、トップは6滴のうち2滴で約33%です。目安を超えても間違いではありません。好みに合えば、その滴数をメモに残しましょう。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、レシピどおりに作った香りが物足りないと感じたとき、ペパーミントなどを足して好みに近づけています。
+        </p>
+        <p>
+          別のメンバーは、バニラやサンダルウッドなどにミントを1滴加えたブレンドを作り、ミントを感じるのに甘い、お菓子のような香りになりました。足したときは、オイルと滴数をメモに残しておきましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">ブレンドするときの注意点</h2>
       <CautionBox

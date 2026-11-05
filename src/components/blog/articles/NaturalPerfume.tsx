@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 肌につける香りと、肌につけない香りのパフュームレシピ */
 export const naturalPerfume: ArticleContent = {
@@ -196,6 +196,14 @@ export const naturalPerfume: ArticleContent = {
           ["手作りのフレグランス", "1%以下"],
         ]}
       />
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、香水づくりの講座で、香水の歴史や香りのピラミッド、エタノールのことを学んでから、自分の香水を作りました。同じ講座に参加した別のメンバーは、材料を混ぜる順番やオイルの選び方が大切だと知り、ふだん作るスプレーと香水の違いがわかりました。時間とともに香りが変わっていくのも、作る楽しみの一つです。
+        </p>
+        <p>
+          ブレンドを作ったまた別のメンバーは、ベースに入れたシダーウッドが全体の香りを支えていると感じています。
+        </p>
+      </MemberVoice>
 
       <h2 id="skin">肌につける香りのレシピ</h2>
       <p>
@@ -236,6 +244,11 @@ export const naturalPerfume: ArticleContent = {
       />
       <h3>ドテラのオイルで作る</h3>
       <p>いずれもドテラのオイルの表示は「塗・香」です。ラベルの「化粧品」の表示も確かめてください。</p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、無水エタノールと精製水で香水を作り、落ち着いた上品な香りだと感じています。香りが弱く感じても、オイルは増やさず、上の分量で作りましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="paper">紙や小物で楽しむ香りのレシピ</h2>
       <p>
@@ -297,6 +310,10 @@ export const naturalPerfume: ArticleContent = {
           {
             q: "無水エタノールを使わずに作れますか？",
             a: "協会は、植物油10mLに1〜2滴のロールオンや、ミツロウ4gと植物油20mLに3〜4滴の練り香を紹介しています。どちらも肌につけるので、「化粧品」の表示がある製品を使います。",
+          },
+          {
+            q: "無水エタノールだけで作ると、エタノールのにおいは気になりますか？",
+            a: "感じ方には個人差があります。ELIGŌのメンバーにも、しばらくエタノールのにおいが気になるという人もいれば、エタノールだけで作っても気にならなかったという人もいます。肌につけない香りのレシピは、よく混ぜてから数日寝かせて使います。",
           },
         ]}
       />

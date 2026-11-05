@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { ArticleFigure, BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 手作りバスボムのレシピと香りの選び方 */
 export const bathBomb: ArticleContent = {
@@ -185,6 +185,14 @@ export const bathBomb: ArticleContent = {
         <PointBox>水加減が仕上がりの分かれ目です。目安は、少し湿った砂のような手触りです。ぼろぼろ崩れるときはもうひと吹きし、泡が出はじめたら水を足すのをやめます。湿らせすぎたときは、重曹を少し足して混ぜ直します。</PointBox>
       </MethodCard>
       <ArticleFigure src="/assets/blog/inline/bath-bomb-materials-ca77d711.jpg" alt="重曹とクエン酸の器、ココナッツオイルの小皿とオイルのボトル、水に溶かした食紅、ビニール袋、霧吹き、スプーン、バスボム型、できあがったバスボム" caption="バスボム作りに使う材料と道具" />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーにも、水を入れすぎて膨らみ、型にくっついて外れなくなった人がいます。別のメンバーは、霧吹きで10回ほど吹いて混ぜ、さらに5回吹いて混ぜて、手のひらで包んでもすぐには崩れない、魔法の砂のような手触りになったら型に入れています。霧吹きによって1回に出る水の量が違うので、回数はあくまで目安です。何回がちょうどよいかを、作りながら覚えていきましょう。
+        </p>
+        <p>
+          色づけには、クレイを使うメンバーがいます。色はほんのりつく程度です。ビーツやカボチャの粉を使うと、淡い色に仕上がります。野菜の粉を使ったら、オイルの香りに乾燥野菜のにおいが混ざってしまったメンバーもいます。色の材料も、少量から試してみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="scent">ドテラのオイルで作るときの香りの選び方</h2>
       <p>好きな香りを選ぶ前に、次の3つを確かめます。</p>
@@ -259,6 +267,10 @@ export const bathBomb: ArticleContent = {
           {
             q: "乾かす時間は必要ですか？",
             a: "このレシピは、数分おいて型から外します。レシピごとに時間が違うと考えてください。",
+          },
+          {
+            q: "型から外すと形が崩れたり、平たくなったりします。",
+            a: "ELIGŌのメンバーにもよくある悩みです。型から外して置いておくと平たくなり、固まるまで型に入れておくと外せなくなります。型とのあいだにラップをはさんで固まるまで置いたメンバーは、丸いまま外せましたが、ラップの線が残りました。型に詰めて20分ほどおいたメンバーは、外すときに少し硬かったものの、割れずに外せました。水加減と置く時間を変えながら、自分に合うやり方を探してみてください。",
           },
         ]}
       />

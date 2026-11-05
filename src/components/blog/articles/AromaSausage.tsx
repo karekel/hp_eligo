@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, CheckPoints, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, CheckPoints, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** 手作りソーセージの手順と、肉の加熱の一般基準を紹介する記事 */
@@ -118,6 +118,14 @@ export const aromaSausage: ArticleContent = {
       <p>
         どちらのオイルにも「食品添加物」の表示があるときの例です。ラベルに量の表示があれば、そちらを優先します。オレガノとタイムは香りが強いので、爪楊枝の先で足す程度にしましょう。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、レモンとローズマリーにオレガノを加えて作りました。オレガノを入れすぎたと思ったものの、ほかの香りとよくなじんで、家族にも好評でした。ゆで汁はスープにしています。
+        </p>
+        <p>
+          別のメンバーは、1回目はレモンだけで作り、2回目はレモンを多めにしてローズマリーを加え、香りの違いを楽しみました。オイルは「食」の表示を確かめ、合計6滴までにしましょう。オレガノのように香りの強いものは、爪楊枝の先から試します。
+        </p>
+      </MemberVoice>
 
       <h2 id="heat">加熱は中心部75℃で1分以上</h2>
       <p>
@@ -161,6 +169,10 @@ export const aromaSausage: ArticleContent = {
           {
             q: "低い温度の湯でゆでるレシピを見かけました。",
             a: "湯の温度が75℃より低いと、中心部は75℃に届きません。低温でゆでたあとは、焼くなどして中心部を75℃で1分以上にしてください。",
+          },
+          {
+            q: "パサパサした食感になってしまいます。",
+            a: "肉を変えてみましょう。ELIGŌのメンバーも、市販の豚ひき肉で作ってパサついたことがあります。肩ロースと豚バラ肉を2cm角ほどに切り、フードプロセッサーで粗く挽いて作ると、ジューシーな食感になりました。お肉屋さんで粗挽きにしてもらう方法もあります。混ぜるときは、肉が温まらないよう手早く作業します。肉を変えても、加熱は中心部75℃で1分以上です。",
           },
         ]}
       />

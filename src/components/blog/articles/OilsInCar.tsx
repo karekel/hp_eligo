@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, MemberVoice, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 車の中でオイルの香りを楽しむ方法の記事 */
 export const oilsInCar: ArticleContent = {
@@ -167,6 +167,14 @@ export const oilsInCar: ArticleContent = {
           />
         </div>
       </MethodCard>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、エアコンの吹き出し口にアロマクリップをつけて、柑橘のオイルの香りを楽しんでいます。柑橘のオイルは肌につけず、香りだけを楽しむ使い方にしています。
+        </p>
+        <p>
+          別のメンバーは、カップホルダーにも置ける大きさのディフューザーを選びました。クリップもディフューザーも、運転の妨げにならない場所に取り付けましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="scent">車におすすめの香りと、量の決め方</h2>
       <p>基本は「軽い香りを、少なめに」です。柑橘やミントのような、さわやかで軽い香りから試してみましょう。</p>
@@ -187,6 +195,14 @@ export const oilsInCar: ArticleContent = {
       <p>
         同乗者には乗る前にひと声かけ、香りが苦手な人が乗る日は使いません。子どもを乗せる日は、使う前に医師または薬剤師に相談します。協会の目安は、3歳以上12歳以下で大人の使用量の10分の1程度からです。嫌がるなら外します。別の見解もあるので、最後はご自身で判断してください。年齢ごとの注意は<Link href="/blog/kids-safety">子どもとエッセンシャルオイル</Link>にまとめています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、車で小型のディフューザーを使っています。香りが強すぎると感じる日は、乗り込んでから最初の5分ほどだけ香らせて、あとは止めています。
+        </p>
+        <p>
+          別のメンバーは、フランキンセンスを、人によって「好き」とも「苦手」とも受け止め方が分かれる香りだと感じています。同じ香りでも、感じ方は人それぞれです。
+        </p>
+      </MemberVoice>
 
       <h2 id="heat">車ならではの注意点（高温と内装）</h2>
       <h3>ボトルを車内に置きっぱなしにしない</h3>
@@ -196,6 +212,14 @@ export const oilsInCar: ArticleContent = {
       <p>
         車に積むのはその日に使う1本だけにして、降りるときに持ち帰ります。保管の基本は<Link href="/blog/oil-storage">オイルの保管方法</Link>にまとめています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、水を入れて使うディフューザーを車で使っていましたが、暑くなってからは車内に置いたままにするのが心配になり、出勤の日だけ使うようにしています。別のメンバーは、ふたを閉めていても水が漏れるのが心配なので、出かける日はディフューザーを家に置き、ふたを開けて中を乾かしています。
+        </p>
+        <p>
+          車では水を入れるのが手間なので、水を使わないタイプにひかれているメンバーもいます。暑い時期は、ボトルと同じように、ディフューザーも車に置きっぱなしにしないようにしましょう。
+        </p>
+      </MemberVoice>
       <h3>内装にオイルを直接つけない</h3>
       <p>
         協会は、精油はシミや変色の原因になるので、家具やカーテンにつけないよう注意しています。車のシートや内装も同じです。ストーンやティッシュは受け皿や袋に入れ、ボトルのふたをダッシュボードに直接置きません。ついたらすぐに拭き取ります。

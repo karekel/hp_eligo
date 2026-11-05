@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** 協会の分量で作るリードディフューザーの記事 */
@@ -180,6 +180,14 @@ export const reedDiffuser: ArticleContent = {
       <p>
         50滴は5mLボトルの半分にあたります。最初は全部を半分にして、無水エタノール10mLに約25滴で試すと無駄が少なくて済みます。香りの組み合わせ方は<Link href="/blog/blend-basics">香りのブレンドの基本</Link>で解説しています。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、ドライフラワーの花びらを入れたリードディフューザーを作りました。1つはトップにオレンジ、ミドルにラベンダー、ベースにシダーウッド、もう1つはトップにスペアミント、ミドルにゼラニウム、ベースにシダーウッドを合わせています。見た目もかわいく、とてもよい香りに仕上がりました。
+        </p>
+        <p>
+          花びらの色が液に溶け出して、1つは液がピンク色になりました。花を入れると液の色が変わることがあります。花びらも燃えやすいので、置き場所は火から離しましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="place">置き場所を決める｜火気と誤飲</h2>
       <p>
@@ -215,6 +223,14 @@ export const reedDiffuser: ArticleContent = {
         ]}
       />
       <PointBox>液がついた竹串を家具に置くと、シミや変色の原因になります。手についたら石けんで洗いましょう。</PointBox>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、家族がオイルの香りを好まないので、家族が家にいる時間はディフューザーで香らせないと決めています。香らせる時間も、短い時間から少しずつ延ばしてきました。リードディフューザーは置いている間ずっと香るので、家族が長く過ごす部屋は避け、竹串の本数を少なくして試しましょう。
+        </p>
+        <p>
+          反対に、ディフューザーで香らせていた部屋に遊びに来たお客さんが、「いい匂い」と気に入ってくれたメンバーもいます。香りの感じ方は、人によって違います。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

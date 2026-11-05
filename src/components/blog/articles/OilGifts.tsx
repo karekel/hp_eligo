@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** 市販のオイルを贈るときの選び方と配慮の記事 */
 export const oilGifts: ArticleContent = {
@@ -156,6 +156,14 @@ export const oilGifts: ArticleContent = {
       <p>
         迷ったら、専門店の販売員に相談する方法もあります。香りの感じ方は体調や気分でも変わるので、可能なら相手と一緒に試しましょう。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、甘い香りが自分から漂うのは苦手だという相手には、いきなり贈らず、まず香りをかいでもらうところから始めています。
+        </p>
+        <p>
+          別のメンバーは、初めての香りは、まわりの人の受け止め方も分かれると感じています。身につける香りを贈るときは、ふんわり香る程度の使い方から伝えましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="form">容量と形の選び方</h2>
       <p>ドテラは、開封後は早めに使うよう案内しています。協会の目安は、開封後1年以内に使い切ることです。柑橘系は成分が変化しやすいとされています。相手が無理なく使える形を選びましょう。</p>
@@ -176,6 +184,11 @@ export const oilGifts: ArticleContent = {
       <PointBox>
         元のボトルのまま贈りましょう。別の容器に移すと、製品名や注意の表示が離れてしまいます。
       </PointBox>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、自分が使っていたミストの香りを家族がとても気に入ったので、同じ製品を贈り物用に買い足しました。すりガラスのような容器で高級感があり、贈り物にも向いていると感じています。先に香りを知ってもらえていると、贈る側も選びやすくなります。
+        </p>
+      </MemberVoice>
 
       <h2 id="care">贈る相手に合わせた配慮</h2>
       <p>次のような相手には、贈る前に本人に確かめましょう。</p>
@@ -204,6 +217,11 @@ export const oilGifts: ArticleContent = {
       <p>
         三重県は、体を洗う手作り石けんは化粧品に当たり、他人へのプレゼントも少量でも規制の対象と案内しています。佐賀県も、プレゼントでも許可が必要としています。ロールオンのように肌に使う手作り品も同じように考え、贈るのは市販の製品にしましょう。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーも、手作りのコスメや、相手に合わせて作ったブレンドオイルは人に贈らないようにしています。使いたい人がいるときは、使う本人に自分で作ってもらいます。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">贈るときの注意点</h2>
       <CautionBox

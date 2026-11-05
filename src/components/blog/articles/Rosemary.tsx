@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, MemberVoice, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ローズマリー */
@@ -162,6 +162,14 @@ export const rosemary: ArticleContent = {
       <p>
         ドテラの「食品添加物」の表示がある製品は、ラベルどおりの量と方法で料理の香りづけに使えます。お手元のラベルを確認してください。日本アロマ環境協会は、薄めたものでも精油を飲むことや食品と一緒にとることをすすめておらず、料理への利用についても同じ立場です。別の見解もあるので、最後はご自身で判断してください。考え方は<Link href="/blog/aromatic-table">オイルで香りづけする料理</Link>で解説しています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ローズマリー風味のチキンを作っています。にんにく、塩、黒こしょうなどの調味料に、ローズマリーを2滴ほど混ぜ、鶏肉をもみ込んで漬けてから焼きます。入れすぎないように気をつけています。
+        </p>
+        <p>
+          別のメンバーは、豚肉で作るパエリアの下味を、塩麹とローズマリーでつけています。手作りのソーセージに、ローズマリーとレモンを入れるメンバーもいます。はじめは爪楊枝の先で少しずつ加えて、味を見ながら足しましょう。
+        </p>
+      </MemberVoice>
       <PointBox>
         布に香りを添えるなら、ドテラのレシピのリネンスプレーにローズマリーが5滴入っています。分量と手順は<Link href="/blog/lavender">ラベンダーの記事</Link>にまとめました。
       </PointBox>
@@ -196,6 +204,14 @@ export const rosemary: ArticleContent = {
       <p>
         どちらもディフューザーに使う合計5滴の例です。ドテラのラルツディフューザーの目安は5〜10滴なので、ほかの機種は説明書に合わせてください。組み立て方は<Link href="/blog/blend-basics">香りのブレンドの基本</Link>で解説しています。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、ローズマリーをオレンジとシダーウッドに合わせてディフューザーで香らせるのがお気に入りです。別のメンバーは、出かけた先で見かけたブレンドを想像して、ヒノキを多めに、レモングラス、シダーウッド、ローズマリーを合わせ、厳かな雰囲気の香りに仕立てました。合計の滴数は、ディフューザーの目安に収めましょう。
+        </p>
+        <p>
+          ローズマリーにレモングラス、ティーツリー、ペパーミントを合わせ、気分によってラベンダーも加えて、ファブリックスプレーにしているメンバーもいます。ソファにひと吹きして、香りを添えています。布に使うときは、目立たない所で試してからにしましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

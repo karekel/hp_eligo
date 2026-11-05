@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, Faq, MemberVoice, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: マジョラム */
@@ -178,6 +178,14 @@ export const marjoram: ArticleContent = {
       <p>
         ドテラの「食品添加物」の表示がある製品は、ラベルどおりの量と方法で料理の香りづけに使えます。一方で、日本アロマ環境協会は、薄めたものでも精油を飲むことや食品と一緒にとることをすすめておらず、料理への利用についても同じ立場です。別の見解もあるので、最後はご自身で判断してください。考え方は<Link href="/blog/aromatic-table">オイルで香りづけする料理</Link>で解説しています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーが講座で作ったランチには、マジョラムで香りづけしたきのこのソテーが並びました。好きなきのこを3種類焼き、火を止めてから、マジョラムを1滴垂らした箸やヘラで全体を混ぜて、香りをなじませます。
+        </p>
+        <p>
+          オイルを直接料理に垂らさず、箸やヘラにつけてから混ぜると、マジョラムの香りが全体になじみます。使うのは「食」の表示がある製品だけにして、味を見ながら少しずつ足しましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>
@@ -209,6 +217,17 @@ export const marjoram: ArticleContent = {
       <p>
         どちらもディフューザーに使う合計5滴の例で、肌には使いません。組み立て方は<Link href="/blog/blend-basics">香りのブレンドの基本</Link>で解説しています。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーには、グレープフルーツ、ベルガモット、ラベンダー、レモン、マジョラム、イランイランの6種類を合わせた香りがお気に入りの人が何人もいます。柑橘を多めにしてディフューザーで香らせる人や、「高級なホテルのような香り」と感じる人もいます。
+        </p>
+        <p>
+          夜の時間に、ベルガモットとマジョラムを合わせて焚くメンバーもいます。別のメンバーは、好きな映画を見ながらフランキンセンス、マジョラム、サンダルウッドを焚いて、好きな香りの中で過ごしました。
+        </p>
+        <p>
+          マジョラムを、カレーの隠し味のインスタントコーヒーのように、ブレンドにピリッとしたアクセントを足す香りと表現するメンバーもいます。合計の滴数は、ディフューザーの説明書の目安の範囲にしましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

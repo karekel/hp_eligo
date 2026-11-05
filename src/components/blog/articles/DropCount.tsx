@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 1滴の量の目安、滴数の数え方、オイルが出にくいときの記事 */
 export const dropCount: ArticleContent = {
@@ -153,6 +153,14 @@ export const dropCount: ArticleContent = {
       </div>
       <ArticleFigure src="/assets/blog/inline/drop-count-tilt-adc0fcd6.jpg" alt="ボトルを小皿の上で斜めに傾け、オイルを1滴ずつ落とす様子" caption="振らずに斜めに傾けて、落ちる滴を数えます" />
       <PointBox>入れすぎた分は戻せません。レシピの量より少なめに落として、香りを確かめながら足しましょう。</PointBox>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、使うブレンドが決まったら、先にオイルどうしを合わせておく方法をすすめています。合わせた香りを確かめられて、使うときは「このブレンドを何滴」と数えるだけで済みます。
+        </p>
+        <p>
+          合わせたブレンドも、1滴は約0.05mLとして数えます。肌に使うものは、合計の滴数で濃度を確かめましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="slow">オイルが出にくいとき</h2>
       <p>
@@ -167,6 +175,14 @@ export const dropCount: ArticleContent = {
           { title: "スポイトを使う", text: "粘りのあるオイルをよく使うなら、市販のスポイトを使う方法もあります。オイルごとに分けると、香りが混ざりません。" },
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、粘りがあって出にくいオイルにはスポイトを使っています。落ちてくるまで待たずに済むので、気軽に量れます。
+        </p>
+        <p>
+          別のメンバーも、サンダルウッドは出にくいと感じていて、ミルラのボトルにスポイトのキャップをつけました。スポイトを使うときも、オイルごとに分けて使いましょう。
+        </p>
+      </MemberVoice>
       <p>
         小分けの容器を選ぶときは、<Link href="/blog/oil-containers">オイルの容器の選び方</Link>も確認してください。
       </p>

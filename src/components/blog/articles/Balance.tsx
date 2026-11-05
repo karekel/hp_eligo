@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, NextStepBox, OilProfile, PairingList, PointBox, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, MemberVoice, NextStepBox, OilProfile, PairingList, PointBox, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ドテラバランス */
@@ -168,6 +168,14 @@ export const balance: ArticleContent = {
       <p>
         手首や首は顔に近いので、香りをはっきり感じます。ただ、香りの感じ方には個人差があり、消費者庁は公共の場所での配慮を呼びかけています。電車や職場へ向かう朝は足裏を選ぶか、手首の量を控えめにしましょう。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、毎朝、ドテラバランスにベチバーを混ぜて足裏になじませるのを習慣にしています。合わせるオイルも「塗」の表示を確かめ、はじめはキャリアオイルで薄めて少量から試しましょう。
+        </p>
+        <p>
+          ドテラバランスが大好きな別のメンバーは、アロマアクセサリーにブレンドオイルを垂らして出かけ、1日中香りを楽しんでいます。アクセサリーに使うときも、人の多い場所では香りの強さに気を配りましょう。
+        </p>
+      </MemberVoice>
       <p>車内に置いたティッシュは、降りるときに持ち帰ります。オイルがついた紙は、水で湿らせてから捨てるよう協会が案内しています。ほかの方法は<Link href="/blog/oils-in-car">車でエッセンシャルオイルを楽しむ方法</Link>にまとめています。</p>
       <p>
         アロマタッチのハンドテクニックにも使えます。家族と手のタッチを楽しみたい方は、<Link href="/blog/aromatouch-hand">アロマタッチのハンドテクニック</Link>を参考にしてください。ドテラバランスは、<Link href="/blog/aromatouch-technique">アロマタッチ テクニック</Link>で使う8種類のオイルのひとつでもあります。
@@ -200,6 +208,14 @@ export const balance: ArticleContent = {
       <p>
         手首用は、キャリアオイル10mLに合計2滴混ぜる例で、協会の目安の1%以下に収まります。オレンジ15mLの表示は「香・食」なので、肌には使わず、ティッシュで香りだけを楽しみます。持ち歩き用の作り方は<Link href="/blog/roll-on">ロールオンアロマの作り方</Link>で紹介しています。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、ドテラバランスにフランキンセンスとオレンジを合わせて、ディフューザーで香らせるのが好きです。別のメンバーは、ベルガモットやマジョラム、イランイランと合わせて、お気に入りの香りを見つけました。
+        </p>
+        <p>
+          ドテラバランスはそのままに、ほかのオイルを柑橘のブレンドオイルに置き換えて、香りの変化を楽しんでいるメンバーもいます。ディフューザーで使うときは、ココナッツオイルを含むので、先に機器の説明書を確かめましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox
@@ -228,6 +244,10 @@ export const balance: ArticleContent = {
           {
             q: "ヒノキとはどう違いますか？",
             a: "どちらも表示は「塗・香」で、ウッディー、エアリー、フレッシュの言葉が共通しています。違いは甘さです。ドテラバランスにはスイートが加わり、7種類の内容を重ねたブレンドです。ヒノキは木部から採ったオイルで、容量は5mLです。",
+          },
+          {
+            q: "香りが苦手に感じたら、どうすればいいですか？",
+            a: "無理に使わず、ほかのオイルを選んでかまいません。ELIGŌのメンバーにも、ドテラバランスの香りが苦手だった時期があり、今では大好きになった人がいます。香りの好みは、時期によっても変わります。",
           },
         ]}
       />

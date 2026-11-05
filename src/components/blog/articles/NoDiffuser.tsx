@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 使い方ガイド型のサンプル記事 */
 export const noDiffuser: ArticleContent = {
@@ -100,6 +100,14 @@ export const noDiffuser: ArticleContent = {
           ]}
         />
         <PointBox>ジップ付きの袋に入れて持ち歩けば、外出先でも香りを楽しめます。</PointBox>
+        <MemberVoice>
+          <p>
+            ELIGŌのメンバーの一人は、何人かで同じ部屋に泊まる場面に合わせて、オイルを垂らしたティッシュを小さなアルミ缶に入れて用意しました。缶のふたを開けたときだけ香るので、まわりに香りが広がりすぎないようにできます。
+          </p>
+          <p>
+            別のメンバーは、公園で拾った木の枝に、布を三つ編みにしたひもと100円ショップの金具をつけて、オイルを垂らす飾りを作りました。かばんにつけて持ち歩くこともできます。木や布はオイルでシミになることがあるので、1滴から、服や肌に触れない所で試してください。
+          </p>
+        </MemberVoice>
       </MethodCard>
 
       <MethodCard no={2} title="アロマストーンを使う" items={["アロマストーン"]}>
@@ -110,6 +118,14 @@ export const noDiffuser: ArticleContent = {
           ]}
         />
         <PointBox>香りを替えたいときは、香りごとにストーンを分けておくと、香りが混ざりません。</PointBox>
+        <MemberVoice>
+          <p>
+            ELIGŌのメンバーには、アロマストーンを石膏で手作りした人が何人もいます。一人は、石膏55gと水20mLに食紅とエッセンシャルオイルを混ぜ、シリコンの型に流して1個分を作りました。1時間ほどで固まるので、はじめてでも手軽です。別のメンバーは、少し欠けたり穴があいたりしましたが、簡単に作れました。
+          </p>
+          <p>
+            香りが薄れてきたら、好きなオイルを足して使えます。足すオイルはラベルで香りを楽しむ使い方を確かめ、できたストーンは子どもやペットの手の届かない場所に置きましょう。
+          </p>
+        </MemberVoice>
       </MethodCard>
 
       <MethodCard no={3} title="マグカップのお湯に垂らす" items={["マグカップ", "お湯"]}>

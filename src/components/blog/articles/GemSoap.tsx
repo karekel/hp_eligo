@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** MPソープで作る宝石のような石けんのレシピ */
 export const gemSoap: ArticleContent = {
@@ -121,6 +121,14 @@ export const gemSoap: ArticleContent = {
           ["子ども", "色を選ぶ、カラージェルを1滴ずつ入れる、色を重ねる順番を決める、水で磨く"],
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーが開いた宝石石けんの会には、夏休みに入ったばかりの親子6組が集まりました。少し大きいお子さんや大人は宝石石けんを、小さなお子さんは色つきの素地を型に入れる型抜き石けんを作り、年齢で作るものを分けています。夏休みの自由研究を兼ねて参加し、帰ってから動画にまとめたお子さんもいます。
+        </p>
+        <p>
+          親子で作るときは、熱いソープとナイフは大人が扱い、オイルの量は上の表に合わせましょう。
+        </p>
+      </MemberVoice>
       <p>オイルの量は、誰が使うかで決めます。子どもが使うときは、使う前に医師または薬剤師に相談します。次の表は素地100gに対する量で、子どもの量は日本アロマ環境協会の目安に合わせました。1滴を0.05mL、素地1gを1mLとして計算しました。別の見解もあるので、最後はご自身で判断してください。</p>
       <DataTable
         caption="使う人とオイルの量"
@@ -167,6 +175,14 @@ export const gemSoap: ArticleContent = {
         <PointBox>シリコン型で作ると、磨かなくても表面がなめらかに仕上がります。カラーマイカは注いでから軽くかき混ぜると、きれいなマーブル模様が出ます。</PointBox>
       </MethodCard>
       <ArticleFigure src="/assets/blog/inline/gem-soap-layers-8c3892a1.jpg" alt="3色を重ねて固めた石けんを型から外し、角を落として宝石の形にする流れ" caption="色を重ねて固め、角を落とすようにカットします" />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、透明と白の2種類の素地を用意し、カラージェルなどで色を変えて、8種類の石けんを作りました。クラフト用のビーカーで素地を湯せんにかけて溶かし、色とオイルを入れて型に流します。数時間で固まったら包丁で薄く切り、1〜2日乾かします。
+        </p>
+        <p>
+          包丁やナイフで切る作業は大人が行い、オイルの量は素地の量に合わせて表の目安を守りましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">作るときと使うときの注意点</h2>
       <CautionBox

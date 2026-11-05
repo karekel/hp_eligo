@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { CautionBox, CheckPoints, DataTable, MemberVoice, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** エッセンシャルオイルのラベルに書かれた項目の読み方を説明する記事 */
 export const readingLabels: ArticleContent = {
@@ -144,6 +144,11 @@ export const readingLabels: ArticleContent = {
         ドテラは、組成が生育地などで変わるとしています。協会も、産地の土壌や天候が精油の内容に大きく影響すると説明しています。ドテラは、開封後は早めに使うよう案内しています。協会の目安は開封後1年以内です。しまい方は
         <Link href="/blog/oil-storage">保管方法と使用期限の目安</Link>にまとめています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、使い終わったボトルのラベルを貼り集めて、コレクションのように楽しんでいます。オイルによって、ほかと違うデザインのラベルもあり、並べると見比べられます。
+        </p>
+      </MemberVoice>
 
       <h2 id="category">日本の製品で大切な「区分」</h2>
       <p>
@@ -154,6 +159,14 @@ export const readingLabels: ArticleContent = {
         <Link href="/blog/doterra-drinkable">ドテラのオイルは飲める？</Link>で解説しています。
       </p>
       <ProductPhotos names={["ベルガモット"]} />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーのあいだでも、「化粧品の表示があるオイルを、口に入れてもいいの？」という質問が出ることがあります。似た名前のオイルでも、「食」の表示がある製品とない製品があることも、よく話題になります。
+        </p>
+        <p>
+          迷ったときは口に入れず、手元のボトルのラベルで区分を確かめましょう。「食」の表示がない製品は、口に入れる使い方をしません。
+        </p>
+      </MemberVoice>
 
       <h2 id="ingredients">成分表示の見方</h2>
       <p>
@@ -197,6 +210,14 @@ export const readingLabels: ArticleContent = {
           "火気に注意し、子どもやペットの手の届かない場所に保管します。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、無料のデザインツールでオリジナルのラベルを作り、いろいろな容器に貼っています。別のメンバーは、デザインツールで作ったラベルを、ラベルライターで印刷しています。
+        </p>
+        <p>
+          小分けにした容器には、元のボトルのラベルは付いてきません。中身の名前、区分、作った日を書いておくと、使うときに迷いません。
+        </p>
+      </MemberVoice>
 
       <p>ラベルは、そのオイルの出身地と使い方が書かれた小さな説明書です。まずは手元の1本を取り、学名、抽出部位、区分の3つを読んでみてください。メーカーを比べるときは<Link href="/blog/choosing-oil-brands">メーカーの選び方</Link>へ。</p>
       <NextStepBox />

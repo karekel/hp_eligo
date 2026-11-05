@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, Faq, MemberVoice, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: レモン */
@@ -160,6 +160,11 @@ export const lemon: ArticleContent = {
           },
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、何本もリピートしているレモンを、シールをはがすときにも使っています。素材によっては傷んだり色が変わったりすることがあるので、目立たない場所で試してからにしましょう。
+        </p>
+      </MemberVoice>
 
       <MethodCard no={1} title="重曹の香りびんを作る" items={["小さめのガラスびん", "重曹1/4カップ", "レモン5〜6滴", "布と輪ゴム"]}>
         <Steps
@@ -185,6 +190,14 @@ export const lemon: ArticleContent = {
       <p>
         一方で、日本アロマ環境協会は、薄めたものでも精油の飲用や食品との摂取をすすめていません。一般の精油は雑品で、飲食は認められていないとも説明しています。別の見解もあるので、最後はご自身で判断してください。区分の考え方は<Link href="/blog/doterra-drinkable">ドテラのオイルは飲める？</Link>、料理の例は<Link href="/blog/aromatic-table">オイルで香りづけする料理</Link>で紹介しています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、手作りソーセージのひき肉に、レモンとローズマリー、ブラックペッパーのオイルを加えています。柑橘とハーブの香りがひき肉になじんで、家族にも好評です。別のメンバーは、パウンドケーキの生地にレモンを入れて、爽やかな味に仕上げています。
+        </p>
+        <p>
+          飲み水にレモンを1滴入れて、香りを楽しんでいるメンバーもいます。どれも「食」の表示がある製品で、食品や飲み物に1〜3滴の目安を守り、少しずつ足して使いましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>レモンは香りの立ち上がりを担うトップノートのオイルです。ミント系やハーブ系と合わせると、キッチンに合うすっきりした香りになります。</p>
@@ -225,6 +238,11 @@ export const lemon: ArticleContent = {
           "ドテラは、開封後は早めに使うよう案内しています。協会は、柑橘のオイルは成分が変わりやすいとし、目安は1年以内です。子どもやペットの手の届かない場所に保管しましょう。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーは、肌に使うクラフトを作るとき、柑橘の光毒性に気をつけるよう声をかけ合っています。ブレンドオイルにも、レモンが少し含まれている製品があります。肌に使う製品は、ラベルの成分と注意書きを確かめてから使いましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="faq">よくある質問</h2>
       <Faq

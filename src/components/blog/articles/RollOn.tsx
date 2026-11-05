@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 10mLのボトルで作るロールオンのレシピとブレンド例 */
 export const rollOn: ArticleContent = {
@@ -207,6 +207,14 @@ export const rollOn: ArticleContent = {
       </MethodCard>
       <ArticleFigure src="/assets/blog/inline/roll-on-steps-126010a0.jpg" alt="小さなガラス容器でココナッツオイルにオイルを垂らして混ぜ、ロールオンボトルの9割まで移してローラーを押し込み、ふたをしてラベルを貼る流れ" caption="量って混ぜてから、ボトルの9割まで移します" />
       <ProductPhotos names={["ドテラ ココナッツオイル"]} />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、使い終わったオイルの空き瓶に、そのままつけられるロールオンのキャップを使っています。5mLにも15mLにも合うタイプで、ふだんはロールオン用のボトルを買わなくなりました。
+        </p>
+        <p>
+          別のメンバーも、サイズがそろっていてかわいい空き瓶を捨てずに取っておき、ブレンドしたオイルを作るときに使っています。空き瓶を使うときは、よく洗って乾かした清潔な瓶で作り、ボトルの容量に合わせて滴数を確かめましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="blend">ドテラのオイルで作る香りの組み合わせ</h2>
       <p>
@@ -240,6 +248,14 @@ export const rollOn: ArticleContent = {
         1本で香りを決めたいなら、最初から香りが組まれたドテラバランスを1〜2滴でも楽しめます。レモンなど光毒性のある柑橘と、肌につけない製品のユーカリプタスは入れないでください。ティーツリーとペパーミント5mLは「塗・香」の表示ですが、協会は皮膚刺激の例に挙げています。別の見解もあるので、最後はご自身で判断してください。
       </p>
       <ProductPhotos names={["ドテラバランス"]} />
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、パチョリとサンダルウッドが入ったブレンドのロールオンを、少しオリエンタルで、おしゃれなホテルのロビーのような香りと感じています。
+        </p>
+        <p>
+          別のメンバーは、はじめは苦手だったメリッサの香りを、使い続けるうちに、ある時から好きになりました。香りの好みは、慣れによっても変わります。自分で作るときは、「塗・香」の表示があるオイルから2種類までを選び、まずは1滴で試してみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">作るときと持ち歩くときの注意点</h2>
       <CautionBox
@@ -255,6 +271,11 @@ export const rollOn: ArticleContent = {
           "子どもやペットの手の届かない場所に保管してください。外出先では周りの人への香りにも配慮しましょう。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ロールオンを小さなポーチにまとめて持ち歩いています。キャリアオイルのココナッツオイルを入れた小さなスポイトボトルも、一緒にポーチに入れています。持ち歩くときも、夏の車内など高温になる所にポーチを置きっぱなしにしないようにしましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="faq">よくある質問</h2>
       <Faq
@@ -270,6 +291,10 @@ export const rollOn: ArticleContent = {
           {
             q: "もっとしっかり香らせたいときは？",
             a: "滴数は増やしません。香りを長く変化させて楽しみたいときは、ナチュラルパフュームの記事も参考にしてください。",
+          },
+          {
+            q: "1回にどのくらいつければいいですか？",
+            a: "ELIGŌのメンバーの一人は、左の手首に1回ころころと転がし、両方の手首をすり合わせてから、首元にのばしています。つけすぎて香りが強いと感じたときは、ココナッツオイルやホホバオイルを重ねる方法をすすめています。はじめて使うロールオンは、腕の内側などに少量つけて様子を見てからにしましょう。",
           },
           {
             q: "残り少なくなったら、つぎ足してもいいですか？",

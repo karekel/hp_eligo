@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { BlendRecipe, CautionBox, CheckPoints, DataTable, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, CheckPoints, DataTable, MemberVoice, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** ディフューザーで楽しむ朝・昼・夜のブレンド例の記事 */
 export const diffuserBlends: ArticleContent = {
@@ -164,6 +164,17 @@ export const diffuserBlends: ArticleContent = {
         寝室では、ラルツの1時間タイマーを使うと、つけたままにならずに済みます。1本で楽しみたい日は、<Link href="/blog/serenity">ドテラセレニティー</Link>も選べます。
       </p>
       <ProductPhotos names={["ドテラセレニティー"]} />
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、数種類のオイルを合計10滴ほどに混ぜて焚いています。日中はオレンジなどの柑橘で明るい香りに、夕方からはドテラセレニティーのようなゆったりした香りに替えています。
+        </p>
+        <p>
+          別のメンバーのお気に入りは、オレンジ、シダーウッド、ローズマリーを合わせた香りです。フランキンセンスにオレンジとペパーミントを合わせる人や、冬にウィンターグリーンとミント系のオイル、シナモン、バニラを合わせて、甘すぎない香りを楽しむ人もいます。
+        </p>
+        <p>
+          寝室に<Link href="/blog/waterless-diffuser">水を使わないタイプのディフューザー</Link>を置き、森の音とラベンダーを1対1で合わせて、夜の寝室の香りにしているメンバーもいます。寝室まで毎日水を運ばなくて済むので、続けやすい置き方です。水なしタイプの使える量は、製品の説明書で確かめましょう。
+        </p>
+      </MemberVoice>
 
       <h3>手元にないオイルがあるとき</h3>
       <p>同じ系統のオイルに置き換えると、組み合わせの雰囲気を残せます。香りの印象は変わるので、ティッシュで確かめてからタンクに入れましょう。</p>
@@ -199,6 +210,14 @@ export const diffuserBlends: ArticleContent = {
       <p>
         朝と夜で香りを替える日は、タンクの水も入れ替えます。ラルツは、使うたびに本体を水で洗い、柔らかいクロスで拭きます。手順は<Link href="/blog/diffuser-guide">ディフューザーのお手入れ</Link>で確認できます。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、車の中で香りが強いと感じる日は、乗り込んでから最初の5分ほどだけ焚いて止めています。
+        </p>
+        <p>
+          別のメンバーは、家族がオイルの香りを好まないので、家族が家にいる時間は焚かずにいます。焚く時間も、はじめは短くして少しずつ延ばしてきました。香りの好みは人それぞれです。一緒に過ごす人に合わせて、量と時間を調節しましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="own">自分の組み合わせを作るコツ</h2>
       <p>組み合わせる種類の数に決まりはありません。まずは次の順番で考えてみましょう。</p>
@@ -225,6 +244,14 @@ export const diffuserBlends: ArticleContent = {
       <p>
         香りの立ち方まで考えて組み立てたいときは、<Link href="/blog/blend-basics">トップ・ミドル・ベースの基本</Link>も参考にしてください。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、「勉強の時間」をテーマに決めて、好きなブレンドオイルにフランキンセンスを合わせ、毎日焚いていました。
+        </p>
+        <p>
+          別のメンバーは、ヒノキを多めにして、レモングラス、シダーウッド、ローズマリーを少しずつ合わせ、厳かな香りを作りました。トイレのディフューザーにスペアミントだけを入れて、爽やかな香りにしているメンバーもいます。組み合わせを試すときも、合計は10滴までにしましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

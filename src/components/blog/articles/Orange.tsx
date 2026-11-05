@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, Faq, MemberVoice, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: オレンジ */
@@ -157,6 +157,14 @@ export const orange: ArticleContent = {
       <p>
         協会は、精油を薄めて飲むことも、食品と一緒にとることもすすめていません。市販の精油は一般に雑品で、飲食は認められていないと説明しています。別の見解もあるので、最後はご自身で判断してください。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、メンバーの間で教え合ったレシピで、にんじんのきんぴらの仕上げにオレンジを加えています。オレンジを入れると甘さのしつこさがなくなり、あっさりとフルーティーな味わいになります。唐辛子を入れるとオレンジの風味がわかりにくくなるので、入れずに作るのが好みです。
+        </p>
+        <p>
+          別のメンバーは、サラダのドレッシングに混ぜたり、オレンジジュースにオレンジを足して香りを重ねたりしています。どれも「食」の表示がある15mLの製品を、ラベルどおりのごく少量で使う香りづけです。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>オレンジの甘さは、スパイスや樹脂のような温かい香りとよくなじみます。季節に合わせて組み合わせを変えると、同じオイルでも印象が変わります。</p>
@@ -187,6 +195,14 @@ export const orange: ArticleContent = {
       <p>
         最初の例は3滴で試すブレンド、次の例はディフューザーの合計5滴です。ラルツディフューザーの目安は5〜10滴です。スパイスと柑橘で香りを楽しむ工作は、<Link href="/blog/potpourri">ポプリの作り方</Link>でも紹介しています。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、フランキンセンス、オレンジ、ペパーミントをディフューザーで合わせる組み合わせがお気に入りです。部屋じゅうが香りに包まれて、家で過ごす日も気持ちよく過ごしています。
+        </p>
+        <p>
+          別のメンバーは、オレンジにシダーウッドとローズマリーを合わせ、おしゃれなお店のような香りを楽しんでいます。アーボビテ1滴、シナモンバーク2滴、オレンジ3滴のブレンドを好むメンバーもいますが、苦手な人も多い香りです。はじめは少ない滴数で試してみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox
@@ -201,6 +217,14 @@ export const orange: ArticleContent = {
           "火のそばでは使わず、子どもやペットの手の届かない場所に保管します。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、家族が柑橘の香りを好まないため、家族が家にいる時間はディフューザーを使わず、使う時間も少しずつ延ばしてきました。別のメンバーは、オイルで香りづけして洗濯した服を、家族が職場で「香りが強い」と言われたことがあります。
+        </p>
+        <p>
+          香りの感じ方は人によって違います。使う場所や量は、まわりの人と相談しながら決めましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="faq">よくある質問</h2>
       <Faq
@@ -216,6 +240,10 @@ export const orange: ArticleContent = {
           {
             q: "お風呂に入れてもいいですか？",
             a: "15mLに入浴の使い方はありません。お湯を通して肌に触れる使い方になるので、湯船には入れないようにしましょう。",
+          },
+          {
+            q: "台所の掃除にも使えますか？",
+            a: "拭き掃除の香りづけに使えます。ELIGŌのメンバーには、精製水と無水エタノールにオレンジを混ぜたスプレーで台所を拭く人や、年末の大掃除で換気扇まわりを拭くときに使う人がいます。素材によっては傷んだり色が変わったりすることがあるので、目立たないところで試してから使いましょう。",
           },
         ]}
       />

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ローションに混ぜる方法とミツロウで固める方法の2つのクリームレシピ */
 export const handmadeCream: ArticleContent = {
@@ -184,6 +184,17 @@ export const handmadeCream: ArticleContent = {
         />
       </MethodCard>
       <ArticleFigure src="/assets/blog/inline/handmade-cream-yusen-3e543751.jpg" alt="湯を張った鍋に耐熱ビーカーを入れ、シアバターやミツロウを溶かす湯せんの様子と、空のクリームジャー" caption="湯せんは、鍋のお湯に耐熱ビーカーをつけて溶かします" />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ミツロウ、シアバター、ココナッツオイルを湯せんで溶かす作り方を基本にしています。ミツロウが多いとかなり硬くなるので、冬はミツロウを少し減らしています。溶けたように見えてからも3分ほど湯せんを続けると、ダマが残らず、ざらつきのない仕上がりになります。
+        </p>
+        <p>
+          別のメンバーは、シアバター、ホホバオイル、ミツロウを2対2対1で合わせ、やわらかく使いやすい固さにしています。リップのように硬めに仕上げたいときは、シアバターを減らして調整するメンバーもいます。配合を変えても、オイルの滴数は全体の量に合わせて、約0.5%になるように計算しましょう。
+        </p>
+        <p>
+          容器は、100円ショップのクリームチューブを使っているメンバーが多くいます。
+        </p>
+      </MemberVoice>
 
       <h2 id="density">オイルの濃度を確かめる</h2>
       <p>
@@ -217,6 +228,14 @@ export const handmadeCream: ArticleContent = {
       <p>
         レモン、ベルガモット、グレープフルーツは光毒性があるので使いません。ティーツリーとペパーミント5mLは「塗」の表示で肌に使えますが、協会は皮膚刺激の例に挙げています。ユーカリプタスは肌につけません。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、ハンド&ボディローションにバランス、フランキンセンス、ラベンダーなどを合わせて、自分好みの香りのハンドクリームを作っています。別のメンバーは、何種類か合わせて「何か足りない」と感じたときに、もう1種類を足して香りを整えています。
+        </p>
+        <p>
+          合わせる種類が増えても、合計の滴数は全体の量に対して約0.5%に収め、「化粧品」の表示がある製品だけを使いましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">作るときと使うときの注意点</h2>
       <CautionBox
@@ -232,6 +251,14 @@ export const handmadeCream: ArticleContent = {
           "子どもやペットの手の届かない場所に保管してください。湯せんでのやけどに注意し、オイルは火のそばで扱いません。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、未精製のシアバターにイランイランを合わせたところ、思っていたのと違う香りに仕上がりました。別のメンバーも、未精製のシアバターとイランイランの組み合わせで、同じ経験をしています。
+        </p>
+        <p>
+          未精製のシアバターには、素材の香りと黄色みが残ります。オイルの香りを楽しみたいときは、レシピどおり精製したシアバターを選びましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="faq">よくある質問</h2>
       <Faq

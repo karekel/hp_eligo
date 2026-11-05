@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, Faq, MemberVoice, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ディープブルー */
@@ -181,6 +181,14 @@ export const deepBlue: ArticleContent = {
       <p>
         どちらも肌に使う製品で、注意表示は化粧品向けの内容です。肌に合わないときは使うのをやめ、皮膚科専門医などに相談しましょう。区分は、お手元の容器の表示で確かめてください。区分ごとの使い方は<Link href="/blog/doterra-how-to-use">ドテラのオイルの使い方と表示の読み方</Link>で紹介しています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ディープブルーラブを毎日持ち歩いています。それでも、ひとつの製品だけに偏らず、ディフューザーやロールオンで、毎日いろいろな香りを使い分けています。
+        </p>
+        <p>
+          ラブを使うときも、適量を手に取り、肌に合うかを確かめながら使いましょう。
+        </p>
+      </MemberVoice>
 
       <h3>ディープブルーの「効能」は表示できる？</h3>
       <p>

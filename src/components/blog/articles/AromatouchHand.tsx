@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, MemberVoice, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** アロマタッチ ハンドテクニックの手順を紹介する記事 */
 export const aromatouchHand: ArticleContent = {
@@ -144,6 +144,14 @@ export const aromatouchHand: ArticleContent = {
       <p>
         タッチは一定で軽く、押し込むものではありません。座ったまま向かい合い、同じ香りを一緒に楽しむ時間と考えてください。家族や友人など、身近な人の間で楽しみましょう。ドテラ・ジャパンは語呂合わせから、8月10日を「ハンドテクニックの日」と定めています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ハンドテクニックは施術台が要らないので、思い立ったときに手軽に始められると感じています。
+        </p>
+        <p>
+          別のメンバーは、教わる場で参加者同士が交代で手を取り合って練習し、覚えた手順をそのまま身近な人に試しています。はじめは公式の動画と見比べながら、順番どおりに進めましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="oils">オイルの選び方と量</h2>
       <p>
@@ -182,6 +190,11 @@ export const aromatouchHand: ArticleContent = {
       <PointBox>
         エリアとゾーンの位置や回数は、公式の動作ページの動画で確認しましょう。順番を守り、自己流の動きは足さないようにします。
       </PointBox>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、はじめての人と練習するとき、マッサージのような技術の上手さより、手順に沿って手全体にまんべんなく触れることを大切にしています。オイルは、「オイルの選び方と量」の目安どおりに薄めて使います。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">家族と楽しむときの注意点</h2>
       <CautionBox
@@ -211,6 +224,10 @@ export const aromatouchHand: ArticleContent = {
           {
             q: "子どもにもできますか？",
             a: "使う前に医師または薬剤師に相談してください。ドテラは、アロマタッチ テクニックについて、子どもは4歳以上としています。協会は、3歳未満の子どもには芳香浴以外を行わず、3歳以上12歳以下は大人の10分の1程度の量から始めるよう案内しています。",
+          },
+          {
+            q: "ハンドテクニックは、どこで体験できますか？",
+            a: "ELIGŌのメンバーは、ドテラのウェルカムツアーの会場で、ハンドテクニックを受けたり、ミニ講習で教わったりしています。ボランティアのスタッフとして体験ブースを手伝ったメンバーもいて、来場した方は「いい香り」と話しながら受けていました。内容は開催ごとに変わるので、参加する前に案内を確かめましょう。",
           },
         ]}
       />

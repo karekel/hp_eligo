@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ドテラ ココナッツオイル（フラクショネイティッド）の製品の基本と、ホホバオイルとの違いをまとめた記事 */
 export const doterraCoconutOil: ArticleContent = {
@@ -131,6 +131,14 @@ export const doterraCoconutOil: ArticleContent = {
       <p>
         作り方の例は、<Link href="/blog/massage-oil-recipe">マッサージオイルの作り方</Link>、持ち歩ける<Link href="/blog/roll-on">ロールオンの作り方</Link>、<Link href="/blog/deep-blue">ディープブルーの使い方</Link>にあります。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ミツロウ、シアバター、ココナッツオイルを湯せんでゆっくり溶かし、好みのエッセンシャルオイルを加えてバームを作っています。50gの容器なら、ミツロウ9〜10g、シアバター10g、ココナッツオイル15gが基本です。ミツロウが多いと硬めになるので、冬はミツロウを7g、ココナッツオイルを17gにしています。溶けたと思ってから3分ほど湯せんを続けると、ざらつきが残りにくくなります。
+        </p>
+        <p>
+          別のメンバーは、ポンプ式の容器にローションとココナッツオイルを少し、ラベンダーなどを入れて、伸びをやわらかくし、好きな香りにして使っています。加えるオイルは「塗」の表示がある製品にして、濃度の目安を守りましょう。手作りのものは、自分で使う分だけにします。
+        </p>
+      </MemberVoice>
 
       <h3>ドテラの薄め方の目安</h3>
       <p>
@@ -189,6 +197,14 @@ export const doterraCoconutOil: ArticleContent = {
       <p>
         エッセンシャルオイルを薄める目的なら、どちらも使えます。濃度の目安は同じです。容量、価格、使いたい場面を見比べて、合うほうを選びましょう。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーには、ヘアオイルのベースを髪質で選んでいる人がいます。くせがあり量の多い髪のメンバーは、ココナッツオイルだと何度か重ねてつけないと思う手ざわりにならないので、ホホバオイルが合うと感じています。
+        </p>
+        <p>
+          別のメンバーは、美容オイルに使うキャリアオイルを、ココナッツオイルからホホバオイルに替えました。合う、合わないは人によって違うので、どちらも少量から試し、赤みやかゆみなどを感じたら使うのをやめて、皮膚科専門医に相談してください。
+        </p>
+      </MemberVoice>
 
       <h2 id="storage">保管のしかた</h2>
       <ul>
@@ -200,6 +216,14 @@ export const doterraCoconutOil: ArticleContent = {
       <p>
         エッセンシャルオイルを混ぜて作ったものは、作った日と中身を容器に書いておくと迷いません。少量ずつ作り、早めに使い切るのが安心です。保管の基本は<Link href="/blog/oil-storage">エッセンシャルオイルの保管方法</Link>でも紹介しています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーは、薄めたオイルを、上部にスポイトのついたガラス製の遮光瓶に作っておき、使う分だけ手のひらに出しています。ヘアオイルを作るメンバーの一人は、ココナッツオイルの酸化も考えて、30mLより少ない量で少しずつ作っています。なくなっても、3分ほどで作り直せます。
+        </p>
+        <p>
+          別のメンバーが受けた講座では、ココナッツオイルで薄めたものは1か月ほどで使い切る目安でした。製品のボトルの表示に従い、作ったものは早めに使い切りましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

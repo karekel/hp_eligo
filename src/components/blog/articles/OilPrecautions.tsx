@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
+import { CautionBox, CheckPoints, DataTable, MemberVoice, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
 
 /** エッセンシャルオイルを使う前に確認したい注意点をまとめた記事 */
 export const oilPrecautions: ArticleContent = {
@@ -133,6 +133,14 @@ export const oilPrecautions: ArticleContent = {
       <p>
         薄め方は<Link href="/blog/carrier-oil-dilution">キャリアオイルの選び方と濃度の計算</Link>で確認してください。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、肌に使うオイルを作るとき、ボディ用と顔用の濃度の目安を確かめてから滴数を決めています。いくつかのオイルを合わせるときも滴数は少なめにして、薄めて使うよう書かれたオイルや、敏感肌への注意が書かれたオイルは、さらに減らしています。
+        </p>
+        <p>
+          メンバーの間では、6本入りのセットのうち1本だけが、薄めて使う必要のあるオイルだと声をかけ合ったこともあります。セットで買ったオイルも、1本ずつラベルを確かめましょう。
+        </p>
+      </MemberVoice>
       <p>
         協会の説明では、一般の精油は雑品に分類され、飲食は認められていません。別の見解もあるので、最後はご自身で判断してください。くわしくは<Link href="/blog/doterra-drinkable">ドテラのオイルは飲める？</Link>を読んでください。
       </p>
@@ -159,6 +167,11 @@ export const oilPrecautions: ArticleContent = {
       <p>
         子どもは<Link href="/blog/kids-safety">年齢ごとの目安</Link>、ペットは<Link href="/blog/pets-safety">猫や犬のいる家での注意点</Link>もあわせて読んでください。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの間でも、爬虫類を飼っている部屋では香らせない、オイルを触った手でペットに触らない、といった気をつけ方を共有しています。ペットのいる家では、使う部屋と手の扱いを先に決めておきましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="place">場所と道具の注意点</h2>
       <ul>
@@ -169,6 +182,11 @@ export const oilPrecautions: ArticleContent = {
         <li><strong>掃除</strong>: オイル入りのスプレーをほかの洗剤と混ぜません。洗剤のあとは水で流してから使います。</li>
         <li><strong>人の集まる場所</strong>: 香りの感じ方には個人差があります。職場や公共の場所では、周囲に配慮しましょう。</li>
       </ul>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、プラスチックのスプレーボトルは柑橘系のオイルで素材が溶けるおそれがあるので、入れるオイルによって容器を使い分けたり、早めに使い切ったりしています。同じメンバーは、ふだんはガラスの容器を使っています。容器の素材は、<Link href="/blog/oil-containers">オイルの容器の選び方</Link>で確かめてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="amount">量と保管の注意点</h2>
       <p>

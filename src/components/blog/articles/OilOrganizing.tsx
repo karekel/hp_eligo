@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, MemberVoice, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** オイルの収納と並べ方、ケースの選び方を説明する記事 */
 export const oilOrganizing: ArticleContent = {
@@ -112,6 +112,14 @@ export const oilOrganizing: ArticleContent = {
       <PointBox>
         開封した日を書いた小さなシールをキャップの上に貼ると、上から見ただけで、どれから使うかが決まります。ドテラは開封後は早めに使うよう案内し、協会の目安は開封後1年以内です。
       </PointBox>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの並べ方は、人によってさまざまです。色で覚えて色別に並べる人、柑橘、葉もの、と系統でまとめる人、シングルとブレンドで分ける人がいます。キャップシールの色でグラデーションに並べると、柑橘は黄色やオレンジ、葉ものは緑、と色で選びやすくなります。
+        </p>
+        <p>
+          木箱を使っているメンバーの一人は、はじめはボトルの色で並べていましたが、使ううちにばらばらになりました。いまは、オイルの事典に載っている順番に並べて、1本ずつ置く場所を決めています。小さな5mLのボトルを別にまとめて、横に並べているメンバーもいます。どの並べ方でも、使ったら決めた場所に戻しましょう。
+        </p>
+      </MemberVoice>
 <h2 id="case">ケースの種類と選び方</h2>
       <p>
         協会が最適としている容器は、遮光性のガラス容器です。ボトルがその条件を満たしていれば、ケースの役目は「光をさらに遮る」「倒れないようにする」「まとめて動かせる」の3つです。
@@ -130,6 +138,14 @@ export const oilOrganizing: ArticleContent = {
       </p>
       <p>木や布は、オイルがつくとシミになることがあります。木箱を使うなら、拭ける受け皿を敷くか、底にオイルがついたらすぐ拭きましょう。</p>
       <ArticleFigure src="/assets/blog/inline/oil-organizing-box-9e190b82.jpg" alt="仕切りつきの箱にボトルを立てて並べて受け皿にのせ、よく使う数本を手前に出した様子" caption="ラベルを正面に向けて立て、よく使う数本は手前に。キャップの上には開封日のシール" />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、飛行機で旅行するとき、オイル用のキャリーケースに入れて預ける荷物にしまい、機内に持ち込む手荷物にはロールオンだけを入れています。持ち込む液体が制限の範囲に収まるかは、事前に確かめています。
+        </p>
+        <p>
+          別のメンバーは、ロールオンやスプレーをポーチにまとめて、スーツケースに入れています。漏れが気になるときは、ポーチごと密封できる袋にも入れておきましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">収納で気をつけたいこと</h2>
       <CautionBox
@@ -152,6 +168,10 @@ export const oilOrganizing: ArticleContent = {
           {
             q: "ボトルを横にして引き出しに並べてもいいですか？",
             a: "ドテラは密栓して保管するよう案内し、協会は、しっかり蓋をして立てて保管するよう案内しています。立てたまま入る高さの引き出しや仕切りを選びましょう。",
+          },
+          {
+            q: "持ち歩くときは、15mLのボトルごと持っていきますか？",
+            a: "必要な分だけ小分けにする方法もあります。ELIGŌのメンバーの一人は、旅行にミニボトルのケースを使い、小さな瓶に小分けしたオイルを持っていきました。1滴の香りが強いので、15mLのボトルでなくても足りると感じています。小分けにするときも遮光性のガラスの瓶を選び、オイルの名前を書いておきましょう。",
           },
         ]}
       />

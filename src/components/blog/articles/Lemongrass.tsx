@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, Faq, MemberVoice, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: レモングラス */
@@ -178,6 +178,17 @@ export const lemongrass: ArticleContent = {
       <p>
         失敗しやすいのは入れすぎです。ラルツディフューザーの目安は5〜10滴ですが、全部をレモングラスにせず、1〜2滴にとどめましょう。残りを柑橘やミントのオイルにすると、香りが広がっても部屋がきつくなりません。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ときどきしか使わない布団をしまう押し入れに、レモングラスを垂らしたティッシュを除湿剤の上にのせて置きました。次に布団を出したとき、家族から香りが前と違うと言われました。
+        </p>
+        <p>
+          別のメンバーは、ほかのブレンドオイルとレモングラスを無水エタノールと水で薄めたスプレーを、トイレや台所の台、ダイニングテーブルを拭くときに使っています。ドテラのクリーナーにレモングラスを足して、すっきりした香りにしているメンバーもいます。レモングラスが強いと感じるなら、イランイランやラベンダーなどの花の香りや、ペパーミントと混ぜてもよいと考えるメンバーもいます。
+        </p>
+        <p>
+          シールはがしに使っているメンバーは、プラスチックの種類によっては溶けることがあるので、素材に気をつけています。どの使い方も、目立たない所で試してからにしましょう。洗剤は製品の表示どおりに使います。
+        </p>
+      </MemberVoice>
       <p>
         料理では、「食品添加物」の表示がある製品をメインディッシュや肉料理の風味づけに使えます。目安は、食品や飲み物に1〜3滴です。香りが強いので、清潔な爪楊枝の先につけて混ぜ、味を見ながら足します。
       </p>

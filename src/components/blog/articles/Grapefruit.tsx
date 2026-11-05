@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: グレープフルーツ */
@@ -251,6 +251,14 @@ export const grapefruit: ArticleContent = {
       <p>
         どちらもディフューザーに使う合計5滴の例で、肌には使いません。組み立て方は<Link href="/blog/blend-basics">香りのブレンドの基本</Link>で解説しています。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、日中、グレープフルーツとベルガモットを合わせてディフューズしています。部屋が明るい雰囲気になる、柑橘どうしの組み合わせがお気に入りです。
+        </p>
+        <p>
+          別のメンバーは、グレープフルーツ、ベルガモット、ラベンダー、レモン、マジョラム、イランイランを、柑橘を多めにして合わせています。どちらも肌にはつけず、ディフューザーの説明書の滴数の範囲で香らせましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">光毒性と使うときの注意点</h2>
       <CheckPoints

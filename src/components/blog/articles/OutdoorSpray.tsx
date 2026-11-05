@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 持ち物に香りを添えるアウトドアスプレーのレシピ */
 export const outdoorSpray: ArticleContent = {
@@ -169,6 +169,11 @@ export const outdoorSpray: ArticleContent = {
       <p>
         ドテラのヒノキ、ラベンダー、ゼラニウムには「香」の表示があります。どちらも合計6滴なので、50mLなら濃度は約0.6%、30mLなら約1%です。オイルが1本だけなら、ラベンダーを合計3〜5滴で作っても楽しめます。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、外遊び用のスプレーにペパーミントを加えて、ひんやりした印象の香りを楽しんでいます。ペパーミントにも「香」の表示があります。足すときは、ほかのオイルと合わせた合計の滴数が、表の目安に収まるようにしましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">持ち歩くときと使うときの注意点</h2>
       <CautionBox
@@ -192,6 +197,11 @@ export const outdoorSpray: ArticleContent = {
           "保存料が入っていないので、冷暗所に置いて2週間以内に使い切ります。飲み物と間違えないようラベルを貼り、子どもの手の届かない場所に置いてください。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、キャンプにスプレーボトルとオイルを持って行き、現地でスプレーを作っています。まねするときは、たき火やコンロから離れた場所で作り、作った日とオイルの名前、「火気厳禁」をラベルに書いておきましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="faq">よくある質問</h2>
       <Faq

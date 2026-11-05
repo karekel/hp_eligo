@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** 全身と腕や脚に使うマッサージ用オイルの分量と作り方の記事 */
@@ -179,6 +179,11 @@ export const massageOilRecipe: ArticleContent = {
       <p>
         ティーツリー15mLとペパーミント5mLは「塗」の表示があり、表示どおり肌に使えます。協会はペパーミント、ティートリー、ユーカリの肌への使用を控えるとしています。ユーカリプタスは肌につけない製品なので、このレシピには使いません。単品の柑橘も、肌に塗る使い方がないものが多いので、入れないでください。キャリアオイルの種類は<Link href="/blog/carrier-oil-dilution">キャリアオイルの選び方</Link>で比べています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ココナッツオイルにひまし油を合わせて、ねっとりとした手ざわりにするのが好みです。ココナッツオイルだけでも作れます。キャリアオイルを組み合わせるときも、肌に使うための植物油を選び、滴数は全体の量に合わせて早見表の目安を守りましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="table">分量の早見表｜何滴入れる？</h2>
       <p>
@@ -212,6 +217,11 @@ export const massageOilRecipe: ArticleContent = {
           { name: "ヒノキ", color: oilColors.frankincense, count: 2 },
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、毎日アロマの事典を開いて、「今日はこの香りにしよう」と家族と話しながら香りを選ぶ時間を楽しんでいます。マッサージ用のオイルも、まずは好きな香りを1つ選ぶところから始めてみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="steps">作り方の手順</h2>
       <MethodCard

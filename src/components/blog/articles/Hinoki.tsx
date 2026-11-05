@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, MemberVoice, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ヒノキ */
@@ -168,6 +168,14 @@ export const hinoki: ArticleContent = {
       <p>
         バスソルトにするなら、無水エタノール5mLに混ぜたヒノキを天然塩に吹きかけ、すぐ湯に入れます。ディフューザーは浴室では使いません。ラルツは、水のかかる場所や湿気の多い場所を避けて使います。入浴の手順は<Link href="/blog/bath-oils">お風呂でのオイルの使い方</Link>で紹介しています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーにも、バスソルトを作るときにヒノキを入れる人がいます。お湯に入れる前に、上の手順どおり無水エタノールに混ぜてから塩に吹きかけましょう。
+        </p>
+        <p>
+          別のメンバーは、ドテラのワークショップで、オレンジピール、ローズマリー、ローズの花びらにオイルを染み込ませた香りのお守り袋を作りました。お茶パックに詰めて巾着に入れ、1つはかばんの中に、もう1つは衣類をしまう棚に入れています。そのときのブレンドの一つは、ヒノキ1滴、コンソール2滴、オレンジ3滴です。香りが弱くなったら、オイルを足して使えます。オイルが衣類に直接つかないよう、袋に入れたまま置きましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>
@@ -201,6 +209,14 @@ export const hinoki: ArticleContent = {
       <p>
         ほかの香りを主役にしたい日は、ヒノキを控えめにします。ドテラのフレグランスのレシピでは、ベースの配分は全体の5〜20%です。合計5滴なら1滴が20%に当たるので、ラベンダー4滴にヒノキ1滴で試してみてください。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、ドテラの森の音とヒノキ、シダーウッドを5対3対2の割合で混ぜたブレンドがお気に入りです。別のメンバーも、森の音とヒノキの組み合わせを好んでいます。
+        </p>
+        <p>
+          ローズマリーとヒノキの組み合わせをとてもいい香りだと感じているメンバーや、ヒノキを多めにして、レモングラス、シダーウッド、ローズマリーを少しずつ合わせ、厳かな雰囲気の香りを作ったメンバーもいます。ディフューザーで試すときは、合計の滴数を機器の目安の範囲に収めましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

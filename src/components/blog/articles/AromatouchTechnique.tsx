@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, MemberVoice, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** アロマタッチ テクニックの全体像を説明する記事 */
 export const aromatouchTechnique: ArticleContent = {
@@ -178,6 +178,14 @@ export const aromatouchTechnique: ArticleContent = {
       <PointBox>
         最初から最後まで、できるだけ手を離さず、体のどこかに触れたまま移動します。
       </PointBox>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、始める前に相手と呼吸を合わせ、感謝の気持ちを込める時間を大切にしています。同じメンバーも、はじめは手の動きや軽いタッチがぎこちなく、なかなか慣れませんでした。
+        </p>
+        <p>
+          別のメンバーは、講座で実際に手を動かしてみて、見ているだけのときとは細やかさがまったく違うと感じました。緊張して頭で考えすぎ、手が硬くなったこともあります。講座では二人組になって交代で練習します。最初は動画で流れを見てから、ゆっくり手を動かしてみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="check">始める前に確認したいこと</h2>
       <CautionBox
@@ -193,6 +201,14 @@ export const aromatouchTechnique: ArticleContent = {
           "医療の代わりになるものではありません。体の不調が気になるときは、医師に相談してください。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、大判のバスタオルを1枚用意しておくと安心だと感じています。家庭用のサイズだと、背の高い方は足先まで届かないことがあるためです。メンバー同士で練習するときは、大きめのバスタオル2枚と長めのタオル1枚、8本のオイルを用意し、着脱しやすい服装で集まります。
+        </p>
+        <p>
+          別のメンバーは、8本のオイルをトレーに並べていたころ、滑って落としてしまうことがありました。今はコンパクトな収納ケースに替えて、オイルの置き場所が決まりました。置くスペースが広くない家にも合います。どんな入れ物でも、順番どおりに並べられて、倒れにくいものを選びましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="learn">公式の動画と学び方</h2>
       <p>動作のひとつひとつは、公式の動作ページの動画で確認できます。正しく身につけたい方には、ドテラの2つの学び方があります。</p>

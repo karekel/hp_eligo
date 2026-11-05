@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 使い切れなかったオイルの中身と空きビンの捨て方を説明する記事 */
 export const oilDisposal: ArticleContent = {
@@ -112,6 +112,14 @@ export const oilDisposal: ArticleContent = {
           乾かしたオレンジの皮やスパイスに数滴落として、ポプリにする。手順は<Link href="/blog/potpourri">ポプリの作り方</Link>へ。
         </li>
       </ul>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、においをかいで、酸化したような香りがしないかを確かめてから使っています。柑橘系は早めに使い、ふたを開けたまま置いたり、高温の場所に置きっぱなしにしたりしないよう気をつけています。
+        </p>
+        <p>
+          別のメンバーは、瓶の内側に残ったオイルももったいないので、空き瓶をまとめて洗面器の水に一晩つけておき、その水を掃除のスプレーに使っています。オイルは水に溶けにくいので、使う前によく振り、目立たない所で試してから使いましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="contents">残った中身は紙に吸わせて可燃ごみに</h2>
       <p>
@@ -163,6 +171,14 @@ export const oilDisposal: ArticleContent = {
       <p>
         協会は、精油の空きビンを回収してリサイクルする活動をしています。東京都渋谷区のAEAJグリーンテラスに回収ボックスがあり、イベント会場でも回収しています。無水エタノールで洗浄し、中栓と蓋を分けて持ち込みます。2026年6月末までの累計は6,496本です。
       </p>
+      <MemberVoice>
+        <p>
+          空き瓶がたまるのは、ELIGŌのメンバーのあいだでもよくある話です。メンバーの一人は、空き瓶に付け替え用のロールオンのキャップやスポイトをつけて、ブレンドしたオイルを入れています。別のメンバーは、空になった瓶をクローゼットに入れて、残った香りを楽しんでいます。
+        </p>
+        <p>
+          使い回すときは、ラベルをはがし、よく洗って乾かしてから使います。使わない瓶は、キャップと中栓を外して、お住まいの自治体の区分で出しましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">捨てるときの注意点</h2>
       <CautionBox
@@ -176,6 +192,11 @@ export const oilDisposal: ArticleContent = {
           "香りで気分が悪くなったら、作業をやめて換気をしてください。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、輪の形をした小さな部品を捨てるとき、はさみで切って輪をなくしてから出しています。ごみをあさった鳥などのくちばしに引っかからないようにするためです。
+        </p>
+      </MemberVoice>
 
       <h2 id="faq">よくある質問</h2>
       <Faq

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** アロマタッチのオンライン認定コースとトレーニングクラスの受け方をまとめた記事 */
 export const aromatouchCertification: ArticleContent = {
@@ -105,6 +105,14 @@ export const aromatouchCertification: ArticleContent = {
       <p>
         ドテラは、クラスは必須ではないとしたうえで、直接質問もできるので受講をすすめています。自分のペースで進めたいならオンライン、手の動きを見てもらいたいならクラス、という選び方ができます。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、対面のトレーニングクラスで1日かけて座学と実技を受け、動画では分からなかった細かい手の動きを確かめられました。座学では質問を投げかけてもらい、自分で考えながら学べました。初めて受ける側も体験して、心地よい力加減やリズムが自分なりにつかめたので、家族にもやってみようと決めています。
+        </p>
+        <p>
+          別のメンバーは、見ているのと実際に手を動かすのとでは全然違い、緊張して手に力が入ってしまったところを、ていねいに教えてもらいました。ネットで見ただけと、やってみるのとでは全然違う、と感じたメンバーもいます。
+        </p>
+      </MemberVoice>
 
       <h2 id="conditions">オンライン認定コースの受講の条件</h2>
       <p>受講できるのは、次の3つのどれかにあてはまる方です。</p>
@@ -143,6 +151,11 @@ export const aromatouchCertification: ArticleContent = {
           { title: "動画と復習問題を進める", text: "1動画は数分からなので、すき間時間に進められます。" },
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、登録から4日後に、オンライン認定コースの案内メールが届きました。登録してしばらくたつまで、コースのことを忘れていたメンバーもいます。対象の登録キットで登録したら、案内のメールが届いているか確かめておきましょう。
+        </p>
+      </MemberVoice>
       <h3>トレーニングクラスの場合</h3>
       <Steps
         steps={[
@@ -173,6 +186,11 @@ export const aromatouchCertification: ArticleContent = {
           "肌に赤み、はれ、かゆみ、刺激などが出たら、すぐにやめて皮膚科専門医などに相談してください。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ドテラ・ジャパンが開いたアロマタッチのセミナーでは、認定トレーナーがベッド1台に1人ずつついて、練習を見る時間がありました。ELIGŌのメンバーも認定トレーナーとして加わり、手の動きに入っていたアレンジを、決められた手順に整えるお手伝いをしました。手順に迷ったときは、認定トレーナーに見てもらいましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="faq">よくある質問</h2>
       <Faq
@@ -184,6 +202,10 @@ export const aromatouchCertification: ArticleContent = {
           {
             q: "オンライン認定コースを終えると、証明書はもらえますか？",
             a: "受講サイトか、案内ページの問い合わせ先で確かめてください。",
+          },
+          {
+            q: "オンライン認定コースの案内メールが届かないときは、どうすればいいですか？",
+            a: "まず、迷惑メールのフォルダに入っていないか確かめましょう。それでも見つからないときは、案内ページの問い合わせ先に確認します。ELIGŌのメンバーのあいだでも、この順番で確かめています。",
           },
         ]}
       />

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, MemberVoice, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ティーツリー */
@@ -140,6 +140,17 @@ export const teaTree: ArticleContent = {
         />
         <PointBox>クエン酸は水あかや石けんカスの掃除に使う材料です。手あかや油汚れが気になる場所なら、同じ5gをセスキ炭酸ソーダに替えられます。</PointBox>
       </MethodCard>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、洗濯機のそばに洗剤と一緒にティーツリーを置き、洗濯の香りづけに使っています。別のメンバーは、ティーツリーにサイプレスを合わせています。オイルの原液が衣類に直接つかないよう、柔軟剤などに混ぜて使いましょう。
+        </p>
+        <p>
+          精製水にクエン酸とグリセリンを溶かし、ティーツリーやユーカリ、ラベンダーを加えて、手作りの柔軟剤にしているメンバーもいます。香りは長くは続かず、洗濯物が乾くころには残りません。オレンジのように色のついたオイルは、衣類に色が移ることがあります。クエン酸を使うものは、塩素系の漂白剤と一緒に使わないでください。
+        </p>
+        <p>
+          ほかにも、ひな人形をしまうときに、空き瓶に重曹を入れてティーツリーやヒノキなどを垂らし、一緒にしまっているメンバーがいます。冬のふとんを、ティーツリーを2滴ほど垂らした油とり紙と一緒にしまうメンバーもいます。オイルがつくと色や跡が残ることがあるので、布や人形に直接触れないように置きましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>ティーツリーの渋みは、柑橘やミントの香りと合わせると角がとれます。単体の香りが強いと感じる方は、半分を別のオイルに置きかえてみましょう。</p>
@@ -169,6 +180,11 @@ export const teaTree: ArticleContent = {
       <p>
         最初の例は上のスプレーの10滴を分けたもの、次の例はディフューザーの合計6滴です。ラルツディフューザーの目安は5〜10滴です。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、年末の掃除に使うスプレーに、レモンとピューリファイ、ティーツリー、ペパーミントを合わせています。掃除を終えたあとの部屋に、好きな香りが残るのを楽しんでいます。何種類か合わせるときも、オイルの合計は上のスプレーの滴数の範囲に収めましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

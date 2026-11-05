@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** おやすみ前の香りの選び方と寝室での使い方の記事 */
 export const bedtimeScents: ArticleContent = {
@@ -206,6 +206,14 @@ export const bedtimeScents: ArticleContent = {
       <p>
         リネンスプレーは、肌に直接触れる枕カバーやシーツには使いません。作り方は<Link href="/blog/lavender">ラベンダーの記事</Link>にあります。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、寝室まで毎日水を運ぶのが手間なので、<Link href="/blog/waterless-diffuser">水を使わないタイプのディフューザー</Link>を寝室に置いています。森の音とラベンダーを1対1で合わせて、おやすみ前の香りにしています。水を使わないタイプは、使える量を製品の説明書で確かめ、短い時間から試しましょう。
+        </p>
+        <p>
+          別のメンバーは、フランキンセンスやコパイバを合わせたスプレーを手作りして、寝る前にリネンスプレーとして使っています。吹きかけるのはカーテンやベッドカバーにして、分量は50mLに合計15滴の例を目安にしましょう。
+        </p>
+      </MemberVoice>
       <p>
         アロマキャンドルは、火事の原因になるので就寝時に使わないでください。火を使うアロマランプも同じです。
       </p>
@@ -227,6 +235,14 @@ export const bedtimeScents: ArticleContent = {
       <p>
         <Link href="/blog/kids-safety">子どもの注意点</Link>と<Link href="/blog/pets-safety">ペットの注意点</Link>も読んでください。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、家族が香りに慣れていなかったので、はじめは家族がいないときだけディフューザーを使っていました。柑橘の香りなら大丈夫そうだったので、家族がいるときは柑橘を中心にして、様子を見ながら少しずつ同じ部屋で香りを使うようにしています。
+        </p>
+        <p>
+          急に変えず、相手の様子を見ながら進める方法です。苦手と言われた香りは、その日は使わずに換気しましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

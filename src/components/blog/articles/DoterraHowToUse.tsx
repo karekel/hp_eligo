@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, DataTable, Faq, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, MemberVoice, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ドテラの製品ページの「塗・香・食」の表示の見方と、最初の一歩をまとめた記事 */
 export const doterraHowToUse: ArticleContent = {
@@ -165,6 +165,14 @@ export const doterraHowToUse: ArticleContent = {
       <p>
         一方で、日本アロマ環境協会は、原液を皮膚につけないよう案内し、ペパーミント、ティートリー、ユーカリを皮膚刺激の例に挙げています。別の見解もあるので、最後はご自身で判断してください。濃度の計算は<Link href="/blog/carrier-oil-dilution">キャリアオイルの選び方</Link>をご覧ください。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、「塗」の表示があるロールオンタイプの製品を左手首に1回転がし、両手首をこすり合わせてなじませてから、最後に手首の香りを確かめています。別のメンバーは、塗る製品を米粒の半分ほどの量だけ指先に取って、塗り広げています。
+        </p>
+        <p>
+          ロールオンのボトルに入った製品でも、ココナッツオイルで薄めて別のロールオンボトルに移してから使うメンバーもいます。量や薄め方は、ラベルの使用方法を優先し、少量から試しましょう。
+        </p>
+      </MemberVoice>
       <h3>「食」がある製品</h3>
       <p>
         ドテラは、摂取を香料として料理の風味をよくする使い方と説明しています。ラベルに書かれた使用方法を守ります。一方で、日本アロマ環境協会は、薄めても飲用や食品と一緒にとることをすすめていません。別の見解もあるので、最後はご自身で判断してください。「食」の表示がある製品に限った話として、詳しくは<Link href="/blog/doterra-drinkable">こちらの記事</Link>で確かめてください。
@@ -182,6 +190,14 @@ export const doterraHowToUse: ArticleContent = {
       />
       <ArticleFigure src="/assets/blog/inline/doterra-how-to-use-tissue-7563fecd.jpg" alt="1滴垂らしたティッシュをデスクに置き、ノートとペンを用意した様子" caption="ティッシュに1滴垂らしてデスクなどに置き、感じたことをメモします" />
       <p>「香」の表示がない製品は、ラベルの使用方法に従ってください。迷った製品は、確かめるまで使わないのが確実です。</p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーがオイルを紹介する集まりでも、オイルを選ぶ時間がいちばん盛り上がります。はじめは苦手だった香りが、使ううちに好きになることもあります。メンバーの一人は、メリッサの香りがはじめは苦手でしたが、使い続けるうちに、ある時から急に好きになりました。別のメンバーは、イランイランが大好きになった一方で、ゼラニウムとクラリセージはまだ苦手です。
+        </p>
+        <p>
+          同じように、ピューリファイの香りがはじめは苦手で、使わずにいたメンバーもいます。手作りの柔軟剤に混ぜてみたら、洗濯物を干すときにほのかに香るのが好きになり、今はディフューザーでも使っています。柔軟剤の作り方は<Link href="/blog/laundry-oils">洗濯での使い方</Link>にまとめています。気になる香りは、ティッシュに1滴から試してみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

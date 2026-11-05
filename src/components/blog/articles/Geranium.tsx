@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, MemberVoice, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ゼラニウム */
@@ -210,6 +210,17 @@ export const geranium: ArticleContent = {
         肌につけない楽しみ方には、サシェもあります。ドテラのレシピの分量は、重曹30gに対してゼラニウム6滴、ラベンダー7滴、レモングラス7滴です。作り方は<Link href="/blog/potpourri">ポプリの作り方</Link>で紹介しています。
       </p>
       <ProductPhotos names={["ラベンダー", "レモングラス"]} />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、クラフトの時間に、ホホバオイルにフランキンセンス、イランイラン、ゼラニウム、ラベンダーを合わせたヘアオイルを作りました。別のメンバーは、ミツロウとシアバターのバームを作り、ラベンダーとゼラニウムを入れています。
+        </p>
+        <p>
+          肌につけない楽しみ方では、ドライフラワーを入れたリードディフューザーを作り、スペアミント、ゼラニウム、シダーウッドを合わせた香りにしたメンバーもいます。
+        </p>
+        <p>
+          肌や髪に使うものは、合わせるオイルすべての「塗」の表示を確かめ、何種類合わせても、表の滴数を全体の合計として数えます。手作りしたものは自分で使う分だけにして、1か月以内に使い切りましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>花の香りは、同じ花の香りのほか、樹脂や木、柑橘の香りとも組み合わせやすい香りです。</p>
@@ -242,6 +253,14 @@ export const geranium: ArticleContent = {
       <p>
         ゼラニウムとラベンダーはミドル、フランキンセンスはベースに分類され、5滴のうちミドルが80%、ベースが20%です。
       </p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、ゼラニウム、ラベンダー、オレンジを合わせた香りがお気に入りで、毎日でも楽しみたい組み合わせと感じています。
+        </p>
+        <p>
+          一方で、ゼラニウムの香りがずっと苦手というメンバーもいます。好みは人それぞれなので、まずはティッシュに1滴で香りを確かめてから、合わせる香りを選んでみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

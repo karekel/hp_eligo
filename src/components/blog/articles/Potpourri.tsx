@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MemberVoice, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オレンジの皮とスパイスで作るポプリの記事 */
@@ -128,6 +128,14 @@ export const potpourri: ArticleContent = {
         春夏は、スパイスの代わりに重曹で作るサシェも楽しめます。ドテラのレシピでは、重曹30gにラベンダー7滴、ゼラニウム6滴、レモングラス7滴を混ぜて巾着に入れ、クローゼットや靴箱、ドアノブに使います。オイルは布を変色させることがあるので、袋が衣類に直接触れないように置きましょう。
       </p>
       <ProductPhotos names={["ラベンダー", "ゼラニウム", "レモングラス"]} />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、好きなブレンドを垂らしたサシェを作って贈り、とても好評でした。別のメンバーは、袋に刺繍のリボンを両面テープで貼るだけで、かわいいサシェに仕上げています。サシェは、布とひもを選び、香りを選べば簡単に作れます。
+        </p>
+        <p>
+          オイルによっては布の色が変わることがあります。袋の布は、目立たない所に1滴つけて試してから使いましょう。
+        </p>
+      </MemberVoice>
       <h3>スパイスがないときは重曹のびんで</h3>
       <p>
         重曹でも、置くだけの香りが作れます。小さめのガラスびんに重曹1/4カップを入れ、オイルを5〜6滴加えます。口に布をかぶせてバンドで留め、平らな場所に置きましょう。ときどき振って、香りが弱くなったら2〜3滴足します。中身をびんに書き、子どもが口に入れない場所に置いてください。
@@ -161,6 +169,10 @@ export const potpourri: ArticleContent = {
           {
             q: "オレンジの輪切りも使えますか？",
             a: "使えます。中まで乾いたことを確かめてから、器に入れましょう。",
+          },
+          {
+            q: "もっと手軽に、引き出しで香りを楽しむ方法はありますか？",
+            a: "ELIGŌのメンバーには、コットンにゼラニウムを数滴垂らして引き出しに入れるだけ、という人もいます。オイルは布を変色させることがあるので、コットンが衣類に直接触れないよう、小袋や器に入れて置きましょう。子どもやペットの手が届かない場所を選びます。",
           },
         ]}
       />

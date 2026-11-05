@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, MemberVoice, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** エッセンシャルオイルを肌につけてよいかを判断するための記事 */
 export const oilsOnSkin: ArticleContent = {
@@ -210,6 +210,14 @@ export const oilsOnSkin: ArticleContent = {
       <p>
         ドテラは、はじめて使う際はパッチテスト等で試すよう案内しています。協会は2020年に、事前のパッチテストをやめ、低い濃度で試す案内に変えました。いきなり広い範囲に使わないでください。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、手のひらに取ったクリームに「塗」の表示があるオイルを垂らし、手で混ぜてから使っています。薄める必要があるオイルを、薄めずに重ねて塗ることはしません。とろみがあって1滴が落ちてくるまで時間がかかるオイルは、5mL用のスポイトキャップに替える方法もあります。
+        </p>
+        <p>
+          ELIGŌのメンバーは、手作りのオイルやクリームを自分で使う分だけにして、人には渡さないようにしています。まねするときは、滴数を濃度の目安に合わせ、少ない量から試しましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">肌に使うときの注意点</h2>
       <CautionBox

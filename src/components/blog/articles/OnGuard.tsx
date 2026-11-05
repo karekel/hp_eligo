@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, Faq, MemberVoice, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: オンガード */
@@ -128,6 +128,11 @@ export const onGuard: ArticleContent = {
         香りの特徴は、ウォーム、スパイシー、カンファー、ウッディーの4つです。カンファーは、樟脳のようなツンとした香りのことです。スパイスの温かさの奥にユーカリプタスやローズマリーの涼しさがあるので、甘いだけの香りになりません。
       </p>
       <p>香りの主張がはっきりしているオイルなので、どの使い方でも少なめから始めると、好みの強さを探しやすくなります。</p>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、使い始めたころ、オンガードの香りが歯医者さんのような匂いに感じて苦手でした。使ううちに、今では大好きな香りになっています。苦手に感じるうちは、ティッシュに1滴など、ごく少ない量で試してみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="enjoy">ドテラのオンガードの使い方</h2>
       <UsageCards
@@ -156,12 +161,28 @@ export const onGuard: ArticleContent = {
       <p>
         オイルは水に溶けにくいので、拭き掃除の水は使う直前に混ぜます。スプレーの作り方は<Link href="/blog/cleaning-spray">手作り掃除スプレーの作り方</Link>で紹介しています。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、オンガードやオレンジ、ティーツリー、ペパーミントなどのオイルを入れた掃除スプレーを作り、テーブルやキッチンの拭き掃除に香りを添えています。
+        </p>
+        <p>
+          別のメンバーは、オイルとは別の製品で、オンガードの名前がついたドテラの住宅用の洗剤を薄めて、お風呂やトイレ、洗面所の掃除に使っています。掃除のあいだ、部屋にスパイスの香りが広がる時間が好きです。洗剤は、製品の表示どおりに使いましょう。
+        </p>
+      </MemberVoice>
       <p>
         ドテラの「食品添加物」の表示がある製品は、ラベルどおりの量と方法で料理の香りづけに使えます。クローブやシナモンを含むので、爪楊枝の先につけたごく少量から試してください。
       </p>
       <p>
         日本アロマ環境協会は、希釈した精油であっても、飲用や食品と一緒の摂取、うがいをすすめていません。一般の精油は雑品に分類され、飲食は認められていないとも説明しています。うがいには使わないでください。別の見解もあるので、最後はご自身で判断してください。詳しくは<Link href="/blog/doterra-drinkable">ドテラのオイルは飲める？</Link>をご覧ください。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、仲間と手作りソーセージを作ったとき、それぞれ好きなオイルを入れて食べ比べました。いちばんのお気に入りは、オンガードを入れたソーセージでした。
+        </p>
+        <p>
+          別のメンバーは、食品として売られている飲料の<Link href="/blog/doterra-mineral">PHOSSIL ミネラル</Link>のカシスに、オンガードを1滴加えて炭酸水で割り、コーラのような風味を楽しんでいます。料理や飲み物に使うときは、「食」の表示を確かめて、ごく少量から試しましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>スパイスの香りは、柑橘、花、木の香りと組み合わせると、強さの角が取れて部屋になじみます。</p>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** ドテラが怪しいと感じられる点を事実で整理し、始める前とやめるときに確かめることをまとめた記事 */
 export const doterraSuspicious: ArticleContent = {
@@ -201,6 +201,11 @@ export const doterraSuspicious: ArticleContent = {
           { title: "製品の表示", text: "使いたい製品の区分と使用方法を、買う前に製品ページで、届いたらラベルで確かめます。" },
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、定期購入（LRP）の注文日を毎月決まった日にしています。使いながら残りが少なくなったものを、その都度カートに足していき、注文日の前にはカートの中身をもう一度確かめます。この習慣で、届いてから返品したことはありません。定期購入を使うときは、注文日の前に、その月に必要なものだけが入っているかを見直しましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="quit">やめたいときの手続きと相談先</h2>
       <p>やめた理由が気になる方は、やめるときの手続きもあわせて知っておくと安心です。</p>

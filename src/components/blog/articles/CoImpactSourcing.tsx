@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CheckPoints, DataTable, Faq, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** はじめての方向け: コ・インパクトソーシング */
 export const coImpactSourcing: ArticleContent = {
@@ -124,6 +124,14 @@ export const coImpactSourcing: ArticleContent = {
       <p>
         ひとつのオイルの産地を詳しく読みたい方は、<Link href="/blog/lavender">ラベンダー</Link>や<Link href="/blog/orange">オレンジ</Link>の記事をどうぞ。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーには、産地を訪ねて、畑や蒸留所を見学した人もいます。日本の柚子の農家とヒノキの蒸留所を訪ねたメンバーは、蒸留した液の上に、うっすら黄色いヒノキのオイルがたまっていく様子を見ています。
+        </p>
+        <p>
+          ベトナムのカシアの産地を訪ねた別のメンバーは、樹皮を機械で砕いてチップにするところを見学しました。隣の蒸留所にはカシアの香りが満ちていて、できたばかりのオイルはビーカーでかいでも刺激を感じるほど強い香りでした。
+        </p>
+      </MemberVoice>
 
       <h2 id="check">自分で確かめる方法</h2>
       <p>手元のオイルで、次の順に確かめてみてください。製品ページと Source To You は、日本語で読めます。</p>
@@ -137,6 +145,11 @@ export const coImpactSourcing: ArticleContent = {
         />
       </div>
       <ProductPhotos names={["レモン"]} />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、大好きな金木犀の香りのオイルを手にしたあと、植物の産地を調べてみて、好きな香りなのに、どこで育つ植物なのかを知らなかったことに気づきました。好きな1本から、産地を調べてみるのもおすすめです。
+        </p>
+      </MemberVoice>
 
       <h2 id="faq">よくある質問</h2>
       <Faq
@@ -156,6 +169,10 @@ export const coImpactSourcing: ArticleContent = {
           {
             q: "香りや使い心地に関係がありますか？",
             a: "この取り組みは調達の話で、香りや体への働きを示すものではありません。使い方は、お手元の製品ラベルの表示に従ってください。",
+          },
+          {
+            q: "取り組みを実際に見て知る方法はありますか？",
+            a: "ELIGŌのメンバーは、東京のドテラ・ジャパンのプロダクトセンターで、製品の香りを試したり、コ・インパクトソーシングを紹介するコーナーを見たりしています。展示の内容は変わることがあるので、訪ねる前に公式の案内を確かめましょう。",
           },
         ]}
       />

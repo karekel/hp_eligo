@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, MemberVoice, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 加湿器にオイルを入れる前に確認することを説明する記事 */
 export const oilsInHumidifier: ArticleContent = {
@@ -122,6 +122,14 @@ export const oilsInHumidifier: ArticleContent = {
           { title: "書かれていなければ入れない", text: "説明書が見つからないときは、メーカーに確かめます。それまでは水だけで使います。" },
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、今ある加湿器にオイルを足して香らせたいと考えたとき、まず手元の加湿器の説明書を調べるところから始めました。メンバーの間でも、ドテラのディフューザーは香りを広げるための製品で、加湿器とは別のものとして使い分けています。
+        </p>
+        <p>
+          冬のあいだ、オイルを入れて使うことを前提に作られた加湿器を選んで使っているメンバーもいます。新しく選ぶときも、説明書にオイルを使えると書かれているかを、買う前に確かめましょう。
+        </p>
+      </MemberVoice>
       <p>
         入れないと決めても、香りはあきらめなくて大丈夫です。加湿器とは別の場所で、ティッシュに1〜2滴垂らす方法があります。<Link href="/blog/no-diffuser">ディフューザーがなくても香りを楽しむ方法</Link>で紹介しています。部屋全体に香らせたいときは、<Link href="/blog/diffuser-guide">ディフューザーの選び方</Link>を参考にしてください。
       </p>

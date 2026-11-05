@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { ArticleFigure, CautionBox, Faq, MethodCard, NextStepBox, PairingList, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, Faq, MemberVoice, MethodCard, NextStepBox, PairingList, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** おやすみ前の足裏セルフマッサージの記事 */
 export const footSelfMassage: ArticleContent = {
@@ -127,6 +127,14 @@ export const footSelfMassage: ArticleContent = {
         ]}
       />
       <p>ドテラバランスは、一日の始まりに足裏に使えます。朝の香りとして試すのもよいでしょう。</p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、ドテラバランスを毎朝足裏に使い、一日の始まりの香りにしています。使うときは、次の手順どおりキャリアオイルで薄めましょう。
+        </p>
+        <p>
+          別のメンバーが開いたストレッチの会では、最後に参加した人に香りを試してもらいました。はじめは遠慮していた人も、最後は全員がそれぞれ好きな香りを試していました。足に使うオイルも、まず香りをかいで、好きだと思えるものを選びましょう。
+        </p>
+      </MemberVoice>
       <p>
         薄めるキャリアオイルは、食用ではなく肌に使うためのものを選びます。ドテラは、<Link href="/blog/doterra-coconut-oil">ドテラ ココナッツオイル</Link>のようなキャリアオイルを案内しています。あわせて、日本アロマ環境協会の資料では、ホホバは幅広い肌質に使いやすく、酸化しにくい油として紹介されています。ナッツアレルギーのある人は、スイートアーモンドなどナッツ由来の油に注意しましょう。
       </p>
@@ -163,6 +171,11 @@ export const footSelfMassage: ArticleContent = {
       </div>
       <ArticleFigure src="/assets/blog/inline/foot-self-massage-directions-a4a02e03.jpg" alt="足裏をかかとからつま先へなでる向きと、くるぶしのまわりを円を描くようになで、足首からひざへさする向きを示したイラスト" caption="足裏はかかとからつま先へ、くるぶしは円を描くように、足首からはひざへ" />
       <PointBox>手のひらの力を抜いて、肌に密着させるのがコツです。ひじから動かすつもりで行うと、力が入りすぎません。強く押すより、ゆっくり動かしましょう。</PointBox>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、足裏に塗るときは転ばないよう気をつけています。終わったら、椅子に座ったまま足の余分なオイルをタオルでしっかり押さえてから立ち上がりましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

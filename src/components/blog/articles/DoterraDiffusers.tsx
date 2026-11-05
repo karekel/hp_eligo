@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** 2026年11月時点で買えるドテラのディフューザーと、販売を終えた機種、選び方、最初のレシピをまとめた記事 */
 export const doterraDiffusers: ArticleContent = {
@@ -190,6 +190,14 @@ export const doterraDiffusers: ArticleContent = {
       <p>
         機器がなくても香りは楽しめます。ドテラは、特別なディフューザーがなくても、コットンやティッシュに数滴垂らす方法を紹介しています。手順は<Link href="/blog/no-diffuser">ディフューザーなしの使い方</Link>にまとめました。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、コンセントのない玄関で、充電式のディフューザーを使っています。帰ってきた家族を香りが迎えるので、家族にも好評です。
+        </p>
+        <p>
+          別のメンバーは、オレンジピールやローズマリーなどのドライハーブにオイルを垂らし、巾着に入れた香りのお守り袋を作りました。ひとつはかばんに入れて持ち歩き、香りが弱くなったらオイルを足しています。
+        </p>
+      </MemberVoice>
 
       <h2 id="humidifier">加湿器にオイルを入れる前に</h2>
       <p>
@@ -217,6 +225,14 @@ export const doterraDiffusers: ArticleContent = {
       <PointBox>
         香りが強いと感じたら、次の回は1滴減らすか、タイマーで運転時間を短くしましょう。物足りないときも、1滴ずつ増やします。
       </PointBox>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーの一人は、森の音のオイルをベースに、オレンジを足したり、フランキンセンスとグレープフルーツを足したりと、1〜2種類を合わせてディフューズしています。
+        </p>
+        <p>
+          別のメンバーは、寝室では森の音とラベンダーを同じ量で合わせ、おやすみ前の香りにしています。合わせる種類が増えても、ラルツでは合計5〜10滴に収めましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox
@@ -231,6 +247,14 @@ export const doterraDiffusers: ArticleContent = {
           "使い方はオイルの区分で変わります。お手元のラベルの使用方法と注意表示に従ってください。",
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、きれいに洗って乾かしたつもりのディフューザーを1か月ぶりに開けたら、水滴が残っていて、赤いカビが出ていました。しまう前は、水気が残っていないかを確かめましょう。お手入れの方法は、機種の取扱説明書に従います。
+        </p>
+        <p>
+          別のメンバーは、犬と暮らしているので、家でディフューザーを使うのをやめていました。
+        </p>
+      </MemberVoice>
       <p>
         子どもやペットのいる家では、<Link href="/blog/kids-safety">子どもとエッセンシャルオイル</Link>と<Link href="/blog/pets-safety">精油と猫・犬の注意点</Link>もあわせてご覧ください。
       </p>

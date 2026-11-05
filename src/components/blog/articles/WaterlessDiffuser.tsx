@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, MemberVoice, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** 水を使わないディフューザーと超音波式の違いを、確かめられる範囲で整理する記事 */
 export const waterlessDiffuser: ArticleContent = {
@@ -116,6 +116,14 @@ export const waterlessDiffuser: ArticleContent = {
       <p>
         細かな違いは、機種の説明書や販売元の案内で確かめてください。
       </p>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、オイルのボトルを差し込んで使う水なしタイプを、トイレに置いています。ときどき車に持っていくこともあります。水を用意しなくてよいので、重宝しています。
+        </p>
+        <p>
+          別のメンバーは、毎日水を運ぶのが難しい寝室で、同じタイプを使っています。森の音とラベンダーを1対1で合わせたブレンドを、夜の寝室の香りにしています。入れてよいオイルや使い方は機種の説明書で確かめ、使い終わったら電源を切りましょう。
+        </p>
+      </MemberVoice>
 
       <h2 id="compare">超音波式との違い</h2>
       <p>
