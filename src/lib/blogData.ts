@@ -566,12 +566,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "doterra-oil-lineup",
-    title: "ドテラのオイルの種類｜シングル、ブレンド、キットの全体像",
-    excerpt: "ドテラのオイルは、1種類の植物から採るシングルオイルと、複数を組み合わせたブレンドオイルに分かれます。サイズと区分、キットの選択肢まで整理します。",
+    title: "ドテラの製品一覧（2026年11月最新）｜オイル、キット、コレクション",
+    excerpt: "ドテラの製品を、シングルオイル、ブレンドオイル、キットとコレクション、スキンケアやサプリメントなどのカテゴリごとに紹介します。2026年11月時点の主なオイルの香りと表示、キットの中身と価格、販売を終えたキッズコレクションのこともわかります。",
     category: "beginner",
     publishedAt: "2026-11-01",
     thumbnail: "/assets/blog/doterra-oil-lineup.jpg",
     recommendOrder: 4,
+    updatedAt: "2026-11-05",
   },
   // ---- 第2弾 ここまで ----
   // ---- 第3弾（2026-11-02） ここから ----
@@ -731,6 +732,39 @@ export const blogPosts: BlogPost[] = [
     thumbnail: "/assets/blog/marjoram.jpg",
   },
   // ---- 第3弾 ここまで ----
+  // ---- 優先B（2026-11-05） ----
+  {
+    slug: "doterra-lrp",
+    title: "ドテラのLRP（定期購入）とは？ポイントの仕組みと、毎月買わなくていいか",
+    excerpt: "ドテラのLRPは、毎月決めた日に製品が自動で注文される任意参加の定期購入です。リワード・ポイントの還元率と有効期限、毎月買わなくてもよいか、内容の変更と休止のしかたを、2026年11月時点の条件で紹介します。",
+    category: "beginner",
+    publishedAt: "2026-11-05",
+    thumbnail: "/assets/blog/doterra-lrp.jpg",
+  },
+  {
+    slug: "doterra-skincare",
+    title: "ドテラの化粧品一覧｜化粧水、クリーム、ハンドローション、リップ",
+    excerpt: "ドテラのスキンケア化粧品を、顔用のIKISEと、手や体、唇に使う製品に分けて紹介します。化粧水、美容液、ハンド＆ボディローション、ボディバター、リップバームの容量、価格、使い方と、販売を終えた日焼け止めのことを2026年11月時点でまとめました。",
+    category: "lifestyle",
+    publishedAt: "2026-11-05",
+    thumbnail: "/assets/blog/doterra-skincare.jpg",
+  },
+  {
+    slug: "doterra-shampoo-toothpaste",
+    title: "ドテラのシャンプー、歯磨き粉、石鹸｜毎日使う製品の種類と使い方",
+    excerpt: "ドテラのシャンプー、コンディショナー、ヘアオイルなどのヘアケアと、石けん、ボディウォッシュ、ハンドソープの種類、価格、使い方を紹介します。歯磨き粉のドテラ トゥースペイストの販売状況も、2026年11月時点でまとめています。",
+    category: "lifestyle",
+    publishedAt: "2026-11-05",
+    thumbnail: "/assets/blog/doterra-shampoo-toothpaste.jpg",
+  },
+  {
+    slug: "doterra-coconut-oil",
+    title: "ドテラのココナッツオイルとは？フラクショネイテッドの意味と薄め方",
+    excerpt: "ドテラ ココナッツオイル（フラクショネイティッド）の容量、価格、成分と「分留」の意味を紹介します。表示されている使い方と薄め方、はじめて混ぜる手順、保管のしかた、ドテラのホホバオイルとの違いもまとめました。",
+    category: "oils",
+    publishedAt: "2026-11-05",
+    thumbnail: "/assets/blog/doterra-coconut-oil.jpg",
+  },
   // ---- 優先A（2026-11-04） ----
   {
     slug: "what-is-doterra",

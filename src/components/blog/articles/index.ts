@@ -78,6 +78,12 @@ import { deepBlue } from "./DeepBlue";
 import { easyAir } from "./EasyAir";
 import { doterraDiffusers } from "./DoterraDiffusers";
 
+// ---- 優先B（2026-11-05） ----
+import { doterraLrp } from "./DoterraLrp";
+import { doterraSkincare } from "./DoterraSkincare";
+import { doterraShampooToothpaste } from "./DoterraShampooToothpaste";
+import { doterraCoconutOil } from "./DoterraCoconutOil";
+
 export const articles: Record<string, ArticleContent> = {
   "doterra-drinkable": doterraDrinkable,
   "no-diffuser": noDiffuser,
@@ -154,4 +160,8 @@ export const articles: Record<string, ArticleContent> = {
   "deep-blue": deepBlue,
   "easy-air": easyAir,
   "doterra-diffusers": doterraDiffusers,
+  "doterra-lrp": doterraLrp,
+  "doterra-skincare": doterraSkincare,
+  "doterra-shampoo-toothpaste": doterraShampooToothpaste,
+  "doterra-coconut-oil": doterraCoconutOil,
 };
