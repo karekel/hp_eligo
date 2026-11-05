@@ -161,6 +161,22 @@ export function PointBox({ children }: { children: ReactNode }) {
   );
 }
 
+/** ELIGŌのメンバーの使い方の例。匿名で、体への効果は書かない */
+export function MemberVoice({ children, note = "メンバー個人の使い方の例です。使う前に、お手元の製品のラベルを確かめてください。" }: { children: ReactNode; note?: string }) {
+  return (
+    <aside className="mt-6 rounded-2xl border border-[#d9cdb4]/70 bg-[#f7f4ee] px-5 py-4 md:px-6 md:py-5">
+      <p className="flex items-center gap-2 text-[13px] font-medium tracking-wide text-[#8a7350]">
+        <svg viewBox="0 0 24 24" className="h-[18px] w-[18px]" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+          <path d="M4 5.5h16v10H9l-5 4z" strokeLinejoin="round" />
+        </svg>
+        ELIGŌメンバーの使い方
+      </p>
+      <div className="mt-2 space-y-2 text-[14px] leading-7 text-[#4a4a4a]">{children}</div>
+      {note && <p className="mt-3 text-[11px] leading-5 text-[#999]">{note}</p>}
+    </aside>
+  );
+}
+
 export function CautionBox({ title = "使うときの注意点", items }: { title?: string; items: string[] }) {
   return (
     <div className="mt-6 rounded-2xl border border-[#e2b35d]/50 bg-[#fdf7ea] p-5 md:p-6">

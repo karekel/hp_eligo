@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, MemberVoice, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** エッセンシャルオイルの使い道を見渡し、手順は各記事へ渡す案内の記事 */
 export const howToUseAromaOils: ArticleContent = {
@@ -146,7 +146,7 @@ export const howToUseAromaOils: ArticleContent = {
         アロマオイルの使い方を調べると、香り、肌、掃除、手作りと、たくさんの話が出てきます。エッセンシャルオイルは何に使うものなのか、最初は迷うかもしれません。初心者が今日から試すなら、香りを楽しむ使い方が手軽です。
       </p>
       <p>
-        この記事では、エッセンシャルオイルやアロマオイルの使い道の全体と、方法ごとの滴数の目安をまとめます。気になる使い方から読み進めてください。「アロマオイル」と呼ばれる製品には、合成香料を含み、精油ではないものもあります。違いは<Link href="/blog/what-is-essential-oil">エッセンシャルオイルとは</Link>で説明しています。この記事で扱うのは、植物から抽出したエッセンシャルオイル（精油）です。
+        気になる使い方から読み進めてください。「アロマオイル」と呼ばれる製品には、合成香料を含み、精油ではないものもあります。違いは<Link href="/blog/what-is-essential-oil">エッセンシャルオイルとは</Link>で説明しています。使い方の説明は、植物から抽出したエッセンシャルオイル（精油）が前提です。
       </p>
 
       <h2 id="uses">エッセンシャルオイルは何に使う？使い道の一覧</h2>
@@ -207,6 +207,14 @@ export const howToUseAromaOils: ArticleContent = {
         <li>滴数の感覚をつかみたい: <Link href="/blog/drop-count">1滴の量と滴数</Link></li>
       </ul>
       <PointBox>香りの感じ方は人によって違います。1本目は、説明の言葉よりも、自分が好きだと思える香りで選びましょう。</PointBox>
+      <MemberVoice note="メンバー個人の感じ方です。香りの好みには個人差があります。">
+        <p>
+          ELIGŌのメンバーにも、はじめはスパイスの効いたブレンドを「歯医者さんのような匂い」と感じて苦手だったのに、使ううちに大好きな香りになった、という人がいます。
+        </p>
+        <p>
+          反対に、はじめての手作りでオイルの香りが好きになれず、初心者向けの組み合わせを仲間に聞いてみた人もいました。香りの好みは、人によっても、慣れによっても変わります。最初は気に入った1本を、少ない量から試してみてください。
+        </p>
+      </MemberVoice>
 
       <h2 id="skin">肌とお風呂で使う｜表示を確かめて薄める</h2>
       <p>
@@ -235,6 +243,14 @@ export const howToUseAromaOils: ArticleContent = {
           <strong>料理</strong>: ドテラの「食品添加物」の表示がある製品は、ラベルどおりの量と方法で料理の香りづけに使えます。一方で、協会は、薄めても飲むことや料理に使うことをすすめていません。別の見解もあるので、最後はご自身で判断してください。例は<Link href="/blog/aromatic-table">アロマティックテーブル</Link>へ。
         </li>
       </ul>
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、何本もリピートしているレモンのオイルを、シールはがしにも使っています。素材によっては傷んだり色が変わったりすることがあるので、目立たないところで試してからにしましょう。
+        </p>
+        <p>
+          同じメンバーは、オイルとは別の製品で、ドテラの住宅用の洗剤を薄めて、お風呂やトイレ、食器洗いに使っています。好きな香りの洗剤にしてから、掃除の時間を楽しんでいます。洗剤は、製品の表示どおりに使います。
+        </p>
+      </MemberVoice>
       <p>手作りコスメは、自分で使う分だけにしましょう。販売や人への譲渡はしないでください。</p>
 
       <h2 id="start">初心者が今日からできる最初の一歩</h2>

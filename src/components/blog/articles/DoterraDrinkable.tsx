@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, LabelTypes, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
+import { CautionBox, CheckPoints, DataTable, Faq, LabelTypes, MemberVoice, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** 「ドテラのオイルは飲めるの？」という質問に答える記事 */
 export const doterraDrinkable: ArticleContent = {
@@ -73,6 +73,12 @@ export const doterraDrinkable: ArticleContent = {
       note: "5mLの製品ページの「塗・香」の表示",
     },
     {
+      title: "Phossil ミネラル プルーン",
+      publisher: "doTERRA CPTG Essential Oils Japan合同会社",
+      url: "https://www.doterra.com/JP/ja_JP/p/phossil-mineral-prune",
+      note: "レモンまたはライムのオイルを1滴加えて炭酸水で割る飲み方の例",
+    },
+    {
       title: "How dōTERRA Sources Essential Oils",
       publisher: "doTERRA（米国公式、英語）",
       url: "https://www.doterra.com/US/en/sourcing",
@@ -126,7 +132,7 @@ export const doterraDrinkable: ArticleContent = {
         ドテラのオイルは、すべてが飲めるわけではありません。口に入れられるのは「食品添加物」の表示がある製品だけで、使い方は飲み物や料理の香りづけです。原液をそのまま飲むことはしません。また、日本アロマ環境協会は、薄めたものでも精油を飲むことをすすめていません。
       </p>
       <p>
-        この記事で「飲める」と書くのは、香りづけに使える表示があるという意味です。飲むことをすすめる記事ではありません。
+        「飲める」とは、香りづけに使える表示があるという意味です。
       </p>
 
       <h2 id="list">飲めるオイルの一覧</h2>
@@ -196,13 +202,21 @@ export const doterraDrinkable: ArticleContent = {
           { title: "迷ったら使わない", text: "ページの内容とラベルが違うときは、口に入れずに購入元へ確認します。" },
         ]}
       />
+      <MemberVoice>
+        <p>
+          ELIGŌのメンバーの一人は、炭酸水で割った飲み物に、「食」の表示がある柑橘のオイルをほんの少し垂らして、香りを足しています。大きなボトルから直接垂らさず、2mLほどの小さな容器に少し移してから使っています。入れすぎを防げて、自分にちょうどいい量を1滴ずつ確かめられます。
+        </p>
+        <p>
+          別のメンバーは、レモンやライムを1滴加える飲み方がお気に入りです。どちらも「食」の表示がある製品で、量は表示どおりのごく少量にとどめています。
+        </p>
+      </MemberVoice>
       <p>
         料理に使う手順は、<Link href="/blog/aromatic-table">オイルで香りづけする料理</Link>で紹介しています。
       </p>
 
       <h2 id="caution">健康効果を期待した飲み方はしない</h2>
       <p>
-        「食」の表示がある製品は、あくまで飲食物の「香りづけ」に使うものです。病気の予防や体調の改善を目的に飲むものではありません。「飲むと〇〇に効く」といった情報を見かけても、うのみにしないようにしましょう。水に入れて毎日飲むことも、この記事ではすすめません。
+        「食」の表示がある製品は、あくまで飲食物の「香りづけ」に使うものです。病気の予防や体調の改善を目的に飲むものではありません。「飲むと〇〇に効く」といった情報を見かけても、うのみにしないようにしましょう。
       </p>
       <p>
         海外向けのページやレシピは、その国のルールに沿って書かれています。日本で買った製品には、日本のラベルの表示を当てはめましょう。ほかのブランドのオイルも「飲める」と考えず、ラベルを確認し、食品としての表示がないものは口に入れないでください。
@@ -235,6 +249,22 @@ export const doterraDrinkable: ArticleContent = {
           {
             q: "厚生労働省は精油を飲むことを認めていますか？",
             a: "厚生労働省の食品添加物のページは香料に触れていますが、エッセンシャルオイルを飲むことを説明したページではありません。",
+          },
+          {
+            q: "料理や飲み物には、どんなふうに使われていますか？",
+            a: (
+              <>
+                ELIGŌのメンバーの使い方では、ジンジャーとレモンのオイルを少しだけ加えて、りんごと一緒にジュースにする、グリーンマンダリンと醤油を合わせてポン酢のように使う、レモングラスを塩に混ぜて揚げ物に添える、といった例があります。どれも「食」の表示がある製品を、ラベルどおりのごく少量で使う香りづけです。手順は<Link href="/blog/aromatic-table">オイルで香りづけする料理</Link>へ。
+              </>
+            ),
+          },
+          {
+            q: "オイルのほかに、飲むための製品はありますか？",
+            a: (
+              <>
+                ドテラには、食品として売られている飲料の<Link href="/blog/doterra-mineral">ドテラ ミネラル</Link>があります。オイルとは別の製品で、薄めて飲むものです。ELIGŌのメンバーには、夏は炭酸水で、冬はお湯で割って、味の違いを楽しんでいる人がいます。ドテラも、ミネラルにレモンかライムのオイルを1滴加えて炭酸水で割る飲み方を紹介しています。
+              </>
+            ),
           },
         ]}
       />
