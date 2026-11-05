@@ -152,7 +152,7 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "doterra-drinkable",
-    title: "ドテラのオイルは飲める？すべてではありません｜飲めるオイル一覧と、アロマを飲む前の確認点",
+    title: "ドテラのオイルは飲める？すべてではありません｜飲めるオイル一覧",
     excerpt: "ドテラのオイルは、すべてが飲めるわけではありません。「食」の表示があるオイルの一覧、ティーツリーやオンガードの表示、アロマを飲む前に確認したいことと、ドテラと協会の見解をまとめました。",
     category: "beginner",
     publishedAt: "2026-10-31",
@@ -420,7 +420,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "natural-perfume",
-    title: "精油で作る香水｜ナチュラルパフュームの作り方と市販の香水との違い",
+    title: "精油で作る香水の作り方と、市販の香水との違い",
     excerpt: "精油で香水を手作りする方法を紹介します。トップ、ミドル、ベースの組み立て方と、市販の香水との濃度の違い、肌につける香りと紙や小物で楽しむ香りの2つのレシピを、ドテラのオイルで作る例とあわせて説明します。",
     category: "lifestyle",
     publishedAt: "2026-10-31",
@@ -529,6 +529,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "使い切れなかったエッセンシャルオイルの中身は、排水に流さず紙に吸わせて捨てます。ビンとキャップの分け方、自治体で区分が変わる例、ドテラのオイルの場合、日本アロマ環境協会の精油ビン回収もまとめました。",
     category: "care",
     publishedAt: "2026-11-01",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/oil-disposal.jpg",
   },
   {
@@ -782,9 +783,10 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "doterra-diffusers",
     title: "ドテラのディフューザーの種類と選び方｜ラルツと販売終了のバブル、ペブル",
-    excerpt: "2026年11月時点で、日本で単品で買えるドテラのディフューザーはラルツです。バブル、ペブル、森の音など販売を終えた機種と終了の時期、選ぶときに確かめたいこと、加湿器との違い、ラルツで試せる最初のレシピを紹介します。",
+    excerpt: "2026年11月時点で、日本で単品で買えるドテラのディフューザーはラルツです。バブル、ペブル、森の音、セラミックなど販売を終えた機種と終了の時期、選ぶときに確かめたいこと、加湿器との違い、ラルツで試せる最初のレシピを紹介します。",
     category: "how-to",
     publishedAt: "2026-11-04",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/doterra-diffusers.jpg",
   },
 
