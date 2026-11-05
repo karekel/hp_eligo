@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, CheckPoints, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 洗濯とアイロンがけにオイルの香りを取り入れる方法 */
 export const laundryOils: ArticleContent = {
@@ -142,6 +142,7 @@ export const laundryOils: ArticleContent = {
         />
         <PointBox>色の濃い服や繊細な素材は、裏側の目立たない場所で試してから使いましょう。</PointBox>
       </MethodCard>
+      <ProductPhotos names={["ラベンダー", "ゼラニウム"]} />
 
       <h3>ドテラのオイルで作るとき</h3>
       <p>

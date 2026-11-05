@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, CheckPoints, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, CheckPoints, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** 手作りソーセージの手順と、肉の加熱の一般基準を紹介する記事 */
@@ -86,6 +86,7 @@ export const aromaSausage: ArticleContent = {
       <p>
         レモン15mLには「食」の表示があります。バジル、オレガノ、タイム、ローズマリーなどのハーブは、お手元のボトルの表示を確かめてください。区分の見方は<Link href="/blog/doterra-drinkable">ドテラのオイルは飲める？</Link>で説明しています。
       </p>
+      <ProductPhotos names={["レモン", "バジル", "オレガノ", "ローズマリー"]} />
       <p>
         一方で、日本アロマ環境協会は、精油を薄めても食品と一緒にとることをすすめておらず、料理への利用もすすめていません。一般の精油は飲食が認められていない、とも説明しています。別の見解もあるので、最後はご自身で判断してください。表示のあるオイルがないときや迷うときは、乾燥ハーブで作りましょう。
       </p>

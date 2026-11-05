@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** キャリアオイルの選び方と濃度の計算の記事 */
 export const carrierOilDilution: ArticleContent = {
@@ -165,6 +165,7 @@ export const carrierOilDilution: ArticleContent = {
           ["スイートアーモンド油", "香りにくせがない"],
         ]}
       />
+      <ProductPhotos names={["ドテラ ココナッツオイル"]} />
       <ul>
         <li>オイルの香りをそのまま楽しみたいなら、香りのないものを選ぶ</li>
         <li>天然の植物油は酸化しやすいので、使い切れる量を買う</li>
@@ -197,6 +198,7 @@ export const carrierOilDilution: ArticleContent = {
       <PointBox>
         2種類以上を混ぜるときは、種類ごとではなく合計の滴数で数えます。30mLのボディ用なら、ラベンダー3滴とゼラニウム3滴で合計6滴までです。1滴＝0.05mLは計算の目安で、<Link href="/blog/drop-count">実際の1滴はこれより多いこともあります</Link>。上限いっぱいにせず、少なめに作りましょう。
       </PointBox>
+      <ProductPhotos names={["ラベンダー", "ゼラニウム"]} />
       <p>
         表にない量は、割り算で求められます。キャリアオイルのmLを5で割るとボディ用の上限の滴数、10で割ると顔用の上限の滴数です。15mLならボディ用は3滴、顔用は1.5滴になります。端数は切り捨てて、顔用は1滴にします。
       </p>
@@ -213,6 +215,7 @@ export const carrierOilDilution: ArticleContent = {
           ]}
         />
       </div>
+      <ArticleFigure src="/assets/blog/inline/carrier-oil-dilution-try-ef8fa67c.jpg" alt="キャリアオイルを入れた遮光瓶にオイルを1滴落とし、薄めたものを腕の内側に少量つけて様子を見る流れ" caption="低い濃度で少量を作り、腕の内側で試します" />
       <p>
         ドテラは、はじめて使う際はパッチテスト等で試すよう案内しています。協会は2020年から、事前のパッチテストの代わりに、低い濃度で試してから使う案内に変えています。
       </p>

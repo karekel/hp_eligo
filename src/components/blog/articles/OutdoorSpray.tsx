@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 持ち物に香りを添えるアウトドアスプレーのレシピ */
 export const outdoorSpray: ArticleContent = {
@@ -116,6 +116,7 @@ export const outdoorSpray: ArticleContent = {
       <p>
         吹きかける場所は、体に当たる面を避けて選びます。リュックなら背中に当たらない外ポケットのあたり、帽子ならつばの外側です。レジャーシートは、座る場所や食べ物を置く場所から離れた端にしましょう。どれも1か所に軽く吹きかけ、乾いてから身につけたり広げたりします。
       </p>
+      <ArticleFigure src="/assets/blog/inline/outdoor-spray-where-479e5f47.jpg" alt="リュックの外ポケット、帽子のつば、レジャーシートの食べ物から離れた端に、スプレーを軽く吹きかけた位置" caption="吹きかけるのは、体に当たらない外側と、座る場所や食べ物から離れた端です" />
 
       <h2 id="recipe">基本のアウトドアスプレーの作り方</h2>
       <MethodCard

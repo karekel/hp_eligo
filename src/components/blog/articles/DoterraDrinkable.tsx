@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, LabelTypes, NextStepBox, type ArticleContent } from "../ArticleParts";
+import { CautionBox, CheckPoints, DataTable, Faq, LabelTypes, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** 「ドテラのオイルは飲めるの？」という質問に答える記事 */
 export const doterraDrinkable: ArticleContent = {
@@ -143,6 +143,7 @@ export const doterraDrinkable: ArticleContent = {
           ["ブレンド", "オンガード、ゼンジェスト（15mL）、ゼンドクライン、メタPWR、リバイタゼン、DDRプライム", "6件"],
         ]}
       />
+      <ProductPhotos names={["レモン", "オレンジ", "ペパーミント", "スペアミント", "ジンジャー", "ブラックペッパー", "オンガード", "ゼンジェスト"]} />
       <p>
         表示はあとから変わることがあるので、最後はボトルのラベルで確かめましょう。
       </p>

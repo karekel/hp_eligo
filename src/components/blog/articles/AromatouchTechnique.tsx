@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** アロマタッチ テクニックの全体像を説明する記事 */
 export const aromatouchTechnique: ArticleContent = {
@@ -160,6 +160,7 @@ export const aromatouchTechnique: ArticleContent = {
       <p>
         オイルはアロマタッチキットのものを使います。キットには8種類が5mLずつと、ドテラ ココナッツオイル115mLが入っています。ドテラは、キット以外のオイルでは行えないとしています。
       </p>
+      <ProductPhotos names={["アロマタッチキット"]} />
       <p>
         キットの表示は「塗」「香」です。単品のペパーミントとオレンジは、15mLが「香・食」、5mLが「塗・香」と、容量で表示が変わります。オンガードの15mLも「香・食」です。手持ちの15mLで代用せず、お手元のラベルを確認しましょう。
       </p>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 酢とレモンで作る掃除スプレーのレシピと、塩素系と混ぜないための注意 */
 export const cleaningSpray: ArticleContent = {
@@ -130,6 +130,7 @@ export const cleaningSpray: ArticleContent = {
       <p>
         ドテラのレモンは、水を入れたスプレーボトルに加えて、テーブルや台所カウンターの掃除に使えます。
       </p>
+      <ProductPhotos names={["レモン"]} />
 
       <h2 id="citric">酢のにおいが気になるとき</h2>
       <p>酢のにおいが苦手なら、酢の代わりにクエン酸でも作れます。オイルが混ざりやすいよう、無水エタノールを使うレシピです。</p>

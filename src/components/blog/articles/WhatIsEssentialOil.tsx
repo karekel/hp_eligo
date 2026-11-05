@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** エッセンシャルオイルの定義とアロマオイルとの違いを説明する記事 */
 export const whatIsEssentialOil: ArticleContent = {
@@ -171,6 +171,7 @@ export const whatIsEssentialOil: ArticleContent = {
           ]}
         />
       </div>
+      <ArticleFigure src="/assets/blog/inline/what-is-essential-oil-distillation-16cb0974.jpg" alt="釜の中の植物に蒸気を当て、その蒸気を冷却管で冷やし、器の中で水とオイルの2層に分ける水蒸気蒸留の流れ" caption="蒸気を通す、冷やす、分けて取り出すの流れです" />
       <p>
         圧搾法はコールドプレスとも呼ばれ、オレンジやレモンなどの柑橘の外皮からオイルを取り出します。協会は、加熱しないこの方法で取り出した精油は劣化しやすいと説明しています。柑橘系は、開封したら早めに使い切りましょう。
       </p>
@@ -206,6 +207,7 @@ export const whatIsEssentialOil: ArticleContent = {
       <p>
         使い方の表示は、買う前にもう一度確かめましょう。ペパーミントは15mLが「香・食」、5mLが「塗・香」で、同じ名前でも容量で表示が違います。ユーカリプタスは2026年3月に化粧油から雑貨油へ変わりました。以前の情報で判断せず、最新のラベルを見るのが確実です。項目ごとの読み方は<Link href="/blog/reading-labels">ラベルの見方</Link>、メーカーを比べるときは<Link href="/blog/choosing-oil-brands">メーカーの選び方</Link>にまとめています。
       </p>
+      <ProductPhotos names={["ペパーミント", "ユーカリプタス"]} />
       <p>
         ドテラのCPTG®は自社の社内基準で、公的な認証ではありません。協会の表示基準に適合した精油の認定も、表示についてのもので、品質を保証するものではありません。
       </p>

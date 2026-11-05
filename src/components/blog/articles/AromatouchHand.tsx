@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** アロマタッチ ハンドテクニックの手順を紹介する記事 */
 export const aromatouchHand: ArticleContent = {
@@ -161,6 +161,7 @@ export const aromatouchHand: ArticleContent = {
           ["ドテラシトラスブリス", "柑橘を合わせた明るい香り", "昼間より夜に（日光の注意あり）"],
         ]}
       />
+      <ProductPhotos names={["ドテラバランス", "ラベンダー", "ドテラセレニティー", "フランキンセンス", "ドテラシトラスブリス"]} />
       <p>
         ドテラは、片手に使うオイルを1〜3滴としています。敏感肌の人、子ども、初めて使うオイルはキャリアオイルで薄めるよう案内しています。協会と消費者庁は、原液を肌につけず必ず薄めるよう案内しています。
       </p>

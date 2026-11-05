@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 10mLのボトルで作るロールオンのレシピとブレンド例 */
 export const rollOn: ArticleContent = {
@@ -205,6 +205,8 @@ export const rollOn: ArticleContent = {
         />
         <PointBox>ボトルに直接垂らすと、中身が約9mLになる分だけ濃くなります。2滴なら約1.1%で、目安を超えます。少し手間でも、10mLを量って混ぜてから移すと濃度がぶれません。容器に残る約1mLは、腕の内側などに少量つけて、使う前の試しに回しましょう。</PointBox>
       </MethodCard>
+      <ArticleFigure src="/assets/blog/inline/roll-on-steps-126010a0.jpg" alt="小さなガラス容器でココナッツオイルにオイルを垂らして混ぜ、ロールオンボトルの9割まで移してローラーを押し込み、ふたをしてラベルを貼る流れ" caption="量って混ぜてから、ボトルの9割まで移します" />
+      <ProductPhotos names={["ドテラ ココナッツオイル"]} />
 
       <h2 id="blend">ドテラのオイルで作る香りの組み合わせ</h2>
       <p>
@@ -237,6 +239,7 @@ export const rollOn: ArticleContent = {
       <p>
         1本で香りを決めたいなら、最初から香りが組まれたドテラバランスを1〜2滴でも楽しめます。レモンなど光毒性のある柑橘と、肌につけない製品のユーカリプタスは入れないでください。ティーツリーとペパーミント5mLは「塗・香」の表示ですが、協会は皮膚刺激の例に挙げています。別の見解もあるので、最後はご自身で判断してください。
       </p>
+      <ProductPhotos names={["ドテラバランス"]} />
 
       <h2 id="caution">作るときと持ち歩くときの注意点</h2>
       <CautionBox

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ユーカリプタス */
@@ -130,6 +130,7 @@ export const eucalyptus: ArticleContent = {
           },
         ]}
       />
+      <ProductPhotos names={["レモン", "ペパーミント"]} />
 
       <MethodCard no={1} title="3種の香りのスプレーを作る" items={["50mLのスプレーボトル", "無水エタノール5mL", "ユーカリプタス4滴", "レモン3滴", "ペパーミント3滴", "水45mL"]}>
         <Steps

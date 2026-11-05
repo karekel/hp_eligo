@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { CautionBox, Faq, MethodCard, NextStepBox, PairingList, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, Faq, MethodCard, NextStepBox, PairingList, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** お風呂でのオイルの使い方と、お湯に入れる前の注意点の記事 */
 export const bathOils: ArticleContent = {
@@ -149,6 +149,7 @@ export const bathOils: ArticleContent = {
           ]}
         />
       </MethodCard>
+      <ArticleFigure src="/assets/blog/inline/bath-oils-ethanol-1caccde3.jpg" alt="小さなガラス容器の無水エタノールにオイルを垂らし、湯船のお湯に入れてかき混ぜる流れ" caption="オイルは無水エタノールに混ぜてから、お湯に入れます" />
 
       <MethodCard no={2} title="バスソルトにする" items={["天然塩 大さじ2", "無水エタノール 5mL", "オイル 合計1〜5滴", "小さなスプレー容器"]}>
         <Steps

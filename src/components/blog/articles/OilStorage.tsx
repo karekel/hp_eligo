@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
 
 /** オイルの保管方法と使用期限の目安を説明する記事 */
 export const oilStorage: ArticleContent = {
@@ -100,6 +100,7 @@ export const oilStorage: ArticleContent = {
         ]}
       />
       <PointBox>箱にまとめて棚に入れると、光を避けながら本数も把握できます。柑橘系を手前に置くと、先に使い切りやすくなります。</PointBox>
+      <ArticleFigure src="/assets/blog/inline/oil-storage-cabinet-16bf603e.jpg" alt="扉つきの棚の中に、ボトルを箱にまとめて立てて置いた様子" caption="扉つきの棚に箱ごと入れ、柑橘系は手前に置きます" />
       <CautionBox
         title="保管で気をつけたいこと"
         items={[

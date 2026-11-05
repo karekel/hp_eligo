@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
+import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** 市販のオイルを贈るときの選び方と配慮の記事 */
 export const oilGifts: ArticleContent = {
@@ -152,6 +152,7 @@ export const oilGifts: ArticleContent = {
           ["お香が好き", "樹脂", "フランキンセンス（ウォーム、スパイシー、クリーン）"],
         ]}
       />
+      <ProductPhotos names={["ラベンダー", "オレンジ", "ヒノキ", "フランキンセンス"]} />
       <p>
         迷ったら、専門店の販売員に相談する方法もあります。香りの感じ方は体調や気分でも変わるので、可能なら相手と一緒に試しましょう。
       </p>
@@ -171,6 +172,7 @@ export const oilGifts: ArticleContent = {
       <p>
         ディフューザーは手入れも一緒に贈ることになります。ドテラ ラルツディフューザーは、週2回以上の掃除が必要です。くわしくは<Link href="/blog/diffuser-guide">ディフューザーの選び方</Link>をご覧ください。
       </p>
+      <ProductPhotos names={["ドテラ ラルツディフューザー"]} />
       <PointBox>
         元のボトルのまま贈りましょう。別の容器に移すと、製品名や注意の表示が離れてしまいます。
       </PointBox>

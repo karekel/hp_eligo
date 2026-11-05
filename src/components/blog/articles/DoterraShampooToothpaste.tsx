@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ドテラのシャンプー、ヘアケア、石けん、ボディウォッシュ、ハンドソープ、歯みがき剤の種類と使い方を整理した記事 */
 export const doterraShampooToothpaste: ArticleContent = {
@@ -244,6 +244,7 @@ export const doterraShampooToothpaste: ArticleContent = {
           ["オンガード フォーミングディスペンサー", "ハンドソープ用の容器", "237mL", "700円／1,100円"],
         ]}
       />
+      <ProductPhotos names={["オンガード フォーミングハンドウォッシュ"]} />
       <h3>香りの違い</h3>
       <ul>
         <li>ドテラシトラスブリス バスバー: オレンジ、レモン、グレープフルーツなどの柑橘の香り</li>
@@ -264,6 +265,7 @@ export const doterraShampooToothpaste: ArticleContent = {
       <p>
         ドテラの歯磨き粉は「ドテラ トゥースペイスト」（125g、会員価格1,800円／参考小売価格2,700円）です。輸入の遅れのため、2025年10月31日から販売を止めています。2026年11月時点で、再開の時期は示されていません。
       </p>
+      <ProductPhotos names={["ドテラ トゥースペイスト"]} />
       <p>
         オンガードのブレンドに、ペパーミント、ウィンターグリーン、キシリトールを合わせたシナモンミントの香りで、フッ素は入っていません。使い方は、食後または朝と夜に、適量を歯ブラシにつけてていねいに磨き、そのあと口をよくすすぎます。
       </p>

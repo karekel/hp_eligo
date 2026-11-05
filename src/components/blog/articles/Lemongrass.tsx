@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: レモングラス */
@@ -177,6 +177,7 @@ export const lemongrass: ArticleContent = {
       <p>
         サシェの分量は、ドテラのレシピで重曹30gに対してラベンダー7滴、ゼラニウム6滴、レモングラス7滴です。花の甘さが、レモングラスの鋭さを包む組み合わせです。作り方は<Link href="/blog/potpourri">ポプリの作り方</Link>で紹介しています。
       </p>
+      <ProductPhotos names={["ラベンダー", "ゼラニウム"]} />
       <p>
         失敗しやすいのは入れすぎです。ラルツディフューザーの目安は5〜10滴ですが、全部をレモングラスにせず、1〜2滴にとどめましょう。残りを柑橘やミントのオイルにすると、香りが広がっても部屋がきつくなりません。
       </p>
@@ -191,6 +192,7 @@ export const lemongrass: ArticleContent = {
       <p>
         ドテラは、相性のよいオイルとしてグレープフルーツ、ティーツリー、ベチバー、シベリアンファー、クラリセージを挙げています。バジル、カルダモン、スペアミントとのブレンドも紹介しています。
       </p>
+      <ProductPhotos names={["ティーツリー", "シベリアンファー", "クラリセージ", "バジル"]} />
       <PairingList
         items={[
           { name: "グレープフルーツ", en: "Grapefruit", color: oilColors.wildOrange, note: "柑橘が重なり、鋭さがみずみずしさに変わります" },

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** ドテラの製品の分類、オイルの種類、キットとコレクション、オイル以外の製品を2026年11月時点で整理する記事 */
 export const doterraOilLineup: ArticleContent = {
@@ -345,6 +345,7 @@ export const doterraOilLineup: ArticleContent = {
           ["サイプレス", "枝、葉", "クリーン、フレッシュ、ウッディー、ハーベイシャス", "塗・香"],
         ]}
       />
+      <ProductPhotos names={["ラベンダー", "レモン", "オレンジ", "ペパーミント", "ユーカリプタス", "フランキンセンス", "ヒノキ"]} />
       <p>
         各オイルの紹介は、<Link href="/blog/lavender">ラベンダー</Link>、<Link href="/blog/geranium">ゼラニウム</Link>、<Link href="/blog/lemon">レモン</Link>、<Link href="/blog/orange">オレンジ</Link>、<Link href="/blog/bergamot">ベルガモット</Link>、<Link href="/blog/grapefruit">グレープフルーツ</Link>、<Link href="/blog/peppermint">ペパーミント</Link>、<Link href="/blog/tea-tree">ティーツリー</Link>、<Link href="/blog/eucalyptus">ユーカリプタス</Link>、<Link href="/blog/rosemary">ローズマリー</Link>、<Link href="/blog/lemongrass">レモングラス</Link>、<Link href="/blog/marjoram">マジョラム</Link>、<Link href="/blog/frankincense">フランキンセンス</Link>、<Link href="/blog/hinoki">ヒノキ</Link>、<Link href="/blog/cypress">サイプレス</Link>へ。
       </p>
@@ -373,6 +374,7 @@ export const doterraOilLineup: ArticleContent = {
           ["アロマタッチ", "15mL", "クリーン、フレッシュ、ミント、パウダリー", "塗"],
         ]}
       />
+      <ProductPhotos names={["オンガード", "ドテラセレニティー", "ドテラバランス", "ドテラシトラスブリス", "イージーエア", "ディープブルー", "アロマタッチ"]} />
       <p>
         名前に「タッチ」がつく10mLの製品（ローズタッチ、マグノリアタッチなど）も、ブレンドオイルの一覧に入っています。くわしくは<Link href="/blog/on-guard">オンガード</Link>、<Link href="/blog/serenity">ドテラセレニティー</Link>、<Link href="/blog/balance">ドテラバランス</Link>、<Link href="/blog/easy-air">イージーエア</Link>、<Link href="/blog/deep-blue">ディープブルー</Link>の記事へ。
       </p>
@@ -405,6 +407,7 @@ export const doterraOilLineup: ArticleContent = {
       <p>
         アロマタッチキットは、アロマタッチ テクニックで使う8種類のオイルのセットです。テクニックは<Link href="/blog/aromatouch-technique">アロマタッチ テクニックとは</Link>へ。
       </p>
+      <ProductPhotos names={["アロマタッチキット"]} />
       <h3>登録キットとオイル コレクション</h3>
       <p>
         会員登録と同時に申し込むセットを「登録キット」といいます。オイルを中心にした「オイル登録キット」「オイル デラックス登録キット」「オイル コレクション登録キット」などがあり、どれも登録料が含まれます。オイル コレクション登録キットは、51種類のオイルを一度にそろえられる内容です。
@@ -430,6 +433,7 @@ export const doterraOilLineup: ArticleContent = {
       <p>
         アクセサリーには、ドテラ ラルツディフューザーなどのディフューザーや、ボトルケースがあります。ディフューザーの選び方は<Link href="/blog/doterra-diffusers">ドテラのディフューザー</Link>へ。ヒーリングハンズのローズハンドローションは、売上金が全額ドテラ・ヒーリングハンズ基金に寄付されます。
       </p>
+      <ProductPhotos names={["ドテラ ラルツディフューザー", "ローズハンドローション"]} />
 
       <h2 id="caution">選ぶとき、使うときの注意点</h2>
       <CautionBox

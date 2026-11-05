@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CheckPoints, DataTable, Faq, NextStepBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CheckPoints, DataTable, Faq, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** はじめての方向け: コ・インパクトソーシング */
 export const coImpactSourcing: ArticleContent = {
@@ -121,6 +121,7 @@ export const coImpactSourcing: ArticleContent = {
           ["フランキンセンス", "オマーン、ソマリランド地域、エチオピア", "公正な支払いと過剰な採取の防止を支える"],
         ]}
       />
+      <ProductPhotos names={["オレンジ", "ラベンダー", "ティーツリー", "ウィンターグリーン", "フランキンセンス"]} />
       <p>
         ひとつのオイルの産地を詳しく読みたい方は、<Link href="/blog/lavender">ラベンダー</Link>や<Link href="/blog/orange">オレンジ</Link>の記事をどうぞ。
       </p>
@@ -136,6 +137,7 @@ export const coImpactSourcing: ArticleContent = {
           ]}
         />
       </div>
+      <ProductPhotos names={["レモン"]} />
 
       <h2 id="faq">よくある質問</h2>
       <Faq

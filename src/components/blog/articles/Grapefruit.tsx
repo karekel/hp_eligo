@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, OilProfile, PairingList, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: グレープフルーツ */
@@ -175,6 +175,7 @@ export const grapefruit: ArticleContent = {
           ["オレンジ", "スイート、フレッシュ、シトラス", "ないと説明（スイートオレンジ）"],
         ]}
       />
+      <ProductPhotos names={["レモン", "ベルガモット", "オレンジ"]} />
       <p>
         グレープフルーツは、スイートオレンジとザボンのハイブリッドです。学名の「X」は、ハイブリッドであることを表しています。グレープフルーツは1750年に初めて記録され、「禁断の果実」とも紹介されました。房のように実る姿がブドウに似ていることが、名前の由来です。
       </p>
@@ -268,6 +269,7 @@ export const grapefruit: ArticleContent = {
           },
         ]}
       />
+      <ProductPhotos names={["ドテラシトラスブリス"]} />
       <CautionBox
         title="あわせて守りたいこと"
         items={[

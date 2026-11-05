@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: オンガード */
@@ -153,6 +153,7 @@ export const onGuard: ArticleContent = {
       <p>
         ドテラのラルツディフューザーは、オイルが5〜10滴、適用床面積が約16畳です。まず下限の5滴で試し、足すときは1滴ずつにします。香りの感じ方には個人差があるので、来客がある日は少なめにしましょう。
       </p>
+      <ProductPhotos names={["ラルツディフューザー"]} />
       <p>
         オイルは水に溶けにくいので、拭き掃除の水は使う直前に混ぜます。スプレーの作り方は<Link href="/blog/cleaning-spray">手作り掃除スプレーの作り方</Link>で紹介しています。
       </p>

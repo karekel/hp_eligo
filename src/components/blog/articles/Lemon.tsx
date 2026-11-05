@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: レモン */
@@ -175,6 +175,11 @@ export const lemon: ArticleContent = {
         />
         <PointBox>重曹は食品と見間違えることがあります。中身をびんに書き、子どもが口に入れないように置き場所を決めましょう。</PointBox>
       </MethodCard>
+      <ArticleFigure
+        src="/assets/blog/inline/lemon-baking-soda-jar-437e4d0e.jpg"
+        alt="ガラスびんの重曹にオイルを垂らし、びんの口を布でおおって輪ゴムで留めた香りびん"
+        caption="重曹にオイルを垂らしてなじませ、布でふたをして輪ゴムで留めます"
+      />
 
       <h3>料理に使う前に確認したいこと</h3>
       <p>

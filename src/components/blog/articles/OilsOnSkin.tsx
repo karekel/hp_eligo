@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** エッセンシャルオイルを肌につけてよいかを判断するための記事 */
 export const oilsOnSkin: ArticleContent = {
@@ -193,10 +193,12 @@ export const oilsOnSkin: ArticleContent = {
           ["レモン、ベルガモット 15mL", "香・食", "肌に塗る使い方がない。香りで楽しむ"],
         ]}
       />
+      <ProductPhotos names={["ティーツリー", "ペパーミント 15mL", "ペパーミント 5mL", "ユーカリプタス", "レモン", "ベルガモット"]} />
       <h3>光毒性とは</h3>
       <p>
         光毒性は、日光などの強い紫外線に反応して、肌に炎症などを起こす性質です。単品の柑橘の多くは「香・食」の表示で、肌に塗る使い方がありません。ドテラシトラスブリスのように、柑橘を含み「塗・香」の表示があるブレンドもあります。こうした製品を肌に使うときは、塗布後12時間ほど直射日光を避けます。
       </p>
+      <ProductPhotos names={["ドテラシトラスブリス"]} />
       <p>
         あわせて協会は、グレープフルーツ、ベルガモット、レモンなどを例に挙げ、日中の使用に注意するよう案内しています。
       </p>

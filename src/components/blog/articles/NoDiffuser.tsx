@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 使い方ガイド型のサンプル記事 */
 export const noDiffuser: ArticleContent = {
@@ -88,6 +88,7 @@ export const noDiffuser: ArticleContent = {
       <p>
         エッセンシャルオイルの香りは、空気に触れると少しずつ広がります。ディフューザーは香りを部屋全体に広げるのが得意な道具ですが、「自分のまわりだけ」「短い時間だけ」香りを楽しみたいときは、もっと手軽な方法があります。
       </p>
+      <ArticleFigure src="/assets/blog/inline/no-diffuser-four-ways-6416f23b.jpg" alt="ティッシュ、小皿にのせたアロマストーン、お湯を入れたマグカップ、ルームスプレーで香りを楽しむ様子" caption="ティッシュ、アロマストーン、マグカップのお湯、ルームスプレー" />
 
       <h2 id="methods">道具なしでも簡単な4つの使い方</h2>
 
@@ -149,6 +150,7 @@ export const noDiffuser: ArticleContent = {
       <p>
         オイルによって、香りの残り方も違います。ドテラと日本アロマ環境協会は、レモンやペパーミントを揮発しやすいトップ、フランキンセンスを揮発しにくいベースに分類しています。ティッシュの香りがすぐ薄れると感じたら、滴数を増やす前に、ベースのオイルも試してみましょう。
       </p>
+      <ProductPhotos names={["レモン", "ペパーミント", "フランキンセンス"]} />
       <p>始める前に、手元のオイルのラベルで、香りを楽しむ使い方が案内されているかを確かめておくと安心です。ドテラのオイルなら、<Link href="/blog/doterra-how-to-use">「塗・香・食」の表示の見方</Link>で確かめられます。</p>
 
       <h2 id="caution">使うときの注意点</h2>

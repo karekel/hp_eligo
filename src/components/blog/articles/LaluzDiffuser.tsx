@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ドテラ ラルツディフューザーの使い方を取扱説明書 V2 の範囲でまとめた記事 */
 export const laluzDiffuser: ArticleContent = {
@@ -35,6 +35,7 @@ export const laluzDiffuser: ArticleContent = {
       <p>
         ドテラ ラルツディフューザーは、超音波振動で水とオイルをミストにして広げるディフューザーです。
       </p>
+      <ProductPhotos names={["ドテラ ラルツディフューザー"]} />
       <p>
 機種の選び方は<Link href="/blog/diffuser-guide">ディフューザーの選び方</Link>で説明しています。
       </p>
@@ -50,6 +51,7 @@ export const laluzDiffuser: ArticleContent = {
           { title: "内蓋とカバーを取り付けて電源を入れる", text: "電源アダプタをコンセントに差し、電源/タイマーボタンを押します。" },
         ]}
       />
+      <ArticleFigure src="/assets/blog/inline/laluz-diffuser-setup-d4dbb178.jpg" alt="カバーを外したディフューザーのタンクに満水目印まで水を入れ、オイルを垂らす様子" caption="水は満水目印まで入れ、オイルはタンクに直接垂らします" />
       <PointBox>はじめは5滴で試し、物足りなければ次の回に1滴ずつ増やしましょう。上限は10滴です。</PointBox>
       <p>
         ブレンドも、合計を5〜10滴に収めます。組み合わせは<Link href="/blog/diffuser-blends">ディフューザーのレシピ</Link>にあります。

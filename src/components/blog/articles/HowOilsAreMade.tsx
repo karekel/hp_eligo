@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** エッセンシャルオイルの抽出方法と、自宅で作れるかを説明する記事 */
 export const howOilsAreMade: ArticleContent = {
@@ -113,9 +113,11 @@ export const howOilsAreMade: ArticleContent = {
       <p>
         水蒸気蒸留法は、釜に入れた植物に蒸気を当て、香り成分を含んだ蒸気を冷やして、水とオイルの2層に分ける方法です。残った水にも香りが少し残り、芳香蒸留水として化粧水などに使われます。熱で香りや成分が損なわれることがあり、向かない植物もあります。
       </p>
+      <ArticleFigure src="/assets/blog/inline/how-oils-are-made-distillation-16cb0974.jpg" alt="釜の中の植物に蒸気を当て、その蒸気を冷却管で冷やし、器の中で水とオイルの2層に分ける水蒸気蒸留の流れ" caption="植物に蒸気を当て、冷やして、水とオイルの2層に分けます" />
       <p>
         圧搾法はコールドプレスとも呼ばれます。加熱しないので成分の変化が少なく、自然な香りと色が得られます。一方で搾りかすが混ざりやすく、変化しやすい成分を含むため、ほかの方法より劣化しやすいとされています。柑橘を早めに使い切りたい理由です。
       </p>
+      <ArticleFigure src="/assets/blog/inline/how-oils-are-made-coldpress-9a01953f.jpg" alt="柑橘の果皮を2本のローラーの間に通して搾り、落ちたオイルを器で受ける様子" caption="加熱せずに、果皮をローラーで搾ります" />
 
       <h2 id="journey">植物からオイルになるまで</h2>
       <p>ドテラが公開している産地の例を2つ見てみましょう。</p>
@@ -135,6 +137,7 @@ export const howOilsAreMade: ArticleContent = {
           ["ヒノキ", "約120mL", "枝葉約30kgを約3時間蒸留（長野県）"],
         ]}
       />
+      <ProductPhotos names={["ラベンダー", "ペパーミント", "レモン"]} />
 
       <h2 id="home">自宅で簡単に作れる？</h2>
       <p>

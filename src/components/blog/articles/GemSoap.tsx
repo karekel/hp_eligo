@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** MPソープで作る宝石のような石けんのレシピ */
 export const gemSoap: ArticleContent = {
@@ -135,6 +135,7 @@ export const gemSoap: ArticleContent = {
       <p>
         石けんは洗い流すものでも肌に触れるので、オイルはラベルに「化粧品」の表示がある製品を使います。読み方は<Link href="/blog/doterra-how-to-use">ドテラの「塗・香・食」の表示の見方</Link>へ。ドテラのオイルでは、表示が「塗・香」のラベンダーやゼラニウムが選びやすいでしょう。レモンなど光毒性のある柑橘と、肌につけないユーカリプタスは入れません。ティーツリーやペパーミント5mLなど「塗」の表示がある製品は表示どおり肌に使えますが、協会が皮膚刺激の例に挙げているので、子どもも使うこの石けんには入れません。
       </p>
+      <ProductPhotos names={["ラベンダー", "ゼラニウム"]} />
 
       <h2 id="recipe">宝石みたいな石けんの作り方</h2>
       <MethodCard
@@ -165,6 +166,7 @@ export const gemSoap: ArticleContent = {
         />
         <PointBox>シリコン型で作ると、磨かなくても表面がなめらかに仕上がります。カラーマイカは注いでから軽くかき混ぜると、きれいなマーブル模様が出ます。</PointBox>
       </MethodCard>
+      <ArticleFigure src="/assets/blog/inline/gem-soap-layers-8c3892a1.jpg" alt="3色を重ねて固めた石けんを型から外し、角を落として宝石の形にする流れ" caption="色を重ねて固め、角を落とすようにカットします" />
 
       <h2 id="caution">作るときと使うときの注意点</h2>
       <CautionBox

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, NextStepBox, OilProfile, PairingList, PointBox, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ローズマリー */
@@ -173,6 +173,7 @@ export const rosemary: ArticleContent = {
       <p>
         ドテラは、相性のよいオイルとしてレモン、サイプレス、ゼラニウム、バジル、ユーカリプタスを挙げています。ツンとした角を、柑橘の明るさや花の甘さで丸めるのが組み合わせの考え方です。
       </p>
+      <ProductPhotos names={["バジル"]} />
       <PairingList
         items={[
           { name: "レモン", en: "Lemon", color: oilColors.lemon, note: "皮の明るさが加わり、朝に合う軽い香りに" },

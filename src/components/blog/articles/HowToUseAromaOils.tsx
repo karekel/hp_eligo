@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** エッセンシャルオイルの使い道を見渡し、手順は各記事へ渡す案内の記事 */
 export const howToUseAromaOils: ArticleContent = {
@@ -185,6 +185,7 @@ export const howToUseAromaOils: ArticleContent = {
           ["マッサージ用のオイルにする", "キャリアオイル", "体は濃度1%以下。キャリアオイル5mLに1滴で約1%"],
         ]}
       />
+      <ProductPhotos names={["ドテラ ラルツディフューザー"]} />
       <p>
         どの方法も、少ない滴数から始めて、香りの強さを確かめながら1滴ずつ足します。お風呂とマッサージの手順は、<Link href="/blog/bath-oils">お風呂での使い方</Link>と<Link href="/blog/massage-oil-recipe">マッサージ用オイルの作り方</Link>にまとめています。
       </p>

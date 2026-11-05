@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 車の中でオイルの香りを楽しむ方法の記事 */
 export const oilsInCar: ArticleContent = {
@@ -179,6 +179,7 @@ export const oilsInCar: ArticleContent = {
           ["ペパーミント", "ミンティー、フレッシュ、ハーベイシャス"],
         ]}
       />
+      <ProductPhotos names={["レモン", "オレンジ", "ペパーミント"]} />
       <p>
         香りの感じ方には個人差があります。消費者庁も香りつき製品について、自分に快適な香りでも困っている人がいること、表示の使用量の目安に従うことを呼びかけています。閉じた車内では、この配慮がいっそう大切です。
       </p>

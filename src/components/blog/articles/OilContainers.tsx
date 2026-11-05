@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** オイルの容器の素材と、用途別のボトルの選び方の記事 */
 export const oilContainers: ArticleContent = {
@@ -114,6 +114,7 @@ export const oilContainers: ArticleContent = {
           ["手作りの掃除スプレー", "ガラス製、ステンレス製", "プラスチック容器で長く保管しない"],
         ]}
       />
+      <ArticleFigure src="/assets/blog/inline/oil-containers-types-767c3bcc.jpg" alt="遮光性のガラスの小瓶、ロールオン容器、ガラスのスプレーボトル、ステンレスのスプレーボトルと、陶器の小皿にのせたスポイト" caption="左から小分け用の遮光瓶、ロールオン、ガラスのスプレー、ステンレスのスプレー。外したスポイトは陶器の小皿に" />
       <PointBox>
         容量は、使い切れる大きさを選びましょう。水を含むものは2週間以内、植物油が中心のものは1カ月以内が目安です。作った日とオイルの名前をラベルに書いておくと、使い切りの目安がわかります。
       </PointBox>

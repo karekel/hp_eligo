@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オレンジの皮とスパイスで作るポプリの記事 */
@@ -79,6 +79,7 @@ export const potpourri: ArticleContent = {
           ["オイル", "オレンジ、シナモンバーク、カシア、クローブ、ジンジャー、カルダモン、ベチバー"],
         ]}
       />
+      <ProductPhotos names={["オレンジ", "シナモンバーク", "クローブ", "ジンジャー", "ベチバー"]} />
       <p>
         オイルは香りを楽しむ用途で使います。オレンジ15mLには「香」の表示があります。ほかのオイルも、お手元のラベルで使い方を確認してください。
       </p>
@@ -100,6 +101,7 @@ export const potpourri: ArticleContent = {
           急いで乾かしたいときはオーブンも使えます。低い温度で、焦げないよう、そばを離れずに様子を見てください。オイルは、オーブンから出して冷めてから足します。
         </PointBox>
       </MethodCard>
+      <ArticleFigure src="/assets/blog/inline/potpourri-bowl-18723339.jpg" alt="器に盛った乾いたオレンジの皮、シナモンスティック、八角、クローブと、スプーンとオイルのボトル" caption="オレンジの皮とホールのスパイスを器に盛ります" />
 
       <p>香りが強すぎたときは、オイルを取り除けないので、乾いた皮やスパイスを足して全体の量を増やします。次からは最初の滴数を減らしましょう。</p>
 
@@ -125,6 +127,7 @@ export const potpourri: ArticleContent = {
       <p>
         春夏は、スパイスの代わりに重曹で作るサシェも楽しめます。ドテラのレシピでは、重曹30gにラベンダー7滴、ゼラニウム6滴、レモングラス7滴を混ぜて巾着に入れ、クローゼットや靴箱、ドアノブに使います。オイルは布を変色させることがあるので、袋が衣類に直接触れないように置きましょう。
       </p>
+      <ProductPhotos names={["ラベンダー", "ゼラニウム", "レモングラス"]} />
       <h3>スパイスがないときは重曹のびんで</h3>
       <p>
         重曹でも、置くだけの香りが作れます。小さめのガラスびんに重曹1/4カップを入れ、オイルを5〜6滴加えます。口に布をかぶせてバンドで留め、平らな場所に置きましょう。ときどき振って、香りが弱くなったら2〜3滴足します。中身をびんに書き、子どもが口に入れない場所に置いてください。

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** 協会の分量で作るリードディフューザーの記事 */
@@ -198,6 +198,7 @@ export const reedDiffuser: ArticleContent = {
           ["大人だけが使う部屋の、奥行きのある棚の奥", "置いてよい", "手や目が届きにくく、倒れにくい"],
         ]}
       />
+      <ArticleFigure src="/assets/blog/inline/reed-diffuser-shelf-d615c0d6.jpg" alt="底が広く口の小さいガラス容器に竹串を差し、受け皿を敷いて、奥行きのある棚の奥に置いた様子" caption="受け皿を敷いて、手や目が届きにくい棚の奥に置きます" />
       <p>
         踏み台で高い所の物を取る子どももいます。3歳以下の子どもやペットがいる家では、作らないのが確実です。<Link href="/blog/kids-safety">子どもの注意点</Link>と<Link href="/blog/pets-safety">ペットの注意点</Link>も読んでください。
       </p>

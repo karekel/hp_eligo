@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 日本で買えるドテラのスキンケア製品（化粧水、クリーム、ハンド＆ボディローション、リップなど）を一覧にした記事 */
 export const doterraSkincare: ArticleContent = {
@@ -229,6 +229,7 @@ export const doterraSkincare: ArticleContent = {
       <p>
         このほか、オイルを薄めるのに使うドテラ ココナッツオイルやドテラ ホホバオイルもあります。薄め方は<Link href="/blog/carrier-oil-dilution">キャリアオイルの選び方と濃度の計算</Link>へ。体を洗う石けんやボディウォッシュは、<Link href="/blog/doterra-shampoo-toothpaste">ドテラのシャンプー、歯磨き粉、石鹸</Link>で紹介しています。
       </p>
+      <ProductPhotos names={["ドテラ ココナッツオイル"]} />
 
       <h2 id="face">顔のスキンケア｜IKISEの化粧水、美容液、クリーム</h2>
       <p>
@@ -288,6 +289,7 @@ export const doterraSkincare: ArticleContent = {
           ["ドテラスパ リップバーム（3 種セット）", "上の3種類のセット", "4.5g×3本", "2,250円／3,400円"],
         ]}
       />
+      <ProductPhotos names={["ローズハンドローション"]} />
       <h3>それぞれの使い方</h3>
       <ul>
         <li>ハンド＆ボディローション: 適量を手にとり、乾燥が気になる部分や、手、全身にのばします。</li>

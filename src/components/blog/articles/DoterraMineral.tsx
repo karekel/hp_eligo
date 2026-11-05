@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ドテラのPHOSSIL ミネラルの種類、原材料、飲み方、値段、保存方法をまとめた記事 */
 export const doterraMineral: ArticleContent = {
@@ -174,6 +174,7 @@ export const doterraMineral: ArticleContent = {
           ["カプセル", "ヒューミックシェール抽出粉末（国内製造）、馬鈴薯澱粉、HPMC、ステアリン酸Ca、微粒二酸化ケイ素"],
         ]}
       />
+      <ProductPhotos names={["PHOSSIL ミネラル オリジナル", "PHOSSIL ミネラル カシス", "PHOSSIL ミネラル プルーン", "PHOSSIL ミネラル レモン ゼロシュガー", "PHOSSIL ミネラル ハニージンジャー オイルプラス", "PHOSSIL ミネラル カプセル"]} />
       <p>味の違いは、次のように表示されています。</p>
       <ul>
         <li><strong>オリジナル</strong>：果汁や甘味料を加えないプレーンなタイプ。飲み物や料理に混ぜて使います。</li>
@@ -236,6 +237,7 @@ export const doterraMineral: ArticleContent = {
       <p>
         ドテラは、オリジナルにエッセンシャルオイルを合わせる場合は、食品添加物の区分の製品を使うよう案内しています。プルーンにレモンまたはライムのオイルを1滴加え、炭酸水で割る飲み方も紹介しています。使う前に、オイルのラベルに「食」の表示があるかを確かめましょう。表示の見方は<Link href="/blog/doterra-how-to-use">ドテラのオイルの使い方</Link>にまとめています。
       </p>
+      <ProductPhotos names={["レモン", "ライム"]} />
       <p>
         一方で、日本アロマ環境協会は、薄めたものでも精油を飲んだり、食品と一緒にとったりすることをすすめていません。別の見解もあるので、最後はご自身で判断してください。飲めるオイルの区分は<Link href="/blog/doterra-drinkable">ドテラのオイルは飲める？</Link>で説明しています。
       </p>

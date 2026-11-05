@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, OilProfile, PairingList, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ベルガモット */
@@ -167,6 +167,7 @@ export const bergamot: ArticleContent = {
           ["オレンジ", "スイート、フレッシュ、シトラス"],
         ]}
       />
+      <ProductPhotos names={["レモン", "オレンジ"]} />
 
       <h2 id="enjoy">ドテラのベルガモットの使い方</h2>
       <UsageCards
@@ -245,6 +246,7 @@ export const bergamot: ArticleContent = {
           },
         ]}
       />
+      <ProductPhotos names={["ドテラシトラスブリス"]} />
       <CautionBox
         title="あわせて守りたいこと"
         items={[

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** ドテラの会社の基本情報、扱う製品、買い方をまとめた記事 */
 export const whatIsDoterra: ArticleContent = {
@@ -154,6 +154,7 @@ export const whatIsDoterra: ArticleContent = {
           ["フランキンセンス", "11,700円", "17,600円"],
         ]}
       />
+      <ProductPhotos names={["ペパーミント", "ラベンダー", "フランキンセンス"]} />
       <p>
         同じ15mLでも、植物によって価格に大きな差があります。価格は変わることがあるので、買う前に製品ページで最新の価格を確かめましょう。
       </p>

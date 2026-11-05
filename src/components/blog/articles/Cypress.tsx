@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: サイプレス */
@@ -147,6 +147,7 @@ export const cypress: ArticleContent = {
           ["表示", "15mLは「塗・香」", "5mLは「塗・香」"],
         ]}
       />
+      <ProductPhotos names={["ヒノキ"]} />
       <p>
         ヒノキが白木のような香りなら、サイプレスは枝葉の青さが加わった香りです。空間を和の印象にしたいときはヒノキ、森の空気に近づけたいときはサイプレスと考えると選びやすいでしょう。
       </p>
@@ -180,6 +181,7 @@ export const cypress: ArticleContent = {
           },
         ]}
       />
+      <ProductPhotos names={["ライム"]} />
       <MethodCard no={1} title="ハンドオイルを作る" items={["10mLの遮光性のガラスびん", "植物油10mL", "サイプレス1〜2滴"]}>
         <Steps
           steps={[

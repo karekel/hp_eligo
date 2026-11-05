@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { BlendRecipe, CautionBox, DataTable, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** トップ・ミドル・ベースで香りを組み立てるブレンドの基本の記事 */
 export const blendBasics: ArticleContent = {
@@ -97,6 +97,7 @@ export const blendBasics: ArticleContent = {
           ["ベース", "最後まで残る、落ち着いた香り", "フランキンセンス、ヒノキ"],
         ]}
       />
+      <ProductPhotos names={["オレンジ", "レモン", "ベルガモット", "ペパーミント", "ラベンダー", "ゼラニウム", "フランキンセンス", "ヒノキ"]} />
       <p>同じオイルでも、資料によって分類が少し違うことがあります。厳密に分けるより、「すぐ香るもの」「長く残るもの」を組み合わせると考えましょう。</p>
       <p>
         ノートは香る順番の話で、香りの種類とは別のものです。協会の資料は、香りの種類をシトラス、フローラル、ハーブなどのグループでも分けています。たとえば柑橘だけを混ぜると、種類はそろいますが、どれもトップです。ノートをまたいで選ぶと、香りの移り変わりを楽しめます。

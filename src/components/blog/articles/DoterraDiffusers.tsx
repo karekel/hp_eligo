@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** 2026年11月時点で買えるドテラのディフューザーと、販売を終えた機種、選び方、最初のレシピをまとめた記事 */
 export const doterraDiffusers: ArticleContent = {
@@ -143,6 +143,7 @@ export const doterraDiffusers: ArticleContent = {
           ["価格（税込）", "会員価格6,600円、参考小売価格9,900円"],
         ]}
       />
+      <ProductPhotos names={["ドテラ ラルツディフューザー"]} />
       <p>
         オイルは、満水目印まで入れた水に5〜10滴です。ボタンの押し方、お手入れ、動かないときに確かめることは、<Link href="/blog/laluz-diffuser">ラルツディフューザーの使い方</Link>で詳しく紹介しています。価格は変わることがあるので、買う前に製品ページで最新の価格を確かめましょう。
       </p>
@@ -165,6 +166,7 @@ export const doterraDiffusers: ArticleContent = {
       <p>
         ペブルは水タンク100mL、適用床面積約14畳の小さめの超音波式でした。森の音は、森の模様のガラスカバーが光る限定販売の機種で、水タンク120mL、適用床面積約16畳です。
       </p>
+      <ProductPhotos names={["ドテラ 森の音ディフューザー"]} />
       <p>
         セラミックディフューザーは、白いデザインの直噴式のディフューザーです。充電式で、LEDライトの間接照明がついています。数量限定の製品で、2025年12月2日に割引価格で再び販売されましたが、2026年11月時点では販売していません。パイロットディフューザーなど、ほかの名前を見かけることもありますが、2026年11月時点で日本のドテラが単品で販売しているディフューザーはラルツです。
       </p>

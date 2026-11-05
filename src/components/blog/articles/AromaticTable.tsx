@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 食品添加物の表示があるオイルに限って料理の香りづけを紹介する記事 */
 export const aromaticTable: ArticleContent = {
@@ -124,6 +124,7 @@ export const aromaticTable: ArticleContent = {
       <p>
         レモンとベルガモットを食品に加える量の目安は1〜3滴です。ドテラは、香りづけが目的なので大量に使う必要はないとしています。料理には、ボトルから直接垂らさず、爪楊枝で少しずつ足しましょう。
       </p>
+      <ProductPhotos names={["レモン", "ベルガモット"]} />
       <Steps
         steps={[
           { title: "火から離す", text: "オイルには引火性があります。鍋は火を止めてから入れ、サラダやドレッシングはコンロから離れた所で作ります。" },
@@ -132,6 +133,7 @@ export const aromaticTable: ArticleContent = {
           { title: "足りなければ新しい爪楊枝で足す", text: "入れすぎると元に戻せません。足すたびに清潔な爪楊枝を使います。" },
         ]}
       />
+      <ArticleFigure src="/assets/blog/inline/aromatic-table-toothpick-d19721ff.jpg" alt="ボトルの口に爪楊枝の先をつけ、その爪楊枝でボウルのドレッシングに混ぜる様子" caption="ボトルから直接垂らさず、爪楊枝の先につけて少しずつ足します" />
       <PointBox>オイルは水に溶けにくく、油脂になじみやすい性質があります。ドレッシングのオイルやバターに混ぜると、全体に香りが広がります。</PointBox>
 
       <h2 id="ideas">料理に香りを添える3つの例</h2>
@@ -163,6 +165,7 @@ export const aromaticTable: ArticleContent = {
         />
       </MethodCard>
       <p>ライムはアジア風の麺やスープ、タンジェリンは焼き魚でも香りを試せます。どちらも「食」の表示があります。</p>
+      <ProductPhotos names={["オレンジ", "ライム", "タンジェリン"]} />
 
       <h2 id="caution">使うときの注意点</h2>
       <CautionBox

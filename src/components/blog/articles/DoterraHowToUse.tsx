@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, NextStepBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ドテラの製品ページの「塗・香・食」の表示の見方と、最初の一歩をまとめた記事 */
 export const doterraHowToUse: ArticleContent = {
@@ -144,6 +144,7 @@ export const doterraHowToUse: ArticleContent = {
           ["アロマタッチ", "15mL", "塗"],
         ]}
       />
+      <ProductPhotos names={["ラベンダー", "レモン", "ペパーミント", "オレンジ", "ユーカリプタス", "アロマタッチ"]} />
       <p>
         注目したいのは、ペパーミントとオレンジです。同じ名前でも、15mLと5mLで表示が違います。「ペパーミントは食べられる」と名前で覚えず、ボトルごとに確かめましょう。
       </p>
@@ -160,6 +161,7 @@ export const doterraHowToUse: ArticleContent = {
       <p>
         「塗」の表示がある製品は、ラベルに従って肌に使えます。ドテラは、敏感肌、子どもの肌、初めて肌に使うオイルは、ドテラ ココナッツオイルのようなキャリアオイルで薄めるよう案内しています。初回は1〜2滴で、4〜6時間ほど間隔をあけます。目のまわり、目と耳の中、傷や炎症のある肌は避けます。
       </p>
+      <ProductPhotos names={["ドテラ ココナッツオイル"]} />
       <p>
         一方で、日本アロマ環境協会は、原液を皮膚につけないよう案内し、ペパーミント、ティートリー、ユーカリを皮膚刺激の例に挙げています。別の見解もあるので、最後はご自身で判断してください。濃度の計算は<Link href="/blog/carrier-oil-dilution">キャリアオイルの選び方</Link>をご覧ください。
       </p>
@@ -178,6 +180,7 @@ export const doterraHowToUse: ArticleContent = {
           { title: "ディフューザーを試す", text: "お持ちの場合は、機種の説明書に従います。ラルツなら5〜10滴の範囲で、5滴から試します。" },
         ]}
       />
+      <ArticleFigure src="/assets/blog/inline/doterra-how-to-use-tissue-7563fecd.jpg" alt="1滴垂らしたティッシュをデスクに置き、ノートとペンを用意した様子" caption="ティッシュに1滴垂らしてデスクなどに置き、感じたことをメモします" />
       <p>「香」の表示がない製品は、ラベルの使用方法に従ってください。迷った製品は、確かめるまで使わないのが確実です。</p>
 
       <h2 id="caution">使うときの注意点</h2>

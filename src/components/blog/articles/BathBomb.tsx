@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, CheckPoints, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 手作りバスボムのレシピと香りの選び方 */
 export const bathBomb: ArticleContent = {
@@ -184,6 +184,7 @@ export const bathBomb: ArticleContent = {
         />
         <PointBox>水加減が仕上がりの分かれ目です。目安は、少し湿った砂のような手触りです。ぼろぼろ崩れるときはもうひと吹きし、泡が出はじめたら水を足すのをやめます。湿らせすぎたときは、重曹を少し足して混ぜ直します。</PointBox>
       </MethodCard>
+      <ArticleFigure src="/assets/blog/inline/bath-bomb-materials-ca77d711.jpg" alt="重曹とクエン酸の器、ココナッツオイルの小皿とオイルのボトル、水に溶かした食紅、ビニール袋、霧吹き、スプーン、バスボム型、できあがったバスボム" caption="バスボム作りに使う材料と道具" />
 
       <h2 id="scent">ドテラのオイルで作るときの香りの選び方</h2>
       <p>好きな香りを選ぶ前に、次の3つを確かめます。</p>

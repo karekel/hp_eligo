@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** 玄関、リビング、寝室、トイレごとの置き方と滴数を説明する記事 */
 export const oilsByRoom: ArticleContent = {
@@ -123,6 +123,7 @@ export const oilsByRoom: ArticleContent = {
           ["トイレ", "ストーン、ティッシュ", "1滴から", "ティーツリー、ラベンダー"],
         ]}
       />
+      <ProductPhotos names={["ラベンダー", "レモン", "オレンジ", "ティーツリー"]} />
       <p>香りの感じ方には個人差があるので、好きな香りに置き換えて、ほのかに香る程度から始めましょう。</p>
 
       <h2 id="entrance">玄関｜短い時間だけ香らせる</h2>
@@ -134,12 +135,14 @@ export const oilsByRoom: ArticleContent = {
         <li><strong>スプレー</strong>: 協会の記事では、来客を迎える前にルームスプレーを使う方法が紹介されています。空間に向けて1〜2回吹きかけます。床、靴、家具には向けません。</li>
         <li><strong>ストーン</strong>: 靴箱の上に小皿を置いてのせます。1滴から始めて、香りが消えたら足します。</li>
       </ul>
+      <ProductPhotos names={["ゼラニウム", "レモングラス"]} />
       <p>協会は玄関の香りの例として、明るい印象のレモンのほか、落ち着いた印象のサイプレスのような木の香りも挙げています。</p>
 
       <h2 id="living">リビング｜広さに合わせて香らせる</h2>
       <p>
         家族が長く過ごす場所なので、部屋全体に広げるならディフューザーが向いています。対応する広さは製品ごとに違います。ドテラ ラルツディフューザーは適用床面積が約16畳で、満水のタンクにオイル5〜10滴が目安です。
       </p>
+      <ProductPhotos names={["ドテラ ラルツディフューザー"]} />
       <p>はじめは5滴にして、香りが強いと感じたらタイマーで運転時間を短くしましょう。置く場所は次の点で選びます。</p>
       <ul>
         <li>平らで硬い場所に置き、カーペットやラグの上は避けます。</li>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: マジョラム */
@@ -186,6 +186,7 @@ export const marjoram: ArticleContent = {
       <p>
         ドテラは、相性のよいオイルとしてバジル、レモン、ドテラセレニティー、サイプレス、ローズマリーを挙げています。
       </p>
+      <ProductPhotos names={["バジル", "ドテラセレニティー"]} />
       <PairingList
         items={[
           { name: "サイプレス", en: "Cypress", color: oilColors.peppermint, note: "木の香りが重なり、森の夕暮れのような印象に" },
@@ -235,6 +236,7 @@ export const marjoram: ArticleContent = {
           },
         ]}
       />
+      <ProductPhotos names={["アロマタッチ"]} />
 
       <p>
         マジョラムは、強く主張せず、夜の時間に寄り添ってくれるオイルです。まずは今夜、ティッシュに1滴から試してみてください。<Link href="/blog/serenity">ドテラセレニティー</Link>の成分にもマジョラムが含まれています。

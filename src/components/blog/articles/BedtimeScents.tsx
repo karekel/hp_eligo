@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** おやすみ前の香りの選び方と寝室での使い方の記事 */
 export const bedtimeScents: ArticleContent = {
@@ -159,6 +159,7 @@ export const bedtimeScents: ArticleContent = {
       <p>
         ドテラのラベンダーは、就寝時に枕や寝具に数滴使えます。使うのは、この使い方ができる製品に限ります。日本アロマ環境協会の記事には、ラベンダーの原液を枕にたらす習慣で皮膚炎が起きた例が載っています。別の見解もあるので、最後はご自身で判断してください。
       </p>
+      <ProductPhotos names={["ラベンダー"]} />
 
       <h2 id="choose">おやすみ前の香りの選び方</h2>
       <p>手がかりは、自分の好みと香りの残り方です。香りの表示はドテラのオイルのものです。ノートは揮発の速さによる分け方で、ベースほど揮発しにくい香りです。</p>
@@ -172,6 +173,7 @@ export const bedtimeScents: ArticleContent = {
           ["温かみのある樹脂の香り", "フランキンセンス", "ウォーム、スパイシー、クリーン", "ベース"],
         ]}
       />
+      <ProductPhotos names={["オレンジ", "ヒノキ", "フランキンセンス"]} />
       <p>
         香りが長く残ると気になる人は、トップやミドルの香りから試しましょう。静かな余韻が好きな人は、ベースの香りが合うかもしれません。
       </p>
@@ -196,9 +198,11 @@ export const bedtimeScents: ArticleContent = {
           ["リネンスプレー", "カーテンやベッドカバーに軽く吹きかける", "50mLに合計15滴の例", "布のまわり"],
         ]}
       />
+      <ArticleFigure src="/assets/blog/inline/bedtime-scents-placement-92f08a96.jpg" alt="寝室で、ティッシュを小皿にのせて枕元の台に置き、ディフューザーはベッドから離れた平らで硬い台に置いた様子" caption="ティッシュは小皿にのせて枕元の台に。ディフューザーはラグの上を避け、ベッドから離れた台に" />
       <p>
         ディフューザーは、カーペットやラグの上には置きません。ドテラ ラルツディフューザーなら、ベッドに入る少し前に1時間のタイマーで動かすと、香りの量を抑えられます。
       </p>
+      <ProductPhotos names={["ドテラ ラルツディフューザー"]} />
       <p>
         リネンスプレーは、肌に直接触れる枕カバーやシーツには使いません。作り方は<Link href="/blog/lavender">ラベンダーの記事</Link>にあります。
       </p>

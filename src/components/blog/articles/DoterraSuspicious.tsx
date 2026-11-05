@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, type ArticleContent } from "../ArticleParts";
+import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** ドテラが怪しいと感じられる点を事実で整理し、始める前とやめるときに確かめることをまとめた記事 */
 export const doterraSuspicious: ArticleContent = {
@@ -153,6 +153,7 @@ export const doterraSuspicious: ArticleContent = {
           ["フランキンセンス", "11,700円", "17,600円"],
         ]}
       />
+      <ProductPhotos names={["ペパーミント", "ラベンダー", "フランキンセンス"]} />
       <p>
         同じ15mLでも、植物によって価格に大きな差があり、高いと感じる方もいます。ほかの製品と比べるときは、価格だけでなく、容量、学名、抽出部位をそろえて見ましょう。見るポイントは<Link href="/blog/choosing-oil-brands">エッセンシャルオイルのメーカーの選び方</Link>と<Link href="/blog/reading-labels">ラベルの見方</Link>にまとめました。
       </p>

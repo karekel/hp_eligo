@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: フランキンセンス */
@@ -172,6 +172,7 @@ export const frankincense: ArticleContent = {
         />
         <PointBox>自分で使う分だけを少量作りましょう。手作りしたものを販売したり、人に譲ったりしないでください。</PointBox>
       </MethodCard>
+      <ProductPhotos names={["ココナッツオイル"]} />
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>フランキンセンスは、香りの土台になるベースノートのオイルです。主役に重ねるように少なめに入れると、全体に奥行きが出ます。</p>

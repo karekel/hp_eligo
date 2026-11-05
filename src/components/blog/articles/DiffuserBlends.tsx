@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { BlendRecipe, CautionBox, CheckPoints, DataTable, NextStepBox, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, CheckPoints, DataTable, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** ディフューザーで楽しむ朝・昼・夜のブレンド例の記事 */
 export const diffuserBlends: ArticleContent = {
@@ -105,6 +105,7 @@ export const diffuserBlends: ArticleContent = {
           { title: "香りの相性", text: "タンクに入れる前に、ティッシュに1滴ずつ落として香りを重ねます。好みに合わなければ、ここで組み合わせを替えられます。" },
         ]}
       />
+      <ProductPhotos names={["ドテラ ラルツディフューザー"]} />
 
       <h2 id="blends">朝・昼・夜のレシピ</h2>
       <p>滴数は、試しやすいように組んだ一例です。香りが物足りないときは、合計が10滴を超えない範囲で、同じ割合のまま増やしてください。</p>
@@ -163,6 +164,7 @@ export const diffuserBlends: ArticleContent = {
       <p>
         寝室では、ラルツの1時間タイマーを使うと、つけたままにならずに済みます。1本で楽しみたい日は、<Link href="/blog/serenity">ドテラセレニティー</Link>も選べます。
       </p>
+      <ProductPhotos names={["ドテラセレニティー"]} />
 
       <h3>手元にないオイルがあるとき</h3>
       <p>同じ系統のオイルに置き換えると、組み合わせの雰囲気を残せます。香りの印象は変わるので、ティッシュで確かめてからタンクに入れましょう。</p>
@@ -175,6 +177,7 @@ export const diffuserBlends: ArticleContent = {
           ["フランキンセンス", "ヒノキ", "樹木系"],
         ]}
       />
+      <ProductPhotos names={["ゼラニウム", "ヒノキ"]} />
       <p>オイルごとに、香りの強さや持続性は違います。置き換えたオイルが強く感じるときは、そのオイルを1滴減らしてください。</p>
 
       <h2 id="strength">香りの強さを調節する</h2>

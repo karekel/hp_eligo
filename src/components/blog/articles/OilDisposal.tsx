@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 使い切れなかったオイルの中身と空きビンの捨て方を説明する記事 */
 export const oilDisposal: ArticleContent = {
@@ -131,6 +131,7 @@ export const oilDisposal: ArticleContent = {
           { title: "自治体の区分で出す", text: "区分の名前は地域で違います。分別ページで「油」や「アロマオイル」を調べましょう。" },
         ]}
       />
+      <ArticleFigure src="/assets/blog/inline/oil-disposal-absorb-4ff7be21.jpg" alt="窓を開けた部屋で、新聞紙を詰めた牛乳パックにオイルを少しずつ注いで吸わせる様子" caption="火のない場所で窓を開け、新聞紙に少しずつ吸わせます" />
       <PointBox>植物油で薄めた手作り品の残りは、紙に吸わせたあと水で湿らせます。協会は、植物油がついた紙も水で湿らせてから処分するよう案内しています。また、熱で自然発火するおそれがあるとして、オイルがついたタオルや布は乾燥機にかけず、天日干しにするよう呼びかけています。</PointBox>
 
       <h2 id="bottle">瓶とキャップは分けて、自治体の区分で出す</h2>
@@ -144,6 +145,7 @@ export const oilDisposal: ArticleContent = {
           { title: "ラベルの扱いを確かめる", text: "はがすかどうかは自治体で違います。記載がなければ窓口で確かめます。" },
         ]}
       />
+      <ArticleFigure src="/assets/blog/inline/oil-disposal-parts-1cd680e4.jpg" alt="空にしたガラスびん、外した中栓、キャップを分けて置いた様子" caption="びん、中栓、キャップは外して、材質ごとに分けます" />
       <DataTable
         caption="自治体の分別の例（2026年11月時点）"
         headers={["自治体", "品目", "区分と出し方"]}

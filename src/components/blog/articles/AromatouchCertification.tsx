@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** アロマタッチのオンライン認定コースとトレーニングクラスの受け方をまとめた記事 */
 export const aromatouchCertification: ArticleContent = {
@@ -130,6 +130,7 @@ export const aromatouchCertification: ArticleContent = {
       <p>
         ドテラは、アロマタッチキット以外のオイルでは行えないとしています。キットをお持ちでない場合は、別に用意します。会員価格は16,700円です（2026年11月2日時点）。
       </p>
+      <ProductPhotos names={["アロマタッチキット"]} />
       <PointBox>トレーニングキットの価格は、ページによって18,000円と18,500円の2通りの表示があります。購入の前に、注文画面の金額を確かめてください。</PointBox>
 
       <h2 id="flow">受講の流れ</h2>
@@ -153,6 +154,11 @@ export const aromatouchCertification: ArticleContent = {
       <p>
         ELIGŌでは、アロマタッチ テクニックの認定トレーナーである主宰のエリザベスから学ぶこともできます。まず手だけで試したい方は、<Link href="/blog/aromatouch-hand">アロマタッチのハンドテクニック</Link>から始めてみてください。
       </p>
+      <ArticleFigure
+        src="/assets/blog/inline/aromatouch-class-c938a446.jpg"
+        alt="アロマタッチの講座の机に並んだ、木のスタンドに立てたキットのオイルと箱"
+        caption="ELIGŌのアロマタッチの講座で使うキットのオイル"
+      />
 
       <h2 id="caution">受講の前に確認したいこと</h2>
       <CautionBox

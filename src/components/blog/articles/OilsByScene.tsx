@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { CautionBox, DataTable, Faq, NextStepBox, PairingList, PointBox, type ArticleContent } from "../ArticleParts";
+import { CautionBox, DataTable, Faq, NextStepBox, PairingList, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** 仕事、家事、リラックスタイムのシーン別にオイルを選ぶ記事 */
 export const oilsByScene: ArticleContent = {
@@ -210,6 +210,7 @@ export const oilsByScene: ArticleContent = {
       <p>
         ディフューザーがあれば、説明書の目安の滴数で香らせます。ドテラ ラルツディフューザーなら、満水のタンクに5〜10滴です。ティッシュを使うときは1〜2滴垂らし、枕から少し離れた場所に置きましょう。
       </p>
+      <ProductPhotos names={["ドテラ ラルツディフューザー"]} />
       <p>
         1本で香りを決めたい夜は、ドテラセレニティーを選べます。就寝時にディフューズする使い方もあります。お風呂の時間に香りを楽しみたいときは、<Link href="/blog/bath-oils">お風呂でのオイルの使い方</Link>を読んでから試してください。
       </p>

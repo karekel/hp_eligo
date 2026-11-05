@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, NextStepBox, PointBox, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** オイルの収納と並べ方、ケースの選び方を説明する記事 */
 export const oilOrganizing: ArticleContent = {
@@ -109,6 +109,7 @@ export const oilOrganizing: ArticleContent = {
       <p>
         どの軸で分けても、ラベルは正面に向けます。ドテラのオイルは、同じ名前でも容量によって表示が違うことがあります。たとえばペパーミントは、15mLが「香・食」、5mLが「塗・香」です。使う前にラベルを読めるように、文字が見える向きにそろえましょう。
       </p>
+      <ProductPhotos names={["ペパーミント"]} />
       <PointBox>
         開封した日を書いた小さなシールをキャップの上に貼ると、上から見ただけで、どれから使うかが決まります。ドテラは開封後は早めに使うよう案内し、協会の目安は開封後1年以内です。
       </PointBox>
@@ -129,6 +130,7 @@ export const oilOrganizing: ArticleContent = {
         ドテラのオイルには15mLと5mLのボトルがあり、容量が違えば高さも違います。仕切りの寸法を決める前に、手元のボトルを測ってみましょう。15mLに合わせると5mLが奥に隠れ、5mLに合わせると15mLのキャップが引き出しに当たることがあります。
       </p>
       <p>木や布は、オイルがつくとシミになることがあります。木箱を使うなら、拭ける受け皿を敷くか、底にオイルがついたらすぐ拭きましょう。</p>
+      <ArticleFigure src="/assets/blog/inline/oil-organizing-box-9e190b82.jpg" alt="仕切りつきの箱にボトルを立てて並べて受け皿にのせ、よく使う数本を手前に出した様子" caption="ラベルを正面に向けて立て、よく使う数本は手前に。キャップの上には開封日のシール" />
 
       <h2 id="caution">収納で気をつけたいこと</h2>
       <CautionBox

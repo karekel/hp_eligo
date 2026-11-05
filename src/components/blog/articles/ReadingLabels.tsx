@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, NextStepBox, type ArticleContent } from "../ArticleParts";
+import { CautionBox, CheckPoints, DataTable, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** エッセンシャルオイルのラベルに書かれた項目の読み方を説明する記事 */
 export const readingLabels: ArticleContent = {
@@ -138,6 +138,7 @@ export const readingLabels: ArticleContent = {
         抽出部位は、植物のどこからオイルを取ったかです。ドテラのオイルなら、ラベンダーは花、ティーツリーは葉、レモンは果皮、フランキンセンスは樹脂です。協会は、花と葉では香りも違うと説明しています。抽出方法は水蒸気蒸留法と圧搾法が代表で、仕組みは
         <Link href="/blog/what-is-essential-oil">エッセンシャルオイルとは？</Link>で紹介しています。
       </p>
+      <ProductPhotos names={["ラベンダー", "ティーツリー", "レモン", "フランキンセンス"]} />
 
       <h3>原産国と使用期限</h3>
       <p>
@@ -153,6 +154,7 @@ export const readingLabels: ArticleContent = {
         ドテラの「塗・香・食」のアイコンは、その製品にどの使い方があるかの目安です。ラベンダー15mLは「塗・香」、ベルガモット15mLは「香・食」で、ベルガモットには肌に塗る使い方がありません。注意表示の文面も手がかりで、ラベンダーの注意には「化粧品がお肌に合わないとき」という言葉があります。区分は変わることもあるので、確実なのはお手元のラベルです。くわしくは
         <Link href="/blog/doterra-drinkable">ドテラのオイルは飲める？</Link>で解説しています。
       </p>
+      <ProductPhotos names={["ベルガモット"]} />
 
       <h2 id="ingredients">成分表示の見方</h2>
       <p>

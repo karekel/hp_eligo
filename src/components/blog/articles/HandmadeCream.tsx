@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ローションに混ぜる方法とミツロウで固める方法の2つのクリームレシピ */
 export const handmadeCream: ArticleContent = {
@@ -157,6 +157,7 @@ export const handmadeCream: ArticleContent = {
         />
         <PointBox>10mLは少量なので、使い切りやすいレシピです。まずはここから試してみましょう。</PointBox>
       </MethodCard>
+      <ProductPhotos names={["フランキンセンス"]} />
 
       <MethodCard
         no={2}
@@ -182,6 +183,7 @@ export const handmadeCream: ArticleContent = {
           ]}
         />
       </MethodCard>
+      <ArticleFigure src="/assets/blog/inline/handmade-cream-yusen-3e543751.jpg" alt="湯を張った鍋に耐熱ビーカーを入れ、シアバターやミツロウを溶かす湯せんの様子と、空のクリームジャー" caption="湯せんは、鍋のお湯に耐熱ビーカーをつけて溶かします" />
 
       <h2 id="density">オイルの濃度を確かめる</h2>
       <p>
@@ -211,6 +213,7 @@ export const handmadeCream: ArticleContent = {
           ["ヒノキ", "ウッディー、エアリー、フレッシュ", "普段のスキンケアに加える"],
         ]}
       />
+      <ProductPhotos names={["ラベンダー", "ゼラニウム", "ヒノキ"]} />
       <p>
         レモン、ベルガモット、グレープフルーツは光毒性があるので使いません。ティーツリーとペパーミント5mLは「塗」の表示で肌に使えますが、協会は皮膚刺激の例に挙げています。ユーカリプタスは肌につけません。
       </p>

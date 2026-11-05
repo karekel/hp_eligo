@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 蜜蝋とシアバターで作る口紅クラフトのレシピ */
 export const aromaLip: ArticleContent = {
@@ -149,6 +149,7 @@ export const aromaLip: ArticleContent = {
         />
         <PointBox>シリコン型は、空気を入れるようにゆっくり外します。型に入り切らなかった分は、繰り出し式のリップ容器に流しましょう。</PointBox>
       </MethodCard>
+      <ArticleFigure src="/assets/blog/inline/aroma-lip-tools-a9df6ddb.jpg" alt="湯せん用の浅い鍋と耐熱ビーカー、スケール、スパーテル、色材の小皿、リップスティック型、口紅の容器" caption="アロマリップ作りで使う主な道具" />
 
       <h2 id="color">色の決め方</h2>
       <p>カラーマイカの2gは目安です。ビーカーの中の色と唇につけた色は違うので、手の甲で確かめながら足します。</p>
@@ -196,6 +197,7 @@ export const aromaLip: ArticleContent = {
       <p>
         表示が「塗・香」のラベンダー、ゼラニウム、フランキンセンスから1つです。ラベルの「化粧品」の表示も確かめてください。読み方は<Link href="/blog/doterra-how-to-use">ドテラの「塗・香・食」の表示の見方</Link>へ。レモンなど光毒性のある柑橘と、協会が皮膚刺激の例に挙げるペパーミント、ティーツリー、ユーカリは使いません。
       </p>
+      <ProductPhotos names={["ラベンダー", "ゼラニウム", "フランキンセンス"]} />
 
       <h2 id="caution">作るときと使うときの注意点</h2>
       <CautionBox

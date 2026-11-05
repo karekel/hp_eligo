@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, ProductPhotos, type ArticleContent } from "../ArticleParts";
 
 /** 水を使わないディフューザーと超音波式の違いを、確かめられる範囲で整理する記事 */
 export const waterlessDiffuser: ArticleContent = {
@@ -112,6 +112,7 @@ export const waterlessDiffuser: ArticleContent = {
       <p>
         ネブライザー式は、水を使わず、オイルをそのまま空間に広げる方式です。超音波式は振動で水とオイルをミストにします。水で薄めないことが、いちばん大きな違いです。
       </p>
+      <ArticleFigure src="/assets/blog/inline/waterless-diffuser-compare-9bb32fa0.jpg" alt="水を入れたタンクからミストを出す超音波式と、オイルのボトルを取り付けて水を使わずに香りを広げるネブライザー式" caption="左が水を使う超音波式、右が水を使わないネブライザー式" />
       <p>
         細かな違いは、機種の説明書や販売元の案内で確かめてください。
       </p>
@@ -131,6 +132,7 @@ export const waterlessDiffuser: ArticleContent = {
           ["日々の手入れ", "水を捨てて洗い、拭いて乾かす", "説明書で確認"],
         ]}
       />
+      <ProductPhotos names={["ドテラ ラルツディフューザー"]} />
       <p>
         水なしタイプに水の手入れはありませんが、手入れがいらないわけではありません。オイルが機器に残ったり、こびりついたりすると、詰まりや故障の原因になります。超音波式のお手入れは<Link href="/blog/diffuser-guide">ディフューザーの選び方</Link>にまとめています。
       </p>
@@ -149,6 +151,7 @@ export const waterlessDiffuser: ArticleContent = {
           { title: "掃除の方法", text: "どの部品を、何で、どのくらいの頻度で掃除するかを見ます。" },
         ]}
       />
+      <ProductPhotos names={["ドテラバランス"]} />
 
       <h3>オイルの減り方を計算で比べる</h3>
       <p>

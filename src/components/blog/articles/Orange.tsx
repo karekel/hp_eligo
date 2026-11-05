@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: オレンジ */
@@ -144,6 +144,11 @@ export const orange: ArticleContent = {
         />
         <PointBox>オイルのボトルは車の中に置きっぱなしにしないでください。ドテラは、直射日光を避けて保管するよう案内しています。日本アロマ環境協会は、高温の場所での保管を避けるよう案内しています。ほかの方法は<Link href="/blog/oils-in-car">車でエッセンシャルオイルを楽しむ方法</Link>へ。</PointBox>
       </MethodCard>
+      <ArticleFigure
+        src="/assets/blog/inline/orange-car-cotton-aabd830a.jpg"
+        alt="車の送風口の下のトレーに置いた小皿と、オイルを垂らしたコットン"
+        caption="コットンは小皿にのせ、送風口の近くの動かない場所に置きます"
+      />
 
       <h3>飲み物に使うときは</h3>
       <p>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ドテラ ココナッツオイル（フラクショネイティッド）の製品の基本と、ホホバオイルとの違いをまとめた記事 */
 export const doterraCoconutOil: ArticleContent = {
@@ -100,6 +100,7 @@ export const doterraCoconutOil: ArticleContent = {
           ["製品の分類", "ボディケア"],
         ]}
       />
+      <ProductPhotos names={["ドテラ ココナッツオイル"]} />
       <p>
         ドテラは、無色無臭で、どのオイルとも混ぜやすいと説明しています。べとつきにくく、軽いタッチのオイルとして紹介されています。
       </p>
@@ -160,6 +161,7 @@ export const doterraCoconutOil: ArticleContent = {
           { title: "少しだけ試す", text: "腕の内側など目立たない場所に少しつけて、様子を見てから使います。" },
         ]}
       />
+      <ArticleFigure src="/assets/blog/inline/doterra-coconut-oil-mixing-b0ae071d.jpg" alt="ガラス容器に入れたキャリアオイルに、エッセンシャルオイルのボトルから1滴を落とす様子" caption="清潔なガラス容器にドテラ ココナッツオイルを入れ、エッセンシャルオイルを1滴加えて混ぜます" />
       <PointBox>
         2種類以上を混ぜるときは、種類ごとではなく、合計の滴数で数えます。1滴の量は思ったより多いこともあるので、<Link href="/blog/drop-count">1滴の量の目安</Link>も参考にしてください。
       </PointBox>

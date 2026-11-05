@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, NextStepBox, OilProfile, PairingList, PointBox, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: イージーエア */
@@ -182,6 +182,7 @@ export const easyAir: ArticleContent = {
       <p>
         ドテラのラルツディフューザーは、オイルが5〜10滴、適用床面積が約16畳です。まず下限の5滴で試し、足すときは1滴ずつにします。機器の選び方は<Link href="/blog/diffuser-guide">ディフューザーの選び方</Link>、ラルツの使い方は<Link href="/blog/laluz-diffuser">ラルツディフューザーの使い方</Link>で紹介しています。
       </p>
+      <ProductPhotos names={["ココナッツオイル", "ラルツディフューザー"]} />
       <p>
         ドテラは、足などに塗る使い方も紹介しています。はじめて肌に使うときや敏感肌の方は、キャリアオイルで薄めてから試しましょう。薄め方は<Link href="/blog/carrier-oil-dilution">キャリアオイルでの薄め方</Link>、足裏での手順は<Link href="/blog/foot-self-massage">足裏セルフマッサージのやり方</Link>にまとめています。
       </p>
@@ -259,6 +260,7 @@ export const easyAir: ArticleContent = {
           },
         ]}
       />
+      <ProductPhotos names={["ユーカリプタス"]} />
 
       <p>
         まずはティッシュに1滴たらして、ミントとレモンの重なりを確かめてみてください。好みに合えば、おやすみ前の寝室へと楽しみ方を広げていきましょう。

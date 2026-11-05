@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** ディフューザーの種類、選び方、超音波式のお手入れをまとめた記事 */
 export const diffuserGuide: ArticleContent = {
@@ -106,6 +106,7 @@ export const diffuserGuide: ArticleContent = {
           ["ストーン、ウッド、スティック（電気なし）", "素材にオイルを含ませて香らせる", "机のまわりなど、狭い範囲で香らせたいとき"],
         ]}
       />
+      <ArticleFigure src="/assets/blog/inline/diffuser-guide-types-68c0b39d.jpg" alt="超音波式のディフューザー、水を使わないディフューザー、電気を使わないストーンとウッドとスティックを並べたイラスト" caption="左から超音波式、水を使わないタイプ、電気を使わないストーン、ウッド、スティック" />
       <p>
         電気を使わない方法は、<Link href="/blog/no-diffuser">ディフューザーがなくても香りを楽しむ方法</Link>で紹介しています。ここからは、ミストで香りを広げる超音波式を中心に説明します。
       </p>
@@ -125,6 +126,7 @@ export const diffuserGuide: ArticleContent = {
           { title: "洗いやすい形か", text: "水に触れる部分を洗って乾かせるかを見ます。" },
         ]}
       />
+      <ProductPhotos names={["ドテラ ラルツディフューザー"]} />
       <p>
         加湿器とディフューザーは別の機器です。製品評価技術基盤機構によると、多くの加湿器はアロマオイルなどの使用を禁止しています。オイルを入れるのは、オイル用のディフューザーだけにしましょう。確認したいことは<Link href="/blog/oils-in-humidifier">加湿器の記事</Link>へ。
       </p>

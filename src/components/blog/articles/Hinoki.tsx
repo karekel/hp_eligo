@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, NextStepBox, OilProfile, PairingList, PointBox, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ヒノキ */
@@ -165,6 +165,7 @@ export const hinoki: ArticleContent = {
       <p>
         ラルツの適用床面積は約16畳なので、六畳の和室や玄関では、まず下限の5滴で試してみてください。床材や家具は、素材によって色や跡が残ることがあります。目立たない場所で試してから広げてください。
       </p>
+      <ProductPhotos names={["ラルツディフューザー"]} />
       <p>
         バスソルトにするなら、無水エタノール5mLに混ぜたヒノキを天然塩に吹きかけ、すぐ湯に入れます。ディフューザーは浴室では使いません。ラルツは、水のかかる場所や湿気の多い場所を避けて使います。入浴の手順は<Link href="/blog/bath-oils">お風呂でのオイルの使い方</Link>で紹介しています。
       </p>

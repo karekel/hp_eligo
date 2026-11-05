@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, Faq, MethodCard, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, Steps, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ラベンダー */
@@ -161,6 +161,7 @@ export const lavender: ArticleContent = {
         />
         <PointBox>水を含むスプレーは、1〜2週間で使い切りましょう。作った日と中身をボトルに書いておくと、迷いません。</PointBox>
       </MethodCard>
+      <ProductPhotos names={["ローズマリー", "レモン"]} />
       <p>
         入浴の手順は<Link href="/blog/bath-oils">お風呂でのオイルの使い方</Link>でくわしく紹介しています。
       </p>

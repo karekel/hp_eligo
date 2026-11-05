@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, PointBox, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, Faq, NextStepBox, OilProfile, PairingList, PointBox, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ディープブルー */
@@ -158,6 +158,7 @@ export const deepBlue: ArticleContent = {
       <p>
         2026年11月時点で、日本のドテラが扱うディープブルーの製品は、5mLのオイルと、115gのクリーム「ディープブルーラブ」の2つです。ラブは、ディープブルーのブレンドを配合したクリームです。
       </p>
+      <ProductPhotos names={["ディープブルーラブ"]} />
       <DataTable
         caption="ディープブルーのオイルとラブの違い（2026年11月時点）"
         headers={["項目", "オイル", "ラブ"]}
@@ -212,6 +213,7 @@ export const deepBlue: ArticleContent = {
           },
         ]}
       />
+      <ProductPhotos names={["ココナッツオイル"]} />
       <PointBox>塗ったあとは手をよく洗いましょう。手に残ったまま目のまわりに触れないようにします。</PointBox>
       <p>
         ドテラは、はじめて使うときはパッチテストなどで試し、必要に応じてキャリアオイルで薄めるとしています。敏感肌の方も、薄めてから使いましょう。薄め方の基本は<Link href="/blog/carrier-oil-dilution">キャリアオイルでの薄め方</Link>、足裏での手順は<Link href="/blog/foot-self-massage">足裏セルフマッサージのやり方</Link>にまとめています。
@@ -287,6 +289,7 @@ export const deepBlue: ArticleContent = {
           },
         ]}
       />
+      <ProductPhotos names={["ペパーミント"]} />
 
       <p>
         まずはココナッツオイル10mLに1滴を混ぜ、腕の内側など目立たないところに少しなじませて、香りと使い心地を確かめてみてください。好みに合えば、くつろぎの時間に足裏へと広げていきましょう。

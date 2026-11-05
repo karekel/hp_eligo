@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, BlendRecipe, CautionBox, DataTable, Faq, MethodCard, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** 全身と腕や脚に使うマッサージ用オイルの分量と作り方の記事 */
@@ -175,6 +175,7 @@ export const massageOilRecipe: ArticleContent = {
       <p>
         ドテラのオイルで「塗・香」の表示があるものには、ラベンダー、ゼラニウム、フランキンセンス、ヒノキなどがあります。同じ名前でも容量で表示が変わるものがあるので、手元のラベルで「化粧品」の表示を確かめてから使いましょう。
       </p>
+      <ProductPhotos names={["ラベンダー", "ゼラニウム", "フランキンセンス", "ヒノキ"]} />
       <p>
         ティーツリー15mLとペパーミント5mLは「塗」の表示があり、表示どおり肌に使えます。協会はペパーミント、ティートリー、ユーカリの肌への使用を控えるとしています。ユーカリプタスは肌につけない製品なので、このレシピには使いません。単品の柑橘も、肌に塗る使い方がないものが多いので、入れないでください。キャリアオイルの種類は<Link href="/blog/carrier-oil-dilution">キャリアオイルの選び方</Link>で比べています。
       </p>
@@ -229,6 +230,7 @@ export const massageOilRecipe: ArticleContent = {
         />
         <PointBox>冷暗所に置き、1カ月以内に使い切りましょう。植物油は酸化しやすいので、ふたをしっかり閉めます。</PointBox>
       </MethodCard>
+      <ArticleFigure src="/assets/blog/inline/massage-oil-recipe-steps-e13d92fc.jpg" alt="遮光瓶にキャリアオイルを注ぎ、オイルを1滴ずつ落とし、ふたを閉めてラベルを貼る流れ" caption="キャリアオイルを注ぎ、オイルを1滴ずつ落とし、ふたを閉めてラベルを貼ります" />
       <p>
         はじめて使う際は、腕の内側などにパッチテスト等で試します。協会は2020年に、事前のパッチテストをやめて「低い濃度で試してから使う」案内に変えました。
       </p>

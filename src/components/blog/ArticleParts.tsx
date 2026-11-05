@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { blogConfig } from "@/lib/blogData";
-import { cutSrc, pairingImages, SHOW_PRODUCT_IMAGES } from "@/lib/productImages";
+import { cutSrc, pairingPhotos, productAlt, productPhoto, SHOW_PRODUCT_IMAGES } from "@/lib/productImages";
 import { ArrowIcon, InstagramIcon } from "./BlogParts";
 import { Lavender, OilBottle } from "./Botanicals";
 
@@ -67,29 +67,53 @@ export function TableOfContents({ items }: { items: { id: string; title: string 
   );
 }
 
-/** 記事に関連する製品の画像。全記事の表示は lib/productImages.ts で切り替える */
-export function ProductStrip({ items }: { items: { name: string; src: string }[] }) {
+/* ── 本文で使うブロック ── */
+
+const PRODUCT_CREDIT = "画像はdoTERRA公式サイトより。商標に関する権利はdōTERRA Holdings, LLCに帰属します。";
+
+/** 本文で紹介したドテラ製品の写真。製品を紹介した段落や表のすぐ後に置く。画像がない名前は出さない */
+export function ProductPhotos({ names }: { names: string[] }) {
+  const items = names.flatMap((name) => {
+    const src = productPhoto(name);
+    return src ? [{ name, src }] : [];
+  });
+  if (!SHOW_PRODUCT_IMAGES || items.length === 0) return null;
+  const few = items.length <= 2;
+  const itemClass = items.length === 1 ? "w-[220px] md:w-[240px]" : few ? "w-[130px] md:w-[240px]" : "w-[96px] md:w-[120px]";
+  const boxClass =
+    items.length === 1
+      ? "h-[220px] w-[220px] md:h-[240px] md:w-[240px]"
+      : few
+        ? "h-[200px] w-[130px] md:h-[240px] md:w-[240px]"
+        : "h-[150px] w-[96px] md:h-[180px] md:w-[120px]";
   return (
-    <figure className="mt-10 rounded-2xl border border-black/5 bg-white px-4 py-6 md:px-6">
-      <p className="font-serif-jp mb-5 text-center text-[16px] tracking-wider text-[#2b2b2b]">この記事で紹介したドテラの製品</p>
-      <div className="flex flex-wrap items-end justify-center gap-x-10 gap-y-6">
+    <figure className="mt-6 rounded-2xl bg-[#f7f4ee] px-3 pb-4 pt-6 md:px-6">
+      <div className="flex flex-wrap items-end justify-center gap-x-5 gap-y-5 md:gap-x-8">
         {items.map((item) => (
-          <div key={item.src} className="w-[150px] text-center">
-            <div className="relative mx-auto h-[210px] w-[150px]">
-              <Image src={cutSrc(item.src)} alt={item.name} fill sizes="150px" className="object-contain" />
+          <div key={item.name} className={`text-center ${itemClass}`}>
+            <div className={`relative mx-auto mix-blend-multiply ${boxClass}`}>
+              <Image src={cutSrc(item.src)} alt={productAlt(item.name)} fill sizes={few ? "240px" : "120px"} className="object-contain" />
             </div>
             <p className="mt-2 text-[12px] leading-5 text-[#555]">{item.name}</p>
           </div>
         ))}
       </div>
-      <figcaption className="mt-3 text-center text-[11px] leading-5 text-[#999]">
-        画像はdoTERRA公式サイトより。商標に関する権利はdōTERRA Holdings, LLCに帰属します。
-      </figcaption>
+      <figcaption className="mt-4 text-center text-[11px] leading-5 text-[#999]">{PRODUCT_CREDIT}</figcaption>
     </figure>
   );
 }
 
-/* ── 本文で使うブロック ── */
+/** 本文の説明を助ける図や写真。文字は画像に入れず、必要な説明は caption に書く */
+export function ArticleFigure({ src, alt, caption }: { src: string; alt: string; caption?: string }) {
+  return (
+    <figure className="mt-8">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#f7f4ee]">
+        <Image src={src} alt={alt} fill sizes="(min-width: 1024px) 720px, (min-width: 768px) calc(100vw - 144px), calc(100vw - 72px)" className="object-cover" />
+      </div>
+      {caption && <figcaption className="mt-3 text-center text-[12px] leading-6 text-[#888]">{caption}</figcaption>}
+    </figure>
+  );
+}
 
 /** 方法・手順をまとめるカード */
 export function MethodCard({ no, title, items, children }: { no: number; title: string; items?: string[]; children: ReactNode }) {
@@ -332,11 +356,11 @@ export function PairingList({ items }: { items: { name: string; en: string; colo
     <div className="mt-6 grid gap-3 sm:grid-cols-2">
       {items.map((item) => (
         <div key={item.name} className="flex items-center gap-4 rounded-2xl border border-black/5 bg-white px-4 py-3">
-          {pairingImages[item.name] ? (
+          {SHOW_PRODUCT_IMAGES && pairingPhotos(item.name).length > 0 ? (
             <div className="flex h-[84px] shrink-0 items-end gap-1">
-              {pairingImages[item.name].map((src) => (
+              {pairingPhotos(item.name).map((src) => (
                 <div key={src} className="relative h-[84px] w-[42px] mix-blend-multiply">
-                  <Image src={cutSrc(src)} alt={`${item.name.startsWith("ドテラ") ? item.name : `ドテラの${item.name}`}のボトル`} fill sizes="42px" className="object-contain" />
+                  <Image src={cutSrc(src)} alt={productAlt(item.name)} fill sizes="42px" className="object-contain" />
                 </div>
               ))}
             </div>
@@ -360,6 +384,11 @@ export function BlendRecipe({ title, drops }: { title: string; drops: { name: st
       <div className="flex flex-wrap gap-x-5 gap-y-2">
         {drops.map((d) => (
           <span key={d.name} className="flex items-center gap-2 text-[13px] text-[#555]">
+            {SHOW_PRODUCT_IMAGES && productPhoto(d.name) && (
+              <span className="relative h-[56px] w-[28px] shrink-0 mix-blend-multiply">
+                <Image src={cutSrc(productPhoto(d.name)!)} alt={productAlt(d.name)} fill sizes="28px" className="object-contain" />
+              </span>
+            )}
             <span className="flex gap-1" aria-hidden="true">
               {Array.from({ length: d.count }, (_, i) => (
                 <svg key={i} viewBox="0 0 12 16" className="h-4 w-3" style={{ color: d.color }}>

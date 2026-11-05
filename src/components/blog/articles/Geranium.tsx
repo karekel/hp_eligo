@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlendRecipe, CautionBox, DataTable, NextStepBox, OilProfile, PairingList, UsageCards, type ArticleContent } from "../ArticleParts";
+import { BlendRecipe, CautionBox, DataTable, NextStepBox, OilProfile, PairingList, ProductPhotos, UsageCards, type ArticleContent } from "../ArticleParts";
 import { oilColors } from "../Botanicals";
 
 /** オイル図鑑: ゼラニウム */
@@ -209,6 +209,7 @@ export const geranium: ArticleContent = {
       <p>
         肌につけない楽しみ方には、サシェもあります。ドテラのレシピの分量は、重曹30gに対してゼラニウム6滴、ラベンダー7滴、レモングラス7滴です。作り方は<Link href="/blog/potpourri">ポプリの作り方</Link>で紹介しています。
       </p>
+      <ProductPhotos names={["ラベンダー", "レモングラス"]} />
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
       <p>花の香りは、同じ花の香りのほか、樹脂や木、柑橘の香りとも組み合わせやすい香りです。</p>

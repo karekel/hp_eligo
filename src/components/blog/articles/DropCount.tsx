@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { ArticleFigure, CautionBox, CheckPoints, DataTable, Faq, NextStepBox, PointBox, ProductPhotos, Steps, type ArticleContent } from "../ArticleParts";
 
 /** 1滴の量の目安、滴数の数え方、オイルが出にくいときの記事 */
 export const dropCount: ArticleContent = {
@@ -135,6 +135,7 @@ export const dropCount: ArticleContent = {
           ["50mLのスプレーを作る", "3〜10滴", "0.15〜0.5mL"],
         ]}
       />
+      <ProductPhotos names={["ドテラ ラルツディフューザー"]} />
       <p>
         入浴は肌に触れる使い方です。使えるオイルと手順は、<Link href="/blog/bath-oils">お風呂でのオイルの使い方</Link>で確認してください。スプレーの作り方は、<Link href="/blog/no-diffuser">ディフューザーがなくても香りを楽しむ方法</Link>で紹介しています。
       </p>
@@ -151,12 +152,14 @@ export const dropCount: ArticleContent = {
           ]}
         />
       </div>
+      <ArticleFigure src="/assets/blog/inline/drop-count-tilt-adc0fcd6.jpg" alt="ボトルを小皿の上で斜めに傾け、オイルを1滴ずつ落とす様子" caption="振らずに斜めに傾けて、落ちる滴を数えます" />
       <PointBox>入れすぎた分は戻せません。レシピの量より少なめに落として、香りを確かめながら足しましょう。</PointBox>
 
       <h2 id="slow">オイルが出にくいとき</h2>
       <p>
         オイルには、さらさらしたものと粘りのあるものがあります。柑橘系はさらさらしていて、すぐに落ちてきます。ココナッツオイルを含むドテラバランスや、ベチバー、ミルラは、落ちてくるまでに時間がかかります。
       </p>
+      <ProductPhotos names={["ドテラバランス", "ベチバー"]} />
       <p>すぐに出なくても、粘りのせいかもしれません。次のことを試してみてください。</p>
       <CheckPoints
         items={[
