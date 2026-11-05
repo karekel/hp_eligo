@@ -164,6 +164,9 @@ export function BlogFooter() {
               <Link href="/" className="hover:text-blog-ink hover:underline">ELIGŌ 公式サイト</Link>
             </li>
             <li>
+              <Link href={blogConfig.author.url} className="hover:text-blog-ink hover:underline">監修者について</Link>
+            </li>
+            <li>
               <Link href="/#how-to-join" className="hover:text-blog-ink hover:underline">ELIGŌへの参加方法</Link>
             </li>
             <li>

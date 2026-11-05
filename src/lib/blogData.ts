@@ -24,6 +24,8 @@ export const blogConfig = {
   author: {
     name: "チームELIGŌ",
     image: "/apple-touch-icon.png",
+    /** 監修者のページ。記事の題の下と記事の最後のロゴから結ぶ */
+    url: "/blog/supervisor",
   },
 };
 
