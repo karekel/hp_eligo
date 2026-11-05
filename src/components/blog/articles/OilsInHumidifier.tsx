@@ -123,7 +123,7 @@ export const oilsInHumidifier: ArticleContent = {
         ]}
       />
       <p>
-        入れないと決めても、香りはあきらめなくて大丈夫です。加湿器とは別の場所で、ティッシュに1〜2滴垂らす方法があります。<Link href="/blog/no-diffuser">ディフューザーがなくても香りを楽しむ方法</Link>で紹介しています。部屋全体に香らせたいときは、<Link href="/blog/diffuser-guide">ディフューザーの選び方と使い方</Link>を参考にしてください。
+        入れないと決めても、香りはあきらめなくて大丈夫です。加湿器とは別の場所で、ティッシュに1〜2滴垂らす方法があります。<Link href="/blog/no-diffuser">ディフューザーがなくても香りを楽しむ方法</Link>で紹介しています。部屋全体に香らせたいときは、<Link href="/blog/diffuser-guide">ディフューザーの選び方</Link>を参考にしてください。
       </p>
 
       <h2 id="caution">加湿器を使うときの注意点</h2>

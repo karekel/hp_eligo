@@ -108,7 +108,7 @@ export const oilsByRoom: ArticleContent = {
         アロマオイルの使い方は、部屋の広さと過ごす時間で変わります。広いリビングと狭いトイレでは、同じ滴数でも香りの強さがまったく違って感じられます。
       </p>
       <p>
-        この記事では、玄関、リビング、寝室、トイレごとに、エッセンシャルオイルの置き方と滴数をまとめます。時間や活動で選びたいときは、<Link href="/blog/oils-by-scene">シーン別の使い方</Link>を読んでください。
+        この記事では、玄関、リビング、寝室、トイレごとに、エッセンシャルオイルの置き方と滴数をまとめます。仕事や家事など場面で選びたいときは<Link href="/blog/oils-by-scene">シーン別の香りの選び方</Link>、使い道の全体は<Link href="/blog/how-to-use-aroma-oils">エッセンシャルオイルやアロマオイルの使い方</Link>を読んでください。
       </p>
 
       <h2 id="table">部屋別アロマオイルの使い方の早見表</h2>
@@ -148,7 +148,7 @@ export const oilsByRoom: ArticleContent = {
         <li>子どもやペットが倒さない場所にします。</li>
       </ul>
       <p>
-        使い方の手順は、<Link href="/blog/diffuser-guide">ディフューザーの選び方と使い方</Link>にまとめています。
+        使い方の手順は、<Link href="/blog/diffuser-guide">ディフューザーの選び方</Link>にまとめています。
       </p>
 
       <h2 id="bedroom">寝室｜少なめから香らせる</h2>

@@ -1,17 +1,17 @@
 import Link from "next/link";
 import { oilColors } from "../Botanicals";
-import { CautionBox, DataTable, Faq, MethodCard, NextStepBox, PairingList, PointBox, Steps, type ArticleContent } from "../ArticleParts";
+import { CautionBox, Faq, MethodCard, NextStepBox, PairingList, PointBox, Steps, type ArticleContent } from "../ArticleParts";
 
 /** おやすみ前の足裏セルフマッサージの記事 */
 export const footSelfMassage: ArticleContent = {
   summary: [
-    "足に使うオイルの選び方と、1回分の薄め方",
+    "足に使うオイルの選び方と、1回分のオイルの用意のしかた",
     "足裏から足首までのセルフマッサージの手順",
     "力加減のコツと、使うときの注意点",
   ],
   toc: [
     { id: "oils", title: "足に使うオイルの選び方" },
-    { id: "dilute", title: "マッサージ用オイルの作り方（1回分）" },
+    { id: "dilute", title: "1回分のオイルを用意する" },
     { id: "steps", title: "足裏セルフマッサージの手順" },
     { id: "caution", title: "使うときの注意点" },
     { id: "faq", title: "よくある質問" },
@@ -128,10 +128,10 @@ export const footSelfMassage: ArticleContent = {
       />
       <p>ドテラバランスは、一日の始まりに足裏に使えます。朝の香りとして試すのもよいでしょう。</p>
       <p>
-        薄めるキャリアオイルは、食用ではなく肌に使うためのものを選びます。ドテラは、ドテラ ココナッツオイルのようなキャリアオイルを案内しています。あわせて、日本アロマ環境協会の資料では、ホホバは幅広い肌質に使いやすく、酸化しにくい油として紹介されています。ナッツアレルギーのある人は、スイートアーモンドなどナッツ由来の油に注意しましょう。
+        薄めるキャリアオイルは、食用ではなく肌に使うためのものを選びます。ドテラは、<Link href="/blog/doterra-coconut-oil">ドテラ ココナッツオイル</Link>のようなキャリアオイルを案内しています。あわせて、日本アロマ環境協会の資料では、ホホバは幅広い肌質に使いやすく、酸化しにくい油として紹介されています。ナッツアレルギーのある人は、スイートアーモンドなどナッツ由来の油に注意しましょう。
       </p>
 
-      <h2 id="dilute">マッサージ用オイルの作り方（1回分）</h2>
+      <h2 id="dilute">1回分のオイルを用意する</h2>
       <p>
         ドテラは、足裏に数滴使うよう案内しています。敏感肌、子どもの肌、初めて肌に使うオイルはキャリアオイルで薄めます。協会と消費者庁は原液を肌につけず必ず薄めるよう案内しています。ここでは薄めて使う方法を紹介します。別の見解もあるので、最後はご自身で判断してください。
       </p>
@@ -142,18 +142,9 @@ export const footSelfMassage: ArticleContent = {
             { title: "オイルを1滴加えて混ぜる", text: "清潔なスプーンで混ぜます。作り置きはせず、その日に使い切ります。" },
           ]}
         />
-        <PointBox>キャリアオイルの選び方と濃度の計算は、<Link href="/blog/carrier-oil-dilution">キャリアオイルの希釈の計算</Link>で確認できます。全身に使うオイルは<Link href="/blog/massage-oil-recipe">マッサージ用オイルの作り方</Link>へ。</PointBox>
+        <PointBox>量を変えるときの滴数の早見表は<Link href="/blog/massage-oil-recipe">マッサージ用オイルの作り方</Link>に、濃度の計算は<Link href="/blog/carrier-oil-dilution">キャリアオイルの選び方と薄め方</Link>にまとめています。</PointBox>
       </MethodCard>
-      <p>量を変えるときは、次の表を目安にしてください。はじめて使うときは、パッチテスト等で試します。協会は2020年に、事前のパッチテストをやめ、低い濃度で試す案内に変えたので、濃度の低い組み合わせから試しましょう。</p>
-      <DataTable
-        caption="キャリアオイルの量と滴数の目安"
-        headers={["キャリアオイル", "オイル", "濃度の目安"]}
-        rows={[
-          ["小さじ1杯（約5mL）", "1滴", "約1%"],
-          ["小さじ2杯（約10mL）", "1滴", "約0.5%"],
-          ["小さじ2杯（約10mL）", "2滴", "約1%"],
-        ]}
-      />
+      <p>はじめて使うときは、パッチテスト等で試します。協会は2020年に、事前のパッチテストをやめ、低い濃度で試す案内に変えました。足の肌が敏感な方は、キャリアオイルを小さじ2杯（約10mL）に増やし、濃度を約0.5%にして試しましょう。</p>
 
       <h2 id="steps">足裏セルフマッサージの手順</h2>
       <p>お風呂上がりなど、肌があたたまっているときが向いています。椅子に座り、床にタオルを敷いて始めましょう。</p>

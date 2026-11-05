@@ -12,7 +12,7 @@ export const oilsOnSkin: ArticleContent = {
     { id: "reason", title: "精油を肌に使うときの考え方" },
     { id: "check", title: "肌に使える製品か確かめる" },
     { id: "avoid", title: "オイルごとの表示と光毒性" },
-    { id: "dilute", title: "薄め方の基本" },
+    { id: "dilute", title: "薄めて使うときの基本" },
     { id: "caution", title: "肌に使うときの注意点" },
     { id: "faq", title: "よくある質問" },
   ],
@@ -201,7 +201,7 @@ export const oilsOnSkin: ArticleContent = {
         あわせて協会は、グレープフルーツ、ベルガモット、レモンなどを例に挙げ、日中の使用に注意するよう案内しています。
       </p>
 
-      <h2 id="dilute">薄め方の基本</h2>
+      <h2 id="dilute">薄めて使うときの基本</h2>
       <p>
         敏感肌、子どもの肌、初めて肌に使うオイルは、キャリアオイルで薄めます。協会によると、精油は油性の材料と無水エタノール以外には溶けにくく、水では薄めたことになりません。濃度の目安は、ボディ用で1%以下、顔用で0.5%以下です。肌の弱い方は、さらに低い濃度から試します。
       </p>

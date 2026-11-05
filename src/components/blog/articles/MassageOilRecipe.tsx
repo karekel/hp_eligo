@@ -248,7 +248,7 @@ export const massageOilRecipe: ArticleContent = {
         ]}
       />
       <p>
-        コツは、手のひらの力を抜いて肌に密着させ、ひじで動かすつもりで行うことです。強く押す必要はありません。足裏から足首までの手順は<Link href="/blog/foot-self-massage">足裏セルフマッサージのやり方</Link>で紹介しています。
+        コツは、手のひらの力を抜いて肌に密着させ、ひじで動かすつもりで行うことです。強く押す必要はありません。おやすみ前に足裏へ使うときの手順と力加減は<Link href="/blog/foot-self-massage">足裏セルフマッサージのやり方</Link>で紹介しています。
       </p>
 
       <h2 id="caution">使うときの注意点</h2>

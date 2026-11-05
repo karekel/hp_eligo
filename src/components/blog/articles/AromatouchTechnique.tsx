@@ -13,7 +13,7 @@ export const aromatouchTechnique: ArticleContent = {
     { id: "oils", title: "8本のオイルの順番" },
     { id: "flow", title: "やり方の全体の流れ" },
     { id: "check", title: "始める前に確認したいこと" },
-    { id: "learn", title: "認定コースと学び方" },
+    { id: "learn", title: "公式の動画と学び方" },
   ],
   sources: [
     {
@@ -193,7 +193,7 @@ export const aromatouchTechnique: ArticleContent = {
         ]}
       />
 
-      <h2 id="learn">認定コースと学び方</h2>
+      <h2 id="learn">公式の動画と学び方</h2>
       <p>動作のひとつひとつは、公式の動作ページの動画で確認できます。正しく身につけたい方には、ドテラの2つの学び方があります。</p>
       <ul>
         <li>オンライン認定コース: 動画で学びます。標準の受講時間は約7〜9時間で、短い動画をすき間時間に見進められます。</li>

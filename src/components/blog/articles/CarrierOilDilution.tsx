@@ -170,6 +170,9 @@ export const carrierOilDilution: ArticleContent = {
         <li>天然の植物油は酸化しやすいので、使い切れる量を買う</li>
         <li>ナッツアレルギーのある方は、ナッツ由来の油に注意する</li>
       </ul>
+      <p>
+        ドテラ ココナッツオイルの特徴と、ドテラのホホバオイルとの違いは<Link href="/blog/doterra-coconut-oil">ドテラのココナッツオイルとは？</Link>で紹介しています。
+      </p>
 
       <h2 id="calc">濃度1%は何滴？計算のしかた</h2>
       <p>

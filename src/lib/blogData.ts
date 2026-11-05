@@ -127,7 +127,7 @@ export const oilGuide: OilGuideEntry[] = [
 /** ブログトップの「はじめに読みたい記事」に並べるリンク */
 export const starterGuideLinks = [
   { title: "アロマオイルとの違い", text: "名前が似ていても、中身が違うことがあります", href: "/blog/what-is-essential-oil" },
-  { title: "基本の使い方", text: "ディフューザーがなくても試せる4つの方法", href: "/blog/no-diffuser" },
+  { title: "基本の使い方", text: "香り、肌、お風呂、掃除の使い道と滴数の目安", href: "/blog/how-to-use-aroma-oils" },
   { title: "ディフューザーの選び方", text: "超音波式の特徴と毎日のお手入れ", href: "/blog/diffuser-guide" },
   { title: "シーン別の選び方", text: "仕事、家事、リラックスタイムのシーン別に", href: "/blog/oils-by-scene" },
   { title: "香りの種類", text: "ドテラのオイル図鑑の一覧から、香りの系統で探す", href: "/blog/oil-guide" },
@@ -161,19 +161,21 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "no-diffuser",
-    title: "ディフューザーなしの使い方｜エッセンシャルオイルやアロマオイル",
-    excerpt: "エッセンシャルオイルやアロマオイルの使い方を、道具なしで簡単に試せる順に紹介します。ティッシュ、アロマストーン、マグカップ、手作りスプレーの4つの方法と、ドテラのオイルの表示の見方をまとめました。",
+    title: "ディフューザーなしで香りを楽しむ4つの方法｜道具なしの使い方",
+    excerpt: "ディフューザーがなくても、エッセンシャルオイルやアロマオイルの香りは楽しめます。ティッシュ、アロマストーン、マグカップのお湯、手作りスプレーの4つの方法を、滴数と手順つきで紹介します。ドテラのオイルの表示の見方もまとめました。",
     category: "how-to",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/no-diffuser.jpg",
   },
   // ---- 41本 ここから ----
   {
     slug: "diffuser-guide",
-    title: "アロマディフューザーの選び方と使い方｜水なしとの違いと手入れ",
-    excerpt: "アロマディフューザーの種類と、水なしタイプとの違い、選ぶときに確認したい5つのことをまとめました。ドテラ ラルツディフューザーなど超音波式の使い方と、お手入れの方法も紹介します。",
+    title: "アロマディフューザーの選び方｜種類の違いと清潔に使うコツ",
+    excerpt: "アロマディフューザーの種類と、選ぶときに確認したい5つのことをまとめました。超音波式の基本の使い方と、水の入れ替えや乾かし方など清潔に使うコツ、エッセンシャルオイルやアロマオイルを入れる前に確かめることも紹介します。",
     category: "how-to",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/diffuser-guide.jpg",
   },
   {
@@ -198,6 +200,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "エッセンシャルオイルを肌につける前に知っておきたい、ドテラ ココナッツオイルなどキャリアオイルの選び方と薄め方を紹介します。濃度1%が何滴になるかを計算式と早見表で示し、注意点もまとめました。",
     category: "how-to",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/carrier-oil-dilution.jpg",
   },
   {
@@ -219,17 +222,19 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "foot-self-massage",
     title: "足裏セルフマッサージのやり方｜おやすみ前の手順と力加減",
-    excerpt: "マッサージ用オイルの作り方と、おやすみ前に足裏へ使うときの手順を紹介します。小さじ1杯のキャリアオイルに1滴から始める方法と、力加減のコツ、ドテラセレニティーを使う例もまとめました。",
+    excerpt: "おやすみ前に足裏をセルフマッサージする手順を、力加減のコツと一緒に紹介します。1回分のオイルは、小さじ1杯のキャリアオイルに1滴から。足に使うオイルの選び方と、ドテラセレニティーを使う例もまとめました。",
     category: "how-to",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/foot-self-massage.jpg",
   },
   {
     slug: "aromatouch-technique",
-    title: "ドテラのアロマタッチ テクニック｜8本のオイルの順番と認定コース",
-    excerpt: "アロマタッチ テクニックは、8本のオイルと手のタッチを組み合わせるドテラ独自の技法です。オイルの順番と全体の流れ、始める前に確認したいこと、認定コースの学び方を紹介します。",
+    title: "ドテラのアロマタッチ テクニック｜8本のオイルの順番とやり方",
+    excerpt: "アロマタッチ テクニックは、8本のオイルと手のタッチを組み合わせるドテラ独自の技法です。オイルの順番と、背中から足へ進む全体の流れ、始める前に確認したいことと、公式の動画での学び方を紹介します。",
     category: "how-to",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/aromatouch-technique.jpg",
   },
   {
@@ -250,10 +255,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "oils-by-scene",
-    title: "シーン別の使い方｜エッセンシャルオイルやアロマオイルの選び方",
-    excerpt: "エッセンシャルオイルやアロマオイルの使い方を、部屋や玄関、仕事、家事、リラックスタイムの場面に分けて紹介します。ドテラのオイルを例にした選び方と滴数、まわりの人への配慮もまとめました。",
+    title: "シーン別の香りの選び方｜仕事、家事、リラックスタイムに",
+    excerpt: "仕事、家事、リラックスタイムの3つの場面に合わせて、エッセンシャルオイルやアロマオイルの香りの選び方を紹介します。ドテラのオイルを例にした組み合わせと滴数、まわりの人への配慮もまとめました。",
     category: "how-to",
     publishedAt: "2026-10-31",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/oils-by-scene.jpg",
   },
   {
@@ -579,18 +585,20 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-use-aroma-oils",
     title: "エッセンシャルオイルやアロマオイルの使い方｜初心者の始め方",
-    excerpt: "エッセンシャルオイルやアロマオイルの使い方を、香り、肌、お風呂、掃除、クラフトの使い道ごとに整理し、ドテラのオイルの区分も説明しました。エッセンシャルオイルを何に使うか迷う初心者が、今日からできる最初の一歩も紹介します。",
+    excerpt: "エッセンシャルオイルやアロマオイルの使い方を、香り、肌、お風呂、掃除、クラフト、料理の使い道ごとに整理しました。方法ごとの道具と滴数の早見表、初心者が今日からできる最初の一歩、ドテラのオイルの区分と、よくある質問もまとめています。",
     category: "how-to",
     publishedAt: "2026-11-02",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/how-to-use-aroma-oils.jpg",
     recommendOrder: 1,
   },
   {
     slug: "oils-on-skin",
-    title: "エッセンシャルオイルは肌につけていい？ドテラの案内と薄め方",
+    title: "エッセンシャルオイルは肌につけていい？ドテラの案内と光毒性",
     excerpt: "エッセンシャルオイルを肌につける前に、ドテラの見解と、ドテラの製品を例にした表示の確かめ方をまとめました。協会や消費者庁の見解、オイルごとの表示、光毒性、精油の使い方と薄め方の基本も説明します。",
     category: "care",
     publishedAt: "2026-11-02",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/oils-on-skin.jpg",
   },
   {
@@ -615,6 +623,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "マッサージ用のアロマオイルの作り方を、キャリアオイルの量ごとの滴数表で紹介します。「化粧品」の表示があるドテラのオイルなどを使い、全身と腕や脚になじませる手順と使い切りの目安もまとめました。",
     category: "how-to",
     publishedAt: "2026-11-02",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/massage-oil-recipe.jpg",
   },
   {
@@ -623,6 +632,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラのオイルの使い方を、「塗・香・食」の表示から読み解きます。容量で表示が変わる例と、表示ごとの基本、手元の1本で試す最初の一歩をまとめて紹介します。",
     category: "how-to",
     publishedAt: "2026-11-02",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/doterra-how-to-use.jpg",
     recommendOrder: 3,
   },
@@ -656,6 +666,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "部屋別のアロマオイルの使い方を、玄関、リビング、寝室、トイレに分けてまとめました。部屋の広さに合う道具、置き方、滴数の目安、ドテラのレシピのサシェと、家具や掃除で気をつけたいことを紹介します。",
     category: "how-to",
     publishedAt: "2026-11-02",
+    updatedAt: "2026-11-05",
     thumbnail: "/assets/blog/oils-by-room.jpg",
   },
   {
@@ -840,9 +851,9 @@ export const getRecommendedPosts = () =>
 const relatedGroups: string[][] = [
   ["how-to-use-aroma-oils", "no-diffuser", "oils-by-scene", "oils-by-room", "bedtime-scents", "oils-in-car"],
   ["diffuser-guide", "waterless-diffuser", "laluz-diffuser", "doterra-diffusers", "oils-in-humidifier", "diffuser-blends", "blend-basics"],
-  ["carrier-oil-dilution", "oils-on-skin", "massage-oil-recipe", "foot-self-massage", "bath-oils"],
+  ["carrier-oil-dilution", "oils-on-skin", "massage-oil-recipe", "foot-self-massage", "bath-oils", "doterra-coconut-oil"],
   ["aromatouch-technique", "aromatouch-hand", "aromatouch-certification"],
-  ["doterra-how-to-use", "doterra-oil-lineup", "choosing-oil-brands", "doterra-drinkable", "aromatic-table", "aroma-sausage"],
+  ["doterra-how-to-use", "doterra-oil-lineup", "doterra-skincare", "doterra-shampoo-toothpaste", "choosing-oil-brands", "doterra-drinkable", "aromatic-table", "aroma-sausage"],
   ["what-is-essential-oil", "how-oils-are-made", "reading-labels", "co-impact-sourcing"],
   ["oil-storage", "oil-disposal", "oil-organizing", "oil-containers", "drop-count"],
   ["oil-precautions", "kids-safety", "pets-safety"],
@@ -850,7 +861,7 @@ const relatedGroups: string[][] = [
   ["lavender", "geranium", "peppermint", "rosemary", "marjoram"],
   ["frankincense", "tea-tree", "eucalyptus", "hinoki", "cypress"],
   ["on-guard", "serenity", "balance", "deep-blue", "easy-air"],
-  ["what-is-doterra", "doterra-suspicious", "doterra-mlm", "doterra-mineral"],
+  ["what-is-doterra", "doterra-suspicious", "doterra-mlm", "doterra-mineral", "doterra-lrp"],
   ["aroma-lip", "handmade-cream", "roll-on", "natural-perfume", "bath-bomb", "gem-soap"],
   ["cleaning-spray", "laundry-oils", "outdoor-spray", "potpourri", "reed-diffuser", "oil-gifts"],
 ];
