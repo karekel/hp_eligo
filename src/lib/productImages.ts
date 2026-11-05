@@ -4,6 +4,9 @@
  */
 export const SHOW_PRODUCT_IMAGES = true;
 
+/** 余白を切り落とした製品画像（public/assets/products/cut/）のパス。表示を大きくするために使う */
+export const cutSrc = (src: string) => src.replace("/assets/products/", "/assets/products/cut/");
+
 export type ProductImage = { name: string; src: string };
 
 const p = (id: string, name: string): ProductImage => ({ name, src: `/assets/products/${id}.jpg` });
@@ -55,13 +58,11 @@ export const pairingImages: Record<string, string[]> = {
 };
 
 export const productImages: Record<string, ProductImage[]> = {
-  "no-diffuser": [products.k11],
   "doterra-drinkable": [products.k12],
   "diffuser-guide": [products.k4],
   "diffuser-blends": [products.k12, products.k16, products.k11],
   "drop-count": [products.k2],
   "carrier-oil-dilution": [products.k3, products.k11],
-  "oil-containers": [products.k11],
   "bath-oils": [products.k11, products.k8],
   "foot-self-massage": [products.k11, products.k2, products.k3],
   "aromatouch-technique": [products.k0],

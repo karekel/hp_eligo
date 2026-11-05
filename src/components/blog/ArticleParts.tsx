@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { blogConfig } from "@/lib/blogData";
-import { pairingImages, SHOW_PRODUCT_IMAGES } from "@/lib/productImages";
+import { cutSrc, pairingImages, SHOW_PRODUCT_IMAGES } from "@/lib/productImages";
 import { ArrowIcon, InstagramIcon } from "./BlogParts";
 import { Lavender, OilBottle } from "./Botanicals";
 
@@ -70,19 +70,20 @@ export function TableOfContents({ items }: { items: { id: string; title: string 
 /** 記事に関連する製品の画像。全記事の表示は lib/productImages.ts で切り替える */
 export function ProductStrip({ items }: { items: { name: string; src: string }[] }) {
   return (
-    <figure className="mt-6 rounded-2xl border border-black/5 bg-white px-4 py-5 md:px-6">
-      <div className="flex flex-wrap items-end justify-center gap-x-8 gap-y-5">
+    <figure className="mt-10 rounded-2xl border border-black/5 bg-white px-4 py-6 md:px-6">
+      <p className="font-serif-jp mb-5 text-center text-[16px] tracking-wider text-[#2b2b2b]">この記事で紹介したドテラの製品</p>
+      <div className="flex flex-wrap items-end justify-center gap-x-10 gap-y-6">
         {items.map((item) => (
-          <div key={item.src} className="w-[124px] text-center">
-            <div className="relative mx-auto h-[150px] w-[124px]">
-              <Image src={item.src} alt={item.name} fill sizes="124px" className="object-contain" />
+          <div key={item.src} className="w-[150px] text-center">
+            <div className="relative mx-auto h-[210px] w-[150px]">
+              <Image src={cutSrc(item.src)} alt={item.name} fill sizes="150px" className="object-contain" />
             </div>
             <p className="mt-2 text-[12px] leading-5 text-[#555]">{item.name}</p>
           </div>
         ))}
       </div>
       <figcaption className="mt-3 text-center text-[11px] leading-5 text-[#999]">
-        関連する製品。画像はdoTERRA公式サイトより。商標に関する権利はdōTERRA Holdings, LLCに帰属します。
+        画像はdoTERRA公式サイトより。商標に関する権利はdōTERRA Holdings, LLCに帰属します。
       </figcaption>
     </figure>
   );
@@ -280,8 +281,8 @@ export function OilProfile({ name, en, color, image, rows }: { name: string; en:
     <div className="mt-8 grid overflow-hidden rounded-2xl border border-black/5 bg-white md:grid-cols-[220px_1fr]">
       <div className="relative flex items-end justify-center gap-1 bg-[#f7f4ee] px-6 pb-6 pt-8">
         {image && SHOW_PRODUCT_IMAGES ? (
-          <div className="relative h-[170px] w-[130px]">
-            <Image src={image} alt={`${name.startsWith("ドテラ") ? name : `ドテラの${name}`}のボトル`} fill sizes="130px" className="object-cover mix-blend-multiply" />
+          <div className="relative h-[250px] w-[160px]">
+            <Image src={cutSrc(image)} alt={`${name.startsWith("ドテラ") ? name : `ドテラの${name}`}のボトル`} fill sizes="160px" className="object-contain mix-blend-multiply" />
           </div>
         ) : (
           <>
@@ -332,10 +333,10 @@ export function PairingList({ items }: { items: { name: string; en: string; colo
       {items.map((item) => (
         <div key={item.name} className="flex items-center gap-4 rounded-2xl border border-black/5 bg-white px-4 py-3">
           {pairingImages[item.name] ? (
-            <div className="flex h-[72px] shrink-0 items-end gap-1">
+            <div className="flex h-[84px] shrink-0 items-end gap-1">
               {pairingImages[item.name].map((src) => (
-                <div key={src} className="relative h-[72px] w-[34px] overflow-hidden mix-blend-multiply">
-                  <Image src={src} alt={`${item.name.startsWith("ドテラ") ? item.name : `ドテラの${item.name}`}のボトル`} fill sizes="96px" className="object-cover" />
+                <div key={src} className="relative h-[84px] w-[42px] mix-blend-multiply">
+                  <Image src={cutSrc(src)} alt={`${item.name.startsWith("ドテラ") ? item.name : `ドテラの${item.name}`}のボトル`} fill sizes="42px" className="object-contain" />
                 </div>
               ))}
             </div>

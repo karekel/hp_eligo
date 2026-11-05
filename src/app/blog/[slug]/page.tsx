@@ -95,10 +95,10 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
               <>
                 <SummaryBox items={article.summary} />
                 <TableOfContents items={article.toc} />
-                {SHOW_PRODUCT_IMAGES && productImages[post.slug] && <ProductStrip items={productImages[post.slug]} />}
                 <div className="blog-prose mt-4">
                   <article.Body />
                 </div>
+                {SHOW_PRODUCT_IMAGES && productImages[post.slug] && <ProductStrip items={productImages[post.slug]} />}
                 <Sources items={article.sources} />
               </>
             ) : (

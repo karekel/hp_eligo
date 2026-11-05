@@ -156,7 +156,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラのオイルは、すべてが飲めるわけではありません。「食」の表示があるオイルの一覧、ティーツリーやオンガードの表示、アロマを飲む前に確認したいことと、ドテラと協会の見解をまとめました。",
     category: "beginner",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/blog/doterra-drinkable.jpg",
+    thumbnail: "/assets/blog/doterra-drinkable-f0ec9cf9.jpg",
     recommendOrder: 2,
   },
   {
@@ -166,7 +166,7 @@ export const blogPosts: BlogPost[] = [
     category: "how-to",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-05",
-    thumbnail: "/assets/blog/no-diffuser.jpg",
+    thumbnail: "/assets/blog/no-diffuser-77362b8b.jpg",
   },
   // ---- 41本 ここから ----
   {
@@ -176,7 +176,7 @@ export const blogPosts: BlogPost[] = [
     category: "how-to",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-05",
-    thumbnail: "/assets/blog/diffuser-guide.jpg",
+    thumbnail: "/assets/blog/diffuser-guide-2cb4b2f5.jpg",
   },
   {
     slug: "diffuser-blends",
@@ -184,7 +184,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "朝、昼、夜に試せるディフューザーのレシピを、ドテラ ラルツディフューザーの目安に収まる合計5滴か6滴の分量で6つ紹介します。自分で組み合わせを作るときの順番と、香りの系統ごとの相性の早見表もまとめました。",
     category: "how-to",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/blog/diffuser-blends.jpg",
+    thumbnail: "/assets/blog/diffuser-blends-5c0d53fe.jpg",
   },
   {
     slug: "drop-count",
@@ -192,7 +192,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "1滴は約0.05mL、20滴で1mLが計算の目安です。3mL、5mL、15mLのボトルに入っている滴数の考え方と、ドテラ ラルツディフューザーなど使い方ごとの滴数の目安、1滴ずつ落とす手順、オイルが出にくいときに試すことをまとめました。",
     category: "how-to",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/blog/drop-count.jpg",
+    thumbnail: "/assets/blog/drop-count-f86af31f.jpg",
   },
   {
     slug: "carrier-oil-dilution",
@@ -201,7 +201,7 @@ export const blogPosts: BlogPost[] = [
     category: "how-to",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-05",
-    thumbnail: "/assets/blog/carrier-oil-dilution.jpg",
+    thumbnail: "/assets/blog/carrier-oil-dilution-03e39054.jpg",
   },
   {
     slug: "oil-containers",
@@ -209,7 +209,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラも使う遮光性のガラス容器が、オイルの保存に向く理由と、プラスチック容器についてわかっていること、わかっていないことを説明します。スプレーなど用途別のボトルの選び方も紹介します。",
     category: "how-to",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/blog/oil-containers.jpg",
+    thumbnail: "/assets/blog/oil-containers-4ddcc6c2.jpg",
   },
   {
     slug: "bath-oils",
@@ -217,7 +217,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "エッセンシャルオイルやアロマオイルは水に溶けにくいので、湯船に入れる前に知っておきたいことがあります。無水エタノールや天然塩を使う入れ方と滴数の目安、ドテラセレニティーを使う例を紹介します。",
     category: "how-to",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/blog/bath-oils.jpg",
+    thumbnail: "/assets/blog/bath-oils-44a363f7.jpg",
   },
   {
     slug: "foot-self-massage",
@@ -226,7 +226,7 @@ export const blogPosts: BlogPost[] = [
     category: "how-to",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-05",
-    thumbnail: "/assets/blog/foot-self-massage.jpg",
+    thumbnail: "/assets/blog/foot-self-massage-de0d47c6.jpg",
   },
   {
     slug: "aromatouch-technique",
@@ -235,7 +235,7 @@ export const blogPosts: BlogPost[] = [
     category: "how-to",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-05",
-    thumbnail: "/assets/blog/aromatouch-technique.jpg",
+    thumbnail: "/assets/blog/aromatouch-technique-2172ead3.jpg",
   },
   {
     slug: "aromatouch-hand",
@@ -243,7 +243,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラのアロマタッチ ハンドテクニックは、手に触れるだけで始められるやさしいタッチの方法です。オイルの選び方と薄め方、4つのステップ、家族と楽しむときの注意点を紹介します。",
     category: "how-to",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/blog/aromatouch-hand.jpg",
+    thumbnail: "/assets/blog/aromatouch-hand-46bf98b6.jpg",
   },
   {
     slug: "blend-basics",
@@ -251,7 +251,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "精油のノート（トップ、ミドル、ベース）の違いと、ドテラのレシピの配分をもとに、合計5滴や10滴で作れる目安を説明します。相性のよいブレンド例と、思った香りにならないときの見直し方も紹介します。",
     category: "how-to",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/blog/blend-basics.jpg",
+    thumbnail: "/assets/blog/blend-basics-2062515a.jpg",
   },
   {
     slug: "oils-by-scene",
@@ -260,7 +260,7 @@ export const blogPosts: BlogPost[] = [
     category: "how-to",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-05",
-    thumbnail: "/assets/blog/oils-by-scene.jpg",
+    thumbnail: "/assets/blog/oils-by-scene-ef520ddb.jpg",
   },
   {
     slug: "lavender",
@@ -269,7 +269,7 @@ export const blogPosts: BlogPost[] = [
     category: "oils",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/lavender.jpg",
+    thumbnail: "/assets/blog/lavender-2d8994be.jpg",
   },
   {
     slug: "lemon",
@@ -296,7 +296,7 @@ export const blogPosts: BlogPost[] = [
     category: "oils",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/frankincense.jpg",
+    thumbnail: "/assets/blog/frankincense-d4870de9.jpg",
   },
   {
     slug: "tea-tree",
@@ -386,7 +386,7 @@ export const blogPosts: BlogPost[] = [
     category: "lifestyle",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/bath-bomb.jpg",
+    thumbnail: "/assets/blog/bath-bomb-ef7a377a.jpg",
   },
   {
     slug: "aroma-lip",
@@ -395,7 +395,7 @@ export const blogPosts: BlogPost[] = [
     category: "lifestyle",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/aroma-lip.jpg",
+    thumbnail: "/assets/blog/aroma-lip-d31e6af0.jpg",
   },
   {
     slug: "handmade-cream",
@@ -404,7 +404,7 @@ export const blogPosts: BlogPost[] = [
     category: "lifestyle",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/handmade-cream.jpg",
+    thumbnail: "/assets/blog/handmade-cream-d602a9b1.jpg",
   },
   {
     slug: "roll-on",
@@ -413,7 +413,7 @@ export const blogPosts: BlogPost[] = [
     category: "lifestyle",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/roll-on.jpg",
+    thumbnail: "/assets/blog/roll-on-39bcedc7.jpg",
   },
   {
     slug: "gem-soap",
@@ -422,7 +422,7 @@ export const blogPosts: BlogPost[] = [
     category: "lifestyle",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/gem-soap.jpg",
+    thumbnail: "/assets/blog/gem-soap-3a7e06f6.jpg",
   },
   {
     slug: "natural-perfume",
@@ -431,7 +431,7 @@ export const blogPosts: BlogPost[] = [
     category: "lifestyle",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/natural-perfume.jpg",
+    thumbnail: "/assets/blog/natural-perfume-d7efd7ae.jpg",
   },
   {
     slug: "outdoor-spray",
@@ -440,7 +440,7 @@ export const blogPosts: BlogPost[] = [
     category: "lifestyle",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/outdoor-spray.jpg",
+    thumbnail: "/assets/blog/outdoor-spray-ac97709a.jpg",
   },
   {
     slug: "cleaning-spray",
@@ -449,7 +449,7 @@ export const blogPosts: BlogPost[] = [
     category: "lifestyle",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/cleaning-spray.jpg",
+    thumbnail: "/assets/blog/cleaning-spray-fb051ece.jpg",
   },
   {
     slug: "laundry-oils",
@@ -458,7 +458,7 @@ export const blogPosts: BlogPost[] = [
     category: "lifestyle",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/laundry-oils.jpg",
+    thumbnail: "/assets/blog/laundry-oils-9d904e9b.jpg",
   },
   {
     slug: "potpourri",
@@ -467,7 +467,7 @@ export const blogPosts: BlogPost[] = [
     category: "lifestyle",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/potpourri.jpg",
+    thumbnail: "/assets/blog/potpourri-c06e6567.jpg",
   },
   {
     slug: "aromatic-table",
@@ -476,7 +476,7 @@ export const blogPosts: BlogPost[] = [
     category: "lifestyle",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/aromatic-table.jpg",
+    thumbnail: "/assets/blog/aromatic-table-02791938.jpg",
   },
   {
     slug: "aroma-sausage",
@@ -485,7 +485,7 @@ export const blogPosts: BlogPost[] = [
     category: "lifestyle",
     publishedAt: "2026-10-31",
     updatedAt: "2026-11-02",
-    thumbnail: "/assets/blog/aroma-sausage.jpg",
+    thumbnail: "/assets/blog/aroma-sausage-aee020b7.jpg",
   },
   {
     slug: "what-is-essential-oil",
@@ -493,7 +493,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "エッセンシャルオイルは精油（せいゆ）とも呼ばれる、植物から抽出した揮発性の芳香物質です。「アロマオイル」との違いと、買うときにラベルで確かめたい項目を、ドテラのオイルも例にまとめました。",
     category: "beginner",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/blog/what-is-essential-oil.jpg",
+    thumbnail: "/assets/blog/what-is-essential-oil-41d31cdc.jpg",
   },
   {
     slug: "co-impact-sourcing",
@@ -501,7 +501,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "コ・インパクトソーシングは、ドテラの原料調達の取り組みです。定義と生産者を支える仕組み、産地の例を紹介し、製品ページや Source To You で確かめる方法もまとめました。",
     category: "beginner",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/blog/co-impact-sourcing.jpg",
+    thumbnail: "/assets/blog/co-impact-sourcing-6e40f404.jpg",
   },
   {
     slug: "oil-storage",
@@ -509,7 +509,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "精油はふたを閉めて立て、冷暗所に置くのが基本です。ドテラが案内する保管方法と、開封後1年という日本アロマ環境協会の目安、冷蔵庫の扱い、手作りしたものを使い切る目安をまとめました。",
     category: "care",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/blog/oil-storage.jpg",
+    thumbnail: "/assets/blog/oil-storage-604b634f.jpg",
   },
   {
     slug: "kids-safety",
@@ -517,7 +517,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラの見解と、3歳未満は芳香浴以外を行わないなどの日本アロマ環境協会の年齢別の目安を紹介します。誤飲を防ぐ置き場所と、飲み込んだときや目に入ったときの対応も順番にまとめました。",
     category: "care",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/blog/kids-safety.jpg",
+    thumbnail: "/assets/blog/kids-safety-372352c8.jpg",
   },
   {
     slug: "pets-safety",
@@ -525,7 +525,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "精油は猫や犬に大丈夫なのか。日本アロマ環境協会は、ペットのいる空間での使用を避けるよう案内しています。香りの距離のとり方と、置き場所、様子が変わったときの対応、ドテラのオイルの場合の考え方をまとめました。",
     category: "care",
     publishedAt: "2026-10-31",
-    thumbnail: "/assets/blog/pets-safety.jpg",
+    thumbnail: "/assets/blog/pets-safety-3a44416d.jpg",
   },
   // ---- 41本 ここまで ----
   // ---- 検索KW対応 第2弾（2026-11-01） ここから ----
@@ -536,7 +536,7 @@ export const blogPosts: BlogPost[] = [
     category: "care",
     publishedAt: "2026-11-01",
     updatedAt: "2026-11-05",
-    thumbnail: "/assets/blog/oil-disposal.jpg",
+    thumbnail: "/assets/blog/oil-disposal-fb47aa75.jpg",
   },
   {
     slug: "how-oils-are-made",
@@ -544,7 +544,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "水蒸気蒸留法や圧搾法など、エッセンシャルオイルの抽出方法と、ドテラの産地の例をもとに収穫から蒸留までの流れをまとめました。自宅で簡単に作れるのかという疑問にも答えます。",
     category: "beginner",
     publishedAt: "2026-11-01",
-    thumbnail: "/assets/blog/how-oils-are-made.jpg",
+    thumbnail: "/assets/blog/how-oils-are-made-97759019.jpg",
   },
   {
     slug: "oils-in-car",
@@ -552,7 +552,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "エッセンシャルオイルやアロマオイルを車で楽しむ4つの方法を、ドテラのオイルの使い方も交えて、アロマストーン、エアコン吹き出し口のクリップ、ティッシュ、小型ディフューザーの順に手順と滴数つきで紹介します。車内の高温や内装への付着など、車ならではの注意点もまとめました。",
     category: "how-to",
     publishedAt: "2026-11-01",
-    thumbnail: "/assets/blog/oils-in-car.jpg",
+    thumbnail: "/assets/blog/oils-in-car-9510ae05.jpg",
   },
   {
     slug: "oil-organizing",
@@ -560,7 +560,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "エッセンシャルオイルやアロマオイルの収納は、ドテラが案内する保管の注意もふまえ、光・熱・湿気を避けて立てて置く条件から考えます。香りの系統別や用途別の並べ方、木箱や仕切りつきボックスなどケースの選び方、置かない場所と使い切る工夫をまとめました。",
     category: "care",
     publishedAt: "2026-11-01",
-    thumbnail: "/assets/blog/oil-organizing.jpg",
+    thumbnail: "/assets/blog/oil-organizing-54c4a1d0.jpg",
   },
   {
     slug: "reading-labels",
@@ -568,7 +568,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラのオイルを例に、精油のラベルに書かれた品名、学名、抽出部位、原産国、内容量、注意表示の読み方を項目ごとに整理します。日本の製品で大切な区分と成分名の見方、日本アロマ環境協会の表示基準もまとめました。",
     category: "beginner",
     publishedAt: "2026-11-01",
-    thumbnail: "/assets/blog/reading-labels.jpg",
+    thumbnail: "/assets/blog/reading-labels-709c46a6.jpg",
   },
   {
     slug: "doterra-oil-lineup",
@@ -576,7 +576,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラの製品を、シングルオイル、ブレンドオイル、キットとコレクション、スキンケアやサプリメントなどのカテゴリごとに紹介します。2026年11月時点の主なオイルの香りと表示、キットの中身と価格、販売を終えたキッズコレクションのこともわかります。",
     category: "beginner",
     publishedAt: "2026-11-01",
-    thumbnail: "/assets/blog/doterra-oil-lineup.jpg",
+    thumbnail: "/assets/blog/doterra-oil-lineup-3f8a3709.jpg",
     recommendOrder: 4,
     updatedAt: "2026-11-05",
   },
@@ -607,7 +607,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "精油の使い方の注意点をまとめました。守りたい基本の5つ、妊娠中や子どもなど使う人ごとの注意点、肌についたときの対処まで整理しています。",
     category: "care",
     publishedAt: "2026-11-02",
-    thumbnail: "/assets/blog/oil-precautions.jpg",
+    thumbnail: "/assets/blog/oil-precautions-5070b256.jpg",
   },
   {
     slug: "waterless-diffuser",
@@ -615,7 +615,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "エッセンシャルオイルやアロマオイルのディフューザーで水なしのタイプとは何かを、ネブライザー式の仕組みと、ドテラ ラルツディフューザーなど超音波式との違いから整理します。オイルの量や手入れなど、機種で違う点の確かめ方も紹介します。",
     category: "how-to",
     publishedAt: "2026-11-02",
-    thumbnail: "/assets/blog/waterless-diffuser.jpg",
+    thumbnail: "/assets/blog/waterless-diffuser-387fa7e8.jpg",
   },
   {
     slug: "massage-oil-recipe",
@@ -624,7 +624,7 @@ export const blogPosts: BlogPost[] = [
     category: "how-to",
     publishedAt: "2026-11-02",
     updatedAt: "2026-11-05",
-    thumbnail: "/assets/blog/massage-oil-recipe.jpg",
+    thumbnail: "/assets/blog/massage-oil-recipe-247a791b.jpg",
   },
   {
     slug: "doterra-how-to-use",
@@ -633,7 +633,7 @@ export const blogPosts: BlogPost[] = [
     category: "how-to",
     publishedAt: "2026-11-02",
     updatedAt: "2026-11-05",
-    thumbnail: "/assets/blog/doterra-how-to-use.jpg",
+    thumbnail: "/assets/blog/doterra-how-to-use-4f9a4fa7.jpg",
     recommendOrder: 3,
   },
   {
@@ -658,7 +658,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "エッセンシャルオイルやアロマオイルを加湿器に入れてよいかは、製品の説明書で決まります。スチーム式、超音波式、気化式の違いと、入れる前に確認する手順、ドテラ ラルツディフューザーとの違い、入れずに香りを楽しむ方法をまとめました。",
     category: "care",
     publishedAt: "2026-11-02",
-    thumbnail: "/assets/blog/oils-in-humidifier.jpg",
+    thumbnail: "/assets/blog/oils-in-humidifier-28b2e0ed.jpg",
   },
   {
     slug: "oils-by-room",
@@ -667,7 +667,7 @@ export const blogPosts: BlogPost[] = [
     category: "how-to",
     publishedAt: "2026-11-02",
     updatedAt: "2026-11-05",
-    thumbnail: "/assets/blog/oils-by-room.jpg",
+    thumbnail: "/assets/blog/oils-by-room-0cdb1c57.jpg",
   },
   {
     slug: "reed-diffuser",
@@ -683,7 +683,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "エッセンシャルオイルやアロマオイルのプレゼントは、相手の好みと暮らしに合わせて選びます。女性へのおすすめを探す方にも使える、ドテラのオイルの例を交えた香りの選び方と、妊娠中、持病、子ども、ペットへの配慮をまとめました。",
     category: "lifestyle",
     publishedAt: "2026-11-02",
-    thumbnail: "/assets/blog/oil-gifts.jpg",
+    thumbnail: "/assets/blog/oil-gifts-74a4580b.jpg",
   },
   {
     slug: "bedtime-scents",
@@ -691,7 +691,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "エッセンシャルオイルやアロマオイルを寝室で使うときの、おやすみ前の香りの選び方を、ドテラのオイルの香りの表示を例にまとめました。枕に使うときの案内と注意、ティッシュやディフューザーの置き方、家族と同じ部屋で使うときの配慮を紹介します。",
     category: "how-to",
     publishedAt: "2026-11-02",
-    thumbnail: "/assets/blog/bedtime-scents.jpg",
+    thumbnail: "/assets/blog/bedtime-scents-613005f9.jpg",
   },
   {
     slug: "choosing-oil-brands",
@@ -750,7 +750,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラのLRPは、毎月決めた日に製品が自動で注文される任意参加の定期購入です。リワード・ポイントの還元率と有効期限、毎月買わなくてもよいか、内容の変更と休止のしかたを、2026年11月時点の条件で紹介します。",
     category: "beginner",
     publishedAt: "2026-11-05",
-    thumbnail: "/assets/blog/doterra-lrp.jpg",
+    thumbnail: "/assets/blog/doterra-lrp-77c9b6d5.jpg",
   },
   {
     slug: "doterra-skincare",
@@ -783,7 +783,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラ（dōTERRA）とは、2008年に米国で設立された、エッセンシャルオイルを中心に扱う会社です。米国本社と日本法人の基本情報、扱う製品の種類と価格の例、会員制度のしくみと、会員にならずに買う方法をまとめました。",
     category: "beginner",
     publishedAt: "2026-11-04",
-    thumbnail: "/assets/blog/what-is-doterra.jpg",
+    thumbnail: "/assets/blog/what-is-doterra-7f5da712.jpg",
   },
   {
     slug: "doterra-suspicious",
@@ -791,7 +791,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "「ドテラは怪しい」と感じる方がいる会員制の販売、価格、飲める表示、勧誘について、事実とご自身で確かめる方法を整理しました。厚生労働省や邪気払いとの関係、やめたいときの手続きと相談先もあわせて紹介します。",
     category: "beginner",
     publishedAt: "2026-11-04",
-    thumbnail: "/assets/blog/doterra-suspicious.jpg",
+    thumbnail: "/assets/blog/doterra-suspicious-212577f8.jpg",
   },
   {
     slug: "doterra-mlm",
@@ -799,7 +799,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラはマルチなのか気になる方へ。ドテラは、WAとして登録し販売することをすすめる取引を、特定商取引法の連鎖販売取引としています。会員の種類と費用、マルチ商法やネットワークビジネスの意味、誘われたときに確かめたい点、クーリング・オフのしかたをまとめました。",
     category: "beginner",
     publishedAt: "2026-11-04",
-    thumbnail: "/assets/blog/doterra-mlm.jpg",
+    thumbnail: "/assets/blog/doterra-mlm-ab335497.jpg",
   },
   {
     slug: "doterra-mineral",
@@ -807,7 +807,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラ ミネラルの正式名はPHOSSIL ミネラルです。オリジナル、カシス、プルーン、レモン ゼロシュガー、ハニージンジャー オイルプラス、カプセルの原材料、飲み方の目安、税込の値段、保存方法を、2026年11月時点の表示で比べます。",
     category: "beginner",
     publishedAt: "2026-11-04",
-    thumbnail: "/assets/blog/doterra-mineral.jpg",
+    thumbnail: "/assets/blog/doterra-mineral-f37e7df4.jpg",
   },
   {
     slug: "deep-blue",
@@ -815,7 +815,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラのディープブルーは、ミントとカンファーの清涼感のある香りのブレンドオイルです。クリームのディープブルーラブとの違い、価格、ココナッツオイルでの薄め方、「効能」を表示できない理由、使うときの注意点を紹介します。",
     category: "oils",
     publishedAt: "2026-11-04",
-    thumbnail: "/assets/blog/deep-blue.jpg",
+    thumbnail: "/assets/blog/deep-blue-14be3e5a.jpg",
   },
   {
     slug: "easy-air",
@@ -823,7 +823,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "ドテラのイージーエアは、ミントやユーカリ、レモンなどを合わせた、すっきりした香りのブレンドオイルです。寝室やティッシュでの香りの楽しみ方、薄めて足裏に使う方法、相性のよい香り、使うときの注意点を紹介します。",
     category: "oils",
     publishedAt: "2026-11-04",
-    thumbnail: "/assets/blog/easy-air.jpg",
+    thumbnail: "/assets/blog/easy-air-2d58e6b9.jpg",
   },
   {
     slug: "doterra-diffusers",
