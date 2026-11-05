@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/siteConfig";
 import { leaders } from "@/lib/leadersData";
-import { BLOG_DRAFT, blogCategories, blogPosts } from "@/lib/blogData";
+import { BLOG_DRAFT, blogCategories, blogConfig, blogPosts } from "@/lib/blogData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.siteUrl;
@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     : [
         { url: `${base}/blog`, priority: 0.9, changeFrequency: "weekly" },
         { url: `${base}/blog/oil-guide`, priority: 0.7, changeFrequency: "monthly" },
+        { url: `${base}${blogConfig.author.url}`, priority: 0.5, changeFrequency: "monthly" },
         ...blogCategories.map((c) => ({
           url: `${base}/blog/category/${c.slug}`,
           priority: 0.5,

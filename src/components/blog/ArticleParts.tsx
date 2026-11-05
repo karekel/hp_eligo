@@ -465,12 +465,22 @@ export function AuthorBox() {
   const { author } = blogConfig;
   return (
     <div className="mt-8 flex flex-col gap-5 rounded-2xl bg-[#faf8f4] p-5 sm:flex-row md:p-7">
-      <span className="relative h-24 w-24 shrink-0 overflow-hidden rounded-full border-4 border-white shadow">
-        <Image src={author.image} alt={author.name} fill sizes="96px" className="object-cover" />
-      </span>
+      <Link
+        href={author.url}
+        aria-label={`${author.name}（監修者について）`}
+        data-track="author_box_logo"
+        data-track-group="blog"
+        className="relative h-24 w-24 shrink-0 overflow-hidden rounded-full border-4 border-white shadow transition hover:opacity-85"
+      >
+        <Image src={author.image} alt="" fill sizes="96px" className="object-cover" />
+      </Link>
       <div>
         <p className="font-script text-[18px] leading-none text-blog-accent">Writer</p>
-        <p className="font-serif-jp mt-2 text-[18px] text-[#2b2b2b]">{author.name}</p>
+        <p className="font-serif-jp mt-2 text-[18px] text-[#2b2b2b]">
+          <Link href={author.url} data-track="author_box_name" data-track-group="blog" className="hover:text-blog-accent hover:underline">
+            {author.name}
+          </Link>
+        </p>
         <p className="mt-1 text-[12px] text-[#888]">ドテラのオイルを学び、暮らしに活かすチーム</p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link href="/" data-track="author_official" data-track-group="blog" className="inline-flex items-center gap-1.5 rounded-full border border-blog-accent px-4 py-1.5 text-[12px] tracking-wider text-blog-accent transition hover:border-blog-peach hover:bg-blog-peach hover:text-blog-ink">

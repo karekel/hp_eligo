@@ -43,7 +43,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
     dateModified: post.updatedAt ?? post.publishedAt,
     image: `${siteConfig.siteUrl}${encodeURI(post.thumbnail)}`,
     mainEntityOfPage: `${siteConfig.siteUrl}/blog/${post.slug}`,
-    author: { "@type": "Organization", name: author.name, url: siteConfig.siteUrl },
+    author: { "@type": "Organization", "@id": `${siteConfig.siteUrl}${author.url}#team`, name: author.name, url: `${siteConfig.siteUrl}${author.url}` },
     publisher: { "@type": "Organization", name: siteConfig.siteName, url: siteConfig.siteUrl },
   };
 
@@ -78,7 +78,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
               <span className="rounded bg-[#f3efe8] px-1.5 py-0.5 font-medium text-[#555]">#PR</span>
               <span>公開日 {formatDate(post.publishedAt)}</span>
               {post.updatedAt && <span>更新日 {formatDate(post.updatedAt)}</span>}
-              <Link href="/" prefetch={false} className="ml-auto flex items-center gap-2 text-[#555] hover:text-blog-accent">
+              <Link href={author.url} prefetch={false} data-track="author_byline" data-track-group="blog" className="ml-auto flex items-center gap-2 text-[#555] hover:text-blog-accent">
                 <span className="relative h-8 w-8 overflow-hidden rounded-full">
                   <Image src={author.image} alt="" fill sizes="32px" className="object-cover" />
                 </span>
