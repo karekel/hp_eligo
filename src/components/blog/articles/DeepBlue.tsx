@@ -288,6 +288,7 @@ export const deepBlue: ArticleContent = {
             a: (
               <>
                 表示は「塗」のみで、「香」の表示はありません。部屋にミントの香りを広げたいときは、表示が「香・食」の<Link href="/blog/peppermint">ペパーミント15mL</Link>など、「香」の表示があるオイルを選びましょう。
+                <ProductPhotos names={["ペパーミント"]} />
               </>
             ),
           },
@@ -297,7 +298,6 @@ export const deepBlue: ArticleContent = {
           },
         ]}
       />
-      <ProductPhotos names={["ペパーミント"]} />
 
       <p>
         まずはココナッツオイル10mLに1滴を混ぜ、腕の内側など目立たないところに少しなじませて、香りと使い心地を確かめてみてください。好みに合えば、くつろぎの時間に足裏へと広げていきましょう。

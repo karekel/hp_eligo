@@ -177,17 +177,24 @@ export function MemberVoice({ children, note = "メンバー個人の使い方�
   );
 }
 
+/** 注意点は長くなるので、見出しだけ見せて押すと開く */
 export function CautionBox({ title = "使うときの注意点", items }: { title?: string; items: string[] }) {
   return (
-    <div className="mt-6 rounded-2xl border border-[#e2b35d]/50 bg-[#fdf7ea] p-5 md:p-6">
-      <p className="flex items-center gap-2 text-[15px] font-medium text-[#9a6a12]">
-        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+    <details className="group mt-6 rounded-2xl border border-[#e2b35d]/50 bg-[#fdf7ea] px-5 md:px-6">
+      <summary className="flex cursor-pointer list-none items-center gap-2 py-4 text-[15px] font-medium text-[#9a6a12] marker:hidden">
+        <svg viewBox="0 0 24 24" className="h-5 w-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
           <path d="M12 3.5 2.8 19.5h18.4z" strokeLinejoin="round" />
           <path d="M12 9.5v4.5M12 16.6v.4" strokeLinecap="round" />
         </svg>
-        {title}
-      </p>
-      <ul className="mt-3 space-y-2">
+        <span className="flex-1">{title}</span>
+        <span className="flex shrink-0 items-center gap-2 text-[12px] font-normal text-[#9a6a12]/80">
+          {items.length}件
+          <span className="text-[16px] transition group-open:rotate-45" aria-hidden="true">
+            ＋
+          </span>
+        </span>
+      </summary>
+      <ul className="space-y-2 pb-5">
         {items.map((item) => (
           <li key={item} className="flex gap-2 text-[13px] leading-7 text-[#5a4a2a]">
             <span className="mt-[11px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#d9a441]" />
@@ -195,7 +202,7 @@ export function CautionBox({ title = "使うときの注意点", items }: { titl
           </li>
         ))}
       </ul>
-    </div>
+    </details>
   );
 }
 
@@ -211,7 +218,8 @@ export function Faq({ items }: { items: { q: string; a: ReactNode }[] }) {
           </summary>
           <div className="flex gap-3 bg-[#faf8f4] px-5 py-4 text-[13px] leading-7 text-[#555]">
             <span className="font-script text-[20px] leading-7 text-[#8b78c4]">A.</span>
-            <span>{item.a}</span>
+            {/* 回答には製品写真などのブロックも入るので div にする */}
+            <div className="min-w-0 flex-1">{item.a}</div>
           </div>
         </details>
       ))}
