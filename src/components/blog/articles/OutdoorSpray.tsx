@@ -22,7 +22,7 @@ export const outdoorSpray: ArticleContent = {
       title: "エッセンシャルオイルで作る『リネンスプレー』レシピ（PDF）",
       publisher: "doTERRA CPTG Essential Oils Japan合同会社",
       url: "https://www.doterra-info.jp/tools/product-center/Display/odor%20control-recipe.pdf",
-      note: "50mLのボトルに無水エタノール10mL、精製水40mLで作るスプレーの分量と混ぜる順番、洋服などの布に使えること。この記事ではオイルの種類と滴数を変えています",
+      note: "50mLのボトルに無水エタノール10mL、精製水40mLで作るスプレーの分量と混ぜる順番、洋服などの布に使えること。紹介するレシピは、オイルの種類と滴数を変えたもの",
     },
     {
       title: "ラベンダー",
