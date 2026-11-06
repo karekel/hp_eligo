@@ -144,7 +144,7 @@ export const eucalyptus: ArticleContent = {
       </MethodCard>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
-      <p>ユーカリプタスの香りはくっきりしているので、柑橘でやわらげたり、ハーブや花の香りで奥行きを足したりすると使いやすくなります。</p>
+      <p>ユーカリプタスの香りはくっきりしているので、柑橘でやわらげたり、ハーブや花の香りで奥行きを足したりすると使いやすくなります。ユーカリプタスにペパーミントやティーツリーなどを合わせたドテラのブレンドには、<Link href="/blog/easy-air">イージーエア</Link>もあります。</p>
       <PairingList
         items={[
           { name: "レモン", en: "Lemon", color: oilColors.lemon, note: "明るさが加わり、朝に合う香りに" },

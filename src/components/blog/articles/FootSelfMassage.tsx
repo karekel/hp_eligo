@@ -126,7 +126,7 @@ export const footSelfMassage: ArticleContent = {
           { name: "ドテラバランス", en: "Balance", color: oilColors.frankincense, note: "軽やかで甘さのある、樹木の香り" },
         ]}
       />
-      <p>ドテラバランスは、一日の始まりに足裏に使えます。朝の香りとして試すのもよいでしょう。</p>
+      <p><Link href="/blog/balance">ドテラバランス</Link>は、一日の始まりに足裏に使えます。朝の香りとして試すのもよいでしょう。</p>
       <MemberVoice>
         <p>
           ELIGŌのメンバーの一人は、ドテラバランスを毎朝足裏に使い、一日の始まりの香りにしています。使うときは、次の手順どおりキャリアオイルで薄めましょう。

@@ -169,7 +169,7 @@ export const peppermint: ArticleContent = {
       </MemberVoice>
 
       <h2 id="pairing">相性のよい香りとブレンド例</h2>
-      <p>ペパーミントは香りの立ち上がりを担うトップノートのオイルです。主張が強いので、ほかの香りより少なめに入れるとバランスがとれます。</p>
+      <p>ペパーミントは香りの立ち上がりを担うトップノートのオイルです。主張が強いので、ほかの香りより少なめに入れるとバランスがとれます。ペパーミントやユーカリプタスを含むドテラのブレンドには、<Link href="/blog/easy-air">イージーエア</Link>もあります。</p>
       <PairingList
         items={[
           { name: "オレンジ", en: "Wild Orange", color: oilColors.wildOrange, note: "甘さが加わり、親しみやすい清涼感に" },

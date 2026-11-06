@@ -197,7 +197,7 @@ export const oilsOnSkin: ArticleContent = {
       </p>
       <ProductPhotos names={["ドテラシトラスブリス"]} />
       <p>
-        あわせて協会は、グレープフルーツ、ベルガモット、レモンなどを例に挙げ、日中の使用に注意するよう案内しています。
+        あわせて協会は、<Link href="/blog/grapefruit">グレープフルーツ</Link>、ベルガモット、レモンなどを例に挙げ、日中の使用に注意するよう案内しています。
       </p>
 
       <h2 id="dilute">薄めて使うときの基本</h2>

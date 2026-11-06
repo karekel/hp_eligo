@@ -144,7 +144,7 @@ export const whatIsDoterra: ArticleContent = {
       <p>
         オイルは日本では、化粧品、食品添加物、雑貨の3種類に分かれ、種類ごとに使い方が違います。製品には「塗」「香」「食」の表示があり、同じ名前でも容量で表示が変わる製品もあります。読み方は<Link href="/blog/doterra-how-to-use">ドテラのオイルの使い方</Link>に、飲食の表示については<Link href="/blog/doterra-drinkable">ドテラのオイルは飲める？</Link>にまとめました。オイルの全体像は<Link href="/blog/doterra-oil-lineup">ドテラのオイルの種類</Link>で紹介しています。
       </p>
-      <p>価格の例を挙げます。会員価格は、会員登録をした人が買うときの価格です。</p>
+      <p>価格の例を挙げます。会員価格は、会員登録をした人が買うときの価格です。会員向けの定期購入の仕組みは、<Link href="/blog/doterra-lrp">ドテラのLRP</Link>で紹介しています。</p>
       <DataTable
         caption="15mLのオイルの価格の例（2026年11月時点、税込）"
         headers={["製品", "会員価格", "参考小売価格"]}
