@@ -44,7 +44,12 @@ export const siteConfig = {
     members: {
       shopUrl: "https://eligo.stores.jp/",
       botUrl: "https://qa-doterra.vercel.app/", // Same as membersOnly for now
-    }
+    },
+    /** ドテラ・ジャパンの特定商取引法に基づく表記。ドテラ日本支社の依頼で HP とブログのフッターに載せる */
+    doterraCommercialLaw: {
+      label: "特定商取引法に基づく表記（ドテラ）",
+      url: "https://www.doterra.com/JP/ja_JP/specified-commercial-transaction-law",
+    },
   },
 
   /** ナビゲーション */

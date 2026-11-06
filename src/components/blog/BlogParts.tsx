@@ -177,6 +177,16 @@ export function BlogFooter() {
             <li>
               <Link href="/privacy" className="hover:text-blog-ink hover:underline">プライバシーポリシー</Link>
             </li>
+            <li>
+              <a
+                href={siteConfig.externalLinks.doterraCommercialLaw.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blog-ink hover:underline"
+              >
+                {siteConfig.externalLinks.doterraCommercialLaw.label}
+              </a>
+            </li>
           </ul>
         </div>
       </div>

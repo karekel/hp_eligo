@@ -64,9 +64,18 @@ export default function Home() {
         <IntroVideosSection />
         <MembersOnlySection />
         <HowToJoinSection />
-        <footer className="relative z-10 px-6 pb-8 text-center text-[11px] tracking-[0.2em] text-[#1a1a1a]/60">
+        <footer className="relative z-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 px-6 pb-8 text-center text-[11px] tracking-[0.2em] text-white/75">
           <Link href="/privacy" className="hover:underline">プライバシーポリシー</Link>
-          <span className="mx-3">|</span>
+          <span>|</span>
+          <a
+            href={siteConfig.externalLinks.doterraCommercialLaw.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            {siteConfig.externalLinks.doterraCommercialLaw.label}
+          </a>
+          <span>|</span>
           <span>© ELIGŌ</span>
         </footer>
       </main>
